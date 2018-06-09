@@ -1,0 +1,214 @@
+
+// Global
+
+
+
+@font-face {
+  font-family: 'Calibre';
+  src:  url('../fonts/Calibre-Light.otf')  format('opentype'),
+        url('../fonts/Calibre-Light.woff')  format('woff'),
+        url('../fonts/Calibre-Light.ttf')  format('truetype'),
+        url('../fonts/Calibre-Light.svg#Calibre-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+/*
+@font-face {
+    font-family: Calibre;
+    src: url(../fonts/calibre-regular-webfont.eot);
+    src: url(../fonts/calibre-regular-webfont.eot?#iefix) format('embedded-opentype'), url(../fonts/calibre-regular-webfont.woff) format('woff'), url(../fonts/calibre-regular-webfont.ttf) format('truetype'), url(../fonts/calibre-regular-webfont.svg#calibre_regularregular) format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Calibre;
+    src: url(../fonts/calibre-medium-webfont.eot);
+    src: url(../fonts/calibre-medium-webfont.eot?#iefix) format('embedded-opentype'), url(../fonts/calibre-medium-webfont.woff) format('woff'), url(../fonts/calibre-medium-webfont.ttf) format('truetype'), url(../fonts/calibre-medium-webfont.svg#Calibre) format('svg');
+    font-weight: 500;
+    font-style: normal
+}*/
+
+@font-face {
+    font-family: Calibre;
+    src: url(../fonts/calibre-semibold-webfont.eot);
+    src: url(../fonts/calibre-semibold-webfont.eot?#iefix) format('embedded-opentype'), url(../fonts/calibre-semibold-webfont.woff) format('woff'), url(../fonts/calibre-semibold-webfont.ttf) format('truetype'), url(../fonts/calibre-semibold-webfont.svg#calibresemibold) format('svg');
+    font-weight: 800;
+    font-style: normal
+}
+
+
+// Layout
+
+.container {
+	margin: 0 auto;
+	max-width: 105.0rem;
+	padding: 0 2.5rem;
+	position: relative;
+	width: 100%;
+}
+
+
+
+// Font Size
+
+p, .title, li, ol, ul {
+  font-size: 3.5rem;
+  line-height: 125%;
+}
+
+// Page list
+.page-list {
+  text-align: center;
+}
+
+// Footer
+
+footer {
+  margin-top: 3rem;
+  color: $gray-3;
+  margin-bottom: 2rem;
+  text-align: left;
+  }
+
+
+// Project Sectinos
+.posts {
+  margin-top: 6rem;
+}
+
+.project-section {
+  margin-top: 2.5rem;
+  height: 100%;
+}
+
+
+// Header
+
+header {
+    margin-top: 3.5rem;
+    margin-bottom: 3rem;
+
+    a {
+      color: inherit;
+    }
+  }
+.latest {
+  font-size: 2.5rem;
+}
+
+.navigation {
+  text-align: center;
+   a {
+     color: $blue;
+   }
+   ul {
+     list-style: none;
+     display: inline-block;
+
+   }
+   li {
+     display: inline-block;
+     font-size: 2rem;
+     margin-bottom: 2rem;
+     margin-left: 0.5rem;
+   }
+   .active a {
+     color: $color-secondary;
+   }
+   li:first-child {
+     margin-left: 0rem;
+   }
+   li:after {
+     content:" / ";
+   }
+   li:last-child:after {
+     content: "";
+   }
+}
+
+.name {
+  float: left;
+  margin-bottom: 0rem;
+
+}
+.pages {
+  line-height: 0.1rem;
+  margin-bottom: 0rem;
+  float: right;
+}
+.social {
+  float: left;
+}
+
+@media only screen and (min-width: $first-breakpoint) {
+    .name {
+
+    }
+    .pages {
+      float: none;
+
+    }
+    .social {
+      float: right;
+
+    }
+}
+
+// Icons
+
+.icon {
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    position: relative;
+    bottom: 0.5rem;
+
+    svg {
+        width: 100%;
+        height: 100%;
+        path {
+            fill: $black;
+        }
+    }
+}
+
+.play-icon {
+
+}
+
+.icon--twitter, .icon--instagram, .icon--mail, .icon--facebook, .icon--youtube {
+  height: 3rem;
+  width: 3rem;
+  bottom: -0.0rem;
+  margin-right: 1rem
+}
+
+.icon--mail {
+
+  height: 3.7rem;
+  width: 5.6rem;
+  bottom: -0.35rem;
+
+}
+
+.icon--instagram {
+  height: 2.8rem;
+  width: 2.8rem;
+}
+
+.icon:last-child {
+  margin-right: 0;
+}
+
+small a:first-child {
+  margin-right: 1rem;
+}
+
+.press {
+  color: $gray-2;
+}
+.partner {
+  font-size: 2rem;
+
+}

@@ -1,0 +1,8 @@
+<div class="row gallery">
+{% for photo in page.gallery %}
+  <div class="col-xs-12 col-sm-6">
+    <div>
+      <img src="{{ site.baseurl}}/img/{{ photo.photo_name }}" alt="{{ photo.alt }}" class="img-responsive hvr-grow"></div>
+    </div>
+{% endfor %}
+</div>

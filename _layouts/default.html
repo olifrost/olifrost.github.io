@@ -1,0 +1,55 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+    <header>
+        <div class="container">
+
+
+          <div class="row first-xs between-sm">
+            <div class="col-xs-5 col-sm-4">
+              <h3 class="name"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h3>
+            </div>
+            <div class="col-xs-7 col-sm-4 navigation">
+              <ul class="pages">
+              {% for item in site.data.pages.docs %}<li class="{% if item.url == page.url %}active{% endif %}"><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>{% endfor %}
+            </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <small class="social">{% if site.twitter.username %}
+                  {% include icon-twitter.html username=site.twitter.username %}
+                {% endif %}
+                {% if site.author.instagram %}
+                  {% include icon-instagram.html username=site.author.instagram %}
+                {% endif %}
+                {% if site.author.email %}
+                  {% include icon-mail.html username=site.author.email %}
+                {% endif %}</small>
+            </div>
+          </div>
+
+
+
+          </div>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <main class="content">
+            {{ content }}
+        </main>
+        {% include footer.html %}
+    </div>
+
+    {% include javascript.html %}
+
+</body>
+
+</html>

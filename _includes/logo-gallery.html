@@ -1,0 +1,9 @@
+<div class="row">
+{% for press in page.press %}
+  <div class="{{ page.press-options }} logo">
+    <div><a href="{{ press.article_link }}"><img src="{{ site.baseurl}}/img/logos/{{ press.logo_path }}" alt="{{ press.image_path }}" class="img-responsive hvr-float">
+    </a></div>
+    {% if press.caption %}<blockquote class="caption">{{ press.caption }}</blockquote>{% endif %}
+  </div>
+{% endfor %}
+</div>

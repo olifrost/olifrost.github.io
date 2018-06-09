@@ -1,0 +1,17 @@
+<head>
+  <meta name="hi-reddit" content="yes-its-really-me">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="p:domain_verify" content="24f4001fe32c84cdbe8a07fc24fdeecd"/>
+  {% if page.id %}
+	<title>{{ page.title }} | {{ site.title }}</title>
+	{% else %}
+	<title>{{ site.title }}</title>
+	{% endif %}
+  {% seo %}
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/img/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon.png">
+  <link rel="stylesheet" href="{{ "/main.css" | relative_url}}">
+  <link href='http://olifro.st/feed.xml' rel='alternate' type='application/atom+xml'>
+  <meta name="theme-color" content="#020cfa">
+</head>

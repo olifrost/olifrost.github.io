@@ -1,0 +1,61 @@
+# Permalinks
+permalink:           /blog/:title/
+
+# Setup
+title:               Oli Frost
+tagline:             A really important person which you should definitely click through to read more about.
+description:         A really important person which you should definitely click through to read more about.
+footer:              Oliver Frost, Ollie Frost, Olly Frost, or however you misspell it.
+
+exclude:             [/psd/]
+
+# Markdown
+collections:
+  portfolio:
+    # output: true
+    permalink: /work/:title/
+  causes:
+    # output: true
+    permalink: /work/:title/
+  brands:
+    # output: true
+    permalink: /work/:title/
+
+
+# SASS
+sass:
+  sass_dir:          _sass
+  style:            compressed
+
+# Google Analytics
+analytics_id:  UA-111675559-1
+
+
+# SEO
+author:
+  name: Oli Frost
+  twitter: realolifrost
+  instagram: realolifrost
+  email: mail@olifro.st
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /blog/shook-1.jpg
+
+twitter:
+  username: realolifrost
+
+social:
+  name: Oli Frost
+  links:
+    - https://twitter.com/realolifrost
+    - https://instagram.com/realolifrost
+
+# Gems
+gems:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from

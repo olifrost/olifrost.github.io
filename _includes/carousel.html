@@ -1,0 +1,5 @@
+<div class="owl-carousel owl-theme" data-items="{{ page.carousel-items }}">
+{% for image in page.images %}
+<img class="owl-lazy" data-src="{{ site.baseurl}}/img/{{ image.name }}" alt="{{ image.alt }}">
+{% endfor %}
+</div>
