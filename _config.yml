@@ -3,8 +3,8 @@ permalink:           /blog/:title/
 
 # Setup
 title:               Oli Frost
-tagline:             A really important person which you should definitely click through to read more about.
-description:         A really important person which you should definitely click through to read more about.
+tagline:             A really important person which you should definitely click through to read more about. Also known as Oliver Frost, Ollie Frost, Olly Frost, or however you misspell it.
+description:         A really important person which you should definitely click through to read more about. Oliver Frost, Ollie Frost, Olly Frost, or however you misspell it.
 footer:              Oliver Frost, Ollie Frost, Olly Frost, or however you misspell it.
 
 exclude:             [/psd/]
