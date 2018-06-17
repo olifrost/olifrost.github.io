@@ -11,7 +11,7 @@ Some say this is a lie and he is actually a ‘satirist'.
 
 Most say he wrote this bio himself.
 
-Work featured on *BBC, Channel 4 News, Vice, The Guardian, New York Post, DAZED, Huffington Post, The Independent, The Telegraph, Mail Online, Fox News, Gizmodo, Motherboard, i-d, Metro, Evening Standard, ABC, Refinery 29, UNILAD, LadBible, Business Insider, RT, Mic, Stylist, Al Jazeera, The Big Issue, Product Hunt, Lifehacker, Reddit, Hacker News, CNET, Fast Company, Designboom, Design Taxi, Creative Review, Shortlist, Cheezburger, Britain's Got Talent*.
+Work featured on *BBC, Channel 4 News, Vice, The Guardian, New York Post, DAZED, Huffington Post, The Independent, The Telegraph, Mail Online, Fox News, Forbes, Gizmodo, Motherboard, i-d, Metro, Evening Standard, ABC, Refinery 29, UNILAD, LadBible, Business Insider, RT, Mic, Stylist, Al Jazeera, The Big Issue, Product Hunt, Lifehacker, Reddit, Hacker News, CNET, Fast Company, Designboom, Design Taxi, Creative Review, Shortlist, Cheezburger, Britain's Got Talent*.
 
 *Creative Circle 2017 Best New Talent*.
 

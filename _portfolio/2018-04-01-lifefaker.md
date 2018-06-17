@@ -16,6 +16,8 @@ press:
     article_link: "https://www.refinery29.uk/2018/04/197467/fake-life-instagram"
   - name: 'Gizmodo'
     article_link: "http://www.gizmodo.co.uk/2018/04/lifefaker-outs-our-social-media-mind-games/"
+  - name: 'Forbes'
+    article_link: "https://www.forbes.com/sites/pheewaterfield/2018/06/06/is-digital-wellness-really-the-answer/2/"
   - name: 'Metro'
     article_link: "https://metro.co.uk/2018/05/03/want-fake-perfect-life-instagram-website-can-help-7510173/"
   - name: 'LadBible'
