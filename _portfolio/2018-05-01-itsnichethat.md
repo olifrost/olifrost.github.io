@@ -1,8 +1,8 @@
 ---
 layout: post
 title: It's Niche That
-description: An online news series. Its first episode takes us inside the UK's only clothes moth sanctuary.
-video: DdyU-Qfv-kY
+description: 'Online news documentaries exploring the niche.'
+link: 'https://www.youtube.com/channel/UC7PHRfrqGcRlPrg1vIkRRFA'
 image: /portfolio/itsnichethat.jpg
 press:
   - name: 'British Comedy Guide'
