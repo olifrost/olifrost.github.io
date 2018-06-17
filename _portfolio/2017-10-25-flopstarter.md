@@ -12,8 +12,6 @@ press:
     article_link: 'https://news.ycombinator.com/item?id=17059575'
   - name: 'Reddit'
     article_link: 'https://www.reddit.com/r/humor/comments/79owkg/flopstarter_a_platform_for_bad_ideas/'
-  - name: 'Reddit'
-    article_link: 'https://www.reddit.com/r/humor/comments/79owkg/flopstarter_a_platform_for_bad_ideas/'
 other_press:
   - article_link: 'https://www.fastcodesign.com/90173378/flopstarter-is-kickstarter-for-really-really-really-bad-ideas'
 ---
