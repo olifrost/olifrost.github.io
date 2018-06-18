@@ -9,7 +9,7 @@ press:
   - name: 'Adweek'
     article_link: "http://www.adweek.com/agencyspy/cannes-grand-prix-case-study-generator-does-the-work-for-you/88739"
   - name: 'Campaign'
-    article_link: "http://www.campaign.co.uk"
+    article_link: "http://www.campaignlive.co.uk"
   - name: 'The Drum'
     article_link: "http://www.thedrum.com/stuff/2015/06/26/parody-cannes-grand-prix-generator-looks-save-lonely-abandoned-badgers-and-hydrate"
   - name: 'Adland'
