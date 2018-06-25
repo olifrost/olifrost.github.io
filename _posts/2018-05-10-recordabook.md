@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I wrote a book and now recorders are cool
-description: Alot of kids give up at Hot Cross Buns and Ba Ba Black Sheep.
+description: A lot of kids give up at Hot Cross Buns and Ba Ba Black Sheep.
 image: /blog/recordabook-1.jpg
 date: 2018-06-09
 videos: DdyU-Qfv-kY
