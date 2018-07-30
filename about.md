@@ -5,9 +5,9 @@ date: '2016-11-17T06:41:36+00:00'
 ---
 ![Oli Frost](/img/olifrost.jpg)
 
-Oli Frost is an entrepreneur and recorder player.
+Oli Frost is a cultural magnate, visionary, and recorder player.
 
-Some say this is a lie and he is actually a ‘satirist'.
+Some say this is a lie and he is actually a satirist.
 
 Most say he wrote this bio himself.
 
@@ -24,13 +24,16 @@ Work featured on *BBC, Channel 4 News, Vice, The Guardian, New York Post, DAZED,
 Not sure yet.
 
 ## Where are you from?
-I was born in 1991 in Hackney, London, back when it was edgy. I am currently seeking citizenship in <a href="http://olifro.st/blog/sao-tome-citizen/">São Tomé</a>.
+I was born in 1991 in Hackney, London, but I am currently <a href="http://olifro.st/blog/sao-tome-citizen/">seeking citizenship in São Tomé</a>.
 
 ## Why do you have a coat hook on your shirt?
 It's a <a href="http://olifro.st/blog/shook-shirt-hook/"> SHOOK.</a>
 
+## Are you a Russian hacker?
+I am 1/32th Russian on my dad's side and have successfully installed several viruses onto my own computer.
+
 ## Do you have any qualifications?
-I did Philosophy at UCL. I learnt to question the meaning of life and (more often) the meaning of a philosophy degree.
+I did Philosophy at UCL – I learnt to question the meaning of life and (more often) the meaning of a philosophy degree.
 
 ## When a shirt becomes a pyjama shirt can it ever go back?
 Only for short trips to the shops.
