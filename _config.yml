@@ -3,11 +3,12 @@ permalink:           /blog/:title/
 
 # Setup
 title:               Oli Frost
-tagline:             A really important person which you should definitely click through to read more about. Also known as Oliver Frost, Ollie Frost, Olly Frost, or however you misspell it.
-description:         A really important person which you should definitely click through to read more about. Oliver Frost, Ollie Frost, Olly Frost, or however you misspell it.
+tagline:             Also known as Oliver Frost, Ollie Frost, Olly Frost, or however you misspell it.
+description:         Also known as Oliver Frost, Ollie Frost, Olly Frost, or however you misspell it.
 footer:              Oliver Frost, Ollie Frost, Olly Frost, or however you misspell it.
 
 exclude:             [/psd/]
+
 
 # Markdown
 collections:
@@ -26,6 +27,7 @@ collections:
 sass:
   sass_dir:          _sass
   style:            compressed
+  encoding:          utf-8
 
 # Google Analytics
 analytics_id:  UA-111675559-1

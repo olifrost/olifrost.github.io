@@ -2,7 +2,7 @@
 layout: post
 title: Not all cats want to be on the internet
 description: It was the cat internet boom of 2014.
-image: /blog/gabby.jpg
+image: /blog/shycat-1.jpg
 videos: true
 ---
 
@@ -10,17 +10,11 @@ Back when Keyboard Cat and Grumpy Cat were almost household names.
 
 And like any cat owner at the time I too wanted my cat to be famous.
 
+![Gabby]({{ "/blog/shycat-1.jpg" | relative_url }})
+
 I always knew Gabby was somehow special.
 
-When she was just a kitten she was featured on The Daily Kitten, a prestigious cat blog at the time.
-
-She was pretty but in an interesting and unconventional way.
-
-A rogue ginger patch on her forehead made her unmistakeable.
-
-![Gabby]({{ "/blog/gabby.jpg" | relative_url }})
-
-She has even been [featured on the Facebook page of the local vet](https://www.facebook.com/VillageVetMeldreth/photos/a.289767831387612.1073741829.279734152390980/503026170061776/?type=3&theater) just for coming in.
+After all, she had been [featured on the Facebook page of the local vet](https://www.facebook.com/VillageVetMeldreth/photos/a.289767831387612.1073741829.279734152390980/503026170061776/?type=3&theater).
 
 > "Gorgeous Gabriella has a personality that matches her beauty. Lovely lovely girl. She came in for a scale and polish yesterday to keep her teeth pearly white and healthy. Have you got a cat with a coat like this?"
 
@@ -48,7 +42,7 @@ Or play table football.
 <iframe src="https://www.youtube.com/embed/9kd4d9QK6Mw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 
-Or meow into a megaphone.
+Or even meow into a megaphone.
 
 <div class="youtube-player">
 <iframe src="https://www.youtube.com/embed/VQmPnaryERs?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -67,8 +61,12 @@ The ones you don't see.
 
 The ones who don't make a fuss when they see a cucumber.
 
-The loveable, down-to-earth furry creatures we love.
+The loveable, down-to-earth fluffy creatures we love.
+
+![Gabby]({{ "/blog/gabby.jpg" | relative_url }})
 
 So if you're trying to turn your cat into an internet sensation.
 
-Ask whether that's what your cat wants, or what you want.
+Ask yourself seriously.
+
+Is that what your cat wants, or what you want?

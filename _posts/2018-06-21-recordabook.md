@@ -26,7 +26,7 @@ A book of rap classics, rewritten for the recorder.
 ![Recorda Boi](/blog/recordabook-4.jpg)
 ![Recorda Boi](/blog/recordabook-5.jpg)
 
-Message me on the 'gram for the <a href="https://instagram.com/recordaboi">play-along CD</a>
+Message me on my Instagram for the <a href="https://instagram.com/recordaboi">play-along CD</a>
 
 Never give up,
 

@@ -7,5 +7,5 @@ image: /portfolio/itsnichethat.jpg
 press:
   - name: 'British Comedy Guide'
     article_link: 'https://www.comedy.co.uk/online/its_niche_that/episodes/1/1/'
-order: 4
+order: 7
 ---
