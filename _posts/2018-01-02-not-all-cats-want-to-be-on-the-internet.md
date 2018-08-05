@@ -6,15 +6,17 @@ image: /blog/shycat-1.jpg
 videos: true
 ---
 
+
+
 Back when Keyboard Cat and Grumpy Cat were almost household names.
 
-And like any cat owner at the time I too wanted my cat to be famous.
+And like any cat owner at the time, I too wanted my cat to be famous.
 
 ![Gabby]({{ "/blog/shycat-1.jpg" | relative_url }})
 
 I always knew Gabby was somehow special.
 
-After all, she had been [featured on the Facebook page of the local vet](https://www.facebook.com/VillageVetMeldreth/photos/a.289767831387612.1073741829.279734152390980/503026170061776/?type=3&theater).
+After all, she was once [featured on the Facebook page of the local vet](https://www.facebook.com/VillageVetMeldreth/photos/a.289767831387612.1073741829.279734152390980/503026170061776/?type=3&theater).
 
 > "Gorgeous Gabriella has a personality that matches her beauty. Lovely lovely girl. She came in for a scale and polish yesterday to keep her teeth pearly white and healthy. Have you got a cat with a coat like this?"
 
