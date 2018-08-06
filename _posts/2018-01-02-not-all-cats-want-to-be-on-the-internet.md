@@ -57,7 +57,7 @@ The ones you don't see.
 
 Those loveable, down-to-earth, fluffy creatures.
 
-Who sit in trees, not roombas.
+Who sit in trees, not on roombas.
 
 ![Gabby]({{ "/blog/gabby.jpg" | relative_url }})
 
