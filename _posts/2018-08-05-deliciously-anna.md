@@ -52,6 +52,6 @@ Just like how I spoke with Yogesh.
 
 Because it doesn't always matter if love is real or fake.
 
-As long as you make a convincing illusion of it.
+As long as you have a convincing illusion of it.
 
 *Visit [Lifefaker.com](http://lifefaker.com/) and sign up for a fake profile today*
