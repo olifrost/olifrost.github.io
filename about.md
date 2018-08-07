@@ -7,11 +7,11 @@ date: '2016-11-17T06:41:36+00:00'
 
 Oli Frost is a business magnate, visionary, and serial founder.
 
-Some say this is a lie and he is actually a satirist.
+Some say this is a lie and he is actually "some kind of satirist".
 
 Most say he wrote this bio himself.
 
-Work featured on *BBC, Channel 4 News, Vice, The Guardian, New York Post, DAZED, Huffington Post, The Independent, The Telegraph, Mail Online, Fox News, Forbes, Gizmodo, Motherboard, i-d, Metro, Evening Standard, ABC, Refinery 29, UNILAD, LadBible, Business Insider, RT, Mic, Stylist, Al Jazeera, The Big Issue, Product Hunt, Lifehacker, Reddit, Hacker News, CNET, Fast Company, Designboom, Design Taxi, Creative Review, Shortlist, Cheezburger, Britain's Got Talent, Creative Circle '17 Best New Talent*.
+Work featured on *BBC, Channel 4 News, Vice, The Guardian, New York Post, DAZED, Huffington Post, The Independent, The Telegraph, Mail Online, Fox News, Forbes, Gizmodo, It's Nice That, Motherboard, i-d, Metro, Evening Standard, ABC, Refinery 29, UNILAD, LadBible, Business Insider, RT, Mic, Stylist, Al Jazeera, The Big Issue, Product Hunt, Lifehacker, Reddit, Hacker News, CNET, Fast Company, Designboom, Design Taxi, Creative Review, Shortlist, Cheezburger, Britain's Got Talent, Creative Circle '17 Best New Talent*.
 
 # FAQ
 

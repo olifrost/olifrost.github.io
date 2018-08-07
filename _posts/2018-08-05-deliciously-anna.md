@@ -2,7 +2,7 @@
 layout: post
 title: I pretend I'm a married woman on Instagram
 description: Last month I launched <a href="http://lifefaker.com/"> Lifefaker.com</a>, the online life faking service.
-image: /blog/catfish-1.jpg
+image: /blog/anna-profile.jpg
 date: 2018-08-06
 ---
 
@@ -14,7 +14,7 @@ There was [Oli Foster](https://www.instagram.com/oli_foster_artist/), an unsettl
 
 And [Deliciously Anna](https://www.instagram.com/deliciously_anna/), an entrepreneur, food lover, and mum of two.
 
-![Deliciously Anna](/blog/catfish-1.jpg)
+![Deliciously Anna](/blog/anna-profile.jpg)
 
 The profiles started to become more popular than my real self.
 
@@ -24,7 +24,7 @@ And then "Yogesh", a man from India, slid into my DMs.
 
 We spoke intimately for three months.
 
-![Anna Chat 2](/blog/catfish5.jpg)
+![Anna Chat 2](/blog/anna-long.jpg)
 
 And then he was gone.
 
@@ -44,7 +44,7 @@ So when the tears had dried, an idea came to me.
 
 I logged onto my other fake account, [Oli Foster](https://www.instagram.com/oli_foster_artist/), and slid myself a DM.
 
-![Anna Chat 4](/blog/catfish-foster.jpg)
+![Anna Chat 4](/blog/anna-foster.jpg)
 
 Myself as [Anna](https://www.instagram.com/deliciously_anna/) now speaks with myself as [Oli Foster](https://www.instagram.com/oli_foster_artist/) almost every night.
 
