@@ -5,7 +5,7 @@ date: '2016-11-17T06:41:36+00:00'
 ---
 ![Oli Frost](/img/olifrost.jpg)
 
-Oli Frost is a business magnate, visionary, and serial founder.
+Oli Frost is a business magnate, visionary, and professional recorder player.
 
 Some say this is a lie and he is actually "some kind of satirist".
 
@@ -23,9 +23,6 @@ I was born in 1991 in Hackney, London – back when it was edgy – but I am cur
 
 ## Why do you have a coat hook on your shirt?
 It's a <a href="http://olifro.st/blog/shook-shirt-hook/"> SHOOK.</a>
-
-## Are you a Russian hacker?
-I am 1/32th Russian on my dad's side and have successfully installed several viruses onto my own computer.
 
 ## Do you have any qualifications?
 I did Philosophy at UCL – I learnt to question the meaning of life and (more often) the meaning of a philosophy degree.
