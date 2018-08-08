@@ -3,6 +3,8 @@ layout: post
 title: Not all cats want to be on the internet
 description: It was the cat internet boom of 2014.
 image: /blog/shycat-1.jpg
+redirect_from:
+  - /blog/not-all-cats-want-to-be-on-the-internet
 videos: true
 ---
 
