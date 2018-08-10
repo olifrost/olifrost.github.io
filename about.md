@@ -11,7 +11,7 @@ Some say this is a lie and he is actually "some kind of satirist".
 
 Most say he wrote this bio himself.
 
-Work featured on *BBC, Channel 4 News, Vice, The Guardian, New York Post, DAZED, Huffington Post, The Independent, The Telegraph, Mail Online, Fox News, Forbes, Gizmodo, It's Nice That, Motherboard, i-d, Metro, Evening Standard, ABC, Refinery 29, UNILAD, LadBible, Business Insider, RT, Mic, Stylist, Al Jazeera, The Big Issue, Product Hunt, Lifehacker, Reddit, Hacker News, CNET, Fast Company, Designboom, Design Taxi, Creative Review, Shortlist, Cheezburger, Britain's Got Talent, Creative Circle '17 Best New Talent*.
+Work featured on *BBC, Channel 4 News, UK Parliament, Vice, Britain's Got Talent, The Guardian, New York Post, DAZED, Huffington Post, Mail Online, Fox News, Forbes, ABC, It's Nice That, Refinery 29, Business Insider, Creative Review, Lifehacker, UNILAD, LadBible, Fast Company, Designboom, The Independent, The Telegraph, Gizmodo, Motherboard, i-d, Metro, Shortlist, Evening Standard, RT, Mic, Stylist, Al Jazeera, The Big Issue, Product Hunt, Reddit, Hacker News #1, CNET, Design Taxi, Creative Circle '17 Best New Talent*.
 
 # FAQ
 
@@ -19,10 +19,10 @@ Work featured on *BBC, Channel 4 News, Vice, The Guardian, New York Post, DAZED,
 Not sure yet.
 
 ## Where are you from?
-I was born in 1991 in Hackney, London – back when it was edgy – but I am currently <a href="http://olifro.st/blog/sao-tome-citizen/">seeking citizenship in São Tomé</a>.
+I was born in 1991 in Hackney, London – back when it was edgy – but I am currently [seeking citizenship in São Tomé](/blog/sao-tome-citizen/).
 
 ## Why do you have a coat hook on your shirt?
-It's a <a href="http://olifro.st/blog/shook-shirt-hook/"> SHOOK.</a>
+It's a [SHOOK](/blog/shook-shirt-hook/).
 
 ## Do you have any qualifications?
 I did Philosophy at UCL – I learnt to question the meaning of life and (more often) the meaning of a philosophy degree.
