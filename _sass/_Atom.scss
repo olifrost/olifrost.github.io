@@ -141,6 +141,14 @@ header {
   float: left;
 }
 
+.nw {
+  white-space: nowrap;
+}
+
+
+
+
+
 @media only screen and (min-width: $first-breakpoint) {
     .name {
 
@@ -153,6 +161,26 @@ header {
       float: right;
 
     }
+
+    footer .social {
+      position: relative;
+      bottom: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: $first-breakpoint) {
+
+.footer-social {
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
+}
+footer .social {
+  position: relative;
+  bottom: 1em;
+}
+
 }
 
 // Icons

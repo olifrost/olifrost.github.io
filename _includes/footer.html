@@ -1,8 +1,18 @@
-
+<footer>
   <div class="row">
-      <div class="col-xs-12">
-        <footer>
-        &copy; Oliver Frost, Ollie Frost, Olly Frost, or however you misspell it.
-        </footer>
-      </div>
+    <div class="col-xs-12 col-sm-7 footer">
+      &copy; Oliver Frost, Ollie Frost, Olly Frost, or <span class="nw">however you misspell it.</span>
+    </div>
+    <div class="col-xs-12 col-sm-5 footer-social">
+        <small class="social">{% if site.twitter.username %}
+          {% include icon-twitter.html username=site.twitter.username %}
+        {% endif %}
+        {% if site.author.instagram %}
+          {% include icon-instagram.html username=site.author.instagram %}
+        {% endif %}
+        {% if site.author.email %}
+          {% include icon-mail.html username=site.author.email %}
+        {% endif %}</small>
+    </div>
   </div>
+</footer>
