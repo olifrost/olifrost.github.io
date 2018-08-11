@@ -2,7 +2,7 @@
 layout: post
 title: Edible Leaflets
 link: http://edibleleaflets.oliandjosie.com
-description: Bread wasted more than any other food. So we toasted waste-saving ideas onto slices and gave them out like flyers.
+description: Tips on how to waste less bread, toasted onto bread.
 link: http://edibleleaflets.oliandjosie.com
 press:
   - name: Evening Standard

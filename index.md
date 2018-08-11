@@ -56,7 +56,7 @@ image: /blog/shook-1.jpg
 # Work For Brands
 
 {% assign brands = site.brands | sort: 'order' %}
-{% for project in brands %}
+{% for project in brands limit: 3 %}
 <div class="project-section">
           {% if project.video != nil %}
           <div class="youtube-player" data-id="{{ project.video }}" data-thumb="{{ project.image }}"></div>
