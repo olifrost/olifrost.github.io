@@ -2,7 +2,7 @@
 layout: post
 title: I became Russia's nicest hacker
 description: Fake news has had a lot of bad press.
-date: 2018-08-08
+date: 2018-08-14
 videos: PPwZPhOHRgg
 image: /blog/NFN-Thumb.jpg
 ---
