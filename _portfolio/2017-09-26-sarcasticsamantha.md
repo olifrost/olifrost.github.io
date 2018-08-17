@@ -2,6 +2,7 @@
 layout: post
 title: Sarcastic Samantha
 description: An app that reads your ideas back to you in a sarcastic, patronising tone.
+video: EDyJaSfYrEQ
 image: /portfolio/sarcasticsamantha.jpg
 link: http://olifro.st/sarcasticsamantha
 press:

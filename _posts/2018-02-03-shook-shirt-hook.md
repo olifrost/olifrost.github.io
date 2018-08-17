@@ -3,6 +3,7 @@ layout: post
 title: Am I the father of wearable technology?
 description: I first noticed the problem ten years ago.
 image: /blog/shook-1.jpg
+featured: yes
 ---
 
 <style>
@@ -23,7 +24,7 @@ Instead, I carried it over my shoulder.
 ![Shook Headshot](/blog/shook-0.jpg)
 
 
-This was cool, but inconveniennt.
+This was cool, but inconvenient.
 
 It meant using my *actual hands*.
 

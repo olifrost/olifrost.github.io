@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grand Prix Generator
-description: A generator for the “world-saving” campaigns that win big in advertising awards.
+description: A generator for the “world-saving” campaigns that win big in ad awards.
 image: /portfolio/grandprixgenerator.jpg
 link: http://olifro.st/grandprixgenerator
 order: 8

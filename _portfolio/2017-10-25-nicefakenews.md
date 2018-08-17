@@ -7,7 +7,7 @@ video: PPwZPhOHRgg
 link: http://nicenews.live
 published: false
 order: 4
-press-2:
+press:
   - name: "It's Nice That"
     article_link: "https://www.itsnicethat.com/news/nice-fake-news-website-oli-frost-digital-010818"
 ---

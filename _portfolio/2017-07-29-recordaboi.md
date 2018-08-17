@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Recorda Boi
-description: A musical project that combines hip-hop with the recorder. I once played for <a href="http://olifro.st/blog/britains-got-talent/">Simon Cowell</a>.
+description: A musical project that combines hip-hop with the recorder.
 video: DdyU-Qfv-kY
 image: /portfolio/recordaboi.jpg
 link: http://olifro.st/recordaboi

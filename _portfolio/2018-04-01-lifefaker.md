@@ -5,6 +5,7 @@ description: A startup that helps you fake your perfect online life.
 image: /portfolio/lifefaker.jpg
 link: http://lifefaker.com
 order: 1
+video: IuibG80U-Gs
 press:
   - name: 'BBC'
     article_link: "https://www.bbc.co.uk/bbcthree/article/10f77fff-06ed-4c11-a91a-d1413df96d23"
