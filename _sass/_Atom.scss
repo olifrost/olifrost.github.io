@@ -65,7 +65,7 @@ p, .title, li, ol, ul {
 // Footer
 
 footer {
-  margin-top: 3rem;
+  margin-top: 2.5rem;
   color: $gray-3;
   margin-bottom: 2rem;
   text-align: left;
@@ -169,6 +169,22 @@ header {
 
 }
 
+footer .social .icons {
+  position: relative;
+  bottom: -0.6em;
+  margin-right: 1rem;
+}
+
+/*
+footer input[type='submit'] {
+	position: relative;
+  top: -0px;
+  left: -2rem;
+  border-top-left-radius: 0rem;
+  border-bottom-left-radius: 0rem;
+}
+*/
+
 @media only screen and (max-width: $first-breakpoint) {
 
 .footer-social {
@@ -177,9 +193,10 @@ header {
   order: -1;
 }
 footer .social {
-  position: relative;
-  bottom: 1em;
+  margin-bottom: 2.5rem;
 }
+
+
 
 }
 

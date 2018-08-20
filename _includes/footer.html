@@ -1,18 +1,30 @@
 <footer>
   <div class="row">
-    <div class="col-xs-12 col-sm-7 footer">
+    <div class="col-xs-12 col-sm-5 footer">
       &copy; Oliver Frost, Ollie Frost, Olly Frost, or <span class="nw">however you misspell it.</span>
     </div>
-    <div class="col-xs-12 col-sm-5 footer-social">
-        <small class="social">{% if site.twitter.username %}
+    <div class="col-xs-12 col-sm-7 footer-social center-xs">
+
+        <small class="social">
+<div>
+        <span class="icons">
+          {% if site.twitter.username %}
           {% include icon-twitter.html username=site.twitter.username %}
         {% endif %}
         {% if site.author.instagram %}
           {% include icon-instagram.html username=site.author.instagram %}
         {% endif %}
-        {% if site.author.email %}
-          {% include icon-mail.html username=site.author.email %}
-        {% endif %}</small>
+      </span>
+
+        <form action="https://formspree.io/mail@olifro.st" method="POST">
+          <input type="email" name="replyto"  id="Email" placeholder="Your Email" class="email">
+          <input type="hidden" name="_next" value="/" />
+          <input type="submit" value="Join">
+        </form>
+</div>
+      </small>
+
+
     </div>
   </div>
 </footer>

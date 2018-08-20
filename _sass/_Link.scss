@@ -16,7 +16,8 @@ a {
 
 	&:focus,
 	&:hover {
-		color: $yellow;
+		color: black;
+		/*text-decoration: underline;*/
 	}
 }
 

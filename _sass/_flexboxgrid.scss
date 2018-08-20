@@ -119,6 +119,12 @@
   max-width: 100%;
 }
 
+
+.center-xs {
+  justify-content: center;
+  text-align: center;
+}
+
 @media only screen and (min-width: $first-breakpoint) {
 
   .col-sm,
