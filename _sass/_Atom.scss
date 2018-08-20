@@ -64,6 +64,10 @@ p, .title, li, ol, ul {
 
 // Footer
 
+main div:last-child p {
+  margin-bottom: 0rem;
+}
+
 footer {
   margin-top: 2.5rem;
   color: $gray-3;
