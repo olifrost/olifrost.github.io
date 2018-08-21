@@ -28,15 +28,15 @@ And Sarcastic Samantha responded.
 
 With relentless snarkiness.
 
-<div class="youtube-player" data-id="SifTXVA23no" data-thumb="/blog/SS-Sam.png"></div>
+<div class="youtube-player" data-id="zK6vwxjbllg" data-thumb="/blog/SS-Sam.png"></div>
 
 I changed the voice to Condescending Karl for another take.
 
-<div class="youtube-player" data-id="XDOtX2_jvD4" data-thumb="/blog/SS-Karl.png"></div>
+<div class="youtube-player" data-id="-TzytzYOWHI" data-thumb="/blog/SS-Karl.png"></div>
 
 …and then to Sardonic Sara.
 
-<div class="youtube-player" data-id="cwWS-xWpGFI" data-thumb="/blog/SS-Karen.png"></div>
+<div class="youtube-player" data-id="Uc06a6f9fAU" data-thumb="/blog/SS-Karen.png"></div>
 
 I was devastated.
 
