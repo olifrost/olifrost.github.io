@@ -2,9 +2,8 @@
 layout: post
 title: Sarcastic Samantha
 description: An app that reads your ideas back to you in a sarcastic, patronising tone.
-video: 4RolX_ucTHI 
 image: /portfolio/sarcasticsamantha.jpg
-link: http://olifro.st/sarcasticsamantha
+link: http://olifro.st/blog/sarcastic-samantha
 press:
   - name: 'Lifehacker'
     article_link: 'https://lifehacker.com/ios-sarcastic-samantha-privately-mocks-things-with-you-1818822777'
