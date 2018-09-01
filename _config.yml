@@ -3,8 +3,8 @@ permalink:           /blog/:title/
 
 # Setup
 title:               Oli Frost
-tagline:             Also known as Oliver Frost, Ollie Frost, Olly Frost, or however you misspell it.
-description:         Also known as Oliver Frost, Ollie Frost, Olly Frost, or however you misspell it.
+tagline:             Also known as Oliver Frost, Ollie Frost, Olly Frost, or however you misspelt it.
+description:         Also known as Oliver Frost, Ollie Frost, Olly Frost, or however you misspelt it.
 footer:              Oliver Frost, Ollie Frost, Olly Frost, or however you misspell it.
 
 exclude:             [/psd/]
