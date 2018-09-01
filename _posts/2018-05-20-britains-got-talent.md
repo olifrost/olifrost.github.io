@@ -9,4 +9,8 @@ featured: yes
 
 <div class="youtube-player" data-id="{{ page.videos }}" data-thumb="{{ page.image }}"></div>
 
+For bookings and collaborations please [contact me here](http://olifro.st/recordaboi).
+
+For sheet music you can download my [recorder book](http://olifro.st/blog/recordabook).
+
 *Performance begins at 02:45*

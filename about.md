@@ -25,20 +25,20 @@ Only for short trips to the shops.
 ## Are you still accepting bids on your personal data?
 Only in [excess of £300](http://olifro.st/blog/data-on-ebay/).
 
-## Do you write, direct, and develop your projects yourself?
-What a great question. Yes I do.
+## Did you create this dope website with Wix?
+No, all my work is traditionally hand-coded.
 
 ## Will you do something for me?
 <a href="mailto:{{ site.author.email }}">Ask me</a>.
 
 ## Will you play recorder at my event?
-<a href="http://olifro.st/recordaboi/">Ask Recorda Boi</a>.
+<a href="http://olifro.st/blog/britains-got-talent/">Ask Recorda Boi</a>.
 
 ## Will you speak at my event?
-Yes, but I speak very quietly.
+Yes, but don't you want me to play recorder?
 
 ## What are you doing next?
-It will be on <a href="https://twitter.com/realolifrost">Twitter</a>, <a href="https://www.instagram.com/realolifrost/">Instagram</a>, or this old school <a href="mailto:mail@olifro.st?subject=I'd like to join the mailing list&">mailing list</a>.
+It'll be on <a href="https://twitter.com/realolifrost">Twitter</a>, <a href="https://www.instagram.com/realolifrost/">Instagram</a>, or this old school <a href="mailto:mail@olifro.st?subject=I'd like to join the mailing list&">mailing list</a>.
 
 ## Shouldn't you have a list of coverage here?
 Ok, if you insist… *BBC, Channel 4 News, Vice, UK Parliament, Britain's Got Talent, The Guardian, New York Post, DAZED, Huffington Post, Mail Online, Fox News, Forbes, ABC, It's Nice That, Refinery 29, Business Insider, Creative Review, Lifehacker, UNILAD, LadBible, Fast Company, Designboom, The Independent, The Telegraph, Gizmodo, Motherboard, i-d, Metro, Shortlist, Evening Standard, RT, Mic, Stylist, Al Jazeera, The Big Issue, Product Hunt, Reddit, Hacker News #1, CNET, Design Taxi, Creative Circle '17 Best New Talent*.
