@@ -29,7 +29,7 @@ No, all my work is traditionally hand-coded.
 [Ask me](mailto:{{ site.author.email }}). As long as it's not weird…
 
 ## Will you play recorder at my event?
-Ask [Recorda Boi](http://olifro.st/blog/britains-got-talent/)</a>.
+Ask [Recorda Boi](http://olifro.st/blog/britains-got-talent/).
 
 ## Can I buy all your personal data?
 [Sure](http://olifro.st/blog/data-on-ebay/), it'd be quicker than answering all these questions.
