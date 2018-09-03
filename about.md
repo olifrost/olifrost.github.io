@@ -26,10 +26,10 @@ Only for short trips to the shops.
 No, all my work is traditionally hand-coded.
 
 ## Will you do something for me?
-<a href="mailto:{{ site.author.email }}">Ask me</a>.
+[Ask me](mailto:{{ site.author.email }}). As long as it's not weird…
 
 ## Will you play recorder at my event?
-<a href="http://olifro.st/blog/britains-got-talent/">Ask Recorda Boi</a>.
+Ask [Recorda Boi](http://olifro.st/blog/britains-got-talent/)</a>.
 
 ## Can I buy all your personal data?
 [Sure](http://olifro.st/blog/data-on-ebay/), it'd be quicker than answering all these questions.
