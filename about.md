@@ -22,9 +22,6 @@ I did Philosophy at UCL – I learnt to question the meaning of life and (more o
 ## When a shirt becomes a pyjama shirt can it ever go back?
 Only for short trips to the shops.
 
-## Are you still accepting bids on your personal data?
-Only in [excess of £300](http://olifro.st/blog/data-on-ebay/).
-
 ## Did you create this dope website with Wix?
 No, all my work is traditionally hand-coded.
 
@@ -34,8 +31,8 @@ No, all my work is traditionally hand-coded.
 ## Will you play recorder at my event?
 <a href="http://olifro.st/blog/britains-got-talent/">Ask Recorda Boi</a>.
 
-## Will you speak at my event?
-Yes, but don't you want me to play recorder?
+## Can I buy all your personal data?
+[Sure](http://olifro.st/blog/data-on-ebay/), it'd be quicker than answering all these questions.
 
 ## What are you doing next?
 It'll be on <a href="https://twitter.com/realolifrost">Twitter</a>, <a href="https://www.instagram.com/realolifrost/">Instagram</a>, or this old school <a href="mailto:mail@olifro.st?subject=I'd like to join the mailing list&">mailing list</a>.
