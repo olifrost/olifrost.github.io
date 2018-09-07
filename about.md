@@ -17,7 +17,7 @@ To see what's next you can [join my mailing list](#footer), which has taken a bi
 Not sure yet.
 
 ## Where are you from?
-Well, I was born London but I'm currently [seeking citizenship in São Tomé](/blog/sao-tome-citizen/).
+I was born London but I'm currently [seeking citizenship in São Tomé](/blog/sao-tome-citizen/).
 
 ## Why do you have a coat hook on your shirt?
 It's a [SHOOK](/blog/shook-shirt-hook/).
