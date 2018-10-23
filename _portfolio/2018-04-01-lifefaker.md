@@ -25,7 +25,7 @@ press:
     article_link: "http://www.ladbible.com/mental-health/interesting-hours-on-social-media-could-be-affecting-your-mental-health-20180508"
   - name: 'Shortlist'
     article_link: "https://www.shortlist.com/tech/online-life-faking-service-mental-health-sanctus/356223"
-  - name: 'CreativeReview'
+  - name: 'Creative Review'
     article_link: "https://www.creativereview.co.uk/satirical-website-lifefaker-highlights-anxiety-caused-social-media/"
   - name: 'Designboom'
     article_link: "https://www.designboom.com/readers/lifefaker-photo-package-oli-frost-05-02-2018/"

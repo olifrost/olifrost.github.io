@@ -3,6 +3,7 @@ layout: post
 title: The Homeless Period
 description: The first campaign to raise the issue of sanitary care access for homeless women. Now run by supporters around the world.
 link: http://thehomelessperiod.com
+image: /portfolio/homelessperiod.jpg
 press:
   - name: UK Parliament
     article_link: 'https://www.facebook.com/thehomelessperiod/posts/1211915425541708'

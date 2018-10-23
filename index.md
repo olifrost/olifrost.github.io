@@ -31,7 +31,7 @@ image: /blog/shook-1.jpg
   {% endfor %}
 </div>
 
----------------
+---
 
 # Work For Causes
 <p></p>
@@ -40,6 +40,9 @@ image: /blog/shook-1.jpg
 
   {% for project in causes %}
   <div class="project-section">
+        {% if forloop.index < 2 %}
+        <img src="{{ project.image | relative_url }}">
+        {% endif %}
         <a href="{{ project.link }}"><span class="title">>> {{ project.title }}</span></a>
         <p> {{ project.description }}<br>
         {% for press in project.press %}
@@ -68,3 +71,20 @@ image: /blog/shook-1.jpg
           </p>
     </div>
 {% endfor %}
+
+---
+
+# Further Reading
+{% for post in site.posts %}
+
+{% if post.featured %}
+  <div class="post">
+
+
+    <h1 class="post-title" style="margin-bottom: 0rem;"><a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a></h1>
+    {% if post.description %}<p class="post-description">{{ post.description }}…</p>{% endif %}
+
+  </div>
+  {% endif %}
+{% endfor %}
+---------------
