@@ -13,7 +13,7 @@ Click to **[ Skip Ads >>](/)**
 <div class="posts">
 {% assign portfolio = site.portfolio | sort: 'order' %}
 
-  {% for project in portfolio | limit: 1 %}
+  {% for project in portfolio limit: 1 %}
         <div class="project-section">
         {% if project.video != nil %}
         <div class="youtube-player" data-id="{{ project.video }}" data-thumb="{{ project.image }}"></div>
@@ -33,7 +33,7 @@ Click to **[ Skip Ads >>](/)**
 
 {% assign causes = site.causes | sort: 'order' %}
 
-  {% for project in causes | limit: 1 %}
+  {% for project in causes limit: 1 %}
   <div class="project-section">
         <img src="{{ project.image | relative_url }}">
 
