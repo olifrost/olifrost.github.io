@@ -64,4 +64,4 @@ Early reviews on [Product Hunt](https://www.producthunt.com/posts/sarcastic-sama
 
 There is one week left to not enjoy the app that hates itself.
 
-[Download Sarcastic Samantha on the App Store](https://itunes.apple.com/gb/app/sarcastic-samantha/id1276227679?mt=8)
+[Download Sarcastic Samantha on the App Store (Expired)]()
