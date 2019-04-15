@@ -8,7 +8,7 @@ featured: yes
 
 ![Oli Frost]({{ "/blog/olifrost-flag.jpg" | relative_url }})
 
-On December 23rd I registered the domain [http://olifro.st](http://olifro.st)
+On December 23rd I registered the domain [http://olifro.st]({{https://olifro.st}})
 
 At the time it seemed clever.
 
@@ -119,7 +119,7 @@ If one drink was usually enough then a whole fridge would be hard to resist.
 
 # What Next?
 
-I still haven't heard from Isaulina or the São Toméan government, but I'll be [posting updates](https://twitter.com/realolifrost) as and when.
+I still haven't heard from Isaulina or the São Toméan government, but I'll be [posting updates](https://twitter.com/{{ site.author.twitter }}) as and when.
 
 Please [email me](mailto:{{ site.author.email }}) if you have any help to offer.
 

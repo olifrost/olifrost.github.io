@@ -4,7 +4,7 @@ title: NFN (Nice Fake News)
 description: A fake news site that publishes false but inspiring stories.
 image: /portfolio/nicefakenews.jpg
 video: PPwZPhOHRgg
-link: http://olifro.st/blog/russian-hacker/
+link: https://olifro.st/blog/russian-hacker/
 order: 4
 press:
   - name: "It's Nice That"
