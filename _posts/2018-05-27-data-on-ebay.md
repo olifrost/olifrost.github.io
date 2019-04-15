@@ -8,7 +8,7 @@ date: 2018-05-27
 
 Bidding starts at £0.99 and ends Sunday.
 
-<a href="https://webcache.googleusercontent.com/search?q=cache:BN1pTzqUJiwJ:https://www.ebay.co.uk/itm/All-my-personal-Facebook-data-/273239941454+&cd=6&hl=en&ct=clnk&gl=uk">>> eBay Listing</a>
+<a href="#update">>> eBay Listing</a>
 
 Sell it to advertisers or whatever you want.
 
@@ -33,7 +33,7 @@ Money's going to the <a href="https://www.eff.org/">Electronic Frontier Foundati
 
 Download and sell your own data with <a href="https://www.facebook.com/dyi/?x=AdndIvCzUH9ebQL8&referrer=yfi_settings">Facebook's download tool</a>.
 
-## UPDATE: The highest bid before they got to it
+<h2 id="update"> UPDATE: The highest bid before they got to it</h2>
 
 ![£300](/blog/ebayfinal2.jpg)
 

@@ -1,12 +1,12 @@
 ---
 layout: post
 title: I got my girlfriend on Getty Images
-description: For alot of guys, getting a girlfriend is all about one thing.
-image: blog/gettygirlfriend.jpg
+description: For a lot of guys, getting a girlfriend is all about one thing.
+image: blog/gettygirlfriendcover.jpg
 library: https://drive.google.com/drive/folders/1m-DnqOabNWLGDokBUec7YVOAhRwpiBYd?usp=sharing
 carousel-items: 1
 images:
-  - name: /blog/gettygirlfriend.jpg
+  - name: /blog/gettygirlfriend1.jpg
     alt: Getty Girlfriend 1
   - name: /blog/gettyboyfriend.jpg
     alt: Getty Boyfriend 1
@@ -24,6 +24,16 @@ images:
   position: relative;
   bottom: 0.5em;
 }
+
+@media (max-width: 60em) {
+
+  .button {
+    display: block;
+    margin-top: 1em;
+  }  
+
+}
+
 </style>
 
 
@@ -55,9 +65,9 @@ Freddy, Tibby, and [Robert Mugabe](/blog/not-all-cats/).
 
 But around Valentine's last year I was feeling the pressure.
 
-With a half-drunk bottle of Corona Light in my hand, I went to GettyImages.
+With a half-drunk bottle of Corona Light in my hand, I went to Getty Images.
 
-I set my search to "girl smiling", there she was.
+I set my search to "girl smiling", and there she was.
 
 *Amy*, my ginger dream.
 
@@ -65,7 +75,7 @@ I didn't need to see the 97,494 other results.
 
 Every time I checked the time, it was like time stopped.
 
-(Although when I checked again, it hadn't, although it felt like it did again)
+(Although when I checked again, it hadn't, but it felt like it did again)
 
 But after a few months, somehow, I started to become *bored* of Amy.
 
@@ -87,7 +97,7 @@ But sure enough the same thing happened.
 
 After a few weeks I was bored.
 
-Her beanie lost its luster.
+Her beanie lost its lustre.
 
 And with it, the lust I had for her.
 
@@ -117,9 +127,9 @@ After only a few hours I was back on GettyImages
 
 ![](/blog/getty-6.jpg)
 
-![](/blog/getty-5.jpg)
-
 ![](/blog/getty-4.jpg)
+
+![](/blog/getty-5.jpg)
 
 I went through hundreds of backgrounds.
 
@@ -144,7 +154,7 @@ And in this one, Amy had a boyfriend.
 
 I had left it too long, thinking Amy would wait.
 
-Tears fell, which landed on my screen, which still had GettyImages loaded.
+Tears fell, which landed on my screen, which still had Getty Images loaded.
 
 And then through the tear drop I saw her.
 
@@ -158,7 +168,7 @@ She looked a bit like Amy.
 
 And that's when I realised.
 
-There isn't *one person* for all of us.
+There isn't just *one person* for each of us.
 
 There are lots of very similar, almost identical people, who will do just fine.
 

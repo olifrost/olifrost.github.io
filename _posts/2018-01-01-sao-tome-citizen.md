@@ -121,6 +121,6 @@ If one drink was usually enough then a whole fridge would be hard to resist.
 
 I still haven't heard from Isaulina or the São Toméan government, but I'll be [posting updates](https://twitter.com/realolifrost) as and when.
 
-Please [email me](mailto:oli@olifro.st) if you have any help to offer.
+Please [email me](mailto:{{ site.author.email }}) if you have any help to offer.
 
 I will not give up.

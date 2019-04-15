@@ -141,30 +141,28 @@ header {
   margin-bottom: 0rem;
   float: right;
 }
-.social {
-  float: left;
-}
 
 .nw {
   white-space: nowrap;
 }
 
 
+header .social {
+  float: right;
+}
 
-
+footer .social {
+  float: left;
+}
 
 @media only screen and (min-width: $first-breakpoint) {
-    .name {
 
-    }
+
     .pages {
       float: none;
 
     }
-    .social {
-      float: right;
 
-    }
 
     footer .social {
       position: relative;
@@ -189,7 +187,18 @@ footer input[type='submit'] {
 }
 */
 
+.footer {
+  text-align: right;
+}
+
 @media only screen and (max-width: $first-breakpoint) {
+
+  header .social {
+    float: left;
+  }
+  .footer {
+    text-align: left;
+  }
 
 .footer-social {
   -webkit-box-ordinal-group: 0;

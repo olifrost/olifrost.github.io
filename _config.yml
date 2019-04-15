@@ -56,7 +56,7 @@ social:
     - https://instagram.com/realolifrost
 
 # Gems
-gems:
+plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
