@@ -81,7 +81,7 @@ image: /blog/shook-1.jpg
   <div class="post">
 
 
-    <h1 class="post-title" style="margin-bottom: 0rem;"><a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a></h1>
+    <h1 class="post-title" style="margin-bottom: 0rem;"><a href="{{ post.url }}">{{ post.title }}</a></h1>
     {% if post.description %}<p class="post-description">{{ post.description }}…</p>{% endif %}
 
   </div>
