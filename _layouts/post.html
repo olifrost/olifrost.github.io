@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<a href="{{ "/blog" | relative_url }}">← All Posts</a> / <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>
+<a href="{% link blog.md %}">← All Posts</a> / <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>
 
 <article class="post">
 
@@ -16,7 +16,7 @@ layout: default
   <a href="{{ post.url }}">» {{ post.title }} </a><br>
   {% endfor %}
   </p>
-  <a href="{{ "/blog" | relative_url }}">← All Posts</a> / <a href="/">View Work</a>
+  <a href="{% link blog.md %}">← All Posts</a> / <a href="/">View Work</a>
 
 
 </article>
