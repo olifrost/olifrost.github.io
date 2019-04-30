@@ -129,7 +129,7 @@ article, h1, .hero {
   <div class="row first-xs between-sm ">
     <div class="col-xs-12">
       <h1 class="headline"><span style="color:blue">Get £15</span> When You <span class="nobreak">Refer Me</span> A Friend</h1>
-      <p class="center">If we become friends, <span class="nobreak">you both get £15</span>.</p>
+      <p class="center">If we become friends, <span class="nobreak">you both get £15<a href="#faq">*</a></span>.</p>
 
       <div class="row first-xs between-sm ">
           <div class="col-xs-12">
@@ -266,7 +266,7 @@ Oli Frost removes himself from social situations without a word – it's called 
 <div class="col-xs-12 col-sm-6" markdown="1">
 
 **How do I make a referral?**  
-Any way you like online, as long as there is a link to this page. Reach me on [Instagram](http://instagram.com/{{ site.author.instagram}}), [Twitter](https://twitter.com/{{ site.author.twitter }}), or [email](mailto:{{ site.author.email }}).
+Any way you like, as long as there is a link back to this page. You can introduce us on [Instagram](http://instagram.com/{{ site.author.instagram}}), [Twitter](https://twitter.com/{{ site.author.twitter }}), or [email](mailto:{{ site.author.email }}).
 </div>
 
 <div class="col-xs-12 col-sm-6" markdown="1">
