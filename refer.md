@@ -183,7 +183,7 @@ Oli Frost removes himself from social situations without a word – it's called 
 
 ---
 
-## Offers for existing friends
+<h2>Offers for <span class="nobreak">existing friends</span></h2>
 
 <div class="row first-xs between-sm offers">
     <div class="col-xs-12 col-sm-6">
@@ -287,7 +287,7 @@ This isn't a Frequently Asked Question, but unfortunately I've already [found a 
 
   </div>
   <div class="col-xs-12 col-sm-6">
-      <h2><i class="fas fa-envelope-open"></i> Hear about new offers</h2>
+      <h2><i class="fas fa-envelope-open"></i> Hear about <span class="nobreak">new offers</span></h2>
       {% include mailinglist.html %}
   </div>
 </div>
