@@ -258,7 +258,7 @@ Oli Frost removes himself from social situations without a word – it's called 
   <div class="col-xs-12 col-sm-6" markdown="1">
 
   **How do you define "friend"?**  
-  The first time we meet up you'll an Oli Frost Loyalty Card. The second time you'll get your first smiley, and we'll be friends.
+  The first time we meet up you'll get an Oli Frost Loyalty Card. The second time you'll get your first smiley, and we'll be friends.
 
   </div>
 
