@@ -8,7 +8,7 @@ featured: yes
 
 ![Oli Frost]({{ "/blog/olifrost-flag.jpg" | relative_url }})
 
-On December 23rd I registered the domain [http://olifro.st]({{https://olifro.st}})
+On December 23rd I registered the domain [http://olifro.st](https://olifro.st)
 
 At the time it seemed clever.
 

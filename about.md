@@ -1,6 +1,6 @@
 ---
 layout: page
-title:
+image: /img/olifrost.jpg
 ---
 ![Oli Frost](/img/olifrost.jpg)
 

@@ -4,9 +4,9 @@ title: Oli Frost
 videos: true
 image: /blog/shook-1.jpg
 ---
-<span><semibold>Latest Update</semibold> {% for post in site.posts limit:1 %}
-<a href="{{ post.url }}">>> {{ post.title }} </a><br>{% endfor %}</span>
-
+<!--<span><semibold>Latest Update</semibold> {% for post in site.posts limit:1 %}
+<a href="{{ post.url }}">>> {{ post.title }} </a><br>{% endfor %}</span>-->
+<span><semibold>Latest Update</semibold> <a href="refer">>> Get £15 When You Refer Me A Friend</a><br></span>
 
 <div class="posts">
 
