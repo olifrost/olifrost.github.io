@@ -111,13 +111,14 @@ article, h1, .hero {
   font-size: 3rem;
 }
 
-@media only screen and (min-width: 38em;) {
-  header .social {
-        display: none !important;
+@media only screen and (max-width: 38em) {
+  .headline {
+      font-size: 6rem;
     }
-    h1 {
-      font-size: 3rem !important;
-    }
+}
+
+.nobreak {
+  white-space: nowrap;
 }
 
 </style>
@@ -127,8 +128,8 @@ article, h1, .hero {
 
   <div class="row first-xs between-sm ">
     <div class="col-xs-12">
-      <h1 class="headline"><span style="color:blue">Get £15</span> When You Refer Me A Friend</h1>
-      <p class="center">If we become friends, you both get £15.</p>
+      <h1 class="headline"><span style="color:blue">Get £15</span> When You <span class="nobreak">Refer Me</span> A Friend</h1>
+      <p class="center">If we become friends, <span class="nobreak">you both get £15</span>.</p>
 
       <div class="row first-xs between-sm ">
           <div class="col-xs-12">
@@ -242,7 +243,7 @@ Oli Frost removes himself from social situations without a word – it's called 
 
 ---
 
-## FAQ
+<h2 id="faq"></h2>
 
 
 <div class="row first-xs between-sm">
