@@ -43,11 +43,11 @@ From bot networks, to hi-jacking verified accounts.
 
 So I started a Discord server in Russia called Anonynice.
 
-A [channel for my hackers to co-ordinate](http://nicenews.live/joinus).
+A [channel for my hackers to co-ordinate](https://olifro.st/nfn/joinus).
 
 ![/blog/nfn-1.jpg](/blog/NFN3.jpg)
 
-Next I opened [a Bitcoin wallet to receive offshore financing](http://nicenews.live/donate).
+Next I opened [a Bitcoin wallet to receive offshore financing](https://olifro.st/nfn/donate).
 
 Funds to promote our posts on your corrupt social networks.
 
@@ -61,10 +61,10 @@ Until they publish some real nice news.
 
 <div class="youtube-player" data-id="{{ page.videos }}" data-thumb="{{ page.image }}"></div>
 
-A story about blind kittens has already been [shared thousands of times](http://nicenews.live/lonely-blind-cats-see-string/).
+A story about blind kittens has already been [shared thousands of times](https://olifro.st/nfn/lonely-blind-cats-see-string/).
 
 The storm has arrived.
 
 Choose your side, and choose carefully.
 
-*Visit [NFN World News](http://nicenews.live/) and spread some niceness.*
+*Visit [NFN World News](https://olifro.st/nfn) and spread some niceness.*
