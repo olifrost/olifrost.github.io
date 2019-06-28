@@ -5,7 +5,7 @@ description: A musical project that combines hip-hop with the recorder.
 video: V6q63u29dBg
 image: /portfolio/recordaboi.jpg
 link: https://olifro.st/blog/britains-got-talent/
-order: 4
+order: 3
 press:
   - name: "Britain's Got Talent 2018"
     article_link: "https://olifro.st/blog/britains-got-talent/"

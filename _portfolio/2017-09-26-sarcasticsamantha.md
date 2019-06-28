@@ -11,5 +11,5 @@ press:
     article_link: 'http://www.huffingtonpost.gr/2017/10/15/life-tech-sarcastic-samantha-ios-app_n_18182164.html'
   - name: 'Product Hunt'
     article_link: 'https://www.producthunt.com/posts/sarcastic-samantha'
-order: 5
+order: 6
 ---
