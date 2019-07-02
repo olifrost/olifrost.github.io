@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I made my lamp a social media personality
-description: We all know global warming is created by leaving the lights on.
+description: We all know climate change is caused by leaving the lights on.
 image: /blog/lamp-bio.jpg
 ---
 
@@ -13,7 +13,7 @@ But still, some days I left the house and couldn't remember if the lights were o
 
 I didn’t want to go home and check – I might miss my work’s free breakfast.
 
-So in my mission to [Refrost The Planet](/blog/refrost-the-planet/), I came up with a way for my lamp to let me know what it was up to.
+So as part of my mission to [Refrost The Planet](/blog/refrost-the-planet/), I came up with a way for my lamp to let me know what it was up to.
 
 By turning it into a social media personality.
 
