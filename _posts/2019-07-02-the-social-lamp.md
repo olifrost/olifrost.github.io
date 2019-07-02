@@ -1,17 +1,15 @@
 ---
 layout: post
-title: I made my lamp a social media personality
+title: I gave my bedroom lamp a social media personality
 description: We all know global warming is created by leaving the lights on.
 image: /blog/lamp-bio.jpg
 ---
 
 Much like animal agriculture and cross-atlantic business flights.
 
-In fact, leaving a low-energy lightbulb on for a year would be the carbon-equivalent of growing two lamb legs.
+But still, some days I left the house and couldn't remember if the lights were on or off.
 
 ![](/blog/lamp-bedside.jpg)
-
-But still, some days I left the house and couldn't remember if the lights were on or off.
 
 I didn’t want to go home and check – I might miss my work’s free breakfast.
 
