@@ -8,4 +8,4 @@ videos: 5gshFGOR-IY
 
 <div class="youtube-player" data-id="{{ page.videos }}" data-thumb="{{ page.image }}"></div>
 
-Follow Oli Frost Refrosts The Planet on [YouTube](https://www.youtube.com/channel/UC11YzVs4e4h9kIt4VzUS6yQ), [Instagram](http://instagram.com/{{ site.author.instagram }}), or this sparingly used [mailing list](#footer)
+More *Oli Frost Refrosts The Planet* on [YouTube](https://www.youtube.com/channel/UC11YzVs4e4h9kIt4VzUS6yQ), [Instagram](http://instagram.com/{{ site.author.instagram }}), or this sparingly used [mailing list](#footer)
