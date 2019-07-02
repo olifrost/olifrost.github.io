@@ -1,6 +1,6 @@
 ---
 layout: post
-title: I gave my bedroom lamp a social media personality
+title: I made my lamp a social media personality
 description: We all know global warming is created by leaving the lights on.
 image: /blog/lamp-bio.jpg
 ---
