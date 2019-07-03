@@ -1,9 +1,13 @@
-<small class="social">{% if site.twitter.username %}
+<small class="social">
+
+  {% include icon-youtube.html username=site.author.instagram %}
+  {% if site.twitter.username %}
   {% include icon-twitter.html username=site.twitter.username %}
 {% endif %}
 {% if site.author.instagram %}
   {% include icon-instagram.html username=site.author.instagram %}
 {% endif %}
+
 {% if site.author.email %}
   {% include icon-mail.html username=site.author.email %}
 {% endif %}</small>
