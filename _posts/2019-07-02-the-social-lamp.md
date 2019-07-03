@@ -9,11 +9,7 @@ image: /blog/lamp-bio.jpg
 
 We all know climate change is caused by leaving the lights on.
 
-Much like animal agriculture and cross-atlantic business flights.
-
-But still, some days I left the house and couldn't remember if the lights were on or off.
-
-
+But some days I left the house and couldn't remember if I'd turned them off.
 
 I didn’t want to go home and check – I might miss my work’s free breakfast.
 
@@ -33,7 +29,7 @@ Then all I had to do was connect the Google to an app called IFTT, which would a
 
 ![](/blog/lamp-system.jpg)
 
-I then set the message to change based on the time of day, and gave the lamp a few accounts to follow, so it wouldn't feel bored or objectified by its work.
+I then set the message to change with the time of day, and gave the lamp a few accounts to follow (so it wouldn't feel bored or objectified by its work).
 
 ![](/blog/lamp-tweet.jpg)
 
