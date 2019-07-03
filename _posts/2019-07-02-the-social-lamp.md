@@ -1,15 +1,19 @@
 ---
 layout: post
 title: I made my lamp a social media personality
-description: We all know climate change is caused by leaving the lights on.
+description: (What happened next will shock you)
 image: /blog/lamp-bio.jpg
 ---
+
+![](/blog/lamp-bedside.jpg)
+
+We all know climate change is caused by leaving the lights on.
 
 Much like animal agriculture and cross-atlantic business flights.
 
 But still, some days I left the house and couldn't remember if the lights were on or off.
 
-![](/blog/lamp-bedside.jpg)
+
 
 I didn’t want to go home and check – I might miss my work’s free breakfast.
 
