@@ -1,10 +1,12 @@
 ---
 layout: post
-title: I formed a punk air-instrument band to stop air pollution
-description: Meet Pollution Solution
+title: I formed a political air-instrument punk band
+description: And stopped air pollution. Meet Pollution Solution.
 image: https://i.ytimg.com/vi/5gshFGOR-IY/maxresdefault.jpg
 videos: 5gshFGOR-IY
 ---
+
+And stopped air pollution.
 
 <div class="youtube-player" data-id="{{ page.videos }}" data-thumb="{{ page.image }}"></div>
 

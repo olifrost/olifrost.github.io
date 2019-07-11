@@ -15,3 +15,5 @@ Follow Oli Frost Refrosts The Planet on [YouTube](https://www.youtube.com/channe
 **Part One** >> [I pretend to work for my local council](/blog/little-tips/)
 
 **Part Two** >> [I formed an air band and stopped air pollution](/blog/pollution-solution/)
+
+**Part Two** >> [I started a stay-at-home climate rebellion](/blog/domestic-rebellion/)

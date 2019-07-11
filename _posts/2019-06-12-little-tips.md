@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I pretend to work for my local council
-description: With a few little recycling tips they forgot to give
+description: And made the little tips on waste they forgot to give.
 image: https://i.ytimg.com/vi/7vWxYzrgqIc/maxresdefault.jpg
 videos: 7vWxYzrgqIc
 ---

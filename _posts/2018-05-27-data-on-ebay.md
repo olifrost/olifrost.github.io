@@ -42,7 +42,3 @@ eBay removed the listing because it might go against Facebook's Terms and Condit
 My mistake, I was under the impression I owned my personal data.
 
 <a href="mailto:mail@olifro.st">Get in touch</a> if you'd like to make a private offer.
-
-Comes on a one-of-a-kind USB stick.
-
-It's blue and has a picture of my face on it.
