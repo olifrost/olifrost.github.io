@@ -44,7 +44,7 @@ color: #FEFEFE;
 
 
 
-**Oli Frost Refrosts The Planet** is a documentary series that follows me, Oli Frost, as I single-handedly sorting out global climate change, while growing into a global social media personality.  *You're welcome*.
+**Oli Frost Refrosts The Planet** is a documentary series that follows me, Oli Frost, as I single-handedly sort out global climate change, while growing into a global social media personality.  *You're welcome*.
 
 <div class="youtube-player" data-id="{{ page.videos }}" data-thumb="{{ page.image }}"></div>
 
