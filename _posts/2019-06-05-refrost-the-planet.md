@@ -1,7 +1,7 @@
 ---
 layout: site
 title: I'm sorting out global climate change
-description: One straw at a time.
+description: This is Oli Frost Refrosts The Planet
 image: /img/refroststheplanet-small.jpg
 videos: DiqCjEQx7As
 redirect_from:
@@ -42,12 +42,9 @@ color: #FEFEFE;
 
 </style>
 
-
-
-**Oli Frost Refrosts The Planet** is a documentary series that follows me, Oli Frost, as I single-handedly sort out global climate change, while growing into a global social media personality.  *You're welcome*.
-
 <div class="youtube-player" data-id="{{ page.videos }}" data-thumb="{{ page.image }}"></div>
 
+**Oli Frost Refrosts The Planet** is a docu-series that follows me, Oli Frost, as I single-handedly sort out the global climate crisis, while growing into a global social media personality.  *You're welcome*.
 
 **Part One** >> [I pretend to work for my local council](/blog/little-tips/)
 
