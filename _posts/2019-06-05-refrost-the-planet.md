@@ -49,7 +49,7 @@ color: #FEFEFE;
 
 <div class="youtube-player" data-id="{{ page.videos }}" data-thumb="{{ page.image }}"></div>
 
-**Oli Frost Refrosts The Planet** is a docu-series that follows me, Oli Frost, as I single-handedly sort out the global climate crisis, while growing into a global social media personality.  *You're welcome*.
+**Oli Frost Refrosts The Planet** is a docu-series that follows me, Oli Frost, as I single-handedly sort out the global climate crisis, while growing into a global social media personality.
 
 **Part One** >> [I pretend to work for my local council](/blog/little-tips/)
 
