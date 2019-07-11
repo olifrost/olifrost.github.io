@@ -21,6 +21,11 @@ p, h1, h2, h3, h4, small, header, footer, input[type='email'] {
 
 }
 
+input[type='submit'] {
+  background-color: #8d8e93;
+  border-color: #8d8e93
+}
+
 input[type='email'] {
 border: .1rem solid #FEFEFE;
 color: #FEFEFE;
@@ -59,6 +64,6 @@ color: #FEFEFE;
 <div class="youtube-player" data-id="Af5Fk8wVfOU" data-thumb="https://i.ytimg.com/vi/Af5Fk8wVfOU/maxresdefault.jpg"></div>
 
 **Side Stories**  >>
-The story continues daily @realolifrost through my [expert Twitter trolling](http://twitter.com/{{ site.author.twitter }}) and [radical Instagram stories](http://instagram.com/{{site.author.instagram}}).
+See my [expert Twitter trolling](http://twitter.com/{{ site.author.twitter }}) and [radical Instagram stories](http://instagram.com/{{site.author.instagram}}) posted daily @realolifrost.
 
-**Subscribe** >> You can follow the series on [YouTube](https://www.youtube.com/channel/UC11YzVs4e4h9kIt4VzUS6yQ), or sparingly-used mailing list below.
+**Subscribe** >> [YouTube](https://www.youtube.com/channel/UC11YzVs4e4h9kIt4VzUS6yQ?sub_confirmation=1), or the sparingly-used mailing list below.
