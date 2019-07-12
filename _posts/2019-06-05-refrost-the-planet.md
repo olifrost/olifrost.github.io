@@ -49,7 +49,7 @@ color: #FEFEFE;
 
 <div class="youtube-player" data-id="{{ page.videos }}" data-thumb="{{ page.image }}"></div>
 
-**Oli Frost Refrosts The Planet** is a docu-series that follows me, Oli Frost, as I single-handedly sort out the global climate crisis, while growing into a global social media personality.
+**Oli Frost Refrosts The Planet** is a docu-series that follows me, Oli Frost, as I single-handedly sort out the global climate crisis.
 
 **Part One** >> [I pretend to work for my local council](/blog/little-tips/)
 
@@ -59,7 +59,7 @@ color: #FEFEFE;
 
 <div class="youtube-player" data-id="5gshFGOR-IY" data-thumb="https://i.ytimg.com/vi/5gshFGOR-IY/maxresdefault.jpg"></div>
 
-**Part Three** >> [I started a stay-at-home climate rebellion](/blog/domestic-rebellion/)
+**Part Three** >> [I drank a G&T and called the police](/blog/domestic-rebellion/)
 
 <div class="youtube-player" data-id="Af5Fk8wVfOU" data-thumb="https://i.ytimg.com/vi/Af5Fk8wVfOU/maxresdefault.jpg"></div>
 
