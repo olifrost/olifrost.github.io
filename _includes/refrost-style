@@ -1,0 +1,36 @@
+<style>
+body {
+    background-color: #121922;
+    background-image: linear-gradient(#121922, #0C3E5C);
+
+}
+p, h1, h2, h3, h4, small, header, footer, input[type='email'] {
+  color: #FEFEFE;
+
+}
+
+input[type='submit'] {
+  background-color: #8d8e93;
+  border-color: #8d8e93
+}
+
+input[type='email'] {
+border: .1rem solid #FEFEFE;
+color: #FEFEFE;
+}
+
+
+
+ a, .navigation a {
+   color: #B2E1ED
+ }
+
+  a:hover, .navigation a:hover {
+       color: #8d8e93;
+  }
+
+ .icon svg path {
+   fill: #B2E1ED;
+ }
+
+</style>

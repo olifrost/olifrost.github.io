@@ -4,6 +4,9 @@ title: I pretend to work for my local council
 description: And made the little tips on waste they forgot to give.
 image: https://i.ytimg.com/vi/7vWxYzrgqIc/maxresdefault.jpg
 videos: 7vWxYzrgqIc
+redirect_from:
+  - /blog/pollution-solution
+permalink: /little-tips
 ---
 
 <div class="youtube-player" data-id="{{ page.videos }}" data-thumb="{{ page.image }}"></div>
