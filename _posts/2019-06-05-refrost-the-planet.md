@@ -18,7 +18,7 @@ permalink: /refrost/
 
 **Part One** >> [I pretend to work for my local council](/blog/little-tips/)
 
-<div class="youtube-player" data-id="IQ_vIXqy_Gw" data-thumb="https://i.ytimg.com/vi/7vWxYzrgqIc/maxresdefault.jpg "></div>
+<div class="youtube-player" data-id="7vWxYzrgqIc" data-thumb="https://i.ytimg.com/vi/7vWxYzrgqIc/maxresdefault.jpg "></div>
 
 **Part Two** >> [I formed a political air-instrument punk band](/blog/pollution-solution/)
 
