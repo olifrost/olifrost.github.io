@@ -6,7 +6,7 @@ image: https://i.ytimg.com/vi/7vWxYzrgqIc/maxresdefault.jpg
 videos: 7vWxYzrgqIc
 redirect_from:
   - /blog/little-tips
-permalink: /little-tips
+permalink: /little-tips/
 ---
 
 <div class="youtube-player" data-id="{{ page.videos }}" data-thumb="{{ page.image }}"></div>
