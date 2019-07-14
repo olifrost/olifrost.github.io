@@ -3,7 +3,7 @@ layout: site
 title: I'm sorting out global climate change
 description: This is Oli Frost Refrosts The Planet
 image: /img/refroststheplanet-small.jpg
-videos: IQ_vIXqy_Gw
+videos: nRxJcj0qiQk
 redirect_from:
   - /blog/refrost-the-planet
   - /refrosts-the-planet
@@ -16,15 +16,15 @@ permalink: /refrost/
 
 **Oli Frost Refrosts The Planet** is a docu-series that follows me, Oli Frost, as I single-handedly sort out the global climate crisis, one straw at a time.
 
-**Part One** >> [I pretend to work for my local council](/blog/little-tips/)
+**Part One** >> [I pretend to work for my local council](/little-tips/)
 
 <div class="youtube-player" data-id="7vWxYzrgqIc" data-thumb="https://i.ytimg.com/vi/7vWxYzrgqIc/maxresdefault.jpg "></div>
 
-**Part Two** >> [I formed a political air-instrument punk band](/blog/pollution-solution/)
+**Part Two** >> [I formed a political air-instrument punk band](/pollution-solution/)
 
 <div class="youtube-player" data-id="5gshFGOR-IY" data-thumb="https://i.ytimg.com/vi/5gshFGOR-IY/maxresdefault.jpg"></div>
 
-**Part Three** >> [I drank a G&T and called the police](/blog/domestic-rebellion/)
+**Part Three** >> [I drank a G&T and called the police](/domestic-rebellion/)
 
 <div class="youtube-player" data-id="Af5Fk8wVfOU" data-thumb="https://i.ytimg.com/vi/Af5Fk8wVfOU/maxresdefault.jpg"></div>
 
