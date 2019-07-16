@@ -11,8 +11,17 @@ permalink: /domestic-rebellion/
 
 <div class="youtube-player" data-id="{{ page.videos }}" data-thumb="{{ page.image }}"></div>
 
-{% include refrost-links %}
+Domestic Rebellion is a protest movement engaging in acts of civilised disobedience from the comforts of their own home.
+
+These acts are of an anti-capitalist anti-consumerist nature with the goal of creating a sense of urgency around the #ClimateEmergency.
 
 <div class="youtube-player" data-id="NBZFYpatfPw" data-thumb="https://i.ytimg.com/vi/NBZFYpatfPw/maxresdefault.jpg"></div>
 
 <div class="youtube-player" data-id="tk6vPdownsg" data-thumb="https://i.ytimg.com/vi/tk6vPdownsg/maxresdefault.jpg"></div>
+
+The above videos document our first three operations. Operation Straw, Project Nap, and Plan Hand Dryer.
+
+The rebellion operates through a secure private group chat where rebels are notified of daily actions to participate in – you must DM [@realolifrost](https://www.instagram.com/realolifrost/) to request access.
+
+
+{% include refrost-links %}

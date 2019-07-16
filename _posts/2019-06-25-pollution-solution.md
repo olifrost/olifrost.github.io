@@ -5,7 +5,7 @@ description: And stopped air pollution. Meet Pollution Solution.
 image: https://i.ytimg.com/vi/5gshFGOR-IY/maxresdefault.jpg
 videos: 5gshFGOR-IY
 redirect_from:
-  - /blog/pollution-solution
+  - /blog/pollution-solution/
 permalink: /pollution-solution/
 ---
 
