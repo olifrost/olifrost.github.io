@@ -11,9 +11,9 @@ permalink: /domestic-rebellion/
 
 <div class="youtube-player" data-id="{{ page.videos }}" data-thumb="{{ page.image }}"></div>
 
-Domestic Rebellion is a protest movement engaging in acts of civilised disobedience from the comforts of their own home.
+Domestic Rebellion is a civilised disobedience movement that activists engage in from the comforts of their own home.
 
-These acts are of an anti-capitalist anti-consumerist nature with the goal of creating a sense of urgency around the #ClimateEmergency.
+Its acts are of an anti-capitalist anti-consumerist nature with the goal of creating a sense of urgency around the #ClimateEmergency.
 
 <div class="youtube-player" data-id="NBZFYpatfPw" data-thumb="https://i.ytimg.com/vi/NBZFYpatfPw/maxresdefault.jpg"></div>
 
