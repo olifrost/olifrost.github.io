@@ -9,8 +9,6 @@ redirect_from:
 permalink: /pollution-solution/
 ---
 
-And stopped air pollution.
-
 <div class="youtube-player" data-id="{{ page.videos }}" data-thumb="{{ page.image }}"></div>
 
 {% include refrost-links %}
