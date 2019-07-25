@@ -14,7 +14,7 @@ permalink: /refrost/
 
 <div class="youtube-player" data-id="{{ page.videos }}" data-thumb="{{ page.image }}"></div>
 
-**Oli Frost Refrosts The Planet** is a docu-series that follows me, Oli Frost, as I single-handedly sort out the global climate crisis, one straw at a time.
+**Oli Frost Refrosts The Planet** is a documentary that follows me, Oli Frost, as I single-handedly sort out the global climate crisis, one straw at a time.
 
 **Part One** >> [I pretend to work for my local council](/little-tips/)
 
