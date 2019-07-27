@@ -2,8 +2,8 @@
 layout: post
 title: I'm fundraising for a clothes moth sanctuary
 description: Clothes moths are nature's answer to the fast fashion industry,
-image: https://i.ytimg.com/vi/_JwvKClDUdQ/maxresdefault.jpg
-videos: _JwvKClDUdQ
+image: https://i.ytimg.com/vi/8kl52q-Laew/maxresdefault.jpg
+videos: 8kl52q-Laew
 ---
 
 Taking ugly clothes and turning them into food for wildlife.
