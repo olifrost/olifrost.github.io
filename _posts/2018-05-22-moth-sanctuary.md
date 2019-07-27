@@ -1,10 +1,14 @@
 ---
 layout: post
 title: I'm fundraising for a clothes moth sanctuary
-description: In the UK alone, 1 billion clothes moths are killed every year.
+description: Clothes moths are nature's answer to the fast fashion industry,
 image: https://i.ytimg.com/vi/_JwvKClDUdQ/maxresdefault.jpg
 videos: _JwvKClDUdQ
 ---
+
+Taking ugly clothes and turning them into food for wildlife.
+
+Yet in the UK alone, 1 billion clothes moths are killed every year.
 
 And all because people don't like holes in their jumpers.
 
