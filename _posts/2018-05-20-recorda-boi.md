@@ -6,8 +6,8 @@ image: /blog/recorderboibgt.jpeg
 permalink: /recorda-boi/
 videos: 52dnwXso6bs
 redirect_from:
-  - /blog/recordabook
-  - /blog/britains-got-talent
+  - /blog/recordabook/
+  - /blog/britains-got-talent/
 ---
 
 They said it wasn't "cool".
