@@ -2,11 +2,11 @@
 layout: post
 title: Recorda Boi
 description: A musical project that combines hip-hop with the recorder.
-video: V6q63u29dBg
+video: HH4XpEynhX0
 image: /portfolio/recordaboi.jpg
-link: https://olifro.st/blog/britains-got-talent/
+link: /blog/britains-got-talent/
 order: 3
 press:
   - name: "Britain's Got Talent 2018"
-    article_link: "https://olifro.st/blog/britains-got-talent/"
+    article_link: "/blog/britains-got-talent/"
 ---
