@@ -4,8 +4,10 @@ title: I played the recorder for Simon Cowell
 description: As a child a lot of people bullied me for playing recorder
 image: /blog/recorderboibgt.jpeg
 videos: 52dnwXso6bs
+permalink: /recorda-boi/
 redirect_from:
   - /blog/recordabook
+  - /blog/britains-got-talent
 ---
 
 They said it wasn't "cool".
