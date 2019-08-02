@@ -31,4 +31,6 @@ permalink: /refrost/
 **Side Stories**  >>
 See my [expert Twitter trolling](http://twitter.com/{{ site.author.twitter }}) and [radical Instagram stories](http://instagram.com/{{site.author.instagram}}) posted daily @realolifrost.
 
+Also see my Spotify playlist ["Now That's What I Call Climate Change"](https://open.spotify.com/playlist/23fLtnKUaco7zaQgqmvnfh?si=nyehLt1CRzq8vPBZjzcuuA).
+
 **Subscribe** >> [YouTube](https://www.youtube.com/channel/UC11YzVs4e4h9kIt4VzUS6yQ?sub_confirmation=1), or the sparingly-used mailing list below.
