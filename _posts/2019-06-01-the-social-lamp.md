@@ -13,7 +13,7 @@ But some days I left the house and couldn't remember if I'd turned them off.
 
 I didn’t want to go home and check – I might miss my work’s free breakfast.
 
-So as part of my mission to [Refrost The Planet](/blog/refrost-the-planet/), I came up with a way for my lamp to let me know what it was up to.
+So as part of my mission to [Refrost The Planet](/refrost), I came up with a way for my lamp to let me know what it was up to.
 
 By turning it into a social media personality.
 
