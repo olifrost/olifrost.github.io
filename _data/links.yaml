@@ -18,9 +18,13 @@ docs:
   colour: 1DA1F2
 
 - title: Spotify
-  url: https://open.spotify.com/artist/5dFJdXPDdubN7e6RIC2MXP?si=Tg93E1nOT-CtU4Xhzy8Z7A
+  url: https://open.spotify.com/user/kotrl?si=fdAWVS4yT-WrjfFO8VyScw
   colour: 1DB954
 
 - title: TikTok
   url: http://vm.tiktok.com/FHuk7c/
   colour: 08E9E3
+
+- title: Instagram
+  url: https://instagram.com/realolifrost
+  colour: 1DB954
