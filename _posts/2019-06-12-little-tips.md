@@ -11,7 +11,7 @@ permalink: /little-tips/
 
 <div class="youtube-player" data-id="{{ page.videos }}" data-thumb="{{ page.image }}"></div>
 
-<div class="youtube-player" data-id="SBF_Ld3rRoc" data-thumb="https://i.ytimg.com/vi/SBF_Ld3rRoc/maxresdefault.jpg"></div>
+<div class="youtube-player" data-id="3VTb5GsVS-A" data-thumb="https://i.ytimg.com/vi/3VTb5GsVS-A/maxresdefault.jpg"></div>
 
 <div class="youtube-player" data-id="DBDEsVl6NAs" data-thumb="https://i.ytimg.com/vi/DBDEsVl6NAs/maxresdefault.jpg"></div>
 
