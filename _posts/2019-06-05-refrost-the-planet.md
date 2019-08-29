@@ -7,6 +7,7 @@ videos: nRxJcj0qiQk
 redirect_from:
   - /blog/refrost-the-planet
   - /refrosts-the-planet
+  - /refrost-the-planet
 permalink: /refrost/
 ---
 
