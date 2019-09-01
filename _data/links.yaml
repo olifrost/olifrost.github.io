@@ -8,6 +8,10 @@ docs:
 - title: Now That's What I Call Climate Change
   url: https://open.spotify.com/playlist/23fLtnKUaco7zaQgqmvnfh?si=j6VUwRHxS72IV11u6d16aA
   colour: 2AA3EF
+  
+- title: Spotify
+  url: https://open.spotify.com/artist/5dFJdXPDdubN7e6RIC2MXP?si=USVMG9ehSb-iTJ_72NSXCA
+  colour: 1DB954
 
 - title: YouTube
   url: https://youtube.com/c/olifrost
@@ -16,10 +20,6 @@ docs:
 - title: Twitter
   url: https://twitter.com/realolifrost
   colour: 1DA1F2
-
-- title: Spotify
-  url: https://open.spotify.com/user/kotrl?si=fdAWVS4yT-WrjfFO8VyScw
-  colour: 1DB954
 
 - title: TikTok
   url: http://vm.tiktok.com/FHuk7c/
