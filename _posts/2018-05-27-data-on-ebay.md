@@ -4,7 +4,10 @@ title: I put all my personal Facebook data on eBay
 description: Everyone else's making money off it, so why shouldn't I?
 image: /blog/ebaydata2.JPG
 date: 2018-05-27
+press: data-sale
 ---
+
+
 
 Bidding starts at £0.99 and ends Sunday.
 

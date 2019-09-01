@@ -1,0 +1,22 @@
+data-sale:
+
+- name: Vice
+  article_link: 'https://www.vice.com/en_uk/article/3k4ay8/sell-facebook-data-ebay-oli-frost'
+- name: Fox News
+  article_link: 'http://www.foxnews.com/tech/2018/05/30/facebook-user-auctions-personal-data-on-ebay-for-99-cents-and-bids-soar-sell-it-to-advertisers-or-whatever.html'
+- name: New York Post
+  article_link: 'https://nypost.com/2018/05/30/facebook-user-auctions-his-personal-data-on-ebay-for-99-cents/'
+- name: Gizmodo
+  article_link: 'https://gizmodo.com/a-man-is-auctioning-his-facebook-data-on-ebay-and-its-1826389102'
+- name: Reddit Front Page
+  article_link: 'https://www.reddit.com/r/technology/comments/8n2s04/this_guy_is_selling_all_his_facebook_data_on_ebay/'
+- name: Metro
+  article_link: 'https://metro.co.uk/2018/05/31/man-tried-to-sell-all-his-facebook-data-on-ebay-for-300-7595007/'
+- name: Digital Trends
+  article_link: 'https://www.digitaltrends.com/computing/facebook-data-listed-on-ebay/'
+- name: CNET
+  article_link: 'https://www.cnet.com/news/you-can-buy-oli-frost-personal-facebook-data-just-not-on-ebay/'
+- name: 'Hacker News #1'
+  article_link: 'https://news.ycombinator.com/item?id=17173279'
+- name: RT
+  article_link: 'https://www.rt.com/news/428170-facebook-data-sale-ebay/'

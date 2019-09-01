@@ -10,7 +10,7 @@ My work has been featured everywhere from [UK Parliament](http://thehomelessperi
 
 At the moment, [I am sorting out global climate change](/refrost).
 
-To see what's next you can [join my mailing list](#footer), which has a rigorous [No Privacy Policy]({% link noprivacy.md %}).
+To see what's next you can find me [@realolifrost](/s) or [join my mailing list](#footer), which has a rigorous [No Privacy Policy]({% link noprivacy.md %}).
 
 # FAQ
 
