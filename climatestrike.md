@@ -1,9 +1,8 @@
 ---
 layout: page
 image: /img/olifrost.jpg
+title: My posters for the global climate strike
 ---
-
-## My posters for the Global Climate Strike
 
 Here's a download link for printables and social formats
 
