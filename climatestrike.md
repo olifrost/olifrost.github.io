@@ -1,6 +1,6 @@
 ---
 layout: page
-image: /img/olifrost.jpg
+image: /blog/climatestrike.jpg
 title: My posters for the global climate strike
 ---
 
