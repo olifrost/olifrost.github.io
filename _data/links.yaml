@@ -1,7 +1,7 @@
 docs_list_title: Pages
 docs:
 
-- title: About / Past Work
+- title: About / Website
   url: /about
   colour: 2AA3EF
 
@@ -15,6 +15,10 @@ docs:
 
 - title: Instagram
   url: https://instagram.com/realolifrost
+  colour: 1DB954
+
+- title: Global Climate Strike posters
+  url: https://olifro.st/climatestrike
   colour: 1DB954
 
 - title: Spotify
