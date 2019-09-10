@@ -4,8 +4,6 @@ image: /img/olifrost.jpg
 title: My posters for the global climate strike
 ---
 
-Here's a download link for printables and social formats
-
 If time allows, please give a follow and a tag to [@realolifrost](http://olifro.st/links/) on Instagram/Twitter when sharing them online.
 
 [Download Link](/downloads/globalclimatestrike.zip)
