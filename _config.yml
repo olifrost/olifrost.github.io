@@ -45,7 +45,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /blog/shook-1.jpg
+      image: /blog/refrosttheplanet-large.jpg
 
 twitter:
   username: realolifrost
@@ -55,6 +55,7 @@ social:
   links:
     - https://twitter.com/realolifrost
     - https://instagram.com/realolifrost
+    - https://youtube.com/c/realolifrost
 
 # Gems
 plugins:
