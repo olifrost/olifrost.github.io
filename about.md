@@ -8,7 +8,7 @@ I'm Oli Frost, the guy who [put all his personal data on eBay]({{ site.baseurl }
 
 My work has been featured everywhere from [UK Parliament](http://thehomelessperiod.com) to [Britain's Got Talent]({{ site.baseurl }}{% post_url 2018-05-20-recorda-boi %}), [BBC](https://www.bbc.co.uk/bbcthree/article/10f77fff-06ed-4c11-a91a-d1413df96d23) to [Fox News](http://www.foxnews.com/tech/2018/05/30/facebook-user-auctions-personal-data-on-ebay-for-99-cents-and-bids-soar-sell-it-to-advertisers-or-whatever.html), [Fast Company](https://www.fastcompany.com/90173378/flopstarter-is-kickstarter-for-really-really-really-bad-ideas) to ["Cheezburger"](https://cheezburger.com/3832325/flopstarter-unveils-a-series-of-twisted-inventions-which-would-never-appear-on-kickstarter).
 
-At the moment, [I am sorting out global climate change](/refrost).
+At the moment, [I am making a web series where I sort out climate change](/refrost).
 
 To see what's next you can find me [@realolifrost](/s) or [join my mailing list](#footer), which has a rigorous [No Privacy Policy]({% link noprivacy.md %}).
 
@@ -20,14 +20,17 @@ Not sure yet.
 ## Where are you from?
 I was born London but I'm currently [seeking citizenship in São Tomé](/blog/sao-tome-citizen/).
 
-## Why do you have a coat hook on your shirt?
+## Why do you sometimes have a coat hook on your shirt?
 It's a [SHOOK]({{ site.baseurl }}{% post_url 2018-02-03-shook-shirt-hook %}).
 
 ## When a shirt becomes a pyjama shirt can it ever go back?
 Only for short trips to the shops.
 
 ## Did you create this dope website with Wix?
-No, all my work is traditionally hand-coded.
+No, I traditionally hand-code all my work.
+
+## What made that thing you posted?
+Unless otherwise mentioned I produce everything on my own. However, with a gun to my head and forced to choose I'll say I'm a writer. In fact, I'll say pretty much whatever you want in that case.
 
 ## Will you do something for me?
 [Ask me](mailto:{{ site.author.email }}). As long as it's not weird…

@@ -1,10 +1,10 @@
 ---
 layout: page
 image: /blog/climatestrike.jpg
-title: My posters for the global climate strike
+title: Global Climate Strike posters
 ---
 
-If time allows, please give a follow and tag [@realolifrost](http://olifro.st/links/) when sharing online. Printables included.
+Please give a follow and tag [@realolifrost](http://olifro.st/links/) when sharing  (printables included).
 
 <a class="button" href="/downloads/globalclimatestrike.zip">Download</a>
 
