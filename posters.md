@@ -8,7 +8,7 @@ images:
     alt: Getty Girlfriend 1
 ---
 
-You're free to share and print these if you'll give a follow and tag [@realolifrost](http://olifro.st/links/).
+You're free to share and print these if you'll give a follow and tag [@realolifrost](http://olifro.st/links/) in return.
 
 
 ## 07-10 – Autumn Rebellion Posters
