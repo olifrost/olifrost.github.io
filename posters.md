@@ -15,10 +15,14 @@ You're free to share and print these if you'll give a follow and tag [@realolifr
 
 {% include poster-gallery.html path="posters/extinctionrebellion/textured" %}
 
-<a class="button" href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/olifrost/posters/tree/master/GlobalClimateStrike">Download</a>
+<a class="button" href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/olifrost/olifrost.github.io/tree/master/posters/extinctionrebellion">Download</a>
 
 ## 27-09 – Climate Strike posters
 
 {% include poster-gallery.html path="posters/globalclimatestrike/social" %}
+
+<a class="button" href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/olifrost/olifrost.github.io/tree/master/posters/globalclimatestrike">Download</a>
+
+---
 
 {% include refrost-links %}
