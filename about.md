@@ -23,7 +23,7 @@ I was born London but I'm currently [seeking citizenship in São Tomé](/blog/sa
 ## Do you have any qualifications
 I studied Philosophy at UCL (Or did I? We just don't know).
 
-## Why do you sometimes have a coat hook on your shirt?
+## What's that photo where you have a coat hook on your shirt?
 It's a [SHOOK]({{ site.baseurl }}{% post_url 2018-02-03-shook-shirt-hook %}).
 
 ## When a shirt becomes a pyjama shirt can it ever go back?
@@ -33,7 +33,7 @@ Only for short trips to the shops.
 No, I traditionally hand-code all my work.
 
 ## Who made that thing you posted?
-Usually I work alone, like Batman, or Frodo after a meltdown. However, if you'd like to make something together it could be worth an ask.
+Usually I work alone, like Batman, or Frodo after a meltdown. However, if you'd like to make something together, it'd be great to hear from you.
 
 ## Will you do something for me?
 [Ask me](mailto:{{ site.author.email }}). As long as it's not weird…
