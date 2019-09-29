@@ -1,9 +1,11 @@
 ---
 layout: post
 title: I can't swim
-description: The student climate network asked if I could make some posters.
+description: It was two weeks before the first global climate strike
 image: https://i.ytimg.com/vi/Af5Fk8wVfOU/maxresdefault.jpg
 ---
+
+The student climate network had asked if I could make some posters.
 
 To 'feel the vibe', I spoke to some colleagues about the impending end of life on Earth.
 

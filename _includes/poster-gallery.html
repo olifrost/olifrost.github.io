@@ -1,0 +1,9 @@
+{% assign url = {{include.path}} %}
+<div class="owl-carousel owl-theme" data-items="{{ page.carousel-items }}">
+{% for image in site.static_files %}
+    {% if image.path contains url %}
+
+        <img class="owl-lazy" data-src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+    {% endif %}
+{% endfor %}
+</div>

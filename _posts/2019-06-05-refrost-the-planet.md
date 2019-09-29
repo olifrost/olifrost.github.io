@@ -15,7 +15,7 @@ permalink: /refrost/
 
 <div class="youtube-player" data-id="{{ page.videos }}" data-thumb="{{ page.image }}"></div>
 
-**Oli Frost Refrosts The Planet** is a documentary that follows me, Oli Frost, as I single-handedly sort out the global climate crisis, one straw at a time.
+**Oli Frost Refrosts The Planet** is a documentary that follows me, Oli Frost, and my plans to stop the earth defrosting.
 
 **Part One** >> [I pretend to work for my local council](/little-tips/)
 
@@ -32,6 +32,10 @@ permalink: /refrost/
 **Side Stories**  >>
 See my [expert Twitter trolling](http://twitter.com/{{ site.author.twitter }}) and [radical Instagram stories](http://instagram.com/{{site.author.instagram}}) posted daily @realolifrost.
 
-Also see my Spotify playlist ["Now That's What I Call Climate Change"](https://open.spotify.com/playlist/23fLtnKUaco7zaQgqmvnfh?si=nyehLt1CRzq8vPBZjzcuuA).
+My [baby penguin protest movement](/blog/fridays-for-future-antarctica)
+
+My Spotify playlist ["Now That's What I Call Climate Change"](/now-thats-what-i-call-climate-change).
+
+Or my emerging [poster project](/posters)
 
 **Subscribe** >> [YouTube](https://www.youtube.com/channel/UC11YzVs4e4h9kIt4VzUS6yQ?sub_confirmation=1), or the sparingly-used mailing list below.
