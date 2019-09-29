@@ -11,17 +11,17 @@ images:
 You're free to share and print these if you'll give a follow and tag [@realolifrost](http://olifro.st/links/).
 
 
-## 17/10 – Autumn Rebellion Posters
+## 07-10 – Autumn Rebellion Posters
 
 {% include poster-gallery.html path="posters/extinctionrebellion/textured" %}
 
-<a class="button" href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/olifrost/olifrost.github.io/tree/master/posters/extinctionrebellion">Download</a>
+<a class="button" href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/olifrost/olifrost.github.io/tree/master/posters/extinctionrebellion">Download</a> Includes textured and flat versions.
 
-## 27-09 – Climate Strike posters
+## 20/09 – Climate Strike posters
 
 {% include poster-gallery.html path="posters/globalclimatestrike/social" %}
 
-<a class="button" href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/olifrost/olifrost.github.io/tree/master/posters/globalclimatestrike">Download</a>
+<a class="button" href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/olifrost/olifrost.github.io/tree/master/posters/globalclimatestrike">Download</a> Includes textured and flat versions.
 
 ---
 
