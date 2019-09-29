@@ -1,5 +1,5 @@
 ## License
-You're free to share/print these if you'll give a tag and follow @realolifrost
+You're free to share/print these, but please give a tag and follow @realolifrost
 
 ## Modifications
 Please get in touch if you're interested in adapting these for something else.
