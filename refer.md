@@ -3,7 +3,7 @@ layout: site
 title: Get £15 When You Refer Me A Friend
 description: If you're looking for a friend there's never been a better time to choose Oli Frost.
 strapline: If we become friends, you both get rewarded.
-videos: trK_BhAxV9I
+videos: nBfc_vfKKvc
 image: /img/friend.jpg
 thumb: /img/friend-thumb.jpg
 ---
@@ -92,8 +92,16 @@ article, h1, .hero {
   text-align: center;
 }
 
+h1 {
+  margin-bottom: 0rem;
+}
+
 .center {
   text-align:center;
+}
+
+.buttons {
+  margin-top: 1rem;
 }
 
 .hero {
@@ -131,10 +139,12 @@ article, h1, .hero {
       <h1 class="headline"><span style="color:blue">Get £15</span> When You <span class="nobreak">Refer Me</span> A Friend</h1>
       <p class="center">If we become friends, <span class="nobreak">you both get £15<a href="#faq">*</a></span>.</p>
 
-      <div class="row first-xs between-sm ">
+      <div class="row first-xs between-sm buttons">
           <div class="col-xs-12">
-        <a href="mailto:?cc=mail@olifro.st&subject=This guy seems cool!&body=If%20you%20become%20friends%20we'll%20both%20get%20%C2%A315%20https%3A//olifro.st/refer" class="button"><span class="svg-icon">{% include icon-mail.svg %}</span> Invite Via Email</a>
-        <a href="https://twitter.com/home?status=Hey%20%40handle,%20this%20guy%20seems%20cool%20%40realolifrost!%20If%20you%20become%20friends%20with%20him%20we'll%20both%20get%20%C2%A315%20https%3A//olifro.st/refer" class="button"><span class="svg-icon">{% include icon-twitter.svg %}</span>Invite Via Tweet</a>
+
+        <a href="https://twitter.com/realolifrost" class="button"><span class="svg-icon">{% include icon-twitter.svg %}</span>Tag A Friend</a>
+        <a href="https://instagram.com/realolifrost" class="button"><span class="svg-icon">{% include icon-instagram.svg %}</span>Tag A Friend</a>
+        <a href="mailto:?cc=mail@olifro.st&subject=This guy seems cool!&body=If%20you%20become%20friends%20we'll%20both%20get%20%C2%A315%20https%3A//olifro.st/refer" class="button"><span class="svg-icon">{% include icon-mail.svg %}</span> Invite Friend</a>
         </div>
       </div>
 
@@ -252,14 +262,14 @@ Oli Frost removes himself from social situations without a word – it's called 
 
 
 **Who are you?**  
- I'm Oli Frost, the guy who [put all his personal data on eBay](http://olifro.st/blog/data-on-ebay/), played [recorder for Simon Cowell](http://olifro.st/blog/britains-got-talent/), and made the [online service that helps you fake a better Instagram](http://lifefaker.com).  
+ I'm Oli Frost, the guy who [put all his personal data on eBay](http://olifro.st/blog/data-on-ebay/), played [recorder for Simon Cowell](http://olifro.st/blog/recorda-boi/), and made the [online service that helps you fake a better Instagram](http://lifefaker.com).  
 
   </div>
 
   <div class="col-xs-12 col-sm-6" markdown="1">
 
   **How do you define "friend"?**  
-  The first time we meet up you'll get an Oli Frost Loyalty Card. The second time you'll get your first smiley, and we'll be friends.
+  A friend is anyone who meets the Friendship Terms and Conditions, outlined at the bottom of this page
 
   </div>
 
@@ -292,5 +302,10 @@ This isn't a Frequently Asked Question, but unfortunately I've already [found a 
   </div>
 </div>
 
+---
+
+## Terms and Conditions
+
+<span class="terms">After your application to become a friend is received you will enter a pre-friend stage (acquaintance) until both parties are satisfied that the following conditions are reached (or would be reached, should the correct circumstances pertain). By applying you agree that being contacted with a friendly “Hi” to start proceedings but agree it would be better form if you said “Hi” first. Our conversations should continue for longer enough for you to make one accidental video dial. You must reply to messages within three days unless you have been extremely busy or otherwise flat out. If it feels the conversation has come to an end you agree it would be polite to ‘Like’ the last message. When sharing your live location, remember that the length of time denotes trust – one hour is not enough. You must respond to me complaining with considerate nods. You should occasionally send high five hands or crying laughing face to my Instagram Story. You agree not to comment on my posts with fire emoji and stick to colder emojis such as the frost snowflake. You must offer pity likes to unpopular Instagram posts. And pity laughs to unpopular anecdotes at social events. You must be ready to invite me to your birthday if you are having more than a medium to small sized thing. You must not be disappointed if I’m the first person to arrive at your medium to small sized thing. You must be comfortable with me borrowing a jumper for up to a week. You must be comfortable with unpaid debts of up to £5.  If you have a spare ticket to something, you must at least consider inviting me before choosing someone else. If the weather is good, you must be prepared to cancel your plans to go on a long directionless walk and have a long directionless conversation. You must share at least ten impersonal facts about yourself, three fairly vulnerable ones, and one crushing truth that causes you sleep deprivation. Only one of these facts can be an inventive lie. You must be willing to look through one full photo album from my childhood (at best, this will be delivered as an interactive powerpoint presentation). On Mondays you should not feel obliged to ask how my weekend was because we’re past that now. You can correctly identify mannerisms that are like mine and use the expression “That’s so Oli”. You should never have more slices of pizza than the slices of pizza you are entitled to, unless offered.  You must be prepared to hold my beer for longer than one minute. If hosting a dinner party, please give me an important and tactile role (e.g. shelling broad beans). You must be able to name one of my three cats. You must agree that my cat is a genius. You must offer a list of six potential in-jokes that we can revel in conspiratorially as best friends. We must have one song that we both like that is not in the Top 40. We must share at least one post a year that we think the other would find entertaining. In the pre-friend stage you may be tested on any of the above points at any time – should you fail to react or answer correctly you may have to wait a minimum of 14 days before friendship is re-evaluated. As an experienced friend, I’m very open to feedback. If you have any comments on the process, please put your thoughts in an email and send them to me. It is always better to receive upsetting news in written format. You are allowed to choose a preferred method to receive funds after completion, but not Venmo as I don’t have that yet.</span>
 
 ---

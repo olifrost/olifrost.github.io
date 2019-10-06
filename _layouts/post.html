@@ -8,9 +8,10 @@ layout: default
 
 
   {% if page.archive == nil %}<h1 class="post-title">{{ page.title }}</h1>{% endif %}
+  <p>{% if page.press != nil %}<span class="press">Press:</span> {% for press in site.data.press[page.press] %}<a href="{{ press.article_link }}" class="press">{{ press.name }}{% if forloop.last == false %},{% else %}.{% endif %}</a> {% endfor %}{% endif %}</p>
   {% if page.description %}<p class="post-description">{{ page.description | markdownify }}</p>{% endif %}
   <p>{{ content }}</p>
-  <p>{% if page.press != nil %}<span class="press">Press:</span> {% for press in site.data.press[page.press] %}<a href="{{ press.article_link }}" class="press">{{ press.name }}{% if forloop.last == false %},{% else %}.{% endif %}</a> {% endfor %}{% endif %}</p>
+
 
   <p><strong>Read Next</strong> {% for post in site.related_posts limit:1 %}
   <a href="{{ post.url }}">» {{ post.title }} </a><br>
