@@ -147,6 +147,7 @@ header {
 }
 
 
+
 header .social {
     float: right;
 }
@@ -155,8 +156,9 @@ footer .social {
   float: left;
 }
 
-@media only screen and (min-width: $first-breakpoint) {
 
+
+@media only screen and (min-width: $first-breakpoint) {
 
     .pages {
       float: none;
@@ -164,7 +166,7 @@ footer .social {
     }
 
 
-    footer .social {
+    footer .social, header .social {
       position: relative;
       bottom: 1rem;
     }

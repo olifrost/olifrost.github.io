@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Oli Frost Refrosts The Planet
-description: A documentary that follows me as I single-handedly sort out climate change.
+description: One man's plans to the stop the earth defrosting.
 image: /img/refroststheplanet-small.jpg
 link: /refrost
 video: nRxJcj0qiQk
