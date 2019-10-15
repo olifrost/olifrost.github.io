@@ -6,8 +6,8 @@ strapline: If we become friends, you both get rewarded.
 videos: nBfc_vfKKvc
 image: /blog/refer/refer-thumb.jpg
 thumb: /blog/refer/refer-video.jpg
-twitterlink: https://twitter.com/realolifrost
-instagramlink: https://instagram.com/realolifrost
+twitterlink: https://twitter.com/realolifrost/status/1184137079036493824
+instagramlink: https://www.instagram.com/p/B3pX7WdHJ75/
 permalink: /refer/
 ---
 
