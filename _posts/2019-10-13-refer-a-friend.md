@@ -299,7 +299,7 @@ I was very impressed by how Uber and Dropbox made friends like this. I also want
 <div class="col-xs-12 col-sm-6" markdown="1">
 
 **Where can I get my loyalty card?**  
-You can request these in person, or if you're in San Francisco, at the [The Glass Room](https://theglassroom.org/san-francisco) exhibit from October 10th to November 3rd.
+You can request these in person, or if you're in San Francisco, at [The Glass Room](https://theglassroom.org/san-francisco) exhibit from October 10th to November 3rd.
 
 </div>
 
