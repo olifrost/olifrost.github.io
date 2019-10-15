@@ -66,10 +66,6 @@ cite {
     fill: white;
 }
 
-.offers p, main div:last-child p {
-  margin-bottom: 1.5rem;
-}
-
 
 
 h3 i {
@@ -113,6 +109,15 @@ h1 {
 }
 .lead {
   font-size: 3rem;
+}
+
+
+.offers p, main div:last-child p {
+  margin-bottom: 1.5rem;
+}
+
+.offers div:first-child {
+  margin-bottom: 1.5rem;
 }
 
 @media only screen and (max-width: 38em) {

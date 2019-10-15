@@ -43,7 +43,7 @@
 
 .youtube-player .play img {
     pointer-events:none;
-    height: 20%;
+    height: 35%;
     width: 20%;
     left: 25%;
     right: 25%;
@@ -51,7 +51,8 @@
     bottom: 50%;
     position: absolute;
     cursor: pointer;
+    /*filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1);*/
     svg path {
-      fill: white;
+      fill: blue;
     }
 }
