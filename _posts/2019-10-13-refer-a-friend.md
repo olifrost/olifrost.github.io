@@ -165,6 +165,8 @@ h1 {
 
   </div>  
 
+<h2><i class="fas fa-user-tag"></i> <span style="color:blue">232</span> Friends Tagged <span style="font-weight: 100;"><br>(Since 15/10/19)</span></h2>
+
 ---
 
 <div class="row first-xs between-sm">
