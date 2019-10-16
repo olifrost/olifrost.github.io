@@ -132,6 +132,10 @@ h1 {
   white-space: nowrap;
 }
 
+#counter {
+  text-align:center;
+}
+
 </style>
 
 <div class="hero">
@@ -165,7 +169,9 @@ h1 {
 
   </div>  
 
-<h2><i class="fas fa-user-tag"></i> <span style="color:blue">232</span> Friends Tagged <span style="font-weight: 100;"><br>(Since 15/10/19)</span></h2>
+<div>
+<h3 id="counter"><i class="fas fa-user-tag"></i> <span style="color:blue"><a href="{{ page.instagramlink }}">232</a></span> Friends Tagged <span style="font-weight: 100;"><br>(Since 15/10/19)</span></h3>
+</div>
 
 ---
 
