@@ -29,13 +29,15 @@ permalink: /refrost/
 
 <div class="youtube-player" data-id="Af5Fk8wVfOU" data-thumb="https://i.ytimg.com/vi/Af5Fk8wVfOU/maxresdefault.jpg"></div>
 
-**Side Stories**  >>
+**Extras**  >>
 See my [expert Twitter trolling](http://twitter.com/{{ site.author.twitter }}) and [radical Instagram stories](http://instagram.com/{{site.author.instagram}}) posted daily @realolifrost.
 
 My [baby penguin protest movement](/blog/fridays-for-future-antarctica)
 
 My Spotify playlist ["Now That's What I Call Climate Change"](/now-thats-what-i-call-climate-change).
 
-Or my emerging [poster project](/posters)
+My [climate strike posters](/posters)
+
+And some [GIFs for your Instagram Stories](/gifs/)
 
 **Subscribe** >> [YouTube](https://www.youtube.com/channel/UC11YzVs4e4h9kIt4VzUS6yQ?sub_confirmation=1), or the sparingly-used mailing list below.

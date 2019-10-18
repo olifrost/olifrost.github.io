@@ -1,7 +1,7 @@
 ---
 layout: page
 image: /blog/climatestrike.jpg
-title: Oli Frost's Climate Posters
+title: Refrost The Planet Posters
 carousel-items: 3
 images:
   - name: /blog/gettygirlfriend1.jpg
@@ -10,6 +10,11 @@ images:
 
 You're free to share and print these if you'll give a follow and tag [@realolifrost](http://olifro.st/links/) in return.
 
+## 24-10 – Fossil Ghouls
+
+{% include poster-gallery.html path="posters/fossilghouls/social" %}
+
+<a class="button" href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/olifrost/olifrost.github.io/tree/master/posters/extinctionrebellion">Download</a> Includes textured and flat versions.
 
 ## 07-10 – Autumn Rebellion Posters
 
