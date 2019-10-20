@@ -65,9 +65,9 @@ Without action in a decade, both people and emoji will be dead.
 
   <div class="col-xs-12 col-sm-4" markdown="1">
 
-### <i class="fas fa-running"></i>  Easy To Use
+### <i class="fas fa-globe-europe"></i>  Easy To Use
 
-Much easier than attending the global strike on the 29th November
+Much easier than attending the global strike on the 29th November.
 
   </div>
 
