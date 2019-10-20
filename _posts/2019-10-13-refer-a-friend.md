@@ -1,6 +1,6 @@
 ---
 layout: site
-title: Get £15 When You Refer Me A Friend
+title: Get £15 when you refer me a friend
 description: If you're looking for a friend there's never been a better time to choose Oli Frost.
 strapline: If we become friends, you both get rewarded.
 videos: nBfc_vfKKvc
