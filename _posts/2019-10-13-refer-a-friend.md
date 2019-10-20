@@ -14,127 +14,7 @@ permalink: /refer/
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 <style>
-
-.splash {
-  background-image: url("../blog/refer/friend.jpg");
-   background-size: cover;
-   height: 600px;
-}
-
-p {
-  font-size: 2.6rem;
-  text-align: left;
-}
-
-h3 {
-  text-align: left;
-}
-
-h2 {
-  text-align: center;
-}
-
-blockquote {
-  border: none;
-  padding-left: 0;
-  margin-bottom: 0.5rem;
-}
-
-blockquote p {
-  font-size: 2.6rem;
-}
-
-cite {
-  text-align: left;
-  display: block;
-  font-size: 1.8rem;
-}
-
-.svg-icon {
-  display: inline-flex;
-  align-self: center;
-  margin-right: 0.25em;
-}
-.svg-icon svg {
-  height:2em;
-  width:2em;
-}
-.svg-icon svg {
-  top: 0.5em;
-  position: relative;
-}
-
-.svg-icon path {
-    fill: white;
-}
-
-
-
-h3 i {
-  margin-right: 0.5rem;
-  position: relative;
-  bottom: -0.3rem;
-}
-
-article small.social {
-  position: relative;
-  top: 0.6rem;
-  left:1rem;
-}
-
-article, h1, .hero {
-  text-align: center;
-}
-
-h1 {
-  margin-bottom: 0rem;
-}
-
-.center {
-  text-align:center;
-}
-
-.buttons {
-  margin-top: 1rem;
-}
-
-.hero {
-
-}
-
-.video {
-  margin-top: 2rem;
-}
-
-.headline {
-  font-size: 10rem;
-}
-.lead {
-  font-size: 3rem;
-}
-
-
-.offers p, main div:last-child p {
-  margin-bottom: 1.5rem;
-}
-
-.offers div:first-child {
-  margin-bottom: 1.5rem;
-}
-
-@media only screen and (max-width: 38em) {
-  .headline {
-      font-size: 6rem;
-    }
-}
-
-.nobreak {
-  white-space: nowrap;
-}
-
-#counter {
-  text-align:center;
-}
+{% include site.css %}
 
 </style>
 
@@ -170,7 +50,7 @@ h1 {
   </div>  
 
 <div>
-<h3 id="counter"><i class="fas fa-user-tag"></i> <span style="color:blue"><a href="{{ page.instagramlink }}">232</a></span> Friends Tagged <span style="font-weight: 100;"><br>(Since 15/10/19)</span></h3>
+<h3 id="counter"><i class="fas fa-user-tag"></i> <span style="color:blue"><a href="{{ page.instagramlink }}">287</a></span> Friends Tagged <span style="font-weight: 100;"><br>(Since 15/10/19)</span></h3>
 </div>
 
 ---
