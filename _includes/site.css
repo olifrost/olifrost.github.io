@@ -1,9 +1,4 @@
 
-.splash {
-  background-image: url("../blog/refer/friend.jpg");
-   background-size: cover;
-   height: 600px;
-}
 
 p {
   font-size: 2.6rem;
@@ -80,10 +75,6 @@ h1 {
 
 .buttons {
   margin-top: 1rem;
-}
-
-.hero {
-
 }
 
 .video {
