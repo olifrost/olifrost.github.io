@@ -1,8 +1,7 @@
 ---
 layout: site
 title: I made a more realistic earth emoji
-description: It's with the emoji consortium for approval
-videos: nBfc_vfKKvc
+description: It's more realistic than the normal one
 image: /blog/earthemoji/earthemoji-wide-background.png
 permalink: /realistic-earth-emoji
 ---

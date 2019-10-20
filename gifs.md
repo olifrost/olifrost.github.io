@@ -1,6 +1,10 @@
 ---
 layout: default
 title: Blog
+carousel-items: 3
+images:
+  - name: /blog/gettygirlfriend1.jpg
+    alt: Getty Girlfriend 1
 ---
 
 ## Refrost The Planet GIFs
@@ -11,10 +15,4 @@ Search 'Oli Frost' to add to your Instagram or Snapchat Stories.
 
 [GIPHY Profile](http://giphy.com/olifrost)
 
-![](/downloads/climatecrisis.gif)
-![](/downloads/damnitshell.gif)
-![](/downloads/fossilfuelsarelame.gif)
-![](/downloads/pinguapproves.gif)
-![](/downloads/polarbears.gif)
-![](/downloads/ughconsumerism.gif)
-![](/downloads/wwdd.gif)
+{% include poster-gallery.html path="/posters/gifs" %}
