@@ -1,7 +1,7 @@
 ---
 layout: site
 title: I made a more realistic earth emoji
-description: It's more realistic than the normal one
+description: Currently with the emoji consortium for approval
 image: /blog/earthemoji/earthemoji-wide-background.png
 permalink: /realistic-earth-emoji
 ---
@@ -65,13 +65,17 @@ Without action in a decade, both people and emoji will be dead.
 
   <div class="col-xs-12 col-sm-4" markdown="1">
 
-### <i class="fas fa-globe-europe"></i>  Easy To Use
+### <i class="fas fa-globe-europe"></i>  Three Rotations
 
-Much easier than attending the global strike on the 29th November.
+It's on fire, whichever way you look at
 
   </div>
 
 </div>
+
+---
+
+[Original Tweet]https://www.instagram.com/p/B1_zoxCnaTW/)
 
 ---
 
