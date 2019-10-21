@@ -3,9 +3,7 @@ layout: page
 image: /blog/climatestrike.jpg
 title: "#RefrostThePlanet Downloads"
 carousel-items: 3
-images:
-  - name: /blog/gettygirlfriend1.jpg
-    alt: Getty Girlfriend 1
+images: true
 ---
 
 You're free to share and print these if you'll give a follow and tag [@realolifrost](http://olifro.st/links/) in return.

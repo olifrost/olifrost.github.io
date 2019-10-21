@@ -5,18 +5,7 @@ description: For a lot of guys, getting a girlfriend is all about one thing.
 image: blog/gettygirlfriendcover.jpg
 library: https://drive.google.com/drive/folders/1m-DnqOabNWLGDokBUec7YVOAhRwpiBYd?usp=sharing
 carousel-items: 1
-images:
-  - name: /blog/gettygirlfriend1.jpg
-    alt: Getty Girlfriend 1
-  - name: /blog/gettyboyfriend.jpg
-    alt: Getty Boyfriend 1
-  - name: /blog/gettygirlfriend4.jpg
-    alt: Getty Girlfriend 2
-  - name: /blog/gettyboyfriend3.jpg
-    alt: Getty Boyfriend 2
-  - name: /blog/gettygirlfriend2.jpg
-    alt: Getty Girlfriend 2
-
+images: true
 ---
 
 <style>
@@ -43,7 +32,7 @@ So with Valentine's coming I wanted to do something to help those without.
 
 By sharing with you my personal wallpaper library.
 
-{% include carousel.html %}
+{% include poster-gallery.html path="blog/gettygirlfriend" %}
 
 <a href="{{ page.library }}" class="button">Download</a> *Over 150 backdrops, liberated from the GettyImages library.*
 

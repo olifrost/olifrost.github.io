@@ -1,16 +1,16 @@
 ---
 layout: site
-title: I made a more realistic earth emoji
+title: The Realistic Earth Emoji
 description: Currently with the emoji consortium for approval
 image: /blog/earthemoji/earthemoji-wide-background.png
 permalink: /realistic-earth-emoji
 ---
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
 
 <style>
 
-{% include site.css %}
+.hero-image {
+  padding: 0% 20%
+}
 
 </style>
 
@@ -33,8 +33,8 @@ permalink: /realistic-earth-emoji
   </div>
 
     <div class="row first-xs between-sm video">
-      <div class="col-xs-12">
-          <img src="/blog/earthemoji/earthemoji-wide-background.png">
+      <div class="col-xs-12 hero-image">
+          <img src="/blog/earthemoji/earthemoji.gif">
       </div>
     </div>
 
@@ -59,7 +59,7 @@ Unlike the normal earth emoji, this earth is on fire
   <div class="col-xs-12 col-sm-4" markdown="1">
 
 ### <i class="far fa-clock"></i>  Limited Time Only
-Without action in a decade, both people and emoji will be dead.
+Without action in a decade, both people and emoji will be dead anyway.
 
   </div>
 
@@ -83,6 +83,8 @@ It's on fire, whichever way you look at it.
 
 See the [original tweet](https://www.instagram.com/p/B1_zoxCnaTW/)
 
-{% include refrost-links %}
+---
+
+{% include about.html %}
 
 ---

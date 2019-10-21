@@ -125,6 +125,11 @@
   text-align: center;
 }
 
+.middle-xs {
+  align-items: center;
+  justify-content: center;
+}
+
 @media only screen and (min-width: $first-breakpoint) {
 
   .col-sm,

@@ -21,6 +21,9 @@ collections:
   brands:
     # output: true
     permalink: /work/:title/
+  hidden:
+    output: true
+    permalink: /work/:title/
 
 
 # SASS
@@ -46,6 +49,8 @@ defaults:
       path: ""
     values:
       image: /blog/refrosttheplanet-large.jpg
+
+profile: /img/olifrot.jpg
 
 twitter:
   username: realolifrost
