@@ -1,7 +1,8 @@
 ---
 layout: site
-title: Fossil Ghouls
+title: Mu halloween mask made everyone cry
 description: Printable, plastic-free masks
+tagline: Printable, plastic-free masks
 image: /posters/fossilghouls/fossilghouls-cover.jpg
 permalink: /fossilghouls
 carousel-items: 3
@@ -64,8 +65,8 @@ color: #FEFEFE;
 
   <div class="row first-xs between-sm ">
     <div class="col-xs-12">
-      <h1 class="headline">Fossil Ghouls</h1>
-      <p class="center"> Plastic-free, printable masks</p>
+      <h1 class="headline">{{ page.header }}</h1>
+      <p class="center"> {{ page.tagline }}</p>
 
 
     </div>
