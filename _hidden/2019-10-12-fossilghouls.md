@@ -2,7 +2,7 @@
 layout: site
 title: Fossil Ghouls
 description: Printable, plastic-free masks
-image: /blog/fossilghouls/fossilghouls-cover.jpg
+image: /posters/fossilghouls/fossilghouls-cover.jpg
 permalink: /fossilghouls
 carousel-items: 3
 images: true
