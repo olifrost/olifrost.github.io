@@ -1,7 +1,7 @@
 ---
 layout: site
-title: Mu halloween mask made everyone cry
-description: Printable, plastic-free masks
+title: My halloween masks will make your child cry
+description: Fossil Ghouls is a range of printable, plastic-free masks – suitable for all ages.
 tagline: Printable, plastic-free masks
 image: /posters/fossilghouls/fossilghouls-cover.jpg
 permalink: /fossilghouls

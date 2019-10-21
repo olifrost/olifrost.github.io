@@ -15,7 +15,7 @@ permalink: /refrost/
 
 <div class="youtube-player" data-id="{{ page.videos }}" data-thumb="{{ page.image }}"></div>
 
-**Oli Frost Refrosts The Planet** is a documentary that follows me, Oli Frost, and my plans to stop the earth defrosting.
+**Oli Frost Refrosts The Planet** is a documentary that follows me, Oli Frost, and my various plans to stop the earth defrosting.
 
 **Part One** >> [I pretend to work for my local council](/little-tips/)
 
