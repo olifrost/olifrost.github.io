@@ -67,7 +67,7 @@ Without action in a decade, both people and emoji will be dead.
 
 ### <i class="fas fa-globe-europe"></i>  Three Rotations
 
-It's on fire, whichever way you look at
+It's on fire, whichever way you look at it.
 
   </div>
 
@@ -81,9 +81,7 @@ It's on fire, whichever way you look at
 
 ---
 
-[Original Tweet](https://www.instagram.com/p/B1_zoxCnaTW/)
-
----
+See the [original tweet](https://www.instagram.com/p/B1_zoxCnaTW/)
 
 {% include refrost-links %}
 
