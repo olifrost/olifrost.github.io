@@ -1,8 +1,8 @@
 ---
 layout: site
-title: I made halloween scary again
+title: Fossil Ghouls
 description: Printable, plastic-free masks
-image: /blog/fossilghouls/fossil-ghouls.cover.jpg
+image: /blog/fossilghouls/fossilghouls-cover.jpg
 permalink: /fossilghouls
 carousel-items: 3
 images: true
