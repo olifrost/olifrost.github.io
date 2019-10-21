@@ -1,6 +1,7 @@
 ---
 layout: site
 title: My halloween masks will make your child cry
+header: Fossil Ghouls
 description: Fossil Ghouls is a range of printable, plastic-free masks – suitable for all ages.
 tagline: Printable, plastic-free masks
 image: /posters/fossilghouls/fossilghouls-cover.jpg
