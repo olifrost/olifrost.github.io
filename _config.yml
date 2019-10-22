@@ -24,6 +24,9 @@ collections:
   hidden:
     output: true
     permalink: /work/:title/
+  refrost:
+    # output: true
+    permalink: /work/:title/
 
 
 # SASS

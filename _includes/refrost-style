@@ -9,7 +9,7 @@ p, h1, h2, h3, h4, small, header, footer, input[type='email'] {
 
 }
 
-input[type='submit'] {
+input[type='submit'], .button {
   background-color: #8d8e93;
   border-color: #8d8e93
 }
@@ -19,7 +19,9 @@ border: .1rem solid #FEFEFE;
 color: #FEFEFE;
 }
 
-
+hr {
+  border-color: white;
+}
 
  a, .navigation a {
    color: #B2E1ED
@@ -31,6 +33,10 @@ color: #FEFEFE;
 
  .icon svg path {
    fill: #B2E1ED;
+ }
+
+ .owl-dot {
+  color: white !important;
  }
 
 </style>

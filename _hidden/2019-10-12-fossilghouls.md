@@ -83,7 +83,7 @@ color: #FEFEFE;
     <div class="row first-xs between-sm buttons">
         <div class="col-xs-12">
 
-            <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/olifrost/olifrost.github.io/tree/master/blog/earthemoji" class="button"><i class="fas fa-ghost"></i> Download</a>
+            <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/olifrost/olifrost.github.io/tree/master/posters/fossilghouls/print" class="button"><i class="fas fa-ghost"></i> Download</a>
       </div>
     </div>
 
@@ -113,9 +113,9 @@ Scarier than plastic straws.
 
   <div class="col-xs-12 col-sm-4" markdown="1">
 
-### <i class="fas fa-oil-can"></i>  Thought Provoking
+### <i class="fas fa-oil-can"></i>  Good Party Chat
 
-20 companies are [responsible for more than a third of emissions](https://www.theguardian.com/environment/2019/oct/09/revealed-20-firms-third-carbon-emissions).
+20 companies are [directly responsible for more than a third of emissions](https://www.theguardian.com/environment/2019/oct/09/revealed-20-firms-third-carbon-emissions).
 
   </div>
 

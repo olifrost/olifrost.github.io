@@ -20,7 +20,6 @@ You're free to share and print these if you'll give a follow and tag [@realolifr
 
 <a class="button" href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/olifrost/olifrost.github.io/tree/master/posters/globalclimatestrike">Download</a> Includes textured and flat versions.
 
-
 ## 07/09 – Realistic Earth emoji
 
 {% include poster-gallery.html path="posters/earthemoji" %}
@@ -29,4 +28,4 @@ You're free to share and print these if you'll give a follow and tag [@realolifr
 
 ---
 
-{% include refrost-links %}
+{% include about.html %}
