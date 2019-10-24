@@ -1,12 +1,12 @@
 ---
 layout: page
 image: /blog/climatestrike.jpg
-title: "#RefrostThePlanet Downloads"
+title: "#RefrostThePlanet Strike Posters"
 carousel-items: 3
 images: true
 ---
 
-You're free to share and print these if you'll give a follow and tag [@realolifrost](http://olifro.st/links/) in return.
+You're free to share and print these if you'll give a follow and tag [@realolifrost](https://olifro.st/links/) in return.
 
 ## 07/10 – Autumn Rebellion Posters
 

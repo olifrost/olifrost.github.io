@@ -54,8 +54,16 @@ color: #FEFEFE;
    fill: #eb6123;
  }
 
- .owl-dot  {
-   color: #eb6123;
+ .owl-dot span {
+   background-color: #eb6123;
+ }
+
+ .downloads p {
+   text-align: center;
+   max-width: 40rem;
+   padding-top: 1rem;
+   margin: auto;
+   font-size: 140%;
  }
 
 
@@ -80,10 +88,12 @@ color: #FEFEFE;
       </div>
     </div>
 
-    <div class="row first-xs between-sm buttons">
+    <div class="row first-xs between-sm buttons downloads">
         <div class="col-xs-12">
 
             <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/olifrost/olifrost.github.io/tree/master/posters/fossilghouls/print" class="button"><i class="fas fa-ghost"></i> Download</a>
+
+            <p markdown="1">You can print and share these if you'll give a tag and follow [@realolifrost](https://olifro.st/links) in return</p>
       </div>
     </div>
 
@@ -126,6 +136,14 @@ Scarier than plastic straws.
 ## Terms and Conditions
 
 <span class="terms">You can use this non-commercially with attribution [@realolifrost](https://olifro.st/links). If you get a toffee apple I want half. If you make friends [I want them](/refer). You must make one small child cry.  </span>
+
+---
+
+## More #RefrostThePlanet
+
+[Oli Frost Refrosts The Planet](/refrost) is an online series that follows me, Oli Frost, and my plans to stop the earth defrosting.
+
+{% include poster-gallery.html path="posters/refrosttheplanet" %}
 
 ---
 
