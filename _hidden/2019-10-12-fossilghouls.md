@@ -108,7 +108,7 @@ color: #FEFEFE;
     <div class="col-xs-12 col-sm-4" markdown="1">
 
 
-### <i class="fas fa-sticky-note"></i>  Plastic Free
+### <i class="fas fa-sticky-note"></i>  Plastic-Free
 Unless you print them on plastic.
 
 
