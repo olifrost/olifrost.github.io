@@ -1,6 +1,6 @@
 ---
 layout: site
-title: Fossil Ghouls: the world's scariest halloween masks
+title: "Fossil Ghouls, the world's scariest halloween masks"
 header: Fossil Ghouls
 description: Fossil Ghouls is a range of printable, plastic-free masks – suitable for all ages.
 tagline: Printable, plastic-free masks
