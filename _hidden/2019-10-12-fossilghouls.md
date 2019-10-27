@@ -125,7 +125,7 @@ Scarier than plastic straws.
 
 ### <i class="fas fa-oil-can"></i>  Good Party Chat
 
-20 companies are [directly responsible for more than a third of emissions](https://www.theguardian.com/environment/2019/oct/09/revealed-20-firms-third-carbon-emissions).
+Based on 20 companies [behind more than a third of emissions](https://www.theguardian.com/environment/2019/oct/09/revealed-20-firms-third-carbon-emissions).
 
   </div>
 
