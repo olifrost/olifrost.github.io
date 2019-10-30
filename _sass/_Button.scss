@@ -76,13 +76,13 @@ input[type='submit'] {
 
 	&.button-clear {
 		background-color: transparent;
-		border-color: transparent;
+		border-color: .1rem solid $color-primary;
 		color: $color-primary;
 
 		&:focus,
 		&:hover {
 			background-color: transparent;
-			border-color: transparent;
+			border-color: .1rem solid $color-primary;
 			color: $color-secondary;
 		}
 

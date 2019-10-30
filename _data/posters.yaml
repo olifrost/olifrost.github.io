@@ -1,0 +1,25 @@
+docs_list_title: Posters
+events:
+
+- title: November Climate Strike
+  url: posters/novemberstrike/textured
+  download: posters/novemberstrike
+  locate: https://www.fridaysforfuture.org/events/list
+  date: 29th November 2019
+
+- title: Autumn Rebellion
+  url: posters/extinctionrebellion/textured
+  download: posters/globalclimatestrike
+  locate: https://rebellion.earth
+  date: 7th October 2019
+
+- title: Global Climate Strike
+  url: posters/globalclimatestrike/social
+  download: posters/globalclimatestrike
+  locate: https://www.globalclimatestrike.net
+  date: 20th September 2019
+
+- title: Realistic Earth Emoji
+  url: posters/earthemoji
+  download: blog/earthemoji
+  date: 17th July 2019
