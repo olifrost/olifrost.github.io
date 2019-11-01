@@ -7,19 +7,42 @@ events:
   locate: https://www.fridaysforfuture.org/events/list
   date: 29th November 2019
 
-- title: Autumn Rebellion
-  url: posters/extinctionrebellion/textured
-  download: posters/globalclimatestrike
-  locate: https://rebellion.earth
-  date: 7th October 2019
+- title: Fossil Ghouls
+  url: posters/fossilghouls/social
+  download: posters/fossilghouls
+  date: 31st October 2019
+  uses:
+    - name: XR UK
+      link: https://twitter.com/realolifrost/status/1187346382736252929
+    - name: 350org
+      link: https://twitter.com/350Europe/status/1187746083990102017
+    - name: FFF
+      link: https://twitter.com/realolifrost/status/1187346382736252929
+    - name: Product Hunt
+      link: https://www.producthunt.com/posts/fossil-ghouls
+    - name: Coal Mine Protest, Australia
 
 - title: Global Climate Strike
   url: posters/globalclimatestrike/social
   download: posters/globalclimatestrike
   locate: https://www.globalclimatestrike.net
   date: 20th September 2019
+  uses:
+    - name: School Strike For Climate
+      link: https://www.instagram.com/p/B2dpJwPAZuq/
+    - name: Extinction Rebellion
+      link: https://www.instagram.com/p/B2W62tAnf63
+    - name: 350.org
+      link: https://twitter.com/350/status/1173310522596438017
+    - name: Upworthy
+      link: https://www.instagram.com/p/B2oKK7PARL5/
+    - name: I Weigh
+      link: https://www.instagram.com/p/B2gtSTinqOv
 
 - title: Realistic Earth Emoji
   url: posters/earthemoji
   download: blog/earthemoji
   date: 17th July 2019
+  uses:
+    - name: Video Game – Climate Trail
+      link: https://www.theclimatetrail.com
