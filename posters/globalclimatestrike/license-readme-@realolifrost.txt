@@ -1,13 +1,12 @@
-## License
-You're free to share/print these if you'll give a tag and follow @realolifrost
+## License ##
+You're free to share/print these if you'll credit and follow @realolifrost in return
 
-## Modifications
+E.G. "Posters by @realolifrost. Download links in his bio"
+
+
+## Contact ##
 Please get in touch if you're interested in adapting these for something else.
 
-## Printing
-If you do print them, I'd love to see photos. 
-
-## Contact
 mail@olifro.st
 @realolifrost
 https://olifro.st/posters
