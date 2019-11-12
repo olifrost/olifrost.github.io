@@ -7,7 +7,8 @@ events:
   locate: https://www.gov.uk/register-to-vote
   date: 26th November 2019
   cta: Register To Vote
-
+  uses:
+    - name: More To Come This Week
 
 - title: Global Day Of Action
   url: posters/novemberstrike/textured
