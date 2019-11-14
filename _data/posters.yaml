@@ -17,6 +17,13 @@ events:
   date: 29th November 2019
   cta: Find Strike
 
+- title: Global Hunger Strike
+  url: posters/hungerstrike/social
+  download: posters/hungerstrike
+  locate: https://rebellion.earth/event/global-hunger-strike/
+  date: 29th November 2019
+  cta: Join Strike
+
 - title: Fossil Ghouls
   url: posters/fossilghouls/social
   download: posters/fossilghouls
