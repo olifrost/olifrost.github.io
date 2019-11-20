@@ -1,19 +1,23 @@
 docs_list_title: Posters
 events:
 
+
+- title: Global Day Of Action
+  url: posters/novemberstrike/social
+  download: posters/novemberstrike
+  locate: https://www.fridaysforfuture.org/statistics/map
+  date: 29th November 2019
+  cta: Find Strike
+
 - title: Register To Vote (UK)
   url: posters/registertovote/social
   download: posters/registertovote
   locate: https://www.gov.uk/register-to-vote
   date: 26th November 2019
   cta: Register To Vote
-
-- title: Global Day Of Action
-  url: posters/novemberstrike/textured
-  download: posters/novemberstrike
-  locate: https://www.fridaysforfuture.org/events/list
-  date: 29th November 2019
-  cta: Find Strike
+  uses:
+    - name: YouthStrike4Climate
+      link: https://www.instagram.com/p/B4-johnneWd/
 
 - title: Global Hunger Strike
   url: posters/hungerstrike/social
@@ -43,6 +47,8 @@ events:
   locate: https://rebellion.earth/
   date: 7th October
   cta: Join Rebellion
+  uses:
+    - name: Extinction Rebellion (UK, US, Canada, Australia, India, XR Youth)
 
 - title: Global Climate Strike
   url: posters/globalclimatestrike/social
