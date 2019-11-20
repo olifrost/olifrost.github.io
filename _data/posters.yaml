@@ -7,8 +7,6 @@ events:
   locate: https://www.gov.uk/register-to-vote
   date: 26th November 2019
   cta: Register To Vote
-  uses:
-    - name: More To Come This Week
 
 - title: Global Day Of Action
   url: posters/novemberstrike/textured
@@ -38,6 +36,13 @@ events:
     - name: Product Hunt
       link: https://www.producthunt.com/posts/fossil-ghouls
     - name: Coal Mine Protest, Australia
+
+- title: Autumn Rebellion
+  url: posters/extinctionrebellion/textured
+  download: posters/extinctionrebellion
+  locate: https://rebellion.earth/
+  date: 7th October
+  cta: Join Rebellion
 
 - title: Global Climate Strike
   url: posters/globalclimatestrike/social
