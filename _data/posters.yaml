@@ -1,6 +1,12 @@
 docs_list_title: Posters
 events:
 
+- title: Fridays For Future
+  url: posters/fridaysforfuture/social
+  download: posters/fridaysforfuture
+  locate: https://www.fridaysforfuture.org/statistics/map
+  date: 29th November 2019
+  cta: Find Strike
 
 - title: Global Day Of Action
   url: posters/novemberstrike/social
