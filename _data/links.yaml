@@ -5,6 +5,10 @@ docs:
   url: /about
   colour: 2AA3EF
 
+- title: Instagram
+  url: https://instagram.com/realolifrost
+  colour: 1DB954
+
 - title: YouTube
   url: https://youtube.com/c/olifrost
   colour: FF0000
@@ -12,10 +16,6 @@ docs:
 - title: Twitter
   url: https://twitter.com/realolifrost
   colour: 1DA1F2
-
-- title: Instagram
-  url: https://instagram.com/realolifrost
-  colour: 1DB954
 
 - title: Climate Posters
   url: https://olifro.st/posters
