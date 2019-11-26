@@ -1,16 +1,6 @@
 docs_list_title: Posters
 events:
 
-- title: Register To Vote (UK)
-  url: posters/registertovote/social
-  download: posters/registertovote
-  locate: https://www.gov.uk/register-to-vote
-  date: 26th November 2019
-  cta: Register To Vote
-  uses:
-    - name: YouthStrike4Climate
-      link: https://www.instagram.com/p/B4-johnneWd/
-
 - title: Fridays For Future
   url: posters/fridaysforfuture/social
   download: posters/fridaysforfuture
@@ -24,6 +14,16 @@ events:
   locate: https://www.fridaysforfuture.org/statistics/map
   date: 29th November 2019
   cta: Find Strike
+
+- title: Register To Vote (UK)
+  url: posters/registertovote/social
+  download: posters/registertovote
+  locate: https://www.gov.uk/register-to-vote
+  date: 26th November 2019
+  cta: Register To Vote
+  uses:
+    - name: YouthStrike4Climate
+      link: https://www.instagram.com/p/B4-johnneWd/
 
 - title: Global Hunger Strike
   url: posters/hungerstrike/social
