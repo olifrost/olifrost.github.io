@@ -1,6 +1,13 @@
 docs_list_title: Posters
 events:
 
+- title: Tactical Vote (UK)
+  url: posters/tacticalvote/social
+  download: posters/tacticalvote
+  locate: https://www.tactical.vote
+  date: 29th November 2019
+  cta: Check Vote
+
 - title: Fridays For Future
   url: posters/fridaysforfuture/social
   download: posters/fridaysforfuture
