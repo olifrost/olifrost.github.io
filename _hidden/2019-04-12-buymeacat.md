@@ -35,21 +35,35 @@ coffeelink: https://www.buymeacoffee.com/olifrost
 
 <div markdown=1>
 
+<div class="row first-xs between-sm">
+    <div class="col-xs-12 col-sm-4" markdown="1">
 
-## Why You Should Buy Me A Cat
 
-I've seen people on the internet say "Hey, if you like my work, buy me a coffee".
+### <i class="fas fa-money-bill-alt"></i>  Cheap
+It's only £17,000 for the lifetime cost so you can think of it as like buying me a few beers or coffees.
 
-I would much rather you [buy me a cat]({{ page.paypallink }}).
 
-The lifetime cost is only around £17,000 and I will put your name on his collar.
+  </div>
 
-And while Cats do have a carbon pawprint.
+  <div class="col-xs-12 col-sm-4" markdown="1">
 
-The happiness will likely prevent other consumerism in my life.
+### <i class="fas fa-paw"></i>  Small Pawprint
+Ok cats do have a large carbon footprint but the happiness will likely prevent other reckless consumerism in my life.
 
-If you cannot afford to buy me a cat, [please buy me a plant]({{ page.coffeelink }})
+  </div>
 
-I am currently shopping for small succulents, and Chinese money plants.
+  <div class="col-xs-12 col-sm-4" markdown="1">
+
+### <i class="fas fa-leaf"></i>  Plant-Based Alternative
+
+Otherwise, please [buy me a plant]({{ page.coffeelink }}). I am currently shopping for small succulents, and Chinese money plants.
+
+  </div>
 
 </div>
+
+---
+
+{% include about.html %}
+
+---
