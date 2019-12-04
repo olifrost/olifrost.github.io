@@ -39,7 +39,7 @@ Usually I work alone, like Batman, or Frodo after a meltdown. However, if you'd 
 [Ask me](mailto:{{ site.author.email }}). As long as it's not weird…
 
 ## Love your work, can I buy you a coffee?
-No. If you'd like to support my work please [buy me a cat](https://paypal.me/olifrost). Any amount donated on the PayPal link will be saved towards the lifetime cost of said cat (around £17,000). Your name will go on his collar.
+No. If you'd like to support my work please [buy me a cat](/buymeacat). 
 
 ## Can I still buy all your personal data?
 [Sure]({{ site.baseurl }}{% post_url 2018-05-27-data-on-ebay %}), it'd be quicker than answering all these questions.
