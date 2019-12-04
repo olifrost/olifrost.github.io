@@ -7,8 +7,8 @@ tagline: Support my work. It's only £17,000.
 permalink: /buymeacat
 carousel-items: 3
 images: true
-image: /blog/refer/refer-thumb.jpg
-thumb: /blog/refer/refer-video.jpg
+image: /blog/cat.jpg
+thumb: /blog/cat.jpg
 paypallink: https://www.paypal.me/olifrost
 coffeelink: https://www.buymeacoffee.com/olifrost
 ---
@@ -27,7 +27,7 @@ coffeelink: https://www.buymeacoffee.com/olifrost
 
     <div class="col-xs-12">
       <p style="margin-top:2rem;">
-      <img src="/blog/cat.jpg">
+      <img src="{{ page.thumb }}">
       </p>
     </div>
 
