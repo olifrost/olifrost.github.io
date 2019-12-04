@@ -33,7 +33,7 @@ coffeelink: https://www.buymeacoffee.com/olifrost
 
 </div>
 
-<div markdown=1>
+<div markdown="1">
 
 <div class="row first-xs between-sm">
     <div class="col-xs-12 col-sm-4" markdown="1">
@@ -66,4 +66,4 @@ Otherwise, please [buy me a plant]({{ page.coffeelink }}). I am currently shoppi
 
 {% include about.html %}
 
----
+</div>
