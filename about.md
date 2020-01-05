@@ -6,7 +6,7 @@ image: /img/olifrost.jpg
 
 {% include bio %}
 
-My work has been featured everywhere from [UK Parliament](http://thehomelessperiod.com) to [Britain's Got Talent]({{ site.baseurl }}{% post_url 2018-05-20-recorda-boi %}), [BBC](https://www.bbc.co.uk/bbcthree/article/10f77fff-06ed-4c11-a91a-d1413df96d23) to [Fox News](http://www.foxnews.com/tech/2018/05/30/facebook-user-auctions-personal-data-on-ebay-for-99-cents-and-bids-soar-sell-it-to-advertisers-or-whatever.html), [Fast Company](https://www.fastcompany.com/90173378/flopstarter-is-kickstarter-for-really-really-really-bad-ideas) to ["Cheezburger"](https://cheezburger.com/3832325/flopstarter-unveils-a-series-of-twisted-inventions-which-would-never-appear-on-kickstarter).
+My work has been featured everywhere from [UK Parliament](http://thehomelessperiod.com) to [Britain's Got Talent]({{ site.baseurl }}{% post_url 2018-05-20-recorda-boi %}), [BBC](https://www.bbc.co.uk/bbcthree/article/10f77fff-06ed-4c11-a91a-d1413df96d23) to [Fox News](http://www.foxnews.com/tech/2018/05/30/facebook-user-auctions-personal-data-on-ebay-for-99-cents-and-bids-soar-sell-it-to-advertisers-or-whatever.html), in [art shows](/refer), and [on bins](/little-tips).
 
 At the moment, [I am sorting out climate change](/refrost).
 
@@ -21,10 +21,7 @@ Not sure yet.
 I was born London but I'm currently [seeking citizenship in São Tomé](/blog/sao-tome-citizen/).
 
 ## Do you have any qualifications
-I studied Philosophy at UCL (Or did I? We just don't know).
-
-## What's that photo where you have a coat hook on your shirt?
-It's a [SHOOK]({{ site.baseurl }}{% post_url 2018-02-03-shook-shirt-hook %}).
+I studied Philosophy at UCL (Or at least it's metaphysically possible I did).
 
 ## When a shirt becomes a pyjama shirt can it ever go back?
 Only for short trips to the shops.
@@ -39,7 +36,7 @@ Usually I work alone, like Batman, or Frodo after a meltdown. However, if you'd 
 [Ask me](mailto:{{ site.author.email }}). As long as it's not weird…
 
 ## Love your work, can I buy you a coffee?
-No. If you'd like to support my work please [buy me a cat](/buymeacat). 
+No. If you'd like to support my work please [buy me a cat](/buymeacat).
 
 ## Can I still buy all your personal data?
 [Sure]({{ site.baseurl }}{% post_url 2018-05-27-data-on-ebay %}), it'd be quicker than answering all these questions.
