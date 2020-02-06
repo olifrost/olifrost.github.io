@@ -14,6 +14,21 @@ events:
   locate: https://www.fridaysforfuture.org/statistics/map
   date: 29th November 2019
   cta: Find Strike
+  uses:
+    - name: Greenpeace
+      link: https://www.instagram.com/p/B5XqpxPjSU8/
+    - name: YouthStrike4Climate
+      link: https://www.instagram.com/p/B5JEintnixJ/
+    - name: Fridays For Future Italia
+      link: https://www.instagram.com/p/B5QQMJtoyPd/
+    - name: Fridays For Future Delhi
+      link: https://www.instagram.com/p/B5QMNdFnO4s/
+    - name: Fridays For Future Veria
+      link: https://www.instagram.com/p/B5Xso5NFrAr/
+    - name: Fridays For Future Vienna
+      link: https://www.instagram.com/p/B5NUxxdlHc-/
+    - name: 350org
+      link: https://www.instagram.com/p/B5cGD3ghEd6/
 
 - title: Global Day Of Action
   url: posters/novemberstrike/social
@@ -21,6 +36,13 @@ events:
   locate: https://www.fridaysforfuture.org/statistics/map
   date: 29th November 2019
   cta: Find Strike
+  uses:
+    - name: Greenpeace
+      link: https://www.instagram.com/p/B5V3fX8H7il/
+    - name: 350org
+      link: https://www.instagram.com/p/B5ZW7MYldO7/
+    - name: Fridays For Future
+      link: https://www.instagram.com/p/B4yD7ibg6Zb/
 
 - title: Register To Vote (UK)
   url: posters/registertovote/social
@@ -29,15 +51,12 @@ events:
   date: 26th November 2019
   cta: Register To Vote
   uses:
+    - name: The Times
+      link: https://www.instagram.com/p/B5BB11kHRAy/
     - name: YouthStrike4Climate
       link: https://www.instagram.com/p/B4-johnneWd/
-
-- title: Global Hunger Strike
-  url: posters/hungerstrike/social
-  download: posters/hungerstrike
-  locate: https://rebellion.earth/event/global-hunger-strike/
-  date: 29th November 2019
-  cta: Join Strike
+    - name: Scottish Youth Strike
+      link: https://www.instagram.com/p/B5Hvd8gnvYP/
 
 - title: Fossil Ghouls
   url: posters/fossilghouls/social
@@ -50,6 +69,8 @@ events:
       link: https://twitter.com/350Europe/status/1187746083990102017
     - name: FFF
       link: https://twitter.com/realolifrost/status/1187346382736252929
+    - name: FFF Italy
+      link: https://www.instagram.com/p/B4THzaSFUJa/
     - name: Product Hunt
       link: https://www.producthunt.com/posts/fossil-ghouls
     - name: Coal Mine Protest, Australia
@@ -61,7 +82,22 @@ events:
   date: 7th October
   cta: Join Rebellion
   uses:
-    - name: Extinction Rebellion (UK, US, Canada, Australia, India, XR Youth)
+    - name: XR UK
+      link: https://twitter.com/realolifrost/status/1178579825252081664
+    - name: XR Canada
+      link: https://www.instagram.com/p/B3DkCGsHF8n/
+    - name: XR Australia
+      link: https://www.instagram.com/p/B3K_NY6nGlb/
+    - name: XR Boston
+      link: https://www.instagram.com/p/B3CqmWjn61E/
+    - name: XR Mumbai
+      link: https://www.instagram.com/p/B3CB4zVHwVm/
+    - name: XR Youth
+      link: https://www.instagram.com/p/B2_vkpLnraf/
+    - name: XR Youth US
+      link: https://www.instagram.com/p/B3BXgnYnPOI/
+    - name: XR Bristol
+      link: https://www.instagram.com/p/B3R9ntlBAZJ/
 
 - title: Global Climate Strike
   url: posters/globalclimatestrike/social
