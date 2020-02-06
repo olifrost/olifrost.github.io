@@ -1,12 +1,12 @@
 docs_list_title: Posters
 events:
 
-- title: Tactical Vote (UK)
-  url: posters/tacticalvote/social
-  download: posters/tacticalvote
-  locate: https://www.tactical.vote
-  date: 12th December
-  cta: Check Vote
+- title: Valentine's Climate Strike
+  url: posters/valentines/social
+  download: posters/valentines
+  locate: https://ukscn.org
+  date: 14th Feburary
+  cta: Find Strike
 
 - title: Fridays For Future
   url: posters/fridaysforfuture/social
