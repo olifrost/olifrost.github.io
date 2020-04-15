@@ -4,7 +4,7 @@ title: Flopstarter
 description: A platform for bad ideas.
 image: /portfolio/flopstarter.jpg
 link: http://flopstarter.com
-order: 2
+order: 1
 press:    
   - name: 'Fast Company'
     article_link: 'https://www.fastcodesign.com/90173378/flopstarter-is-kickstarter-for-really-really-really-bad-ideas'

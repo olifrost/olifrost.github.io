@@ -17,4 +17,10 @@ permalink: /little-tips/
 
 <div class="youtube-player" data-id="1re8Y-JoD78" data-thumb="https://i.ytimg.com/vi/1re8Y-JoD78/maxresdefault.jpg"></div>
 
+<div class="youtube-player" data-id="T9oX3DvAjFk" data-thumb="https://i.ytimg.com/vi/T9oX3DvAjFk/maxresdefault.jpg"></div>
+
+<div class="youtube-player" data-id="d49jRA9aTh8" data-thumb="https://i.ytimg.com/vi/d49jRA9aTh8/maxresdefault.jpg"></div>
+
+<div class="youtube-player" data-id="T9oX3DvAjFk" data-thumb="https://i.ytimg.com/vi/T9oX3DvAjFk/maxresdefault.jpg"></div>
+
 {% include refrost-links %}
