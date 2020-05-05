@@ -1,6 +1,13 @@
 docs_list_title: Posters
 events:
 
+- title: Online Climate Strike
+  url: posters/online/social
+  download: posters/online
+  locate: https://linktr.ee/fff.digital
+  date: 2020
+  cta: Find Strike
+
 - title: Valentine's Climate Strike
   url: posters/valentines/social
   download: posters/valentines
