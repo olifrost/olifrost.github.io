@@ -3,7 +3,6 @@ layout: post
 title: Am I the father of wearable technology?
 description: I first noticed the problem ten years ago.
 image: /blog/shook-1.jpg
-featured: yes
 ---
 
 <style>

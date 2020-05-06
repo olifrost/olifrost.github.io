@@ -20,17 +20,14 @@ Not sure yet.
 ## Where are you from?
 I was born London but I'm currently [seeking citizenship in São Tomé](/blog/sao-tome-citizen/).
 
-## Do you have any qualifications
-I studied Philosophy at UCL (Or at least it's metaphysically possible I did).
+## Do you have any qualifications?
+I got a First in Philosophy from UCL. I was First in line at JobCentre+ too.
 
 ## When a shirt becomes a pyjama shirt can it ever go back?
 Only for short trips to the shops.
 
 ## Did you create this dope website with Wix?
-No, I traditionally hand-code all my work.
-
-## Who made that thing you posted?
-Usually I work alone, like Batman, or Frodo after a meltdown. However, if you'd like to make something together, it'd be great to hear from you.
+No, I traditionally hand-code all my work. I also self-shoot, and [play all my own recorders](/recorda-boi).
 
 ## Will you do something for me?
 [Ask me](mailto:{{ site.author.email }}). As long as it's not weird…

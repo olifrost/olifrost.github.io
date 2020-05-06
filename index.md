@@ -11,7 +11,7 @@ image: /blog/shook-1.jpg
 
 {% assign portfolio = site.portfolio | sort: 'order' %}
 
-  {% for project in portfolio %}
+  {% for project in portfolio limit: 7 %}
         <div class="project-section">
         {% if project.video != nil %}
         <div class="youtube-player" data-id="{{ project.video }}" data-thumb="{{ project.image }}"></div>
@@ -32,14 +32,14 @@ image: /blog/shook-1.jpg
 
 ---
 
-# Work For Causes
+# Work For Causes & Brands
 <p></p>
 
 {% assign causes = site.causes | sort: 'order' %}
 
-  {% for project in causes %}
+  {% for project in causes limit: 2 %}
   <div class="project-section">
-        {% if forloop.index < 2 %}
+        {% if forloop.index < 3 %}
         <img src="{{ project.image | relative_url }}">
         {% endif %}
         <a href="{{ project.link }}"><span class="title">>> {{ project.title }}</span></a>
@@ -53,12 +53,8 @@ image: /blog/shook-1.jpg
   {% endfor %}
 
 
---------------
-
-# Work For Brands
-
 {% assign brands = site.brands | sort: 'order' %}
-{% for project in brands limit: 4 %}
+{% for project in brands limit: 2 %}
 <div class="project-section">
           {% if project.video != nil %}
           <div class="youtube-player" data-id="{{ project.video }}" data-thumb="{{ project.image }}"></div>
@@ -70,6 +66,8 @@ image: /blog/shook-1.jpg
           </p>
     </div>
 {% endfor %}
+
+**[>> See More](/work)**
 
 ---
 

@@ -7,5 +7,5 @@ link: https://olifro.st/refer
 order: 2
 press:
   - name: The Glass Room, Tactical Tech
-  - article_link: https://theglassroom.org/san-francisco
+    article_link: 'https://theglassroom.org/san-francisco'
 ---

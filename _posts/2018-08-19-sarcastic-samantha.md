@@ -5,7 +5,8 @@ description: It was the app idea to end all app ideas.
 image: /blog/samantha.jpg
 videos: yes
 date: 2018-08-19
-
+press: sarcasticsamantha
+featured: yes
 ---
 
 An app that reads your ideas back to you in a sarcastic, patronising tone.

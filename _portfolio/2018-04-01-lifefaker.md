@@ -2,9 +2,9 @@
 layout: post
 title: Lifefaker
 description: A startup that helps you fake your perfect online life.
-image: /portfolio/lifefaker.jpg
+image: /blog/lifefaker.jpg
 link: http://lifefaker.com
-order: 5
+order: 1
 video: IuibG80U-Gs
 press:
   - name: 'BBC'

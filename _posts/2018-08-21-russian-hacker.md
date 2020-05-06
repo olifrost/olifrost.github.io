@@ -5,6 +5,8 @@ description: Fake news has had a lot of bad press.
 date: 2018-08-21
 videos: PPwZPhOHRgg
 image: /blog/NFN-Thumb.jpg
+featured: true
+press: nicefakenews
 ---
 
 <style>

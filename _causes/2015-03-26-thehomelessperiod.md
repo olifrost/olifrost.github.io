@@ -2,8 +2,8 @@
 layout: post
 title: The Homeless Period
 description: The first campaign to raise the issue of sanitary care access for homeless women. Now run by supporters around the world.
-link: http://thehomelessperiod.com
-image: /portfolio/homelessperiod.jpg
+link: /blog/thehomelessperiod
+image: /blog/homelessperiod.jpg
 press:
   - name: UK Parliament
     article_link: 'https://www.facebook.com/thehomelessperiod/posts/1211915425541708'
@@ -37,4 +37,5 @@ press:
     article_link: 'http://metro.co.uk/2017/03/22/bodyform-is-donating-200000-packs-of-sanitary-protection-to-help-fight-period-poverty-6526038/'
   - name: Evening Standard
     article_link: 'https://www.standard.co.uk/news/london/campaigners-call-on-government-to-provide-funding-for-free-sanitary-products-for-the-homeless-10179548.html'
+order: 1
 ---

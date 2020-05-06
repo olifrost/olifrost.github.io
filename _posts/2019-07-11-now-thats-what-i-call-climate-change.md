@@ -1,12 +1,14 @@
 ---
 layout: post
 title: Now that's what I call climate change
-description: A playlist I made for strikes/protests/end-of-the-world parties
+description: A playlist I made for strikes/protests/end-of-the-world parties.
 image: https://i.ytimg.com/vi/Af5Fk8wVfOU/maxresdefault.jpg
 redirect_from:
   - /blog/now-thats-what-i-call-climate-change/
 permalink: /now-thats-what-i-call-climate-change
 ---
+
+Now playing at actual climate strikes.
 
 Comment your submissions on [Instagram](https://www.instagram.com/p/B1wV0HJgzf1/) / [Twitter](https://twitter.com/realolifrost/status/1167354493547241472).
 

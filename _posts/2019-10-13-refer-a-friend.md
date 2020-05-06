@@ -1,7 +1,7 @@
 ---
 layout: site
 title: Get £15 when you refer me a friend
-description: If you're looking for a friend there's never been a better time to choose Oli Frost.
+description: Looking for a friend? There's never been a better time to choose Oli Frost.
 strapline: If we become friends, you both get rewarded.
 videos: nBfc_vfKKvc
 image: /blog/refer/refer-thumb.jpg
@@ -44,7 +44,8 @@ permalink: /refer/
   </div>  
 
 <div>
-<h3 id="counter"><i class="fas fa-user-tag"></i> <span style="color:blue"><a href="{{ page.instagramlink }}">287</a></span> Friends Tagged <span style="font-weight: 100;"><br>(Since 15/10/19)</span></h3>
+
+<h3 id="counter"><i class="fas fa-user-tag"></i> <span style="color:blue"><a href="{{ page.instagramlink }}">287</a></span> Friends Tagged <span style="font-weight: 100;"><br><em style="font-size: 2rem;">As seen as The Glass Room exhibit, San Francisco</em></span></h3>
 </div>
 
 ---

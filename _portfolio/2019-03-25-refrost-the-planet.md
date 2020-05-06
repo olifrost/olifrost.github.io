@@ -6,4 +6,7 @@ image: /img/refroststheplanet-small.jpg
 link: /refrost
 video: nRxJcj0qiQk
 order: 3
+press:
+  - name: Instagram
+    article_link: 'https://instagram.com/realolifrost'
 ---

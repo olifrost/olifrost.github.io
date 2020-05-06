@@ -27,6 +27,9 @@ collections:
   refrost:
     # output: true
     permalink: /work/:title/
+  spec:
+    # output: true
+    permalink: /work/:title/
 
 
 # SASS
