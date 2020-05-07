@@ -33,7 +33,7 @@ And started building my own fake news site.
 
 ![/blog/nfn-1.jpg](/blog/NFN1.jpg)
 
-[NFN World News](http://nicenews.live/) is a fake news site that publishes only the nicest lies.
+[NFN World News](https://olifro.st/nfn) is a fake news site that publishes only the nicest lies.
 
 The ones that crush fears, bring smiles, and make you almost want to be a good person.
 

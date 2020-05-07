@@ -2,7 +2,7 @@
 layout: post
 title: Global Climate Strike – Posters
 description: A set of posters made for the first global climate strike that appeared on lamp posts, globally, and turned into a series.
-link: /blog/i-cant-swim
+link: /blog/I-cant-swim
 image: /blog/climateposters.jpg
 press:
 - name: Greenpeace
