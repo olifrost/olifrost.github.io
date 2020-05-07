@@ -110,6 +110,4 @@ That good intentions alone won't stop climate change.
 
 Sometimes the best way to turn off the light, is just with your hands.  
 
-*This post is part of the series [Oli Frost Refrosts The Planet](/blog/refrost-the-planet)*
-
-*You can follow it on the mailing list below or [@realolifrost](http://instagram.com/realolifrost)*
+{{ include refrost-links }}

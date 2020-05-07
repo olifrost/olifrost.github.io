@@ -1,8 +1,8 @@
 ---
 layout: site
-title: "Fossil Ghouls, the world's scariest halloween masks"
+title: I made Halloween scary again
 header: Fossil Ghouls
-description: Fossil Ghouls is a range of printable, plastic-free masks – suitable for all ages.
+description: Fossil Ghouls is a range of printable, plastic-free masks for ages 3 and up
 tagline: Printable, plastic-free masks
 image: /posters/fossilghouls/fossilghouls-cover.jpg
 permalink: /fossilghouls
@@ -93,7 +93,7 @@ color: #FEFEFE;
 
             <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/olifrost/olifrost.github.io/tree/master/posters/fossilghouls" class="button"><i class="fas fa-ghost"></i> Download</a>
 
-            <p mar kdown="1">You can print and share these if you'll give a tag and follow [@realolifrost](https://olifro.st/links) in return</p>
+            <p markdown="1">You can print and share these if you'll give a tag and follow [@realolifrost](https://olifro.st/links) in return</p>
       </div>
     </div>
 
