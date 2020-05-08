@@ -6,7 +6,7 @@ image: /img/olifrost.jpg
 
 {% include bio %}
 
-My work has been featured everywhere from [UK Parliament](http://thehomelessperiod.com) to [Britain's Got Talent]({{ site.baseurl }}{% post_url 2018-05-20-recorda-boi %}), [BBC](https://www.bbc.co.uk/bbcthree/article/10f77fff-06ed-4c11-a91a-d1413df96d23) to [Fox News](http://www.foxnews.com/tech/2018/05/30/facebook-user-auctions-personal-data-on-ebay-for-99-cents-and-bids-soar-sell-it-to-advertisers-or-whatever.html), in [art shows](/refer), and [on bins](/little-tips).
+My work has been featured everywhere from [UK Parliament]({% post_url 2015-03-25-thehomelessperiod %}) to [Britain's Got Talent]({% post_url 2018-05-20-recorda-boi %}), [BBC]({% post_url 2018-05-05-lifefaker %}) to [Fox News]({% post_url 2018-05-27-data-on-ebay %}), in [art shows](/refer), and [on bins](/little-tips).
 
 At the moment, [I am sorting out climate change](/refrost).
 
@@ -36,7 +36,7 @@ No, I traditionally hand-code all my work. I also self-shoot, and [play all my o
 No. If you'd like to support my work please [buy me a cat](/buymeacat).
 
 ## Can I still buy all your personal data?
-[Sure]({{ site.baseurl }}{% post_url 2018-05-27-data-on-ebay %}), it'd be quicker than answering all these questions.
+[Sure]({% post_url 2018-05-27-data-on-ebay %}), it'd be quicker than answering all these questions.
 
 ## What are you doing next?
 It'll be on <a href="https://twitter.com/{{ site.author.twitter }}">Twitter</a>, <a href="https://www.instagram.com/{{ site.author.instagram }}">Instagram</a>, or this old school <a href="mailto:{{ site.author.email }}?subject=I'd like to join the mailing list&">mailing list</a>.
