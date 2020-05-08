@@ -22,7 +22,7 @@ Flopstarter.com also has had over 800 user submissions. But as few of the ideas 
 
 And it’s not surprising that I excelled: *inventing ran in the family.*
 
-My grandad Henry actually invented a form of the catseye after the cateseye had already been invented, along with a revolutionary new kind of baby feeding spoon that put on the 1940s television show Inventors World.
+My grandad Henry actually invented a form of the catseye after the cateseye had already been invented, along with a revolutionary new kind of baby feeding spoon that got on the 1940s television show Inventors World.
 
 My dad invented the little rings that cover the bit where the radiator enters the floor, but later discovered them in a hardware store.
 
