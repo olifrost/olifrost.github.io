@@ -8,7 +8,7 @@ image: /img/olifrost.jpg
 
 My work has been featured everywhere from [UK Parliament]({% post_url 2015-03-25-thehomelessperiod %}) to [Britain's Got Talent]({% post_url 2018-05-20-recorda-boi %}), [BBC]({% post_url 2018-05-05-lifefaker %}) to [Fox News]({% post_url 2018-05-27-data-on-ebay %}), in [art shows](/refer), and [on bins](/little-tips).
 
-At the moment, [I am sorting out climate change](/refrost).
+At the moment, I am on a mission to [refrost the planet](/refrost).
 
 To see what's next you can find me [@realolifrost](/s) or [join my mailing list](#footer), which has a rigorous [No Privacy Policy]({% link noprivacy.md %}).
 

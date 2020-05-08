@@ -1,0 +1,1 @@
+<div class="youtube-player" data-id="{{ include.id }}" data-thumb="https://i.ytimg.com/vi/{{ include.id }}/maxresdefault.jpg"></div>

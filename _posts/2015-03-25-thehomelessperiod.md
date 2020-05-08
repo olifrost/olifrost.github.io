@@ -10,23 +10,25 @@ Once you'd thought about it once, it was hard not to again.
 
 Yet if you searched for the issue of period poverty online in 2015, you would think that there wasn't one.
 
-So with two others, we set out to speak with those affected. Eventually, I made a site and a film to support a petition that went live at [TheHomelessPeriod.com](http://TheHomelessPeriod.com)
+![](/blog/thehomelessperiod-1.jpeg)
+
+So with two others, we set out to speak with those affected.
+
+I made a site and a film to support a petition that went live at [TheHomelessPeriod.com](http://TheHomelessPeriod.com)
 
 It argued that since shelters receive an allowance to buy products like condoms, they should do the same sanitary products.
 
-![](/blog/thehomelessperiod-1.jpeg)
+![](/blog/thehomelessperiod-3.jpeg)
 
 The petition spread pretty quickly.
 
-![](/blog/thehomelessperiod-3.jpeg)
-
 The hashtag became an actual hashtag, and more movements named 'The Homeless Period' started around the world.
-
-![](/blog/thehomelessperiod-2.jpeg)
 
 In 2017, we even got a brand to donate hundreds of thousands more
 
-And today, the site still receives messages from people everyday setting up new donation schemes.
+![](/blog/thehomelessperiod-2.jpeg)
+
+Today, the site still receives messages from people everyday setting up new donation schemes.
 
 ![](/blog/thehomelessperiod-4.jpeg)
 
@@ -36,4 +38,4 @@ It's just as hard to show how this fits into the rest of this site.
 
 But it was probably this first 'make it yourself' experience that led to everything else you find here.
 
-And it's how Oli Frost became forever linked on Google with the unlikely phrase Menstruation
+And it's how Oli Frost became forever linked on Google with the unlikely phrase "Menstruation"

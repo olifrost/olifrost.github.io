@@ -9,18 +9,33 @@ redirect_from:
 permalink: /little-tips/
 ---
 
-<div class="youtube-player" data-id="{{ page.videos }}" data-thumb="{{ page.image }}"></div>
 
-<div class="youtube-player" data-id="3VTb5GsVS-A" data-thumb="https://i.ytimg.com/vi/3VTb5GsVS-A/maxresdefault.jpg"></div>
+{% include youtube id="7vWxYzrgqIc" %}
 
-<div class="youtube-player" data-id="DBDEsVl6NAs" data-thumb="https://i.ytimg.com/vi/DBDEsVl6NAs/maxresdefault.jpg"></div>
+{% include youtube id="3VTb5GsVS-A" %}
 
-<div class="youtube-player" data-id="1re8Y-JoD78" data-thumb="https://i.ytimg.com/vi/1re8Y-JoD78/maxresdefault.jpg"></div>
+{% include youtube id="DBDEsVl6NAs" %}
 
-<div class="youtube-player" data-id="T9oX3DvAjFk" data-thumb="https://i.ytimg.com/vi/T9oX3DvAjFk/maxresdefault.jpg"></div>
+Later on, I turned my attention to Christmas
 
-<div class="youtube-player" data-id="d49jRA9aTh8" data-thumb="https://i.ytimg.com/vi/d49jRA9aTh8/maxresdefault.jpg"></div>
 
-<div class="youtube-player" data-id="T9oX3DvAjFk" data-thumb="https://i.ytimg.com/vi/T9oX3DvAjFk/maxresdefault.jpg"></div>
+
+{% include youtube id="pB5vI4CowzE" %}
+
+{% include youtube id="Rj9cL67qI0I" %}
+
+{% include youtube id="d49jRA9aTh8" %}
+
+{% include youtube id="9LunS_pPfuI" %}
+
+{% include youtube id="Pkk52EyxRR8" %}
+
+{% include youtube id="_SKjwVTS7L0" %}
+
+And then lockdown
+
+{% include youtube id="T9oX3DvAjFk" %}
+
+Want more Little Tips? Check the [YouTube Playlist](https://www.youtube.com/watch?v=3VTb5GsVS-A&list=PLg7ku87sG6Ndq7NP0mhu707v36iiwMj0H)
 
 {% include refrost-links %}
