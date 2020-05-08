@@ -8,5 +8,5 @@ image: /blog/edibileleaflets.jpg
 press:
   - name: Evening Standard
     article_link: 'https://www.standard.co.uk/lifestyle/foodanddrink/edible-leaflets-food-waste-campaign-a3689071.html'
-order: 4
+order: 5
 ---

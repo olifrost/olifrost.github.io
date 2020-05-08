@@ -10,6 +10,7 @@ Creative Circle **Best New Creative** (2017)
 Previous experience **Droga5, BBH, Mother** (2014)   
 Studied at [**Watford Ad Course**](/student) (2013)  
 
+
 <div class="posts">
 {% assign portfolio = site.portfolio | sort: 'order' %}
 
@@ -72,7 +73,7 @@ Studied at [**Watford Ad Course**](/student) (2013)
 
 ---
 
-Further Live Work: *Snickers, Bombay Sapphire, Sainsbury's, BT, Bodyform, Pedigree, Maltesers, Galaxy, The National Lottery, Mercedes-Benz & Chupa-Chups*.
+Further Live Work: *Snickers (Activation), Bombay Sapphire (Out Of Home), Sainsbury's Food Waste (TV & Print), BT (Social & Out of Home), Bodyform (TV & Print), Maltesers (Online Film), Galaxy (Online Film), The National Lottery (TV), Sainsbury's Tu (TV & Print), Mercedes-Benz (TV), IKEA (Radio & Print), Hiscox (Radio), & Chupa-Chups (Activation)*.
 
 ---
 

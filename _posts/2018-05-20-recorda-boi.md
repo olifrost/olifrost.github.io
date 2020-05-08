@@ -37,18 +37,12 @@ Busked in New York
 
 And made my first public apology
 
-<div class="youtube-player" data-id="34N8Bb5UFX8" data-thumb="http://i3.ytimg.com/vi/34N8Bb5UFX8/maxresdefault.jpg"></div>
+<div class="youtube-player" data-id="KqXjyXwkI-A" data-thumb="http://i3.ytimg.com/vi/34N8Bb5UFX8/maxresdefault.jpg"></div>
 
-But recently it has gotten harder and harder to get the message out.
+Over this time, I received late night phone calls from a group of school friends somewhere in London.
 
-In the words of Greta Thunberg (slightly paraphrased)
+One weekend in 2019, I offered them each a personalised song, which quickly escalated into [over a hundred personalised songs](https://www.instagram.com/stories/highlights/18029842834212127/), as more of their friends demanded shoutouts.
 
-> "Why should I study recorder for a future that might not exist?"
+The mission to repopularise the recorder remains very much on hold, as continue my journey to [Refrost The Planet](/refrost).
 
-Kids these days just want to talk about climate change.
-
-If I wanted them to talk about recorders, I'd have to sort that one out first.
-
-> [Oli Frost Refrosts The Planet](/refrost).
-
-*Side Note: I am still available for bookings in exceptional circumstances, like birthdays.*
+But for the occasional booking, birthday shoutout, or large amounts of cash, I pick up the recorder again.

@@ -2,7 +2,7 @@
 layout: post
 title: I made an algorithm that wins advertising awards
 description: In advertising, nothing is more coveted than a Cannes Grand Prix award.
-image: /blog/thehomelessperiod.jpg
+image: /blog/grandprixgenerator.jpg
 press: grandprixgenerator
 ---
 

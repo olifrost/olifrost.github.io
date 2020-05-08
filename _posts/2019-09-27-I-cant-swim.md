@@ -31,14 +31,15 @@ They were used up by organisations like [Greenpeace](https://www.instagram.com/p
 
 {% include poster-gallery.html path="results" %}
 
-For Halloween I made masks, which were worn by local school strike groups and even at coal mine protests in Australia.
+[For halloween I made masks]({{ site.baseurl }}{% post_url 2019-10-31-fossilghouls %}), which were worn by local school strike groups and even at coal mine protests in Australia.
 
-{% include poster-gallery.html path="fossilghouls/social" %}
+And by the end of the year, I had been invited to talk on a panel about politics and the climate in the UK election, organised by Lilly Allen.
 
-Right now, I am preparing a new campaign for Climate Strike "Online".
+![](/blog/panel.jpg)
 
+Most important of all though, at the panel I got to meet Lilly Allen's boyfriend.
 
-
+*David Harbour*, from Stranger Things.
 
 [>> Go to Posters Site](/posters)
 

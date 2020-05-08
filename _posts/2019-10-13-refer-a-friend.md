@@ -9,6 +9,8 @@ thumb: /blog/refer/refer-video.jpg
 twitterlink: https://twitter.com/realolifrost/status/1184137079036493824
 instagramlink: https://www.instagram.com/p/B3pX7WdHJ75/
 permalink: /refer/
+carousel-items: 3
+images: true
 ---
 
 
@@ -45,7 +47,7 @@ permalink: /refer/
 
 <div>
 
-<h3 id="counter"><i class="fas fa-user-tag"></i> <span style="color:blue"><a href="{{ page.instagramlink }}">287</a></span> Friends Tagged <span style="font-weight: 100;"><br><em style="font-size: 2rem;">As seen as The Glass Room exhibit, San Francisco</em></span></h3>
+<h3 id="counter"><i class="fas fa-user-tag"></i> <span style="color:blue"><a href="{{ page.instagramlink }}">287</a></span> Friends Tagged <span style="font-weight: 100;"><br></span></h3>
 </div>
 
 ---
@@ -76,6 +78,12 @@ Oli Frost removes himself from social situations without a word – it's called 
   </div>
 
 </div>
+
+---
+
+{% include poster-gallery.html path="/posters/refer" %}
+<p class="center" style="padding-top: 2rem;"><em style="font-size: 2rem;">Finding friends at <a href="https://theglassroom.org/san-francisco">The Glass Room</a> exhibit, San Francisco</em></p>
+
 
 ---
 

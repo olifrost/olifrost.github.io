@@ -4,7 +4,7 @@ title: Grand Prix Generator
 description: A generator for the “world-saving” campaigns that win big in ad awards.
 image: /blog/grandprixgenerator.jpg
 link: https://olifro.st/grandprixgenerator
-order: 8
+order: 3
 press:
   - name: 'Adweek'
     article_link: "http://www.adweek.com/agencyspy/cannes-grand-prix-case-study-generator-does-the-work-for-you/88739"
