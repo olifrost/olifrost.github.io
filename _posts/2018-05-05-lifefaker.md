@@ -11,7 +11,7 @@ I’d stood on it to take an aerial photo of my rainbow bowl.
 
 After the accident I thought about quitting social media for a while.
 
-And then I had a better idea: [Lifefaker.com](https://lifefaker.com)
+And then I had a better idea: [Lifefaker.com](http://lifefaker.com)
 
 <div class="youtube-player" data-id="IuibG80U-Gs" data-thumb="/blog/lifefaker.jpg"></div>
 
@@ -25,7 +25,7 @@ I was forced to develop the site, direct the ad, and PR the launch myself.
 
 ![](/blog/lifefaker5.jpg)
 
-But after [a tweet from the Editor of TechCrunch](https://twitter.com/mikebutcher/status/989783421605031936), the success of the launch was decided.
+But after a tweet from the Editor of TechCrunch, the success of the launch was decided.
 
 Influencers wrote to me asking if they could sell their photos to the service.
 
@@ -47,4 +47,4 @@ That whoever you are, wherever you are:
 
 *You can always be a better person*
 
-Find out how [I pretend I'm a married woman on Instagram]({{ site.baseurl }}{% post_url 2018-08-05-deliciously-anna %})
+Find out how I used Lifefaker's beta to [pretend I'm a married woman on Instagram]({{ site.baseurl }}{% post_url 2018-08-05-deliciously-anna %})
