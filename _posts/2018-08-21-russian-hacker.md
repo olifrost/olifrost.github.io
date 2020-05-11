@@ -19,7 +19,7 @@ press: nicefakenews
 
 Russian hackers, they say, are spreading lies that ruin the world.
 
-But if lies got us in this, maybe they could get us out too.
+But if lies got us into this, maybe they could get us out too.
 
 I decided to become a Russian hacker myself, and see what I could do.
 
