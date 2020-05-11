@@ -21,7 +21,7 @@ Not sure yet.
 I was born London but I'm currently [seeking citizenship in São Tomé](/blog/sao-tome-citizen/).
 
 ## Do you have any qualifications?
-I got a First in Philosophy from UCL. I was First in line at JobCentre+ too.
+I got a First in Philosophy from UCL. I was also First in line at JobCentre+.
 
 ## When a shirt becomes a pyjama shirt can it ever go back?
 Only for short trips to the shops.
