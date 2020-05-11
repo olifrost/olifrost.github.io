@@ -1,5 +1,9 @@
 {% assign url = {{include.path}} %}
-<div class="owl-carousel owl-theme" data-items="{{ page.carousel-items }}">
+<div class="owl-carousel owl-theme" data-items="{{ page.carousel-items }}"
+{% if include.margin %}
+style="padding-bottom: 2rem;"
+{% endif %}
+>
 {% for image in site.static_files %}
     {% if image.path contains url %}
 

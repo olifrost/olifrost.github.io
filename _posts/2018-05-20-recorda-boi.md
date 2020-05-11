@@ -14,11 +14,11 @@ They said it wasn't "cool".
 
 So I decided to prove them wrong, and went on Britain's Got Talent.
 
-<div class="youtube-player" data-id="{{ page.videos }}" data-thumb="{{ page.image }}"></div>
+{% include youtube id="52dnwXso6bs" thumb="/blog/recorderboibgt.jpeg" %}
 
 After the performance a documentary crew came to see me.
 
-<div class="youtube-player" data-id="HH4XpEynhX0" data-thumb="http://i3.ytimg.com/vi/V6q63u29dBg/maxresdefault.jpg"></div>
+{% include youtube id="V6q63u29dBg" %}
 
 I published my first ebook, <a href="/blog/RecordaBoiGradeBook.pdf">>> Recorda Boi (Grades 3-4)</a>.
 
@@ -26,22 +26,19 @@ I published my first ebook, <a href="/blog/RecordaBoiGradeBook.pdf">>> Recorda B
 
 Started a successful YouTube channel
 
+{% include youtube id="34N8Bb5UFX8" %}
 
-<div class="youtube-player" data-id="34N8Bb5UFX8" data-thumb="http://i3.ytimg.com/vi/34N8Bb5UFX8/maxresdefault.jpg"></div>
-
-<div class="youtube-player" data-id="DdyU-Qfv-kY" data-thumb="http://i3.ytimg.com/vi/DdyU-Qfv-kY/maxresdefault.jpg"></div>
+{% include youtube id="DdyU-Qfv-kY" %}
 
 Busked in New York
 
-<div class="youtube-player" data-id="v4ghuB_Ctas" data-thumb="http://i3.ytimg.com/vi/v4ghuB_Ctas/maxresdefault.jpg"></div>
+{% include youtube id="v4ghuB_Ctas" %}
 
 And made my first public apology
 
-<div class="youtube-player" data-id="KqXjyXwkI-A" data-thumb="http://i3.ytimg.com/vi/34N8Bb5UFX8/maxresdefault.jpg"></div>
+{% include youtube id="KqXjyXwkI-A" %}
 
-Over this time, I received late night phone calls from a group of school friends somewhere in London.
-
-One weekend in 2019, I offered them each a personalised song, which quickly escalated into [over a hundred personalised songs](https://www.instagram.com/stories/highlights/18029842834212127/), as more of their friends demanded shoutouts.
+In 2019, I made fans [over a hundred personalised songs](https://www.instagram.com/stories/highlights/18029842834212127/).
 
 The mission to repopularise the recorder remains very much on hold, as continue my journey to [Refrost The Planet](/refrost).
 

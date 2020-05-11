@@ -1,12 +1,14 @@
 ---
 layout: post
-title: Now that's what I call climate change
-description: A playlist I made for strikes/protests/end-of-the-world parties.
+title: I made the soundtrack for the green revolution
+description: Now that's what I call climate change.
 image: https://i.ytimg.com/vi/Af5Fk8wVfOU/maxresdefault.jpg
 redirect_from:
   - /blog/now-thats-what-i-call-climate-change/
 permalink: /now-thats-what-i-call-climate-change
 ---
+
+A playlist I made for strikes/protests/end-of-the-world parties.
 
 Now playing at actual climate strikes.
 

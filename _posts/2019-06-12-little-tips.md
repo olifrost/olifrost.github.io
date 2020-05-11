@@ -1,20 +1,30 @@
 ---
 layout: post
 title: I impersonate my local council's recycling department
-description: And made the little tips on waste they forgot to give.
-image: https://i.ytimg.com/vi/7vWxYzrgqIc/maxresdefault.jpg
+description: Sex, drugs, and crime are often forgotten by our local councils
+image: /blog/littletips.jpg
+images: true
+carousel-items: 3
 videos: 7vWxYzrgqIc
 redirect_from:
   - /blog/little-tips/
 permalink: /little-tips/
 ---
 
+But when it comes to saving the environment, every little bit counts.
 
-{% include youtube id="7vWxYzrgqIc" %}
+So as part of my mission to [Refrost The Planet](/refrost), I've been helping out Lambeth Council, by doing the job for them.
+
+
+{% include youtube id="7vWxYzrgqIc" thumb="/blog/littletips.jpg" %}
 
 {% include youtube id="3VTb5GsVS-A" %}
 
 {% include youtube id="DBDEsVl6NAs" %}
+
+To reach more people, I fly posted the campaign onto local bins.
+
+{% include poster-gallery.html path="littletipcampaign" margin=true %}
 
 Later on, I turned my attention to Christmas
 

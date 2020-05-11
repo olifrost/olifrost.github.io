@@ -2,7 +2,7 @@
 layout: default
 title: I'm sorting out global climate change
 description: This is Oli Frost Refrosts The Planet
-image: /img/refroststheplanet-small.jpg
+image: /img/refrosttheplanet.jpg
 videos: nRxJcj0qiQk
 permalink: /refrost/
 carousel-items: 3
