@@ -41,7 +41,7 @@ Later on, I turned my attention to Christmas
 
 {% include youtube id="_SKjwVTS7L0" %}
 
-And then lockdown
+And most recently, lockdown
 
 {% include youtube id="T9oX3DvAjFk" %}
 

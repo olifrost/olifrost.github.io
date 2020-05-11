@@ -1,6 +1,6 @@
 ---
 layout: post
-title: I made the soundtrack for the green revolution
+title: I made the soundtrack of the green revolution
 description: Now that's what I call climate change.
 image: https://i.ytimg.com/vi/Af5Fk8wVfOU/maxresdefault.jpg
 redirect_from:
