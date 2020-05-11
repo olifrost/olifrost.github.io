@@ -1,6 +1,7 @@
 ---
 layout: page
 images: true
+carousel-items: 3
 ---
 
 # Student Work

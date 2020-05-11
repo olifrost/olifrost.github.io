@@ -3,7 +3,7 @@ layout: post
 title: Flopstarter
 description: A platform for bad ideas.
 image: /blog/flopstarter.jpg
-link: http://flopstarter.com
+link: https://flopstarter.com
 order: 2
 press:    
   - name: 'Fast Company'

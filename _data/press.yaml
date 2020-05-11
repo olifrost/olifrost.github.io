@@ -25,6 +25,9 @@ data-sale:
   article_link: 'https://news.ycombinator.com/item?id=17173279'
 - name: RT
   article_link: 'https://www.rt.com/news/428170-facebook-data-sale-ebay/'
+- name: Firefox Podcast
+  article_link: 'https://irlpodcast.org/season5/episode7/'
+
 
 thehomelessperiod:
 

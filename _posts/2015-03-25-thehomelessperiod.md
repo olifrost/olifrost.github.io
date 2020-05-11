@@ -8,7 +8,7 @@ press: thehomelessperiod
 
 Once you'd thought about it once, it was hard not to again.
 
-Yet if you searched for the issue of period poverty online in 2015, you would think that there wasn't one.
+Yet if you searched online for the issue of period poverty in 2015, you would think that there wasn't one.
 
 ![](/blog/thehomelessperiod-1.jpeg)
 
@@ -16,7 +16,7 @@ So with two others, we set out to speak with those affected.
 
 I made a site and a film to support a petition that went live at [TheHomelessPeriod.com](http://TheHomelessPeriod.com)
 
-It argued that since shelters receive an allowance to buy products like condoms, they should do the same sanitary products.
+It argued that since shelters receive an allowance to buy products like condoms, the same should happen for sanitary products.
 
 ![](/blog/thehomelessperiod-3.jpeg)
 
@@ -24,9 +24,9 @@ The petition spread pretty quickly.
 
 The hashtag became an actual hashtag, and more movements named 'The Homeless Period' started around the world.
 
-In 2017, we even got a brand to donate hundreds of thousands more
-
 ![](/blog/thehomelessperiod-2.jpeg)
+
+In 2017, we got a brand to donate hundreds of thousands of pads.
 
 Today, the site still receives messages from people everyday setting up new donation schemes.
 
