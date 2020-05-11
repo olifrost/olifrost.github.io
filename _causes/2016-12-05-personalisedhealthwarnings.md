@@ -4,7 +4,7 @@ title: Personalised Health Warnings
 description: A site that let's you print a personalised health warning label for your loved one's cigarettes.
 image: /blog/healthwarning.jpg
 video: DxqXFv3c_dI
-link: https://olifro.st/personalisedhealthwarnings/
+link: /blog/personalisedhealthwarnings/
 press:
   - name: Metro
     article_link: 'http://metro.co.uk/2016/12/05/you-can-now-customise-your-own-cigarette-packets-which-is-nice-6302293/'
