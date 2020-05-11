@@ -18,4 +18,6 @@ press:
     article_link: "http://ben-kay.com/2015/06/how-to-win-a-cannes-grand-prix/"
   - name: 'Dave Trott'
     article_link: "https://twitter.com/davetrott/status/611495866105470976"
+  - name: 'Mark Waites'
+    article_link: "https://twitter.com/MarkWaites/status/611510351889350656"
 ---

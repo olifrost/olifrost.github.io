@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I founded a startup to help you be more fake online
-description: Last year I injured both my knees falling off a chair
+description: Last year I injured both my knees falling off a chair.
 image: /blog/lifefaker.com.jpg
 videos: true
 press: lifefaker

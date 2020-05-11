@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I blogged every email from my office mailroom
-description: Here are a few excerpts from 'Cries from the Mailroom'
+description: Here are a few excerpts from 'Cries from the Mailroom'.
 image: /blog/olifrost-flag.jpg
 ---
 
