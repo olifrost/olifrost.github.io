@@ -61,7 +61,11 @@ image: /blog/shook-1.jpg
           {% else %}
           <img src="{{ project.image | relative_url }}">
           {% endif %}
+          {% if project.link %}
           <a href="{{ project.link }}"><span class="title">>> {{ project.title }}</span></a>
+          {% else %}
+          <span class="title">>> {{ project.title }}</span>
+          {% endif %}
           <p> {{ project.description }}<br>
           </p>
     </div>

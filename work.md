@@ -41,7 +41,11 @@ Studied at [**Watford Ad Course**](/student) (2013)
           {% else %}
           <img src="{{ project.image | relative_url }}">
           {% endif %}
+          {% if project.link %}
           <a href="{{ project.link }}"><span class="title">>> {{ project.title }}</span></a>
+          {% else %}
+          <span class="title">>> {{ project.title }}</span>
+          {% endif %}
           <p> {{ project.description }}<br>
           </p>
     </div>
@@ -59,7 +63,11 @@ Studied at [**Watford Ad Course**](/student) (2013)
         <img src="{{ project.image | relative_url }}">
         {% endif %}
 
+        {% if project.link %}
         <a href="{{ project.link }}"><span class="title">>> {{ project.title }}</span></a>
+        {% else %}
+        <span class="title">>> {{ project.title }}</span>
+        {% endif %}
         <p> {{ project.description }}<br>
         {% for press in project.press %}
         <a href="{{ press.article_link }}" class="press">{{ press.name }}{% if forloop.last == false %},{% else %}.{% endif %}</a>

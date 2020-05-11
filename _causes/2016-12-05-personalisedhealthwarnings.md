@@ -1,9 +1,7 @@
 ---
 layout: post
 title: Personalised Health Warnings
-link: http://personalisedwarnings.oliandjosie.com
 description: A site that let's you print a personalised health warning label for your loved one's cigarettes.
-link: /blog/personalisedhealthwarnings/
 image: /blog/healthwarning.jpg
 video: DxqXFv3c_dI
 press:
