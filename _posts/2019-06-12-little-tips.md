@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I impersonate my local council's recycling department
-description: Sex, drugs, and crime are often forgotten by our local councils
+description: I had been living in Lambeth for five years
 image: /blog/littletips.jpg
 images: true
 carousel-items: 3
@@ -11,20 +11,19 @@ redirect_from:
 permalink: /little-tips/
 ---
 
-But when it comes to saving the environment, every little bit counts.
+As part of my mission to [Refrost The Planet](/refrost), I decided to help improve the range of their recycling tips.
 
-So as part of my mission to [Refrost The Planet](/refrost), I've been helping out Lambeth Council, by doing the job for them.
+Starting with sex, drugs, and crime.
 
+{% include poster-gallery.html path="littletipcampaign" margin=true %}
 
-{% include youtube id="7vWxYzrgqIc" thumb="/blog/littletips.jpg" %}
+{% include youtube id="7vWxYzrgqIc" thumb="https://i.ytimg.com/vi/0N1jap2Bdkg/maxresdefault.jpg" %}
 
 {% include youtube id="3VTb5GsVS-A" %}
 
 {% include youtube id="DBDEsVl6NAs" %}
 
 To reach more people, I fly posted the campaign onto local bins.
-
-{% include poster-gallery.html path="littletipcampaign" margin=true %}
 
 Later on, I turned my attention to Christmas
 
