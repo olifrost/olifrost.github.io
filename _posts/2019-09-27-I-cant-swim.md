@@ -25,11 +25,11 @@ The new posters used up by organisations like [Greenpeace](https://www.instagram
 
 [For halloween I made masks]({{ site.baseurl }}{% post_url 2019-10-31-fossilghouls %}), which were worn by local school strike groups and even at coal mine protests in Australia.
 
-And by the end of the year, I had been invited to talk on a panel about the UK election and the climate, organised by Lilly Allen.
+And by the end of the year, I had been invited to talk on a panel about the UK election and the climate, organised by Lily Allen.
 
 ![](/blog/panel.jpg)
 
-Most important of all though, at the panel I got to meet Lilly Allen's boyfriend.
+Most important of all though, at the panel I got to meet Lily Allen's boyfriend.
 
 *David Harbour*, from Stranger Things.
 

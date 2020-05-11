@@ -40,6 +40,6 @@ And made my first public apology
 
 In 2019, I made fans [over a hundred personalised songs](https://www.instagram.com/stories/highlights/18029842834212127/).
 
-The mission to repopularise the recorder remains very much on hold, as continue my journey to [Refrost The Planet](/refrost).
+The mission to repopularise the recorder remains very much on hold, as I continue my journey to [Refrost The Planet](/refrost).
 
 But for the occasional booking, birthday shoutout, or large amounts of cash, I pick up the recorder again.
