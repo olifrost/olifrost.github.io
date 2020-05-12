@@ -1,8 +1,16 @@
 ---
 layout: page
 image: /img/olifrost.jpg
+carousel-items: 1
 ---
-![Oli Frost](/img/olifrost.jpg)
+
+<style>
+.owl-dots {
+  display: none;
+}
+</style>
+
+{% include poster-gallery.html path="portraits" margin=true %}
 
 {% include bio %}
 
