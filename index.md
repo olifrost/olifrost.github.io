@@ -2,7 +2,7 @@
 layout: default
 title: Oli Frost
 videos: true
-image: /blog/shook-1.jpg
+image: /blog/olifrost.jpg
 carousel-items: 1
 ---
 
