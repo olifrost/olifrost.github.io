@@ -1,13 +1,9 @@
 docs_list_title: Pages
 docs:
 
-- title: About / Website
-  url: /about
+- title: Website
+  url: /
   colour: 2AA3EF
-
-- title: Email
-  url: mailto:mail@olifro.st
-  colour: 1DB954
 
 - title: Instagram
   url: https://instagram.com/realolifrost
