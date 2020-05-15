@@ -1,6 +1,6 @@
 ---
 layout: page
-image: /img/olifrost.jpg
+image: /blog/olifrost.jpg
 carousel-items: 1
 ---
 
