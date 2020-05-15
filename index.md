@@ -15,7 +15,6 @@ My work has been featured everywhere from UK Parliament to Britain's Got Talent,
 <span><semibold>Most recently,</semibold> {% for post in site.posts limit:1 %}
 <a href="{{ post.url }}"> {{ post.title }} </a><br>{% endfor %}</span>
 
-
 </div>
 
 <div class="posts" markdown="0">

@@ -4,11 +4,7 @@
 	 id="Layer_1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 83.9 60.1"
 	 style="enable-background:new 0 0 83.9 60.1;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#020CFA;}
-	.st1{fill:#FFFFFF;}
-</style>
-<path class="st0" d="M67.8,55.8h-52c-6.6,0-12-5.4-12-12V15.5c0-6.6,5.4-12,12-12h52c6.6,0,12,5.4,12,12v28.2
-	C79.8,50.4,74.4,55.8,67.8,55.8z"/>
-<polygon class="st1" points="54.8,28.9 32.8,40.9 32.8,16.9 "/>
+<polygon class="playtriangle" points="54.8,28.9 32.8,40.9 32.8,16.9 "/>
+<path class="playbutton"  d="M67.8,3.5h-52c-6.6,0-12,5.4-12,12v28.3c0,6.6,5.4,12,12,12h52c6.6,0,12-5.4,12-12.1V15.5C79.8,8.9,74.4,3.5,67.8,3.5z
+	 M32.8,40.9v-24l22,12L32.8,40.9z"/>
 </svg>

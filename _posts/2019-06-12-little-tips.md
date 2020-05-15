@@ -9,6 +9,7 @@ videos: 7vWxYzrgqIc
 redirect_from:
   - /blog/little-tips/
 permalink: /little-tips/
+playbuttoncolour: "rgb(122,197,48)"
 ---
 
 As part of my mission to [Refrost The Planet](/refrost), I decided to help improve the range of their recycling tips.

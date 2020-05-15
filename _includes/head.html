@@ -14,3 +14,10 @@
   <link href='https://olifro.st/feed.xml' rel='alternate' type='application/atom+xml'>
   <meta name="theme-color" content="#020cfa">
 </head>
+
+{% if page.playbuttoncolour %}
+<style>
+svg .playbutton{fill:{{ page.playbuttoncolour }} !important;}
+svg .playtriangle{fill:{{ page.playtrianglecolour }} !important;}
+</style>
+{% endif %}

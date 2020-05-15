@@ -7,6 +7,8 @@ videos: nRxJcj0qiQk
 permalink: /refrost/
 carousel-items: 3
 images: true
+playbuttoncolour: "#B2E1ED"
+playtrianglecolour: "rgba(0,0,0,1)"
 ---
 
 {% include refrost-style %}

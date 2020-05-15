@@ -26,7 +26,7 @@
 
     function labnolThumb(thumbnail) {
         var thumb = '<img src="THUMB">',
-            play = '<div class="play"><img class="play-icon" src="/img/play.svg"></div>';
+            play = '<div class="play"><span class="play-icon">{% include play.svg %}</span></div>';
 
         return thumb.replace("THUMB", thumbnail) + play;
     }

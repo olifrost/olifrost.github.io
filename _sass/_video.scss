@@ -41,20 +41,18 @@
     -webkit-filter: brightness(75%);
 }
 
-.youtube-player .play img {
+.youtube-player .play-icon {
     pointer-events:none;
-    height: 40%;
-    width: 20%;
-    left: 25%;
-    right: 25%;
-    top: 50%;
-    bottom: 50%;
+    height: 45%;
+    width: 6%;
+    left: 1%;
+    right: 97%;
+    top: 91%;
     opacity: 0.8;
     position: absolute;
     cursor: pointer;
     filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.3));
+    svg .playbutton{fill:$blue;}
+    svg .playtriangle{fill:white;}
 
-    svg path {
-      fill: blue;
-    }
 }
