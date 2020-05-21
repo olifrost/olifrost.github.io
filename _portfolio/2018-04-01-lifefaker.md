@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lifefaker
-description: A startup that helps you fake your perfect online life.
+description: A startup to help you fake a perfect online life.
 image: /blog/lifefaker.jpg
 link: http://lifefaker.com
 order: 1

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Recorda Boi
-description: A musical project that combines hip-hop with the recorder.
+description: My mission to repopularise the recorder.
 video: HH4XpEynhX0
 image: /blog/recordaboi.jpg
 link: /recorda-boi/
