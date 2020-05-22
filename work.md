@@ -31,17 +31,18 @@ Studied at [**Watford Ad Course**](/student) (2013)
 </div>
 
 <div class="posts" markdown="0">
-{% assign brands = site.brands %}
-{% for project in brands %}
-      {% include project.html project=project %}
+{% assign projects = site.data.brands %}
+{% for item in projects %}
+    {% include project.html project=item %}
 {% endfor %}
 </div>
 
+
 <div class="posts" markdown="0">
-{% assign causes = site.causes %}
-{% for project in causes %}
+{% assign projects = site.data.causes %}
+{% for item in projects %}
 {% if forloop.index > 1 %}
-      {% include project.html project=project %}
+    {% include project.html project=item %}
 {% endif %}
 {% endfor %}
 </div>

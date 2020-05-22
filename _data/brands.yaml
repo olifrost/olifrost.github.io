@@ -1,42 +1,35 @@
-title: Curry's PC World – Goodbye
-description: A campaign created for the new term.
-image: /blog/curryspcworld.jpg
-video: s17sL5ih9pg
-order: 3
+- title: Wrigley’s Extra – Arrive Ready
+  description: Part of a campaign created for Wrigley’s ‘in-car gum holder’.
+  image: /blog/themessage.jpg
+  video: luxJ7KRaN00
 
-title: Sheba – Cat For Humans
-description: A language audiobook created for radio.
-image: /blog/catforhumans.jpg
-video: KJqASEDFbtQ
-order: 4
+- title: Sheba – The Strokeable Cat Video
+  description: Part of a campaign targeted around peak ‘cat video’ times.
+  image: /blog/strokeablecatvideo.jpg
+  link: http://w3-digital.com/test/html-test/sheba-uk/strokable/v04/
+  video: A1XIpujGOSQ
 
-order: 5
-title: Cancer Research – Who lives, Who dies?
-video: tlFcF28StHs
-description: Real families are asked to decide which of them received life-saving help.
-image: /blog/cancerresearch.jpg
+- title: Curry's PC World – Goodbye
+  description: A campaign created for the new term.
+  image: /blog/curryspcworld.jpg
+  video: s17sL5ih9pg
 
-title: Sheba – The Strokeable Cat Video
-description: Part of a campaign targeted around peak ‘cat video’ times.
-image: /blog/strokeablecatvideo.jpg
-link: http://w3-digital.com/test/html-test/sheba-uk/strokable/v04/
-video: A1XIpujGOSQ
-order: 1
+- title: Sheba – Cat For Humans
+  description: A language audiobook created for radio.
+  image: /blog/catforhumans.jpg
+  video: KJqASEDFbtQ
 
-title: Smart Energy – Energy Readings With Less Dad
-description: A Christmas campaign targeting "young people"
-image: /blog/smartenergy.jpg
-video: gzUNrWyNhTk
-order: 5
+- title: Cancer Research – Who lives, Who dies?
+  video: tlFcF28StHs
+  description: Real families are asked to decide which of them received life-saving help.
+  image: /blog/cancerresearch.jpg
 
-title: Wrigley’s Extra – Arrive Ready
-description: Part of a campaign created for Wrigley’s ‘in-car gum holder’.
-image: /blog/themessage.jpg
-video: luxJ7KRaN00
-order: 1
+- title: Smart Energy – Energy Readings With Less Dad
+  description: A Christmas campaign targeting "young people"
+  image: /blog/smartenergy.jpg
+  video: gzUNrWyNhTk
 
-title: Pedigree Dentastix – Bruno The Wise
-description: Part of a character campaign promoting dog oral health.
-image: /blog/brunothewise.jpg
-video: p2XajeEylxU
-order: 4
+- title: Pedigree Dentastix – Bruno The Wise
+  description: Part of a character campaign promoting dog oral health.
+  image: /blog/brunothewise.jpg
+  video: p2XajeEylxU
