@@ -29,26 +29,25 @@ My work has been featured everywhere from UK Parliament to Britain's Got Talent,
 # Work For Causes & Brands
 
 <div class="posts" markdown="0">
-  {% assign causes = site.causes %}
-
-  {% for project in causes %}
+  {% assign projects = site.data.causes %}
+  {% for item in projects %}
   {% if forloop.index < 3 %}
-        {% include project.html project=project %}
+        {% include project.html project=item %}
   {% endif %}  
   {% endfor %}
 </div>
 
+
 <div class="posts" markdown="0">
-  {% assign brands = site.brands %}
-  {% for project in brands limit: 2 %}
-        {% include project.html project=project %}
+  {% assign projects = site.data.brands %}
+  {% for item in projects limit: 2 %}
+        {% include project.html project=item %}
   {% endfor %}
 </div>
 
-
 <div class="posts" markdown="0">
-
-  {% for project in causes %}
+  {% assign projects = site.data.causes %}
+  {% for project in site.data.causes %}
   {% if forloop.index == 3 %}
         {% include project.html project=project %}
   {% endif %}  
