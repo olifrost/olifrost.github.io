@@ -1,3 +1,9 @@
+referafriend:
+
+- name: The Glass Room exhibit, San Francisco
+  article_link: 'https://theglassroom.org/san-francisco'
+
+
 refrosttheplanet:
 
 - name: Instagram
@@ -147,3 +153,33 @@ lifefaker:
   article_link: "https://graziadaily.co.uk/life/real-life/buy-instagram-photos-online-mental-health-sanctus-lifefaker/"
 - name: 'TechCrunch Editor'
   article_link: "https://twitter.com/mikebutcher/status/989783421605031936"
+
+globalcliamtestrike:
+
+- name: Greenpeace
+  article_link: https://www.instagram.com/p/B5XqpxPjSU8/
+- name: 350.org
+  article_link: 'https://twitter.com/350/status/1173310522596438017'
+- name: Upworthy
+  article_link: 'https://www.instagram.com/p/B2oKK7PARL5/'
+- name: I Weigh
+  article_link: 'https://www.instagram.com/p/B2gtSTinqOv'
+- name: School Strike For Climate
+  article_link: 'https://www.instagram.com/p/B2dpJwPAZuq/'
+- name: Extinction Rebellion
+  article_link: 'https://www.instagram.com/p/B2W62tAnf63'
+- name: YouthStrike4Climate
+  article_link: https://www.instagram.com/p/B5JEintnixJ/
+- name: Fridays For Future
+  article_link: https://www.instagram.com/p/B5QQMJtoyPd/
+
+edibleleaflets:
+
+- name: Evening Standard
+  article_link: 'https://www.standard.co.uk/lifestyle/foodanddrink/edible-leaflets-food-waste-campaign-a3689071.html'
+
+
+cannesfaker:
+
+- name: Adweek
+  article_link: 'http://lifefaker.com/cannes/'

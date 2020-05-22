@@ -7,14 +7,12 @@ carousel-items: 1
 ---
 
 <div markdown="1">
+  {% include bio %}
 
-{% include bio %}
+  My work has been featured everywhere from UK Parliament to Britain's Got Talent, BBC to Fox News, in art shows, and on bins.
 
-My work has been featured everywhere from UK Parliament to Britain's Got Talent, BBC to Fox News, in art shows, and on bins.
-
-<span><semibold>Most recently,</semibold> {% for post in site.posts limit:1 %}
-<a href="{{ post.url }}"> {{ post.title }} </a><br>{% endfor %}</span>
-
+  <span><semibold>Most recently,</semibold> {% for post in site.posts limit:1 %}
+  <a href="{{ post.url }}"> {{ post.title }} </a><br>{% endfor %}</span>
 </div>
 
 <div class="posts" markdown="0">
@@ -23,6 +21,7 @@ My work has been featured everywhere from UK Parliament to Britain's Got Talent,
         {% include project.html project=item %}
   {% endfor %}
 </div>
+
 
 ---
 

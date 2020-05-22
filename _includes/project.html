@@ -11,9 +11,7 @@
   {% endif %}
   <p>
     {{ include.project.description }}<br>
-    {% if include.partner != nil %}<span class="partner">Made with {{ include.project.partner }}</span>{% endif %}
-    {% for press in include.project.press %}
-    <a href="{{ press.article_link }}" class="press">{{ press.name }}{% if forloop.last == false %},{% else %}.{% endif %}</a>
-    {% endfor %}
+    {% if include.project.partner != nil %}<span class="partner">Made with {{ include.project.partner }}</span>{% endif %}
+    {% if include.project.press != nil %}{% for press in site.data.press[include.project.press] %}<a href="{{ press.article_link }}" class="press">{{ press.name }}{% if forloop.last == false %},{% else %}.{% endif %}</a> {% endfor %}{% endif %}
   </p>
 </div>
