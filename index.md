@@ -18,7 +18,7 @@ My work has been featured everywhere from UK Parliament to Britain's Got Talent,
 </div>
 
 <div class="posts" markdown="0">
-  {% assign portfolio = site.portfolio | sort: 'order' %}
+  {% assign portfolio = site.portfolio %}
   {% for project in portfolio limit: 6 %}
         {% include project.html project=project %}
   {% endfor %}

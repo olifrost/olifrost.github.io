@@ -15,9 +15,10 @@ playtrianglecolour: "rgba(0,0,0,1)"
 
 **Oli Frost Refrosts The Planet** is an online series that follows me, Oli Frost, and my plans to stop the earth defrosting.
 
-<div class="posts" mardown="0">
-{% assign refrost = site.refrost %}
-{% for item in site.data.refrost %}
+
+<div class="posts" markdown="0">
+{% assign refrost = site.data.refrost %}
+{% for item in refrost %}
     {% include project.html project=item %}
 {% endfor %}
 </div>

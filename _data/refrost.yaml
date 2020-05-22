@@ -24,11 +24,11 @@
     - name: 'Apple Music'
       article_link: 'https://music.apple.com/gb/album/pollution-solution/1477411206?i=1477411207'
 
-
-- title: Fossil Ghouls
-  description: Printable, plastic-free masks that were used by strikers at Halloween (and a coal mine protest in Australia)
-  image: /blog/fossilghouls.jpg
-  link: /fossilghouls
+- title: Climate Strike
+  description: A series of posters I made for the climate strikes, exhibiting on lamp posts, worldwide.
+  image: /blog/climateposters.jpg
+  link: /posters
+  order: 7
 
 - title: Fridays For Future Antarctica
   description: A protest movement I started for baby penguins. Endorsed (followed) by Greta Thunberg.
@@ -43,8 +43,7 @@
   order: 5
 
 
-- title: Climate Strike
-  description: A series of posters I made for the climate strikes, exhibiting on lamp posts, worldwide.
-  image: /blog/climateposters.jpg
-  link: /posters
-  order: 7
+- title: Fossil Ghouls
+  description: Printable, plastic-free masks that were used by strikers at Halloween (and a coal mine protest in Australia)
+  image: /blog/fossilghouls.jpg
+  link: /fossilghouls
