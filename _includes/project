@@ -1,0 +1,15 @@
+<div class="project-section">
+  {% if include.project.video != nil %}
+    <div class="youtube-player" data-id="{{ include.project.video }}" data-thumb="{{ include.project.image }}"></div>
+  {% else %}
+    <img src="{{ include.project.image | relative_url }}">
+  {% endif %}
+  <a href="{{ include.project.link }}"><span class="title">>> {{ include.project.title }}</span></a>
+  <p>
+    {{ include.project.description }}<br>
+    {% if include.partner != nil %}<span class="partner">Made with {{ include.project.partner }}</span>{% endif %}
+    {% for press in include.project.press %}
+    <a href="{{ press.article_link }}" class="press">{{ press.name }}{% if forloop.last == false %},{% else %}.{% endif %}</a>
+    {% endfor %}
+  </p>
+</div>

@@ -1,0 +1,119 @@
+title: Grand Prix Generator
+description: A generator for the “world-saving” campaigns that win big in ad awards.
+image: /blog/grandprixgenerator.jpg
+link: https://olifro.st/grandprixgenerator
+order: 3
+press:
+  - name: 'Adweek'
+    article_link: "http://www.adweek.com/agencyspy/cannes-grand-prix-case-study-generator-does-the-work-for-you/88739"
+  - name: 'Campaign'
+    article_link: "http://www.campaignlive.co.uk"
+  - name: 'The Drum'
+    article_link: "http://www.thedrum.com/stuff/2015/06/26/parody-cannes-grand-prix-generator-looks-save-lonely-abandoned-badgers-and-hydrate"
+  - name: 'Adland'
+    article_link: "https://adland.tv/adnews/best-cannes-self-promotion/179607688"
+  - name: 'Ben Kay'
+    article_link: "http://ben-kay.com/2015/06/how-to-win-a-cannes-grand-prix/"
+  - name: 'Dave Trott'
+    article_link: "https://twitter.com/davetrott/status/611495866105470976"
+  - name: 'Mark Waites'
+    article_link: "https://twitter.com/MarkWaites/status/611510351889350656"
+
+
+title: Cannesfaker
+link: http://lifefaker.com/cannes/
+description: A subsidiary of Lifefaker.com created for Cannes
+link: http://lifefaker.com/cannes
+image: /blog/cannesfaker.jpg
+press:
+  - name: Adweek
+    article_link: 'http://lifefaker.com/cannes/'
+order: 7
+
+title: Global Climate Strike – Posters
+description: A set of posters made for the first global climate strike that appeared on lamp posts, globally, and turned into a series.
+link: /blog/I-cant-swim
+image: /blog/climateposters.jpg
+press:
+- name: Greenpeace
+  article_link: https://www.instagram.com/p/B5XqpxPjSU8/
+- name: 350.org
+  article_link: 'https://twitter.com/350/status/1173310522596438017'
+- name: Upworthy
+  article_link: 'https://www.instagram.com/p/B2oKK7PARL5/'
+- name: I Weigh
+  article_link: 'https://www.instagram.com/p/B2gtSTinqOv'
+- name: School Strike For Climate
+  article_link: 'https://www.instagram.com/p/B2dpJwPAZuq/'
+- name: Extinction Rebellion
+  article_link: 'https://www.instagram.com/p/B2W62tAnf63'
+- name: YouthStrike4Climate
+  article_link: https://www.instagram.com/p/B5JEintnixJ/
+- name: Fridays For Future
+  article_link: https://www.instagram.com/p/B5QQMJtoyPd/
+order: 2
+
+title: The Homeless Period
+description: The first campaign to raise the issue of sanitary care access for homeless women. Now run by supporters around the world.
+link: /blog/thehomelessperiod
+image: /blog/homelessperiod.jpg
+press:
+  - name: UK Parliament
+    article_link: 'https://www.facebook.com/thehomelessperiod/posts/1211915425541708'
+  - name: The Guardian
+    article_link: 'https://www.theguardian.com/voluntary-sector-network/2015/jun/05/homeless-period-tampon-or-food-campaign-of-the-month'
+  - name: Independent
+    article_link: 'http://www.independent.co.uk/life-style/health-and-families/health-news/homeless-should-be-given-period-products-for-free-by-shelters-and-charities-say-campaigners-10167627.html'
+  - name: BBC
+    article_link: 'http://www.bbc.co.uk/news/health-33720608'
+  - name: The Huffington Post
+    article_link: 'http://www.huffingtonpost.co.uk/2015/04/10/homeless-period-women_n_6991340.html'
+  - name: Daily Mail
+    article_link: 'http://www.dailymail.co.uk/femail/article-3038089/Homeless-period-campaign-highlights-monthly-misery-women-streets.html'
+  - name: Telegraph
+    article_link: 'http://www.telegraph.co.uk/women/womens-health/11508497/TheHomelessPeriod-Campaign-for-homeless-women-to-have-free-tampons.html'
+  - name: Mic
+    article_link: 'https://mic.com/articles/114242/one-powerful-hashtag-exposes-a-unique-problem-for-homeless-women'
+  - name: Stylist
+    article_link: 'http://www.stylist.co.uk/life/deserves-dignity-supporters-raise-money-for-woman-fined-stealing-tampons-australia'
+  - name: Dazed
+    article_link: 'http://www.dazeddigital.com/artsandculture/article/27218/1/why-the-tampon-tax-matters-to-homeless-women'
+  - name: Aljazeera
+    article_link: 'http://america.aljazeera.com/articles/2015/4/15/more-pads-for-homeless-women-help.html'
+  - name: Refinery29
+    article_link: 'http://www.refinery29.com/2015/04/85354/homeless-period-london-petition'
+  - name: Big Issue
+    article_link: 'http://www.bigissue.com/features/5053/thousands-support-campaign-for-homeless-women-to-have-free-tampons'
+  - name: Channel 4
+    article_link: 'https://www.facebook.com/thehomelessperiod/posts/1211915425541708'
+  - name: Metro
+    article_link: 'http://metro.co.uk/2017/03/22/bodyform-is-donating-200000-packs-of-sanitary-protection-to-help-fight-period-poverty-6526038/'
+  - name: Evening Standard
+    article_link: 'https://www.standard.co.uk/news/london/campaigners-call-on-government-to-provide-funding-for-free-sanitary-products-for-the-homeless-10179548.html'
+order: 1
+
+title: Edible Leaflets
+link: http://edibleleaflets.oliandjosie.com
+description: Tips on how to waste less bread, toasted onto bread.
+link: https://www.standard.co.uk/lifestyle/foodanddrink/edible-leaflets-food-waste-campaign-a3689071.html
+image: /blog/edibileleaflets.jpg
+press:
+  - name: Evening Standard
+    article_link: 'https://www.standard.co.uk/lifestyle/foodanddrink/edible-leaflets-food-waste-campaign-a3689071.html'
+order: 5
+
+title: Personalised Health Warnings
+description: A site that let's you print a personalised health warning label for your loved one's cigarettes.
+image: /blog/healthwarning.jpg
+video: DxqXFv3c_dI
+link: /blog/personalisedhealthwarnings/
+press:
+  - name: Metro
+    article_link: 'http://metro.co.uk/2016/12/05/you-can-now-customise-your-own-cigarette-packets-which-is-nice-6302293/'
+  - name: ABC
+    article_link: ''
+  - name: Huffington Post
+    article_link: 'http://www.huffingtonpost.co.uk/entry/personalised-cigarette-packets-quit-smoking_uk_5846909ce4b06a503248fefe'
+otherlinks:
+  - https://www.noticiasaominuto.com/lifestyle/700629/personalize-um-maco-de-tabaco-para-desincentivar-fumadores
+order: 4

@@ -3,6 +3,7 @@ title: Global Climate Strike
 description: Find your local climate strike and posters to promote it.
 style: custom
 layout: links
+permalink: /climatestrike
 ---
 
 <ul>

@@ -9,27 +9,34 @@ footer:              Oliver Frost, Ollie Frost, Olly Frost, or however you missp
 
 exclude:             [/psd/]
 
+collections_dir: projects
 
 # Markdown
 collections:
   portfolio:
     # output: true
     permalink: /work/:title/
+    sort_by: order
   causes:
     # output: true
     permalink: /work/:title/
+    sort_by: order
   brands:
     # output: true
     permalink: /work/:title/
+    sort_by: order
   hidden:
     output: true
     permalink: /work/:title/
+    sort_by: order
   refrost:
     # output: true
     permalink: /work/:title/
+    sort_by: order
   spec:
     # output: true
     permalink: /work/:title/
+    sort_by: order
 
 
 # SASS
@@ -54,7 +61,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /blog/refrosttheplanet.jpg
+      image: /blog/olifrost.jpg
 
 profile: /blog/olifrost.jpg
 

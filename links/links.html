@@ -3,10 +3,11 @@ title: Oli Frost Refrosts The Planet
 description: Also known as Ollie Frost, Olly Frost, or Oliver Frost
 style: custom
 layout: links
+permalink: /links
 ---
 
 <ul>
-{% for item in site.data.downloads.docs %}
+{% for item in site.data.links.docs %}
 <li style="background-color: #{{item.colour}}; border-color: #{{item.colour}};">
   <a href="{{ item.url }}" alt="{{ item.title }}">
     {{ item.title }}</a>

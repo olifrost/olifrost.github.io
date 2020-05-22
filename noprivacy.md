@@ -2,6 +2,7 @@
 layout: page
 title: No Privacy Policy
 description: This website has a No Privacy Policy
+permalink: /noprivacy
 ---
 
 1. You give me permission to do anything with your personal data: including but not limited to catfishing, fraud and visiting you at your house.

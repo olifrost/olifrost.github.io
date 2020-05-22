@@ -5,18 +5,7 @@ title: Blog
 
 ## Top posts
 
-{% for post in site.posts %}
-
-{% if post.featured %}
-  <div class="post">
-
-
-    <h1 class="post-title" style="margin-bottom: 0rem;"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-    {% if post.description %}<p class="post-description">{{ post.description }}…</p>{% endif %}
-
-  </div>
-  {% endif %}
-{% endfor %}
+{% include featured-post.html %}
 
 ## All posts
 
@@ -24,15 +13,8 @@ title: Blog
 
 {% if post.featured %}
 {% else %}
-
   <div class="post">
-
-
-
-    <h1 class="post-title" style="margin-bottom: 0rem;"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-    {% if post.description %}<p class="post-description">{{ post.description }}…</p>{% endif %}
-
-
+    {% include post-title.html post=post %}
   </div>
-  {% endif %}
+{% endif %}
 {% endfor %}
