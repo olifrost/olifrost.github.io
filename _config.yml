@@ -9,8 +9,6 @@ footer:              Oliver Frost, Ollie Frost, Olly Frost, or however you missp
 
 exclude:             [/psd/]
 
-collections_dir: projects
-
 # Markdown
 collections:
   portfolio:

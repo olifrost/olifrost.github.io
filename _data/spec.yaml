@@ -1,0 +1,56 @@
+- title: Micro-Tipsy
+  description: Becks Blue 0.05%
+  date: '2015-12-02T06:41:24+00:00'
+  order: 1
+  carousel-items: 2
+  images:
+    - name: microtipsy1.jpg
+      alt: Micro-Tipsy 1
+    - name: microtipsy2.jpg
+      alt: Micro-Tipsy 2
+    - name: microtipsy3.jpg
+      alt: Micro-Tipsy 3
+
+- title: Mundane Medical Drama
+  description: BUPA Health Insurance
+  date: '2015-12-02T06:41:24+00:00'
+  order: 2
+  carousel-items: 1
+  images:
+    - name: mundane1.jpg
+      alt: BUPA Mundane Medical Drama 1
+    - name: mundane2.jpg
+      alt: BUPA Mundane Medical Drama 2
+    - name: mundane3.jpg
+      alt: BUPA Mundane Medical Drama 3
+
+- title: Lucky People Come Back As Swiss Cows
+  description: Visit Switzerland
+  order: 4
+  carousel-items: 1
+  images:
+    - name: swisscow3.jpg
+      alt: Swiss Cows 3
+    - name: swisscow1.jpg
+      alt: Swiss Cows 1
+    - name: swisscow2.jpg
+      alt: Swiss Cows 2
+    - name: swisscow4.jpg
+      alt: Swiss Cows 4
+    - name: swisscow5.jpg
+      alt: Swiss Cows 5
+
+- title: Simple Clothes Simple Thoughts
+  description: UNIQLO
+  date: '2015-12-02T06:41:24+00:00'
+  order: 3
+  carousel-items: 1
+  images:
+    - name: UNIQLO1.png
+      alt: UNIQLO Simple Clothes
+    - name: UNIQLO2.png
+      alt: UNIQLO Simple Clothes
+    - name: UNIQLO3.png
+      alt: UNIQLO Simple Clothes
+    - name: UNIQLO4.png
+      alt: UNIQLO Simple Clothes

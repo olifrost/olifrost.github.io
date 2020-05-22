@@ -11,23 +11,8 @@ Studied at [**Watford Ad Course**](/student) (2013)
 
 
 <div class="posts" markdown="0">
-{% assign portfolio = site.portfolio %}
-
-  {% for project in portfolio limit: 1 %}
-        <div class="project-section">
-        {% if project.video != nil %}
-        <div class="youtube-player" data-id="{{ project.video }}" data-thumb="{{ project.image }}"></div>
-        {% else %}
-        <img src="{{ project.image | relative_url }}">
-        {% endif %}
-        <a href="{{ project.link }}"><span class="title">>> Sanctus – Lifefaker.com</span></a>
-        <p style="margin-bottom:2.5rem;"> {{ project.description }}<br>
-        {% for press in project.press %}
-        <a href="{{ press.article_link }}" class="press">{{ press.name }}{% if forloop.last == false %},{% else %}.{% endif %}</a>
-        {% endfor %}
-        </p>
-        </div>
-  {% endfor %}
+{% assign projects = site.data.portfolio[0] %}
+{% include project.html project=projects name="Sanctus – Lifefaker.com" %}
 </div>
 
 <div class="posts" markdown="0">
