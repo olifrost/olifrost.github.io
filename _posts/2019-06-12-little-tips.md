@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I impersonate my local council's recycling department
-description: I had been living in Lambeth for five years
+description: I'd always felt Lambeth's recycling tips were somewhat lacking
 image: /blog/littletips.jpg
 images: true
 carousel-items: 3
@@ -12,7 +12,7 @@ permalink: /little-tips/
 playbuttoncolour: "rgb(122,197,48)"
 ---
 
-As part of my mission to [Refrost The Planet](/refrost), I decided to help improve the range of their recycling tips.
+So as part of my mission to [Refrost The Planet](/refrost), I decided to help expand on their offering.
 
 Starting with sex, drugs, and crime.
 
