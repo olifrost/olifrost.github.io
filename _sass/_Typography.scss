@@ -1,14 +1,47 @@
-/*!
- * Milligram-scss v1.3.0
- * https://milligram.github.io
- *
- * Copyright (c) 2017 CJ Patoilo
- * Licensed under the MIT license
- */
-
-
 // Typography
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+@font-face {
+  font-family: 'Calibre';
+  src:  url('../fonts/Calibre-Light.otf')  format('opentype'),
+        url('../fonts/Calibre-Light.woff')  format('woff'),
+        url('../fonts/Calibre-Light.ttf')  format('truetype'),
+        url('../fonts/Calibre-Light.svg#Calibre-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+/*
+@font-face {
+    font-family: Calibre;
+    src: url(../fonts/calibre-regular-webfont.eot);
+    src: url(../fonts/calibre-regular-webfont.eot?#iefix) format('embedded-opentype'), url(../fonts/calibre-regular-webfont.woff) format('woff'), url(../fonts/calibre-regular-webfont.ttf) format('truetype'), url(../fonts/calibre-regular-webfont.svg#calibre_regularregular) format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Calibre;
+    src: url(../fonts/calibre-medium-webfont.eot);
+    src: url(../fonts/calibre-medium-webfont.eot?#iefix) format('embedded-opentype'), url(../fonts/calibre-medium-webfont.woff) format('woff'), url(../fonts/calibre-medium-webfont.ttf) format('truetype'), url(../fonts/calibre-medium-webfont.svg#Calibre) format('svg');
+    font-weight: 500;
+    font-style: normal
+}*/
+
+@font-face {
+    font-family: Calibre;
+    src: url(../fonts/calibre-semibold-webfont.eot);
+    src: url(../fonts/calibre-semibold-webfont.eot?#iefix) format('embedded-opentype'), url(../fonts/calibre-semibold-webfont.woff) format('woff'), url(../fonts/calibre-semibold-webfont.ttf) format('truetype'), url(../fonts/calibre-semibold-webfont.svg#calibresemibold) format('svg');
+    font-weight: 800;
+    font-style: normal
+}
+
+
+p, .title, li, ol, ul {
+  font-size: 3.5rem;
+  line-height: 125%;
+}
+
 
 b,
 strong {
@@ -62,4 +95,24 @@ h6 {
 	font-size: 1.6rem;
 	letter-spacing: 0;
 	line-height: 1.4;
+}
+
+@media only screen and (max-width: $first-breakpoint) {
+
+	p, .title, li, ol, ul {
+	  font-size: 2.5rem;
+	  line-height: 125%;
+	}
+
+	h1 {
+		font-size: 3.4rem;
+		line-height: 1;
+	}
+
+	h2 {
+		font-size: 2.8rem;
+		line-height: 1;
+	}
+
+
 }

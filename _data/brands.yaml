@@ -1,5 +1,5 @@
 - title: Wrigley’s Extra – Arrive Ready
-  description: Part of a campaign created for Wrigley’s ‘in-car gum holder’.
+  description: A film from a campaign I wrote for Wrigley’s ‘in-car gum holder’.
   image: /blog/themessage.jpg
   video: luxJ7KRaN00
 
@@ -9,27 +9,58 @@
   link: http://w3-digital.com/test/html-test/sheba-uk/strokable/v04/
   video: A1XIpujGOSQ
 
-- title: Curry's PC World – Goodbye
-  description: A campaign created for the new term.
-  image: /blog/curryspcworld.jpg
-  video: s17sL5ih9pg
+- title: Global Climate Strike
+  description: A set of posters made for the first global climate strike that appeared on lamp posts, globally, and turned into a series.
+  link: /blog/I-cant-swim
+  image: /blog/climateposters.jpg
+  press: globalcliamtestrike
+
+- title: The Homeless Period
+  description: The first campaign to raise the issue of sanitary care access for homeless women. Now run by supporters around the world.
+  link: /blog/thehomelessperiod
+  image: /blog/homelessperiod.jpg
+  press: thehomelessperiod
 
 - title: Sheba – Cat For Humans
   description: A language audiobook created for radio.
   image: /blog/catforhumans.jpg
   video: KJqASEDFbtQ
 
-- title: Cancer Research – Who lives, Who dies?
-  video: tlFcF28StHs
-  description: Real families are asked to decide which of them received life-saving help.
-  image: /blog/cancerresearch.jpg
+- title: Curry's PC World – Goodbye
+  description: A campaign created for the new term.
+  image: /blog/curryspcworld.jpg
+  video: s17sL5ih9pg
+
+- title: Pedigree Dentastix – Bruno The Wise
+  description: Part of a character campaign promoting dog oral health.
+  image: /blog/brunothewise.jpg
+  video: p2XajeEylxU
 
 - title: Smart Energy – Energy Readings With Less Dad
   description: A Christmas campaign targeting "young people"
   image: /blog/smartenergy.jpg
   video: gzUNrWyNhTk
 
-- title: Pedigree Dentastix – Bruno The Wise
-  description: Part of a character campaign promoting dog oral health.
-  image: /blog/brunothewise.jpg
-  video: p2XajeEylxU
+- title: Chupa Chups – The Eclipse
+  description: We used astronomical data to synchronise these two lollipops to the sun and moon. Thanks to poor weather, it was the best eclipse of 2015.
+  image: /blog/chupachups.jpg
+
+- title: Cancer Research – Who Lives, Who Dies?
+  video: tlFcF28StHs
+  description: Real families are asked to decide which of them received life-saving help.
+  image: /blog/cancerresearch.jpg
+
+- title: Grand Prix Generator
+  description: A generator for the “world-saving” campaigns that win big in ad awards.
+  image: /blog/grandprixgenerator.jpg
+  link: https://olifro.st/grandprixgenerator
+  order: 3
+  press: grandprixgenerator
+
+
+- title: Cannesfaker
+  link: http://lifefaker.com/cannes/
+  description: A subsidiary of Lifefaker.com created for Cannes
+  link: http://lifefaker.com/cannes
+  image: /blog/cannesfaker.jpg
+  press: cannesfaker

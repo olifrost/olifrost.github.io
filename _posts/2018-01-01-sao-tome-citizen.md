@@ -3,7 +3,6 @@ layout: post
 title: Why I'm applying for citizenship in São Tomé
 description: It was a decision that could change my life forever.
 image: /blog/olifrost-flag.jpg
-featured: yes
 ---
 
 ![Oli Frost]({{ "/blog/olifrost-flag.jpg" | relative_url }})

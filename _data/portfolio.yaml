@@ -1,10 +1,9 @@
-- title: Lifefaker
-  description: A startup to help you fake a perfect online life.
-  image: /blog/lifefaker.jpg
-  link: http://lifefaker.com
-  order: 1
-  video: IuibG80U-Gs
-  press: lifefaker
+- title: Oli Frost Refrosts The Planet
+  description: One man's plans to the stop the earth defrosting.
+  image: /blog/littletips.jpg
+  link: /refrost
+  video: nRxJcj0qiQk
+  press: refrosttheplanet
 
 - title: Recorda Boi
   description: My mission to repopularise the recorder.
@@ -14,18 +13,11 @@
   order: 3
   press: recordaboi
 
-- title: Flopstarter
+- title: Flopstarter.com
   description: A platform for bad ideas.
   image: /blog/flopstarter.jpg
   link: https://flopstarter.com
   press: flopstarter
-
-- title: Oli Frost Refrosts The Planet
-  description: One man's plans to the stop the earth defrosting.
-  image: /blog/littletips.jpg
-  link: /refrost
-  video: nRxJcj0qiQk
-  press: refrosttheplanet
 
 - title: Refer Me A Friend
   description: If we become friends, you both get £15.
@@ -34,6 +26,14 @@
   video: nBfc_vfKKvc
   order: 2
   press: referafriend
+
+- title: Lifefaker.com
+  description: A startup to help you fake a perfect online life.
+  image: /blog/lifefaker.jpg
+  link: http://lifefaker.com
+  order: 1
+  video: IuibG80U-Gs
+  press: lifefaker
 
 - title: eBay Data Sale
   description: I put all my personal data on eBay.
@@ -63,10 +63,3 @@
   link: https://olifro.st/blog/sarcastic-samantha/
   press: sarcasticsamantha
   order: 8
-
-- title: NFN (Nice Fake News)
-  description: A fake news site, but for the lies humanity needs.
-  image: /blog/nicefakenews.jpg
-  video: PPwZPhOHRgg
-  link: https://olifro.st/blog/russian-hacker/
-  press: nicefakenews

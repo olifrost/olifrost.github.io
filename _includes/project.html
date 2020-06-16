@@ -1,6 +1,13 @@
 <div class="project-section">
   {% if include.project.video != nil %}
-    <div class="youtube-player" data-id="{{ include.project.video }}" data-thumb="{{ include.project.image }}"></div>
+  <div class="youtube-player" data-id="{{ include.project.video }}"
+  {% if include.project.image %}
+  data-thumb="{{ include.project.image }}"
+  {% else %}
+  data-thumb="https://i.ytimg.com/vi/{{ include.project.video }}/maxresdefault.jpg"
+  {% endif %}
+  >
+  </div>
   {% else %}
     <img src="{{ include.project.image | relative_url }}">
   {% endif %}

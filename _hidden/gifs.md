@@ -10,10 +10,8 @@ images:
 
 ## Refrost The Planet GIFs
 
-A set of GIFs part of [Oli Frost Refrosts The Planet](/refrost)
+Some GIFs for [Oli Frost Refrosts The Planet](/refrost) that had over 100M views on [GIPHY](http://giphy.com/olifrost).
 
-Search 'Oli Frost' to add to your Instagram or Snapchat Stories.
-
-[GIPHY Profile](http://giphy.com/olifrost)
+Search 'Oli Frost' to add them to any world-changing Instagram Story.
 
 {% include poster-gallery.html path="/posters/gifs" %}

@@ -10,6 +10,8 @@ permalink: /domestic-rebellion/
 carousel-items: 3
 ---
 
+{% include refrost-style %}
+
 <div class="youtube-player" data-id="{{ page.videos }}" data-thumb="{{ page.image }}"></div>
 
 Domestic Rebellion is a civilised disobedience movement that activists engage in from the comforts of their own home.

@@ -1,0 +1,42 @@
+<style>
+body {
+    background-color: {{ include.background }};
+    background-image: {{ include.backgroundimage }};
+
+}
+p, h1, h2, h3, h4, small, time, header, footer, input[type='email'] {
+  color: {{ include.text }};
+
+}
+
+input[type='submit'], .button {
+  background-color: {{ include.primary }};
+  border-color: {{ include.primary }};
+}
+
+input[type='email'] {
+border: .1rem solid {{ include.text }};
+color: {{ include.text }};
+}
+
+hr {
+  border-color: white;
+}
+
+ a, .navigation a, .subpage {
+   color: {{ include.primary }};
+ }
+
+  a:hover, .navigation a:hover {
+       color: {{ include.hover }};
+  }
+
+ .icon svg path {
+   fill: {{ include.primary }};
+ }
+
+ .owl-dot {
+  color: white !important;
+ }
+
+</style>

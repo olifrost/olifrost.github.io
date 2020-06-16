@@ -1,0 +1,14 @@
+docs_list_title: Pages
+docs:
+
+- title: ads
+  url: /work/
+
+- title: films
+  url: /reel/
+
+- title: refrost
+  url: /refrost/
+
+- title: recorda-boi
+  url: /recorda-boi/

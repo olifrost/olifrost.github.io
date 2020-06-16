@@ -8,35 +8,18 @@ videos: 52dnwXso6bs
 redirect_from:
   - /blog/recordabook/
   - /blog/britains-got-talent/
+playbuttoncolour: "rgb(158,144,93)"
+playtrianglecolour: "white"
 ---
 
-They said it wasn't "cool".
+{% include custom-style primary="rgb(158,144,93)" text="" background="#FEFEFE" hover="#8d8e93" %}
 
-So I decided to prove them wrong, and went on Britain's Got Talent.
-
-{% include youtube id="52dnwXso6bs" thumb="/blog/recorderboibgt.jpeg" %}
-
-After the performance a documentary crew came to see me.
-
-{% include youtube id="V6q63u29dBg" %}
-
-I published my first ebook, <a href="/blog/RecordaBoiGradeBook.pdf">>> Recorda Boi (Grades 3-4)</a>.
-
-![Recorda Boi](/blog/recordabook-2.jpg)
-
-Started a successful YouTube channel
-
-{% include youtube id="34N8Bb5UFX8" %}
-
-{% include youtube id="DdyU-Qfv-kY" %}
-
-Busked in New York
-
-{% include youtube id="v4ghuB_Ctas" %}
-
-And made my first public apology
-
-{% include youtube id="KqXjyXwkI-A" %}
+<div class="posts" markdown="0">
+{% assign recordaboi = site.data.recordaboi %}
+{% for item in recordaboi %}
+    {% include project.html project=item %}
+{% endfor %}
+</div>
 
 In 2019, I made fans [over a hundred personalised songs](https://www.instagram.com/stories/highlights/18029842834212127/).
 

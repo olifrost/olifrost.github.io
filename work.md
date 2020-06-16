@@ -4,16 +4,11 @@ title: Oli Frost
 videos: true
 ---
 
-Creative at **AMV BBDO** (2015-2020)  
-Creative Circle **Best New Creative** (2017)  
-Previous experience **Droga5, BBH, Mother** (2014)   
-Studied at [**Watford Ad Course**](/student) (2013)  
+Here's some more of the work I've done for brands or causes.
 
+I worked at AMV BBDO for five years, spent time at Droga5, BBH, Mother, and made [my first book](/student) at the Watford Ad Course.
 
-<div class="posts" markdown="0">
-{% assign projects = site.data.portfolio[0] %}
-{% include project.html project=projects name="Sanctus – Lifefaker.com" %}
-</div>
+I once won gold for Creative Circle's 'Most Promising Newcomer', which wouldn't sound like a compliment if I was given it now.
 
 <div class="posts" markdown="0">
 {% assign projects = site.data.brands %}
@@ -22,22 +17,18 @@ Studied at [**Watford Ad Course**](/student) (2013)
 {% endfor %}
 </div>
 
-
-<div class="posts" markdown="0">
-{% assign projects = site.data.causes %}
-{% for item in projects %}
-{% if forloop.index > 1 %}
-    {% include project.html project=item %}
-{% endif %}
-{% endfor %}
-</div>
-
-
 ---
 
 Further Live Work: *Snickers (Activation), Bombay Sapphire (Out Of Home), Sainsbury's Food Waste (TV & Print), BT (Social & Out of Home), Bodyform (TV & Print), Maltesers (Online Film), Galaxy (Online Film), The National Lottery (TV), Sainsbury's Tu (TV & Print), Mercedes-Benz (TV), IKEA (Radio & Print), Hiscox (Radio), & Chupa-Chups (Activation)*.
 
 ---
 
+{% include nextpage.html page1="Show me everything" link1="/blog" page2="Watch more films" link2="/reel" %}
 
-[>> Skip Ads](/)
+---
+
+# Further Reading
+
+{% include featured-post.html %}
+
+---

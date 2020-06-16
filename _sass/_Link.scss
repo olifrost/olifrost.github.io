@@ -21,7 +21,9 @@ a {
 	}
 }
 
-
+.subpage {
+	color: $color-primary;
+}
 
 .icon:hover svg path {
 	fill: $blue;

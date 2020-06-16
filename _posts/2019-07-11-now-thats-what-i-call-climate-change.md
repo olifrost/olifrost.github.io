@@ -8,6 +8,8 @@ redirect_from:
 permalink: /now-thats-what-i-call-climate-change
 ---
 
+{% include refrost-style %}
+
 A playlist I made for strikes/protests/end-of-the-world parties.
 
 Now playing at actual climate strikes.
