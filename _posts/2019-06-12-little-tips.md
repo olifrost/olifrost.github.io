@@ -12,6 +12,8 @@ permalink: /little-tips/
 playbuttoncolour: "rgb(122,197,48)"
 ---
 
+{% include refrost-style %}
+
 So as part of my mission to [Refrost The Planet](/refrost), I decided to help expand on their offering.
 
 Starting with sex, drugs, and crime.

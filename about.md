@@ -43,7 +43,7 @@ No. If you'd like to support my work please [buy me a cat](/buymeacat).
 I do, I met her [on GettyImages]({% post_url 2019-02-10-gettygirlfriend %}).
 
 ## Do you really care about climate change
-Of course I do. [I can't swim.](% post_url 2019-09-27-i-cant-swim %)
+I have to. [I can't swim.]({% post_url 2019-09-27-i-cant-swim %})
 
 ## Will you do something for me?
 [Ask me](mailto:{{ site.author.email }}). As long as it's not weird…

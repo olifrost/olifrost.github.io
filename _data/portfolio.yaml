@@ -1,5 +1,5 @@
 - title: Oli Frost Refrosts The Planet
-  description: One man's plans to the stop the earth defrosting.
+  description: One man's plans to the stop the earth defrosting. Now with a <a class="nw" href="/blog/covid-tips">COVID-19 update</a>.
   image: /blog/littletips.jpg
   link: /refrost
   video: nRxJcj0qiQk
@@ -22,7 +22,7 @@
 - title: Refer Me A Friend
   description: If we become friends, you both get £15.
   image: /blog/refer/refer-text.jpg
-  link: https://olifro.st/refer
+  link: /refer
   video: nBfc_vfKKvc
   order: 2
   press: referafriend
@@ -38,7 +38,7 @@
 - title: eBay Data Sale
   description: I put all my personal data on eBay.
   image: /blog/ebaydatasale.jpg
-  link: https://olifro.st/blog/data-on-ebay/
+  link: /blog/data-on-ebay/
   order: 4
   press: referafriend
   other_press:

@@ -15,8 +15,6 @@ And then I had a better idea: [Lifefaker.com](http://lifefaker.com)
 
 <div class="youtube-player" data-id="IuibG80U-Gs" data-thumb="/blog/lifefaker.jpg"></div>
 
-
-
 Most friends believed the idea to be morally bankrupt.
 
 Especially since I was illegally stealing the photos.

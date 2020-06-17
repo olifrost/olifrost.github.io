@@ -11,9 +11,10 @@ redirect_from:
 playbuttoncolour: "rgb(158,144,93)"
 playtrianglecolour: "white"
 ---
-
 {% include custom-style primary="rgb(158,144,93)" text="" background="#FEFEFE" hover="#8d8e93" %}
+They said it wasn't "cool".
 
+How wrong they were…
 <div class="posts" markdown="0">
 {% assign recordaboi = site.data.recordaboi %}
 {% for item in recordaboi %}
