@@ -10,6 +10,8 @@ carousel-items: 3
 images: true
 ---
 
+{% include custom-style primary="#eb6123" text="" background="" hover="#8d8e93" %}
+
 <style>
 
 body {

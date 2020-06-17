@@ -42,8 +42,8 @@ No. If you'd like to support my work please [buy me a cat](/buymeacat).
 ## Do you have a girlfriend?
 I do, I met her [on GettyImages]({% post_url 2019-02-10-gettygirlfriend %}).
 
-## Why do you have a coat hook on your shirt?
-It's a [SHOOK]({% post_url 2018-02-03-shook-shirt-hook %}).
+## Do you really care about climate change
+Of course I do. [I can't swim.](% post_url 2019-09-27-i-cant-swim %)
 
 ## Will you do something for me?
 [Ask me](mailto:{{ site.author.email }}). As long as it's not weird…

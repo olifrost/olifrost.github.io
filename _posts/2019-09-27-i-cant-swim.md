@@ -1,11 +1,13 @@
 ---
 layout: post
-title: I can't swim
+title: I can't swim, but I can write posters
 description: Well, according to the Frosties Swimming School, not more than 400m.
 image: https://i.ytimg.com/vi/Af5Fk8wVfOU/maxresdefault.jpg
 images: true
 carousel-items: 3
 ---
+
+{% include refrost-style %}
 
 So of course I was interested, when the student climate network asked me to make some posters for the first global climate strike.
 

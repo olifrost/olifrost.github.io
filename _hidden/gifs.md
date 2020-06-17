@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Blog
+layout: post
+title: Refrost The Planet GIFs
 carousel-items: 3
 permalink: /gifs
 images:
@@ -8,7 +8,7 @@ images:
     alt: Getty Girlfriend 1
 ---
 
-## Refrost The Planet GIFs
+{% include refrost-style %}
 
 Some GIFs for [Oli Frost Refrosts The Planet](/refrost) that had over 100M views on [GIPHY](http://giphy.com/olifrost).
 
