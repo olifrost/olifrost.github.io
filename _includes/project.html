@@ -11,14 +11,17 @@
   {% else %}
     <img src="{{ include.project.image | relative_url }}">
   {% endif %}
+  {% if include.project.title %}
   {% if include.project.link != nil %}
-  <a href="{{ include.project.link }}"><span class="title">{% if include.name %}>> {{ include.name }}{% else %}>> {{ include.project.title }}{% endif %}</span></a>
+  <a href="{{ include.project.link }}"><span class="title">>> {{ include.project.title }}</span></a>
   {% else %}
-  <span class="title">{% if include.name %}>> {{ include.name }}{% else %}>> {{ include.project.title }}{% endif %}</span>
+  <span class="title">>> {{ include.project.title }}</span>
   {% endif %}
-  <p>
+  {% endif %}
+  {% if include.project.description %}<p>
     {{ include.project.description }}<br>
     {% if include.project.partner != nil %}<span class="partner">Made with {{ include.project.partner }}</span>{% endif %}
     {% if include.project.press != nil %}{% for press in site.data.press[include.project.press] %}<a href="{{ press.article_link }}" class="press">{{ press.name }}{% if forloop.last == false %},{% else %}.{% endif %}</a> {% endfor %}{% endif %}
   </p>
+  {% endif %}
 </div>

@@ -1,4 +1,5 @@
 <style>
+
 body {
     background-color: {{ include.background }};
     background-image: {{ include.backgroundimage }};
@@ -37,6 +38,10 @@ hr {
 
  .owl-dot {
   color: white !important;
+ }
+
+ .owl-nav svg path {
+  fill: {{ include.primary }};
  }
 
 </style>
