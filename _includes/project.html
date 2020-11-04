@@ -9,7 +9,9 @@
   >
   </div>
   {% else %}
+  <div class="project-image">
     <img src="{{ include.project.image | relative_url }}">
+  </div>
   {% endif %}
   {% if include.project.title %}
   {% if include.project.link != nil %}

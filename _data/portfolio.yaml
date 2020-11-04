@@ -57,9 +57,10 @@
     - article_link: 'https://technologue.id/pria-ini-jual-data-facebook-pribadinya-di-ebay-kenapa/amp/'
     - article_link: 'https://www.derstandard.de/story/2000080681647/zeit-abzucashen-brite-verkauft-seine-facebook-daten-auf-ebay?ref=rec'
 
-- title: Sarcastic Samantha
-  description: An app that reads your ideas back to you in a sarcastic, patronising tone.
-  image: /blog/sarcasticsamantha.jpg
-  link: https://olifro.st/blog/sarcastic-samantha/
-  press: sarcasticsamantha
-  order: 8
+
+- title: Redundancy.
+  description: They made me redundant, so I trashed their office.
+  video: 8qrUVR8gsac
+  image: /blog/redundancy.jpg
+  link: /blog/redundancy
+  order: 3

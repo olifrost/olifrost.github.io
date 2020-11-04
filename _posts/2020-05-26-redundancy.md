@@ -1,7 +1,7 @@
 ---
 layout: post
 title: They made me redundant, so I trashed their office
-description: Leave them some trash talk in the comments.
+description: The following film is not a work of fiction. Viewer discretion is advised.
 image: Redundancy.jpg
 videos: 8qrUVR8gsac
 ---

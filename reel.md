@@ -10,7 +10,7 @@ Here's a few more films I made. Mostly produced by me at home, but occasionally 
 
 When I was 14 years old, I won 5th place in the Music & Dance category of a prestigious World of Warcraft movie contest. The rest is history.
 
-Most recently, I have been performing at stand-up events and attending the Free Association.
+Most recently, I have been performing at stand-up events and attending classes at the Free Association.
 
 <div class="posts" markdown="0">
 {% assign projects = site.data.reel %}

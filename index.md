@@ -10,7 +10,7 @@ carousel-items: 1
 
 <div class="posts" markdown="0">
   {% assign projects = site.data.portfolio %}
-  {% for item in projects limit: 6 %}
+  {% for item in projects %}
         {% include project.html project=item %}
   {% endfor %}
 </div>
