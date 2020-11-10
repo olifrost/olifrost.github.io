@@ -5,22 +5,26 @@ docs:
   url: /
   colour: 2AA3EF
 
-- title: YouTube
-  url: https://www.youtube.com/olifrost
-  colour: FF0000
-
-- title: Spotify
-  url: https://open.spotify.com/artist/5dFJdXPDdubN7e6RIC2MXP?si=USVMG9ehSb-iTJ_72NSXCA
-  colour: 1DB954
-
 - title: Instagram
   url: https://instagram.com/realolifrost
   colour: 1DB954
+
+- title: YouTube
+  url: https://youtube.com/c/olifrost
+  colour: FF0000
 
 - title: Twitter
   url: https://twitter.com/realolifrost
   colour: 1DA1F2
 
+- title: Buy Me A Cat
+  url: https://olifro.st/buymeacat
+  colour: 1DB954
+
 - title: Climate Posters
   url: https://olifro.st/posters
+  colour: 1DB954
+
+- title: Spotify
+  url: https://open.spotify.com/artist/5dFJdXPDdubN7e6RIC2MXP?si=USVMG9ehSb-iTJ_72NSXCA
   colour: 1DB954
