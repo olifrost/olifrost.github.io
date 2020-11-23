@@ -15,3 +15,11 @@ So in the week before Cannes, I repurposed my first forray into programming, the
 And out of cowardice, released it with anonymity.
 
 [>> Visit Archived Site](https://olifro.st/grandprixgenerator)
+
+But even with a generator you can't win Cannes every hybridtechcar
+
+So a few years later, I expanded the service.
+
+![http://lifefaker.com/cannes](/blog/cannesfaker.jpg)
+
+[Cannesfaker](http://lifefaker.com/cannes), shown in [Adweek](https://www.adweek.com/agencies/cant-do-cannes-this-year-youll-still-inspire-fomo-with-cannesfaker/), provided you with all the Instagram pics you needed to fake a perfect trip to Cannes.

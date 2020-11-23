@@ -9,34 +9,3 @@
   link: /blog/thehomelessperiod
   image: /blog/homelessperiod.jpg
   press: thehomelessperiod
-
-- title: Grand Prix Generator
-  description: A generator for the “world-saving” campaigns that win big in ad awards.
-  image: /blog/grandprixgenerator.jpg
-  link: https://olifro.st/grandprixgenerator
-  order: 3
-  press: grandprixgenerator
-
-- title: Edible Leaflets
-  link: http://edibleleaflets.oliandjosie.com
-  description: Tips on how to waste less bread, toasted onto bread.
-  link: https://www.standard.co.uk/lifestyle/foodanddrink/edible-leaflets-food-waste-campaign-a3689071.html
-  image: /blog/edibileleaflets.jpg
-  press: edibleleaflets
-
-- title: Personalised Health Warnings
-  description: A site that let's you print a personalised health warning label for your loved one's cigarettes.
-  image: /blog/healthwarning.jpg
-  video: DxqXFv3c_dI
-  link: /blog/personalisedhealthwarnings/
-  press: personalisedhealthwarnings
-  otherlinks:
-    - https://www.noticiasaominuto.com/lifestyle/700629/personalize-um-maco-de-tabaco-para-desincentivar-fumadores
-
-
-- title: Cannesfaker
-  link: http://lifefaker.com/cannes/
-  description: A subsidiary of Lifefaker.com created for Cannes
-  link: http://lifefaker.com/cannes
-  image: /blog/cannesfaker.jpg
-  press: cannesfaker

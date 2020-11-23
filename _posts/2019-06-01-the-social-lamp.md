@@ -57,7 +57,7 @@ Every time the light tweeted at night, [the moth tweeted back](https://twitter.c
 
 I had no idea who created it – was it a friend trolling me, or an unusually tech-literate moth?
 
-Although [I had championed moth rights in the past](/blog/moth-sanctuary/), I couldn't risk a moth getting in and putting more holes in my plain t-shirt collection.
+I couldn't risk a moth getting in and putting more holes in my plain t-shirt collection.
 
 
 Luckily, I was already in possession of one its greatest enemies.

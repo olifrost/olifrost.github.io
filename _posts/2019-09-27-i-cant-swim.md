@@ -1,7 +1,7 @@
 ---
 layout: post
-title: I can't swim, but I can write posters
-description: Well, according to the Frosties Swimming School, not more than 400m.
+title: I got a hug from Lily Allen
+description: The student climate network had asked me to make some posters
 image: https://i.ytimg.com/vi/Af5Fk8wVfOU/maxresdefault.jpg
 images: true
 carousel-items: 3
@@ -9,7 +9,9 @@ carousel-items: 3
 
 {% include refrost-style %}
 
-So of course I was interested, when the student climate network asked me to make some posters for the first global climate strike.
+According to the Frosties Swimming School, I can't swim more than 400m.
+
+So for my own sake (and everyone else's), I obliged.
 
 {% include poster-gallery.html path="globalclimatestrike/social" %}
 
@@ -25,15 +27,19 @@ The new posters used by organisations like [Greenpeace](https://www.instagram.co
 
 {% include poster-gallery.html path="results" %}
 
-[For halloween I made masks]({{ site.baseurl }}{% post_url 2019-10-31-fossilghouls %}), which were worn by local school strike groups and even at coal mine protests in Australia.
+[For halloween I made masks]({{ site.baseurl }}{% post_url 2019-10-31-fossilghouls %}), which were worn by local school strike groups and at coal mine protests in Australia.
 
 And by the end of the year, I had been invited to talk on a panel about the UK election and the climate, organised by Lily Allen.
 
 ![](/blog/panel.jpg)
 
-Most important of all though, at the panel I got to meet Lily Allen's boyfriend.
+At the night's end, Lilly said thanks for coming, and we shared a brief hug.
+
+Most important of all though, at the panel I got to meet Lily's boyfriend.
 
 *David Harbour*, from Stranger Things.
+
+
 
 [>> Go to Posters Site](/posters)
 

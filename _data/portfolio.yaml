@@ -57,10 +57,19 @@
     - article_link: 'https://technologue.id/pria-ini-jual-data-facebook-pribadinya-di-ebay-kenapa/amp/'
     - article_link: 'https://www.derstandard.de/story/2000080681647/zeit-abzucashen-brite-verkauft-seine-facebook-daten-auf-ebay?ref=rec'
 
+- title: Global Climate Strike
+  description: A series of posters I made for the global climate strikes.
+  link: /blog/I-cant-swim
+  image: /blog/climateposters.jpg
+  press: globalcliamtestrike
 
-- title: Redundancy.
-  description: They made me redundant, so I trashed their office.
-  video: 8qrUVR8gsac
-  image: /blog/redundancy.jpg
-  link: /blog/redundancy
-  order: 3
+- title: The Homeless Period
+  description: The first campaign to raise the issue of sanitary care access for homeless women. Now run by supporters around the world.
+  link: /blog/thehomelessperiod
+  image: /blog/homelessperiod.jpg
+  press: thehomelessperiod
+
+- title: Work For Brands
+  description: A selection of commercial work, not all of which has a cat in it.
+  link: /work
+  image: /blog/strokeablecatvideo.jpg

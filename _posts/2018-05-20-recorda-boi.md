@@ -15,6 +15,7 @@ playtrianglecolour: "white"
 They said it wasn't "cool".
 
 How wrong they were…
+
 <div class="posts" markdown="0">
 {% assign recordaboi = site.data.recordaboi %}
 {% for item in recordaboi %}

@@ -12,7 +12,7 @@ Yet if you searched online for the issue of period poverty in 2015, you would th
 
 ![](/blog/thehomelessperiod-1.jpeg)
 
-So with two others, we set out to speak with those affected.
+So with two friends, I set out to speak with those affected.
 
 I made a site and a film to support a petition that went live at [TheHomelessPeriod.com](http://TheHomelessPeriod.com)
 
@@ -38,4 +38,4 @@ It's just as hard to show how this fits into the rest of this site.
 
 But it was probably this first 'make it yourself' experience that led to everything else you find here.
 
-And it's how Oli Frost became forever linked on Google with the unlikely phrase "Menstruation"
+And it's how Oli Frost became forever linked on Google with the unlikely phrase "Menstruation".

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: I wrote a song for Greta Thunberg
-description: About Greta, Feta, and why it's getting wetter
-image: Redundancy.jpg
+description: About Greta, Feta, and why the ocean is getting wetter
+image: GretaThunbergSong.jpg
 videos: e553WB239fo
 ---
 
@@ -12,7 +12,7 @@ videos: e553WB239fo
 
 With Director of Photography "Mum" and Drone Operator "Dad", I recorded and edited it at my childhood holiday spot on the Isle of Wight.
 
-It's now available on [Spotify](https://open.spotify.com/track/3WdqFO10RbW4dtrPMqXEiz?si=rjEW7GBvTAWY1q_GE4USfQ), [Apple Music](https://music.apple.com/us/album/the-greta-thunberg-song-single/1538647164), and (once it's a number one hit) Limewire.
+It's now available on [Spotify](https://open.spotify.com/track/3WdqFO10RbW4dtrPMqXEiz?si=rjEW7GBvTAWY1q_GE4USfQ), [Apple Music](https://music.apple.com/us/album/the-greta-thunberg-song-single/1538647164), and (if it still exists) Limewire.
 
 There's also a karaoke version
 

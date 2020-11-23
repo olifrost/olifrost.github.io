@@ -17,10 +17,6 @@ carousel-items: 1
 
 ---
 
-{% include nextpage.html page1="Show me ads" link1="/work" page2="Show me films" link2="/reel" %}
-
----
-
 # Show me everything
 
 {% include featured-post.html %}
