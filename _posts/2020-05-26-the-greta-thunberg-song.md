@@ -14,6 +14,10 @@ With Director of Photography "Mum" and Drone Operator "Dad", I recorded and edit
 
 It's now available on [Spotify](https://open.spotify.com/track/3WdqFO10RbW4dtrPMqXEiz?si=rjEW7GBvTAWY1q_GE4USfQ), [Apple Music](https://music.apple.com/us/album/the-greta-thunberg-song-single/1538647164), and (once it's a number one hit) Limewire.
 
+There's also a karaoke version
+
+{% include youtube id="ZfyAKe_vrYE" %}
+
 Find more [Oli Frost Refrosts The Planet](/refrost)
 
 ---
