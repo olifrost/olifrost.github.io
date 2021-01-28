@@ -2,7 +2,7 @@
 layout: post
 title: I wrote a song for Greta Thunberg
 description: About Greta, Feta, and why the ocean is getting wetter
-image: GretaThunbergSong.jpg
+image: /blog/GretaThunbergSong.jpg
 videos: e553WB239fo
 ---
 
