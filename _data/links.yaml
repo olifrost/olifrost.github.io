@@ -4,7 +4,7 @@ docs:
 - title: Website
   url: /
   colour: 2AA3EF
-  
+
 - title: YouTube
   url: https://www.youtube.com/olifrost
   colour: FF0000
@@ -19,4 +19,8 @@ docs:
 
 - title: Twitter
   url: https://twitter.com/realolifrost
+  colour: 1DA1F2
+
+- title: TikTok
+  url: https://www.tiktok.com/@realolifrost
   colour: 1DA1F2
