@@ -9,6 +9,10 @@ featured: yes
 
 {% include youtube id="8qrUVR8gsac" thumb="/blog/redundancy.jpg" %}
 
+Luckily, unemployment wasn't forever.
+
+Shortly after, I made [some friends into clients]({% post_url 2021-02-25-square-root %})
+
 ---
 
 {% include about.html %}
