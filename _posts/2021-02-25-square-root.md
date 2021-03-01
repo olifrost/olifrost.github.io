@@ -1,6 +1,6 @@
 ---
 layout: post
-title: I made my friends into clients
+title: When life gave me lemons, I suggested making lemonade
 description: Ed and Robyn had been running their soda business for eight years
 image: /blog/lockdownlemons.jpg
 videos: kn9XNI2nwVc
