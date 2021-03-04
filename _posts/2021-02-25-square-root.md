@@ -1,6 +1,6 @@
 ---
 layout: post
-title: When life gave me lemons, I suggested making lemonade
+title: I shook up the soda industry
 description: Ed and Robyn had been running their soda business for eight years
 image: /blog/lockdownlemons.jpg
 videos: kn9XNI2nwVc
