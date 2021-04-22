@@ -2,8 +2,15 @@
 layout: default
 ---
 
+{% if page.override == nil %}
 <script src="https://kit.fontawesome.com/aef02ef4d3.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="{{ "/site.css" | relative_url}}">
+{% else %}
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Two+Tone"
+      rel="stylesheet">
+{% endif %}
+
+
 
 <article class="page">
 

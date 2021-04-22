@@ -10,13 +10,13 @@ But they still knew relatively little about advertising.
 
 And that's where I came in.
 
-Using my very professional knowledge opinions, we started working on a very special lemonade.
+Using my very professional knowledge opinions, we started working on some very special marketing brand stunt activities.
 
 {% include youtube id="kn9XNI2nwVc" %}
 
-{% include youtube id="rkUsOt3qVQ8" %}
+{% include youtube id="rkUsOt3qVQ8" thumb="/blog/deliveroot.jpeg" %}
 
-You can drink some of the lemonade, and other drinks at [Square Root](https://www.squarerootsoda.com)
+If you would like to personally drink these beverages, you'll find them at [Square Root](https://www.squarerootsoda.com)
 
 And if you run a small business and are seeking similar help, feel free to [get in touch.](mailto:{{ site.author.email }})
 
