@@ -236,26 +236,26 @@ I am very famous for [refrosting the planet](/refrost), and intend to help you d
 ---
 
 <div class="row lists">
+
 <div class="col-xs-12 col-sm-6">
+  <p><span class="material-icons primary">engineering</span></p>
 
+  <h2> Proficient in stuff.</h2>
+  <p markdown="1">Some serious people have described me as a *writer, director, musician, artist, performer, filmmaker, designer, developer, speaker, performer, filmmaker, and "internet stunt mogul".*</p>
 
-<p><span class="material-icons primary">library_books</span></p>
-
-<h2> Impressed by press?</h2>
-
-<p markdown="1">*Some places that have written about my work are BBC, Channel 4 News, Vice, UK Parliament, Britain's Got Talent, The Guardian, New York Post, DAZED, Huffington Post, Mail Online, Fox News, Forbes, ABC, It's Nice That, Refinery 29, Business Insider, Creative Review, Lifehacker, UNILAD, Upworthy, iWeigh, LadBible, Viral Thread, Fast Company, Designboom, The Independent, The Telegraph, Gizmodo, Motherboard, i-d, Metro, Shortlist, Evening Standard, RT, Mic, Stylist, Al Jazeera, The Big Issue, Product Hunt #1, Reddit Front Page, Hacker News #1, CNET, Design Taxi, Gigazine, and Richard Bacon*</p>
+  <p markdown="1">I've also had escapades as a [Russian hacker]({% post_url 2018-08-21-russian-hacker %}), [recorder player](/recorda-boi), [baby penguin activist]({% post_url 2019-07-14-fridays-for-future-antarctica %}), [local councillor]( /little-tips ), [punk musician]({% post_url 2019-06-25-pollution-solution %}), [civillian protestor]({% post_url 2019-07-11-domestic-rebellion %}), [dare devil]({% post_url 2021-01-28-carbon-offset-challenge %}), [porn distributor]({% post_url 2020-04-24-dickpics %}), [menstrual expert]({% post_url 2015-03-25-thehomelessperiod %}), [disgruntled employee]({% post_url 2020-05-26-redundancy %}), [failed inventor]({% post_url 2018-10-01-flopstarter %}), [tech entrepeneur]({% post_url 2018-05-05-lifefaker %}), [app developer]({% post_url 2018-08-19-sarcastic-samantha %}), and [a married woman called Anna]({% post_url 2018-08-05-deliciously-anna %}).</p>
 
 </div>
 
+
 <div class="col-xs-12 col-sm-6">
-<p><span class="material-icons primary">engineering</span></p>
+  <p><span class="material-icons primary">library_books</span></p>
 
-<h2> Proficient in stuff.</h2>
-<p markdown="1">Some serious people have described me as a *writer, director, musician, artist, performer, filmmaker, designer, developer, speaker, performer, filmmaker, and "internet stunt mogul".*</p>
+  <h2> Impressed by press?</h2>
 
-<p markdown="1">I've also had escapades as a [Russian hacker]({% post_url 2018-08-21-russian-hacker %}), [recorder player](/recorda-boi), [baby penguin activist]({% post_url 2019-07-14-fridays-for-future-antarctica %}), [local councillor]( /little-tips ), [punk musician]({% post_url 2019-06-25-pollution-solution %}), [civillian protestor]({% post_url 2019-07-11-domestic-rebellion %}), [dare devil]({% post_url 2021-01-28-carbon-offset-challenge %}), [porn distributor]({% post_url 2020-04-24-dickpics %}), [menstrual expert]({% post_url 2015-03-25-thehomelessperiod %}), [disgruntled employee]({% post_url 2020-05-26-redundancy %}), [failed inventor]({% post_url 2018-10-01-flopstarter %}), [tech entrepeneur]({% post_url 2018-05-05-lifefaker %}), [app developer]({% post_url 2018-08-19-sarcastic-samantha %}), and [a married woman called Anna]({% post_url 2018-08-05-deliciously-anna %}).</p>
+  <p markdown="1">*Some places that have written about my work are BBC, Channel 4 News, Vice, UK Parliament, Britain's Got Talent, The Guardian, New York Post, DAZED, Huffington Post, Mail Online, Fox News, Forbes, ABC, It's Nice That, Refinery 29, Business Insider, Creative Review, Lifehacker, UNILAD, Upworthy, iWeigh, LadBible, Viral Thread, Fast Company, Designboom, The Independent, The Telegraph, Gizmodo, Motherboard, i-d, Metro, Shortlist, Evening Standard, RT, Mic, Stylist, Al Jazeera, The Big Issue, Product Hunt #1, Reddit Front Page, Hacker News #1, CNET, Design Taxi, Gigazine, and Richard Bacon*</p>
 
-</div>
+  </div>
 
 </div>
 
