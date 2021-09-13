@@ -253,7 +253,7 @@ I am very famous for [refrosting the planet](/refrost), and intend to help you d
 
   <h2> Impressed by press?</h2>
 
-  <p markdown="1">*Some places that have written about my work are BBC, Channel 4 News, Vice, UK Parliament, Britain's Got Talent, The Guardian, New York Post, DAZED, Huffington Post, Mail Online, Fox News, Forbes, ABC, It's Nice That, Refinery 29, Business Insider, Creative Review, Lifehacker, UNILAD, Upworthy, iWeigh, LadBible, Viral Thread, Fast Company, Designboom, The Independent, The Telegraph, Gizmodo, Motherboard, i-d, Metro, Shortlist, Evening Standard, RT, Mic, Stylist, Al Jazeera, The Big Issue, Product Hunt #1, Reddit Front Page, Hacker News #1, CNET, Design Taxi, Gigazine, and Richard Bacon*</p>
+  <p markdown="1">Some places that have written about my work are *BBC, Channel 4 News, Vice, UK Parliament, Britain's Got Talent, The Guardian, New York Post, DAZED, Huffington Post, Mail Online, Fox News, Forbes, ABC, It's Nice That, Refinery 29, Business Insider, Creative Review, Lifehacker, UNILAD, Upworthy, iWeigh, LadBible, Viral Thread, Fast Company, Designboom, The Independent, The Telegraph, Gizmodo, Motherboard, i-d, Metro, Shortlist, Evening Standard, RT, Mic, Stylist, Al Jazeera, The Big Issue, Product Hunt #1, Reddit Front Page, Hacker News #1, CNET, Design Taxi, Gigazine, and Richard Bacon*</p>
 
   </div>
 
