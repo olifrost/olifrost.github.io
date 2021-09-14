@@ -305,7 +305,7 @@ I am very famous for [refrosting the planet](/refrost), and intend to help you d
 
   <div class="col-xs-12 col-sm-4" markdown="1">
 
-  >> "Do we have to do the made-up mum review joke again?"
+  >> "Is this for one of those 'review from my mum' jokes?"
   >> <cite>– Mum</cite>
   </div>
 
