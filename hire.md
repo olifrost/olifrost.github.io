@@ -269,7 +269,7 @@ I am very famous for [refrosting the planet](/refrost), and intend to help you d
 {% assign projects = site.data.ltd %}
 <div class="posts" markdown="0">
 
-{% for item in projects limit:1 %}
+{% for item in projects limit:2 %}
     <h2>{{ item.category }}</h2>
     {% include project.html project=item %}
 {% endfor %}
