@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I impersonate my local council's recycling department
-description: I'd always felt Lambeth's recycling tips were somewhat lacking
+description: I'd always felt Lambeth's recycling tips were somewhat lacking.
 image: /blog/littletips.jpg
 images: true
 carousel-items: 3

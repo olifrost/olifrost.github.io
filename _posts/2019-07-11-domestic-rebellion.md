@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I drank a G&T and called the police
-description: This is the Domestic Rebellion
+description: This is the Domestic Rebellion.
 image: https://i.ytimg.com/vi/Af5Fk8wVfOU/maxresdefault.jpg
 videos: Af5Fk8wVfOU
 redirect_from:

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I played the recorder for Simon Cowell
-description: As a child a lot of people bullied me for playing recorder
+description: As a child a lot of people bullied me for playing recorder.
 image: /blog/recorderboibgt.jpeg
 permalink: /recorda-boi/
 videos: 52dnwXso6bs

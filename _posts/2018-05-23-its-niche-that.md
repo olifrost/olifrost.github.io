@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I took on the Vice media empire
-description: In 2016 some friends and I started an online news channel
+description: In 2016 some friends and I started an online news channel.
 image: https://i.ytimg.com/vi/OFLbT8X8b-A/maxresdefault.jpg
 videos: OFLbT8X8b-A
 ---

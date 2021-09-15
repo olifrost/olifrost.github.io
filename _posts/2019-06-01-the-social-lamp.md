@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I made my lamp a social media personality
-description: (What happened next will shock you)
+description: (What happened next will shock you).
 image: /blog/lamp-bio.jpg
 ---
 

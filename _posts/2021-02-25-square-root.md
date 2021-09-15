@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I shook up the soda industry
-description: Ed and Robyn had been running their soda business for eight years
+description: Ed and Robyn had been running their soda business for eight years.
 image: /blog/lockdownlemons.jpg
 videos: kn9XNI2nwVc
 ---

@@ -2,7 +2,7 @@
 layout: site
 title: I made Halloween scary again
 header: Fossil Ghouls
-description: Fossil Ghouls is a range of printable, plastic-free masks for ages 3 and up
+description: Fossil Ghouls is a range of printable, plastic-free masks for ages 3 and up.
 tagline: Printable, plastic-free masks
 image: /posters/fossilghouls/fossilghouls-cover.jpg
 permalink: /fossilghouls
