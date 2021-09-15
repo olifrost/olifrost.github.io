@@ -21,9 +21,11 @@ Using my very professional knowledge opinions, we started working on some very s
 {% include youtube id="_d9Hd6XpZVg" %}
 
 
-If you would like to personally drink these beverages, you'll find them at [Square Root](https://www.squarerootsoda.com)
+If you would like to personally drink these beverages, you'll find them at [Square Root](https://www.squarerootsoda.com).
 
-And if you run a small business and are seeking similar help, feel free to [get in touch.](mailto:{{ site.author.email }})
+Use discount code OLI and get a free error at the checkout.
+
+*You can now hire your very own Oli Frost at [Oli Frost Ltd](/ltd)*
 
 ---
 
