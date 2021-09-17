@@ -4,6 +4,7 @@ title: I got a hug from Lily Allen
 description: The student climate network had asked me to make some posters.
 image: https://i.ytimg.com/vi/Af5Fk8wVfOU/maxresdefault.jpg
 images: true
+press: globalcliamtestrike
 carousel-items: 3
 ---
 
