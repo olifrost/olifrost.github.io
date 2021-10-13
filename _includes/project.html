@@ -15,9 +15,9 @@
   {% endif %}
   {% if include.project.title %}
   {% if include.project.link != nil %}
-  <a href="{{ include.project.link }}"><span class="title">>> {{ include.project.title }}</span></a>
+  <a href="{{ include.project.link }}"><span class="title" id="{{ include.project.title | strip }}"> {{ include.project.title }}</span></a>
   {% else %}
-  <span class="title">>> {{ include.project.title }}</span>
+  <span class="title" id="{{ include.project.title | strip }}"> {{ include.project.title }}</span>
   {% endif %}
   {% endif %}
   {% if include.project.description %}<p>
