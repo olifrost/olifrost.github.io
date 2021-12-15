@@ -8,7 +8,7 @@ videos: BDS9-LUz3SU
 
 {% include refrost-style %}
 
-{% include youtube id="_BDS9-LUz3SU" thumb="/blog/dontcrysanta.jpg" %}
+{% include youtube id="BDS9-LUz3SU" thumb="/blog/dontcrysanta.jpg" %}
 
 Available on [all good streaming sites](https://distrokid.com/hyperfollow/olifrost/dont-cry-santa), and some naughty ones too.
 
