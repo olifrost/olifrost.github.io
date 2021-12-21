@@ -20,6 +20,11 @@ Using my very professional knowledge opinions, we started working on some very s
 
 {% include youtube id="_d9Hd6XpZVg" %}
 
+Want proof of success? Just take a look at this tweet.
+
+![](/blog/bestad.jpeg)
+
+Thanks Matt whoever you are.
 
 If you would like to personally drink these beverages, you'll find them at [Square Root](https://www.squarerootsoda.com).
 
