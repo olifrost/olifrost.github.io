@@ -210,22 +210,23 @@ I am very famous for [refrosting the planet](/refrost), and intend to help you d
 
 
   <div class="col-xs-12 col-sm-3 center-xs logo">
-<a href="https://squarerootsoda.co.uk"><img src="/blog/squareroot.png" style="width: 50%;"></a>
+<a href="/blog/square-root/"><img src="/blog/squareroot.png" style="width: 50%;"></a>
 
   </div>
 
+
   <div class="col-xs-12 col-sm-3 center-xs logo">
-<a href="https://climatedesigners.org"><img src="/blog/climatedesigners.png"></a>
+<a href="https://greenpeace.org"><img src="/blog/Greenpeacelogo.png"></a>
 
   </div>
   <div class="col-xs-12 col-sm-3 center-xs logo">
 
-<a href="https://this.co"><img src="/blog/this.png" style="width: 50%;"></a>
+<a href="/blog/this/"><img src="/blog/this.png" style="width: 50%;"></a>
 
 </div>
 
     <div class="col-xs-12 col-sm-3 center-xs logo">
-<a href="https://tacticaltech.org"><img src="/blog/tacticaltech.png"></a>
+<a href="/refer"><img src="/blog/tacticaltech.png"></a>
 
     </div>
 
