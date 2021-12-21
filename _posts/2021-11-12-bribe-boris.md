@@ -35,7 +35,7 @@ Not everyone coughed up. They thought it "wasn't serious".
 
 But we got a good stack of cash together.
 
-More money than I ever earned working as a waiter in a noodle bar (a period on my CV that lasted two half shifts, before I was promptly fired for my lacklustre attention to the bathroom clearning rota).
+More money than I ever earned working as a waiter in a noodle bar (a period on my CV that lasted two half shifts, before I was promptly fired for my lacklustre attention to the bathroom cleaning rota).
 
 ![](/blog/boris2.jpeg)
 
@@ -51,7 +51,7 @@ I declared it would all go to Greenpeace.
 
 ![](/blog/boris4.jpeg)
 
-And with my work complete, I moved onto a new scheme.	
+And with my work complete, I moved on to a new scheme.	
 
 Putting the Green New Deal on a Black Friday deals site.
 
