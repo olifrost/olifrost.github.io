@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I turned global emissions data into a synthpop ballad
-description: "Learning and science can be so much fun…"
+description: "Learning and science can be so much fun"
 image: /blog/greenhouse-gas-emissions-breakdown.jpg
 videos: 9DoWhCchmV0
 ---

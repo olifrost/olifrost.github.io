@@ -44,4 +44,8 @@ hr {
   fill: {{ include.primary }};
  }
 
+ li {
+ color: {{ include.text }};
+ }
+
 </style>
