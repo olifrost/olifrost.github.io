@@ -1,6 +1,14 @@
 docs_list_title: Posters
 events:
 
+
+- title: March Climate March
+  url: posters/marchmarch/social
+  download: posters/marchmarch
+  locate: https://fridaysforfuture.org
+  date: 25th March
+  cta: Find Strike
+
 - title: Online Climate Strike
   url: posters/online/social
   download: posters/online
