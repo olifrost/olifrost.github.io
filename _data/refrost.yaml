@@ -2,7 +2,7 @@
   description: I impersonate my local council to improve the range of their recycling tips. Specifically sex, drugs, and crime.
   image: /blog/littletips.jpg
   link: /little-tips/
-  video: 7vWxYzrgqIc
+  video: 3VTb5GsVS-A
 
 - title: The Greta Thunberg Song
   description: A song about Greta, feta, and why the ocean is getting wetter.
@@ -10,11 +10,50 @@
   link: /blog/the-greta-thunberg-song
   video: e553WB239fo
 
-- title: Domestic Rebellion
-  description: I drink a Gin and Tonic and call the police about my stay-at-home protest movement.
-  image: /blog/domesticrebellion.jpg
-  link: /domestic-rebellion/
-  video: Af5Fk8wVfOU
+- title: The Pirate Emergency
+  description: A sea shanty to declare a pirate emergency.
+  image: /blog/PirateEmergency.jpg
+  link: /blog/the-pirate-emergency
+  video: _0XGC2-d9Gg
+
+- title: The Greenhouse Gas Emissions Breakdown
+  description: I turned global emissions data into a synth-pop ballad.
+  image: /blog/greenhouse-gas-emissions-breakdown.jpg
+  link: /blog/the-greenhouse-gas-emissions-breakdown
+  video: h3VWd93CHv0
+
+- title: Don't Cry Santa
+  description: A song about Santa having a mental breakdown because of his role in consumerism.
+  image: /blog/dontcrysanta.jpg
+  link: /blog/dont-cry-santa
+  video: BDS9-LUz3SU
+
+- title: Vegenerator  
+  description: A site that can generate nearly a million plant-based recipe ideas.
+  image: /blog/vegenerator.png
+  video: gVBcRqwkTTc
+  link: https://olifro.st/vegenerator/
+
+- title: Bribe Boris
+  description: My attempt to bribe Boris Johnson, post-COP26.
+  image: /blog/boris3.jpeg
+  link: /blog/bribe-boris
+
+- title: Climate Strike
+  description: A series of posters I made for the climate strikes, exhibiting on lamp posts, worldwide.
+  image: /blog/climateposters.jpg
+  link: /blog/i-cant-swim/
+
+- title: The Oli Frost Carbon Offset Scheme
+  description: For every like or comment, I'll give up cheese for one hour.
+  image: /blog/offsetchallenge.jpg
+  videos: sjLlqLNRluw
+  link: /blog/carbon-offset-challenge
+
+- title: Fridays For Future Antarctica
+  description: A protest movement I started for baby penguins. Endorsed (followed) by Greta Thunberg.
+  image: /blog/fff-antarctica.jpg
+  link: /blog/fridays-for-future-antarctica/
 
 - title: Pollution Solution
   description: I form a political air-instrument punk band to raise awareness of air pollution.
@@ -27,15 +66,11 @@
     - name: 'Apple Music'
       article_link: 'https://music.apple.com/gb/album/pollution-solution/1477411206?i=1477411207'
 
-- title: Climate Strike
-  description: A series of posters I made for the climate strikes, exhibiting on lamp posts, worldwide.
-  image: /blog/climateposters.jpg
-  link: /blog/i-cant-swim/
-
-- title: Fridays For Future Antarctica
-  description: A protest movement I started for baby penguins. Endorsed (followed) by Greta Thunberg.
-  image: /blog/fff-antarctica.jpg
-  link: /blog/fridays-for-future-antarctica/
+- title: Domestic Rebellion
+  description: I drink a Gin and Tonic and call the police about my stay-at-home protest movement.
+  image: /blog/domesticrebellion.jpg
+  link: /domestic-rebellion/
+  video: Af5Fk8wVfOU
 
 - title: Now That's What I Call Climate Change
   description: A playlist I made that is used at climate strikes and marches

@@ -54,6 +54,6 @@ Modern man's biggest problem is now no more.
 
 SHOOK is now getting ready to launch.
 
-If you're a distributor or major fashion label, or would like a SHOOK yourself, [shoot me an email](mailto:oli@olifro.st)
+If you're a distributor or major fashion label, or would like a SHOOK yourself, [shoot me an email](mailto:mail@olifro.st)
 
-Or [follow me](https://twitter.com/realolifrost) for updates on the future of Shook.
+Or [follow me](https://twitter.com/olifro_st) for updates on the future of Shook.

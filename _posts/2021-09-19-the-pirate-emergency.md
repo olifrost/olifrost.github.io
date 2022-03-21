@@ -3,7 +3,7 @@ layout: post
 title: I declare a pirate emergency
 description: "Today be International Talk Like A Pirate Day"
 image: /blog/PirateEmergency.jpg
-videos: 9DoWhCchmV0
+videos: _0XGC2-d9Gg
 ---
 
 {% include refrost-style %}

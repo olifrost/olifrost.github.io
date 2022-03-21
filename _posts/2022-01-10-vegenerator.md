@@ -32,4 +32,4 @@ And there’s more exciting features coming in Version 1.1
 
 Music and Site by me, [Oli Frost](https://olifro.st/).
 
-Drawings and Concept by [Ellen McGahey](https://instagram.com/scraggledrargon).
+Drawings and Concept by [Ellen McGahey](https://instagram.com/ell_nmcgahey).
