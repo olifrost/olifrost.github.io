@@ -51,7 +51,7 @@ analytics_id:  UA-111675559-1
 author:
   name: Oli Frost
   twitter: realolifrost
-  instagram: realolifrost
+  instagram: olifro.st
   youtube: olifrost
   email: mail@olifro.st
 
@@ -64,13 +64,13 @@ defaults:
 profile: /blog/olifrost.jpg
 
 twitter:
-  username: realolifrost
+  username: olifro.st
 
 social:
   name: Oli Frost
   links:
     - https://twitter.com/realolifrost
-    - https://instagram.com/realolifrost
+    - https://instagram.com/olifro.st
     - https://youtube.com/c/olifrost
 
 # Gems

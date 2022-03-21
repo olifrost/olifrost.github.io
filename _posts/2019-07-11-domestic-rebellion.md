@@ -28,7 +28,7 @@ The above videos document our first three operations. Operation Straw, Project N
 
 
 
-The rebellion operates through a secure private group chat where rebels are notified of daily actions to participate in – you must DM [@realolifrost](https://www.instagram.com/realolifrost/) to request access.
+The rebellion operates through a secure private group chat where rebels are notified of daily actions to participate in – you must DM [@olifro.st](https://www.instagram.com/olifro.st/) to request access.
 
 
 

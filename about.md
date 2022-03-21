@@ -18,7 +18,7 @@ My work has been featured everywhere from [UK Parliament]({% post_url 2015-03-25
 
 I am currently either [Refrosting The Planet](/refrost), or making similar things for other people, as my incorporated self [Oli Frost Ltd](/ltd).
 
-To see what's next you can find me [@realolifrost](/s) or [join my mailing list](#footer), which has a rigorous [No Privacy Policy]({% link noprivacy.md %}).
+To see what's next you can find me [@olifro.st](/s) or [join my mailing list](#footer), which has a rigorous [No Privacy Policy]({% link noprivacy.md %}).
 
 # FAQ
 

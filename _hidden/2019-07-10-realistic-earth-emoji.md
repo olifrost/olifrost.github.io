@@ -77,7 +77,7 @@ It's on fire, whichever way you look at it.
 
 ## Terms and Conditions
 
-<span class="terms">This product plagiarises works owned by Apple without apology. It could be fair use, but life isn't fair so who knows. Other than that, you can use this non-commercially with attribution [@realolifrost](https://olifro.st/links).</span>
+<span class="terms">This product plagiarises works owned by Apple without apology. It could be fair use, but life isn't fair so who knows. Other than that, you can use this non-commercially with attribution [@olifro.st](https://olifro.st/links).</span>
 
 ---
 

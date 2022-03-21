@@ -4,9 +4,9 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 
 ## What This Means?
 
-You're free to share/print these if you'll credit and follow @realolifrost in return
+You're free to share/print these if you'll credit and follow @olifro.st in return
 
-e.g. "Posters by @realolifrost. Download links in his bio"
+e.g. "Posters by @olifro.st. Download links in his bio"
 
 ## Why?
 
