@@ -5,10 +5,6 @@ docs:
   url: /
   colour: 2AA3EF
 
-- title: Vegenerator
-  url: https://olifro.st/vegenerator
-  colour: FF0000
-
 - title: YouTube
   url: https://www.youtube.com/olifrost
   colour: FF0000
@@ -28,3 +24,7 @@ docs:
 - title: TikTok
   url: https://www.tiktok.com/@olifro.st
   colour: 1DA1F2
+
+- title: Vegenerator
+  url: https://olifro.st/vegenerator
+  colour: FF0000
