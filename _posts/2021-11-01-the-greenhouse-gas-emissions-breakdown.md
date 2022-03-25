@@ -14,7 +14,7 @@ Into a song.
 
 {% include youtube id="h3VWd93CHv0" thunb="greenhouse-gas-emissions-breakdown.jpg" %}
 
-It's now available on available on all [streaming services](https://distrokid.com/hyperfollow/olifrost/the-greenhouse-gas-emissions-breakdown) (but can also be sung at home, to reduce energy consumption)
+It's now available on available on [Spotify](https://open.spotify.com/album/5dPoNXIX8lZI2FvTSfqaBt?si=feRkuUZJRsqdzQIS1UDFYw), [Apple Music](https://music.apple.com/gb/album/the-greenhouse-gas-emissions-breakdown/1591806388?i=1591806389), and [Bandcamp](https://olifrost.bandcamp.com/track/the-greenhouse-gas-emissions-breakdown), but can also be sung at home, to reduce energy consumption.
 
 Find more [Oli Frost Refrosts The Planet](/refrost)
 
