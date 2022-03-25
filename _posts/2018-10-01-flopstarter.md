@@ -23,7 +23,7 @@ So I decided to start my own.
 
 </div>
 
-Boasting a real e-commerce platform, [Flopstarter.com](https://olifro.st/flopstarter/) had several card-verified pledges, including £5000 towards a cow.
+Boasting a real e-commerce platform, [Flopstarter](https://olifro.st/flopstarter) had several card-verified pledges, including £5000 towards a cow.
 
 Unfortunately, none of the goals were ever reached, and the funds couldn’t be collected.
 
