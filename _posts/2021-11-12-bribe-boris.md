@@ -3,6 +3,7 @@ layout: post
 title: I tried to bribe Boris Johnson
 description: "COP26 may have failed, but it turns out the tories are for sale."
 image: /blog/boris3.jpeg
+featured: yes
 ---
 
 {% include refrost-style %}
