@@ -199,12 +199,13 @@ footer .social {
 }
 
 
-.icon--twitter, .icon--instagram, .icon--mail, .icon--facebook, .icon--youtube {
+.icon--twitter, .icon--instagram, .icon--mail, .icon--facebook, .icon--youtube, .icon--spotify, .icon--tiktok {
   height: 3rem;
   width: 3rem;
   bottom: -0.0rem;
   margin-right: 0rem
 }
+
 
 .icon--mail {
 
@@ -217,6 +218,21 @@ footer .social {
 .icon--instagram {
   height: 2.7rem;
   width: 2.7rem;
+}
+
+
+.icon--spotify {
+  height: 2rem;
+  width: 2rem;
+  margin-left: 1.5rem;
+  bottom: 0.42rem;
+}
+
+.icon--tiktok {
+  height: 2rem;
+  width: 2rem;
+  margin-left: 1.5rem;
+  bottom: 0.42rem;
 }
 
 .icon--twitter, .icon--youtube {
