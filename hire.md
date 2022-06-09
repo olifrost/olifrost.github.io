@@ -45,7 +45,7 @@ h3 {
 /* Hero */
 
 .hero {
-  height: 60rem;
+  min-height: 60rem;
   display: flex;
   text-align: center;
 
@@ -68,10 +68,6 @@ h3 {
    margin-bottom: 2.5rem;
    letter-spacing: -1;
    display: inline-block;
-   position: absolute;
-   top: -5.5rem;
-   left: 46%;
-   transform: translate(-50%, -50%);
  }
 
   .pre-headline .product {
@@ -106,7 +102,7 @@ h3 {
  }
 
  .features .col-sm-4 {
-   tex-alig: center;
+   text-align: center;
  }
 
  blockquote {
@@ -132,6 +128,10 @@ h3 {
 
 .lists {
   text-align: center;
+}
+
+.features {
+  margin-top: 2rem;
 }
 
 .col-xs,
@@ -163,7 +163,6 @@ h3 {
       <p class="center">If it's a bit like one of my things.</p>
       <div class="row first-xs between-sm buttons">
           <div class="col-xs-12">
-
         <a href="" class="button" href="#latest-work">See Work</a>
         <a href="mailto:{{ site.author.email }}" class="button button-clear">Contact</a>
         </div>
@@ -173,7 +172,7 @@ h3 {
 </div>
 
 
-<div class="row first-xs between-sm">
+<div class="row first-xs between-sm features">
     <div class="col-xs-12 col-sm-4 center-xs feature" markdown="1">
 
 <span class="material-icons">person</span>
@@ -209,6 +208,12 @@ I am very famous for [refrosting the planet](/refrost), and intend to help you d
 <div class="row first-xs between-sm middle-xs clients">
 
 
+
+  <div class="col-xs-12 col-sm-3 center-xs logo">
+<a href="https://greenpeace.org"><img src="/blog/Greenpeacelogo.png"></a>
+
+  </div>
+
   <div class="col-xs-12 col-sm-3 center-xs logo">
 <a href="/blog/square-root/"><img src="/blog/squareroot.png" style="width: 50%;"></a>
 
@@ -216,17 +221,13 @@ I am very famous for [refrosting the planet](/refrost), and intend to help you d
 
 
   <div class="col-xs-12 col-sm-3 center-xs logo">
-<a href="https://greenpeace.org"><img src="/blog/Greenpeacelogo.png"></a>
-
-  </div>
-  <div class="col-xs-12 col-sm-3 center-xs logo">
 
 <a href="/blog/this/"><img src="/blog/this.png" style="width: 50%;"></a>
 
 </div>
 
     <div class="col-xs-12 col-sm-3 center-xs logo">
-<a href="/refer"><img src="/blog/tacticaltech.png"></a>
+<a href="/refer"><img src="/blog/iamnutok.png"></a>
 
     </div>
 

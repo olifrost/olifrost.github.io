@@ -1,9 +1,3 @@
-- title: Little Tips From Lambeth Council
-  description: I impersonate my local council to improve the range of their recycling tips. Specifically sex, drugs, and crime.
-  image: /blog/littletips.jpg
-  link: /little-tips/
-  video: 3VTb5GsVS-A
-
 - title: The Greta Thunberg Song
   description: A song about Greta, feta, and why the ocean is getting wetter.
   image: /blog/GretaThunbergSong.jpg
@@ -21,6 +15,12 @@
   image: /blog/greenhouse-gas-emissions-breakdown.jpg
   link: /blog/the-greenhouse-gas-emissions-breakdown
   video: h3VWd93CHv0
+
+- title: Little Tips From Lambeth Council
+  description: I impersonate my local council to improve the range of their recycling tips. Specifically sex, drugs, and crime.
+  image: /blog/littletips.jpg
+  link: /little-tips/
+  video: 3VTb5GsVS-A
 
 - title: Don't Cry Santa
   description: A song about Santa having a mental breakdown because of his role in consumerism.

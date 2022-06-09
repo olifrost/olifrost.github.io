@@ -4,7 +4,6 @@ layout: post
 description: Behold the <a href="https://olifro.st/vegenerator"> Vegenerator</a>.
 image: /blog/vegenerator.png
 videos: gVBcRqwkTTc
-featured: yes
 ---
 
 {% include refrost-style %}
