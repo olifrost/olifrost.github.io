@@ -10,7 +10,7 @@ permalink: /domestic-rebellion/
 carousel-items: 3
 ---
 
-{% include refrost-style %}
+<!-- {% include refrost-style %} -->
 
 <div class="youtube-player" data-id="{{ page.videos }}" data-thumb="{{ page.image }}"></div>
 

@@ -8,7 +8,7 @@ images:
     alt: Getty Girlfriend 1
 ---
 
-{% include refrost-style %}
+<!-- {% include refrost-style %} -->
 
 Some GIFs for [Oli Frost Refrosts The Planet](/refrost) that had over 100M views on [GIPHY](http://giphy.com/olifrost).
 

@@ -25,3 +25,18 @@ blockquote {
 	margin-bottom: 4rem !important;
 	margin-top: 4rem !important;
 }
+
+.tiktok-embed {
+	border: none !important;
+	width: 100%;
+	margin-bottom: 1em !important;
+	padding: 0;
+	text-align: center;
+}
+
+.embed-vertical {
+	display: flex;
+	text-align: center;
+	background-color: white;
+	margin-bottom: 1.5em;
+}

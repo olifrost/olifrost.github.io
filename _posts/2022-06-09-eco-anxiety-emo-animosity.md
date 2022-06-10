@@ -6,7 +6,7 @@ image: /blog/ecoanxiety.jpeg
 videos: wQigoj-9Ijs 
 ---
 
-{% include refrost-style %}
+<!-- {% include refrost-style %} -->
 
 {% include youtube id="wQigoj-9Ijs" thumb="/blog/ecoanxiety.jpeg" %}
 

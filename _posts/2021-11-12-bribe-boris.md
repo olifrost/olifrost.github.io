@@ -6,7 +6,7 @@ image: /blog/boris3.jpeg
 featured: yes
 ---
 
-{% include refrost-style %}
+<!-- {% include refrost-style %} -->
 
 So I decided we should bribe them.
 
