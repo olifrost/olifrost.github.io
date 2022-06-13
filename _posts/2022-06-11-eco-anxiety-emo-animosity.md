@@ -1,5 +1,5 @@
 ---
-title: I wrote a song for the climate conscious emo
+title: I wrote a song for the eco conscious emo
 layout: post
 description: Being an emo used to be so easy…
 image: /blog/ecoanxiety.jpeg
