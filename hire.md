@@ -5,7 +5,7 @@ description: If it's a bit like one of my things
 videos: kn9XNI2nwVc
 image: /blog/refer/refer-thumb.jpg
 thumb: /blog/lockdownlemons.jpg
-permalink: /ltd/
+permalink: /hire/
 override: override
 carousel-items: 3
 images: true

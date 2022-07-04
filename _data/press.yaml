@@ -11,6 +11,8 @@ recordaboi:
 
 refrosttheplanet:
 
+- name: "Spotify Editors' Pick"
+  article_link: 'https://open.spotify.com/artist/5dFJdXPDdubN7e6RIC2MXP?si=EWBGpL77QdiiwK4AIxsTGA'
 - name: 'TikTok Trending'
   article_link: 'https://www.tiktok.com/@olifro.st'
 - name: 'Instagram'
@@ -33,6 +35,15 @@ refrosttheplanet:
   article_link: 'https://www.instagram.com/p/B5QQMJtoyPd/'
 - name: 'The Times'
   article_link: 'posters/bestof/2.jpeg'
+
+ecoanxiety:
+
+    - name: 'The Locker'
+      article_link: 'https://open.spotify.com/album/22V98xfVoC34f6ZWcVI8XN?si=g-52X_j_RGGCA0xi87lO8w'
+    - name: 'The Punk List'
+      article_link: 'https://open.spotify.com/album/22V98xfVoC34f6ZWcVI8XN?si=g-52X_j_RGGCA0xi87lO8w'
+    - name: 'Limelight (Spotify Editorial Playlists)'
+      article_link: 'https://open.spotify.com/album/22V98xfVoC34f6ZWcVI8XN?si=g-52X_j_RGGCA0xi87lO8w'    
 
 data-sale:
 
