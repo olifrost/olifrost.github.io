@@ -17,14 +17,6 @@ docs:
   url: https://distrokid.com/hyperfollow/olifrost/windy-wendy
   colour: 1DB954
 
-- title: Apple Music
-  url: https://music.apple.com/gb/artist/oli-frost/1476842962
-  colour: 1DA1F2
-
-- title: Bandcamp
-  url: https://olifrost.bandcamp.com
-  colour: 1DA1F2
-
 - title: TikTok
   url: https://www.tiktok.com/@olifro.st
   colour: 1DA1F2
@@ -37,3 +29,10 @@ docs:
   url: https://twitter.com/olifro_st
   colour: 1DA1F2S
   
+- title: Bandcamp
+  url: https://olifrost.bandcamp.com
+  colour: 1DA1F2
+
+- title: Apple Music
+  url: https://music.apple.com/gb/artist/oli-frost/1476842962
+  colour: 1DA1F2
