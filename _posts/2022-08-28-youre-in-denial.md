@@ -1,7 +1,7 @@
 ---
 title: I wrote a drinking song for climate deniers
 layout: post
-description: In the traditional Irish way…Small changes
+description: In the traditional Irish way…
 image: /blog/irishdrinkingsong.jpeg
 videos: 1DVeV8oJB7A
 ---
@@ -10,4 +10,4 @@ videos: 1DVeV8oJB7A
 
 {% include youtube id="1DVeV8oJB7A" thumb="/blog/irishdrinkingsong" %}
 
-Available on [all streaming sites]https://distrokid.com/hyperfollow/olifrost/get-another-drink-in-you-youre-in-denial). Sometimes shouted loudly in pubs.
+Available on [all streaming sites]{https://distrokid.com/hyperfollow/olifrost/get-another-drink-in-you-youre-in-denial). Sometimes shouted loudly in pubs.
