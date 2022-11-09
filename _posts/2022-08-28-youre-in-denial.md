@@ -2,7 +2,7 @@
 title: I wrote a drinking song for climate deniers
 layout: post
 description: In the traditional Irish way…
-image: /blog/irishdrinkingsong.jpg
+image: /blog/vampireconspiracy.jpg
 videos: 1DVeV8oJB7A
 ---
 
