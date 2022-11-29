@@ -14,11 +14,7 @@ carousel-items: 1
 
 {% include bio %}
 
-My work has been featured everywhere from [UK Parliament]({% post_url 2015-03-25-thehomelessperiod %}) to [Britain's Got Talent]({% post_url 2018-05-20-recorda-boi %}), [BBC]({% post_url 2018-05-05-lifefaker %}) to [Fox News]({% post_url 2018-05-27-data-on-ebay %}), in [art shows](/refer), and [on bins](/little-tips).
-
-At the moment, I am mostly making [novelty music about the climate crisis](/refrost), or making things for others as my incorporated self [Oli Frost Ltd](/ltd).
-
-To see what's next you can find me [@olifro.st](/s) or [join my mailing list](#footer), which has a rigorous [No Privacy Policy]({% link noprivacy.md %}).
+To see what's next you can follow me [@olifro.st](/s) or [join my sparingly-used mailing list](#footer).
 
 # FAQ
 

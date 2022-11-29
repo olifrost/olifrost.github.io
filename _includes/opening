@@ -1,8 +1,6 @@
 <div markdown="1">
   {% include bio %}
 
-  My work has been featured everywhere from UK Parliament to Britain's Got Talent, BBC to Fox News, in art shows, and on bins.
-
   <!--<span><semibold>Most recently:</semibold> I wrote a [song for Greta Thunberg]({% post_url 2020-11-01-the-greta-thunberg-song %}), turned [global emissions data into a synthpop ballad]({% post_url 2021-11-01-the-greenhouse-gas-emissions-breakdown %}), and declared a [pirate emergency]({% post_url 2021-09-19-the-pirate-emergency %}).<br></span>-->
 
   <span markdown="0"><semibold>Most recently: </semibold>{% for post in site.posts limit:3 %}{% if forloop.last == true %}and {% endif %}<a href="{{ post.url }}">
