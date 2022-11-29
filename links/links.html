@@ -6,9 +6,29 @@ layout: links
 permalink: /links
 ---
 
-<ul>
+<style>
+h2 a:hover {
+  color:  #020cfa;
+}
+
+</style>
+
+<h2><a href="https://olifro.st">oli<span>fro.st</span></a></h2>
+
+<small class="social">
+
+  {% include icon-youtube.html username=site.author.instagram %}
+  {% include icon-instagram.html username=site.author.instagram %}
+  {% include icon-spotify.html username=site.author.spotify %}
+  {% include icon-tiktok.html username=site.author.tiktok %}
+  {% include icon-twitter.html username=site.twitter.username %}
+  {% include icon-mail.html username=site.author.email %}
+</small>
+
+
+<ul class="tree">
 {% for item in site.data.links.docs %}
-<li style="background-color: #{{item.colour}}; border-color: #{{item.colour}};">
+<li>
   <a href="{{ item.url }}" alt="{{ item.title }}">
     {{ item.title }}</a>
 </li>

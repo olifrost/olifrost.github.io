@@ -1,42 +1,17 @@
 docs_list_title: Pages
 docs:
 
-- title: Website / About
+- title: Website & bio
   url: /
   colour: 2AA3EF
 
-- title: Spotify
-  url: https://open.spotify.com/artist/5dFJdXPDdubN7e6RIC2MXP?si=USVMG9ehSb-iTJ_72NSXCA
+- title: Stream my music
+  url: https://olifro.st/stream
   colour: 1DB954
 
-- title: Stream 'The Vampire Conspiracy'
-  url: https://distrokid.com/hyperfollow/olifrost/the-vampire-conspiracy
-  colour: 1DB954
-
-- title: YouTube
-  url: https://www.youtube.com/olifrost
-  colour: FF0000
-
-- title: TikTok
-  url: https://www.tiktok.com/@olifro.st
-  colour: 1DA1F2
+- title: Send a tip
+  url: https://ko-fi.com/olifrost  
   
-- title: Instagram
-  url: https://instagram.com/olifro.st
-  colour: 1DB954
-
-- title: Twitter
-  url: https://twitter.com/olifro_st
-  colour: 1DA1F2S
-
 - title: Instagreen
   url: https://olifro.st/instagreen
-  colour: 1DB954
-  
-- title: Bandcamp
-  url: https://olifrost.bandcamp.com
-  colour: 1DA1F2
-
-- title: Apple Music
-  url: https://music.apple.com/gb/artist/oli-frost/1476842962
   colour: 1DA1F2
