@@ -9,8 +9,6 @@ playbuttoncolour: "#B2E1ED"
 playtrianglecolour: "rgba(0,0,0,1)"
 ---
 
-{% include refrost-style %}
-
 <div class="posts" markdown="0">
 {% assign refrost = site.data.refrost %}
 {% for item in refrost %}
