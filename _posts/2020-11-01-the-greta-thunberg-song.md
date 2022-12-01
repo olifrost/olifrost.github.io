@@ -22,11 +22,3 @@ You can listen listen listen to this on [Spotify](https://open.spotify.com/track
 There's also a karaoke version
 
 {% include youtube id="ZfyAKe_vrYE" %}
-
-Find more [Oli Frost Refrosts The Planet](/refrost)
-
----
-
-
-
-{% include about.html %}

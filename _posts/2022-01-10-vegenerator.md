@@ -6,8 +6,6 @@ image: /blog/vegenerator.png
 videos: gVBcRqwkTTc
 ---
 
-<!-- {% include refrost-style %} -->
-
 Gone plant-based for the new year, but struggling for ideas? 
 
 A wise someone once said “all fancy-sounding plant-based recipes are just the name of three vegetables”.  

@@ -11,29 +11,13 @@ exclude:             [/psd/]
 
 # Markdown
 collections:
-  portfolio:
-    # output: true
-    permalink: /work/:title/
-    sort_by: order
-  causes:
-    # output: true
-    permalink: /work/:title/
-    sort_by: order
-  brands:
-    # output: true
-    permalink: /work/:title/
-    sort_by: order
   hidden:
     output: true
     permalink: /work/:title/
     sort_by: order
-  refrost:
-    # output: true
-    permalink: /work/:title/
-    sort_by: order
-  spec:
-    # output: true
-    permalink: /work/:title/
+  shop:
+    output: true
+    permalink: /shop/:title/
     sort_by: order
 
 

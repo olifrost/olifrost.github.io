@@ -2,7 +2,6 @@
 layout: default
 title: Oli Frost
 videos: true
-image: /posters/portraits/olifrost-0.greta.jpg
 carousel-items: 1
 ---
 

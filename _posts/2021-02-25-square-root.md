@@ -30,8 +30,6 @@ If you would like to personally drink these beverages, you'll find them at [Squa
 
 Use discount code OLI and get a free error at the checkout.
 
-*You can now hire your very own Oli Frost at [Oli Frost Ltd](/ltd)*
-
 ---
 
 {% include about.html %}

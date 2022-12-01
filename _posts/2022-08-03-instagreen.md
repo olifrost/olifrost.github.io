@@ -8,6 +8,4 @@ videos: VMzxaZy7hh0
 
 I call it [Instagreen](https://olifro.st/instagreen)
 
-<!-- {% include refrost-style %} -->
-
 {% include youtube id="VMzxaZy7hh0" thumb="/blog/instagreen.jpg" %}

@@ -3,10 +3,8 @@ title: I fell in love with a wind turbine
 layout: post
 description: Here's a song I wrote for her
 image: /blog/windywendy.jpeg
-videos: KlTd1hi08DI 
+videos: KlTd1hi08DI
 ---
-
-<!-- {% include refrost-style %} -->
 
 {% include youtube id="KlTd1hi08DI" thumb="/blog/windywendy.jpeg" %}
 

@@ -12,6 +12,3 @@ Luckily, unemployment wasn't forever.
 
 Shortly after, I made [some friends into clients]({% post_url 2020-05-26-redundancy %})
 
----
-
-{% include about.html %}

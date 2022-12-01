@@ -7,8 +7,6 @@ videos: wQigoj-9Ijs
 press: ecoanxiety
 ---
 
-<!-- {% include refrost-style %} -->
-
 {% include youtube id="wQigoj-9Ijs" thumb="/blog/ecoanxiety.jpeg" %}
 
 Available on [all streaming sites](https://distrokid.com/hyperfollow/olifrost/eco-anxiety-emo-animosity), or like, whatever.
