@@ -16,7 +16,7 @@ Most recently, I have been working for Greenpeace UK as a presenter for their [s
 
 <div class="posts" markdown="0">
 {% assign projects = site.data.ltd%}
-{% for item in projects | limit: 3 %}
+{% for item in projects %}
     <h2>{{ item.category }}</h2>
     {% include project.html project=item %}
 {% endfor %}
