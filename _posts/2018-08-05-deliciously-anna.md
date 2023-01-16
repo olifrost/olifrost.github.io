@@ -54,4 +54,4 @@ Because it doesn't always matter if love is real or fake.
 
 As long as you have a convincing illusion of it.
 
-*Visit [Lifefaker.com](http://lifefaker.com/) and sign up for a fake profile today*
+*Visit [Lifefaker.com](https://olifro.st/lifefaker) and sign up for a fake profile today*

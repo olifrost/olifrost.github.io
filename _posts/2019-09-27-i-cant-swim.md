@@ -8,8 +8,6 @@ press: globalcliamtestrike
 carousel-items: 3
 ---
 
-<!-- <!-- {% include refrost-style %} --> -->
-
 According to the Frosties Swimming School, I can't swim more than 400m.
 
 So for my own sake (and everyone else's), I obliged.
@@ -20,7 +18,7 @@ To my surprise, the posters were shared and printed by lots of people.
 
 Some were [350.org](https://twitter.com/350/status/1173310522596438017), [Extinction Rebellion](https://www.instagram.com/p/B2W62tAnf63/?utm_source=ig_web_copy_link), [School Strike For Climate](https://www.instagram.com/p/B2dpJwPAZuq/?utm_source=ig_web_copy_link), [Upworthy](https://www.instagram.com/p/B2oKK7PARL5/?utm_source=ig_web_copy_link), and [I Weigh](https://www.instagram.com/p/B2gtSTinqOv/?utm_source=ig_web_copy_link).
 
-My account @globalclimatestrike gained 25,000 followers in a month, and I made [a site that I updated for future climate events](/posters).
+The account I made for them gained 25,000 followers in a month, and I made [a site that I updated for future climate events](/posters).
 
 {% include poster-gallery.html path="bestof" %}
 
@@ -36,11 +34,11 @@ And by the end of the year, I had been invited to talk on a panel about the UK e
 
 At the night's end, Lilly said thanks for coming, and we shared a brief hug.
 
-Most important of all though, at the panel I got to meet Lily's boyfriend.
+I also got to meet Lily's boyfriend.
 
 *David Harbour*, from Stranger Things.
 
-
+Which really made it all worth it…
 
 [>> Go to Posters Site](/posters)
 

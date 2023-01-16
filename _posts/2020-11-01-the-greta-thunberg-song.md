@@ -11,7 +11,7 @@ See Greta's remake below!
 
 {% include youtube id="e553WB239fo" thumb="/blog/GretaThunbergSong.jpg" %}
 
-You can listen listen listen to this on [Spotify](https://open.spotify.com/track/3WdqFO10RbW4dtrPMqXEiz?si=rjEW7GBvTAWY1q_GE4USfQ), [Apple Music](https://music.apple.com/us/album/the-greta-thunberg-song-single/1538647164), and so on.
+You can listen listen listen to this on [Spotify, Apple Music, etc.](https://olifro.st/stream).
 
 ![](/blog/gretareel.jpg)
 

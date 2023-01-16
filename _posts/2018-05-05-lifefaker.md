@@ -11,7 +11,7 @@ I’d stood on it to take an aerial photo of my rainbow bowl.
 
 After the accident I thought about quitting social media for a while.
 
-And then I had a better idea: [Lifefaker.com](http://lifefaker.com)
+And then I had a better idea: [Lifefaker.com](https://olifro.st/lifefaker)
 
 <div class="youtube-player" data-id="IuibG80U-Gs" data-thumb="/blog/lifefaker.jpg"></div>
 

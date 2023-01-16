@@ -9,4 +9,4 @@ press: ecoanxiety
 
 {% include youtube id="wQigoj-9Ijs" thumb="/blog/ecoanxiety.jpeg" %}
 
-Available on [all streaming sites](https://distrokid.com/hyperfollow/olifrost/eco-anxiety-emo-animosity), or like, whatever.
+Available on [all streaming sites](https://olifro.st/stream), or like, whatever.

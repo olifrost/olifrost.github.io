@@ -12,5 +12,5 @@ So I be made a sea shanty.
 
 {% include youtube id="_0XGC2-d9Gg" thumb="/blog/PirateEmergency.jpg" %}
 
-It's now available on [Spotify](https://open.spotify.com/track/5jfvOGQXhj6YdYXROgee3l?si=f4e6e78f19964e3d), [Apple Music](https://music.apple.com/gb/album/the-pirate-emergency/1585704784?i=1585704785), [Bandcamp](https://olifrost.bandcamp.com/track/the-pirate-emergency), and all good pirate ships
+It's now available on [most good streaming sites](https://olifro.st/stream) and all good pirate ships
 

@@ -8,4 +8,4 @@ videos: KlTd1hi08DI
 
 {% include youtube id="KlTd1hi08DI" thumb="/blog/windywendy.jpeg" %}
 
-Available on [all streaming sites](https://distrokid.com/hyperfollow/olifrost/windy-wendy). If you listen closely, you can even hear it on the wind.
+Available on [all streaming sites](https://olifro.st/stream). If you listen closely, you can even hear it on the wind.
