@@ -9,6 +9,10 @@ docs:
   url: https://instagram.com/olifro.st
   colour: 1DB954
 
+- title: TikTok
+  url: https://www.tiktok.com/@olifro.st
+  colour: 08E9E3
+
 - title: Twitter
   url: https://twitter.com/olifro_st
   colour: 1DA1F2
@@ -16,7 +20,3 @@ docs:
 - title: Spotify
   url: https://open.spotify.com/artist/5dFJdXPDdubN7e6RIC2MXP?si=USVMG9ehSb-iTJ_72NSXCA
   colour: 1DB954
-
-- title: TikTok
-  url: https://www.tiktok.com/@olifro.st
-  colour: 08E9E3

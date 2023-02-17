@@ -9,8 +9,8 @@ carousel-items: 3
 images: true
 image: /blog/cat.jpg
 thumb: /blog/cat.jpg
-paypallink: https://www.paypal.me/olifrost
-coffeelink: https://www.buymeacoffee.com/olifrost
+paypallink: https://ko-fi.com/olifrost
+coffeelink: https://ko-fi.com/olifrost
 ---
 
 <div class="hero">

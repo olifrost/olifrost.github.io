@@ -93,7 +93,7 @@ color: #FEFEFE;
     <div class="row first-xs between-sm buttons downloads">
         <div class="col-xs-12">
 
-            <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/olifrost/olifrost.github.io/tree/master/posters/fossilghouls" class="button"><i class="fas fa-ghost"></i> Download</a>
+            <a href="https://ko-fi.com/s/567c69f8ec" class="button"><i class="fas fa-ghost"></i> Download</a>
 
             <p markdown="1">You can print and share these if you'll give a tag and follow [@olifro.st](https://olifro.st/links) in return</p>
       </div>

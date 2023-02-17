@@ -10,7 +10,6 @@ redirect_from:
   - /blog/little-tips/
 permalink: /little-tips/
 playbuttoncolour: "rgb(122,197,48)"
-featured: yes
 ---
 
 <!-- {% include refrost-style %} -->

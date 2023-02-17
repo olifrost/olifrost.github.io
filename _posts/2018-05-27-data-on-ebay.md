@@ -44,4 +44,4 @@ eBay removed the listing because it might go against Facebook's Terms and Condit
 
 My mistake, I was under the impression I owned my personal data.
 
-<a href="mailto:mail@olifro.st">Get in touch</a> if you'd like to make a private offer.
+Luckily, you can now [buy an excerpt of my personal data](https://ko-fi.com/s/940f46b4ce)

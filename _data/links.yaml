@@ -5,17 +5,17 @@ docs:
   url: /
   colour: 2AA3EF
 
-- title: Stream my music
+- title: Stream or buy my music
   url: https://olifro.st/stream
-  colour: 1DB954
-
-- title: Pre-save my new song
-  url: https://distrokid.com/hyperfollow/olifrost/alien-love
-  colour: 1DB954
 
 - title: Send a tip
   url: https://ko-fi.com/olifrost  
-  
-- title: Instagreen
-  url: https://olifro.st/instagreen
-  colour: 1DA1F2
+
+- title: Get a personalised video
+  url: https://ko-fi.com/olifrost/commissions 
+
+- title: Join my patreon
+  url: https://www.patreon.com/olifrost
+
+- title: Book me for a gig, etc
+  url: mailto:mail@olifro.st

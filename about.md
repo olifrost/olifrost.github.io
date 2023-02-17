@@ -16,6 +16,8 @@ carousel-items: 1
 
 To see what's next you can follow me [@olifro.st](/s) or [join my sparingly-used mailing list](#footer).
 
+If you want to support my work, you could [send me a tip](https://ko-fi.com/olifrost), join my [patreon](https://www.patreon.com/OliFrost/membership), request a [personalised video](https://ko-fi.com/olifrost/commissions), or just [stream or buy my music](https://olifro.st/stream).
+
 # FAQ
 
 ## Do you really need an FAQ?
@@ -24,20 +26,17 @@ Not sure yet.
 ## Where are you from?
 I was born London but I'm currently [seeking citizenship in São Tomé](/blog/sao-tome-citizen/).
 
-## When a shirt becomes a pyjama shirt can it ever go back?
-Only for short trips to the shops.
-
 ## Who makes your stuff?
-I make my stuff. I'd get help from friends, but they're [harder to make](/refer).
+I do. I'd get help from friends, but they're [harder to make](/refer).
 
-## Do you have any qualifications?
-A First in Philosophy from UCL. I was First in line at JobCentre+.
+## Will you do a thing for me?
+I'm really short on hands (currently just two) but send me an email, I'll [consider anything](mailto:mail@olifro.st)…
+
+## How did you get into this?
+Can you have a scroll through my [post archive](https://olifro.st/blog/) and let me know?
 
 ## Have Lambeth Council asked you to stop impersonating them?
 At the time of writing, I believe they are [not aware]({% post_url 2019-06-12-little-tips %}).
 
-## Do you still pretend to be a married woman on Instagram?
-Not really. Couldn't [stand the heartbreak]({% post_url 2018-08-05-deliciously-anna %})
-
 ## How do you feel the FAQ went?
-I think it was alright. Maybe not self-deprecating enough?
+I think it was alright, so so really.
