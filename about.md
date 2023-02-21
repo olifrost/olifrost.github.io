@@ -1,6 +1,6 @@
 ---
 layout: page
-image: /posters/portraits/olifrost-0.greta.jpg
+image: /img/olifrost.jpg
 carousel-items: 1
 ---
 

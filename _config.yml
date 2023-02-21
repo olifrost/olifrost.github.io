@@ -45,9 +45,9 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /blog/olifrost.jpg
+      image: /img/olifrost.jpg
 
-profile: /blog/olifrost.jpg
+profile: /img/olifrost.jpg
 
 twitter:
   username: olifro_st
