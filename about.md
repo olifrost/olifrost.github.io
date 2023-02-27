@@ -29,14 +29,11 @@ I was born London but I'm currently [seeking citizenship in São Tomé](/blog/sa
 ## Who makes your stuff?
 I do. I'd get help from friends, but they're [harder to make](/refer).
 
+## Tell me some meaningless numbers to quantify your importance?
+200k followers, 20 million views, 1 person recognising me in Franco Manca
+
 ## Will you do a thing for me?
 I'm really short on hands (currently just two) but send me an email, I'll [consider anything](mailto:mail@olifro.st)…
-
-## How did you get into this?
-Can you have a scroll through my [post archive](https://olifro.st/blog/) and let me know?
-
-## Have Lambeth Council asked you to stop impersonating them?
-At the time of writing, I believe they are [not aware]({% post_url 2019-06-12-little-tips %}).
 
 ## How do you feel the FAQ went?
 I think it was alright, so so really.
