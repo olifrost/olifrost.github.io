@@ -6,8 +6,6 @@ image: /blog/PirateEmergency.jpg
 videos: _0XGC2-d9Gg
 ---
 
-<!-- <!-- {% include refrost-style %} --> -->
-
 So I be made a sea shanty.
 
 {% include youtube id="_0XGC2-d9Gg" thumb="/blog/PirateEmergency.jpg" %}

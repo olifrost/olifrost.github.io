@@ -3,18 +3,22 @@
   image: /blog/vampireconspiracy.jpg
   link: /blog/the-vampire-conspiracy
   video: M9-v5bH7EPE
+  press: the-vampire-conspiracy
+
+- title: The Dragon of Climate Change
+  description: Lo! The dragon hath come
+  image: /blog/thedragonofclimatechange.jpg
+  link: /blog/thedragonofclimatechange.jpg
+  video: dXw9_m8fN-s
+  press: the-dragon-of-climate-change
 
 - title: The Pirate Emergency
   description: A sea shanty to declare a pirate emergency.
   image: /blog/PirateEmergency.jpg
   link: /blog/the-pirate-emergency
   video: _0XGC2-d9Gg
-
-- title: The Greta Thunberg Song
-  description: A song about Greta, feta, and why the ocean is getting wetter.
-  image: /blog/GretaThunbergSong.jpg
-  link: /blog/the-greta-thunberg-song
-  video: e553WB239fo
+  press: the-pirate-emergency
+  
 
 - title: You're In Denial
   description: A drinking song for climate deniers
@@ -35,6 +39,18 @@
   video: wQigoj-9Ijs
   press: ecoanxiety
 
+- title: Alien Love
+  description: An intergalactic tale about cows
+  image: /blog/alienlove.jpg
+  link: https://www.youtube.com/watch?v=0Towd26Qm34
+  video: 0Towd26Qm34
+
+- title: The Greta Thunberg Song
+  description: A song about Greta, feta, and why the ocean is getting wetter.
+  image: /blog/GretaThunbergSong.jpg
+  link: /blog/the-greta-thunberg-song
+  video: e553WB239fo
+
 - title: The Greenhouse Gas Emissions Breakdown
   description: I turned global emissions data into a synth-pop ballad.
   image: /blog/greenhouse-gas-emissions-breakdown.jpg
@@ -46,3 +62,14 @@
   image: /blog/dontcrysanta.jpg
   link: /blog/dont-cry-santa
   video: BDS9-LUz3SU
+
+- title: Pollution Solution
+  description: I form a political air-instrument punk band to raise awareness of air pollution.
+  image: https://i.ytimg.com/vi/5gshFGOR-IY/maxresdefault.jpg
+  link: /pollution-solution/
+  video: 5gshFGOR-IY
+  press:
+    - name: 'Spotify'
+      article_link: 'https://open.spotify.com/track/5feG06CWr6qris7A1xk7NV?si=rI2dmvSVTbetFJOZ-pN1JQ'
+    - name: 'Apple Music'
+      article_link: 'https://music.apple.com/gb/album/pollution-solution/1477411206?i=1477411207'

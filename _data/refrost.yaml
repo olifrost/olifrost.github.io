@@ -1,63 +1,4 @@
-- title: The Pirate Emergency
-  description: A sea shanty to declare a pirate emergency.
-  image: /blog/PirateEmergency.jpg
-  link: /blog/the-pirate-emergency
-  video: _0XGC2-d9Gg
 
-- title: The Dragon of Climate Change
-  description: Lo! The dragon hath come
-  image: /blog/thedragonofclimatechange.jpg
-  link: /blog/thedragonofclimatechange.jpg
-  video: dXw9_m8fN-s
-
-- title: The Vampire Conspiracy
-  description: You got me! The climate movement is a conspiracy
-  image: /blog/vampireconspiracy.jpg
-  link: /blog/the-vampire-conspiracy
-  video: M9-v5bH7EPE
-
-- title: You're In Denial
-  description: A drinking song for climate deniers
-  image: /blog/irishdrinkingsong.jpg
-  link: /blog/youre-in-denial
-  video: 1DVeV8oJB7A
-
-- title: Windy Wendy
-  description: Just a story about my love life…?
-  image: /blog/windywendy.jpg
-  link: /blog/windywendy
-  video: KlTd1hi08DI
-
-- title: Eco Anxiety (Emo Animosity)
-  description: Being an emo used to be so easy…
-  image: /blog/ecoanxiety.jpeg
-  link: /blog/eco-anxiety-emo-animosity
-  video: wQigoj-9Ijs
-  press: ecoanxiety
-
-- title: Alien Love
-  description: An intergalactic tale about cows
-  image: /blog/alienlove.jpg
-  link: https://www.youtube.com/watch?v=0Towd26Qm34
-  video: 0Towd26Qm34
-
-- title: The Greta Thunberg Song
-  description: A song about Greta, feta, and why the ocean is getting wetter.
-  image: /blog/GretaThunbergSong.jpg
-  link: /blog/the-greta-thunberg-song
-  video: e553WB239fo
-
-- title: The Greenhouse Gas Emissions Breakdown
-  description: I turned global emissions data into a synth-pop ballad.
-  image: /blog/greenhouse-gas-emissions-breakdown.jpg
-  link: /blog/the-greenhouse-gas-emissions-breakdown
-  video: h3VWd93CHv0
-
-- title: Don't Cry Santa
-  description: A song about Santa having a mental breakdown because of his role in consumerism.
-  image: /blog/dontcrysanta.jpg
-  link: /blog/dont-cry-santa
-  video: BDS9-LUz3SU
 
 - title: Little Tips From Lambeth Council
   description: I impersonate my local council to improve the range of their recycling tips. Specifically sex, drugs, and crime.
@@ -91,17 +32,6 @@
   description: A protest movement I started for baby penguins. Endorsed (followed) by Greta Thunberg.
   image: /blog/fff-antarctica.jpg
   link: /blog/fridays-for-future-antarctica/
-
-- title: Pollution Solution
-  description: I form a political air-instrument punk band to raise awareness of air pollution.
-  image: https://i.ytimg.com/vi/5gshFGOR-IY/maxresdefault.jpg
-  link: /pollution-solution/
-  video: 5gshFGOR-IY
-  press:
-    - name: 'Spotify'
-      article_link: 'https://open.spotify.com/track/5feG06CWr6qris7A1xk7NV?si=rI2dmvSVTbetFJOZ-pN1JQ'
-    - name: 'Apple Music'
-      article_link: 'https://music.apple.com/gb/album/pollution-solution/1477411206?i=1477411207'
 
 - title: Domestic Rebellion
   description: I drink a Gin and Tonic and call the police about my stay-at-home protest movement.

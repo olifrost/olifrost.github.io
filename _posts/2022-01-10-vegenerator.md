@@ -1,9 +1,10 @@
 ---
-title: I generated a million plant-based recipes
+title: I made an unintelligent recipe generator
 layout: post
 description: Behold the <a href="https://olifro.st/vegenerator"> Vegenerator</a>.
 image: /blog/vegenerator.png
 videos: gVBcRqwkTTc
+featured: yes
 ---
 
 Gone plant-based for the new year, but struggling for ideas? 

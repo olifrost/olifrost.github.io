@@ -6,24 +6,27 @@
   order: 3
   press: recordaboi
 
-- title: Instagreen
-  description: "Fake an un-ecofriendly online life. Formerly <a href='https://olifro.st/lifefaker'>Lifefaker.com</a>"
-  image: /blog/instagreen.jpg
-  link: /instagreen
-  video: VMzxaZy7hh0
+- title: Flopstarter.com
+  description: A platform for bad ideas.
+  image: /blog/flopstarter.jpg
+  link: /blog/flopstarter/
+  press: flopstarter
+
+- title: Refer Me A Friend
+  description: If we become friends, you both get £15.
+  image: /blog/refer/refer-text.jpg
+  link: /refer
+  video: nBfc_vfKKvc
+  order: 2
+  press: referafriend
+
+- title: Lifefaker.com
+  description: A startup to help you fake a perfect online life.
+  image: /blog/lifefaker.jpg
+  link: https://olifro.st/lifefaker
+  order: 1
+  video: IuibG80U-Gs
   press: lifefaker
-
-- title: Global Climate Strike
-  description: A series of posters I made for the global climate strikes.
-  link: /blog/i-cant-swim
-  image: /blog/climateposters.jpg
-  press: globalcliamtestrike
-
-- title: Little Tips From Lambeth Council
-  description: I impersonate my local council to improve the range of their recycling tips. Specifically sex, drugs, and crime.
-  image: /blog/littletips.jpg
-  link: /little-tips/
-  video: 3VTb5GsVS-A
 
 - title: eBay Data Sale
   description: I put all my personal data on eBay.
@@ -47,27 +50,11 @@
     - article_link: 'https://technologue.id/pria-ini-jual-data-facebook-pribadinya-di-ebay-kenapa/amp/'
     - article_link: 'https://www.derstandard.de/story/2000080681647/zeit-abzucashen-brite-verkauft-seine-facebook-daten-auf-ebay?ref=rec'
 
-- title: Flopstarter
-  description: A platform for bad ideas.
-  image: /blog/flopstarter.jpg
-  link: /blog/flopstarter/
-  press: flopstarter
-
-- title: Refer Me A Friend
-  description: If we become friends, you both get £15.
-  image: /blog/refer/refer-text.jpg
-  link: /refer
-  video: nBfc_vfKKvc
-  order: 2
-  press: referafriend
-
-- title: Nice Fake News
-  description: A fake news site for nice news
-  image: /blog/nicefakenews.jpg
-  link: https://olifro.st/nfn
-  order: 1
-  video: PPwZPhOHRgg
-  press: nicefakenews
+- title: Global Climate Strike
+  description: A series of posters I made for the global climate strikes.
+  link: /blog/i-cant-swim
+  image: /blog/climateposters.jpg
+  press: globalcliamtestrike
 
 - title: The Homeless Period
   description: The first campaign to raise the issue of sanitary care access for homeless women. Now run by supporters around the world.

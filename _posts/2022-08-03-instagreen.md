@@ -4,7 +4,6 @@ layout: post
 description: 2018's Lifefaker.com has a new subsidiary
 image: /blog/instagreen.jpg
 videos: VMzxaZy7hh0 
-featured: yes
 ---
 
 I call it [Instagreen](https://olifro.st/instagreen)
