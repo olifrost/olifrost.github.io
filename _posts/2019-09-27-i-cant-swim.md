@@ -32,7 +32,7 @@ And by the end of the year, I had been invited to talk on a panel about the UK e
 
 ![](/blog/panel.jpg)
 
-At the night's end, Lilly said thanks for coming, and we shared a brief hug.
+At end of the night, Lilly said thanks for coming.
 
 I also got to meet Lily's boyfriend.
 

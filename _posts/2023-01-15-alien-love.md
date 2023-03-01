@@ -4,6 +4,7 @@ layout: post
 description: Can't believe I forgot to do a shot of my cowbell
 image: /blog/alienlove.jpg
 videos: true
+press: alienlove
 ---
 
 {% include youtube id="0Towd26Qm34" thumb="/blog/alienlove.jpg" %}

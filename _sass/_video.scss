@@ -1,3 +1,24 @@
+.instagram-media, .twitter-tweet {
+    margin-bottom: 2rem !important;
+    margin-top: 2rem !important;
+    width: 100%;
+}
+
+.tiktok-embed {
+    border: none !important;
+    width: 100%;
+    margin-bottom: 1em !important;
+    padding: 0;
+    
+}
+
+.embed-vertical {
+    display: flex;
+    text-align: center;
+    border: 1px solid #F5F5F5;
+    margin-bottom: 1.5em;
+}
+
 .youtube-player {
     position: relative;
     padding-bottom: 56.20%;

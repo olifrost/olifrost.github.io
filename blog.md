@@ -3,7 +3,7 @@ layout: default
 title: Blog
 ---
 
-## Top posts
+## Featured posts
 
 {% include featured-post.html %}
 

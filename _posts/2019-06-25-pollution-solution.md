@@ -7,6 +7,7 @@ videos: 5gshFGOR-IY
 redirect_from:
   - /blog/pollution-solution/
 permalink: /pollution-solution/
+shortsong: yes
 ---
 
 <!-- {% include refrost-style %} -->

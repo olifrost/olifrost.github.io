@@ -12,12 +12,66 @@ So I turned some stats and numbers.
 
 Into a song.
 
-{% include youtube id="h3VWd93CHv0" thunb="greenhouse-gas-emissions-breakdown.jpg" %}
+{% include youtube id="h3VWd93CHv0" thumb="/blog/greenhouse-gas-emissions-breakdown.jpg" %}
 
-It's now available to stream [everywhere](https://olifro.st/stream), but can also be sung at home, to reduce energy consumption.
+It's now available to stream [everywhere](https://olifro.st/stream), but can also be sung at home, to reduce energy consumption. Stats from [OurWorldInData.org](https://ourworldindata.org/emissions-by-sector)
 
-Find more [Oli Frost Refrosts The Planet](/refrost)
+# The Greenhouse Gas Emissions Breakdown Lyrics
 
----
-
-{% include about.html %}
+The planet's warming every year  
+And the human cause is very clear  
+So in each sector, in each year  
+Let's see greenhouse gases get here  
+  
+Rice cultivation's 1%  
+Wastewater isn't much different  
+2% from deforestation  
+Same for shipping and aviation  
+  
+Similar stat for landfills  
+Agriculture and fishing, and chemicals  
+Burning crops is over 3%  
+Same goes for mixing cement  
+  
+You don't have to like addition or be a mathematician  
+I'm not actually a scientist I'm more of a musician  
+There's only one thing that you need to know  
+All these emissions have got to go  
+  
+Science and learning can be so much fun  
+They tell you where greenhouse emissions come from  
+Stats and numbers turned into a song  
+It's useful to know things  
+We'll die if we're wrong  
+  
+4% fertilises crops  
+6% just for livestock  
+Cattle and sheep both ruminate  
+Methane warms at a quicker rate  
+  
+7% from Iron and steel  
+Commercial buildings are a similar deal  
+10.9 is residential  
+Road transport's even more essential  
+  
+Fugitive emissions from energy production  
+Unallocated fuel combustion  
+Together are about 13.6  
+Sounds important, whatever it is  
+  
+The rest comes from other industry  
+Paper and pulp and machinery  
+Petrochemicals non ferrous metals  
+Food, tobacco, and overfilled kettles  
+  
+Just quick aside  
+I'm not telling lies  
+But many of these facts have probably been revised  
+Rounded up and down, and simplified  
+You remember it more when it rhymes  
+  
+Science and learning can be so much fun  
+They tell you where greenhouse emissions come from  
+Stats and numbers turned into a song  
+It's useful to know things  
+We'll die if we're wrong  

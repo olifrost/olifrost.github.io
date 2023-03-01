@@ -2,7 +2,9 @@
 layout: default
 ---
 
+{% if page.dateless != nil %}
 <a href="{% link blog.md %}">← All Posts</a> / <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>
+{% endif %}
 
 <article class="post">
 

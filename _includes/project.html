@@ -23,7 +23,14 @@
   {% if include.project.description %}<p>
     {{ include.project.description }}<br>
     {% if include.project.partner != nil %}<span class="partner">Made with {{ include.project.partner }}</span>{% endif %}
-    {% if include.project.press != nil %}{% for press in site.data.press[include.project.press] %}<a href="{{ press.article_link }}" class="press">{{ press.name }}{% if forloop.last == false %},{% else %}.{% endif %}</a> {% endfor %}{% endif %}
+    {% if include.project.press != nil %}
+    {% for press in site.data.press[include.project.press] %}
+    {% if press.article_link != nil %}<a href="{{ press.article_link }}" class="press">{{ press.name }}{% if forloop.last == false %},{% else %}.{% endif %}</a>
+    {% else %}
+    <span class="press">{{ press.name }}{% if forloop.last == false %},{% else %}.{% endif %}</span>
+    {% endif %}
+    
+    {% endfor %}{% endif %}
   </p>
   {% endif %}
 </div>

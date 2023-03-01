@@ -8,7 +8,7 @@
 - title: The Dragon of Climate Change
   description: Lo! The dragon hath come
   image: /blog/thedragonofclimatechange.jpg
-  link: /blog/thedragonofclimatechange.jpg
+  link: /blog/the-dragon-of-climate-change
   video: dXw9_m8fN-s
   press: the-dragon-of-climate-change
 
@@ -19,18 +19,19 @@
   video: _0XGC2-d9Gg
   press: the-pirate-emergency
   
-
-- title: You're In Denial
+- title: Get Another Drink In You (You're In Denial)
   description: A drinking song for climate deniers
   image: /blog/irishdrinkingsong.jpg
   link: /blog/youre-in-denial
   video: 1DVeV8oJB7A
+  press: getadrink
 
 - title: Windy Wendy
   description: Just a story about my love life…?
   image: /blog/windywendy.jpg
-  link: /blog/windywendy
+  link: /blog/windy-wendy
   video: KlTd1hi08DI
+  press: windywendy
 
 - title: Eco Anxiety (Emo Animosity)
   description: Being an emo used to be so easy…
@@ -44,12 +45,14 @@
   image: /blog/alienlove.jpg
   link: https://www.youtube.com/watch?v=0Towd26Qm34
   video: 0Towd26Qm34
+  press: alienlove
 
 - title: The Greta Thunberg Song
   description: A song about Greta, feta, and why the ocean is getting wetter.
   image: /blog/GretaThunbergSong.jpg
   link: /blog/the-greta-thunberg-song
   video: e553WB239fo
+  press: greta
 
 - title: The Greenhouse Gas Emissions Breakdown
   description: I turned global emissions data into a synth-pop ballad.
@@ -62,14 +65,3 @@
   image: /blog/dontcrysanta.jpg
   link: /blog/dont-cry-santa
   video: BDS9-LUz3SU
-
-- title: Pollution Solution
-  description: I form a political air-instrument punk band to raise awareness of air pollution.
-  image: https://i.ytimg.com/vi/5gshFGOR-IY/maxresdefault.jpg
-  link: /pollution-solution/
-  video: 5gshFGOR-IY
-  press:
-    - name: 'Spotify'
-      article_link: 'https://open.spotify.com/track/5feG06CWr6qris7A1xk7NV?si=rI2dmvSVTbetFJOZ-pN1JQ'
-    - name: 'Apple Music'
-      article_link: 'https://music.apple.com/gb/album/pollution-solution/1477411206?i=1477411207'
