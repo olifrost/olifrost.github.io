@@ -14,7 +14,7 @@ Yet if you searched online for the issue of period poverty in 2015, you would th
 
 So with two friends, I set out to speak with those affected.
 
-I made a site and a film to support a petition that went live at [TheHomelessPeriod.com](http://TheHomelessPeriod.com)
+I made a site and a film to support a petition that went live at [TheHomelessPeriod.com](/thehomelessperiod)
 
 It argued that since shelters receive an allowance to buy products like condoms, the same should happen for sanitary products.
 
