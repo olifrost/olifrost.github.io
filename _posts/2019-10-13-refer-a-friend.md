@@ -47,7 +47,7 @@ images: true
 
 <div>
 
-<h3 id="counter"><i class="fas fa-user-tag"></i> <span style="color:blue"><a href="{{ page.instagramlink }}">287</a></span> Friends Tagged <span style="font-weight: 100;"><br></span></h3>
+<h3 id="counter"><i class="fas fa-user-tag"></i> <span style="color:blue"><a href="{{ page.instagramlink }}">600+</a></span> Friends Tagged <span style="font-weight: 100;"><br></span></h3>
 </div>
 
 ---
@@ -156,7 +156,7 @@ Oli Frost removes himself from social situations without a word – it's called 
 
 
 **Who are you?**  
-{% include bio %}
+I'm Oli Frost, the guy who makes [novelty songs about the climate crisis](/refrost). Greta Thunberg [did the macarena to one of them]({{ site.baseurl }}{% post_url 2020-11-01-the-greta-thunberg-song %}).
 
   </div>
 
@@ -190,7 +190,7 @@ I was very impressed by how Uber and Dropbox made friends like this. I also want
 <div class="col-xs-12 col-sm-6" markdown="1">
 
 **Where can I get my loyalty card?**  
-You can request these in person, or if you're in San Francisco, at [The Glass Room](https://theglassroom.org/san-francisco) exhibit from October 10th to November 3rd.
+You can request these in person, or if you're in San Francisco, at [The Glass Room](https://theglassroom.org/san-francisco) exhibit from October 10th to November 3rd 2019.
 
 </div>
 
