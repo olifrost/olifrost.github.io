@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I pretend I'm a married woman on Instagram
-description: Last month I launched <a href="http://lifefaker.com/"> Lifefaker.com</a>, the online life faking service.
+description: Last month I launched <a href="https://olifro.st/lifefaker"> Lifefaker</a>, the online life faking service.
 image: /blog/anna-profile.jpg
 date: 2018-08-06
 ---
