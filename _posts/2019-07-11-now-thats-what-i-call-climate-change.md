@@ -20,9 +20,3 @@ Comment your submissions on [Instagram](https://www.instagram.com/p/B7ZH4KVHHHR/
 <iframe src="https://open.spotify.com/embed/playlist/23fLtnKUaco7zaQgqmvnfh" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 </div>
 
-Also on YouTube, (but must be played on YouTube.com).
-<div class="youtube-player">
-<iframe src="https://www.youtube.com/embed/videoseries?list=PLg7ku87sG6NcajDCxKDK1FlEcm5JchLOj" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-{% include refrost-links %}

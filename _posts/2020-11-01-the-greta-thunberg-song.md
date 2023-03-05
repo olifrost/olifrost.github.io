@@ -7,15 +7,11 @@ videos: e553WB239fo
 tiktok: true
 ---
 
-See Greta's remake below!
-
 {% include youtube id="e553WB239fo" thumb="/blog/GretaThunbergSong.jpg" %}
 
-You can listen listen listen to this on [Spotify, Apple Music, etc.](https://olifro.st/stream).
+The actual Greta's shot for shot remake!
 
-<div class="embed-vertical">
-<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@olifro.st/video/7106923063140257029" data-video-id="7106923063140257029" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@olifro.st" href="https://www.tiktok.com/@olifro.st">@olifro.st</a> <a title="duet" target="_blank" href="https://www.tiktok.com/tag/duet">#duet</a> with @olifro.st What! Greta remade my video The Greta Thunberg Song. Thank you @saoi4climate  and @Dylan 🌍 and Greta for putting it together (it’s way better than mine). Full song on my profile&#47;YouTube&#47;Spotify etc… <a title="gretathunberg" target="_blank" href="https://www.tiktok.com/tag/gretathunberg">#gretathunberg</a> <a title="refrosttheplanet" target="_blank" href="https://www.tiktok.com/tag/refrosttheplanet">#refrosttheplanet</a> <a title="song" target="_blank" href="https://www.tiktok.com/tag/song">#song</a> <a title="ecofriendly" target="_blank" href="https://www.tiktok.com/tag/ecofriendly">#ecofriendly</a> <a title="sustainablefashion" target="_blank" href="https://www.tiktok.com/tag/sustainablefashion">#sustainablefashion</a> <a title="vegan" target="_blank" href="https://www.tiktok.com/tag/vegan">#vegan</a> <a title="youthstrike4climate" target="_blank" href="https://www.tiktok.com/tag/youthstrike4climate">#youthstrike4climate</a> <a title="schoolstrikeforclimate" target="_blank" href="https://www.tiktok.com/tag/schoolstrikeforclimate">#schoolstrikeforclimate</a> <a title="fridaysforfuture" target="_blank" href="https://www.tiktok.com/tag/fridaysforfuture">#fridaysforfuture</a> <a title="xryouth" target="_blank" href="https://www.tiktok.com/tag/xryouth">#xryouth</a> <a title="sweden" target="_blank" href="https://www.tiktok.com/tag/sweden">#sweden</a> <a target="_blank" title="♬ The Greta Thunberg Song - Oli Frost" href="https://www.tiktok.com/music/The-Greta-Thunberg-Song-6891097417945450497">♬ The Greta Thunberg Song - Oli Frost</a> </section> </blockquote>
-</div>
+{% include youtube id="xdwXHTJyq94" thumb="/blog/greta-remake.jpg" %}
 
 ![](/blog/gretareel.jpg)
 

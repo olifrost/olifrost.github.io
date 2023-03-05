@@ -145,14 +145,6 @@ Based on 20 companies [behind more than a third of emissions](https://www.thegua
 
 ---
 
-## More #RefrostThePlanet
-
-[Oli Frost Refrosts The Planet](/refrost) is an online series that follows me, Oli Frost, and my plans to stop the earth defrosting.
-
-{% include poster-gallery.html path="posters/refrosttheplanet" %}
-
----
-
 {% include about.html %}
 
 ---

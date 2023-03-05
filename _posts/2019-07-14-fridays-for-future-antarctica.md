@@ -27,7 +27,5 @@ And then, followed by Greta Thunberg.
 ![](/blog/fridaysforfutureantarctica4.jpeg)
 
 
-{% include refrost-links %}
-
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script async src="//www.instagram.com/embed.js"></script>

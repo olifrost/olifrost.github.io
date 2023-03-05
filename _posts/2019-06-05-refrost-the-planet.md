@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: list
 title: I'm sorting out global climate change
 description: This is Oli Frost Refrosts The Planet.
 image: /blog/refrosttheplanet.jpg
@@ -17,9 +17,3 @@ permalink: /refrost/
 {% include youtube id="nRxJcj0qiQk" thumb="/blog/refrosttheplanet.jpg" %}
 
 **Oli Frost Refrosts The Planet** is an online series that follows me, Oli Frost, and my plans to stop the earth defrosting.
-
----
-
-{% include about.html %}
-
----

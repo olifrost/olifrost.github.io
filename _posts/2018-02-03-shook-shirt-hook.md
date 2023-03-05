@@ -56,4 +56,4 @@ SHOOK is now getting ready to launch.
 
 If you're a distributor or major fashion label, or would like a SHOOK yourself, [shoot me an email](mailto:mail@olifro.st)
 
-Or [follow me](https://twitter.com/olifro_st) for updates on the future of Shook.
+Or for more business ventures, check out my project [Flopstarter](/flopstarter).

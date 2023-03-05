@@ -14,7 +14,7 @@ playbuttoncolour: "rgb(122,197,48)"
 
 <!-- {% include refrost-style %} -->
 
-So as part of my mission to [Refrost The Planet](/refrost), I decided to help expand on their offering.
+So as part of my mission to Refrost The Planet, I decided to help expand on their offering.
 
 Starting with sex, drugs, and crime.
 
@@ -48,6 +48,6 @@ And most recently, lockdown
 
 {% include youtube id="T9oX3DvAjFk" %}
 
-Want more Little Tips? Check the [YouTube Playlist](https://www.youtube.com/watch?v=3VTb5GsVS-A&list=PLg7ku87sG6Ndq7NP0mhu707v36iiwMj0H)
+
 
 {% include refrost-links %}
