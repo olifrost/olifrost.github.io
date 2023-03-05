@@ -9,7 +9,11 @@ carousel-items: 1
 
   h6 {
     text-align: center;
-    font-size: 5rem;
+    font-size: 4rem;
+  }
+
+  a {
+    white-space: nowrap;
   }
 
 </style>
@@ -29,11 +33,27 @@ carousel-items: 1
 
 ---
 
+# Other climate projects
+
+<div class="posts" markdown="0">
+  {% assign projects = site.data.refrost %}
+  {% for item in projects | limit: 3 %}
+        {% include project.html project=item %}
+  {% endfor %}
+</div>
+
+---
+
+###### Show me [more climate projects](/refrost/)
+
+
+---
+
 # Past stuff
 
 <div class="posts" markdown="0">
   {% assign projects = site.data.portfolio %}
-  {% for item in projects %}
+  {% for item in projects | limit: 3 %}
         {% include project.html project=item %}
   {% endfor %}
 </div>
@@ -41,12 +61,6 @@ carousel-items: 1
 
 ---
 
-# Even more stuff
-
-{% include featured-post.html %}
-
----
-
-###### Show me [everything](/blog/)
+###### Show me [more past stuff](/archive/)
 
 ---
