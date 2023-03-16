@@ -19,19 +19,35 @@
 
 - title: Vegenerator  
   description: A site that can generate nearly a million plant-based recipe ideas.
-  image: /blog/vegenerator.png
+  image: /blog/vegenerator-screen.jpg
   video: gVBcRqwkTTc
   link: https://olifro.st/vegenerator/
+
+- title: Climate Prophet
+  description: I predicted how people would die, based on their favourite cereal
+  image: /blog/olifrost-prophet.jpg
+  link: /blog/how-you-die-from-climate-change
+
+- title: Greenpeace Work
+  description: I became a presenter for Greenpeace
+  image: /blog/greenpeace-shell.jpg
+  link: /blog/oli-frost-with-greenpeace-uk
+
+- title: Climate Changercise
+  description: For Earth Day, and Leg Day
+  image: /blog/climatechangercise.jpg
+  link: /blog/climate-changercise
 
 - title: Bribe Boris
   description: My attempt to bribe Boris Johnson, post-COP26.
   image: /blog/boris3.jpeg
   link: /blog/bribe-boris
 
-- title: Climate Changercise
-  description: For Earth Day, and Leg Day
-  image: /blog/climatechangercise.jpg
-  link: /blog/climate-changercise
+- title: Wikipedia Vandal
+  description: I vandalised the Wikpedia page for bacon
+  image: /blog/this-wikipedia-14.jpeg
+  link: /blog/this/
+  press: wikipediabacon
 
 - title: The Oli Frost Carbon Offset Scheme
   description: For every like or comment, I'll give up cheese for one hour.
@@ -53,16 +69,3 @@
   description: A playlist I made that is used at climate strikes and marches
   image: /blog/thatswhaticallclimatechange.jpg
   link: /now-thats-what-i-call-climate-change
-
-
-- title: Domestic Rebellion
-  description: I drink a Gin and Tonic and call the police about my stay-at-home protest movement.
-  image: /blog/domesticrebellion.jpg
-  link: /domestic-rebellion/
-  video: Af5Fk8wVfOU
-
-- title: Refrosting At Home
-  description: Small documentaries with huge consequences
-  image: /blog/refrosting-at-home.jpg
-  link: /blog/refrosting-at-home
-  video: Af5Fk8wVfOU

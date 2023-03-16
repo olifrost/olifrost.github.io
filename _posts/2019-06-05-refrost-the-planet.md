@@ -14,6 +14,6 @@ permalink: /refrost/
 {% endfor %}
 </div>
 
-{% include youtube id="nRxJcj0qiQk" thumb="/blog/refrosttheplanet.jpg" %}
+<!--{% include youtube id="nRxJcj0qiQk" thumb="/blog/refrosttheplanet.jpg" %}
 
-**Oli Frost Refrosts The Planet** is an online series that follows me, Oli Frost, and my plans to stop the earth defrosting.
+**Oli Frost Refrosts The Planet** is an online series that follows me, Oli Frost, and my plans to stop the earth defrosting.-->

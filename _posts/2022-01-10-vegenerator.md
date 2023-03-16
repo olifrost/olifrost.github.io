@@ -2,7 +2,7 @@
 title: I made an unintelligent recipe generator
 layout: post
 description: Behold the <a href="https://olifro.st/vegenerator"> Vegenerator</a>.
-image: /blog/vegenerator.png
+image: /blog/vegenerator-screen.jpg
 videos: gVBcRqwkTTc
 featured: yes
 ---
@@ -15,7 +15,7 @@ So we decided to put that theory to the test.
 
 [Vegenerator](https://olifro.st/vegenerator) uses uncomplex non-machine learning to generate completely new and untested recipes.   
 
-{% include youtube id="gVBcRqwkTTc" thunb="/blog/vegenerator.png" %}
+{% include youtube id="gVBcRqwkTTc" thunb="/blog/vegenerator-screen.jpg" %}
 
 These have not been passed down through generations. 
 

@@ -6,7 +6,7 @@ image: /blog/howyoudie/olifrost-psychic.jpeg
 featured: yes
 ---
 
-*Want to know how you die? You can now [commission your own reading](https://ko-fi.com/olifrost/commissions)*
+*Now available as a reward on my [Patreon](https://patreon.com/olifrost)*
 
 <iframe width="608" height="1080" src="https://www.youtube.com/embed/feDznTJsJeI" title="Comment with your name and what you had for breakfast; I’ll tell you how you die from climate change" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

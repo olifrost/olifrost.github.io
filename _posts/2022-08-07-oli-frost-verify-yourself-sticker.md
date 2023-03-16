@@ -1,0 +1,8 @@
+---
+title: I verified myself on social media
+layout: post
+description: It's all thanks to the Oli Frost Verify Yourself sticker
+shortsong: yes
+---
+
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@olifro.st/video/7131774164419022086" data-video-id="7131774164419022086" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@olifro.st" href="https://www.tiktok.com/@olifro.st?refer=embed">@olifro.st</a> I hacked TikTok! …kind of. Don’t like how I say GIF? See you in the comments. <a title="verified" target="_blank" href="https://www.tiktok.com/tag/verified?refer=embed">#verified</a> <a title="getverified" target="_blank" href="https://www.tiktok.com/tag/getverified?refer=embed">#getverified</a> <a title="tiktok" target="_blank" href="https://www.tiktok.com/tag/tiktok?refer=embed">#tiktok</a> <a title="tiktokhacks" target="_blank" href="https://www.tiktok.com/tag/tiktokhacks?refer=embed">#tiktokhacks</a> <a title="tiktokhack" target="_blank" href="https://www.tiktok.com/tag/tiktokhack?refer=embed">#tiktokhack</a> <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp?refer=embed">#fyp</a> <a title="humour" target="_blank" href="https://www.tiktok.com/tag/humour?refer=embed">#humour</a> <a title="humor" target="_blank" href="https://www.tiktok.com/tag/humor?refer=embed">#humor</a> <a title="tiktokhumor" target="_blank" href="https://www.tiktok.com/tag/tiktokhumor?refer=embed">#tiktokhumor</a> <a target="_blank" title="♬ original sound - Oli Frost" href="https://www.tiktok.com/music/original-sound-7131774175400954629?refer=embed">♬ original sound - Oli Frost</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
