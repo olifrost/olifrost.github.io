@@ -10,7 +10,13 @@ carousel-items: 1
   h6 {
     text-align: center;
     font-size: 4rem;
+
   }
+
+  h6 a {
+    white-space: nowrap;
+  }
+
 
 
 </style>
@@ -26,7 +32,7 @@ carousel-items: 1
 
 ---
 
-###### Show me [more songs](/songs/)
+###### Show me more [songs](/songs/)
 
 ---
 
@@ -41,7 +47,7 @@ carousel-items: 1
 
 ---
 
-###### Show me [more climate projects](/refrost/)
+###### Show me more [climate projects](/refrost/)
 
 
 ---
@@ -58,6 +64,6 @@ carousel-items: 1
 
 ---
 
-###### Show me [more past stuff](/archive/)
+###### Show me more [past stuff](/archive/)
 
 ---
