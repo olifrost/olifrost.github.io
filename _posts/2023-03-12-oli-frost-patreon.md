@@ -1,5 +1,5 @@
 ---
-title: I launched an Patreon
+title: I launched a Patreon
 layout: post
 description: It's all part of my evil plot…
 image: /blog/oli-frost-patreon.jpg
