@@ -32,7 +32,7 @@ footer {
   }
 
 
-// Project Sectinos
+// Project Sections 
 .posts {
   margin-top: 3rem;
 }
@@ -120,15 +120,12 @@ footer .social {
   float: left;
 }
 
+.pages {
+  float: none
+}
 
 
 @media only screen and (min-width: $first-breakpoint) {
-
-    .pages {
-      float: none;
-
-    }
-
 
     footer .social, header .social {
       position: relative;
@@ -159,6 +156,11 @@ footer input[type='submit'] {
 
 @media only screen and (max-width: $first-breakpoint) {
 
+.pages {
+  float: left
+}
+
+
   header .social {
     float: left;
   }
@@ -178,6 +180,40 @@ footer .social {
 
 
 }
+
+
+// Pages Bar
+
+.pages {
+  float: left
+}
+
+.navigation {
+  margin-top: 1.5rem;
+  
+}
+
+@media only screen and (min-width: $first-breakpoint) {
+
+.pages {
+  float: left
+}
+
+.navigation {
+  margin-top: 0rem;
+  
+}
+
+}
+
+@media only screen and (min-width: $second-breakpoint) {
+
+.pages {
+  float: none
+}
+
+}
+
 
 // Icons
 

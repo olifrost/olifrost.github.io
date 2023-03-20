@@ -12,9 +12,6 @@ carousel-items: 1
     font-size: 4rem;
   }
 
-  a {
-    white-space: nowrap;
-  }
 
 </style>
 
