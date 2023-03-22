@@ -1,11 +1,26 @@
 <footer id="footer">
+
   <div class="row">
 
-    <div class="col-xs-12 col-sm-5 footer-social center-xs">
-        {% include social.html %}
+      <div class="col-xs-12 col-sm-7 mailing-list">
+              <div class="row">
+        <div class="col-xs start-xs">
+           {% include social.html %}
+       </div>
+      </div>
+    
     </div>
-    <div class="col-xs-12 col-sm-7 footer">
-<a href="{% link noprivacy.md %}">No Privacy Policy</a> | &copy; Oliver Frost, Ollie Frost, Olly Frost, or <span class="nw">however you misspelt it.</span>
+    <div class="col-xs-12 col-sm-5 col-md ">
+    <div class="row first-xs end-sm">
+        <div class="col-xs ">
+           {% include contact.html %}
+       </div>
+  </div>
+      </div>
+  <div class="row disclaimer">
+    <div class="col-xs-12 first-xs">
+      <a href="{% link noprivacy.md %}">No Privacy Policy</a> &copy; Site by Oliver Frost, Ollie Frost, Olly Frost, or however you misspelt it.
     </div>
+
   </div>
 </footer>

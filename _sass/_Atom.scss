@@ -18,20 +18,6 @@
 	text-align: center;
 }
 
-// Footer
-
-/*main div:last-child p {
-  margin-bottom: 0rem;
-}*/
-
-footer {
-  margin-top: 3.5rem;
-  color: $gray-3;
-  margin-bottom: 2rem;
-  text-align: left;
-  }
-
-
 // Project Sections 
 .posts {
   margin-top: 3rem;
@@ -96,107 +82,59 @@ header {
 }
 
 .name {
-  float: left;
   margin-bottom: 0rem;
-
 }
 .pages {
   line-height: 2.5rem;
   margin-bottom: 0rem;
-  float: right;
+  
 }
-
 .nw {
   white-space: nowrap;
 }
 
-
-
-header .social {
-    float: right;
+.disclaimer {
+  text-align: left;
+  margin-top: 2rem;
 }
 
-footer .social {
-  float: left;
-}
-
-.pages {
-  float: none
-}
+// Footer
 
 
-@media only screen and (min-width: $first-breakpoint) {
 
-    footer .social, header .social {
-      position: relative;
-      bottom: 1rem;
-    }
-
-}
-
-footer .social .icons {
-  position: relative;
-  bottom: -0.6em;
-  margin-right: 1rem;
-}
-
-/*
-footer input[type='submit'] {
-	position: relative;
-  top: -0px;
-  left: -2rem;
-  border-top-left-radius: 0rem;
-  border-bottom-left-radius: 0rem;
-}
-*/
-
-.footer {
-  text-align: right;
-}
-
-@media only screen and (max-width: $first-breakpoint) {
-
-.pages {
-  float: left
-}
-
-
-  header .social {
-    float: left;
-  }
-  .footer {
-    text-align: left;
+footer {
+  margin-top: 3.5rem;
+  color: $gray-3;
+  margin-bottom: 2rem;
+  text-align: left;
   }
 
-.footer-social {
-  -webkit-box-ordinal-group: 0;
-  -ms-flex-order: -1;
-  order: -1;
-}
-footer .social {
-  margin-bottom: 2.5rem;
-}
 
-
-
-}
 
 
 // Pages Bar
 
-.pages {
-  float: left
-}
 
 .navigation {
   margin-top: 1.5rem;
-  
+}
+
+.mailing-list {
+  margin-bottom: 2.5rem;
+}
+
+.social  {
+    float:left;
 }
 
 @media only screen and (min-width: $first-breakpoint) {
 
-.pages {
-  float: left
+    .social {
+        float: right;
+    }
+
+.mailing-list {
+  margin-bottom: 0rem;
 }
 
 .navigation {
@@ -206,90 +144,83 @@ footer .social {
 
 }
 
-@media only screen and (min-width: $second-breakpoint) {
+/* Press */
 
-.pages {
-  float: none
+/* Icons */
+
+.social {
+  position: relative; 
+  top: -0.5em;
 }
 
+.social a {
+    margin-right: 1em;
 }
-
-
-// Icons
 
 .icon {
-    display: inline-block;
-    height: 3rem;
-    width: 3rem;
-    position: relative;
-    bottom: 0.5rem;
+    display: inline-flex;
+    align-self: center;
+    
+}
 
-    svg {
-        width: 100%;
-        height: 100%;
-        path {
-            fill: $black;
-        }
-    }
+.icon svg, .icon img {
+    height: 1.5em;
+    width: 1.5em;
+    fill: black;
+    
+}
+
+.icon.baseline svg, .icon img {
+    top: .125em;
+    position: relative;
 }
 
 
 .icon--twitter, .icon--instagram, .icon--mail, .icon--facebook, .icon--youtube, .icon--spotify, .icon--tiktok {
-  height: 3rem;
-  width: 3rem;
-  bottom: -0.0rem;
-  margin-right: 0rem
-}
 
+}
 
 .icon--mail {
+}
 
-  height: 3.7rem;
-  width: 5.6rem;
-  bottom: -0.45rem;
+.icon--instagram { 
+}
+
+.icon--youtube svg {
+ 
+width: 1.6em;
+height: 2.3em;
+bottom: -0.35em;
+    position: relative;
+    
+}
+
+.icon--spotify svg {  
+}
+
+.icon--tiktok svg {
 
 }
 
-.icon--instagram {
-  height: 2.7rem;
-  width: 2.7rem;
+.icon--twitter {
+  
 }
-
-.icon--youtube {
-  height: 2.7rem;
-  width: 2.7rem;
-}
-
-.icon--spotify {
-  height: 2rem;
-  width: 2rem;
-  margin-left: 1.5rem;
-  bottom: 0.42rem;
-}
-
-.icon--tiktok {
-  height: 2rem;
-  width: 2rem;
-  margin-left: 1.5rem;
-  bottom: 0.42rem;
-}
-
-.icon--twitter, .icon--youtube {
-  margin-right: 1rem;
-  bottom: -0.15rem;
-}
-.icon:last-child {
-  /*margin-right: 0;*/
+.social a:last-child {
+  margin-right: 0;
 }
 
 small a:first-child {
   /*margin-right: 1rem;*/
 }
 
-.press {
-  color: $gray-2;
+@media screen and (max-width: 20em) {
+.icon--twitter {
+  display: none;
 }
-.partner {
-  font-size: 2rem;
+.social a:nth-last-child(3) {
+  margin-right: 0;
+}
 
 }
+
+

@@ -10,40 +10,55 @@ permalink: /links
 h2 a:hover {
   color:  #020cfa;
 }
-
-
-.svg-icon {
-  display: inline-flex;
-  align-self: center;
+.social {
+  justify-content: center;
+  bottom: 0em;
 }
-.svg-icon svg {
-  height:1.5em;
-  width:1.5em;
+
+@media screen and (max-width: 20em) {
+  .icon--twitter, .icon--mail {
+    display: none;
 }
-.svg-icon.svg-baseline svg {
-  top: .125em;
+.social a:nth-last-child(2) {
+  margin-right: 0;
+}
+
+.tree li a .icon-baseline {
   position: relative;
+  
 }
+}
+
+.video-svg {
+    transform: translateY(1px) !important;
+} 
+
+
+
 
 </style>
 
 <h2><a href="https://olifro.st">oli<span>fro.st</span></a></h2>
 
-<small class="social">
+<div class="row">
+<div class="col-xs-12">
+{% include contact.html %}
 
-  {% include icon-youtube.html username=site.author.instagram %}
-  {% include icon-instagram.html username=site.author.instagram %}
-  {% include icon-spotify.html username=site.author.spotify %}
-  {% include icon-tiktok.html username=site.author.tiktok %}
-  {% include icon-twitter.html username=site.twitter.username %}
-</small>
+</div>
+</div>
 
 
 <ul class="tree">
 {% for item in site.data.links.docs %}
 <li>
-  <a href="{{ item.url }}" alt="{{ item.title }}">
-    {{ item.title }}</a> 
+  <a href="{{ item.url }}" title="{{ item.title }}">
+    <span class="icon-baseline">
+      {{ item.icon }}
+    </span>
+    <span class="text">
+      {{ item.title }}
+    </span>
+  </a> 
 </li>
 {% endfor %}
 </ul>

@@ -9,29 +9,44 @@ layout: compress
 <body>
     <header>
         <div class="container">
-
-
           <div class="row first-xs between-sm">
             <div class="col-xs-12 col-sm-3 col-md">
-              <h3 class="name"><a {% for item in site.data.subpages.docs %}{% if item.url == page.url %}class="subpage"{% endif %}{% endfor %} href="{{ site.baseurl }}/">olifro.st</a>{% for item in site.data.subpages.docs %}{% if item.url == page.url %}<a href="{{ item.url }}" alt="{{ item.title }}">/{{ item.title }}</a>{% endif %}{% endfor %}</h3>
+
+              <div class="row">
+                    <div class="col-xs start-xs">
+                       <h3 class="name"><a {% for item in site.data.subpages.docs %}{% if item.url == page.url %}class="subpage"{% endif %}{% endfor %} href="{{ site.baseurl }}/">olifro.st</a>{% for item in site.data.subpages.docs %}{% if item.url == page.url %}<a href="{{ item.url }}" alt="{{ item.title }}">/{{ item.title }}</a>{% endif %}{% endfor %}</h3>
+                   </div>
+                  </div>
+
+
+
+
             </div>
+
             <div class="col-xs-12 col-sm-4 col-md navigation">
-              <ul class="pages">
+                <div class="row start-xs center-sm">
+        <div class="col-xs">
+                         <ul class="pages">
               {% for item in site.data.pages.docs %}<li class="{% if item.url == page.url %}active{% endif %}"><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>{% endfor %}
             </ul>
+       </div>
+      </div>
+
+
             </div>
-            <div class="col-xs-12 col-sm-5 col-md">
-                {% include contact.html %}
+            <div class="col-xs-12 col-sm-5 col-md ">
+
+                          <div class="row first-xs end-sm">
+        <div class="col-xs ">
+           {% include contact.html %}
+       </div>
+      </div>      
+                
             </div>
           </div>
-
-
-
           </div>
-
         </div>
     </header>
-
     <div class="container">
         <main class="content">
             
@@ -41,6 +56,5 @@ layout: compress
     </div>
 
     {% include javascript.html %}
-
 
 </body>

@@ -1,20 +1,25 @@
-<small class="social">
+<div class="social">
+    
+ 
 
   {% include icon-youtube.html username=site.author.instagram %}
-  {% if site.twitter.username %}
-  {% include icon-twitter.html username=site.twitter.username %}
-{% endif %}
-{% if site.author.instagram %}
-  {% include icon-instagram.html username=site.author.instagram %}
-{% endif %}
-{% if site.author.spotify %}
-  {% include icon-spotify.html username=site.author.spotify %}
-{% endif %}
-{% if site.author.tiktok %}
-  {% include icon-tiktok.html username=site.author.tiktok %}
-{% endif %}
 
-{% if site.author.email %}
-  {% include icon-mail.html username=site.author.email %}
-{% endif %}
-</small>
+         {% include icon-spotify.html username=site.author.spotify %}
+
+
+
+  {% include icon-instagram.html username=site.author.instagram %}
+
+
+
+  {% include icon-tiktok.html username=site.author.tiktok %}
+
+ 
+ {% include icon-twitter.html username=site.twitter.username %}
+
+    
+     {% include icon-mail.html username=site.author.email %}
+
+
+
+</div>
