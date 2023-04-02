@@ -21,8 +21,6 @@ carousel-items: 1
 
 </style>
 
-Hey, I'm doing an AMA on Reddit today (April 2nd, from 1.30pm GMT)
-
 {% include opening %}
 
 <div class="posts" markdown="0">
