@@ -14,9 +14,9 @@ So in the week before Cannes, I repurposed my first forray into programming, the
 
 And out of cowardice, released it with anonymity.
 
-[>> Visit Archived Site](https://olifro.st/grandprixgenerator)
+[>> Visit Archived Site](https://olifro.st/grandprixgenerator).
 
-But even with a generator you can't win Cannes every hybridtechcar
+But even with a generator you can't win Cannes every time.
 
 So a few years later, I expanded the service.
 
