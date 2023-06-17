@@ -1,7 +1,7 @@
 ---
-title: I put a cardbox computer on my head
+title: I'm letting AI take my job
 layout: post
-description: I am artificially intelligent
+description: We've got better things to do
 image: /blog/https://img.youtube.com/vi/Q5j2nBpiigU/hqdefault.jpg 
 videos: true
 ---
