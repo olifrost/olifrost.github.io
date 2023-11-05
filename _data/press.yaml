@@ -15,9 +15,11 @@ greta:
 
 the-vampire-conspiracy:
 
-- name: 15 Million Video Views
-- name: 2.5 Million Streams
+- name: 16 Million Video Views
+- name: 3 Million Streams
 - name: Sky News, TRT World, ABC, Greenpeace, Extinction Rebellion
+- name: "Canary Media"
+  article_link: 'https://www.canarymedia.com/articles/fun-stuff/meet-the-novelty-songwriter-producing-viral-hits-about-climate-change'
 
 the-dragon-of-climate-change:
 - name: 3 Million Video Views
@@ -267,14 +269,14 @@ wikipediabacon:
 # thermal-management:
 # - name: Mention
 
-if-dinosaurs-saw-the-asteroid:
-- name: Mention
+#if-dinosaurs-saw-the-asteroid:
+#- name: Mention
 
 earthlyfans:
 - name: IndieTimes
   article_link: https://www.indiatimes.com/trending/social-relevance/man-makes-onlyfans-for-planet-earth-601464.html
 
 # barbie-please-don't break my plastic heart:wear clothes:
-- name: Mention
-the-vampire-conspiracy-i-ii:
-- name: Mention
+#- name: Mention
+#the-vampire-conspiracy-i-ii:
+#- name: Mention

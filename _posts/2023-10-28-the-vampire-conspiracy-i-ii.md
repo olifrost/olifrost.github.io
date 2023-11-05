@@ -9,10 +9,9 @@ press: the-vampire-conspiracy
 
 {% include youtube id='ABf0op0I-Ac' thumb='https://img.youtube.com/vi/ABf0op0I-Ac/maxresdefault.jpg' %}
 
-Video for Part II coming soon.
+{% include youtube id='LrGyc2gXbxY' thumb='https://img.youtube.com/vi/LrGyc2gXbxY/maxresdefault.jpg' %}
 
 [Stream](https://olifro.st/stream) or [buy this track](https://olifrost.bandcamp.com) anywhere you like, if you like 
-
 
 
 ## The Vampire Conspiracy (Part I) Lyrics
