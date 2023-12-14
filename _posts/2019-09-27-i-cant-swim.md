@@ -22,7 +22,7 @@ The account I made for them gained 25,000 followers in a month, and I made [a si
 
 {% include poster-gallery.html path="bestof" %}
 
-The new posters used by organisations like [Greenpeace](https://www.instagram.com/p/B5XqpxPjSU8/), offered press space in The Times, and translated into several different languages.
+The new posters were used by organisations like [Greenpeace](https://www.instagram.com/p/B5XqpxPjSU8/), offered press space in The Times, and translated into several different languages.
 
 {% include poster-gallery.html path="results" %}
 
