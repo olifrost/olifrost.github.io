@@ -2,7 +2,7 @@
 title: I spent 66 million years as a dinosaur ghost
 layout: post
 description: It wasn't great, I'll be honest
-image: /blog/https://img.youtube.com/vi/P0bCYnu8YKE/hqdefault.jpg 
+image: https://img.youtube.com/vi/P0bCYnu8YKE/hqdefault.jpg 
 videos: true
 # press: if dinosaurs saw the asteroid
 ---

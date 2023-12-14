@@ -26,19 +26,55 @@
   video: 1DVeV8oJB7A
   press: getadrink
 
+- title: Wear Clothes
+  description: You're not a hypocrite…
+  image: https://img.youtube.com/vi/zy4fHBA8NKc/maxresdefault.jpg 
+  link: /blog/wear-clothes
+  video: zy4fHBA8NKc
+
+- title: The Magic Fix
+  description: It's finally here!
+  image: /blog/themagicfix.jpg
+  link: /blog/the-magic-fix
+  video: cxvvrwqNhvI
+# press: the magic fix
+
+- title: The Vampire Conspiracy (Part II)
+  description: Now it's more evil ever
+  image: https://img.youtube.com/vi/LrGyc2gXbxY/maxresdefault.jpg 
+  video: LrGyc2gXbxY
+  link: /blog/the-vampire-conspiracy
+
+- title: Barbie Plase Don't Break My Plastic Heart
+  description: I wrote a song for the Barbie movie…
+  image: https://img.youtube.com/vi/VtR8H8diOro/maxresdefault.jpg 
+  link: /blog/barbie-please-don't-break-my-plastic-heart
+  video: VtR8H8diOro
+
+- title: If Dinosaurs Saw The Asteroid
+  description: I spent 66 millions years on this
+  image: https://img.youtube.com/vi/P0bCYnu8YKE/maxresdefault.jpg 
+  video: P0bCYnu8YKE
+  link: /blog/if-dinosaurs-saw-the-asteroid
+  
+- title: Thermal Management
+  description: AI doesn't even want your job
+  link: /blog/thermal-management/
+  video: Q5j2nBpiigU
+
+- title: The Greta Thunberg Song
+  description: A song about Greta, feta, and why the ocean is getting wetter.
+  image: /blog/GretaThunbergSong.jpg
+  link: /blog/the-greta-thunberg-song
+  video: e553WB239fo
+  press: greta
+
 - title: Windy Wendy
   description: Just a story about my love life…?
   image: /blog/windywendy.jpg
   link: /blog/windy-wendy
   video: KlTd1hi08DI
   press: windywendy
-
-- title: Eco Anxiety (Emo Animosity)
-  description: Being an emo used to be so easy…
-  image: /blog/ecoanxiety.jpeg
-  link: /blog/eco-anxiety-emo-animosity
-  video: wQigoj-9Ijs
-  press: ecoanxiety
 
 - title: Alien Love
   description: An intergalactic tale about cows
@@ -47,12 +83,12 @@
   video: 0Towd26Qm34
   press: alienlove
 
-- title: The Greta Thunberg Song
-  description: A song about Greta, feta, and why the ocean is getting wetter.
-  image: /blog/GretaThunbergSong.jpg
-  link: /blog/the-greta-thunberg-song
-  video: e553WB239fo
-  press: greta
+- title: Eco Anxiety (Emo Animosity)
+  description: Being an emo used to be so easy…
+  image: /blog/ecoanxiety.jpeg
+  link: /blog/eco-anxiety-emo-animosity
+  video: wQigoj-9Ijs
+  press: ecoanxiety
 
 - title: The Greenhouse Gas Emissions Breakdown
   description: I turned global emissions data into a synth-pop ballad.

@@ -2,7 +2,7 @@
 title: I tried nudism
 layout: post
 description: Then regretted it
-image: /blog/https://img.youtube.com/vi/zy4fHBA8NKc/hqdefault.jpg 
+image: https://img.youtube.com/vi/zy4fHBA8NKc/hqdefault.jpg 
 videos: true
 # press: wear clothes
 ---

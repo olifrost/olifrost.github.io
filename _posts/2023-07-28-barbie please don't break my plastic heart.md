@@ -2,7 +2,7 @@
 title: I wrote a song for the Barbie movie
 layout: post
 description: They didn't use it…
-image: /blog/https://img.youtube.com/vi/VtR8H8diOro/hqdefault.jpg 
+image: https://img.youtube.com/vi/VtR8H8diOro/hqdefault.jpg 
 videos: true
 # press: barbie please don't break my plastic heart
 ---

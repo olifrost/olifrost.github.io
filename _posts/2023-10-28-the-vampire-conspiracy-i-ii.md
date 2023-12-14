@@ -2,7 +2,7 @@
 title: I returned to The Vampire Conspiracy
 layout: post
 description: Now it's more evil ever
-image: /blog/https://img.youtube.com/vi/ABf0op0I-Ac/hqdefault.jpg 
+image: https://img.youtube.com/vi/ABf0op0I-Ac/hqdefault.jpg 
 videos: true
 press: the-vampire-conspiracy
 ---

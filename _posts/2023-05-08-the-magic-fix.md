@@ -1,8 +1,9 @@
 ---
-title: I found the magic fix to climate change
+title: I found out what AI really wants
 layout: post
-description: It's just decades off or maybe more
-image: /blog/themagicfix.jpg
+description: We've got better things to do
+image: https://img.youtube.com/vi/Q5j2nBpiigU/hqdefault.jpg 
+videos: true
 videos: true
 ---
 
