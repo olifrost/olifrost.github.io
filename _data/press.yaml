@@ -246,18 +246,15 @@ globalcliamtestrike:
 - name: 'The Times'
   article_link: 'posters/bestof/2.jpeg'
 
-
 edibleleaflets:
 
 - name: Evening Standard
   article_link: 'https://www.standard.co.uk/lifestyle/foodanddrink/edible-leaflets-food-waste-campaign-a3689071.html'
 
-
 cannesfaker:
 
 - name: Adweek
   article_link: 'http://lifefaker.com/cannes/'
-
 
 wikipediabacon:
 
@@ -266,18 +263,29 @@ wikipediabacon:
 - name: BoingBoing
   article_link: 'https://boingboing.net/2021/09/15/plant-based-meat-company-vandalizes-the-bacon-wikipedia-article.html'
 
+earthlyfans:
+- name: IndieTimes
+  article_link: 'https://www.indiatimes.com/trending/social-relevance/man-makes-onlyfans-for-planet-earth-601464.html'
+
+atmospheric:
+
+- name: The Drum
+  article_link: 'https://www.thedrum.com/news/2023/11/23/why-fake-agency-pitching-saudi-aramco-s-account'
+- name: AdWeek
+  article_link: 'https://www.adweek.com/media/5-times-activists-roasted-adlands-fossil-fuel-addiction-during-the-hottest-year-ever/'
+- name: The Drum Op-Ed
+  article_link: 'https://www.thedrum.com/opinion/2023/12/15/solve-advertisings-real-climate-crisis-we-must-fire-all-the-activists'
+
+
+
 # thermal-management:
 # - name: Mention
 
 #if-dinosaurs-saw-the-asteroid:
 #- name: Mention
 
-earthlyfans:
-- name: IndieTimes
-  article_link: https://www.indiatimes.com/trending/social-relevance/man-makes-onlyfans-for-planet-earth-601464.html
-
 # barbie-please-don't break my plastic heart:wear clothes:
 #- name: Mention
 #the-vampire-conspiracy-i-ii:
-#- name: Mentionatmospheric:
-- name: Mention
+#- name: Mention
+# old white man
