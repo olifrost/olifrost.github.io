@@ -101,3 +101,16 @@
   image: /blog/dontcrysanta.jpg
   link: /blog/dont-cry-santa
   video: BDS9-LUz3SU
+
+- title: Celebritrees
+  description: Because every tree is a VIP
+  image: /blog/celebritrees.jpg
+  link: /blog/celebritrees
+  video: Iu55EKgHWWg
+# press: celebritrees
+- title: Old White Man
+  description: The doctors say I've just a few years left
+  image: https://img.youtube.com/vi/VgXGsgcqTkI/hqdefault.jpg 
+  link: /blog/old-white-man
+  video: LrGyc2gXbxY
+# press: old-white-man

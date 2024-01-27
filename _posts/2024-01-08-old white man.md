@@ -1,7 +1,7 @@
 ---
 title: I received a very serious diagnosis
 layout: post
-description: The doctor's say I've just a few years left
+description: The doctors say I've just a few years left
 image: /blog/old-white-man.jpg
 videos: true
 # press: old white man
