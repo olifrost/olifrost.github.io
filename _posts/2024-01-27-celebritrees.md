@@ -9,7 +9,7 @@ videos: true
 
 
 
-{% include youtube id='https://www.youtube.com/watch?v=Iu55EKgHWWg' thumb='/blog/celebritrees.jpg' %}[Stream](https://olifro.st/stream) or [buy this track](https://olifrost.bandcamp.com) anywhere you like, if you like 
+{% include youtube id='Iu55EKgHWWg' thumb='/blog/celebritrees.jpg' %}[Stream](https://olifro.st/stream) or [buy this track](https://olifrost.bandcamp.com) anywhere you like, if you like 
 
 ## Celebritrees Lyrics
 Sometime in the future we can talk to trees   
