@@ -7,7 +7,9 @@ videos: e553WB239fo
 tiktok: true
 ---
 
-{% include youtube id="e553WB239fo" thumb="/blog/GretaThunbergSong.jpg" %}
+Like this on YouTube video to vote for it the in climate song contest
+
+{% include youtube id="N2w6qAZfOtM" thumb="/blog/GretaThunbergSong.jpg" %}
 
 The actual Greta's shot for shot remake!
 
