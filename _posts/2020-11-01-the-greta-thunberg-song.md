@@ -7,7 +7,7 @@ videos: e553WB239fo
 tiktok: true
 ---
 
-Like this on YouTube video to vote for it the in climate song contest
+Like this on YouTube video to vote for it in the climate song contest
 
 {% include youtube id="N2w6qAZfOtM" thumb="/blog/GretaThunbergSong.jpg" %}
 
