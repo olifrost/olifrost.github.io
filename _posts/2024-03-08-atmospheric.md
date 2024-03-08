@@ -8,6 +8,10 @@ press: atmospheric
 
 Visit [atmospheric.agency](https://www.atmospheric.agency)
 
+Or watch the summary film here:
+
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7171472352516497408" height="727" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+
 ![](/blog/atmospheric-billboard.jpg)
 ![](/blog/atmospheric-juststopoil.jpg)
 ![](/blog/atmospheric-website.jpg)

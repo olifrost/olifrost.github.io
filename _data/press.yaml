@@ -256,6 +256,11 @@ cannesfaker:
 - name: Adweek
   article_link: 'http://lifefaker.com/cannes/'
 
+
+instagreen:
+- name: Instagreen
+  article_link: https://www.newsbytesapp.com/news/lifestyle/instagreen-fake-life-on-instagram/story
+
 wikipediabacon:
 
 - name: UNILAD
@@ -268,15 +273,19 @@ earthlyfans:
   article_link: 'https://www.indiatimes.com/trending/social-relevance/man-makes-onlyfans-for-planet-earth-601464.html'
 
 atmospheric:
-
+- name: 500,000+ Vists on LinkedIn
+  article_link: 'https://www.campaignasia.com/article/its-only-greenwashing-if-you-get-caught/493907'
 - name: The Drum
   article_link: 'https://www.thedrum.com/news/2023/11/23/why-fake-agency-pitching-saudi-aramco-s-account'
 - name: AdWeek
   article_link: 'https://www.adweek.com/media/5-times-activists-roasted-adlands-fossil-fuel-addiction-during-the-hottest-year-ever/'
+- name: Campaign
+  article_link: 'https://www.thedrum.com/opinion/2023/12/15/solve-advertisings-real-climate-crisis-we-must-fire-all-the-activists'
 - name: The Drum Op-Ed
   article_link: 'https://www.thedrum.com/opinion/2023/12/15/solve-advertisings-real-climate-crisis-we-must-fire-all-the-activists'
 
-
+greenpeace:
+  - name: 5 Million Video Views
 
 # thermal-management:
 # - name: Mention
