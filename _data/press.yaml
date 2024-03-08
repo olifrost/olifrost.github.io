@@ -279,7 +279,9 @@ atmospheric:
   article_link: 'https://www.thedrum.com/news/2023/11/23/why-fake-agency-pitching-saudi-aramco-s-account'
 - name: AdWeek
   article_link: 'https://www.adweek.com/media/5-times-activists-roasted-adlands-fossil-fuel-addiction-during-the-hottest-year-ever/'
-- name: Campaign
+- name: Marketing Beat 
+  article_link: 'https://www.marketing-beat.co.uk/2024/01/30/carbon-neutral-stunt-glimpse/'  
+- name: Campaign Op-Ed
   article_link: 'https://www.thedrum.com/opinion/2023/12/15/solve-advertisings-real-climate-crisis-we-must-fire-all-the-activists'
 - name: The Drum Op-Ed
   article_link: 'https://www.thedrum.com/opinion/2023/12/15/solve-advertisings-real-climate-crisis-we-must-fire-all-the-activists'
