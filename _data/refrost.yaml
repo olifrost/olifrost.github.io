@@ -4,7 +4,6 @@
   link: /blog/atmospheric
   press: atmospheric
 
-
 - title: Global Climate Strike
   description: A series of posters I made for the global climate strikes.
   link: /blog/i-cant-swim
@@ -17,8 +16,6 @@
   link: /blog/oli-frost-with-greenpeace-uk
   press: greenpeace
 
-image: /blog/earthlyfans.jpg
-
 - title: Instagreen
   description: "Fake an un-ecofriendly online life. Formerly <a href='https://olifro.st/lifefaker'>Lifefaker.com</a>"
   image: /blog/instagreen.jpg
@@ -26,13 +23,13 @@ image: /blog/earthlyfans.jpg
   video: VMzxaZy7hh0
   press: lifefaker
 
-
 - title: EarthlyFans
   description: "I made an OnlyFans for Planet Earth"
   image: /blog/earthlyfans.jpg
   link: /earth-only-fans
   video: VMzxaZy7hh0
   press: earthlyfans
+  image: /blog/earthlyfans.jpg
 
 
 - title: Little Tips From Lambeth Council
