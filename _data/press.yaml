@@ -195,6 +195,8 @@ flopstarter:
   article_link: 'https://news.ycombinator.com/item?id=17059575'
 - name: 'Reddit'
   article_link: 'https://www.reddit.com/r/humor/comments/79owkg/flopstarter_a_platform_for_bad_ideas/'
+- name: 'Academic Paper'
+  article_link: 'https://www.usenix.org/system/files/soups21-abstract-poster89-soonthornsawad.pdf'
 
 lifefaker:
 
@@ -233,6 +235,8 @@ globalcliamtestrike:
   article_link: 'https://www.instagram.com/p/B5XqpxPjSU8/'
 - name: '350.org'
   article_link: 'https://twitter.com/350/status/1173310522596438017'
+- name: 'Academic Paper'
+  article_link: 'https://journals.sagepub.com/doi/10.1177/09579265231222005'
 - name: 'Upworthy'
   article_link: 'https://www.instagram.com/p/B2oKK7PARL5/'
 - name: 'I Weigh'

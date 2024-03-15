@@ -30,7 +30,7 @@ I was born London but I'm currently [seeking citizenship in São Tomé](/blog/sa
 I do. I'd get help from friends, but they're [harder to make](/refer).
 
 ## Tell me some meaningless numbers to quantify your importance?
-250k followers, 25 million views, 1 person recognising me in Franco Manca
+260k followers, 30 million views, 1 person recognising me in Franco Manca
 
 ## Will you do a thing for me?
 I'm short on hands (just two) but [send me an email](mailto:mail@olifro.st), I'll consider anything…
