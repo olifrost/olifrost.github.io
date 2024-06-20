@@ -32,18 +32,39 @@
   link: /blog/wear-clothes
   video: zy4fHBA8NKc
 
-- title: The Magic Fix
-  description: It's finally here!
-  image: /blog/themagicfix.jpg
-  link: /blog/the-magic-fix
-  video: cxvvrwqNhvI
-# press: the magic fix
+- title: Celebritrees
+  description: Because every tree is a VIP
+  image: /blog/celebritrees.jpg
+  link: /blog/celebritrees
+  video: Iu55EKgHWWg
+# press: celebritrees
 
 - title: The Vampire Conspiracy (Part II)
   description: Now it's more evil ever
   image: https://img.youtube.com/vi/LrGyc2gXbxY/maxresdefault.jpg 
   video: LrGyc2gXbxY
   link: /blog/the-vampire-conspiracy
+
+- title: Old White Man
+  description: The doctors say I've just a few years left
+  image: https://img.youtube.com/vi/VgXGsgcqTkI/maxresdefault.jpg 
+  link: /blog/old-white-man
+  video: LrGyc2gXbxY
+# press: old-white-man
+
+- title: Demons of Oil
+  description: (Song of Witches)
+  image: https://img.youtube.com/vi/6MfVwUV5_zU/maxresdefault.jpg 
+  link: /blog/demons-of-oil
+  video: 6MfVwUV5_zU
+# press: demons of oil
+
+- title: The Magic Fix
+  description: It's finally here!
+  image: /blog/themagicfix.jpg
+  link: /blog/the-magic-fix
+  video: cxvvrwqNhvI
+# press: the magic fix
 
 - title: Barbie Plase Don't Break My Plastic Heart
   description: I wrote a song for the Barbie movie…
@@ -102,15 +123,3 @@
   link: /blog/dont-cry-santa
   video: BDS9-LUz3SU
 
-- title: Celebritrees
-  description: Because every tree is a VIP
-  image: /blog/celebritrees.jpg
-  link: /blog/celebritrees
-  video: Iu55EKgHWWg
-# press: celebritrees
-- title: Old White Man
-  description: The doctors say I've just a few years left
-  image: https://img.youtube.com/vi/VgXGsgcqTkI/hqdefault.jpg 
-  link: /blog/old-white-man
-  video: LrGyc2gXbxY
-# press: old-white-man
