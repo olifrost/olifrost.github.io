@@ -25,7 +25,7 @@ carousel-items: 1
 
 <div class="posts" markdown="0">
   {% assign projects = site.data.songs %}
-  {% for item in projects | limit: 3 %}
+  {% for item in projects limit: 3 %}
         {% include project.html project=item %}
   {% endfor %}
 </div>
@@ -40,7 +40,7 @@ carousel-items: 1
 
 <div class="posts" markdown="0">
   {% assign projects = site.data.refrost %}
-  {% for item in projects | limit: 3 %}
+  {% for item in projects limit: 3 %}
         {% include project.html project=item %}
   {% endfor %}
 </div>
@@ -56,7 +56,7 @@ carousel-items: 1
 
 <div class="posts" markdown="0">
   {% assign projects = site.data.portfolio %}
-  {% for item in projects | limit: 3 %}
+  {% for item in projects limit: 3 %}
         {% include project.html project=item %}
   {% endfor %}
 </div>
