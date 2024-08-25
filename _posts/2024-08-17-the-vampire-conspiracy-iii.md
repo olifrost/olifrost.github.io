@@ -7,7 +7,7 @@ videos: true
 # press: the-vampire-conspiracy-iii
 ---
 
-{% include youtube id='Kqe3PKGcGkY' thumb='blog/mesmerise.jpg' %}[Stream](https://olifro.st/stream) or [buy this track](https://olifrost.bandcamp.com) anywhere you like, if you like 
+{% include youtube id='Kqe3PKGcGkY' thumb='https://img.youtube.com/vi/N2w6qAZfOtM/Kqe3PKGcGkY.jpg' %}[Stream](https://olifro.st/stream) or [buy this track](https://olifrost.bandcamp.com) anywhere you like, if you like 
 
 ## The Vampire Conspiracy (Part III) Lyrics
 Socialist vampires     

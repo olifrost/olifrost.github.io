@@ -44,6 +44,13 @@
   image: https://img.youtube.com/vi/LrGyc2gXbxY/maxresdefault.jpg 
   video: LrGyc2gXbxY
   link: /blog/the-vampire-conspiracy
+  
+- title: The Vampire Conspiracy (Part III)
+  description: Look in my undead eyes
+  image: https://img.youtube.com/vi/Kqe3PKGcGkY/maxresdefault.jpg 
+  link: /blog/blog/the-vampire-conspiracy-iii
+  video: Kqe3PKGcGkY
+  press: mesmerise
 
 - title: Old White Man
   description: The doctors say I've just a few years left
@@ -123,16 +130,4 @@
   link: /blog/dont-cry-santa
   video: BDS9-LUz3SU
 
-- title: The Vampire Conspiracy (Part III)
-  description: Look in my undead eyes
-  image: https://img.youtube.com/vi/Kqe3PKGcGkY/maxresdefault.jpg 
-  link: /blog/blog/the-vampire-conspiracy-iii
-  video: Kqe3PKGcGkY
-# press: mesmerise
 
-- title: Mesmerise
-  description: 
-  image: https://img.youtube.com/vi/Kqe3PKGcGkY/maxresdefault.jpg 
-  link: /blog/mesmerise
-  video: Kqe3PKGcGkY
-# press: mesmerise

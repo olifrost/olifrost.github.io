@@ -1,7 +1,7 @@
 ---
 layout: product
-title: Mesmerise
+title: The Vampire Conspiracy (Part III)
 description: Look in my undead eyes
 image: the-vampire-conspiracy-iii
-bandcamp: https://olifrost.bandcamp.com/track/mesmerise
+bandcamp: https://olifrost.bandcamp.com/track/the-vampire-conspiracy-part-iii
 ---
