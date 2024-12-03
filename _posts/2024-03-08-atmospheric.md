@@ -2,7 +2,7 @@
 title: I launched a fake ad agency
 layout: post
 description: Atmospheric helps Keep the Fire Burning™
-image: /blog/atmospheric-billboard.jpeg
+image: ttps://img.youtube.com/vi/HPhMaCrCnqM/maxresdefault.jpg
 videos: true
 press: atmospheric
 ---

@@ -2,7 +2,7 @@
 title: I've been mesmerising people
 layout: post
 description: In The Vampire Conspiracy (Part III)
-image: blog/mesmerise.jpg
+image: /blog/mesmerise.jpg
 videos: true
 # press: the-vampire-conspiracy-iii
 ---

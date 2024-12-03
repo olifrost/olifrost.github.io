@@ -5,6 +5,20 @@
   video: HPhMaCrCnqM
   press: atmospheric
 
+- title: Asset Manager Quest
+  description: I made a video game to help asset managers move away from fossil fuels
+  image: blog/amq-1.jpg
+  link: /blog/asset-manager-quest
+  video: aR4uwKnGxf4
+  press: asset-manager-quest
+
+- title: Ogilvyland – Fossil Fuel Funfair
+  description: I built a theme park to expose an ad agency's fossil fuel connections
+  image: blog/ogilvyland-1.jpg
+  link: /blog/fossil-fuel-funfair
+  video: UBKe_6RXsko
+  press: fossil-fuel-funfair
+
 - title: Global Climate Strike
   description: A series of posters I made for the global climate strikes.
   link: /blog/i-cant-swim

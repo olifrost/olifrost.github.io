@@ -2,7 +2,7 @@
 title: I solved death's admin crisis
 layout: post
 description: Climate change is an administrative nightmare
-image: /blog/https://img.youtube.com/vi/yjhRPVtvybY/hqdefault.jpg 
+image: https://img.youtube.com/vi/yjhRPVtvybY/hqdefault.jpg 
 videos: true
 # press: deaths administrative nightmare
 ---

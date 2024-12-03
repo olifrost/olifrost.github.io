@@ -317,9 +317,41 @@ mesmerise:
 # - name: Mention
 # demons of oil:
 # - name: Mention
-# asset manager quest:
-# - name: Mention
+
+asset-manager-quest:
+- name: City AM
+  article_link: 'https://www.cityam.com/baillie-gifford-was-just-the-first-climate-protests-are-coming-for-asset-managers/'
+- name: Product Hunt
+  article_link: 'https://www.producthunt.com/products/asset-manager-quest'
+- name: CleanTechnica
+  article_link: 'https://cleantechnica.com/2024/09/15/asset-manager-quest-game-targets-idiotic-fossil-fuel-investments/'
+- name: NEN Press
+  article_link: 'https://nen.press/tag/asset-manager-quest-video-game/'
+- name: Insider
+  article_link: 'https://www.insider.co.uk/news/campaigners-challenge-abrdn-fossil-fuel-33112193'
+- name: Financial News London
+  article_link: 'https://www.fnlondon.com/articles/play-the-abrdn-video-game-and-meet-the-dishwasher-turned-fund-manager-81505b2d'
+  
 # naughtomations:
 # - name: Mention
 # deaths administrative nightmare:
 # - name: Mention
+
+fossil-fuel-funfair:
+- name: Campaign
+  article_link: 'https://www.campaignlive.co.uk/article/climate-activists-invite-people-ogilvyland-fossil-fuel-funfair/1890946'
+- name: PRWeek
+  article_link: 'https://www.prweek.com/article/1891161/climate-activists-target-wpp-fake-ogilvyland-email'
+- name: Adweek
+  article_link: 'https://www.adweek.com/agencies/ogilvy-clients-golden-ticket-ogilvyland-fossil-fuel-bp/'
+- name: Resume 
+  article_link: 'https://www.resume.se/affarer/byraer/ogilvys-fossilengagemang-hanas-pa-satirsajt/'
+- name: Wirtual Media
+  article_link: 'https://www.wirtualnemedia.pl/artykul/aktywisci-klimatyczni-atakuja-wpp-szef-holdingu-jako-iluzjionista'
+- name: Media Marketing
+  article_link: 'https://www.mm.be/news-fr-79642-ogilvyland-les-serious-people-trollent-wpp'
+- name: Brand New
+  article_link: 'https://www.underconsideration.com/brandnew/archives/adding_fire_to_the_fuel.php'
+
+
+
