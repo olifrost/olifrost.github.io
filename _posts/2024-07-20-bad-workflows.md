@@ -1,6 +1,6 @@
 ---
 layout: site
-title: I made an app that makes you less productive
+title: I made a macro that makes you less productive
 header: Escape the cult of productivity
 tagline: Bad Workflows
 description: Tools to make your Mac harder to use
@@ -139,7 +139,7 @@ color: #FEFEFE;
 
   <div class="row first-xs between-sm buttons downloads">
         <div class="col-xs-12">
-      <a href="https://ko-fi.com/s/567c69f8ec" class="button"><i class="fas fa-arrow-down"></i> Download</a>
+      <a href="https://github.com/olifrost/bad-workflows" class="button"><i class="fas fa-arrow-down"></i> Download</a>
       <p markdown="1" id="requirements">Requires <a href="https://www.alfredapp.com">Alfred Powerpack</a>, Mac OS13+</p>
       </div>
     </div>
@@ -153,7 +153,7 @@ color: #FEFEFE;
   <div class="col-xs-12 col-sm-4" markdown="1">
 
 ### <i class="fa-regular fa-copy"></i> Copy text, badly
-Add a human touch to your Copy/Paste, with randomly generated errors.
+Add a human touch to your copy/paste, with randomly generated errors.
 
   </div>
 
@@ -184,7 +184,7 @@ Moves the selected file to a random location on your disk, making it harder to f
 
   <div class="col-xs-12 col-sm-4" markdown="1">
 ### <i class="fas fa-user-circle"></i> Human Stupidity™
-Let me be your personal assistant. I'm both imprecise, and slow to reply.
+Let me be your personal assistant. I'm imprecise, unhelpful, and slow to reply.
   </div>
 </div>
 <div class="row first-xs between-sm">
