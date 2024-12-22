@@ -130,7 +130,7 @@ color: #FEFEFE;
 
   <div class="row first-xs between-sm video">
       <div class="col-xs-12 image-holder">
-          <img src="blog/bar.png">
+          <img src="/blog/badworkflows.png">
       </div>
       <div class="col-xs-12 center">
       <p class="center description">From forgetful reminders, to AutoMistake™, Bad Workflows is a collection of tools that make your Mac harder to use</p>
