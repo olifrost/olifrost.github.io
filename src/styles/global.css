@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+    --font-display: "Calibre", "sans-serif";
+}
+
+:root {
+    --accent: 35, 55, 255;    
+}
+
+/* Font faces */
+@font-face {
+    font-family: 'Calibre';
+    src: url('/fonts/Calibre-Light.otf') format('opentype'),
+         url('/fonts/Calibre-Light.woff') format('woff'),
+         url('/fonts/Calibre-Light.ttf') format('truetype'),
+         url('/fonts/Calibre-Light.svg#Calibre-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Calibre;
+    src: url('/fonts/calibre-semibold-webfont.eot');
+    src: url('/fonts/calibre-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/calibre-semibold-webfont.woff') format('woff'),
+         url('/fonts/calibre-semibold-webfont.ttf') format('truetype'),
+         url('/fonts/calibre-semibold-webfont.svg#calibresemibold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+article lite-youtube {
+    margin-bottom: calc(var(--spacing)* 8);
+}
+
+a {
+    text-decoration: none;
+}
+
+.link-preview {
+ --link-preview-corners: 0.5em;
+ --link-preview-width: 40em;
+  --link-preview-padding-inline: 0.75rem;
+  @apply bg-neutral-50 text-neutral-600 border-1 border-neutral-100;
+}
+.link-preview img {
+    @apply rounded-b-none;
+}
+.link-preview a {
+    @apply text-blue-600;
+  font-weight: bold;
+  text-decoration: none;
+}

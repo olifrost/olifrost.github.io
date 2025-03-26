@@ -1,0 +1,94 @@
+---
+import Layout from '@layouts/Layout.astro';
+import ProjectSection from '@components/ProjectSection.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { getCollection } from 'astro:content';
+import { getBlogUrl } from '../utils/urls';
+
+// Get all projects
+const allProjects = await getCollection('blog');
+
+// Filter projects by category (manual selection by frontmatter)
+const songProjects = allProjects
+  .filter(project => project.data.homepageCategory === 'songs')
+  .sort((a, b) => (a.data.homepageOrder || 0) - (b.data.homepageOrder || 0))
+  .slice(0, 3);
+
+const featuredProjects = allProjects
+  .filter(project => project.data.homepageCategory === 'climate')
+  .sort((a, b) => (a.data.homepageOrder || 0) - (b.data.homepageOrder || 0))
+  .slice(0, 3);
+
+const archiveProjects = allProjects
+  .filter(project => project.data.homepageCategory === 'archive')
+  .sort((a, b) => (a.data.homepageOrder || 0) - (b.data.homepageOrder || 0))
+  .slice(0, 3);
+
+// Fallback to show the most recent projects if no manual selection is available
+const recentProjects = allProjects
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const displaySongs = songProjects.length > 0 ? songProjects : recentProjects.filter(p => p.data.tags?.includes('music')).slice(0, 3);
+const displayFeatured = featuredProjects.length > 0 ? featuredProjects : recentProjects.slice(0, 3);
+const displayArchive = archiveProjects.length > 0 ? archiveProjects : recentProjects.slice(3, 6);
+const recentThreeProjects = recentProjects.slice(0, 3);
+---
+
+<style>
+    a {
+        color: var(--color-blue-600);
+        text-decoration: none;
+    }
+    a:hover {
+        color: var(--color-blue-800);
+    }
+
+</style>
+
+<Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+    <section class="mb-12">
+        <div class="text-2xl max-w-6xl mb-12 space-y-6 transition-all">
+            <p>
+                I'm Oli Frost, the guy who makes novelty songs, films and websites about the climate crisis.
+                Greta Thunberg <a href={getBlogUrl('the-greta-thunberg-song')}>did the macarena to one of them</a>.
+            </p>
+            <p>
+                My work has been featured everywhere from <a href={getBlogUrl('thehomelessperiod')}>UK Parliament</a> to 
+                <a href={getBlogUrl('recorda-boi')}>Britain's Got Talent</a>, 
+                <a href={getBlogUrl('lifefaker')}>BBC</a> to 
+                <a href={getBlogUrl('data-on-ebay')}>Fox News</a>, in 
+                <a href={getBlogUrl('latitude')}>music festivals</a>, 
+                <a href="/blog/refer-a-friend">art shows</a>, and 
+                <a href="/blog/little-tips">on bins</a>.
+            </p>
+            <p>
+                Recent Projects: {recentThreeProjects.map((project, index) => (
+                    <>
+                        <a href={getBlogUrl(project.id)}>{project.data.title}</a>
+                        {index < recentThreeProjects.length - 1 && (
+                            <>{index === recentThreeProjects.length - 2 ? ' and ' : ', '}</>
+                        )}
+                    </>
+                ))}
+            </p>
+        </div>
+    </section>
+    
+    <ProjectSection 
+        title="Music" 
+        viewAllLink="/tags/music" 
+        projects={displaySongs} 
+    />
+    
+    <ProjectSection 
+        title="Featured Projects" 
+        viewAllLink="/tags/climate" 
+        projects={displayFeatured} 
+    />
+    
+    <ProjectSection 
+        title="From the archive" 
+        viewAllLink="/blog" 
+        projects={displayArchive} 
+    />
+</Layout>

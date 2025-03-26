@@ -1,0 +1,87 @@
+---
+import OptimizedYouTube from './OptimizedYouTube.astro';
+import type { ImageMetadata } from 'astro';
+
+interface VideoItem {
+  title?: string;
+  description?: string;
+  image?: string | ImageMetadata | `@assets/${string}`;
+  video?: string;
+  link?: string;
+}
+
+interface Props {
+  videos: VideoItem[];
+}
+
+const { videos } = Astro.props;
+---
+
+
+<div class="video-collection not-prose grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  {videos.map(video => (
+    <article class="w-full">
+      {video.video ? (
+        <div>
+          <div class="w-full overflow-hidden rounded-lg mb-4 transition-shadow hover:shadow-lg aspect-video relative">
+            <OptimizedYouTube
+              id={video.video}
+              poster={video.image || ''}
+              class="rounded-lg"
+            />
+          </div>
+          {video.title && (
+            <div class="block group">
+              <h2 class="text-2xl font-bold mb-2 text-black">
+                {video.link ? (
+                  <a href={video.link} target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 transition-colors">
+                    {video.title}
+                  </a>
+                ) : (
+                  video.title
+                )}
+              </h2>
+            </div>
+          )}
+        </div>
+      ) : (
+        <div class="block group">
+          {video.image && (
+            <div class="w-full overflow-hidden rounded-lg mb-4 transition-shadow group-hover:shadow-lg aspect-video relative">
+              {typeof video.image === 'string' && video.image.startsWith('@assets/') ? (
+                <img 
+                  src={`${video.image}`} 
+                  alt={video.title || ''}
+                  class="w-full h-full object-cover absolute inset-0 transition-transform duration-300 group-hover:scale-[1.02]"
+                />
+              ) : (
+                <img 
+                  src={typeof video.image === 'string' ? video.image : ''}
+                  alt={video.title || ''}
+                  class="w-full h-full object-cover absolute inset-0 transition-transform duration-300 group-hover:scale-[1.02]"
+                />
+              )}
+            </div>
+          )}
+          {video.title && (
+            <h2 class="text-2xl font-bold mb-2 text-black">
+              {video.link ? (
+                <a href={video.link} target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 transition-colors">
+                  {video.title}
+                </a>
+              ) : (
+                video.title
+              )}
+            </h2>
+          )}
+        </div>
+      )}
+      
+      {video.description && (
+        <div class="text-lg leading-snug mt-2">
+          <p class="mb-0">{video.description}</p>
+        </div>
+      )}
+    </article>
+  ))}
+</div>

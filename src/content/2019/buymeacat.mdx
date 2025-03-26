@@ -1,0 +1,76 @@
+---
+title: "If you like my work, you can buy me a cat"
+description: "It's only £17,000"
+image: "@assets/2019/cat.jpg"
+date: "2019-12-05"
+projectType: "product"
+tags: [other]
+---
+import { Image } from 'astro:assets';
+import catImage from '@assets/2019/cat.jpg';
+
+{/* Import Font Awesome directly in this page */}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<div className="bg-white text-black min-h-screen font-sans">
+  <div className="container mx-auto px-4 py-12">
+    {/* Hero Section */}
+    <div className="text-center mb-8">
+      <h1 className="text-4xl md:text-5xl font-medium animate-fadeIn opacity-0">Buy Me A Cat</h1>
+      <p className="text-xl md:text-2xl animate-fadeIn opacity-0">Support my work. It's only £17,000.</p>
+      
+      <div className="flex justify-center gap-4 mt-8 animate-fadeIn opacity-0">
+        <a href="https://ko-fi.com/olifrost" 
+           className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded transition-colors inline-flex items-center">
+          <i className="fas fa-cat mr-2"></i> Buy Cat
+        </a>
+        <a href="https://ko-fi.com/olifrost" 
+           className="bg-transparent hover:bg-gray-100 text-blue-600 border border-blue-600 font-bold py-3 px-6 rounded transition-colors inline-flex items-center">
+          <i className="fas fa-leaf mr-2"></i> Buy Plant Instead
+        </a>
+      </div>
+    </div>
+
+    <div className="mb-12">
+      <div className="py-4 px-4 text-center">
+        <Image src={catImage} className="mx-auto animate-fadeIn opacity-0" alt="Cat" />
+      </div>
+    </div>
+
+    {/* Features */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+      <div className="animate-fadeIn opacity-0">
+        <h3 className="text-xl mb-3"><i className="fas fa-money-bill-alt text-blue-600 mr-2"></i> Cheap</h3>
+        <p className="text-base">It's only £17,000 for the lifetime cost so you can think of it as like buying me a few beers or coffees.</p>
+      </div>
+
+      <div className="animate-fadeIn opacity-0">
+        <h3 className="text-xl mb-3"><i className="fas fa-paw text-blue-600 mr-2"></i> Small Pawprint</h3>
+        <p className="text-base">Ok cats do have a large carbon footprint but the happiness will likely prevent other reckless consumerism in my life.</p>
+      </div>
+
+      <div className="animate-fadeIn opacity-0">
+        <h3 className="text-xl mb-3"><i className="fas fa-leaf text-blue-600 mr-2"></i> Plant-Based Alternative</h3>
+        <p className="text-base">Otherwise, please <a href="https://ko-fi.com/olifrost" className="text-blue-600 hover:text-blue-800">buy me a plant</a>. I am currently shopping for small succulents, and Chinese money plants.</p>
+      </div>
+    </div>
+
+    <hr className="border-gray-300 mb-12" />
+  </div>
+</div>
+
+<style>
+{`
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 2s forwards;
+  animation-delay: 0.5s;
+}
+`}
+</style>

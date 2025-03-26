@@ -1,0 +1,36 @@
+{
+  "name": "olifrost",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^4.2.0",
+    "@astrojs/rss": "^4.0.11",
+    "@astrojs/sitemap": "^3.2.1",
+    "@astrojs/svelte": "^7.0.6",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@iconify-json/lucide": "^1.2.29",
+    "@tailwindcss/vite": "^4.0.13",
+    "astro": "^5.5.2",
+    "astro-auto-import": "^0.4.4",
+    "astro-broken-link-checker": "github:imazen/astro-broken-link-checker",
+    "astro-embed": "^0.9.0",
+    "lite-youtube-embed": "^0.3.3",
+    "lucide-astro": "^0.479.0",
+    "lucide-static": "^0.479.0",
+    "svelte": "^5.23.0",
+    "svelte-carousel": "^1.0.25",
+    "tailwindcss": "^4.0.13",
+    "typescript": "^5.8.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16",
+    "astro-icon": "^1.1.5",
+    "rollup-plugin-visualizer": "^5.14.0"
+  }
+}

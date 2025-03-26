@@ -1,8 +1,0 @@
-{% include custom-style primary="#B2E1ED" text="#FEFEFE" background="#121922" hover="#8d8e93" backgroundimage="linear-gradient(#121922, #0C3E5C)" %}
-
-<style>
-
-svg .playbutton{fill: #B2E1ED !important;}
-svg .playtriangle{fill: #121922 !important;}
-
-</style>

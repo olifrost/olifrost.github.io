@@ -1,0 +1,61 @@
+---
+import { Icon } from 'astro-icon/components';
+
+interface Props {
+  title: string;
+  url: string;
+  icon?: string;
+  color?: string;  // Will support hex colors, Tailwind color variables, or CSS variable names
+  textColor?: string; // Optional text color override
+  isNested?: boolean;
+}
+
+const { 
+  title, 
+  url, 
+  icon, 
+  color = 'bg-black', // Default to Tailwind black
+  textColor = 'text-white', // Default text color
+  isNested = false 
+} = Astro.props;
+
+// Helper function to process color values
+const getColorStyle = (colorValue: string) => {
+  // If it starts with "color-", it's a Tailwind color variable
+  if (colorValue.startsWith('color-')) {
+    return `var(--${colorValue})`;
+  }
+  // If it's a hex without #, add the #
+  else if (colorValue.match(/^[0-9A-Fa-f]{6}$/)) {
+    return `#${colorValue}`;
+  }
+  // Otherwise return as is (could be a CSS variable or valid color)
+  return colorValue;
+};
+
+const bgColorStyle = getColorStyle(color);
+---
+
+<a
+  href={url}
+  target="_blank"
+  rel="noopener noreferrer"
+  class:list={[
+    'w-full flex items-center gap-3 p-6 rounded-sm mb-2 transition-all hover:-translate-y-1 hover:shadow-lg font-bold',
+    { 'text-sm p-2': isNested }
+  ]}
+  style={`background-color: ${bgColorStyle};`}
+  class={color.startsWith('bg-') ? color : ''} 
+>
+  {icon && (
+    <span class={textColor} class:list={["w-6 h-6"]}>
+      <Icon name={icon} class="w-6 h-6" />
+    </span>
+  )}
+  <span class:list={["flex-1", textColor]}>{title}</span>
+  {!isNested && (
+    <svg xmlns="http://www.w3.org/2000/svg" class:list={["w-4 h-4", textColor]} viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+    </svg>
+  )}
+</a>

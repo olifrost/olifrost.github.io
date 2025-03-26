@@ -1,0 +1,46 @@
+---
+import { type CollectionEntry, getCollection, getEntry, render } from 'astro:content';
+import Project from '../../layouts/Project.astro';
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => {
+    // Get just the filename without the year directory
+    const parts = post.id.split('/');
+    const slug = parts[parts.length - 1];
+    
+    return {
+      params: { slug },
+      props: { id: post.id },
+    };
+  });
+}
+
+// Get the full entry with the new API
+const { id } = Astro.props;
+const post = await getEntry('blog', id);
+
+// Handle case where post isn't found
+if (!post) {
+  throw new Error(`Project not found: ${id}`);
+}
+
+// Use the new render() function
+const { Content, headings } = await render(post);
+
+// Use projectType from frontmatter if specified, otherwise default to 'default'
+const projectType = post.data.projectType || 'default';
+---
+
+{projectType === 'standalone' ? (
+  <Content />
+) : projectType === 'product' ? (
+  <Layout title={post.data.title} description={post.data.description}>
+    <Content />
+  </Layout>
+) : (
+  <Project {...post.data}>
+    <Content />
+  </Project>
+)}

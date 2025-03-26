@@ -1,0 +1,102 @@
+---
+title: I made Halloween scary again
+description: "Fossil Ghouls is a range of printable, plastic-free masks for ages 3 and up."
+image: "@assets/2019/fossilghouls-cover.jpg"
+date: "2019-10-31"
+projectType: "product"
+tags: [climate]
+---
+
+{/* Import Font Awesome directly in this page */}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<div className="bg-[#141414] text-white min-h-screen font-sans">
+  <div className="container mx-auto px-4 py-12">
+    {/* Hero Section */}
+    <div className="text-center mb-0">
+      <h1 className="text-4xl md:text-6xl font-medium animate-fadeIn opacity-0 text-white">Fossil Ghouls</h1>
+      <p className="text-xl md:text-3xl animate-fadeIn opacity-0 text-white">The scariest masks on earth</p>
+    </div>
+
+    <div className="mb-0">
+      <div className="py-8 px-4 text-center">
+        <PosterGallery path="2019/fossilghouls/social" />
+      </div>
+    </div>
+
+    <div className="flex flex-col items-center mb-6">
+      <a href="https://ko-fi.com/s/567c69f8ec" 
+         className="bg-[#eb6123] hover:bg-[#c4511b] text-white font-bold py-3 px-6 rounded transition-colors animate-fadeIn opacity-0 inline-flex items-center">
+        <i className="fas fa-ghost mr-2 text-white"></i> <span className="text-white">Download</span>
+      </a>
+    </div>
+
+    <hr className="border-gray-600 mb-12" />
+
+    {/* Features */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+      <div className="animate-fadeIn opacity-0">
+        <h3 className="text-xl mb-3 font-bold text-white"><i className="fas fa-sticky-note text-[#eb6123] mr-2"></i> Plastic-Free</h3>
+        <p className="text-base text-white">Unless you print them on plastic.</p>
+      </div>
+
+      <div className="animate-fadeIn opacity-0">
+        <h3 className="text-xl mb-3 font-bold text-white"><i className="fas fa-ghost text-[#eb6123] mr-2"></i> Very Scary</h3>
+        <p className="text-base text-white">Scarier than plastic straws.</p>
+      </div>
+
+      <div className="animate-fadeIn opacity-0">
+        <h3 className="text-xl mb-3 font-bold text-white"><i className="fas fa-oil-can text-[#eb6123] mr-2"></i> Good Party Chat</h3>
+        <p className="text-base text-white">Based on 20 companies <a href="https://www.theguardian.com/environment/2019/oct/09/revealed-20-firms-third-carbon-emissions" className="text-[#eb6123] hover:text-gray-300">behind more than a third of emissions</a>.</p>
+      </div>
+    </div>
+
+    <hr className="border-gray-600 mb-12" />
+
+    <PosterGallery path="halloween" />
+
+
+    {/* Terms & Conditions */}
+    <div className="mb-12">
+      <h2 className="text-2xl mb-4 text-white">Terms and Conditions</h2>
+      <p className="text-sm text-white">You can use this non-commercially with attribution <a href="https://olifro.st/links" className="text-[#eb6123] hover:text-gray-300">@olifro.st</a>. If you get a toffee apple I want half. If you make friends <a href="/blog/refer-a-friend" className="text-[#eb6123] hover:text-gray-300">I want them</a>. You must make one small child cry.</p>
+    </div>
+  </div>
+</div>
+
+<style>
+{`
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 2s forwards;
+  animation-delay: 0.5s;
+}
+
+body {
+  background-color: #141414 !important;
+}
+
+/* Ensure all text is white */
+h1, h2, h3, h4, h5, h6, p, li, a.bg-[#eb6123], a.bg-[#eb6123] *, .text-white {
+  color: #FFFFFF !important;
+}
+svg {
+  fill: #FFFFFF !important;
+}
+
+/* Orange color only for specific elements */
+a:not(.bg-[#eb6123]), .text-[#eb6123] {
+  color: #eb6123 !important;
+}
+
+a:not(.bg-[#eb6123]):hover {
+  color: #8d8e93 !important;
+}
+`}
+</style>

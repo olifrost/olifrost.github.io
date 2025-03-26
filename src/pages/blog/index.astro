@@ -1,0 +1,20 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import { getCollection } from 'astro:content';
+import ProjectSummary from '../../components/ProjectSummary.astro';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+---
+
+<Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+	<h1 class="text-3xl font-bold mb-8 text-black">All Projects</h1>
+	
+	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+		{posts.map((post) => (
+			<ProjectSummary project={post} />
+		))}
+	</div>
+</Layout>

@@ -1,0 +1,10 @@
+---
+import LinkTreeLayout from '../layouts/LinkTreeLayout.astro';
+import LinkTree from '../components/LinkTree.svelte';
+import type { Link } from '../types/links';
+
+---
+
+<LinkTreeLayout title="Oli Frost - Links">
+  <LinkTree client:load />
+</LinkTreeLayout> 

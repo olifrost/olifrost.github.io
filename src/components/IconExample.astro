@@ -1,0 +1,41 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+
+<div class="flex flex-col gap-4 p-6 border border-gray-200 rounded-lg">
+  <h2 class="text-xl font-bold">Icon Usage Examples</h2>
+
+  <div class="flex items-center gap-4">
+    <!-- Use SVG files from src/icons directory -->
+    <div class="flex flex-col items-center">
+      <Icon name="twitter" class="w-8 h-8 text-blue-400" />
+      <span class="text-sm">Custom SVG (twitter.svg)</span>
+    </div>
+
+    <!-- Use icons from packages configured in astro.config.mjs -->
+    <div class="flex flex-col items-center">
+      <Icon name="lucide:youtube" class="w-8 h-8 text-red-500" />
+      <span class="text-sm">Lucide YouTube</span>
+    </div>
+
+    <div class="flex flex-col items-center">
+      <Icon name="lucide:instagram" class="w-8 h-8 text-pink-500" />
+      <span class="text-sm">Lucide Instagram</span>
+    </div>
+
+    <div class="flex flex-col items-center">
+      <Icon name="lucide:mail" class="w-8 h-8 text-gray-700" />
+      <span class="text-sm">Lucide Mail</span>
+    </div>
+  </div>
+
+  <div class="text-sm bg-gray-100 p-4 rounded mt-4">
+    <p><strong>How to use:</strong></p>
+    <pre class="text-xs mt-2">
+import { Icon } from 'astro-icon/components';
+
+&lt;Icon name="twitter" /&gt; <!-- from /src/icons/twitter.svg -->
+&lt;Icon name="lucide:youtube" /&gt; <!-- from Lucide package -->
+    </pre>
+  </div>
+</div>

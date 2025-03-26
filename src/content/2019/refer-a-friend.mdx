@@ -1,0 +1,212 @@
+---
+title: Get £15 when you refer me a friend
+description: "Looking for a friend? There's never been a better time to choose Oli Frost."
+image: "@assets/2019/refer/refer-thumb.jpg"
+date: "2019-10-13"
+video: nBfc_vfKKvc
+projectType: "product"
+
+---
+import { Image } from 'astro:assets'
+import loytaltyCard from '@assets/2019/refer/loyalty.jpg'
+import BFFCard from '@assets/2019/refer/forever.jpg'
+
+{/* Import Font Awesome directly in this page */}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<div className="bg-white text-black min-h-screen font-sans">
+  <div className="container mx-auto px-4 py-12">
+    {/* Hero Section */}
+    <div className="text-center mb-2">
+      <h1 className="text-4xl md:text-5xl font-bold  mb-4">
+        <span className="text-blue-600">Get £15</span> When You <span className="whitespace-nowrap">Refer Me</span> A Friend
+      </h1>
+      <p className="text-xl md:text-2xl ">
+        If we become friends, <span className="whitespace-nowrap">you both get £15<a href="#faq">*</a></span>.
+      </p>
+      
+      <div className="flex flex-wrap justify-center gap-4 mt-8 ">
+        <a href="https://www.instagram.com/p/B3pX7WdHJ75/" 
+           className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded transition-colors inline-flex items-center">
+          <span className="svg-icon mr-2"></span><i className="fab fa-instagram text-white mr-2"></i> Tag A Friend
+        </a>
+        <a href="mailto:?cc=mail@olifro.st&subject=This guy seems cool!&body=If%20you%20become%20friends%20we'll%20both%20get%20%C2%A315%20https%3A//olifro.st/refer" 
+           className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 animed transition-colors inline-flex items-center">
+          <span className="svg-icon mr-2"></span><i className="fas fa-envelope text-white mr-2"></i> Invite Friend
+        </a>
+      </div>
+    </div>
+
+    <div className="">
+      <div className="py-8 px-4 text-center">
+      <OptimizedYouTube id={frontmatter.video} poster="@assets/2019/refer/refer-video.jpg"/>
+      </div>
+    </div>
+
+    <div className="text-center mb-12">
+      <h3 id="counter" className="text-xl">
+        <i className="fas fa-user-tag text-blue-600 mr-2"></i> 
+        <span className="text-blue-600">
+          <a href="https://www.instagram.com/p/B3pX7WdHJ75/">600+</a> Friends Tagged
+        </span> 
+      </h3>
+    </div>
+
+    <hr className="border-gray-300 mb-12" />
+
+    {/* Features */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+      <div className="">
+        <h3 className="text-xl mb-3"><i className="fas fa-beer text-blue-600 mr-2"></i> Sensible Drinker</h3>
+        <p className="text-base">Oli Frost doesn't cry or get angry when drunk, and actually improves up to two pints.</p>
+      </div>
+
+      <div className="">
+        <h3 className="text-xl mb-3"><i className="far fa-smile text-blue-600 mr-2"></i> Non-Threatening</h3>
+        <p className="text-base">Oli Frost is unlikely to steal your friends or girlfriends or wife or mum.</p>
+      </div>
+
+      <div className="">
+        <h3 className="text-xl mb-3"><i className="fas fa-running text-blue-600 mr-2"></i> No Awkward Goodbyes</h3>
+        <p className="text-base">Oli Frost removes himself from social situations without a word – it's called a French exit.</p>
+      </div>
+    </div>
+
+    <hr className="border-gray-300 mb-12" />
+
+    <div className="mb-6">
+      <PosterGallery path="@assets/2019/refer-art" />
+      <p className="text-center text-xl italic mt-8">Finding friends at <a href="https://theglassroom.org/san-francisco" className="text-blue-600 hover:text-blue-800">The Glass Room</a> exhibit, San Francisco</p>
+    </div>
+
+    <hr className="border-gray-300 mb-12" />
+
+    {/* Offers for existing friends */}
+    <div className="mb-12">
+      <h2 className="text-2xl mb-6 text-center">Offers for <span className="whitespace-nowrap">existing friends</span></h2>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="">
+          <Image src={loytaltyCard} className="w-full mb-4" alt="Loyalty Card" />
+          <p className="mb-4">Remember when loyalty meant more than a free coffee? When we meet up for the first time you'll get a loyalty card and a smiley stamp, which you can collect to earn various non-sexual favours.</p>
+          <p><em>Say Hi:</em></p>
+        </div>
+        
+        <div className="">
+          <Image src={BFFCard} className="w-full mb-4" alt="BFF Card" />
+          <p className="mb-4">As exclusive as a Nandos Black Card, nobody knows how you get an Oli Frost Best Friend Forever Card. It gets you unlimited friendship for life and other exclusive benefits.</p>
+          <p><em>Invitation Only</em></p>
+        </div>
+      </div>
+    </div>
+
+    <hr className="border-gray-300 mb-12" />
+
+    {/* Reviews */}
+    <div className="mb-12">
+      <h2 className="text-2xl mb-6 text-center"><i className="fas fa-users text-blue-600 mr-2"></i> Reviews from satisfied friends</h2>
+      
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="">
+          <blockquote className="italic border-l-4 border-blue-600 pl-4 mb-2">
+            "Oli is so good to have as a friend because he never makes a decision about where to go, so you always get your own way. He also never asks to see you so there's literally no pressure."
+          </blockquote>
+          <cite className="text-sm">– Adela Nash, from work</cite>
+        </div>
+        
+        <div className="">
+          <blockquote className="italic border-l-4 border-blue-600 pl-4 mb-2">
+            "Oli is a great friend. He sneaks up on you when you least expect it, and always leaves you wanting more. He has a great fashion sense too, ask to see his collection of plain t-shirts."
+          </blockquote>
+          <cite className="text-sm">– Jamie Chang, from work</cite>
+        </div>
+        
+        <div className="">
+          <blockquote className="italic border-l-4 border-blue-600 pl-4 mb-2">
+            "Oli is always online; although he has disabled read receipts, he always replies promptly. This means that if you have any issues, he will (remotely) be there at all times."
+          </blockquote>
+          <cite className="text-sm">– Augustine Cerf, from work</cite>
+        </div>
+      </div>
+    </div>
+
+    <hr className="border-gray-300 mb-12" />
+
+    {/* FAQ */}
+    <div id="faq" className="mb-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <h3 className="text-xl mb-3">Who are you?</h3>
+          <p>I'm Oli Frost, here's some more about <a href="/about" className="text-blue-600 hover:text-blue-800">me</a>.</p>
+        </div>
+        
+        <div>
+          <h3 className="text-xl mb-3">How do you define "friend"?</h3>
+          <p>A friend is anyone who meets the <a href="#terms-and-conditions" className="text-blue-600 hover:text-blue-800">Friendship Terms and Conditions</a>, outlined at the bottom of this page.</p>
+        </div>
+        
+        <div>
+          <h3 className="text-xl mb-3">How do I make a referral?</h3>
+          <p>Any way you like, as long as there is a link back to this page. You can tag a friend on Instagram or Twitter, or send me an email.</p>
+        </div>
+        
+        <div>
+          <h3 className="text-xl mb-3">What if I see us as more than friends?</h3>
+          <p>This isn't a Frequently Asked Question, but unfortunately I've already <a href="/blog/gettygirlfriend" className="text-blue-600 hover:text-blue-800">found a girlfriend on Getty Images</a>.</p>
+        </div>
+        
+        <div>
+          <h3 className="text-xl mb-3">Why are you running this offer?</h3>
+          <p>I was very impressed by how Uber and Dropbox made friends like this. I also wanted friends.</p>
+        </div>
+        
+        <div>
+          <h3 className="text-xl mb-3">Where can I get my loyalty card?</h3>
+          <p>You can request these in person, or if you're in San Francisco, at <a href="https://theglassroom.org/san-francisco" className="text-blue-600 hover:text-blue-800">The Glass Room</a> exhibit from October 10th to November 3rd 2019.</p>
+        </div>
+      </div>
+    </div>
+
+    <hr className="border-gray-300 mb-12" />
+
+    {/* Support and Newsletter */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 text-center">
+      <div>
+        <h2 className="text-2xl mb-4"><i className="far fa-life-ring text-blue-600 mr-2"></i> Need support?</h2>
+        <p>Am I being a bad friend? Chat to me, our live support team, on <a href="https://instagram.com/olifro.st" className="text-blue-600 hover:text-blue-800">Instagram</a> or <a href="https://twitter.com/olifro_st" className="text-blue-600 hover:text-blue-800">Twitter</a> – and I'll get back to you in 4-7 working days.</p>
+      </div>
+      
+      <div>
+        <h2 className="text-2xl mb-4"><i className="fas fa-envelope-open text-blue-600 mr-2"></i> Hear about <span className="whitespace-nowrap">new offers</span></h2>
+      </div>
+    </div>
+
+    <hr className="border-gray-300 mb-12" />
+
+    {/* Terms & Conditions */}
+    <div id="terms-and-conditions" className="">
+      <h2 className="text-2xl mb-4">Terms and Conditions</h2>
+      <p className="text-sm">After your application to become a friend is received you will enter a pre-friend stage (acquaintance) until both parties are satisfied that the following conditions are reached (or would be reached, should the correct circumstances pertain). By applying you agree to being contacted with a friendly "Hi" to start proceedings but agree it would be better form if you said "Hi" first. Our conversations should continue for long enough for you to make one accidental video dial. You must reply to messages within three days unless you have been extremely busy or otherwise flat out. If it feels the conversation has come to an end you agree it would be polite to 'Like' the last message. You should occasionally send high-five or clapping hands to my Instagram Story. You agree not to comment on my posts with fire emoji and stick to colder emojis such as the frost snowflake. You must offer pity likes to unpopular Instagram posts. And pity laughs to unpopular anecdotes at social events. You must be ready to invite me to your birthday if you are having more than a small to medium sized thing. You must not be disappointed if I'm the first person to arrive at your small to medium sized thing. You must be comfortable with me borrowing a jumper for up to a week. You must be comfortable with unpaid debts of up to £5. You must be prepared to hold my beer for longer than one minute. If you have a spare ticket to something I'd enjoy, you must at least consider inviting me before choosing someone else. You must share at least ten impersonal facts about yourself, three fairly vulnerable ones, and one crushing truth that causes you sleep deprivation. Only one of these facts can be an inventive lie. You must be willing to look through one full photo album from my childhood (at best, this will be delivered as an interactive powerpoint presentation). On Mondays you should not feel obliged to ask how my weekend was because we're past that now. You must offer a list of six potential in-jokes that we can revel in conspiratorially as best friends. We must have one song that we both like that is not in the Top 40. You can correctly identify mannerisms that are like mine and use the expression "That's so Oli". You must be able to name one of my three cats. You must agree that my cat is a genius. In the pre-friend stage you may be tested on any of the above points at any time – should you fail to react or answer correctly you may have to wait a minimum of 14 days before friendship is re-evaluated. As an experienced friend, I'm very open to feedback. If you have any comments on the process, please put your thoughts in an email and send them to me. You are allowed to choose a preferred method to receive funds after completion, but not Venmo as I don't have that yet.</p>
+    </div>
+  </div>
+</div>
+
+<style>
+{`
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.{
+  animation: fadeIn 2s forwards;
+  animation-delay: 0.5s;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+`}
+</style>

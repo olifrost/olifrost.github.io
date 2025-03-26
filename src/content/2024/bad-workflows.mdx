@@ -1,0 +1,147 @@
+---
+title: 'I made a macro that makes you less productive'
+description: 'Tools to make your Mac harder to use'
+image: '@assets/2024/bad-workflows-cover.png'
+date: "2024-07-20"
+projectType: 'product'
+---
+import { Image } from 'astro:assets';
+import workflowImage from '@assets/2024/badworkflows.png';
+
+{/* Import Font Awesome directly in this page */}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<div className="bg-black text-white min-h-screen font-sans">
+  <div className="container mx-auto px-4 py-12">
+    {/* Hero Section */}
+    <div className="text-center mb-2">
+      <p className="font-semibold tracking-widest  text-white">Bad Workflows</p>
+      <h1 className="text-4xl md:text-6xl font-medium  text-white mb-2">Escape the cult of productivity</h1>
+    </div>
+
+    <div className="mb-4">
+      <div className="pt-2 mb-2 px-4 text-center">
+      
+        <Image src={workflowImage} className="mx-auto " alt="Bad Workflows" />
+      </div>
+      <div className="text-center">
+        <p className="text-2xl md:text-3xl font-semibold max-w-3xl mx-auto  text-white">
+          From forgetful reminders, to AutoMistake™, Bad Workflows is a collection of tools that make your Mac harder to use
+        </p>
+      </div>
+    </div>
+
+    <div className="flex flex-col items-center mb-12">
+      <a href="https://github.com/olifrost/bad-workflows" 
+         className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded transition-colors  inline-flex items-center">
+        <i className="fas fa-arrow-down mr-2 text-white"></i> <span className="text-white">Download</span>
+      </a>
+      <p className="text-sm mt-4 text-center text-white">
+        Requires <a href="https://www.alfredapp.com" className="text-purple-500 hover:text-gray-400">Alfred Powerpack</a>, Mac OS13+
+      </p>
+    </div>
+
+    <hr className="border-gray-600 mb-12" />
+
+    {/* Features - First Row */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+      <div>
+        <h3 className="text-xl mb-3 text-white"><i className="fas fa-copy text-purple-500 mr-2"></i> Copy text, badly</h3>
+        <p className="text-base text-white">Add a human touch to your copy/paste, with randomly generated errors.</p>
+      </div>
+
+      <div>
+        <h3 className="text-xl mb-3 text-white"><i className="fas fa-user-circle text-purple-500 mr-2"></i> Shutdown progress</h3>
+        <p className="text-base text-white">Opening apps like Zoom or Slack triggers an immediate system shutdown.</p>
+      </div>
+
+      <div>
+        <h3 className="text-xl mb-3 text-white"><i className="fas fa-stopwatch text-purple-500 mr-2"></i> Focus, briefly</h3>
+        <p className="text-base text-white">Set a focus timer that lasts seven seconds, before opening web games.</p>
+      </div>
+    </div>
+
+    {/* Features - Second Row */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+      <div>
+        <h3 className="text-xl mb-3 text-white"><i className="fab fa-pagelines text-purple-500 mr-2"></i> Touch grass</h3>
+        <p className="text-base text-white">Take some time off to experience the outdoors. Display an image of grass you can touch.</p>
+      </div>
+
+      <div>
+        <h3 className="text-xl mb-3 text-white"><i className="fas fa-folder text-purple-500 mr-2"></i> Unorganise your files</h3>
+        <p className="text-base text-white">Moves the selected file to a random location on your disk, making it harder to find.</p>
+      </div>
+
+      <div>
+        <h3 className="text-xl mb-3 text-white"><i className="fas fa-user-circle text-purple-500 mr-2"></i> Human Stupidity™</h3>
+        <p className="text-base text-white">Let me be your personal assistant. I'm imprecise, unhelpful, and slow to reply.</p>
+      </div>
+    </div>
+
+    {/* Features - Third Row */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 className="text-xl mb-3 text-white"><i className="fas fa-check text-purple-500 mr-2"></i> The worst to-do list</h3>
+        <p className="text-base text-white">Tasks you enter are deleted, or replaced with aimless pondering, and stargazing activities.</p>
+      </div>
+
+      <div>
+        <h3 className="text-xl mb-3 text-white"><i className="fa-solid fa-keyboard text-purple-500 mr-2"></i> AutoMistake™</h3>
+        <p className="text-base text-white">Replace the selected text to add common typos, like swapping "because" for "becuase"</p>
+      </div>
+
+      <div>
+        <h3 className="text-xl mb-3 text-white"><i className="fas fa-keyboard text-purple-500 mr-2"></i> Screaming space key</h3>
+        <p className="text-base text-white">Make your space key play the famous Wilhelm scream, discouraging work.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+{`
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+  background-color: #000000 !important;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.{
+  animation: fadeIn 2s forwards;
+  animation-delay: 1s;
+}
+
+/* Purple accent color for this specific product page */
+.text-purple-500 {
+  color: #A358D7;
+}
+.bg-purple-600 {
+  background-color: #A358D7;
+}
+.hover\\:bg-purple-700:hover {
+  background-color: #8d49bf;
+}
+
+/* Ensure all text is white */
+h1, h2, h3, h4, h5, h6, p, li, a.bg-purple-600, a.bg-purple-600 *, .text-white {
+  color: #FFFFFF !important;
+}
+
+/* Purple color only for specific elements */
+a:not(.bg-purple-600), .text-purple-500 {
+  color: #A358D7 !important;
+}
+
+a:not(.bg-purple-600):hover {
+  color: #8d8e93 !important;
+}
+`}
+</style>

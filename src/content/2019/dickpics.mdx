@@ -1,0 +1,94 @@
+---
+title: I sent all my contacts a dick pic
+description: "And you can too. Discover the world's first Dick Pic Repository."
+image: "@assets/2019/dickpic-cover.jpg"
+date: "2020-04-24"
+projectType: "product"
+tags: [other]
+---
+
+{/* Import Font Awesome directly in this page */}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<div className="bg-white text-black min-h-screen font-sans">
+  <div className="container mx-auto px-4 py-12">
+    {/* Hero Section */}
+    <div className="text-center">
+      <h1 className="text-4xl md:text-5xl font-bold animate-fadeIn opacity-0 leading-tight mb-4">Dick Pic Repository</h1>
+      <p className="text-xl md:text-2xl animate-fadeIn opacity-0">Free, image library for dicks</p>
+    </div>
+
+    <div className="">
+      <div className="py-8 px-4 text-center">
+        <PosterGallery path="@assets/2019/dickpics/pics" />
+      </div>
+    </div>
+
+    <div className="flex justify-center mb-6">
+      <a href="https://drive.google.com/drive/u/0/folders/1s8Qa2KcVvU6BCXgQIg2g6vCi_pSc1ovY" 
+         className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded transition-colors animate-fadeIn opacity-0 inline-flex items-center">
+        <i className="fas fa-user mr-2"></i> Download
+      </a>
+    </div>
+
+    <hr className="border-gray-300 mb-12" />
+
+    {/* Features */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+      <div className="animate-fadeIn opacity-0">
+        <h3 className="text-xl mb-3"><i className="fas fa-user text-blue-600 mr-2"></i> Over 12 Dicks</h3>
+        <p className="text-base">Young and old, big and small, alive and dead.</p>
+      </div>
+
+      <div className="animate-fadeIn opacity-0">
+        <h3 className="text-xl mb-3"><i className="far fa-smile text-blue-600 mr-2"></i> More Effective</h3>
+        <p className="text-base">Warmer reception than a traditional dick pic.</p>
+      </div>
+
+      <div className="animate-fadeIn opacity-0">
+        <h3 className="text-xl mb-3"><i className="fas fa-globe-americas text-blue-600 mr-2"></i> Eco-Friendly</h3>
+        <p className="text-base">Reduces the need to produce virgin dick pics.</p>
+      </div>
+    </div>
+
+    <hr className="border-gray-300 mb-12" />
+
+    {/* Case Studies */}
+    <div className="mb-4">
+      <h2 className="text-2xl mb-6 text-center"><i className="far fa-file-alt text-blue-600 mr-2"></i> Case Studies</h2>
+      <p className="text-center mb-8">Each person in my contacts was sent an unsolicited dick pick. The responses were only positive.</p>
+      
+      <div className="py-4 px-4 text-center">
+        <PosterGallery path="@assets/2019/dickpics/casestudies" />
+      </div>
+    </div>
+
+    <hr className="border-gray-300 mb-12" />
+
+    {/* Terms & Conditions */}
+    <div className="mb-12">
+      <h2 className="text-2xl mb-4">Terms and Conditions</h2>
+      <p className="text-sm">You can use this non-commercially with attribution <a href="https://olifro.st/links" className="text-blue-600 hover:text-blue-800">@olifro.st</a>. You agree to let me know how it goes. I am not liable if it doesn't go well. If it does go well I take credit.</p>
+    </div>
+  </div>
+</div>
+
+<style>
+{`
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 2s forwards;
+  animation-delay: 0.5s;
+}
+
+.leading-tight {
+  line-height: 90%;
+}
+`}
+</style>

@@ -1,8 +1,0 @@
-<div class="youtube-player" data-id="{{ include.id }}"
-{% if include.thumb %}
-data-thumb="{{ include.thumb }}"
-{% else %}
-data-thumb="https://i.ytimg.com/vi/{{ include.id }}/maxresdefault.jpg"
-{% endif %}
->
-</div>

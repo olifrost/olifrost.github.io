@@ -1,0 +1,95 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Layout from './Layout.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import OptimizedYouTube from '@components/OptimizedYouTube.astro';
+import ProjectSection from '@components/ProjectSection.astro';
+import { getCollection } from 'astro:content';
+
+type Props = CollectionEntry<'blog'>['data'];
+const { 
+    title, 
+    description, 
+    date,
+    press,
+    image,
+    video,
+    tags = []
+} = Astro.props;
+
+// Get related projects that share tags with this post
+const allProjects = await getCollection('blog');
+const relatedProjects = allProjects
+    .filter(project => {
+        const projectTags = project.data.tags || [];
+        return tags.some(tag => projectTags.includes(tag)) && project.data.title !== title;
+    })
+    .sort(() => Math.random() - 0.5) // Randomize order
+    .slice(0, 3);
+---
+
+<Layout title={title} description={description}>
+    <article>
+        <div class="">
+            <div class="mb-8">
+                <h1 class="mb-0 text-4xl font-bold text-black transition-colors">{title}</h1>
+                {description && (
+                    <p class="text-2xl text-neutral-600 leading-relaxed mt-0 mb-0">{description}</p>
+                )}
+                <div class="text-neutral-400 text-sm mb-4 mt-0">
+                    <FormattedDate date={date} format="MMM YYYY" />
+                </div>
+                
+            </div>
+
+            {video && (
+                <div class="mb-8">
+                    <OptimizedYouTube 
+                        id={video}
+                        poster={image}
+                        class="w-full rounded-lg"
+                    />
+                </div>
+            )}
+            
+            <div class="prose prose-lg max-w-none content prose-headings:text-black prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline prose-img:rounded-lg prose-p:mb-8 prose-p:text-lg prose-p:leading-relaxed">
+                <slot />
+            </div>
+            
+            {press && press.length > 0 && (
+                <div class="mt-12">
+                    <div class="text-lg space-y-6">
+                        <p>
+                            {press.map((item, index) => (
+                                <>
+                                    {item.article_link ? (
+                                        <a href={item.article_link} 
+                                           class="hover:text-blue-600 text-neutral-500 font-light transition-colors no-underline" 
+                                           target="_blank" 
+                                           rel="noopener noreferrer">
+                                            {item.name}{index < press.length - 1 ? ', ' : ''}
+                                        </a>
+                                    ) : (
+                                        <span class="">
+                                            {item.name}{index < press.length - 1 ? ', ' : ''}
+                                        </span>
+                                    )}
+                                </>
+                            ))}
+                        </p>
+                    </div>
+                </div>
+            )}
+        </div>
+    </article>
+
+    {relatedProjects.length > 0 && (
+        <div class="mt-16">
+            <ProjectSection 
+                title="Read Next" 
+                viewAllLink={`/tags/${tags[0]}`}
+                projects={relatedProjects}
+            />
+        </div>
+    )}
+</Layout>

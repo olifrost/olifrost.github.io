@@ -1,0 +1,15 @@
+---
+import { getBlogUrl } from '../utils/urls';
+
+interface Props {
+  id: string;
+  class?: string;
+}
+
+const { id, class: className } = Astro.props;
+const url = getBlogUrl(id);
+---
+
+<a href={url} class={className}>
+  <slot />
+</a>

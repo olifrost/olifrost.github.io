@@ -1,8 +1,0 @@
-<div markdown="1">
-  {% include bio %}
-
-  <!--<span><semibold>Most recently:</semibold> I wrote a [song for Greta Thunberg]({% post_url 2020-11-01-the-greta-thunberg-song %}), turned [global emissions data into a synthpop ballad]({% post_url 2021-11-01-the-greenhouse-gas-emissions-breakdown %}), and declared a [pirate emergency]({% post_url 2021-09-19-the-pirate-emergency %}).<br></span>-->
-
-  <span markdown="0"><semibold>Most recently: </semibold>{% for post in site.posts limit:3 %}{% if forloop.last == true %}and {% endif %}<a href="{{ post.url }}">
-  {% if forloop.first == false %}{{ post.title | replace_first: "I " }}{% else %}{{ post.title }}{% endif %}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}.</span>
-</div>

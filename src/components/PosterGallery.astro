@@ -1,0 +1,56 @@
+---
+import ImageCarousel from './ImageCarousel.svelte';
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
+interface Props {
+  path: string;
+  itemsPerSlide?: number;
+  usePublic?: boolean;
+}
+
+const { path, itemsPerSlide = 3, usePublic = false } = Astro.props;
+
+let filteredImages = [];
+
+if (usePublic) {
+  // Handle images from /public directory
+  // These don't need to be imported, just reference the path
+  const basePath = path.startsWith('/') ? path : '/' + path;
+  // You might need to adjust this part based on your actual image naming convention
+  // This is a placeholder implementation
+  filteredImages = [1, 2, 3, 4, 5].map(num => ({
+    src: `${basePath}/${num}.jpg`, // Direct path to public files
+    alt: `Image ${num}`
+  })).filter(img => img.src);
+} else {
+  // Handle images from src/assets using import.meta.glob
+  const normalizedPath = path.startsWith('@assets') ? path.replace('@assets', 'src/assets') : path;
+  
+  // Use import.meta.glob with proper typing
+  const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/**/*.{jpg,jpeg,png,gif,webp}', { eager: true });
+  
+  // Filter images that match the normalized path
+  filteredImages = Object.entries(images)
+    .filter(([importPath]) => importPath.includes(normalizedPath))
+    .map(([importPath, module]) => ({
+      src: module.default,
+      alt: importPath.split('/').pop()?.split('.')[0] || ''
+    }));
+}
+---
+
+<div class="w-full overflow-hidden">
+  {filteredImages.length > 0 ? (
+    <ImageCarousel 
+      client:visible 
+      images={filteredImages.map(img => ({
+        src: typeof img.src === 'object' ? img.src.src : img.src, // Handle both ImageMetadata objects and string paths
+        alt: img.alt
+      }))} 
+      itemsPerSlide={Math.min(filteredImages.length, itemsPerSlide)} 
+    />
+  ) : (
+    <p class="text-gray-500 italic">No images found in {path}</p>
+  )}
+</div>

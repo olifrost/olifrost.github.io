@@ -1,0 +1,43 @@
+---
+import { Icon } from 'astro-icon/components';
+import { SOCIAL_YOUTUBE, SOCIAL_INSTAGRAM, SOCIAL_EMAIL, SOCIAL_TWITTER, SOCIAL_TIKTOK, SOCIAL_SPOTIFY } from '../consts';
+
+interface Props {
+  class?: string;
+  iconClass?: string;
+  compact?: boolean;
+}
+
+const { class: className = '', iconClass = 'w-6 h-6', compact = false } = Astro.props;
+const iconSize = compact ? "w-5 h-5" : "w-6 h-6";
+const spacing = compact ? "space-x-3" : "space-x-4";
+---
+
+<div class={`flex items-center ${spacing} ${className}`}>
+  <a href={`https://youtube.com/${SOCIAL_YOUTUBE}`} target="_blank" rel="noopener noreferrer" class="transition-colors">
+    <span class="sr-only">YouTube</span>
+    <Icon name="youtube" class={`${iconSize} hover:text-blue-600 transition-colors duration-300`} />
+  </a>
+  <a href={`https://instagram.com/${SOCIAL_INSTAGRAM}`} target="_blank" rel="noopener noreferrer" class="transition-colors">
+    <span class="sr-only">Instagram</span>
+    <Icon name="instagram" class={`${iconSize} hover:text-blue-600 transition-colors duration-300`} />
+  </a>
+  <a href={`https://tiktok.com/@${SOCIAL_TIKTOK}`} target="_blank" rel="noopener noreferrer" class="transition-colors">
+    <span class="sr-only">TikTok</span>
+    <Icon name="tiktok" class={`${iconSize} hover:text-blue-600 transition-colors duration-300`} />
+  </a>
+  <a href={`https://open.spotify.com/artist/${SOCIAL_SPOTIFY}`} target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex transition-colors">
+    <span class="sr-only">Spotify</span>
+    <Icon name="spotify" class={`${iconSize} hover:text-blue-600 transition-colors duration-300`} />
+  </a>
+  <a href={`mailto:${SOCIAL_EMAIL}`} class="hidden sm:inline-flex transition-colors">
+    <span class="sr-only">Email</span>
+    <Icon name="email" class={`${iconSize} hover:text-blue-600 transition-colors duration-300`} />
+  </a>
+  <a href="https://patreon.com/olifrost" target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex transition-colors">
+    <span class="sr-only">Patreon</span>
+    <Icon name="patreon" class={`${iconSize} hover:text-blue-600 transition-colors duration-300`} />
+  </a>
+  <style>
+  </style>
+</div>

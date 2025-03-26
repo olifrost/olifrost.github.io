@@ -1,0 +1,20 @@
+---
+import { Icon } from 'astro-icon/components';
+
+interface Props {
+  /** The social platform name (e.g., 'youtube', 'instagram') */
+  platform: string;
+  /** The URL to link to */
+  href: string;
+  /** Optional title text for the link */
+  title?: string;
+}
+
+const { platform, href, title = `Follow on ${platform}` } = Astro.props;
+const iconName = `simple-icons:${platform.toLowerCase()}`;
+---
+
+<a href={href} target="_blank" class="flex items-center justify-center w-8 h-8 text-gray-700 hover:text-accent transition-colors">
+  <span class="sr-only">{title}</span>
+  <Icon name={iconName} class="w-5 h-5" />
+</a>

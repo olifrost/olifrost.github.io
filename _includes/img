@@ -1,1 +1,0 @@
-<figure><img alt="{{ include.alt }}" src="{{ site.baseurl }}/img/{{ include.src }}" class="{{ include.class }}"></figure>

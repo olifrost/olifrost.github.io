@@ -1,0 +1,13 @@
+---
+import SocialLinks from './SocialLinks.astro';
+const today = new Date();
+---
+
+<footer class="py-8 px-4 mb-12 max-w-6xl mx-auto">
+	<div class="flex justify-center mb-4">
+		<SocialLinks />
+	</div>
+	<div class="text-center text-gray-400">
+		<p>&copy; {today.getFullYear()} Oli Frost, Ollie Frost, Olly Frost, or however you misspell it. <a href="/noprivacy" class="underline hover:text-blue-600">No Privacy Policy</a></p>
+	</div>
+</footer>

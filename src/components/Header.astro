@@ -1,0 +1,39 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import SocialLinks from './SocialLinks.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<header class="bg-white">
+	<nav class="max-w-5xl mx-auto px-4">
+		<!-- Desktop Layout -->
+		<div class="hidden md:grid md:grid-cols-3 md:items-center">
+			<h2 class="m-0">
+				<a href="/" class="text-lg font-bold no-underline transition-colors text-black hover:text-blue-600">{SITE_TITLE}</a>
+			</h2>
+			<div class="text-lg text-center">
+				<HeaderLink href="/">some</HeaderLink>
+				<HeaderLink href="/blog">all</HeaderLink>
+				<HeaderLink href="/about">about</HeaderLink>
+			</div>
+			<div class="justify-self-end">
+				<SocialLinks compact={true} />
+			</div>
+		</div>
+
+		<!-- Mobile Layout -->
+		<div class="md:hidden grid grid-cols-3 items-center py-2">
+			<h2 class="m-0">
+				<a href="/" class="text-lg font-bold no-underline transition-colors text-black hover:text-blue-600">{SITE_TITLE}</a>
+			</h2>
+			<div class="text-lg text-center">
+				<HeaderLink href="/">some</HeaderLink>
+				<HeaderLink href="/blog">all</HeaderLink>
+				<HeaderLink href="/about">about</HeaderLink>
+			</div>
+			<div class="justify-self-end">
+				<SocialLinks compact={true} />
+			</div>
+		</div>
+	</nav>
+</header>

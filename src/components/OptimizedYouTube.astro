@@ -1,0 +1,63 @@
+---
+import { YouTube } from 'astro-embed';
+import { getImage } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import { resolveAssetPath, isAssetPath } from '../utils/assetUtils';
+
+interface Props {
+  id: string;
+  poster: string | ImageMetadata | `@assets/${string}`;
+  class?: string;
+}
+
+const { id, poster, class: className } = Astro.props;
+
+// Process the poster image based on its type
+let posterSrc = '';
+
+if (isAssetPath(poster)) {
+  // Handle @assets/ path format using our utility
+  const resolvedAsset = resolveAssetPath(poster);
+  
+  if (resolvedAsset) {
+    // Optimize the found image
+    const optimizedImage = await getImage({
+      src: resolvedAsset,
+      width: 800,
+      format: 'webp',
+    });
+    posterSrc = optimizedImage.src;
+  } else {
+    // Fallback to the string path if no matching asset is found
+    console.warn(`No matching asset found for ${poster}`);
+    posterSrc = '';
+  }
+} else if (typeof poster === 'string') {
+  // If it's a regular string URL, use it directly
+  posterSrc = poster;
+} else if (poster) {
+  // If it's an ImageMetadata object, optimize it
+  const optimizedImage = await getImage({
+    src: poster,
+    width: 800,
+    format: 'webp',
+  });
+  posterSrc = optimizedImage.src;
+}
+---
+
+<div class="relative not-prose">
+  <YouTube 
+    id={id} 
+    poster={posterSrc}
+    class={className}
+    posterQuality='max'
+  />
+</div>
+
+<style>
+  :global(lite-youtube) {
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+</style>
