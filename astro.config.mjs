@@ -26,6 +26,17 @@ export default defineConfig({
         '/contact': '/links',
         '/posters': '/blog/climate-strike-posters',
         '/little-tips': '/blog/little-tips',   
+        '/ughconsumerism': '/blog/ughconsumerism',
+        '/shop': '/about',    
+        '/downloads': '/links',
+        '/social': '/links',     
+        '/bad-workflows': '/blog/bad-workflows',
+        '/buymeacat': '/blog/buymeacat',
+        '/fossilghouls': '/blog/fossilghouls',
+        '/refer': '/blog/refer-a-friend',
+        '/realistic-earth-emoji': '/blog/realistic-earth-emoji',
+        '/recorda-boi': '/blog/recorda-boi',
+        '/songs': '/tags/music',                      
 
         // Add 404 handling for paths that don't exist
         // This ensures a proper status code is returned while showing our custom 404 page
