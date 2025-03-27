@@ -17,13 +17,10 @@ I do. I'd get help from friends, but they're [harder to make](/blog/refer-a-frie
 You could [send me a tip](https://ko-fi.com/olifrost), join my [patreon](https://www.patreon.com/OliFrost/membership), request a [personalised video](https://ko-fi.com/olifrost/commissions), or just [stream or buy my music](https://olifro.st/links).
 
 **Tell me some meaningless numbers to quantify your importance?**  
-260k followers, 30 million views, 1 person recognising me in Franco Manca.
+320k followers, 35 million views, 1 person recognising me in Franco Manca.
 
 **Will you do a thing for me?**  
-I'm short on hands (just two) but [send me an email](mailto:mail@olifro.st), I'll consider anything…
-
-**How can I support your work, vampire overlord?**  
-Besides bringing free-range delicious humans, you can make <a href="https://ko-fi.com/olifrost">a one-off donation</a>, join my <a href="https://www.patreon.com/OliFrost/membership">patreon</a>, request a <a href="https://ko-fi.com/olifrost/commissions"> personalised video</a>, or simply <a href="/links">buy</a> or [stream](/links) my music.
+I have quite a lot on but [send me an email](mailto:mail@olifro.st), I'll consider anything…
 
 **How do you feel the FAQ went?**  
 I think it was alright, so so really.

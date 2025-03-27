@@ -12,6 +12,28 @@ import { visualizer } from "rollup-plugin-visualizer";
 // https://astro.build/config
 export default defineConfig({
     site: 'https://olifro.st',
+    // Add redirects configuration
+    redirects: {
+        '/stream': '/links',
+        
+        // Common misspellings or old URLs
+        '/instagram': 'https://instagram.com/realolifrost',
+        '/twitter': 'https://twitter.com/realolifrost',
+        '/tiktok': 'https://tiktok.com/@olifrost',
+        
+        // Legacy redirects from jekyll site
+        '/projects': '/',
+        '/contact': '/links',
+        '/posters': '/blog/climate-strike-posters',
+        '/little-tips': '/blog/little-tips',   
+
+        // Add 404 handling for paths that don't exist
+        // This ensures a proper status code is returned while showing our custom 404 page
+        '/404': {
+            status: 404,
+            destination: '/404'
+        }
+    },
     integrations: [
         AutoImport({
             imports: [

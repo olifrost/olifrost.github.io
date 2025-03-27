@@ -55,13 +55,40 @@ export const links: LinksData = {
       icon: "lucide:globe"
     },
     {
-      title: "Stream or buy my music",
-      url: "/stream",
-      colour: "bg-blue-600",
-      icon: "lucide:music"
+      title: "Stream my music",
+      isExpandable: true,
+      colour: "bg-green-500",
+      icon: "lucide:heart",
+      children: [
+        {
+          title: "Buy on Bandcamp",
+          url: "https://olifrost.bandcamp.com",
+          colour: "bg-cyan-600",
+          icon: "lucide:music"
+        },
+        {
+          title: "Apple Music",
+          url: "https://music.apple.com/gb/artist/oli-frost/1476842962",
+          colour: "bg-red-500",
+          icon: "lucide:music"
+        },
+        {
+          title: "Spotify",
+          url: "https://open.spotify.com/artist/5dFJdXPDdubN7e6RIC2MXP",
+          colour: "bg-green-600",
+          icon: "lucide:music"
+        },
+        {
+          title: "Deezer",
+          url: "https://www.deezer.com/en/artist/8466006",
+          colour: "bg-purple-600",
+          icon: "lucide:music"
+        }
+        
+      ]
     },
     {
-      title: "Support",
+      title: "Support my work",
       isExpandable: true,
       colour: "bg-red-500",
       icon: "lucide:heart",
@@ -69,15 +96,15 @@ export const links: LinksData = {
         {
           title: "Join my patreon",
           url: "https://www.patreon.com/olifrost",
-          colour: "bg-red-500",
+          colour: "bg-stone-950",
           icon: "lucide:heart"
         },
         {
-          title: "Send a tip",
+          title: "Send a tip on Ko-Fi",
           url: "https://ko-fi.com/olifrost",
-          colour: "bg-red-500",
+          colour: "bg-orange-500",
           icon: "lucide:coffee"
-        }
+        }        
       ]
     },
     {
@@ -91,12 +118,6 @@ export const links: LinksData = {
       url: "https://discord.gg/VxF3JDR5Ux",
       colour: "bg-indigo-600",
       icon: "lucide:messages-square"
-    },
-    {
-      title: "Get a personalised video",
-      url: "https://ko-fi.com/olifrost/commissions",
-      colour: "bg-blue-700",
-      icon: "lucide:video"
     },
     {
       title: "Book me for a gig, etc",

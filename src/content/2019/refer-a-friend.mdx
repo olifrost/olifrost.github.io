@@ -39,9 +39,9 @@ import BFFCard from '@assets/2019/refer/forever.jpg'
       </div>
     </div>
 
-    <div className="">
-      <div className="py-8 px-4 text-center">
-      <OptimizedYouTube id={frontmatter.video} poster="@assets/2019/refer/refer-video.jpg"/>
+    <div className="w-full not-prose flex justify-center items-center py-8">
+      <div className="max-w-4xl w-full">
+        <OptimizedYouTube id={frontmatter.video} poster="@assets/2019/refer/refer-video.jpg" className="!mx-auto w-full"/>
       </div>
     </div>
 
@@ -207,6 +207,11 @@ import BFFCard from '@assets/2019/refer/forever.jpg'
 
 .whitespace-nowrap {
   white-space: nowrap;
+}
+lite-youtube {
+  max-width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 `}
 </style>
