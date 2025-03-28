@@ -21,6 +21,7 @@
     "astro-auto-import": "^0.4.4",
     "astro-broken-link-checker": "github:imazen/astro-broken-link-checker",
     "astro-embed": "^0.9.0",
+    "astro-umami-analytics": "^0.1.0",
     "lite-youtube-embed": "^0.3.3",
     "lucide-astro": "^0.479.0",
     "lucide-static": "^0.479.0",
@@ -34,5 +35,6 @@
     "astro-icon": "^1.1.5",
     "gh-pages": "^6.3.0",
     "rollup-plugin-visualizer": "^5.14.0"
-  }
+  },
+  "packageManager": "pnpm@10.5.2+sha512.da9dc28cd3ff40d0592188235ab25d3202add8a207afbedc682220e4a0029ffbff4562102b9e6e46b4e3f9e8bd53e6d05de48544b0c57d4b0179e22c76d1199b"
 }

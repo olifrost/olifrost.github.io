@@ -8,6 +8,7 @@ import AutoImport from 'astro-auto-import';
 import icon from 'astro-icon';
 import astroBrokenLinksChecker from 'astro-broken-link-checker';
 import { visualizer } from "rollup-plugin-visualizer";
+import umami from "@yeskunall/astro-umami";
 
 // https://astro.build/config
 export default defineConfig({
@@ -44,6 +45,7 @@ export default defineConfig({
     // Ensure output directory is configured correctly
     outDir: './dist',
     integrations: [
+        umami({ id: "ea01c721-04db-4c01-9a97-ae88acb7ea7e" }),
         AutoImport({
             imports: [
               // Import the YouTube component from your own components
