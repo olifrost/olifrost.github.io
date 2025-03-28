@@ -41,6 +41,8 @@ export default defineConfig({
         // Add 404 handling for paths that don't exist
         // This ensures a proper status code is returned while showing our custom 404 page
     },
+    // Ensure output directory is configured correctly
+    outDir: './dist',
     integrations: [
         AutoImport({
             imports: [
