@@ -99,11 +99,13 @@ export default defineConfig({
         build: {
             rollupOptions: {
                 output: {
-                    manualChunks: {
-                        // Create separate chunk for icon packages to improve caching
-                        'icons': [/astro-icon/, /@iconify-json/],
-                        // Split large components into separate chunks
-                        'svelte-components': [/\.svelte$/],
+                    manualChunks(id) {
+                        if (/astro-icon|@iconify-json/.test(id)) {
+                            return 'icons';
+                        }
+                        if (/\.svelte$/.test(id)) {
+                            return 'svelte-components';
+                        }
                     }
                 }
             },
