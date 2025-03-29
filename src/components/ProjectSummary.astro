@@ -23,9 +23,9 @@ const pressItems = (data.press || []) as PressItem[];
 const projectUrl = getBlogUrl(project.id);
 ---
 
-<article class="w-full mb-6">
+<article class="w-full mb-3">
   <!-- Do not wrap the video in the anchor tag -->
-  <div class="w-full overflow-hidden rounded-lg mb-4 transition-shadow group-hover:shadow-lg aspect-video relative">
+  <div class="w-full overflow-hidden rounded-lg mb-2 transition-shadow group-hover:shadow-lg aspect-video relative">
     {hasVideo ? (
       <OptimizedYouTube 
         id={data.video || ''} 

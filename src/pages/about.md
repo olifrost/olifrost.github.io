@@ -1,8 +1,8 @@
 ---
 image: /img/olifrost.jpg
 layout: /src/layouts/SimplePage.astro
+title: FAQ
 ---
-### FAQ
 
 **Do you really need an FAQ?**  
 Not sure yet.

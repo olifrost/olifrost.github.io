@@ -34,20 +34,9 @@ const displayArchive = archiveProjects.length > 0 ? archiveProjects : recentProj
 const recentThreeProjects = recentProjects.slice(0, 3);
 ---
 
-<style>
-    a {
-        color: var(--color-blue-600);
-        text-decoration: none;
-    }
-    a:hover {
-        color: var(--color-blue-800);
-    }
-
-</style>
-
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
-    <section class="mb-12">
-        <div class="text-2xl max-w-6xl mb-12 space-y-6 transition-all">
+    <section class="prose prose-base prose-p:first:mt-0 prose-a:font-light prose-a:text-blue-600 prose-a:hover:text-blue-400 mb-6 max-w-none">
+        <div class="text-2xl max-w-6xl mb-6 space-y-6 transition-all">
             <p>
                 I'm Oli Frost, the guy who makes novelty songs, films and websites about the climate crisis.
                 Greta Thunberg <a href={getBlogUrl('the-greta-thunberg-song')}>did the macarena to one of them</a>.
