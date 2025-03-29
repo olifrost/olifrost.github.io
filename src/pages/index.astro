@@ -1,6 +1,6 @@
 ---
-import Layout from '@layouts/Layout.astro';
-import ProjectSection from '@components/ProjectSection.astro';
+import Layout from '../layouts/Layout.astro';
+import ProjectSection from '../components/ProjectSection.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { getCollection } from 'astro:content';
 import { getBlogUrl } from '../utils/urls';
@@ -51,14 +51,15 @@ const recentThreeProjects = recentProjects.slice(0, 3);
                 <a href="/blog/little-tips">on bins</a>.
             </p>
             <p>
-                Recent Projects: {recentThreeProjects.map((project, index) => (
-                    <>
-                        <a href={getBlogUrl(project.id)}>{project.data.title}</a>
-                        {index < recentThreeProjects.length - 1 && (
-                            <>{index === recentThreeProjects.length - 2 ? ' and ' : ', '}</>
-                        )}
-                    </>
-                ))}
+                Recent Projects: {recentThreeProjects.map((project, index, arr) => {
+                    if (index === 0) {
+                        return <a href={getBlogUrl(project.id)}>{project.data.title}</a>;
+                    } else if (index === arr.length - 1) {
+                        return <> and <a href={getBlogUrl(project.id)}>{project.data.title}</a></>;
+                    } else {
+                        return <>, <a href={getBlogUrl(project.id)}>{project.data.title}</a></>;
+                    }
+                })}
             </p>
         </div>
     </section>

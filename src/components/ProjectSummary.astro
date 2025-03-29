@@ -4,6 +4,7 @@ import { YouTube } from 'astro-embed';
 import { getBlogUrl } from '../utils/urls';
 import { Image } from 'astro:assets'; // Add this import
 import OptimizedYouTube from '@components/OptimizedYouTube.astro';
+import TagList from './TagList.astro';
 
 interface PressItem {
   name: string;
@@ -14,9 +15,10 @@ interface Props {
   project: CollectionEntry<'blog'>;
   showDescription?: boolean;
   showPress?: boolean;
+  showTags?: boolean;
 }
 
-const { project, showDescription = true, showPress = true } = Astro.props;
+const { project, showDescription = true, showPress = true, showTags = true } = Astro.props;
 const { data } = project;
 const hasVideo = data.video !== undefined && data.video !== '';
 const pressItems = (data.press || []) as PressItem[];
@@ -52,6 +54,10 @@ const projectUrl = getBlogUrl(project.id);
     <div class="text-lg leading-snug">
       <p>{data.description}</p>
     </div>
+  )}
+  
+  {showTags && data.tags && data.tags.length > 0 && (
+    <TagList tags={data.tags} size="sm" />
   )}
   
   {showPress && pressItems.length > 0 && (

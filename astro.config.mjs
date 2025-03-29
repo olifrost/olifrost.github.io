@@ -22,10 +22,10 @@ export default defineConfig({
         '/tiktok': 'https://tiktok.com/@olifrost',
         
         // Legacy redirects from jekyll site
-        '/projects': '/',
         '/contact': '/links',
         '/posters': '/blog/climate-strike-posters',
         '/little-tips': '/blog/little-tips',   
+        '/projects': '/blog',   
         '/ughconsumerism': '/blog/ughconsumerism',
         '/shop': '/about',    
         '/downloads': '/links',

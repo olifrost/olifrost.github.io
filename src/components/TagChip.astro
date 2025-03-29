@@ -1,0 +1,26 @@
+---
+interface Props {
+  tag: string;
+  size?: 'sm' | 'md' | 'lg';
+}
+
+const { tag, size = 'md' } = Astro.props;
+
+// Format tag for display (capitalize, replace hyphens with spaces)
+const formattedTag = tag
+  .split('-')
+  .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+  .join(' ');
+
+const sizeClasses = {
+  sm: 'px-2 py-1 text-xs',
+  md: 'px-3 py-1.5 text-sm',
+  lg: 'px-4 py-2 text-base',
+};
+
+const classes = `tag-chip ${sizeClasses[size]} bg-neutral-100 text-neutral-700 rounded-md hover:bg-blue-100 hover:text-blue-800 transition-colors font-medium`;
+---
+
+<a href={`/tags/${tag}`} class={classes} data-tag={tag}>
+  {formattedTag}
+</a>

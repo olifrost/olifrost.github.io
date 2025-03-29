@@ -5,8 +5,8 @@ import { SITE_TITLE } from '../consts';
 ---
 
 <header class="bg-white">
-	<nav class="max-w-5xl mx-auto px-4">
-		<!-- Desktop Layout -->
+	<nav class="max-w-5xl mx-auto px-4 py-2">
+		<!-- Desktop Layout (md and up) -->
 		<div class="hidden md:grid md:grid-cols-3 md:items-center">
 			<h2 class="m-0">
 				<a href="/" class="text-lg font-bold no-underline transition-colors text-black hover:text-blue-600">{SITE_TITLE}</a>
@@ -21,19 +21,109 @@ import { SITE_TITLE } from '../consts';
 			</div>
 		</div>
 
-		<!-- Mobile Layout -->
-		<div class="md:hidden grid grid-cols-3 items-center py-2">
+		<!-- Tablet Layout (sm to md) -->
+		<div class="hidden sm:flex md:hidden justify-between items-center">
 			<h2 class="m-0">
 				<a href="/" class="text-lg font-bold no-underline transition-colors text-black hover:text-blue-600">{SITE_TITLE}</a>
 			</h2>
-			<div class="text-lg text-center">
-				<HeaderLink href="/">some</HeaderLink>
-				<HeaderLink href="/blog">all</HeaderLink>
-				<HeaderLink href="/about">about</HeaderLink>
+			<div class="flex items-center gap-4">
+				<div class="text-sm whitespace-nowrap">
+					<HeaderLink href="/">some</HeaderLink>
+					<HeaderLink href="/blog">all</HeaderLink>
+					<HeaderLink href="/about">about</HeaderLink>
+				</div>
+				<SocialLinks compact={true} />
 			</div>
-			<div class="justify-self-end">
+		</div>
+
+		<!-- Standard Mobile Layout (>= 375px screens but < sm) -->
+		<div class="hidden min-[375px]:flex sm:hidden justify-between items-center">
+			<h2 class="m-0">
+				<a href="/" class="text-lg font-bold no-underline transition-colors text-black hover:text-blue-600">{SITE_TITLE}</a>
+			</h2>
+			<div class="flex items-center gap-3">
+				<div class="text-sm whitespace-nowrap">
+					<HeaderLink href="/">some</HeaderLink>
+					<HeaderLink href="/blog">all</HeaderLink>
+					<HeaderLink href="/about">about</HeaderLink>
+				</div>
+				<SocialLinks compact={true} />
+			</div>
+		</div>
+
+		<!-- Extra Small Mobile Layout (< 375px screens) -->
+		<div class="flex min-[375px]:hidden justify-between items-center">
+			<h2 class="m-0">
+				<a href="/" class="text-lg font-bold no-underline transition-colors text-black hover:text-blue-600">{SITE_TITLE}</a>
+			</h2>
+			<div class="flex items-center gap-4">
+				<div class="relative">
+					<button
+						id="nav-toggle"
+						class="text-blue-600 hover:text-blue-400 transition-colors flex items-center gap-1"
+						aria-label="Navigation Menu"
+						aria-haspopup="true"
+						aria-expanded="false"
+					>
+						<span id="current-page">some</span>
+						<span class="inline-block text-xs ml-0.5">▾</span>
+					</button>
+					<div id="nav-dropdown" class="absolute right-0 mt-1 bg-white whitespace-nowrap hidden z-10">
+						<div class="flex flex-col text-right">
+							<a href="/" class="px-4 py-2 text-blue-600 hover:text-blue-400">some</a>
+							<a href="/blog" class="px-4 py-2 text-blue-600 hover:text-blue-400">all</a>
+							<a href="/about" class="px-4 py-2 text-blue-600 hover:text-blue-400">about</a>
+						</div>
+					</div>
+				</div>
 				<SocialLinks compact={true} />
 			</div>
 		</div>
 	</nav>
 </header>
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		const path = window.location.pathname;
+		const currentPageElement = document.getElementById('current-page');
+		const navToggle = document.getElementById('nav-toggle');
+		const navDropdown = document.getElementById('nav-dropdown');
+		
+		// Set current page text
+		if (currentPageElement) {
+			if (path === '/' || path === '') {
+				currentPageElement.textContent = 'some';
+			} else if (path.includes('/blog')) {
+				currentPageElement.textContent = 'all';
+			} else if (path.includes('/about')) {
+				currentPageElement.textContent = 'about';
+			}
+		}
+		
+		// Toggle dropdown visibility
+		if (navToggle && navDropdown) {
+			navToggle.addEventListener('click', (e) => {
+				e.stopPropagation();
+				const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+				navToggle.setAttribute('aria-expanded', (!isExpanded).toString());
+				navDropdown.classList.toggle('hidden');
+			});
+			
+			// Close dropdown when clicking elsewhere
+			document.addEventListener('click', (e) => {
+				if (!navDropdown.contains(e.target as Node) && !navToggle.contains(e.target as Node)) {
+					navToggle.setAttribute('aria-expanded', 'false');
+					navDropdown.classList.add('hidden');
+				}
+			});
+			
+			// Close dropdown after selection
+			navDropdown.querySelectorAll('a').forEach(link => {
+				link.addEventListener('click', () => {
+					navToggle.setAttribute('aria-expanded', 'false');
+					navDropdown.classList.add('hidden');
+				});
+			});
+		}
+	});
+</script>

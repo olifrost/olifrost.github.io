@@ -11,8 +11,11 @@
 
   let isExpanded = false;
 
-  // Simple mapping of icon names to SVG paths
-  const iconPaths = {
+  // Define allowed icon types
+  type IconType = 'arrow' | 'chevron';
+
+  // Simple mapping of icon names to SVG paths with index signature
+  const iconPaths: Record<string, string> = {
     arrow: "M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z",
     chevron: "M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z",
     // Add more icon paths as needed
@@ -30,6 +33,8 @@
 <div class="w-full">
   <div
     on:click={toggleExpand}
+    role="button"
+    tabindex="0"
     class="w-full flex items-center justify-between p-6 rounded-sm mb-2 transition-all hover:-translate-y-1 hover:shadow-lg font-bold cursor-pointer {color} {textColor}"
   >
     <div class="flex items-center justify-center gap-3 flex-1">
@@ -75,6 +80,8 @@
         <div
           class="flex items-center justify-between p-4 rounded-sm transition-all hover:-translate-y-1 hover:shadow-lg font-bold cursor-pointer {child.colour || color} {textColor}"
           on:click={() => window.open(child.url, '_blank')}
+          role="button"
+          tabindex="0"
         >
           <div class="flex items-center gap-3">
             {#if child.icon && iconPaths[child.icon]}

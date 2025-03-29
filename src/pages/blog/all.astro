@@ -3,14 +3,30 @@ import Layout from '../../layouts/Layout.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
 import ProjectSummary from '../../components/ProjectSummary.astro';
+import TagChip from '../../components/TagChip.astro';
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
 );
+
+// Extract all unique tags from posts
+const allTags = [...new Set(posts.flatMap(post => post.data.tags || []))].sort();
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
-	<h1 class="text-3xl font-bold mb-8 text-black">All Projects</h1>
+	<div class="mb-8">
+		<h1 class="text-3xl font-bold mb-4 text-black">All Projects</h1>
+		
+		{allTags.length > 0 && (
+			<div class="mt-4">
+				<div class="flex flex-wrap gap-2">
+					{allTags.map(tag => (
+						<TagChip tag={tag} />
+					))}
+				</div>
+			</div>
+		)}
+	</div>
 	
 	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 		{posts.map((post) => (

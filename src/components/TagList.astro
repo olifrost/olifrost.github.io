@@ -1,0 +1,18 @@
+---
+import TagChip from './TagChip.astro';
+
+interface Props {
+  tags: string[];
+  size?: 'sm' | 'md';
+}
+
+const { tags = [], size = 'md' } = Astro.props;
+---
+
+{tags.length > 0 && (
+  <div class="flex flex-wrap gap-2 mt-2">
+    {tags.map(tag => (
+      <TagChip tag={tag} size={size} />
+    ))}
+  </div>
+)}
