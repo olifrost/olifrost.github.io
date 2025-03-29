@@ -1,6 +1,5 @@
 <script lang="ts">
   import { slide } from 'svelte/transition';
-  import { onMount } from 'svelte';
   
   export let title: string;
   export let url: string | undefined = undefined;
@@ -11,14 +10,13 @@
   export let children: any[] = [];
 
   let isExpanded = false;
-  let IconComponent: any;
 
-  onMount(async () => {
-    if (icon) {
-      const module = await import('astro-icon/components');
-      IconComponent = module.Icon;
-    }
-  });
+  // Simple mapping of icon names to SVG paths
+  const iconPaths = {
+    arrow: "M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z",
+    chevron: "M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z",
+    // Add more icon paths as needed
+  };
 
   function toggleExpand() {
     if (isExpandable) {
@@ -35,9 +33,16 @@
     class="w-full flex items-center justify-between p-6 rounded-sm mb-2 transition-all hover:-translate-y-1 hover:shadow-lg font-bold cursor-pointer {color} {textColor}"
   >
     <div class="flex items-center justify-center gap-3 flex-1">
-      {#if icon && IconComponent}
+      {#if icon && iconPaths[icon]}
         <span class="w-6 h-6">
-          <svelte:component this={IconComponent} name={icon} />
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 20 20" 
+            fill="currentColor"
+            class="w-full h-full"
+          >
+            <path fill-rule="evenodd" d={iconPaths[icon]} clip-rule="evenodd" />
+          </svg>
         </span>
       {/if}
       <span>{title}</span>
@@ -50,7 +55,7 @@
         viewBox="0 0 20 20"
         fill="currentColor"
       >
-        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+        <path fill-rule="evenodd" d={iconPaths.chevron} clip-rule="evenodd" />
       </svg>
     {:else if url}
       <svg 
@@ -59,7 +64,7 @@
         viewBox="0 0 20 20" 
         fill="currentColor"
       >
-        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+        <path fill-rule="evenodd" d={iconPaths.arrow} clip-rule="evenodd" />
       </svg>
     {/if}
   </div>
@@ -72,9 +77,16 @@
           on:click={() => window.open(child.url, '_blank')}
         >
           <div class="flex items-center gap-3">
-            {#if child.icon && IconComponent}
+            {#if child.icon && iconPaths[child.icon]}
               <span class="w-6 h-6">
-                <svelte:component this={IconComponent} name={child.icon} />
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  viewBox="0 0 20 20" 
+                  fill="currentColor"
+                  class="w-full h-full"
+                >
+                  <path fill-rule="evenodd" d={iconPaths[child.icon]} clip-rule="evenodd" />
+                </svg>
               </span>
             {/if}
             <span>{child.title}</span>
@@ -85,7 +97,7 @@
             viewBox="0 0 20 20" 
             fill="currentColor"
           >
-            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            <path fill-rule="evenodd" d={iconPaths.arrow} clip-rule="evenodd" />
           </svg>
         </div>
       {/each}
