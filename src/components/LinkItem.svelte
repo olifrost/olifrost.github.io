@@ -27,22 +27,12 @@
       window.open(url, '_blank');
     }
   }
-
-  // Prevent default action to avoid any browser interference
-  function handleEvent(event: Event) {
-    event.preventDefault();
-    toggleExpand();
-  }
 </script>
 
 <div class="w-full">
   <div
-    on:click={handleEvent}
-    on:touchend={handleEvent}
-    on:keydown={(e) => e.key === 'Enter' && handleEvent(e)}
+    on:click={toggleExpand}
     class="w-full flex items-center justify-between p-6 rounded-sm mb-2 transition-all hover:-translate-y-1 hover:shadow-lg font-bold cursor-pointer {color} {textColor}"
-    role="button"
-    tabindex="0"
   >
     <div class="flex items-center justify-center gap-3 flex-1">
       {#if icon && IconComponent}
@@ -59,7 +49,6 @@
         class="w-5 h-5 transition-transform {isExpanded ? 'rotate-180' : ''}" 
         viewBox="0 0 20 20"
         fill="currentColor"
-        aria-hidden="true"
       >
         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
       </svg>
@@ -69,7 +58,6 @@
         class="w-4 h-4" 
         viewBox="0 0 20 20" 
         fill="currentColor"
-        aria-hidden="true"
       >
         <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
       </svg>
@@ -81,11 +69,7 @@
       {#each children as child}
         <div
           class="flex items-center justify-between p-4 rounded-sm transition-all hover:-translate-y-1 hover:shadow-lg font-bold cursor-pointer {child.colour || color} {textColor}"
-          on:click={(e) => { e.preventDefault(); window.open(child.url, '_blank'); }}
-          on:touchend={(e) => { e.preventDefault(); window.open(child.url, '_blank'); }}
-          on:keydown={(e) => e.key === 'Enter' && window.open(child.url, '_blank')}
-          role="button"
-          tabindex="0"
+          on:click={() => window.open(child.url, '_blank')}
         >
           <div class="flex items-center gap-3">
             {#if child.icon && IconComponent}
@@ -100,7 +84,6 @@
             class="w-4 h-4" 
             viewBox="0 0 20 20" 
             fill="currentColor"
-            aria-hidden="true"
           >
             <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
           </svg>
