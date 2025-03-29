@@ -38,7 +38,7 @@ const recentThreeProjects = recentProjects.slice(0, 3);
     <section class="prose prose-base prose-p:first:mt-0 prose-a:font-light prose-a:text-blue-600 prose-a:hover:text-blue-400 mb-6 max-w-none">
         <div class="text-2xl max-w-6xl mb-6 space-y-6 transition-all">
             <p>
-                I'm Oli Frost, the guy who makes novelty songs, films and websites about the climate crisis.
+                I'm Oli Frost, I make novelty songs, films and websites about the climate crisis.
                 Greta Thunberg <a href={getBlogUrl('the-greta-thunberg-song')}>did the macarena to one of them</a>.
             </p>
             <p>
@@ -66,13 +66,13 @@ const recentThreeProjects = recentProjects.slice(0, 3);
     
     <ProjectSection 
         title="Music" 
-        viewAllLink="/tags/music" 
+        viewAllLink="/blog?tag=music" 
         projects={displaySongs} 
     />
     
     <ProjectSection 
         title="Featured Projects" 
-        viewAllLink="/tags/climate" 
+        viewAllLink="/blog?tag=climate" 
         projects={displayFeatured} 
     />
     
@@ -81,4 +81,10 @@ const recentThreeProjects = recentProjects.slice(0, 3);
         viewAllLink="/blog" 
         projects={displayArchive} 
     />
+    
+    <div class="flex justify-center mt-12 mb-8">
+        <a href="/blog" class="text-blue-600 hover:text-blue-800 text-lg font-medium transition-colors">
+            View all projects →
+        </a>
+    </div>
 </Layout>
