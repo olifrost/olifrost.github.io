@@ -6,11 +6,17 @@ interface Props {
   class?: string;
   iconClass?: string;
   compact?: boolean;
+  showAllOnMobile?: boolean;
 }
 
-const { class: className = '', iconClass = 'w-6 h-6', compact = false } = Astro.props;
+const { class: className = '', iconClass = 'w-6 h-6', compact = false, showAllOnMobile = false } = Astro.props;
 const iconSize = compact ? "w-5 h-5" : "w-6 h-6";
 const spacing = compact ? "space-x-3" : "space-x-4";
+
+// Conditional classes based on showAllOnMobile
+const spotifyClass = showAllOnMobile ? "inline-flex" : "hidden sm:inline-flex";
+const emailClass = showAllOnMobile ? "inline-flex" : "hidden sm:inline-flex";
+const patreonClass = showAllOnMobile ? "inline-flex" : "hidden md:inline-flex";
 ---
 
 <div class={`flex items-center ${spacing} ${className}`}>
@@ -26,18 +32,16 @@ const spacing = compact ? "space-x-3" : "space-x-4";
     <span class="sr-only">TikTok</span>
     <Icon name="tiktok" class={`${iconSize} hover:text-blue-600 transition-colors duration-300`} />
   </a>
-  <a href={`https://open.spotify.com/artist/${SOCIAL_SPOTIFY}`} target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex transition-colors">
+  <a href={`https://open.spotify.com/artist/${SOCIAL_SPOTIFY}`} target="_blank" rel="noopener noreferrer" class={`${spotifyClass} transition-colors`}>
     <span class="sr-only">Spotify</span>
     <Icon name="spotify" class={`${iconSize} hover:text-blue-600 transition-colors duration-300`} />
   </a>
-  <a href={`mailto:${SOCIAL_EMAIL}`} class="hidden sm:inline-flex transition-colors">
+  <a href={`mailto:${SOCIAL_EMAIL}`} class={`${emailClass} transition-colors`}>
     <span class="sr-only">Email</span>
     <Icon name="email" class={`${iconSize} hover:text-blue-600 transition-colors duration-300`} />
   </a>
-  <a href="https://patreon.com/olifrost" target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex transition-colors">
+  <a href="https://patreon.com/olifrost" target="_blank" rel="noopener noreferrer" class={`${patreonClass} transition-colors`}>
     <span class="sr-only">Patreon</span>
     <Icon name="patreon" class={`${iconSize} hover:text-blue-600 transition-colors duration-300`} />
   </a>
-  <style>
-  </style>
 </div>

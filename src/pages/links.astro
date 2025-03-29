@@ -1,10 +1,20 @@
 ---
 import LinkTreeLayout from '../layouts/LinkTreeLayout.astro';
 import LinkTree from '../components/LinkTree.svelte';
+import SocialLinks from '../components/SocialLinks.astro';
 import type { Link } from '../types/links';
-
 ---
 
 <LinkTreeLayout title="Oli Frost - Links">
-  <LinkTree client:load />
-</LinkTreeLayout> 
+  <div class="min-h-screen flex items-center">
+    <div class="max-w-2xl mx-auto px-4 py-8 w-full">
+      <h1 class="text-3xl font-bold mb-4 text-center">Oli Frost</h1>
+      
+      <div class="flex justify-center mb-6">
+        <SocialLinks compact={true} showAllOnMobile={true} />
+      </div>
+      
+      <LinkTree client:load />
+    </div>
+  </div>
+</LinkTreeLayout>
