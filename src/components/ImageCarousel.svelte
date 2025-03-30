@@ -1,6 +1,7 @@
 <script>
   import { onMount } from 'svelte';
   import { tick } from 'svelte';
+  import EmblaCarousel from 'embla-carousel';
 
   // Enhanced props for better customization
   export let images = [];
@@ -29,7 +30,7 @@
     slidesToScroll: 1,
   };
 
-  onMount(async () => {
+  onMount(() => {
     // Update viewport width on mount
     viewportWidth = window.innerWidth;
     
@@ -39,8 +40,7 @@
     };
     window.addEventListener('resize', handleResize);
     
-    // Import and initialize Embla
-    const { EmblaCarousel } = await import('embla-carousel');
+    // Initialize Embla
     emblaApi = EmblaCarousel(emblaNode, options);
     
     // Set up event listeners

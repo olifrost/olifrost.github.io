@@ -114,7 +114,7 @@ export default defineConfig({
                         }
                     }
                 },
-                external: []
+                external: ['embla-carousel'] 
             },
             // Increase warning limit while optimizing
             chunkSizeWarningLimit: 1000,
@@ -129,6 +129,9 @@ export default defineConfig({
         },
         optimizeDeps: {
             include: ['embla-carousel']
+        },
+        ssr: {
+            noExternal: ['embla-carousel']
         }
     },
 });
