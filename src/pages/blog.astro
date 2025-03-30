@@ -80,10 +80,18 @@ const initialProjects = projectsWithUrls.slice(0, PROJECTS_PER_PAGE);
       </div>
     </div>
     
-    <div id="project-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {initialProjects.map(project => (
-        <ProjectSummary project={project} />
-      ))}
+    <!-- Added a container with min-height to reduce layout shift -->
+    <div id="projects-container" class="relative min-h-screen">
+      <div id="project-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 opacity-0 transition-opacity duration-300">
+        {initialProjects.map(project => (
+          <ProjectSummary project={project} />
+        ))}
+      </div>
+      
+      <!-- Added loading indicator -->
+      <div id="loading-indicator" class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 pointer-events-none">
+        <div class="w-12 h-12 border-4 border-blue-200 border-t-blue-600 rounded-full animate-spin"></div>
+      </div>
     </div>
     
     {projectsWithUrls.length > PROJECTS_PER_PAGE && (
@@ -122,6 +130,34 @@ const initialProjects = projectsWithUrls.slice(0, PROJECTS_PER_PAGE);
     return projects.filter(project => project.data.tags && project.data.tags.includes(activeTag));
   }
   
+  // Show loading state
+  function showLoading() {
+    const grid = document.getElementById('project-grid');
+    const loadingIndicator = document.getElementById('loading-indicator');
+    
+    if (grid && loadingIndicator) {
+      grid.classList.add('opacity-0');
+      loadingIndicator.classList.remove('opacity-0');
+      loadingIndicator.classList.add('opacity-100');
+    }
+  }
+  
+  // Hide loading state
+  function hideLoading() {
+    const grid = document.getElementById('project-grid');
+    const loadingIndicator = document.getElementById('loading-indicator');
+    
+    if (grid && loadingIndicator) {
+      // Short delay to ensure DOM has been updated
+      setTimeout(() => {
+        grid.classList.remove('opacity-0');
+        grid.classList.add('opacity-100');
+        loadingIndicator.classList.remove('opacity-100');
+        loadingIndicator.classList.add('opacity-0');
+      }, 100);
+    }
+  }
+  
   // Check for URL parameters on load
   function initializePage() {
     // Parse URL for tag and page
@@ -138,16 +174,25 @@ const initialProjects = projectsWithUrls.slice(0, PROJECTS_PER_PAGE);
       currentPage = parseInt(hash.replace('#page=', '')) || 1;
     }
     
-    renderProjects();
+    // Show grid after initial load to prevent a flash of unstyled content
+    hideLoading();
+    
+    // Render projects without animation on the first load
+    renderProjects(false, false);
     updateLoadMoreVisibility();
     
     // Set up intersection observer for infinite scroll
     setupInfiniteScroll();
   }
   
-  function renderProjects(appendMode = false) {
+  function renderProjects(appendMode = false, animate = true) {
     const grid = document.getElementById('project-grid');
     if (!grid) return;
+    
+    // Show loading state if animation is enabled
+    if (animate && !appendMode) {
+      showLoading();
+    }
     
     // Only clear the grid if not in append mode
     if (!appendMode) {
@@ -172,6 +217,11 @@ const initialProjects = projectsWithUrls.slice(0, PROJECTS_PER_PAGE);
       
       // Add event listener to the "View all projects" button
       document.getElementById('clear-tag-results').addEventListener('click', clearTagFilter);
+      
+      // Hide loading state
+      if (animate) {
+        hideLoading();
+      }
       return;
     }
     
@@ -179,9 +229,10 @@ const initialProjects = projectsWithUrls.slice(0, PROJECTS_PER_PAGE);
     reachedEnd = endIndex >= filteredProjects.length;
     
     // Use the ProjectSummary component for a consistent look
-    projectsToShow.forEach(project => {
+    projectsToShow.forEach((project, index) => {
       // Create a div to hold the project
       const projectEl = document.createElement('div');
+      projectEl.className = 'opacity-0 transform translate-y-4 transition-all duration-300';
       
       // Use DocumentFragment for better performance when building complex DOM
       const fragment = document.createDocumentFragment();
@@ -313,10 +364,20 @@ const initialProjects = projectsWithUrls.slice(0, PROJECTS_PER_PAGE);
       fragment.appendChild(article);
       projectEl.appendChild(fragment);
       grid.appendChild(projectEl);
+      
+      // Stagger the animations for a nicer effect
+      setTimeout(() => {
+        projectEl.classList.remove('opacity-0', 'translate-y-4');
+      }, index * 50);
     });
     
     // Update URL with current state
     updateUrl();
+    
+    // Hide loading state after rendering is complete
+    if (animate) {
+      hideLoading();
+    }
   }
   
   function updateUrl() {
@@ -376,6 +437,7 @@ const initialProjects = projectsWithUrls.slice(0, PROJECTS_PER_PAGE);
   
   // Clear the tag filter
   function clearTagFilter() {
+    showLoading();
     activeTag = '';
     currentPage = 1;
     updateActiveTag();
@@ -421,6 +483,8 @@ const initialProjects = projectsWithUrls.slice(0, PROJECTS_PER_PAGE);
     // Handle tag clicks
     if (target.classList.contains('tag-chip') || target.closest('.tag-chip')) {
       e.preventDefault();
+      showLoading();
+      
       const tagElement = target.classList.contains('tag-chip') ? target : target.closest('.tag-chip');
       const tag = tagElement.dataset.tag;
       
@@ -440,6 +504,7 @@ const initialProjects = projectsWithUrls.slice(0, PROJECTS_PER_PAGE);
     // Handle "All" tag click
     if (target.classList.contains('all-tag-chip') || target.closest('.all-tag-chip')) {
       e.preventDefault();
+      showLoading();
       clearTagFilter();
     }
   });
@@ -459,5 +524,15 @@ const initialProjects = projectsWithUrls.slice(0, PROJECTS_PER_PAGE);
   :global(lite-youtube) {
     border-radius: 0.5rem;
     overflow: hidden;
+  }
+  
+  /* Additional animation styles */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 0.5s ease-out forwards;
   }
 </style>
