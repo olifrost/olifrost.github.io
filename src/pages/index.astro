@@ -67,19 +67,22 @@ const recentThreeProjects = recentProjects.slice(0, 3);
     <ProjectSection 
         title="Music" 
         viewAllLink="/blog?tag=music" 
-        projects={displaySongs} 
+        projects={displaySongs}
+        showTags={false}
     />
     
     <ProjectSection 
         title="Featured Projects" 
         viewAllLink="/blog?tag=climate" 
-        projects={displayFeatured} 
+        projects={displayFeatured}
+        showTags={false}
     />
     
     <ProjectSection 
         title="From the archive" 
         viewAllLink="/blog" 
-        projects={displayArchive} 
+        projects={displayArchive}
+        showTags={false}
     />
     
     <div class="flex justify-center mt-6">

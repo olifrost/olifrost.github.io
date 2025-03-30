@@ -6,9 +6,10 @@ interface Props {
   title: string;
   viewAllLink: string;
   projects: CollectionEntry<'blog'>[];
+  showTags?: boolean;
 }
 
-const { title, viewAllLink, projects } = Astro.props;
+const { title, viewAllLink, projects, showTags = true } = Astro.props;
 ---
 
 <section class="mb-3">
@@ -19,7 +20,7 @@ const { title, viewAllLink, projects } = Astro.props;
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
     {projects.map(project => (
       <div class="col-span-1">
-        <ProjectSummary project={project} />
+        <ProjectSummary project={project} showTags={showTags} />
       </div>
     ))}
   </div>

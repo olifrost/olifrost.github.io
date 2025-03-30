@@ -52,15 +52,13 @@ const initialProjects = projectsWithUrls.slice(0, PROJECTS_PER_PAGE);
       <!-- Tag-based navigation with "All" option -->
       <div class="mt-4">
         <div class="flex flex-wrap gap-2 items-center">
-          <!-- "All" tag that's always displayed -->
-          <a 
-            href="/blog"
-            class="all-tag-chip px-3 py-1.5 bg-neutral-100 text-neutral-700 rounded-md text-sm hover:bg-blue-100 hover:text-blue-800 transition-colors font-medium"
+          <!-- "All" tag that uses JS-based filtering -->
+          <button 
+            class="all-tag-chip px-3 py-1.5 bg-blue-600 text-white rounded-md text-sm hover:bg-blue-700 transition-colors font-medium"
             data-is-all="true"
-            onclick="event.preventDefault(); window.location.href = '/projects';"
           >
             All
-          </a>
+          </button>
           
           {allTags.map(tag => {
             // Format tag for display
@@ -70,13 +68,12 @@ const initialProjects = projectsWithUrls.slice(0, PROJECTS_PER_PAGE);
               .join(' ');
               
             return (
-              <a 
-                href={`?tag=${tag}`}
+              <button 
                 class="tag-chip px-3 py-1.5 bg-neutral-100 text-neutral-700 rounded-md text-sm hover:bg-blue-100 hover:text-blue-800 transition-colors font-medium"
                 data-tag={tag}
               >
                 {formattedTag}
-              </a>
+              </button>
             );
           })}
         </div>
@@ -134,7 +131,6 @@ const initialProjects = projectsWithUrls.slice(0, PROJECTS_PER_PAGE);
     
     if (tagParam) {
       activeTag = tagParam;
-      updatePathNavigation();
       updateActiveTag();
     }
     
@@ -147,28 +143,6 @@ const initialProjects = projectsWithUrls.slice(0, PROJECTS_PER_PAGE);
     
     // Set up intersection observer for infinite scroll
     setupInfiniteScroll();
-  }
-  
-  // Update the file path style navigation in the heading
-  function updatePathNavigation() {
-    const tagPathSeparator = document.getElementById('breadcrumb-separator');
-    const activeTagName = document.getElementById('active-tag-name');
-    
-    if (activeTag) {
-      // Show the separator and tag when a tag is active
-      tagPathSeparator.classList.remove('hidden');
-      activeTagName.classList.remove('hidden');
-      activeTagName.textContent = formatTagForDisplay(activeTag);
-      
-      // Make the tag clickable to clear it
-      activeTagName.style.cursor = 'pointer';
-      activeTagName.onclick = clearTagFilter;
-    } else {
-      // Hide the separator and tag when no tag is active
-      tagPathSeparator.classList.add('hidden');
-      activeTagName.classList.add('hidden');
-      activeTagName.textContent = '';
-    }
   }
   
   function renderProjects(appendMode = false) {
@@ -295,12 +269,11 @@ const initialProjects = projectsWithUrls.slice(0, PROJECTS_PER_PAGE);
             .map(word => word.charAt(0).toUpperCase() + word.slice(1))
             .join(' ');
             
-          const tagLink = document.createElement('a');
-          tagLink.href = `?tag=${tag}`;
-          tagLink.className = 'tag-chip text-xs px-2 py-1 bg-neutral-100 hover:bg-blue-100 rounded-md text-neutral-700 hover:text-blue-800 transition-colors font-medium';
-          tagLink.textContent = formattedTag;
-          tagLink.dataset.tag = tag;
-          tagsContainer.appendChild(tagLink);
+          const tagBtn = document.createElement('button');
+          tagBtn.className = 'tag-chip text-xs px-2 py-1 bg-neutral-100 hover:bg-blue-100 rounded-md text-neutral-700 hover:text-blue-800 transition-colors font-medium';
+          tagBtn.textContent = formattedTag;
+          tagBtn.dataset.tag = tag;
+          tagsContainer.appendChild(tagBtn);
         });
         
         article.appendChild(tagsContainer);
@@ -367,12 +340,7 @@ const initialProjects = projectsWithUrls.slice(0, PROJECTS_PER_PAGE);
     // Reset all tag appearances (including the "All" tag)
     document.querySelectorAll('.tag-chip, .all-tag-chip').forEach(chip => {
       chip.classList.remove('bg-blue-600', 'text-white');
-      
-      if (chip.dataset.isAll) {
-        chip.classList.add('bg-neutral-100', 'text-neutral-700');
-      } else {
-        chip.classList.add('bg-neutral-100', 'text-neutral-700');
-      }
+      chip.classList.add('bg-neutral-100', 'text-neutral-700');
     });
     
     // Highlight the active tag
@@ -410,7 +378,6 @@ const initialProjects = projectsWithUrls.slice(0, PROJECTS_PER_PAGE);
   function clearTagFilter() {
     activeTag = '';
     currentPage = 1;
-    updatePathNavigation();
     updateActiveTag();
     renderProjects();
     updateLoadMoreVisibility();
@@ -483,19 +450,8 @@ const initialProjects = projectsWithUrls.slice(0, PROJECTS_PER_PAGE);
     loadMoreBtn.addEventListener('click', loadMoreProjects);
   }
   
-  // Initialize the page with the proper highlight on the "All" tag
-  document.addEventListener('DOMContentLoaded', () => {
-    initializePage();
-    
-    // If no activeTag is set, highlight the "All" tag
-    if (!activeTag) {
-      const allTagChip = document.querySelector('[data-is-all="true"]');
-      if (allTagChip) {
-        allTagChip.classList.remove('bg-neutral-100', 'text-neutral-700');
-        allTagChip.classList.add('bg-blue-600', 'text-white');
-      }
-    }
-  });
+  // Initialize the page
+  document.addEventListener('DOMContentLoaded', initializePage);
 </script>
 
 <style>
