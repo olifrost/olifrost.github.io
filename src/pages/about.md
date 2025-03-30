@@ -1,7 +1,7 @@
 ---
 image: /img/olifrost.jpg
 layout: /src/layouts/SimplePage.astro
-title: About Oli Frost
+title: FAQ
 ---
 
 **Do you really need an FAQ?**  

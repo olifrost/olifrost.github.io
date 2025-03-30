@@ -14,14 +14,10 @@ const sortedProjects = [...allProjects].sort((a, b) => {
 <BlogLayout title="Projects | Oli Frost" description="Browse all projects by Oli Frost">
   <!-- Project grid with all projects loaded but lazy images -->
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    {sortedProjects.map((project, index) => (
-      <div class="project-item opacity-0" style={`--index: ${index};`}>
+    {sortedProjects.map((project) => (
+      <div class="project-item">
         <ProjectSummary project={project} />
       </div>
     ))}
   </div>
 </BlogLayout>
-
-<style>
-  /* Animation styles moved to BlogLayout to ensure consistency */
-</style>

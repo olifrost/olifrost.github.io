@@ -14,23 +14,30 @@ const { title, description, activeTag = null } = Astro.props;
 const allProjects = await getCollection('blog');
 const allTags = [...new Set(allProjects.flatMap(project => project.data.tags || []))].sort();
 
-// Client-side script ID
-const tagNavId = "tag-nav-" + Math.random().toString(36).substring(2, 9);
-const projectsContainerId = "projects-container-" + Math.random().toString(36).substring(2, 9);
+// Generate IDs for transition elements
+const projectsContainerId = "projects-container";
+
+// Get current URL path
+const currentPath = Astro.url.pathname;
 ---
 
 <Layout title={title} description={description}>
   <div class="container mx-auto px-0">
-    <div class="mb-8">  
+    <!-- Tag navigation - persist to maintain state during transitions -->
+    <div class="mb-8" transition:persist="tag-navigation">  
       <h1 class="text-3xl font-bold mb-4 text-black">Projects</h1>
       
-      <!-- Tag navigation with no transitions -->
-      <div class="mt-4" id={tagNavId}>
+      <div class="mt-4">
         <div class="flex flex-wrap gap-2 items-center">
           <!-- "All" tag that links to the main blog page -->
           <a href="/blog" 
-             class={`all-tag-chip px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${activeTag === null ? 'bg-blue-600 text-white hover:bg-blue-700' : 'bg-neutral-100 text-neutral-700 hover:bg-blue-100 hover:text-blue-800'}`}
-             data-tag-nav="all">
+             class={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
+               currentPath === "/blog" 
+               ? 'bg-blue-600 text-white hover:bg-blue-700' 
+               : 'bg-neutral-100 text-neutral-700 hover:bg-blue-200'
+             }`}
+             data-active={currentPath === "/blog" ? "true" : "false"}
+             data-astro-prefetch>
             All
           </a>
           
@@ -41,13 +48,20 @@ const projectsContainerId = "projects-container-" + Math.random().toString(36).s
               .map(word => word.charAt(0).toUpperCase() + word.slice(1))
               .join(' ');
               
-            const isActive = tag === activeTag;
+            const tagPath = `/tags/${tag}`;
+            const isActive = currentPath === tagPath || activeTag === tag;
             
             return (
               <a 
-                href={`/tags/${tag}`} 
-                class={`tag-chip px-3 py-1.5 text-sm rounded-md font-medium transition-colors ${isActive ? 'bg-blue-600 text-white hover:bg-blue-700' : 'bg-neutral-100 text-neutral-700 hover:bg-blue-100 hover:text-blue-800'}`}
-                data-tag-nav={tag}
+                href={tagPath}
+                class={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
+                  isActive 
+                  ? 'bg-blue-600 text-white hover:bg-blue-700' 
+                  : 'bg-neutral-100 text-neutral-700 hover:bg-blue-200'
+                }`}
+                data-active={isActive ? "true" : "false"}
+                data-tag={tag}
+                data-astro-prefetch
               >
                 {formattedTag}
               </a>
@@ -57,7 +71,7 @@ const projectsContainerId = "projects-container-" + Math.random().toString(36).s
       </div>
     </div>
     
-    <!-- Projects container with individual animations -->
+    <!-- Projects container -->
     <div id={projectsContainerId}>
       <slot />
     </div>
@@ -70,183 +84,46 @@ const projectsContainerId = "projects-container-" + Math.random().toString(36).s
     border-radius: 0.5rem;
     overflow: hidden;
   }
-  
-  /* Add touch action manipulation to tag chips */
-  .tag-chip, .all-tag-chip {
-    touch-action: manipulation;
-    -webkit-tap-highlight-color: transparent;
-  }
 
-  @keyframes fadeIn {
+  /* Animation for project items */
+  :global(.project-item) {
+    opacity: 0;
+    animation: projectFadeIn 0.4s ease-out forwards;
+  }
+  
+  @keyframes projectFadeIn {
     from {
       opacity: 0;
-      transform: translateY(10px);
     }
     to {
       opacity: 1;
-      transform: translateY(0);
     }
-  }
-  
-  /* Add initial state for project items */
-  :global(.project-item) {
-    opacity: 0;
-    transform: translateY(10px);
-    animation: fadeIn 0.3s ease-out forwards;
   }
 </style>
 
-<script define:vars={{ tagNavId, projectsContainerId, activeTag }}>
-  // Remove DOMContentLoaded wrapper since Astro guarantees script execution timing
-  // Update active tag visually
-  function updateActiveTag(activeTag) {
-    document.querySelectorAll('[data-tag-nav]').forEach(tag => {
-      const tagValue = tag.getAttribute('data-tag-nav');
-      const isAllTag = tagValue === 'all';
-      const isActive = isAllTag ? activeTag === null : tagValue === activeTag;
-      
-      if (isActive) {
-        tag.classList.add('bg-blue-600', 'text-white', 'hover:bg-blue-700');
-        tag.classList.remove('bg-neutral-100', 'text-neutral-700', 'hover:bg-blue-100', 'hover:text-blue-800');
-      } else {
-        tag.classList.remove('bg-blue-600', 'text-white', 'hover:bg-blue-700');
-        tag.classList.add('bg-neutral-100', 'text-neutral-700', 'hover:bg-blue-100', 'hover:text-blue-800');
+<script>
+  // Script to ensure tag navigation maintains state during transitions
+  document.addEventListener('astro:page-load', () => {
+    const currentPath = window.location.pathname;
+    
+    // Update all tag chips based on the current URL
+    document.querySelectorAll('[data-active]').forEach(link => {
+      if (link instanceof HTMLAnchorElement) {
+        const href = link.getAttribute('href');
+        const isActive = href === currentPath;
+          
+        // Set data-active attribute
+        link.setAttribute('data-active', isActive ? 'true' : 'false');
+        
+        // Update classes
+        if (isActive) {
+          link.classList.add('bg-blue-600', 'text-white', 'hover:bg-blue-700');
+          link.classList.remove('bg-neutral-100', 'text-neutral-700', 'hover:bg-blue-200');
+        } else {
+          link.classList.remove('bg-blue-600', 'text-white', 'hover:bg-blue-700');
+          link.classList.add('bg-neutral-100', 'text-neutral-700', 'hover:bg-blue-200');
+        }
       }
     });
-  }
-
-  // Get the current tag from the URL
-  function getCurrentTag() {
-    const path = window.location.pathname;
-    if (path.startsWith('/tags/')) {
-      return path.split('/').pop();
-    }
-    return null;
-  }
-
-  // Update the active tag based on the current URL
-  updateActiveTag(getCurrentTag());
-  
-  // Handle tag navigation clicks
-  const tagNav = document.getElementById(tagNavId);
-  if (tagNav) {
-    // Add both click and touchend handlers
-    ['click', 'touchend'].forEach(eventType => {
-      tagNav.addEventListener(eventType, async (e) => {
-        // Prevent double-firing on touch devices
-        if (eventType === 'touchend') {
-          e.preventDefault();
-        }
-        
-        const tagLink = e.target.closest('[data-tag-nav]');
-        if (!tagLink) return;
-        
-        if (eventType === 'click' && e.pointerType === 'touch') return;
-        
-        e.preventDefault();
-        
-        // Get the tag and href
-        const tag = tagLink.getAttribute('data-tag-nav');
-        const href = tagLink.getAttribute('href');
-        const newTag = tag === 'all' ? null : tag;
-        
-        // Update active tag visually immediately
-        updateActiveTag(newTag);
-        
-        // Update browser history without a page reload
-        window.history.pushState({}, '', href);
-        
-        try {
-          // Fetch the new page content
-          const response = await fetch(href);
-          const html = await response.text();
-          
-          // Parse the fetched HTML
-          const parser = new DOMParser();
-          const doc = parser.parseFromString(html, 'text/html');
-          
-          // Find the projects container in the new content
-          const newProjectsContainer = doc.getElementById(projectsContainerId);
-          
-          // We need to get the grid element itself, not just its inner content
-          if (newProjectsContainer) {
-            const newGrid = newProjectsContainer.querySelector('.grid');
-            if (newGrid) {
-              // Replace the grid while preserving the container
-              const currentProjectsContainer = document.getElementById(projectsContainerId);
-              const currentGrid = currentProjectsContainer.querySelector('.grid');
-              
-              if (currentGrid) {
-                // If there's already a grid, replace it entirely to maintain structure
-                currentGrid.outerHTML = newGrid.outerHTML;
-              } else {
-                // If there's no grid yet (unlikely), just add the new grid
-                currentProjectsContainer.innerHTML = newGrid.outerHTML;
-              }
-            } else {
-              // Fallback: just get all the content
-              document.getElementById(projectsContainerId).innerHTML = newProjectsContainer.innerHTML;
-            }
-          } else {
-            // If we can't find by ID, try a more generic approach
-            const newGrid = doc.querySelector('.grid');
-            if (newGrid) {
-              const currentProjectsContainer = document.getElementById(projectsContainerId);
-              const currentGrid = currentProjectsContainer.querySelector('.grid');
-              
-              if (currentGrid) {
-                currentGrid.outerHTML = newGrid.outerHTML;
-              } else {
-                currentProjectsContainer.innerHTML = newGrid.outerHTML;
-              }
-            } else {
-              console.error('Could not find projects grid in fetched page');
-            }
-          }
-          
-          // Ensure animations run on the newly loaded content
-          triggerProjectAnimations();
-        } catch (error) {
-          console.error('Error fetching content:', error);
-        }
-      });
-    });
-  }
-  
-  // Simplified animation function - just reset the animation
-  function triggerProjectAnimations() {
-    document.querySelectorAll('.project-item').forEach(item => {
-      item.style.animation = 'none';
-      item.offsetHeight; // Trigger reflow
-      item.style.animation = null;
-    });
-  }
-  
-  // Handle image loading
-  document.querySelectorAll('img').forEach(img => {
-    if (img instanceof HTMLImageElement && !img.complete) {
-      img.style.opacity = '0';
-      img.style.transition = 'opacity 0.5s ease-in-out';
-      
-      img.onload = () => {
-        img.style.opacity = '1';
-      };
-    }
-  });
-  
-  // Run the animations on initial page load
-  triggerProjectAnimations();
-  
-  // Listen for popstate (browser back/forward) to update active tag
-  window.addEventListener('popstate', () => {
-    const currentTag = getCurrentTag();
-    updateActiveTag(currentTag);
-    
-    // If we navigate back/forward using browser controls, we need to fetch the content
-    const currentPath = window.location.pathname;
-    if ((currentPath === '/blog' || currentPath.startsWith('/tags/')) && window.performance && window.performance.navigation.type === window.performance.navigation.TYPE_BACK_FORWARD) {
-      // For now, just reload the page to ensure correct state
-      window.location.reload();
-    }
   });
 </script>

@@ -40,14 +40,10 @@ const formattedTag = tag
 >
   <!-- Project grid with all projects loaded but lazy images -->
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    {projects.map((project, index) => (
-      <div class="project-item opacity-0" style={`--index: ${index};`}>
+    {projects.map((project) => (
+      <div class="project-item">
         <ProjectSummary project={project} />
       </div>
     ))}
   </div>
 </BlogLayout>
-
-<style>
-  /* Animation styles moved to BlogLayout to ensure consistency */
-</style>

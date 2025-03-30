@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import { ViewTransitions } from 'astro:transitions';
 import YouTubeModalWrapper from '../components/YouTubeModalWrapper.astro';
 
+// Enable view transitions by default
 const { title, description, disableViewTransitions = false } = Astro.props;
 
 // Get the current URL path to conditionally apply view transitions
@@ -20,11 +21,11 @@ const shouldDisableTransitions = disableViewTransitions || (isPostPage && !isAbo
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} />
-		{!shouldDisableTransitions && <ViewTransitions />}
+		{!shouldDisableTransitions && <ViewTransitions fallback="none" />}
 	</head>
 	<body class="bg-white font-light">
 		<Header />
-		<main class="max-w-5xl mx-auto px-4 py-8 pt-2" transition:animate={!shouldDisableTransitions ? 'fade' : undefined}>
+		<main class="max-w-5xl mx-auto px-4 py-8 pt-2">
 			<slot />
 		</main>
 		<Footer />
@@ -33,3 +34,15 @@ const shouldDisableTransitions = disableViewTransitions || (isPostPage && !isAbo
 		<YouTubeModalWrapper />
 	</body>
 </html>
+
+<style>
+  /* Add basic fade transition for when view transitions are disabled */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  main {
+    animation: fadeIn 0.3s ease-out;
+  }
+</style>
