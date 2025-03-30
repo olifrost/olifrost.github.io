@@ -1,0 +1,125 @@
+---
+import { getImage } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import { resolveAssetPath, isAssetPath } from '../utils/assetUtils';
+import { Image } from 'astro:assets';
+
+interface Props {
+  id: string;
+  poster: string | ImageMetadata | `@assets/${string}`;
+  class?: string;
+}
+
+const { id, poster, class: className } = Astro.props;
+
+// Process the poster image based on its type
+let posterSrc = '';
+let posterImage: ImageMetadata | null = null;
+
+if (isAssetPath(poster)) {
+  // Handle @assets/ path format using our utility
+  const resolvedAsset = resolveAssetPath(poster);
+  
+  if (resolvedAsset) {
+    posterImage = resolvedAsset;
+    // Optimize the found image for the data-poster attribute
+    const optimizedImage = await getImage({
+      src: resolvedAsset,
+      width: 800,
+      format: 'webp',
+    });
+    posterSrc = optimizedImage.src;
+  } else {
+    console.warn(`No matching asset found for ${poster}`);
+    posterSrc = '';
+  }
+} else if (typeof poster === 'string') {
+  // If it's a regular string URL, use it directly
+  posterSrc = poster;
+} else if (poster) {
+  posterImage = poster;
+  // If it's an ImageMetadata object, optimize it for data-poster attribute
+  const optimizedImage = await getImage({
+    src: poster,
+    width: 800,
+    format: 'webp',
+  });
+  posterSrc = optimizedImage.src;
+}
+---
+
+<div 
+  class={`lazy-youtube relative aspect-video overflow-hidden rounded-lg cursor-pointer group ${className || ''}`}
+  data-video-id={id}
+>
+  <!-- Image with play button overlay -->
+  <div class="absolute inset-0">
+    {posterImage ? (
+      <Image 
+        src={posterImage}
+        alt="YouTube video thumbnail"
+        width={800}
+        height={450}
+        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+        loading="lazy"
+      />
+    ) : (
+      <img 
+        src={posterSrc} 
+        alt="YouTube video thumbnail" 
+        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+        loading="lazy"
+      />
+    )}
+  </div>
+
+  <!-- Improved minimal play button - small rounded rectangle -->
+  <div class="absolute inset-0 flex items-center justify-center">
+    <div class="w-12 h-8 md:w-14 md:h-10 bg-blue-600/90 rounded-md flex items-center justify-center shadow-md group-hover:bg-blue-700 transition-all duration-300 group-hover:scale-105">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 md:w-5 md:h-5 text-white">
+        <polygon points="5 3 19 12 5 21 5 3" fill="white"></polygon>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Subtle gradient overlay for better contrast -->
+  <div class="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent opacity-70 group-hover:opacity-50 transition-opacity duration-300"></div>
+</div>
+
+<script>
+  // Initialize all lazy YouTube elements on the page
+  document.addEventListener('DOMContentLoaded', () => {
+    const lazyYouTubeElements = document.querySelectorAll('.lazy-youtube');
+    
+    // Create modal container if it doesn't exist
+    let modalContainer = document.getElementById('youtube-modal-container');
+    if (!modalContainer) {
+      modalContainer = document.createElement('div');
+      modalContainer.id = 'youtube-modal-container';
+      document.body.appendChild(modalContainer);
+    }
+
+    // Add click event listeners to all lazy YouTube elements
+    lazyYouTubeElements.forEach(element => {
+      element.addEventListener('click', () => {
+        const videoId = element.getAttribute('data-video-id');
+        if (videoId) {
+          // Dispatch a custom event that the Svelte component will listen for
+          const event = new CustomEvent('open-youtube-modal', {
+            detail: { videoId }
+          });
+          document.dispatchEvent(event);
+          
+          // Add a class to prevent body scrolling
+          document.body.classList.add('modal-open');
+        }
+      });
+    });
+  });
+</script>
+
+<style>
+  .lazy-youtube {
+    transform: translateZ(0); /* Force hardware acceleration */
+  }
+</style>

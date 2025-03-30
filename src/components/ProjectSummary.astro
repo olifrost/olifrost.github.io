@@ -1,10 +1,9 @@
 ---
 import { type CollectionEntry } from 'astro:content';
-import { YouTube } from 'astro-embed';
-import { getBlogUrl } from '../utils/urls';
-import { Image } from 'astro:assets'; // Add this import
-import OptimizedYouTube from '@components/OptimizedYouTube.astro';
+import { Image } from 'astro:assets';
 import TagList from './TagList.astro';
+import LazyYouTube from './LazyYouTube.astro';
+import { getBlogUrl } from '../utils/urls';
 
 interface PressItem {
   name: string;
@@ -26,24 +25,28 @@ const projectUrl = getBlogUrl(project.id);
 ---
 
 <article class="w-full mb-3">
-  <!-- Do not wrap the video in the anchor tag -->
+  <!-- Media container - video thumbnail or image -->
   <div class="w-full overflow-hidden rounded-lg mb-2 transition-shadow group-hover:shadow-lg aspect-video relative">
     {hasVideo ? (
-      <OptimizedYouTube 
+      <LazyYouTube 
         id={data.video || ''} 
         poster={data.image}
         class="rounded-lg"
       />
     ) : (
-      <Image 
-        src={data.image}
-        alt={data.title}
-        width={800}
-        height={450}
-        class="w-full h-full object-cover absolute inset-0 transition-transform duration-300 group-hover:scale-[1.02]"
-      />
+      <a href={projectUrl} class="block w-full h-full">
+        <Image 
+          src={data.image}
+          alt={data.title}
+          width={800}
+          height={450}
+          class="w-full h-full object-cover absolute inset-0 transition-transform duration-300 hover:scale-[1.02]"
+          loading="lazy"
+        />
+      </a>
     )}
   </div>
+  
   <a href={projectUrl} class="group block">
     <h2 class="text-2xl/6 font-bold mb-2 text-black transition-colors group-hover:text-blue-600">
       {data.title}

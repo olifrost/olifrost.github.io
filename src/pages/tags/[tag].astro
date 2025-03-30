@@ -1,11 +1,8 @@
 ---
-import BaseHead from '../../components/BaseHead.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
-import { SITE_TITLE } from '../../consts';
+import BlogLayout from '../../layouts/BlogLayout.astro';
 import { getCollection } from 'astro:content';
 import ProjectSummary from '../../components/ProjectSummary.astro';
-import TagChip from '../../components/TagChip.astro';
+import { SITE_TITLE } from '../../consts';
 
 export async function getStaticPaths() {
   const allProjects = await getCollection('blog');
@@ -22,7 +19,7 @@ export async function getStaticPaths() {
       tag,
       projects: allProjects.filter(project => 
         project.data.tags?.includes(tag)
-      ).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+      ).sort((a, b) => new Date(b.data.date || '').getTime() - new Date(a.data.date || '').getTime())
     }
   }));
 }
@@ -34,51 +31,23 @@ const formattedTag = tag
   .split('-')
   .map(word => word.charAt(0).toUpperCase() + word.slice(1))
   .join(' ');
-
-// Get all unique tags from all projects excluding the current tag
-const allProjects = await getCollection('blog');
-const allTags = [...new Set(
-  allProjects.flatMap(project => project.data.tags || [])
-)].filter(t => t !== tag).sort();
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={`${formattedTag} - ${SITE_TITLE}`} description={`Browse all ${formattedTag.toLowerCase()} projects by Oli Frost`} />
-	</head>
-	<body class="bg-white">
-		<Header />
-		<main class="max-w-5xl mx-auto px-4 py-8">
-			<div class="mb-8">
-				<div class="flex flex-wrap items-center gap-2 mb-4">
-					<a href="/blog" class="text-blue-600 hover:underline">
-						← All Projects
-					</a>
-					<span class="text-neutral-400 px-1">→</span>
-					<span class="text-neutral-800 text-lg font-medium">{formattedTag}</span>
-				</div>
-				
-			<!-- <h1 class="text-3xl font-bold mb-2 text-black">{formattedTag}</h1> -->
-				
-				{allTags.length > 0 && (
-					<div class="mt-4">
-						<h2 class="text-sm font-medium text-neutral-600 mb-2">Browse other tags:</h2>
-						<div class="flex flex-wrap gap-2">
-							{allTags.map(otherTag => (
-								<TagChip tag={otherTag} size="sm" />
-							))}
-						</div>
-					</div>
-				)}
-			</div>
-			
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-				{projects.map((project) => (
-					<ProjectSummary project={project} />
-				))}
-			</div>
-		</main>
-		<Footer />
-	</body>
-</html>
+<BlogLayout 
+  title={`${formattedTag} - ${SITE_TITLE}`} 
+  description={`Browse all ${formattedTag.toLowerCase()} projects by Oli Frost`}
+  activeTag={tag}
+>
+  <!-- Project grid with all projects loaded but lazy images -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {projects.map((project, index) => (
+      <div class="project-item opacity-0" style={`--index: ${index};`}>
+        <ProjectSummary project={project} />
+      </div>
+    ))}
+  </div>
+</BlogLayout>
+
+<style>
+  /* Animation styles moved to BlogLayout to ensure consistency */
+</style>

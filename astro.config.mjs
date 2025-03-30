@@ -8,6 +8,7 @@ import AutoImport from 'astro-auto-import';
 import icon from 'astro-icon';
 import astroBrokenLinksChecker from 'astro-broken-link-checker';
 import { visualizer } from "rollup-plugin-visualizer";
+import alpinejs from '@astrojs/alpinejs';
 
 // https://astro.build/config
 export default defineConfig({
@@ -43,6 +44,10 @@ export default defineConfig({
     },
     // Ensure output directory is configured correctly
     outDir: './dist',
+    // Configure experimental features properly
+    experimental: {
+        viewTransitions: true
+    },
     integrations: [
         AutoImport({
             imports: [
@@ -60,6 +65,7 @@ export default defineConfig({
         mdx(),
         sitemap(),
         svelte(),
+        alpinejs(),
         astroBrokenLinksChecker({
             logFilePath: 'broken-links.log', // Optional: specify the log file path
             checkExternalLinks: false // Optional: check external links (currently, caching to disk is not supported, and it is slow )

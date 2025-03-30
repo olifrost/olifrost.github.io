@@ -1,0 +1,94 @@
+---
+import YouTubeModal from './svelte/YouTubeModal.svelte';
+---
+
+<!-- The Svelte component will be hydrated in client-side JS -->
+<div id="youtube-modal-container">
+  <YouTubeModal client:idle />
+</div>
+
+<script>
+  // Create a function to initialize the YouTube modal controller
+  function initYouTubeModalController() {
+    // Create a centralized controller for the YouTube modal
+    const controller = {
+      videoId: '',
+      isOpen: false,
+      
+      open(videoId: string) {
+        this.videoId = videoId;
+        this.isOpen = true;
+        this.updateComponent();
+        document.body.classList.add('modal-open');
+      },
+      
+      close() {
+        this.isOpen = false;
+        this.updateComponent();
+        document.body.classList.remove('modal-open');
+      },
+      
+      updateComponent() {
+        // Find the svelte component instance within our container
+        const container = document.getElementById('youtube-modal-container');
+        if (!container) return;
+        
+        // Using a custom event to communicate with the Svelte component
+        container.dispatchEvent(new CustomEvent('update-youtube-modal', {
+          detail: {
+            videoId: this.videoId,
+            isOpen: this.isOpen
+          }
+        }));
+      }
+    };
+    
+    // Remove any existing listeners first to prevent duplicates
+    document.body.removeEventListener('click', handleBodyClick);
+    document.removeEventListener('open-youtube-modal', handleOpenYouTubeModal);
+    
+    // Listen for click events on LazyYouTube elements
+    document.body.addEventListener('click', handleBodyClick);
+
+    // Listen for custom events from LazyYouTube component
+    document.addEventListener('open-youtube-modal', handleOpenYouTubeModal);
+    
+    // Make the controller available globally
+    // @ts-ignore - Adding property to window
+    window.YouTubeModalController = controller;
+    
+    // Define event handler functions
+    function handleBodyClick(event: Event) {
+      const target = event.target as Element;
+      const lazyYouTube = target.closest('.lazy-youtube');
+      
+      if (lazyYouTube) {
+        const videoId = lazyYouTube.getAttribute('data-video-id');
+        if (videoId) {
+          event.preventDefault();
+          controller.open(videoId);
+        }
+      }
+    }
+    
+    function handleOpenYouTubeModal(event: any) {
+      if (event.detail && event.detail.videoId) {
+        controller.open(event.detail.videoId);
+      }
+    }
+  }
+
+  // Initialize on page load
+  document.addEventListener('DOMContentLoaded', initYouTubeModalController);
+  
+  // Re-initialize after Astro view transitions
+  document.addEventListener('astro:page-load', initYouTubeModalController);
+  
+  // Clean up before navigation
+  document.addEventListener('astro:before-swap', () => {
+    // If modal is open when navigating, close it to prevent issues
+    if (window.YouTubeModalController && window.YouTubeModalController.isOpen) {
+      window.YouTubeModalController.close();
+    }
+  });
+</script>

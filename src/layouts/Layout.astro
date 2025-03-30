@@ -2,20 +2,34 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { ViewTransitions } from 'astro:transitions';
+import YouTubeModalWrapper from '../components/YouTubeModalWrapper.astro';
 
-const { title, description } = Astro.props;
+const { title, description, disableViewTransitions = false } = Astro.props;
+
+// Get the current URL path to conditionally apply view transitions
+const path = Astro.url.pathname;
+const isPostPage = path.includes('/blog/') && path !== '/blog';
+const isAboutPage = path.includes('/about');
+
+// Only disable view transitions on post pages, never on the About page
+const shouldDisableTransitions = disableViewTransitions || (isPostPage && !isAboutPage);
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} />
+		{!shouldDisableTransitions && <ViewTransitions />}
 	</head>
 	<body class="bg-white font-light">
 		<Header />
-		<main class="max-w-5xl mx-auto px-4 py-8 pt-2">
+		<main class="max-w-5xl mx-auto px-4 py-8 pt-2" transition:animate={!shouldDisableTransitions ? 'slide' : undefined}>
 			<slot />
 		</main>
 		<Footer />
+		
+		<!-- YouTube Modal (used across the entire site) -->
+		<YouTubeModalWrapper />
 	</body>
 </html>
