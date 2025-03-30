@@ -8,14 +8,7 @@
 
 :root {
     --accent: 35, 55, 255;    
-    
-    /* Fallback colors for older browsers - closer to Tailwind blue-600 */
-    --fallback-blue: #2563eb; /* Tailwind blue-600 equivalent */
-    --fallback-blue-hover: #3b82f6; /* Tailwind blue-500 equivalent for hover */
-    --fallback-blue-light: #dbeafe; /* Tailwind blue-100 equivalent */
-    --fallback-gray-light: #f3f4f6; /* Tailwind gray-100 equivalent */
-    --fallback-gray-medium: #e5e7eb; /* Tailwind gray-200 equivalent */
-    --fallback-gray-dark: #6b7280; /* Tailwind gray-500 equivalent */
+
 }
 
 /* Font faces */
@@ -51,51 +44,18 @@ a {
 
 /* Fallback styles for older browsers only - using @supports not */
 @supports not (color: oklch(0% 0 0)) {
-    /* Basic fallback styles for links */
-    a:not(h1 a, svg a) {
-        color: var(--fallback-blue);
-        text-decoration: none;
-    }
-    
-    a:not(h1 a, svg a):hover {
-        color: var(--fallback-blue-hover);
-        text-decoration: none;
-    }
-    
-    /* Tag chips fallback */
-    .tag-chip {
-        background-color: var(--fallback-gray-light) !important;
-        color: var(--fallback-gray-dark) !important;
-        border: 1px solid var(--fallback-gray-medium);
-    }
-    
-    .tag-chip:hover, .all-tag-chip:hover {
-        background-color: var(--fallback-blue-light) !important;
-        color: var(--fallback-blue) !important;
-    }
-    
-    .tag-chip[data-active="true"], .all-tag-chip[data-active="true"] {
-        background-color: var(--fallback-blue) !important;
-        color: white !important;
-    }
-    
-    /* For linktree items and any other elements that need blue backgrounds */
-    .links-item, .linktree-item, [class*="bg-blue-600"] {
-        background-color: var(--fallback-blue) !important;
-        color: white !important;
-    }
-    
-    /* Specific override for prose links */
     .prose a {
-        color: var(--fallback-blue) !important;
-        text-decoration: none !important;
-    }
-    
-    .prose a:hover {
-        color: var(--fallback-blue-hover) !important;
-        text-decoration: none !important;
+        color: #2563eb;
+        text-decoration: none;
     }
 }
+    
+    .links-item,
+    .linktree-item {
+        background-color: #2563eb;
+        color: white;
+    }
+
 
 /* The rest of your existing styles */
 .link-preview {
