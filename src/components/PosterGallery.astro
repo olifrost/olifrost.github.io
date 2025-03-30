@@ -6,10 +6,28 @@ import type { ImageMetadata } from 'astro';
 interface Props {
   path: string;
   itemsPerSlide?: number;
+  itemsPerSlideTablet?: number;
+  itemsPerSlideMobile?: number;
   usePublic?: boolean;
+  loop?: boolean;
+  showControls?: boolean;
+  showPagination?: boolean;
+  autoplay?: boolean;
+  autoplayInterval?: number;
 }
 
-const { path, itemsPerSlide = 3, usePublic = false } = Astro.props;
+const { 
+  path, 
+  itemsPerSlide = 3, 
+  itemsPerSlideTablet = 2,
+  itemsPerSlideMobile = 1,
+  usePublic = false,
+  loop = true,
+  showControls = true,
+  showPagination = true,
+  autoplay = false,
+  autoplayInterval = 5000
+} = Astro.props;
 
 let filteredImages = [];
 
@@ -49,6 +67,13 @@ if (usePublic) {
         alt: img.alt
       }))} 
       itemsPerSlide={Math.min(filteredImages.length, itemsPerSlide)} 
+      itemsPerSlideTablet={Math.min(filteredImages.length, itemsPerSlideTablet)}
+      itemsPerSlideMobile={Math.min(filteredImages.length, itemsPerSlideMobile)}
+      {loop}
+      {showControls}
+      {showPagination}
+      {autoplay}
+      {autoplayInterval}
     />
   ) : (
     <p class="text-gray-500 italic">No images found in {path}</p>
