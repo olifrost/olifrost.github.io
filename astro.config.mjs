@@ -45,9 +45,6 @@ export default defineConfig({
     // Ensure output directory is configured correctly
     outDir: './dist',
     // Configure experimental features properly
-    experimental: {
-        viewTransitions: true
-    },
     integrations: [
         AutoImport({
             imports: [

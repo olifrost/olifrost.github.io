@@ -2,7 +2,7 @@ You are editing the portfolio site of renowned satirist Oli Frost, which documen
 
 I'm in the middle of porting over an older implementation in jekyll, stored in /original
 
-It is built with Astro (built on Vite), and the new Tailwind 4, and is capable of being extended with Svelte 5 for serious interactivity
+It is built with Astro (built on Vite), and the new Tailwind 4, and is capable of being extended with Svelte 5 for serious interactivity, or Alpine for small in-page elements to keep code concise
 
 Always use Tailwind for styling, if possible
 
