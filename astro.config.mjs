@@ -113,7 +113,8 @@ export default defineConfig({
                             return 'svelte-components';
                         }
                     }
-                }
+                },
+                external: []
             },
             // Increase warning limit while optimizing
             chunkSizeWarningLimit: 1000,
@@ -125,6 +126,9 @@ export default defineConfig({
                 '@layouts': '/src/layouts',
                 '@posts': '/blog',
             }
+        },
+        optimizeDeps: {
+            include: ['embla-carousel']
         }
     },
 });

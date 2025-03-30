@@ -40,8 +40,8 @@
     window.addEventListener('resize', handleResize);
     
     // Import and initialize Embla
-    const emblaCarousel = await import('embla-carousel');
-    emblaApi = emblaCarousel.default(emblaNode, options);
+    const { EmblaCarousel } = await import('embla-carousel');
+    emblaApi = EmblaCarousel(emblaNode, options);
     
     // Set up event listeners
     emblaApi.on('select', handleSelect);
