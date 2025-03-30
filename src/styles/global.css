@@ -80,6 +80,14 @@ a {
 .text-neutral-700 { color: rgb(64 64 64); }
 .text-white { color: rgb(255 255 255); }
 
+/* Prose link fallbacks */
+.prose a { 
+    color: rgb(37 99 235); /* Same as text-blue-600 */
+}
+.prose a:hover {
+    color: rgb(29 78 216); /* Same as text-blue-700 */
+}
+
 /* Override with OKLCH colors in supporting browsers */
 @supports (color: oklch(0 0 0)) {
     /* Background colors */
@@ -106,6 +114,14 @@ a {
     .text-blue-600 { color: oklch(0.546 0.245 262.881); }
     .text-blue-800 { color: oklch(0.424 0.199 265.638); }
     .text-neutral-700 { color: oklch(0.371 0 0); }
+
+    /* Prose link OKLCH colors */
+    .prose a { 
+        color: oklch(0.546 0.245 262.881); /* Same as text-blue-600 */
+    }
+    .prose a:hover {
+        color: oklch(0.488 0.243 264.376); /* Same as text-blue-700 */
+    }
 }
 
 /* Custom component styles */

@@ -87,6 +87,13 @@ const projectsContainerId = "projects-container-" + Math.random().toString(36).s
       transform: translateY(0);
     }
   }
+  
+  /* Add initial state for project items */
+  :global(.project-item) {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeIn 0.3s ease-out forwards;
+  }
 </style>
 
 <script define:vars={{ tagNavId, projectsContainerId, activeTag }}>
@@ -206,43 +213,26 @@ const projectsContainerId = "projects-container-" + Math.random().toString(36).s
     });
   }
   
-  // Add animation to project items
+  // Simplified animation function - just reset the animation
   function triggerProjectAnimations() {
-    // First, make all project items hidden
     document.querySelectorAll('.project-item').forEach(item => {
-      if (item instanceof HTMLElement) {
-        // Reset the initial state
-        item.style.opacity = '0';
-        item.style.transform = 'translateY(10px)';
-      }
-    });
-    
-    // Then add index and trigger animation
-    document.querySelectorAll('.project-item').forEach((item, index) => {
-      if (item instanceof HTMLElement) {
-        // Set the animation index
-        item.style.setProperty('--index', index.toString());
-        
-        // Use a small timeout to ensure the animations trigger after the DOM update
-        setTimeout(() => {
-          item.style.animation = `fadeIn 0.3s ease-out forwards`;
-          item.style.animationDelay = `${index * 50}ms`;
-        }, 10);
-      }
-    });
-    
-    // Handle image loading
-    document.querySelectorAll('img').forEach(img => {
-      if (img instanceof HTMLImageElement && !img.complete) {
-        img.style.opacity = '0';
-        img.style.transition = 'opacity 0.5s ease-in-out';
-        
-        img.onload = () => {
-          img.style.opacity = '1';
-        };
-      }
+      item.style.animation = 'none';
+      item.offsetHeight; // Trigger reflow
+      item.style.animation = null;
     });
   }
+  
+  // Handle image loading
+  document.querySelectorAll('img').forEach(img => {
+    if (img instanceof HTMLImageElement && !img.complete) {
+      img.style.opacity = '0';
+      img.style.transition = 'opacity 0.5s ease-in-out';
+      
+      img.onload = () => {
+        img.style.opacity = '1';
+      };
+    }
+  });
   
   // Run the animations on initial page load
   triggerProjectAnimations();

@@ -44,7 +44,7 @@ const recentThreeProjects = recentProjects.slice(0, 3);
             <p>
                 My work has been featured everywhere from <a href={getBlogUrl('thehomelessperiod')}>UK Parliament</a> to 
                 <a href={getBlogUrl('recorda-boi')}>Britain's Got Talent</a>, 
-            <a href={getBlogUrl('lifefaker')}>BBC</a> to bn
+            <a href={getBlogUrl('lifefaker')}>BBC</a> to
                 <a href={getBlogUrl('data-on-ebay')}>Fox News</a>, in 
                 <a href={getBlogUrl('latitude')}>music festivals</a>, 
                 <a href="/blog/refer-a-friend">art shows</a>, and 
@@ -66,21 +66,21 @@ const recentThreeProjects = recentProjects.slice(0, 3);
     
     <ProjectSection 
         title="Music" 
-        viewAllLink="/blog?tag=music" 
+        viewAllLink="/tags/music" 
         projects={displaySongs}
         showTags={false}
     />
     
     <ProjectSection 
-        title="Featured Projects" 
-        viewAllLink="/blog?tag=climate" 
+        title="Projects" 
+        viewAllLink="/tags/climate" 
         projects={displayFeatured}
         showTags={false}
     />
     
     <ProjectSection 
         title="From the archive" 
-        viewAllLink="/blog" 
+        viewAllLink="/tags/other" 
         projects={displayArchive}
         showTags={false}
     />
