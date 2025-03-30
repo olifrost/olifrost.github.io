@@ -17,27 +17,30 @@ const allTags = [...new Set(allProjects.flatMap(project => project.data.tags || 
 // Generate IDs for transition elements
 const projectsContainerId = "projects-container";
 
-// Get current URL path
-const currentPath = Astro.url.pathname;
+// Get current URL path for determining active state
+const pathname = Astro.url.pathname;
+// Explicitly check if we're on the main blog page
+const isAllActive = pathname === "/blog" || pathname === "/blog/";
 ---
 
 <Layout title={title} description={description}>
   <div class="container mx-auto px-0">
-    <!-- Tag navigation - persist to maintain state during transitions -->
-    <div class="mb-8" transition:persist="tag-navigation">  
+    <!-- Entire header section with heading and tags - persist as one unit -->
+    <div class="mb-8" transition:persist="header-section">  
       <h1 class="text-3xl font-bold mb-4 text-black">Projects</h1>
       
       <div class="mt-4">
         <div class="flex flex-wrap gap-2 items-center">
           <!-- "All" tag that links to the main blog page -->
           <a href="/blog" 
-             class={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
-               currentPath === "/blog" 
-               ? 'bg-blue-600 text-white hover:bg-blue-700' 
-               : 'bg-neutral-100 text-neutral-700 hover:bg-blue-200'
-             }`}
-             data-active={currentPath === "/blog" ? "true" : "false"}
-             data-astro-prefetch>
+             class:list={[
+               'px-3 py-1.5 rounded-md text-sm font-medium transition-colors',
+               isAllActive 
+                 ? 'bg-blue-600 text-white hover:bg-blue-700' 
+                 : 'bg-neutral-100 text-neutral-700 hover:bg-blue-200'
+             ]}
+             aria-current={isAllActive ? "page" : undefined}
+             data-is-all="true">
             All
           </a>
           
@@ -49,19 +52,19 @@ const currentPath = Astro.url.pathname;
               .join(' ');
               
             const tagPath = `/tags/${tag}`;
-            const isActive = currentPath === tagPath || activeTag === tag;
+            // More robust active state detection
+            const isActive = pathname === tagPath || pathname.startsWith(`${tagPath}/`) || activeTag === tag;
             
             return (
               <a 
                 href={tagPath}
-                class={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
+                class:list={[
+                  'px-3 py-1.5 rounded-md text-sm font-medium transition-colors',
                   isActive 
-                  ? 'bg-blue-600 text-white hover:bg-blue-700' 
-                  : 'bg-neutral-100 text-neutral-700 hover:bg-blue-200'
-                }`}
-                data-active={isActive ? "true" : "false"}
-                data-tag={tag}
-                data-astro-prefetch
+                    ? 'bg-blue-600 text-white hover:bg-blue-700' 
+                    : 'bg-neutral-100 text-neutral-700 hover:bg-blue-200'
+                ]}
+                aria-current={isActive ? "page" : undefined}
               >
                 {formattedTag}
               </a>
@@ -71,8 +74,8 @@ const currentPath = Astro.url.pathname;
       </div>
     </div>
     
-    <!-- Projects container -->
-    <div id={projectsContainerId}>
+    <!-- Projects container - this is the part that should transition -->
+    <div id={projectsContainerId} class="transition-opacity duration-300">
       <slot />
     </div>
   </div>
@@ -102,26 +105,41 @@ const currentPath = Astro.url.pathname;
 </style>
 
 <script>
-  // Script to ensure tag navigation maintains state during transitions
+  // Make tag highlighting more robust
   document.addEventListener('astro:page-load', () => {
-    const currentPath = window.location.pathname;
+    const pathname = window.location.pathname;
     
-    // Update all tag chips based on the current URL
-    document.querySelectorAll('[data-active]').forEach(link => {
+    // Handle the "All" tag separately
+    const allTagLink = document.querySelector('a[data-is-all="true"]');
+    if (allTagLink) {
+      // Check if we're on the blog page (both with and without trailing slash)
+      const isAllActive = pathname === "/blog" || pathname === "/blog/";
+      
+      if (isAllActive) {
+        allTagLink.classList.add('bg-blue-600', 'text-white', 'hover:bg-blue-700');
+        allTagLink.classList.remove('bg-neutral-100', 'text-neutral-700', 'hover:bg-blue-200');
+        allTagLink.setAttribute('aria-current', 'page');
+      } else {
+        allTagLink.classList.remove('bg-blue-600', 'text-white', 'hover:bg-blue-700');
+        allTagLink.classList.add('bg-neutral-100', 'text-neutral-700', 'hover:bg-blue-200');
+        allTagLink.removeAttribute('aria-current');
+      }
+    }
+    
+    // Handle all other tag links
+    document.querySelectorAll('a[href^="/tags/"]').forEach(link => {
       if (link instanceof HTMLAnchorElement) {
-        const href = link.getAttribute('href');
-        const isActive = href === currentPath;
-          
-        // Set data-active attribute
-        link.setAttribute('data-active', isActive ? 'true' : 'false');
+        const tagPath = link.getAttribute('href');
+        const isActive = pathname === tagPath || pathname.startsWith(`${tagPath}/`);
         
-        // Update classes
         if (isActive) {
           link.classList.add('bg-blue-600', 'text-white', 'hover:bg-blue-700');
           link.classList.remove('bg-neutral-100', 'text-neutral-700', 'hover:bg-blue-200');
+          link.setAttribute('aria-current', 'page');
         } else {
           link.classList.remove('bg-blue-600', 'text-white', 'hover:bg-blue-700');
           link.classList.add('bg-neutral-100', 'text-neutral-700', 'hover:bg-blue-200');
+          link.removeAttribute('aria-current');
         }
       }
     });
