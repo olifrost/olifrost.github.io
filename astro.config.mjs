@@ -9,6 +9,7 @@ import icon from 'astro-icon';
 import astroBrokenLinksChecker from 'astro-broken-link-checker';
 import { visualizer } from "rollup-plugin-visualizer";
 import alpinejs from '@astrojs/alpinejs';
+import umami from "@yeskunall/astro-umami";
 
 // https://astro.build/config
 export default defineConfig({
@@ -46,6 +47,7 @@ export default defineConfig({
     outDir: './dist',
     // Configure experimental features properly
     integrations: [
+        umami({ id: "ea01c721-04db-4c01-9a97-ae88acb7ea7e" }),
         AutoImport({
             imports: [
               // Import the YouTube component from your own components
@@ -70,8 +72,7 @@ export default defineConfig({
         icon({
             include: {
                 // Only include the specific SVGs that are actually used in the site
-                'lucide': ['music', 'globe', 'heart', 'coffee', 'gamepad-2', 'messages-square', 'video', 'mail'],
-                'simple-icons': ['youtube', 'instagram', 'tiktok'],
+                'lucide': ['music'],
             },
             // Add this configuration to optimize icon loading
             svgoOptions: {

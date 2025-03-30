@@ -2,7 +2,7 @@
 // You can import this data from anywhere in your site by using the `import` keyword.
 
 export const SITE_TITLE = 'Oli Frost';
-export const SITE_DESCRIPTION = 'Portfolio of satirist and musician Oli Frost';
+export const SITE_DESCRIPTION = 'Comedy songs, films and websites about the climate crisis';
 
 // Social Media Handles
 export const SOCIAL_TWITTER = 'olifro_st';
