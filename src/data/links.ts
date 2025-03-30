@@ -51,13 +51,13 @@ export const links: LinksData = {
     {
       title: "Website & bio",
       url: "/",
-      colour: "bg-blue-700",
+      colour: "bg-blue-600",
       icon: "lucide:globe"
     },
     {
       title: "Stream my music",
       isExpandable: true,
-      colour: "bg-green-500",
+      colour: "bg-green-600",
       icon: "lucide:heart",
       children: [
         {
@@ -90,7 +90,7 @@ export const links: LinksData = {
     {
       title: "Support my work",
       isExpandable: true,
-      colour: "bg-red-500",
+      colour: "bg-red-600",
       icon: "lucide:heart",
       children: [
         {

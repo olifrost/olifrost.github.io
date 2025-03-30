@@ -35,7 +35,7 @@
     on:click={toggleExpand}
     role="button"
     tabindex="0"
-    class="w-full flex items-center justify-between p-6 rounded-sm mb-2 transition-all hover:-translate-y-1 hover:shadow-lg font-bold cursor-pointer {color} {textColor}"
+    class="linktree-item w-full flex items-center justify-between p-6 rounded-sm mb-2 transition-all hover:-translate-y-1 hover:shadow-lg font-bold cursor-pointer {color} {textColor}"
   >
     <div class="flex items-center justify-center gap-3 flex-1">
       {#if icon && iconPaths[icon]}
@@ -78,7 +78,7 @@
     <div class="pl-4 space-y-2 mb-4" transition:slide={{ duration: 200 }}>
       {#each children as child}
         <div
-          class="flex items-center justify-between p-4 rounded-sm transition-all hover:-translate-y-1 hover:shadow-lg font-bold cursor-pointer {child.colour || color} {textColor}"
+          class="linktree-item flex items-center justify-between p-4 rounded-sm transition-all hover:-translate-y-1 hover:shadow-lg font-bold cursor-pointer {child.colour || color} {textColor}"
           on:click={() => window.open(child.url, '_blank')}
           role="button"
           tabindex="0"
