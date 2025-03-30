@@ -1,42 +1,30 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import Layout from './Layout.astro';
 
 // Simple props without date handling
 const { title, description, image } = Astro.props.frontmatter || Astro.props;
 ---
 
-<!doctype html>
-<html lang="en">
-    <head>
-        <BaseHead title={title} description={description} />
-    </head>
-    <body class="bg-white font-light">
-        <Header />
-        <main class="max-w-5xl mx-auto px-4 py-8">
-            <article>
-                {image && (
-                    <div class="w-full overflow-hidden rounded-lg mb-8 max-h-[510px]">
-                        <img 
-                            width={1020} 
-                            height={510} 
-                            src={image} 
-                            alt={title} 
-                            class="w-full h-full object-cover"
-                        />
-                    </div>
-                )}
-                <div class="max-w-5xl mx-auto prose prose-base prose-headings:text-black prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline prose-img:rounded-lg prose-p:mb-8 prose-p:text-lg prose-p:leading-relaxed">
-                    <div class="mb-8">
-                        <h1 class="text-4xl font-bold mb-6 ">{title}</h1>
-                    </div>
-                    <div class="text-2xl space-y-6">
-                        <slot />
-                    </div>
-                </div>
-            </article>
-        </main>
-        <Footer />
-    </body>
-</html>
+<Layout title={title} description={description}>
+    <article>
+        {image && (
+            <div class="w-full overflow-hidden rounded-lg mb-8 max-h-[510px]">
+                <img 
+                    width={1020} 
+                    height={510} 
+                    src={image} 
+                    alt={title} 
+                    class="w-full h-full object-cover"
+                />
+            </div>
+        )}
+        <div class="max-w-5xl mx-auto prose prose-base prose-headings:text-black prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline prose-img:rounded-lg prose-p:mb-8 prose-p:text-lg prose-p:leading-relaxed">
+            <div class="mb-8">
+                <h1 class="text-4xl font-bold mb-6">{title}</h1>
+            </div>
+            <div class="text-2xl space-y-6">
+                <slot />
+            </div>
+        </div>
+    </article>
+</Layout>
