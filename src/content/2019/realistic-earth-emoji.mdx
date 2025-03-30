@@ -6,6 +6,8 @@ date: "2019-01-01"
 tags: [climate]
 projectType: "product"
 ---
+import { Image } from 'astro:assets';
+import earthImage from '@assets/2019/earthemoji/earthemoji.gif';
 
 {/* Import Font Awesome directly in this page */}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
@@ -30,8 +32,8 @@ projectType: "product"
     </div>
 
     <div className="mb-12">
-      <div className="py-8 px-4 text-center">
-        <img src="@assets/2019/earthemoji/earthemoji.gif" className="mx-auto animate-fadeIn opacity-0 w-3/5" alt="Earth Emoji Animation" />
+      <div className="py-8 px-4 text-center max-w-sm mx-auto">
+      <Image src={earthImage} alt="Earth Emoji Animation" />
       </div>
     </div>
     <hr className="border-gray-300 mb-12" />

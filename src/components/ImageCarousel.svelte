@@ -50,31 +50,3 @@
     </Carousel>
   {/if}
 </div>
-
-<style>
-  .carousel-container {
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  .carousel-item {
-    padding: 0.5rem;
-    height: auto;
-    box-sizing: border-box;
-  }
-
-  /* Remove the aspect-wrapper entirely */
-
-  :global(.sc-carousel__carousel-container) {
-    margin: 0 -0.5rem;
-  }
-
-  :global(.sc-carousel__content-container) {
-    height: auto !important;
-  }
-  
-  /* Fix spacing around dots */
-  :global(.sc-carousel__dots) {
-    margin-top: 0.5rem !important;
-  }
-</style>
