@@ -6,7 +6,7 @@ import { ViewTransitions } from 'astro:transitions';
 import YouTubeModalWrapper from '../components/YouTubeModalWrapper.astro';
 
 // Enable view transitions by default
-const { title, description, disableViewTransitions = false } = Astro.props;
+const { title, description, disableViewTransitions = true } = Astro.props;
 
 // Get the current URL path to conditionally apply view transitions
 const path = Astro.url.pathname;
