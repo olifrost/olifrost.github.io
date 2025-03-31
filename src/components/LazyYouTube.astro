@@ -88,7 +88,7 @@ if (isAssetPath(poster)) {
 
 <script>
   // Initialize all lazy YouTube elements on the page
-  document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('astro:page-load', () => {
     const lazyYouTubeElements = document.querySelectorAll('.lazy-youtube');
     
     // Create modal container if it doesn't exist
@@ -101,14 +101,54 @@ if (isAssetPath(poster)) {
 
     // Add click event listeners to all lazy YouTube elements
     lazyYouTubeElements.forEach(element => {
-      element.addEventListener('click', () => {
+      element.addEventListener('click', (event) => {
         const videoId = element.getAttribute('data-video-id');
         if (videoId) {
-          // Dispatch a custom event that the Svelte component will listen for
-          const event = new CustomEvent('open-youtube-modal', {
-            detail: { videoId }
-          });
-          document.dispatchEvent(event);
+          // Try to use the global controller first if available
+          if (window.YouTubeModalController) {
+            window.YouTubeModalController.open(videoId);
+          } else {
+            // Fallback to dispatching a custom event
+            const customEvent = new CustomEvent('open-youtube-modal', {
+              detail: { videoId }
+            });
+            document.dispatchEvent(customEvent);
+          }
+          
+          // Prevent any default behavior or event bubbling
+          event.preventDefault();
+          event.stopPropagation();
+          
+          // Add a class to prevent body scrolling
+          document.body.classList.add('modal-open');
+        }
+      });
+    });
+  });
+
+  // Handle initial page load as well
+  document.addEventListener('DOMContentLoaded', () => {
+    // Same logic as above for backwards compatibility
+    const lazyYouTubeElements = document.querySelectorAll('.lazy-youtube');
+    
+    lazyYouTubeElements.forEach(element => {
+      element.addEventListener('click', (event) => {
+        const videoId = element.getAttribute('data-video-id');
+        if (videoId) {
+          // Try to use the global controller first if available
+          if (window.YouTubeModalController) {
+            window.YouTubeModalController.open(videoId);
+          } else {
+            // Fallback to dispatching a custom event
+            const customEvent = new CustomEvent('open-youtube-modal', {
+              detail: { videoId }
+            });
+            document.dispatchEvent(customEvent);
+          }
+          
+          // Prevent any default behavior or event bubbling
+          event.preventDefault();
+          event.stopPropagation();
           
           // Add a class to prevent body scrolling
           document.body.classList.add('modal-open');

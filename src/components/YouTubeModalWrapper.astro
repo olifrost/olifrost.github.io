@@ -8,6 +8,19 @@ import YouTubeModal from './svelte/YouTubeModal.svelte';
 </div>
 
 <script>
+  // Properly declare the type for window's additional property
+  declare global {
+    interface Window {
+      YouTubeModalController?: {
+        videoId: string;
+        isOpen: boolean;
+        open: (videoId: string) => void;
+        close: () => void;
+        updateComponent: () => void;
+      }
+    }
+  }
+
   // Create a function to initialize the YouTube modal controller
   function initYouTubeModalController() {
     // Create a centralized controller for the YouTube modal
@@ -53,8 +66,7 @@ import YouTubeModal from './svelte/YouTubeModal.svelte';
     // Listen for custom events from LazyYouTube component
     document.addEventListener('open-youtube-modal', handleOpenYouTubeModal);
     
-    // Make the controller available globally
-    // @ts-ignore - Adding property to window
+    // Make the controller available globally - now properly typed
     window.YouTubeModalController = controller;
     
     // Define event handler functions

@@ -105,9 +105,10 @@
   });
 
   function closeModal() {
-    // Use the global controller if available
-    if (window.YouTubeModalController) {
-      window.YouTubeModalController.close();
+    // Check if the global controller exists in a type-safe way
+    const controller = window.YouTubeModalController;
+    if (controller && typeof controller.close === 'function') {
+      controller.close();
     } else {
       isOpen = false;
       iframeSrc = '';
