@@ -21,18 +21,29 @@
     // Add more icon paths as needed
   };
 
-  function toggleExpand() {
+  function toggleExpand(event: MouseEvent | TouchEvent): void {
+    // Prevent default behavior to ensure consistent handling across devices
+    event.preventDefault();
+    
     if (isExpandable) {
       isExpanded = !isExpanded;
     } else if (url) {
       window.open(url, '_blank');
     }
   }
+  
+  // Handle touch events separately for mobile Safari
+  function handleTouch(event: TouchEvent): void {
+    toggleExpand(event);
+    // Prevent ghost clicks
+    event.preventDefault();
+  }
 </script>
 
 <div class="w-full">
   <div
     on:click={toggleExpand}
+    on:touchstart={handleTouch}
     role="button"
     tabindex="0"
     class="linktree-item w-full flex items-center justify-between p-6 rounded-sm mb-2 transition-all hover:-translate-y-1 hover:shadow-lg font-bold cursor-pointer {color} {textColor}"
@@ -79,7 +90,8 @@
       {#each children as child}
         <div
           class="linktree-item flex items-center justify-between p-4 rounded-sm transition-all hover:-translate-y-1 hover:shadow-lg font-bold cursor-pointer {child.colour || color} {textColor}"
-          on:click={() => window.open(child.url, '_blank')}
+          on:click={(e) => {e.preventDefault(); window.open(child.url, '_blank');}}
+          on:touchstart={(e) => {e.preventDefault(); window.open(child.url, '_blank');}}
           role="button"
           tabindex="0"
         >
@@ -115,5 +127,11 @@
 <style>
   div {
     text-align: center;
+  }
+  
+  /* Ensure proper pointer behavior on touch devices */
+  .linktree-item {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
   }
 </style>
