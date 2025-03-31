@@ -1,7 +1,9 @@
 <script>
   import { onMount } from 'svelte';
   import { tick } from 'svelte';
+  // Fix imports for production build - use correct exports
   import EmblaCarousel from 'embla-carousel';
+  import AutoPlay from 'embla-carousel-autoplay';
 
   // Enhanced props for better customization
   export let images = [];
@@ -30,6 +32,11 @@
     slidesToScroll: 1,
   };
 
+  // Configure autoplay plugin
+  const plugins = autoplay ? [
+    AutoPlay({ delay: autoplayInterval, stopOnInteraction: true })
+  ] : [];
+
   onMount(() => {
     // Update viewport width on mount
     viewportWidth = window.innerWidth;
@@ -40,25 +47,19 @@
     };
     window.addEventListener('resize', handleResize);
     
-    // Initialize Embla
-    emblaApi = EmblaCarousel(emblaNode, options);
+    // Initialize Embla with plugins
+    emblaApi = EmblaCarousel(emblaNode, options, plugins);
     
     // Set up event listeners
     emblaApi.on('select', handleSelect);
     emblaApi.on('reInit', handleSelect);
     handleSelect();
     
-    // Setup autoplay if enabled
-    if (autoplay) {
-      startAutoplay();
-    }
-    
     mounted = true;
     
     return () => {
       if (emblaApi) emblaApi.destroy();
       window.removeEventListener('resize', handleResize);
-      if (autoplayTimer) clearInterval(autoplayTimer);
     };
   });
   
