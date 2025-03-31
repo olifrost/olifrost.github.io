@@ -63,7 +63,13 @@ export default defineConfig({
         }),
         mdx(),
         sitemap(),
-        svelte(),
+        svelte({
+            // Add explicit configuration for Svelte 5
+            compilerOptions: {
+                // Ensure Svelte 5 features are handled correctly
+                runes: true
+            }
+        }),
         alpinejs(),
         astroBrokenLinksChecker({
             logFilePath: 'broken-links.log', // Optional: specify the log file path
@@ -112,9 +118,14 @@ export default defineConfig({
                         if (/\.svelte$/.test(id)) {
                             return 'svelte-components';
                         }
+                        // Special handling for embla-carousel
+                        if (/embla-carousel/.test(id)) {
+                            return 'embla-carousel';
+                        }
                     }
                 },
-                external: ['embla-carousel'] 
+                // Don't mark embla-carousel as external, we need to include it in the build
+                external: []
             },
             // Increase warning limit while optimizing
             chunkSizeWarningLimit: 1000,
@@ -128,10 +139,12 @@ export default defineConfig({
             }
         },
         optimizeDeps: {
-            include: ['embla-carousel']
+            // Make sure embla-carousel and related packages are pre-bundled
+            include: ['embla-carousel', 'embla-carousel-autoplay']
         },
         ssr: {
-            noExternal: ['embla-carousel']
+            // Ensure these aren't externalized for SSR
+            noExternal: ['embla-carousel', 'embla-carousel-autoplay', 'svelte']
         }
     },
 });

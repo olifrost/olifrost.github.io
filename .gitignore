@@ -1,6 +1,7 @@
 # Astro build output
 dist/
 .output/
+.github/copilot-instructions.md
 
 # Node modules
 node_modules/
