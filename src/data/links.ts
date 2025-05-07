@@ -108,8 +108,8 @@ export const links: LinksData = {
       ]
     },
     {
-      title: "Play Asset Manager Quest",
-      url: "https://assetmanager.quest",
+      title: "Meditate on Oilwell",
+      url: "https://oilwell.app",
       colour: "bg-pink-500",
       icon: "lucide:gamepad-2"
     },
