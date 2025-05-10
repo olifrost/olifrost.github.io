@@ -5,7 +5,10 @@ import ProjectSummary from '../../components/ProjectSummary.astro';
 import { SITE_TITLE } from '../../consts';
 
 export async function getStaticPaths() {
-  const allProjects = await getCollection('blog');
+  // Get all projects but filter out drafts in production
+  const allProjects = await getCollection('blog', ({ data }) => {
+    return import.meta.env.PROD ? data.draft !== true : true;
+  });
   
   // Extract all tags from all projects
   const uniqueTags = [...new Set(
@@ -31,6 +34,9 @@ const formattedTag = tag
   .split('-')
   .map(word => word.charAt(0).toUpperCase() + word.slice(1))
   .join(' ');
+
+// Count of projects with this tag
+const projectCount = projects.length;
 ---
 
 <BlogLayout 
@@ -38,6 +44,12 @@ const formattedTag = tag
   description={`Browse all ${formattedTag.toLowerCase()} projects by Oli Frost`}
   activeTag={tag}
 >
+  <!-- Tag title and project count -->
+  <div class="mb-8">
+    <h2 class="text-xl font-medium mb-2">{formattedTag}</h2>
+    <p class="text-neutral-600">{projectCount} project{projectCount !== 1 ? 's' : ''} tagged with {formattedTag.toLowerCase()}</p>
+  </div>
+
   <!-- Project grid with all projects loaded but lazy images -->
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     {projects.map((project) => (

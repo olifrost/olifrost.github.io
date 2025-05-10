@@ -22,6 +22,8 @@ const blog = defineCollection({
 		homepageOrder: z.number().optional(),
 		 // Project type for layout selection
 		projectType: z.enum(['default', 'standalone', 'product', 'music']).optional(),
+		// Publishing status
+		draft: z.boolean().optional(),
 	}),
 });
 

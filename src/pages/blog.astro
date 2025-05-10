@@ -3,15 +3,28 @@ import BlogLayout from '../layouts/BlogLayout.astro';
 import ProjectSummary from '../components/ProjectSummary.astro';
 import { getCollection } from 'astro:content';
 
-// Get all projects and sort them chronologically by date
-const allProjects = await getCollection('blog');
+// Get all projects but filter out drafts in production
+const allProjects = await getCollection('blog', ({ data }) => {
+  return import.meta.env.PROD ? data.draft !== true : true;
+});
+
+// Sort projects chronologically by date
 const sortedProjects = [...allProjects].sort((a, b) => {
   // Sort by date in descending order (newest first)
   return new Date(b.data.date || '').getTime() - new Date(a.data.date || '').getTime();
 });
+
+// Count of visible projects
+const projectCount = sortedProjects.length;
 ---
 
 <BlogLayout title="Projects | Oli Frost" description="Browse all projects by Oli Frost">
+  <!-- Project count -->
+  <div class="mb-8">
+    <h2 class="text-xl font-medium mb-2">All Projects</h2>
+    <p class="text-neutral-600">{projectCount} project{projectCount !== 1 ? 's' : ''} by Oli Frost</p>
+  </div>
+  
   <!-- Project grid with all projects loaded but lazy images -->
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     {sortedProjects.map((project) => (
