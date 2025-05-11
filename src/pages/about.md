@@ -17,7 +17,7 @@ I do. I'd get help from friends, but they're [harder to make](/blog/refer-a-frie
 You could [send me a tip](https://ko-fi.com/olifrost), join my [patreon](https://www.patreon.com/OliFrost/membership), request a [personalised video](https://ko-fi.com/olifrost/commissions), or just [stream or buy my music](https://olifro.st/links).
 
 **Tell me some meaningless numbers to quantify your importance?**  
-320k followers, 35 million views, 1 person recognising me in Franco Manca.
+330k followers, 65m million views, 1 person recognising me in Franco Manca.
 
 **Will you do a thing for me?**  
 I have quite a lot on but [send me an email](mailto:mail@olifro.st), I'll consider anything…
