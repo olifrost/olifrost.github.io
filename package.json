@@ -10,16 +10,16 @@
     "deploy": "astro build && gh-pages -d dist"
   },
   "dependencies": {
-    "@astrojs/alpinejs": "^0.4.4",
-    "@astrojs/mdx": "^4.2.0",
-    "@astrojs/rss": "^4.0.11",
-    "@astrojs/sitemap": "^3.2.1",
-    "@astrojs/svelte": "^7.0.6",
+    "@astrojs/alpinejs": "^0.4.8",
+    "@astrojs/mdx": "^4.3.0",
+    "@astrojs/rss": "^4.0.12",
+    "@astrojs/sitemap": "^3.4.1",
+    "@astrojs/svelte": "^7.1.0",
     "@iconify-json/lucide": "^1.2.29",
     "@tailwindcss/vite": "^4.0.13",
     "@yeskunall/astro-umami": "^0.0.4",
     "alpinejs": "^3.14.9",
-    "astro": "^5.5.2",
+    "astro": "^5.9.3",
     "astro-auto-import": "^0.4.4",
     "astro-broken-link-checker": "github:imazen/astro-broken-link-checker",
     "astro-embed": "^0.9.0",
@@ -42,5 +42,6 @@
     "@yeskunall/astro-umami": {
       "astro": "$astro"
     }
-  }
+  },
+  "packageManager": "pnpm@10.5.2+sha512.da9dc28cd3ff40d0592188235ab25d3202add8a207afbedc682220e4a0029ffbff4562102b9e6e46b4e3f9e8bd53e6d05de48544b0c57d4b0179e22c76d1199b"
 }
