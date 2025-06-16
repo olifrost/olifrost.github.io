@@ -38,28 +38,9 @@ const recentThreeProjects = recentProjects.slice(0, 3);
     <section class="prose prose-base prose-p:first:mt-0 prose-a:font-light prose-a:text-blue-600 prose-a:hover:text-blue-400 mb-6 max-w-none">
         <div class="text-2xl max-w-6xl mb-6 space-y-6 transition-all">
             <p>
-                I'm Oli Frost, I make novelty songs, films and websites about the climate crisis.
-                Greta Thunberg <a href={getBlogUrl('the-greta-thunberg-song')}>did the macarena to one of them</a>.
-            </p>
-            <p>
-                My work has been featured everywhere from <a href={getBlogUrl('thehomelessperiod')}>UK Parliament</a> to 
-                <a href={getBlogUrl('recorda-boi')}>Britain's Got Talent</a>, 
-            <a href={getBlogUrl('lifefaker')}>BBC</a> to
-                <a href={getBlogUrl('data-on-ebay')}>Fox News</a>, in 
-                <a href={getBlogUrl('latitude')}>music festivals</a>, 
-                <a href="/blog/refer-a-friend">art shows</a>, and 
-                <a href="/blog/little-tips">on bins</a>.
-            </p>
-            <p>
-                Recent Projects: {recentThreeProjects.map((project, index, arr) => {
-                    if (index === 0) {
-                        return <a href={getBlogUrl(project.id)}>{project.data.title}</a>;
-                    } else if (index === arr.length - 1) {
-                        return <> and <a href={getBlogUrl(project.id)}>{project.data.title}</a></>;
-                    } else {
-                        return <>, <a href={getBlogUrl(project.id)}>{project.data.title}</a></>;
-                    }
-                })}
+                I'm Oli Frost, I make songs, films and websites about the climate crisis.
+                <a href={getBlogUrl('the-greta-thunberg-song')}>Greta Thunberg did the macarena</a> to one of them.
+                <a href="/about" class="text-blue-600 hover:text-blue-400 text-xl ml-2">More…</a>
             </p>
         </div>
     </section>
