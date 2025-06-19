@@ -15,7 +15,7 @@ const { summary = "See more" } = Astro.props;
       :aria-expanded="expanded"
       aria-controls="long-bio"
     >
-      <span x-text="expanded ? 'See less' : summary"></span>
+      <span x-text="expanded ? 'See less' : `${summary}`">See more</span>
       <svg 
         xmlns="http://www.w3.org/2000/svg" 
         class="h-4 w-4 ml-1 transition-transform" 
@@ -41,5 +41,6 @@ const { summary = "See more" } = Astro.props;
 </div>
 
 <style>
-  [x-cloak] { display: none !important; }
+  /* Only hide x-cloak elements after Alpine.js is loaded */
+  :root[x-data] [x-cloak] { display: none !important; }
 </style>
