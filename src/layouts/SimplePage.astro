@@ -4,11 +4,14 @@ import BioExpander from '../components/BioExpander.astro';
 
 // Simple props without date handling
 const { title, description, image, bioExpand } = Astro.props.frontmatter || Astro.props;
+
+// Don't show header image for About page as it has its own photo carousel
+const showHeaderImage = image && title !== 'About';
 ---
 
 <Layout title={title} description={description}>
     <article>
-        {image && (
+        {showHeaderImage && (
             <div class="w-full overflow-hidden rounded-lg mb-8 max-h-[510px]">
                 <img 
                     width={1020} 

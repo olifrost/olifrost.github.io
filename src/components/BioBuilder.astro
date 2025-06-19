@@ -1,115 +1,90 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { SITE_TITLE } from '../consts';
+// BioBuilder.astro - Interactive bio building component
 ---
 
-<Layout title={`Bio Builder - ${SITE_TITLE}`} description="Generate a custom bio for Oli Frost">
-    <div class="max-w-6xl mx-auto px-4 py-8">
-        <h1 class="text-3xl font-bold mb-2">Bio Builder</h1>
-        <p class="text-gray-600 mb-8">Click the highlighted sections to customize your bio.</p>
-        
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <!-- Photo section -->
-            <div class="lg:col-span-1">
-                <div class="sticky top-8">
-                    <!-- Photo carousel -->
-                    <div class="relative mb-4">
-                        <div id="photo-carousel" class="overflow-hidden rounded-lg shadow-md">
-                            <div class="flex transition-transform duration-300 ease-in-out" id="carousel-track">
-                                <img src="/img/olifrost.jpg" alt="Oli Frost - Headshot 1" class="w-full flex-shrink-0">
-                                <img src="/img/olifrost.jpg" alt="Oli Frost - Headshot 2" class="w-full flex-shrink-0">
-                                <img src="/img/olifrost.jpg" alt="Oli Frost - Headshot 3" class="w-full flex-shrink-0">
-                            </div>
-                        </div>
-                        
-                        <!-- Carousel controls -->
-                        <div class="flex justify-center mt-2 space-x-2">
-                            <button class="carousel-dot w-2 h-2 rounded-full bg-blue-600" data-slide="0"></button>
-                            <button class="carousel-dot w-2 h-2 rounded-full bg-gray-300" data-slide="1"></button>
-                            <button class="carousel-dot w-2 h-2 rounded-full bg-gray-300" data-slide="2"></button>
-                        </div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8" id="bio-builder">
+    <!-- Photo section -->
+    <div class="lg:col-span-1">
+        <div class="sticky top-8">
+            <!-- Photo carousel -->
+            <div class="relative mb-4">
+                <div id="photo-carousel" class="overflow-hidden rounded-lg shadow-md">
+                    <div class="flex transition-transform duration-300 ease-in-out" id="carousel-track">
+                        <img src="/img/olifrost.jpg" alt="Oli Frost - Headshot 1" class="w-full flex-shrink-0">
+                        <img src="/img/olifrost-full.jpg" alt="Oli Frost - Full body" class="w-full flex-shrink-0">
+                        <img src="/img/olifrost-carrot.jpg" alt="Oli Frost - With carrot" class="w-full flex-shrink-0">
                     </div>
-                    
-                    <a 
-                        href="/img/olifrost.jpg" 
-                        download="oli-frost-headshot.jpg"
-                        class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition-colors mb-4"
-                    >
-                        Download Photo
-                    </a>
-                    
-                    <!-- Controls -->
-                    <div class="space-y-2">
-                        <button 
-                            id="copy-bio" 
-                            class="w-full bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded transition-colors"
-                        >
-                            Copy Bio
-                        </button>
-                        <button 
-                            id="reset-bio" 
-                            class="w-full bg-gray-600 hover:bg-gray-700 text-white py-2 px-4 rounded transition-colors"
-                        >
-                            Reset
-                        </button>
-                    </div>
-                    
-                    <p class="text-sm text-gray-600 mt-4 text-center">
-                        High-res photos coming soon
-                    </p>
+                </div>
+                
+                <!-- Carousel controls -->
+                <div class="flex justify-center mt-2 space-x-2">
+                    <button class="carousel-dot w-2 h-2 rounded-full bg-blue-600" data-slide="0"></button>
+                    <button class="carousel-dot w-2 h-2 rounded-full bg-gray-300" data-slide="1"></button>
+                    <button class="carousel-dot w-2 h-2 rounded-full bg-gray-300" data-slide="2"></button>
                 </div>
             </div>
-
-            <!-- Bio output section -->
-            <div class="lg:col-span-2">
-                <div class="bg-gray-50 p-6 rounded-lg mb-6">
-                    <h2 class="text-xl font-semibold mb-4">Your Bio</h2>
-                    
-                    <div id="bio-output" class="prose prose-lg max-w-none leading-relaxed space-y-4 text-gray-900">
-                        <p>
-                            Oli Frost <span class="bio-variable" data-type="intro">makes songs, films and websites about the climate crisis</span>. 
-                            He <span class="bio-variable" data-type="achievement1">got Greta Thunberg dancing the macarena</span>, <span class="bio-variable" data-type="achievement2">created a fossil fuel funfair</span>, and <span class="bio-variable" data-type="achievement3">made a video game about asset management</span>.
-                        </p>
-                        
-                        <p id="coverage-paragraph" class="hidden">
-                            His work has been featured <span class="bio-variable" data-type="coverage">everywhere from UK Parliament to Britain's Got Talent, BBC to Fox News</span>.
-                        </p>
-                        
-                        <p id="work-paragraph" class="hidden">
-                            <span class="bio-variable" data-type="collaboration">He works with Greenpeace and co-founded climate campaign group Serious People</span>. 
-                            <span class="bio-variable" data-type="stats">His content has 330k followers and over 75 million views</span>.
-                        </p>
-                    </div>
-                    
-                    <!-- Toggle switches for optional sections -->
-                    <div class="mt-6 pt-4 border-t border-gray-200">
-                        <div class="flex flex-wrap gap-4">
-                            <label class="flex items-center space-x-2 cursor-pointer">
-                                <input type="checkbox" id="include-coverage" class="rounded">
-                                <span class="text-sm font-medium">Include press coverage</span>
-                            </label>
-                            <label class="flex items-center space-x-2 cursor-pointer">
-                                <input type="checkbox" id="include-work" class="rounded">
-                                <span class="text-sm font-medium">Include work details</span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Options panel (appears when clicking variables) -->
-                <div id="options-panel" class="hidden bg-white border border-gray-200 rounded-lg shadow-lg p-4 z-50">
-                    <h3 id="options-title" class="font-semibold mb-3 text-gray-800"></h3>
-                    <div id="options-content" class="space-y-1 max-h-80 overflow-y-auto"></div>
-                    <button id="close-options" class="mt-3 text-sm text-gray-500 hover:text-gray-700">Close</button>
-                </div>
+            
+            <a 
+                id="download-photo"
+                href="/img/olifrost.jpg" 
+                download="oli-frost-headshot.jpg"
+                class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition-colors mb-4"
+            >
+                Download Photo
+            </a>
+            
+            <!-- Controls -->
+            <div class="space-y-2">
+                <button 
+                    id="copy-bio" 
+                    class="w-full bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded transition-colors"
+                >
+                    Copy Bio
+                </button>
+                <button 
+                    id="reset-bio" 
+                    class="w-full bg-gray-600 hover:bg-gray-700 text-white py-2 px-4 rounded transition-colors"
+                >
+                    Reset
+                </button>
             </div>
-        </div>
-
-        <div class="text-center text-gray-600 mt-8">
-            <p>Need something more specific? <a href="mailto:mail@olifro.st" class="text-blue-600 hover:text-blue-400">Email me</a> and I'll write you a custom bio.</p>
+            
+            <p class="text-sm text-gray-600 mt-4 text-center">
+                High-res photos coming soon
+            </p>
         </div>
     </div>
-</Layout>
+
+    <!-- Bio output section -->
+    <div class="lg:col-span-2">
+        <div class="bg-gray-50 p-6 rounded-lg mb-6">
+            <h2 class="text-xl font-semibold mb-4">Your Bio <span class="text-sm font-normal text-gray-600">(click blue text to edit)</span></h2>
+            
+            <div id="bio-output" class="prose prose-lg max-w-none leading-relaxed space-y-4 text-gray-900">
+                <p>
+                    Oli Frost <span class="bio-variable" data-type="intro">makes songs, films and websites about the climate crisis</span>. 
+                    He <span class="bio-variable" data-type="achievement1">got Greta Thunberg dancing the macarena</span>, <span class="bio-variable" data-type="achievement2">created a fossil fuel funfair</span>, and <span class="bio-variable" data-type="achievement3">made a video game about asset management</span>.
+                </p>
+                
+                <p id="coverage-paragraph" class="hidden">
+                    His work has been featured <span class="bio-variable" data-type="coverage">everywhere from UK Parliament to Britain's Got Talent, BBC to Fox News</span>.
+                </p>
+                
+                <p id="work-paragraph" class="hidden">
+                    <span class="bio-variable" data-type="collaboration">He works with Greenpeace and co-founded climate campaign group Serious People</span>. 
+                    <span class="bio-variable" data-type="stats">His content has 330k followers and over 75 million views</span>.
+                </p>
+            </div>
+        </div>
+
+        <!-- Options panel (appears when clicking variables) -->
+        <div id="options-panel" class="hidden bg-white border border-gray-200 rounded-lg shadow-lg p-4 z-50">
+            <h3 id="options-title" class="font-semibold mb-3 text-gray-800"></h3>
+            <div id="options-content" class="space-y-1 max-h-80 overflow-y-auto"></div>
+            <button id="close-options" class="mt-3 text-sm text-gray-500 hover:text-gray-700">Close</button>
+        </div>
+    </div>
+</div>
 
 <script>
     // Bio options data
@@ -184,9 +159,16 @@ import { SITE_TITLE } from '../consts';
 
     // Carousel functionality
     let currentSlide = 0;
-    const slides = document.querySelectorAll('#carousel-track img');
-    const dots = document.querySelectorAll('.carousel-dot');
-    const track = document.getElementById('carousel-track');
+    const slides = document.querySelectorAll('#bio-builder #carousel-track img');
+    const dots = document.querySelectorAll('#bio-builder .carousel-dot');
+    const track = document.querySelector('#bio-builder #carousel-track') as HTMLElement;
+    const downloadLink = document.querySelector('#bio-builder #download-photo') as HTMLAnchorElement;
+    
+    const photos = [
+        { src: '/img/olifrost.jpg', filename: 'oli-frost-headshot.jpg' },
+        { src: '/img/olifrost-full.jpg', filename: 'oli-frost-full.jpg' },
+        { src: '/img/olifrost-carrot.jpg', filename: 'oli-frost-carrot.jpg' }
+    ];
 
     function updateCarousel() {
         if (track) {
@@ -196,6 +178,12 @@ import { SITE_TITLE } from '../consts';
             dot.classList.toggle('bg-blue-600', index === currentSlide);
             dot.classList.toggle('bg-gray-300', index !== currentSlide);
         });
+        
+        // Update download link
+        if (downloadLink && photos[currentSlide]) {
+            downloadLink.href = photos[currentSlide].src;
+            downloadLink.download = photos[currentSlide].filename;
+        }
     }
 
     dots.forEach((dot, index) => {
@@ -209,9 +197,9 @@ import { SITE_TITLE } from '../consts';
     let currentOptionsPanel: HTMLElement | null = null;
 
     function showOptions(type: string, element: HTMLElement) {
-        const panel = document.getElementById('options-panel');
-        const title = document.getElementById('options-title');
-        const content = document.getElementById('options-content');
+        const panel = document.querySelector('#bio-builder #options-panel') as HTMLElement;
+        const title = document.querySelector('#bio-builder #options-title') as HTMLElement;
+        const content = document.querySelector('#bio-builder #options-content') as HTMLElement;
         
         if (!panel || !title || !content) return;
         
@@ -259,8 +247,8 @@ import { SITE_TITLE } from '../consts';
         }
     }
 
-    // Add click handlers to bio variables
-    document.querySelectorAll('.bio-variable').forEach(variable => {
+    // Add click handlers to bio variables (scoped to bio-builder)
+    document.querySelectorAll('#bio-builder .bio-variable').forEach(variable => {
         variable.addEventListener('click', (e) => {
             const target = e.target as HTMLElement;
             if (target) {
@@ -273,46 +261,28 @@ import { SITE_TITLE } from '../consts';
     });
 
     // Close options panel
-    document.getElementById('close-options')?.addEventListener('click', () => {
-        document.getElementById('options-panel')?.classList.add('hidden');
+    document.querySelector('#bio-builder #close-options')?.addEventListener('click', () => {
+        document.querySelector('#bio-builder #options-panel')?.classList.add('hidden');
     });
 
-    // Hide options panel when clicking outside
+    // Hide options panel when clicking outside (scoped to bio-builder)
     document.addEventListener('click', (e) => {
-        const panel = document.getElementById('options-panel');
+        const panel = document.querySelector('#bio-builder #options-panel') as HTMLElement;
         const target = e.target as Element;
         if (panel && 
-            !target.closest('.bio-variable') && 
-            !target.closest('#options-panel')) {
+            !target.closest('#bio-builder .bio-variable') && 
+            !target.closest('#bio-builder #options-panel')) {
             panel.classList.add('hidden');
         }
     });
 
-    // Toggle optional sections
-    const includeCoverageCheckbox = document.getElementById('include-coverage') as HTMLInputElement;
-    const includeWorkCheckbox = document.getElementById('include-work') as HTMLInputElement;
-    const coverageParagraph = document.getElementById('coverage-paragraph');
-    const workParagraph = document.getElementById('work-paragraph');
-
-    includeCoverageCheckbox?.addEventListener('change', () => {
-        if (coverageParagraph) {
-            coverageParagraph.classList.toggle('hidden', !includeCoverageCheckbox.checked);
-        }
-    });
-
-    includeWorkCheckbox?.addEventListener('change', () => {
-        if (workParagraph) {
-            workParagraph.classList.toggle('hidden', !includeWorkCheckbox.checked);
-        }
-    });
-
     // Copy bio functionality
-    document.getElementById('copy-bio')?.addEventListener('click', () => {
-        const bioOutput = document.getElementById('bio-output');
+    document.querySelector('#bio-builder #copy-bio')?.addEventListener('click', () => {
+        const bioOutput = document.querySelector('#bio-builder #bio-output') as HTMLElement;
         if (bioOutput) {
             const bioText = bioOutput.textContent?.trim() || '';
             navigator.clipboard.writeText(bioText).then(() => {
-                const button = document.getElementById('copy-bio');
+                const button = document.querySelector('#bio-builder #copy-bio') as HTMLButtonElement;
                 if (button) {
                     const originalText = button.textContent;
                     button.textContent = 'Copied!';
@@ -330,7 +300,7 @@ import { SITE_TITLE } from '../consts';
     });
 
     // Reset functionality
-    document.getElementById('reset-bio')?.addEventListener('click', () => {
+    document.querySelector('#bio-builder #reset-bio')?.addEventListener('click', () => {
         // Reset to default values
         const defaults: Record<string, string> = {
             intro: "makes songs, films and websites about the climate crisis",
@@ -343,26 +313,20 @@ import { SITE_TITLE } from '../consts';
         };
         
         Object.entries(defaults).forEach(([type, text]) => {
-            const element = document.querySelector(`[data-type="${type}"]`);
+            const element = document.querySelector(`#bio-builder [data-type="${type}"]`) as HTMLElement;
             if (element) {
                 element.textContent = text;
             }
         });
         
-        // Reset checkboxes
-        if (includeCoverageCheckbox) includeCoverageCheckbox.checked = false;
-        if (includeWorkCheckbox) includeWorkCheckbox.checked = false;
-        if (coverageParagraph) coverageParagraph.classList.add('hidden');
-        if (workParagraph) workParagraph.classList.add('hidden');
-        
         // Hide options panel
-        document.getElementById('options-panel')?.classList.add('hidden');
+        document.querySelector('#bio-builder #options-panel')?.classList.add('hidden');
     });
 </script>
 
 <style>
     /* Shortcuts-style variable styling */
-    .bio-variable {
+    #bio-builder .bio-variable {
         background-color: rgb(219 234 254); /* bg-blue-100 */
         color: rgb(37 99 235); /* text-blue-600 */
         padding: 2px 6px;
@@ -373,7 +337,7 @@ import { SITE_TITLE } from '../consts';
         border: 1px solid rgb(191 219 254); /* border-blue-200 */
     }
     
-    .bio-variable:hover {
+    #bio-builder .bio-variable:hover {
         background-color: rgb(191 219 254); /* bg-blue-200 */
         color: rgb(29 78 216); /* text-blue-700 */
         border-color: rgb(147 197 253); /* border-blue-300 */
@@ -381,16 +345,11 @@ import { SITE_TITLE } from '../consts';
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     
-    .prose p {
+    #bio-builder .prose p {
         margin-bottom: 0;
     }
     
-    #options-panel {
+    #bio-builder #options-panel {
         position: relative;
-    }
-    
-    input[type="checkbox"]:checked {
-        background-color: rgb(37 99 235);
-        border-color: rgb(37 99 235);
     }
 </style>
