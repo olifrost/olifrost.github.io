@@ -46,8 +46,8 @@
 
     <!-- Heading and instructions -->
     <div class="mb-4">
-        <h2 class="text-4xl font-bold mb-2">Build a Bio</h2>
-        <p class="text-gray-600 text-sm">Click the blue text to edit</p>
+        <h2 class="text-4xl font-bold mb-2 not-prose">Build a Bio</h2>
+        <p class="text-gray-600 text-sm">Tap the <span class="text-blue-600">blue text</span> to edit</p>
     </div>
 
     <!-- Bio output section -->
@@ -56,20 +56,20 @@
             <p>
                 Oli Frost <span 
                     class="bio-variable" 
-                    @click="showOptions('intro', $event)"
+                    @click.stop="showOptions('intro', $event)"
                     x-text="bioData.intro"
                 ></span>. 
                 He <span 
                     class="bio-variable" 
-                    @click="showOptions('achievement1', $event)"
+                    @click.stop="showOptions('achievement1', $event)"
                     x-text="bioData.achievement1"
                 ></span>, <span 
                     class="bio-variable" 
-                    @click="showOptions('achievement2', $event)"
+                    @click.stop="showOptions('achievement2', $event)"
                     x-text="bioData.achievement2"
                 ></span>, and <span 
                     class="bio-variable" 
-                    @click="showOptions('achievement3', $event)"
+                    @click.stop="showOptions('achievement3', $event)"
                     x-text="bioData.achievement3"
                 ></span>.
             </p>
@@ -77,31 +77,31 @@
             <p>
                 His work has been featured everywhere from <span 
                     class="bio-variable" 
-                    @click="showOptions('outlet1', $event)"
+                    @click.stop="showOptions('outlet1', $event)"
                     x-text="bioData.outlet1"
                 ></span> to <span 
                     class="bio-variable" 
-                    @click="showOptions('outlet2', $event)"
+                    @click.stop="showOptions('outlet2', $event)"
                     x-text="bioData.outlet2"
                 ></span>, <span 
                     class="bio-variable" 
-                    @click="showOptions('outlet3', $event)"
+                    @click.stop="showOptions('outlet3', $event)"
                     x-text="bioData.outlet3"
                 ></span> to <span 
                     class="bio-variable" 
-                    @click="showOptions('outlet4', $event)"
+                    @click.stop="showOptions('outlet4', $event)"
                     x-text="bioData.outlet4"
                 ></span>, in <span 
                     class="bio-variable" 
-                    @click="showOptions('outlet5', $event)"
+                    @click.stop="showOptions('outlet5', $event)"
                     x-text="bioData.outlet5"
                 ></span>, <span 
                     class="bio-variable" 
-                    @click="showOptions('outlet6', $event)"
+                    @click.stop="showOptions('outlet6', $event)"
                     x-text="bioData.outlet6"
                 ></span>, and <span 
                     class="bio-variable" 
-                    @click="showOptions('outlet7', $event)"
+                    @click.stop="showOptions('outlet7', $event)"
                     x-text="bioData.outlet7"
                 ></span>.
             </p>
@@ -109,11 +109,11 @@
             <p>
                 It's given him <span 
                     class="bio-variable" 
-                    @click="showOptions('stats1', $event)"
+                    @click.stop="showOptions('stats1', $event)"
                     x-text="bioData.stats1"
                 ></span>, and <span 
                     class="bio-variable" 
-                    @click="showOptions('stats2', $event)"
+                    @click.stop="showOptions('stats2', $event)"
                     x-text="bioData.stats2"
                 ></span>.
             </p>
@@ -121,11 +121,11 @@
             <p>
                 At the moment he is <span 
                     class="bio-variable" 
-                    @click="showOptions('collaboration1', $event)"
+                    @click.stop="showOptions('collaboration1', $event)"
                     x-text="bioData.collaboration1"
                 ></span>, and <span 
                     class="bio-variable" 
-                    @click="showOptions('collaboration2', $event)"
+                    @click.stop="showOptions('collaboration2', $event)"
                     x-text="bioData.collaboration2"
                 ></span>.
             </p>
@@ -148,7 +148,7 @@
             ></button>
             <button 
                 @click="resetBio()"
-                class="px-6 py-2 bg-white border border-gray-300 text-gray-700 rounded hover:bg-gray-50 transition-colors text-sm"
+                class="px-6 py-2 hover:bg-gray-50 transition-colors text-sm"
             >
                 Reset
             </button>
@@ -408,6 +408,9 @@
             },
 
             showOptions(type, event) {
+                // Prevent the click from bubbling up
+                event.stopPropagation();
+                
                 this.currentVariableType = type;
                 this.currentOptions = this.bioOptions[type] || [];
                 this.currentElement = event.target;
@@ -436,7 +439,10 @@
                     y: Math.max(20, top)
                 };
                 
-                this.showOptionsPanel = true;
+                // Use setTimeout to ensure the panel opens after any potential close events
+                setTimeout(() => {
+                    this.showOptionsPanel = true;
+                }, 10);
             },
 
             selectOption(option) {
