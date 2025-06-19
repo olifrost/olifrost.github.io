@@ -1,6 +1,11 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+/* Alpine.js utility to hide elements before JS loads */
+[x-cloak] {
+    display: none !important;
+}
+
 @theme {
     --font-display: "Calibre", "sans-serif";
     --font-weight-light: 220;

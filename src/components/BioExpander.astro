@@ -1,0 +1,45 @@
+---
+// BioExpander.astro - A component to expand/collapse long bio text
+interface Props {
+  summary?: string;
+}
+
+const { summary = "See more" } = Astro.props;
+---
+
+<div x-data="{ expanded: false }" class="bio-expand">
+  <div class="flex items-center mb-2">
+    <button 
+      @click="expanded = !expanded" 
+      class="text-blue-600 hover:text-blue-400 flex items-center focus:outline-none transition-colors"
+      :aria-expanded="expanded"
+      aria-controls="long-bio"
+    >
+      <span x-text="expanded ? 'See less' : summary"></span>
+      <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        class="h-4 w-4 ml-1 transition-transform" 
+        :class="{'rotate-180': expanded}"
+        fill="none" 
+        viewBox="0 0 24 24" 
+        stroke="currentColor"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </button>
+  </div>
+  
+  <div 
+    id="long-bio"
+    x-show="expanded" 
+    x-collapse 
+    x-cloak
+    class="prose prose-base prose-p:first:mt-0 prose-a:text-blue-600 prose-a:hover:text-blue-400"
+  >
+    <slot />
+  </div>
+</div>
+
+<style>
+  [x-cloak] { display: none !important; }
+</style>

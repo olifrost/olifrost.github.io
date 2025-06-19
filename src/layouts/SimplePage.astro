@@ -1,8 +1,9 @@
 ---
 import Layout from './Layout.astro';
+import BioExpander from '../components/BioExpander.astro';
 
 // Simple props without date handling
-const { title, description, image } = Astro.props.frontmatter || Astro.props;
+const { title, description, image, bioExpand } = Astro.props.frontmatter || Astro.props;
 ---
 
 <Layout title={title} description={description}>
