@@ -14,7 +14,7 @@ For these projects, I handle most of the production myself - the filming, record
 
 If you'd like to do something together, [I will listen to anything…](mailto:mail@olifro.st)
 
-Need a media bio? Try the **[Bio Builder →](/bio-builder)**
+Don't like my bio? Build your own with my **[Bio Builder →](/bio-builder)**
 
 If you want to support what I do, you could [send me a tip](https://ko-fi.com/olifrost), join my [Patreon](https://www.patreon.com/OliFrost/membership), or [stream my music](https://olifro.st/links).
 

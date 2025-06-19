@@ -4,227 +4,390 @@ import { SITE_TITLE } from '../consts';
 ---
 
 <Layout title={`Bio Builder - ${SITE_TITLE}`} description="Generate a custom bio for Oli Frost">
-    <div class="max-w-4xl mx-auto px-4 py-8">
-        <h1 class="text-3xl font-bold mb-6">Bio Builder</h1>
+    <div class="max-w-6xl mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-2">Bio Builder</h1>
+        <p class="text-gray-600 mb-8">Click the highlighted sections to customize your bio.</p>
         
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <!-- Photo section -->
             <div class="lg:col-span-1">
                 <div class="sticky top-8">
-                    <img 
-                        src="/img/olifrost.jpg" 
-                        alt="Oli Frost" 
-                        class="w-full rounded-lg shadow-md mb-4"
-                    />
+                    <!-- Photo carousel -->
+                    <div class="relative mb-4">
+                        <div id="photo-carousel" class="overflow-hidden rounded-lg shadow-md">
+                            <div class="flex transition-transform duration-300 ease-in-out" id="carousel-track">
+                                <img src="/img/olifrost.jpg" alt="Oli Frost - Headshot 1" class="w-full flex-shrink-0">
+                                <img src="/img/olifrost.jpg" alt="Oli Frost - Headshot 2" class="w-full flex-shrink-0">
+                                <img src="/img/olifrost.jpg" alt="Oli Frost - Headshot 3" class="w-full flex-shrink-0">
+                            </div>
+                        </div>
+                        
+                        <!-- Carousel controls -->
+                        <div class="flex justify-center mt-2 space-x-2">
+                            <button class="carousel-dot w-2 h-2 rounded-full bg-blue-600" data-slide="0"></button>
+                            <button class="carousel-dot w-2 h-2 rounded-full bg-gray-300" data-slide="1"></button>
+                            <button class="carousel-dot w-2 h-2 rounded-full bg-gray-300" data-slide="2"></button>
+                        </div>
+                    </div>
+                    
                     <a 
                         href="/img/olifrost.jpg" 
                         download="oli-frost-headshot.jpg"
-                        class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition-colors"
+                        class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition-colors mb-4"
                     >
                         Download Photo
                     </a>
-                    <p class="text-sm text-gray-600 mt-2 text-center">
-                        High-res version coming soon
-                    </p>
-                </div>
-            </div>
-
-            <!-- Bio builder section -->
-            <div class="lg:col-span-2">
-                <div class="bg-gray-50 p-6 rounded-lg mb-6">
-                    <h2 class="text-xl font-semibold mb-4">Build Your Bio</h2>
-                    <p class="text-gray-600 mb-4">
-                        Click the highlighted sections to customize the bio for your needs.
-                    </p>
                     
-                    <div id="bio-output" class="prose prose-lg max-w-none leading-relaxed">
-                        <p>
-                            <span class="bio-variable font-medium text-blue-600 hover:bg-blue-100 cursor-pointer px-1 rounded" data-type="intro">
-                                Oli Frost makes songs, films and websites about the climate crisis
-                            </span>. 
-                            <span class="bio-variable font-medium text-blue-600 hover:bg-blue-100 cursor-pointer px-1 rounded" data-type="achievement">
-                                He created a fossil fuel funfair, made a video game about asset management, and got Greta Thunberg dancing the macarena
-                            </span>.
-                        </p>
-                        
-                        <p>
-                            His work has been featured 
-                            <span class="bio-variable font-medium text-blue-600 hover:bg-blue-100 cursor-pointer px-1 rounded" data-type="coverage">
-                                everywhere from UK Parliament to Britain's Got Talent, BBC to Fox News
-                            </span>.
-                        </p>
-                        
-                        <p>
-                            <span class="bio-variable font-medium text-blue-600 hover:bg-blue-100 cursor-pointer px-1 rounded" data-type="collaboration">
-                                He works with Greenpeace and co-founded climate campaign group Serious People
-                            </span>. 
-                            <span class="bio-variable font-medium text-blue-600 hover:bg-blue-100 cursor-pointer px-1 rounded" data-type="stats">
-                                His content has 330k followers and over 75 million views
-                            </span>.
-                        </p>
-                    </div>
-                    
-                    <div class="mt-6 flex gap-4">
+                    <!-- Controls -->
+                    <div class="space-y-2">
                         <button 
                             id="copy-bio" 
-                            class="bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded transition-colors"
+                            class="w-full bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded transition-colors"
                         >
                             Copy Bio
                         </button>
                         <button 
                             id="reset-bio" 
-                            class="bg-gray-600 hover:bg-gray-700 text-white py-2 px-4 rounded transition-colors"
+                            class="w-full bg-gray-600 hover:bg-gray-700 text-white py-2 px-4 rounded transition-colors"
                         >
                             Reset
                         </button>
                     </div>
+                    
+                    <p class="text-sm text-gray-600 mt-4 text-center">
+                        High-res photos coming soon
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bio output section -->
+            <div class="lg:col-span-2">
+                <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                    <h2 class="text-xl font-semibold mb-4">Your Bio</h2>
+                    
+                    <div id="bio-output" class="prose prose-lg max-w-none leading-relaxed space-y-4 text-gray-900">
+                        <p>
+                            Oli Frost <span class="bio-variable" data-type="intro">makes songs, films and websites about the climate crisis</span>. 
+                            He <span class="bio-variable" data-type="achievement1">got Greta Thunberg dancing the macarena</span>, <span class="bio-variable" data-type="achievement2">created a fossil fuel funfair</span>, and <span class="bio-variable" data-type="achievement3">made a video game about asset management</span>.
+                        </p>
+                        
+                        <p id="coverage-paragraph" class="hidden">
+                            His work has been featured <span class="bio-variable" data-type="coverage">everywhere from UK Parliament to Britain's Got Talent, BBC to Fox News</span>.
+                        </p>
+                        
+                        <p id="work-paragraph" class="hidden">
+                            <span class="bio-variable" data-type="collaboration">He works with Greenpeace and co-founded climate campaign group Serious People</span>. 
+                            <span class="bio-variable" data-type="stats">His content has 330k followers and over 75 million views</span>.
+                        </p>
+                    </div>
+                    
+                    <!-- Toggle switches for optional sections -->
+                    <div class="mt-6 pt-4 border-t border-gray-200">
+                        <div class="flex flex-wrap gap-4">
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="checkbox" id="include-coverage" class="rounded">
+                                <span class="text-sm font-medium">Include press coverage</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="checkbox" id="include-work" class="rounded">
+                                <span class="text-sm font-medium">Include work details</span>
+                            </label>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Options panels (hidden by default) -->
-                <div id="options-panel" class="hidden bg-white border border-gray-200 rounded-lg p-4 shadow-lg">
-                    <h3 id="options-title" class="font-semibold mb-3"></h3>
-                    <div id="options-content" class="space-y-2"></div>
+                <!-- Options panel (appears when clicking variables) -->
+                <div id="options-panel" class="hidden bg-white border border-gray-200 rounded-lg shadow-lg p-4 z-50">
+                    <h3 id="options-title" class="font-semibold mb-3 text-gray-800"></h3>
+                    <div id="options-content" class="space-y-1 max-h-80 overflow-y-auto"></div>
+                    <button id="close-options" class="mt-3 text-sm text-gray-500 hover:text-gray-700">Close</button>
                 </div>
             </div>
         </div>
 
-        <div class="text-center text-gray-600">
-            <p>Need something specific? <a href="mailto:mail@olifro.st" class="text-blue-600 hover:text-blue-400">Email me</a> and I'll write you a custom bio.</p>
+        <div class="text-center text-gray-600 mt-8">
+            <p>Need something more specific? <a href="mailto:mail@olifro.st" class="text-blue-600 hover:text-blue-400">Email me</a> and I'll write you a custom bio.</p>
         </div>
     </div>
 </Layout>
 
 <script>
+    // Bio options data
     const bioOptions = {
         intro: [
-            "Oli Frost makes songs, films and websites about the climate crisis",
-            "Oli Frost is a climate satirist and content creator",
-            "Oli Frost creates viral content about climate change", 
-            "Oli Frost is a musician, filmmaker and digital artist focused on climate issues",
-            "Oli Frost makes novelty songs, films and websites about the climate crisis"
+            "makes songs, films and websites about the climate crisis",
+            "is a climate satirist and content creator",
+            "is a musician, filmmaker and digital artist",
+            "is a total nobody who was president of the bongos society at university"
         ],
-        achievement: [
-            "He created a fossil fuel funfair, made a video game about asset management, and got Greta Thunberg dancing the macarena",
-            "He got Greta Thunberg dancing the macarena to one of his songs",
-            "His songs have been streamed millions of times and he's played at major festivals",
-            "He took a shellphone to the UN Ocean Conference and created a wellness app for oil executives",
-            "He launched a fake advertising agency and opened a fossil fuel funfair to annoy WPP",
-            "He made over 20 novelty songs about climate change that have gone viral",
-            "He played recorder on Britain's Got Talent and created viral climate strike posters"
+        achievement1: [
+            "got Greta Thunberg dancing the macarena",
+            "created a fossil fuel funfair",
+            "made a video game about asset management",
+            "took a shellphone to the UN Ocean Conference",
+            "delivered a tiny violin to Shell executives",
+            "played recorder on Britain's Got Talent",
+            "got his song played in UK Parliament",
+            "created The Vampire Conspiracy series with 50M+ views",
+            "created viral climate strike posters used worldwide",
+            "made a wellness app for oil executives",
+            "organised a climate strike for baby penguins in Antarctica",
+            "revolutionised the bongo industry (unverified)"
+        ],
+        achievement2: [
+            "created a fossil fuel funfair",
+            "made a video game about asset management",
+            "got Greta Thunberg dancing the macarena",
+            "took a shellphone to the UN Ocean Conference", 
+            "delivered a tiny violin to Shell executives",
+            "played recorder on Britain's Got Talent",
+            "got his song played in UK Parliament",
+            "created The Vampire Conspiracy series with 50M+ views",
+            "created viral climate strike posters used worldwide",
+            "made a wellness app for oil executives",
+            "organised a climate strike for baby penguins in Antarctica",
+            "revolutionised the bongo industry (unverified)"
+        ],
+        achievement3: [
+            "made a video game about asset management",
+            "got Greta Thunberg dancing the macarena",
+            "created a fossil fuel funfair",
+            "took a shellphone to the UN Ocean Conference",
+            "delivered a tiny violin to Shell executives", 
+            "played recorder on Britain's Got Talent",
+            "got his song played in UK Parliament",
+            "created The Vampire Conspiracy series with 50M+ views",
+            "created viral climate strike posters used worldwide",
+            "made a wellness app for oil executives",
+            "organised a climate strike for baby penguins in Antarctica",
+            "revolutionised the bongo industry (unverified)"
         ],
         coverage: [
             "everywhere from UK Parliament to Britain's Got Talent, BBC to Fox News",
-            "on Sky News, TRT World, and in the Financial Times",
+            "on Sky News, TRT World, and in the Financial Times", 
             "from Parliament to music festivals, art shows to bins",
-            "by the BBC, Vice, Fox News, and the Financial Times",
-            "across major news outlets and has been exhibited in galleries"
+            "by major news outlets and climate organizations worldwide"
         ],
         collaboration: [
             "He works with Greenpeace and co-founded climate campaign group Serious People",
-            "He makes weekly videos for Greenpeace and co-founded Serious People",
-            "He co-founded climate campaign studio Serious People in 2024",
-            "He collaborates with major environmental organizations",
-            "He handles most production himself but also works with climate organizations"
+            "He makes weekly videos for Greenpeace and co-founded Serious People in 2024",
+            "He co-founded climate campaign studio Serious People",
+            "He handles most production himself but collaborates with climate organizations"
         ],
         stats: [
             "His content has 330k followers and over 75 million views",
-            "His work has gained 330k followers and been viewed over 75 million times",
-            "He has over 75 million views across platforms",
-            "His videos have millions of views and his songs are on Spotify editorial playlists",
-            "Only 1 person has recognized him in Franco Manca (but he was wearing a hat)"
+            "Only 1 person has recognized him in Franco Manca (but he was wearing a hat)",
+            "His songs are featured on Spotify editorial playlists",
+            "His work has a complex psychological relationship with numbers"
         ]
     };
 
-    let currentVariable = null;
-    let originalTexts = {};
+    // Carousel functionality
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('#carousel-track img');
+    const dots = document.querySelectorAll('.carousel-dot');
+    const track = document.getElementById('carousel-track');
 
-    // Store original texts
-    document.querySelectorAll('.bio-variable').forEach(el => {
-        originalTexts[el.dataset.type] = el.textContent;
-    });
+    function updateCarousel() {
+        if (track) {
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('bg-blue-600', index === currentSlide);
+            dot.classList.toggle('bg-gray-300', index !== currentSlide);
+        });
+    }
 
-    // Add click handlers to bio variables
-    document.querySelectorAll('.bio-variable').forEach(variable => {
-        variable.addEventListener('click', (e) => {
-            const type = e.target.dataset.type;
-            showOptions(type, e.target);
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            currentSlide = index;
+            updateCarousel();
         });
     });
 
+    // Bio variable click handling
+    let currentOptionsPanel = null;
+
     function showOptions(type, element) {
-        currentVariable = element;
         const panel = document.getElementById('options-panel');
         const title = document.getElementById('options-title');
         const content = document.getElementById('options-content');
         
-        title.textContent = `Choose ${type}:`;
+        if (!panel || !title || !content) return;
+        
+        currentOptionsPanel = element;
+        
+        // Set title
+        const titles = {
+            intro: 'Choose introduction style:',
+            achievement1: 'Choose first achievement:',
+            achievement2: 'Choose second achievement:',
+            achievement3: 'Choose third achievement:',
+            coverage: 'Choose press coverage:',
+            collaboration: 'Choose collaboration style:',
+            stats: 'Choose stats:'
+        };
+        title.textContent = titles[type] || `Choose ${type}:`;
+        
+        // Clear and populate content
         content.innerHTML = '';
         
-        bioOptions[type].forEach(option => {
+        bioOptions[type]?.forEach((option, index) => {
             const button = document.createElement('button');
             button.textContent = option;
-            button.className = 'block w-full text-left p-2 hover:bg-gray-100 rounded transition-colors';
+            button.className = 'block w-full text-left p-3 hover:bg-blue-50 rounded transition-colors text-sm border border-transparent hover:border-blue-200';
             button.addEventListener('click', () => {
-                currentVariable.textContent = option;
+                if (currentOptionsPanel) {
+                    currentOptionsPanel.textContent = option;
+                }
                 panel.classList.add('hidden');
             });
             content.appendChild(button);
         });
         
+        // Position and show panel
         panel.classList.remove('hidden');
+        panel.style.position = 'absolute';
         
-        // Position panel near the clicked element
+        // Position below the clicked element
         const rect = element.getBoundingClientRect();
-        panel.style.position = 'fixed';
-        panel.style.top = `${rect.bottom + 10}px`;
-        panel.style.left = `${rect.left}px`;
-        panel.style.zIndex = '50';
+        const containerRect = element.closest('.lg\\:col-span-2')?.getBoundingClientRect();
+        if (containerRect) {
+            panel.style.top = `${rect.bottom - containerRect.top + 10}px`;
+            panel.style.left = `${rect.left - containerRect.left}px`;
+            panel.style.maxWidth = '400px';
+        }
     }
 
-    // Copy bio functionality
-    document.getElementById('copy-bio').addEventListener('click', () => {
-        const bioText = document.getElementById('bio-output').textContent.trim();
-        navigator.clipboard.writeText(bioText).then(() => {
-            const button = document.getElementById('copy-bio');
-            const originalText = button.textContent;
-            button.textContent = 'Copied!';
-            button.classList.remove('bg-green-600', 'hover:bg-green-700');
-            button.classList.add('bg-green-800');
-            
-            setTimeout(() => {
-                button.textContent = originalText;
-                button.classList.remove('bg-green-800');
-                button.classList.add('bg-green-600', 'hover:bg-green-700');
-            }, 2000);
+    // Add click handlers to bio variables
+    document.querySelectorAll('.bio-variable').forEach(variable => {
+        variable.addEventListener('click', (e) => {
+            const type = e.target.getAttribute('data-type');
+            if (type) {
+                showOptions(type, e.target);
+            }
         });
     });
 
-    // Reset bio functionality
-    document.getElementById('reset-bio').addEventListener('click', () => {
-        document.querySelectorAll('.bio-variable').forEach(el => {
-            el.textContent = originalTexts[el.dataset.type];
-        });
-        document.getElementById('options-panel').classList.add('hidden');
+    // Close options panel
+    document.getElementById('close-options')?.addEventListener('click', () => {
+        document.getElementById('options-panel')?.classList.add('hidden');
     });
 
     // Hide options panel when clicking outside
     document.addEventListener('click', (e) => {
-        if (!e.target.closest('.bio-variable') && !e.target.closest('#options-panel')) {
-            document.getElementById('options-panel').classList.add('hidden');
+        const panel = document.getElementById('options-panel');
+        const target = e.target as Element;
+        if (panel && 
+            !target.closest('.bio-variable') && 
+            !target.closest('#options-panel')) {
+            panel.classList.add('hidden');
         }
+    });
+
+    // Toggle optional sections
+    const includeCoverageCheckbox = document.getElementById('include-coverage') as HTMLInputElement;
+    const includeWorkCheckbox = document.getElementById('include-work') as HTMLInputElement;
+    const coverageParagraph = document.getElementById('coverage-paragraph');
+    const workParagraph = document.getElementById('work-paragraph');
+
+    includeCoverageCheckbox?.addEventListener('change', () => {
+        if (coverageParagraph) {
+            coverageParagraph.classList.toggle('hidden', !includeCoverageCheckbox.checked);
+        }
+    });
+
+    includeWorkCheckbox?.addEventListener('change', () => {
+        if (workParagraph) {
+            workParagraph.classList.toggle('hidden', !includeWorkCheckbox.checked);
+        }
+    });
+
+    // Copy bio functionality
+    document.getElementById('copy-bio')?.addEventListener('click', () => {
+        const bioOutput = document.getElementById('bio-output');
+        if (bioOutput) {
+            const bioText = bioOutput.textContent?.trim() || '';
+            navigator.clipboard.writeText(bioText).then(() => {
+                const button = document.getElementById('copy-bio');
+                if (button) {
+                    const originalText = button.textContent;
+                    button.textContent = 'Copied!';
+                    button.className = button.className.replace('bg-green-600 hover:bg-green-700', 'bg-green-800');
+                    
+                    setTimeout(() => {
+                        if (button && originalText) {
+                            button.textContent = originalText;
+                            button.className = button.className.replace('bg-green-800', 'bg-green-600 hover:bg-green-700');
+                        }
+                    }, 2000);
+                }
+            });
+        }
+    });
+
+    // Reset functionality
+    document.getElementById('reset-bio')?.addEventListener('click', () => {
+        // Reset to default values
+        const defaults = {
+            intro: "makes songs, films and websites about the climate crisis",
+            achievement1: "got Greta Thunberg dancing the macarena",
+            achievement2: "created a fossil fuel funfair",
+            achievement3: "made a video game about asset management",
+            coverage: "everywhere from UK Parliament to Britain's Got Talent, BBC to Fox News",
+            collaboration: "He works with Greenpeace and co-founded climate campaign group Serious People",
+            stats: "His content has 330k followers and over 75 million views"
+        };
+        
+        Object.entries(defaults).forEach(([type, text]) => {
+            const element = document.querySelector(`[data-type="${type}"]`);
+            if (element) {
+                element.textContent = text;
+            }
+        });
+        
+        // Reset checkboxes
+        if (includeCoverageCheckbox) includeCoverageCheckbox.checked = false;
+        if (includeWorkCheckbox) includeWorkCheckbox.checked = false;
+        if (coverageParagraph) coverageParagraph.classList.add('hidden');
+        if (workParagraph) workParagraph.classList.add('hidden');
+        
+        // Hide options panel
+        document.getElementById('options-panel')?.classList.add('hidden');
     });
 </script>
 
 <style>
+    /* Shortcuts-style variable styling */
     .bio-variable {
+        background-color: rgb(219 234 254); /* bg-blue-100 */
+        color: rgb(37 99 235); /* text-blue-600 */
+        padding: 2px 6px;
+        border-radius: 4px;
+        cursor: pointer;
         transition: all 0.2s ease;
+        font-weight: 500;
+        border: 1px solid rgb(191 219 254); /* border-blue-200 */
     }
     
     .bio-variable:hover {
+        background-color: rgb(191 219 254); /* bg-blue-200 */
+        color: rgb(29 78 216); /* text-blue-700 */
+        border-color: rgb(147 197 253); /* border-blue-300 */
         transform: translateY(-1px);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .prose p {
+        margin-bottom: 0;
     }
     
     #options-panel {
-        max-width: 400px;
+        position: relative;
+    }
+    
+    input[type="checkbox"]:checked {
+        background-color: rgb(37 99 235);
+        border-color: rgb(37 99 235);
     }
 </style>
