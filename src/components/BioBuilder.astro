@@ -2,61 +2,30 @@
 // BioBuilder.astro - Interactive bio building component
 ---
 
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-8" id="bio-builder">
-    <!-- Photo section -->
-    <div class="lg:col-span-1">
-        <div class="sticky top-8">
-            <!-- Photo carousel -->
-            <div class="relative mb-4">
-                <div id="photo-carousel" class="overflow-hidden rounded-lg shadow-md">
-                    <div class="flex transition-transform duration-300 ease-in-out" id="carousel-track">
-                        <img src="/img/olifrost.jpg" alt="Oli Frost - Headshot 1" class="w-full flex-shrink-0">
-                        <img src="/img/olifrost-full.jpg" alt="Oli Frost - Full body" class="w-full flex-shrink-0">
-                        <img src="/img/olifrost-carrot.jpg" alt="Oli Frost - With carrot" class="w-full flex-shrink-0">
-                    </div>
-                </div>
-                
-                <!-- Carousel controls -->
-                <div class="flex justify-center mt-2 space-x-2">
-                    <button class="carousel-dot w-2 h-2 rounded-full bg-blue-600" data-slide="0"></button>
-                    <button class="carousel-dot w-2 h-2 rounded-full bg-gray-300" data-slide="1"></button>
-                    <button class="carousel-dot w-2 h-2 rounded-full bg-gray-300" data-slide="2"></button>
+<div class="max-w-none mx-auto" id="bio-builder">
+    <!-- Photo section - now at top -->
+    <div class="mb-8">
+        <!-- Photo carousel -->
+        <div class="relative mb-6">
+            <div id="photo-carousel" class="overflow-hidden rounded-lg shadow-md aspect-[4/3] bg-gray-100">
+                <div class="flex transition-transform duration-300 ease-in-out h-full" id="carousel-track">
+                    <img src="/img/olifrost.jpg" alt="Oli Frost - Headshot 1" class="w-full flex-shrink-0 h-full object-cover">
+                    <img src="/img/olifrost-full.jpg" alt="Oli Frost - Full body" class="w-full flex-shrink-0 h-full object-cover">
+                    <img src="/img/olifrost-carrot.jpg" alt="Oli Frost - With carrot" class="w-full flex-shrink-0 h-full object-cover">
                 </div>
             </div>
             
-            <a 
-                id="download-photo"
-                href="/img/olifrost.jpg" 
-                download="oli-frost-headshot.jpg"
-                class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition-colors mb-4"
-            >
-                Download Photo
-            </a>
-            
-            <!-- Controls -->
-            <div class="space-y-2">
-                <button 
-                    id="copy-bio" 
-                    class="w-full bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded transition-colors"
-                >
-                    Copy Bio
-                </button>
-                <button 
-                    id="reset-bio" 
-                    class="w-full bg-gray-600 hover:bg-gray-700 text-white py-2 px-4 rounded transition-colors"
-                >
-                    Reset
-                </button>
+            <!-- Carousel controls -->
+            <div class="flex justify-center mt-4 space-x-2">
+                <button class="carousel-dot w-3 h-3 rounded-full bg-blue-600" data-slide="0"></button>
+                <button class="carousel-dot w-3 h-3 rounded-full bg-gray-300" data-slide="1"></button>
+                <button class="carousel-dot w-3 h-3 rounded-full bg-gray-300" data-slide="2"></button>
             </div>
-            
-            <p class="text-sm text-gray-600 mt-4 text-center">
-                High-res photos coming soon
-            </p>
         </div>
     </div>
 
     <!-- Bio output section -->
-    <div class="lg:col-span-2">
+    <div class="mb-8">
         <div class="bg-gray-50 p-6 rounded-lg mb-6">
             <h2 class="text-xl font-semibold mb-4">Your Bio <span class="text-sm font-normal text-gray-600">(click blue text to edit)</span></h2>
             
@@ -66,23 +35,48 @@
                     He <span class="bio-variable" data-type="achievement1">got Greta Thunberg dancing the macarena</span>, <span class="bio-variable" data-type="achievement2">created a fossil fuel funfair</span>, and <span class="bio-variable" data-type="achievement3">made a video game about asset management</span>.
                 </p>
                 
-                <p id="coverage-paragraph" class="hidden">
-                    His work has been featured <span class="bio-variable" data-type="coverage">everywhere from UK Parliament to Britain's Got Talent, BBC to Fox News</span>.
+                <p>
+                    His work has been featured everywhere from <span class="bio-variable" data-type="outlet1">UK Parliament</span> to <span class="bio-variable" data-type="outlet2">Britain's Got Talent</span>, <span class="bio-variable" data-type="outlet3">BBC</span> to <span class="bio-variable" data-type="outlet4">Fox News</span>, in <span class="bio-variable" data-type="outlet5">music festivals</span>, <span class="bio-variable" data-type="outlet6">art shows</span>, and <span class="bio-variable" data-type="outlet7">on bins</span>.
                 </p>
                 
-                <p id="work-paragraph" class="hidden">
-                    <span class="bio-variable" data-type="collaboration">He works with Greenpeace and co-founded climate campaign group Serious People</span>. 
-                    <span class="bio-variable" data-type="stats">His content has 330k followers and over 75 million views</span>.
+                <p>
+                    <span class="bio-variable" data-type="stats1">It's given him 330,000 followers, over 75 million views</span>, and <span class="bio-variable" data-type="stats2">a complex psychological relationship with numbers</span>.
+                </p>
+
+                <p>
+                    At the moment <span class="bio-variable" data-type="collaboration">he is creating campaigns with Serious People, a climate campaign studio he co-founded, and creating weekly videos for Greenpeace</span>.
                 </p>
             </div>
         </div>
 
-        <!-- Options panel (appears when clicking variables) -->
-        <div id="options-panel" class="hidden bg-white border border-gray-200 rounded-lg shadow-lg p-4 z-50">
-            <h3 id="options-title" class="font-semibold mb-3 text-gray-800"></h3>
-            <div id="options-content" class="space-y-1 max-h-80 overflow-y-auto"></div>
-            <button id="close-options" class="mt-3 text-sm text-gray-500 hover:text-gray-700">Close</button>
+        <!-- Controls - now below bio -->
+        <div class="flex gap-3 justify-center">
+            <a 
+                id="download-photo"
+                href="/img/olifrost.jpg" 
+                download="oli-frost-headshot.jpg"
+                class="px-6 py-2 bg-white border border-gray-300 text-gray-700 rounded hover:bg-gray-50 transition-colors text-sm"
+            >
+                Download Photo
+            </a>
+            <button 
+                id="copy-bio" 
+                class="px-6 py-2 bg-white border border-gray-300 text-gray-700 rounded hover:bg-gray-50 transition-colors text-sm"
+            >
+                Copy Bio
+            </button>
+            <button 
+                id="reset-bio" 
+                class="px-6 py-2 bg-white border border-gray-300 text-gray-700 rounded hover:bg-gray-50 transition-colors text-sm"
+            >
+                Reset
+            </button>
         </div>
+    </div>
+
+    <!-- Options panel (appears when clicking variables) -->
+    <div id="options-panel" class="hidden bg-white border border-gray-300 rounded-lg shadow-xl p-0 z-50 min-w-80">
+        <div id="options-content" class="max-h-80 overflow-y-auto"></div>
     </div>
 </div>
 
@@ -140,20 +134,108 @@
             "created a series of viral climate strike posters",
             "was president of his university's bongo society (unverified)"
         ],
-        coverage: [
-            "everywhere from UK Parliament to Britain's Got Talent, BBC to Fox News",
-            "was recently featured in Financial Times", 
-            "from Parliament to music festivals, art shows to bins",
-            "by major news outlets and climate organizations worldwide"
+        outlet1: [
+            "UK Parliament",
+            "his mother's fridge",
+            "The Financial Times",
+            "Vice",
+            "Fox News",
+            "RT News",
+            "Reddit",
+            "TikTok",
+            "BBC",
+            "Channel 4",
+            "Sky News"
+        ],
+        outlet2: [
+            "Britain's Got Talent",
+            "his mother's fridge",
+            "The Financial Times",
+            "Vice",
+            "Fox News",
+            "RT News",
+            "Reddit",
+            "TikTok",
+            "BBC",
+            "Channel 4",
+            "Sky News"
+        ],
+        outlet3: [
+            "BBC",
+            "his mother's fridge",
+            "The Financial Times",
+            "Vice",
+            "Fox News",
+            "RT News",
+            "Reddit",
+            "TikTok",
+            "Channel 4",
+            "Sky News",
+            "UK Parliament"
+        ],
+        outlet4: [
+            "Fox News",
+            "his mother's fridge",
+            "The Financial Times",
+            "Vice",
+            "RT News",
+            "Reddit",
+            "TikTok",
+            "BBC",
+            "Channel 4",
+            "Sky News",
+            "UK Parliament"
+        ],
+        outlet5: [
+            "music festivals",
+            "his mother's fridge",
+            "underground bunkers",
+            "corporate boardrooms",
+            "university lectures",
+            "protest marches",
+            "comedy clubs",
+            "shopping centers"
+        ],
+        outlet6: [
+            "art shows",
+            "his mother's fridge",
+            "underground bunkers",
+            "corporate boardrooms",
+            "university lectures",
+            "protest marches",
+            "comedy clubs",
+            "shopping centers"
+        ],
+        outlet7: [
+            "on bins",
+            "his mother's fridge",
+            "underground bunkers",
+            "corporate boardrooms",
+            "university lectures",
+            "protest marches",
+            "comedy clubs",
+            "shopping centers"
+        ],
+        stats1: [
+            "It's given him 330,000 followers, over 75 million views",
+            "Only 1 person has recognized him in Franco Manca (but he was wearing a hat)",
+            "This has resulted in 330k followers and over 75 million views",
+            "He's been viewed more times than he's had hot dinners",
+            "The numbers are frankly embarrassing"
+        ],
+        stats2: [
+            "a complex psychological relationship with numbers",
+            "an unhealthy obsession with metrics",
+            "the ability to ruin any dinner party with climate facts",
+            "a tendency to check his phone too much",
+            "the strange urge to make everything about the climate crisis"
         ],
         collaboration: [
-            "He works with Greenpeace and co-founded climate campaign group Serious People",
-            "He co-founded climate campaign studio Serious People",
-        ],
-        stats: [
-            "His content has 330k followers and over 75 million views",
-            "Only 1 person has recognized him in Franco Manca (but he was wearing a hat)",
-            "His work has a complex psychological relationship with numbers"
+            "he is creating campaigns with Serious People, a climate campaign studio he co-founded, and creating weekly videos for Greenpeace",
+            "he co-founded climate campaign studio Serious People and works with Greenpeace",
+            "he works with Greenpeace making weekly videos and runs climate campaigns through Serious People",
+            "he's trying to save the world one satirical video at a time",
+            "he's making content that his mum describes as 'very nice, dear'"
         ]
     };
 
@@ -174,12 +256,14 @@
         if (track) {
             track.style.transform = `translateX(-${currentSlide * 100}%)`;
         }
+        
+        // Update dots
         dots.forEach((dot, index) => {
             dot.classList.toggle('bg-blue-600', index === currentSlide);
             dot.classList.toggle('bg-gray-300', index !== currentSlide);
         });
         
-        // Update download link
+        // Update download link with smooth transition
         if (downloadLink && photos[currentSlide]) {
             downloadLink.href = photos[currentSlide].src;
             downloadLink.download = photos[currentSlide].filename;
@@ -191,6 +275,21 @@
             currentSlide = index;
             updateCarousel();
         });
+        
+        // Add keyboard support for dots
+        dot.addEventListener('keydown', (e) => {
+            const keyEvent = e as KeyboardEvent;
+            if (keyEvent.key === 'Enter' || keyEvent.key === ' ') {
+                keyEvent.preventDefault();
+                currentSlide = index;
+                updateCarousel();
+            }
+        });
+        
+        // Make dots keyboard accessible
+        dot.setAttribute('tabindex', '0');
+        dot.setAttribute('role', 'button');
+        dot.setAttribute('aria-label', `Photo ${index + 1}`);
     });
 
     // Bio variable click handling
@@ -198,32 +297,19 @@
 
     function showOptions(type: string, element: HTMLElement) {
         const panel = document.querySelector('#bio-builder #options-panel') as HTMLElement;
-        const title = document.querySelector('#bio-builder #options-title') as HTMLElement;
         const content = document.querySelector('#bio-builder #options-content') as HTMLElement;
         
-        if (!panel || !title || !content) return;
+        if (!panel || !content) return;
         
         currentOptionsPanel = element;
-        
-        // Set title
-        const titles: Record<string, string> = {
-            intro: 'Choose introduction style:',
-            achievement1: 'Choose first achievement:',
-            achievement2: 'Choose second achievement:',
-            achievement3: 'Choose third achievement:',
-            coverage: 'Choose press coverage:',
-            collaboration: 'Choose collaboration style:',
-            stats: 'Choose stats:'
-        };
-        title.textContent = titles[type] || `Choose ${type}:`;
         
         // Clear and populate content
         content.innerHTML = '';
         
-        bioOptions[type]?.forEach((option: string) => {
+        bioOptions[type]?.forEach((option: string, index: number) => {
             const button = document.createElement('button');
             button.textContent = option;
-            button.className = 'block w-full text-left p-3 hover:bg-blue-50 rounded transition-colors text-sm border border-transparent hover:border-blue-200';
+            button.className = `block w-full text-left p-4 hover:bg-blue-50 transition-colors text-sm border-b border-gray-100 last:border-b-0 ${index === 0 ? 'rounded-t-lg' : ''} ${index === bioOptions[type].length - 1 ? 'rounded-b-lg' : ''}`;
             button.addEventListener('click', () => {
                 if (currentOptionsPanel) {
                     currentOptionsPanel.textContent = option;
@@ -233,18 +319,32 @@
             content.appendChild(button);
         });
         
-        // Position and show panel
+        // Position panel near the clicked element
         panel.classList.remove('hidden');
-        panel.style.position = 'absolute';
+        panel.style.position = 'fixed';
+        panel.style.zIndex = '1000';
         
-        // Position below the clicked element
+        // Position below and to the right of the clicked element
         const rect = element.getBoundingClientRect();
-        const containerRect = element.closest('.lg\\:col-span-2')?.getBoundingClientRect();
-        if (containerRect) {
-            panel.style.top = `${rect.bottom - containerRect.top + 10}px`;
-            panel.style.left = `${rect.left - containerRect.left}px`;
-            panel.style.maxWidth = '400px';
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+        const panelWidth = 320; // min-w-80
+        const panelHeight = 320; // estimated max height
+        
+        // Calculate position
+        let left = rect.left;
+        let top = rect.bottom + 8;
+        
+        // Adjust if panel would go off screen
+        if (left + panelWidth > viewportWidth - 20) {
+            left = viewportWidth - panelWidth - 20;
         }
+        if (top + panelHeight > viewportHeight - 20) {
+            top = rect.top - panelHeight - 8;
+        }
+        
+        panel.style.left = `${Math.max(20, left)}px`;
+        panel.style.top = `${Math.max(20, top)}px`;
     }
 
     // Add click handlers to bio variables (scoped to bio-builder)
@@ -260,11 +360,6 @@
         });
     });
 
-    // Close options panel
-    document.querySelector('#bio-builder #close-options')?.addEventListener('click', () => {
-        document.querySelector('#bio-builder #options-panel')?.classList.add('hidden');
-    });
-
     // Hide options panel when clicking outside (scoped to bio-builder)
     document.addEventListener('click', (e) => {
         const panel = document.querySelector('#bio-builder #options-panel') as HTMLElement;
@@ -277,25 +372,66 @@
     });
 
     // Copy bio functionality
-    document.querySelector('#bio-builder #copy-bio')?.addEventListener('click', () => {
+    document.querySelector('#bio-builder #copy-bio')?.addEventListener('click', async () => {
         const bioOutput = document.querySelector('#bio-builder #bio-output') as HTMLElement;
-        if (bioOutput) {
-            const bioText = bioOutput.textContent?.trim() || '';
-            navigator.clipboard.writeText(bioText).then(() => {
-                const button = document.querySelector('#bio-builder #copy-bio') as HTMLButtonElement;
-                if (button) {
-                    const originalText = button.textContent;
+        const button = document.querySelector('#bio-builder #copy-bio') as HTMLButtonElement;
+        
+        if (!bioOutput || !button) return;
+        
+        const bioText = bioOutput.textContent?.trim() || '';
+        const originalText = button.textContent;
+        const originalClass = button.className;
+        
+        try {
+            // Try to use the clipboard API
+            await navigator.clipboard.writeText(bioText);
+            
+            button.textContent = 'Copied!';
+            button.className = 'px-6 py-2 bg-green-50 border border-green-300 text-green-700 rounded transition-colors text-sm';
+            
+            setTimeout(() => {
+                button.textContent = originalText;
+                button.className = originalClass;
+            }, 2000);
+            
+        } catch (err) {
+            // Fallback for browsers that don't support clipboard API
+            try {
+                // Create a temporary textarea to select the text
+                const textArea = document.createElement('textarea');
+                textArea.value = bioText;
+                textArea.style.position = 'fixed';
+                textArea.style.left = '-999999px';
+                textArea.style.top = '-999999px';
+                document.body.appendChild(textArea);
+                textArea.focus();
+                textArea.select();
+                
+                const successful = document.execCommand('copy');
+                document.body.removeChild(textArea);
+                
+                if (successful) {
                     button.textContent = 'Copied!';
-                    button.className = button.className.replace('bg-green-600 hover:bg-green-700', 'bg-green-800');
-                    
-                    setTimeout(() => {
-                        if (button && originalText) {
-                            button.textContent = originalText;
-                            button.className = button.className.replace('bg-green-800', 'bg-green-600 hover:bg-green-700');
-                        }
-                    }, 2000);
+                    button.className = 'px-6 py-2 bg-green-50 border border-green-300 text-green-700 rounded transition-colors text-sm';
+                } else {
+                    button.textContent = 'Copy failed - select text manually';
+                    button.className = 'px-6 py-2 bg-red-50 border border-red-300 text-red-700 rounded transition-colors text-sm';
                 }
-            });
+                
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.className = originalClass;
+                }, 3000);
+                
+            } catch (fallbackErr) {
+                button.textContent = 'Select text to copy manually';
+                button.className = 'px-6 py-2 bg-blue-50 border border-blue-300 text-blue-700 rounded transition-colors text-sm';
+                
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.className = originalClass;
+                }, 3000);
+            }
         }
     });
 
@@ -307,9 +443,16 @@
             achievement1: "got Greta Thunberg dancing the macarena",
             achievement2: "created a fossil fuel funfair",
             achievement3: "made a video game about asset management",
-            coverage: "everywhere from UK Parliament to Britain's Got Talent, BBC to Fox News",
-            collaboration: "He works with Greenpeace and co-founded climate campaign group Serious People",
-            stats: "His content has 330k followers and over 75 million views"
+            outlet1: "UK Parliament",
+            outlet2: "Britain's Got Talent",
+            outlet3: "BBC",
+            outlet4: "Fox News",
+            outlet5: "music festivals",
+            outlet6: "art shows",
+            outlet7: "on bins",
+            stats1: "It's given him 330,000 followers, over 75 million views",
+            stats2: "a complex psychological relationship with numbers",
+            collaboration: "he is creating campaigns with Serious People, a climate campaign studio he co-founded, and creating weekly videos for Greenpeace"
         };
         
         Object.entries(defaults).forEach(([type, text]) => {
@@ -351,5 +494,23 @@
     
     #bio-builder #options-panel {
         position: relative;
+    }
+    
+    /* Carousel dot styling */
+    #bio-builder .carousel-dot {
+        transition: all 0.2s ease;
+        cursor: pointer;
+    }
+    
+    #bio-builder .carousel-dot:hover {
+        transform: scale(1.2);
+    }
+    
+    #bio-builder .carousel-dot.bg-blue-600:hover {
+        background-color: rgb(29 78 216); /* bg-blue-700 */
+    }
+    
+    #bio-builder .carousel-dot.bg-gray-300:hover {
+        background-color: rgb(156 163 175); /* bg-gray-400 */
     }
 </style>
