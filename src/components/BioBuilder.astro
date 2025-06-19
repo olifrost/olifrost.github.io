@@ -8,10 +8,10 @@
     x-init="init()"
 >
     <!-- Photo section - now at top -->
-    <div class="">
+    <div class="mb-6">
         <!-- Photo carousel -->
         <div class="relative">
-            <div class="overflow-hidden rounded-lg shadow-md">
+            <div class="overflow-hidden rounded-lg">
                 <div 
                     class="flex transition-transform duration-300 ease-in-out h-[500px]" 
                     :style="`transform: translateX(-${currentSlide * 100}%)`"
@@ -20,7 +20,7 @@
                         <img 
                             :src="photo.src" 
                             :alt="photo.alt" 
-                            class="w-full flex-shrink-0 h-full object-cover"
+                            class="w-full flex-shrink-0 h-full object-cover not-prose"
                         >
                     </template>
                 </div>
@@ -45,13 +45,13 @@
     </div>
 
     <!-- Heading and instructions -->
-    <div class="mb-6">
+    <div class="mb-4">
         <h2 class="text-4xl font-bold mb-2">Build a Bio</h2>
         <p class="text-gray-600 text-sm">Click the blue text to edit</p>
     </div>
 
     <!-- Bio output section -->
-    <div class="mb-8">
+    <div class="mb-6">
         <div class="prose prose-lg max-w-none leading-relaxed space-y-4 text-gray-900">
             <p>
                 Oli Frost <span 
@@ -211,6 +211,72 @@
                 collaboration2: "creating weekly videos for Greenpeace"
             },
 
+            // Shared data arrays for easier maintenance
+            _sharedAchievements: [
+                "got Greta Thunberg dancing the macarena",
+                "created a fossil fuel funfair",
+                "made a video game about asset management",
+                "sold all his personal data on eBay",
+                "played the recorder for Simon Cowell",
+                "took a shellphone to the UN Ocean Conference",
+                "delivered a tiny violin to Shell executives",
+                "played recorder on Britain's Got Talent",
+                "created a viral song about socialist vampires",
+                "made a wellness app for oil executives",
+                "organised a climate strike for baby penguins in Antarctica",
+                "created a series of viral climate strike posters",
+                "made Liz Truss resign",
+                "fed people owl wings",
+                "tried to bribe Boris Johnson",
+                "vandalised Wikipedia's page for bacon",
+                "became Russia's nicest hacker",
+                "put all his personal Facebook data on eBay",
+                "made an algorithm that wins advertising awards",
+                "got periods into parliament",
+                "pretended to be a married woman on Instagram",
+                "made an app that hates itself",
+                "launched a crowdfunding platform for bad ideas",
+                "helped the advertising industry sabotage itself",
+                "turned climate action into an aerobics routine",
+                "made his lamp a social media personality",
+                "got his girlfriend on Getty Images",
+                "started a campaign against the fire emoji"
+            ],
+
+            _sharedOutlets: [
+                "UK Parliament",
+                "his mother's fridge",
+                "The Financial Times",
+                "Vice",
+                "Fox News",
+                "RT News",
+                "Reddit",
+                "TikTok",
+                "BBC",
+                "Channel 4",
+                "Sky News",
+                "The Guardian",
+                "The Observer",
+                "LBC",
+                "Express",
+                "Telegraph",
+                "Campaign",
+                "PRWeek",
+                "Adweek",
+                "GB News",
+                "The Standard",
+                "City AM",
+                "The Independent",
+                "Fast Company",
+                "Product Hunt",
+                "TechCrunch",
+                "Huffington Post",
+                "Metro",
+                "CNET",
+                "Gizmodo",
+                "Britain's Got Talent"
+            ],
+
             // Bio options data
             bioOptions: {
                 intro: [
@@ -219,108 +285,17 @@
                     "is a musician, filmmaker and digital artist",
                     "is a total nobody"
                 ],
-                achievement1: [
-                    "got Greta Thunberg dancing the macarena",
-                    "created a fossil fuel funfair",
-                    "made a video game about asset management",
-                    "sold all his personal data on eBay",
-                    "played the recorder for Simon Cowell",
-                    "took a shellphone to the UN Ocean Conference",
-                    "delivered a tiny violin to Shell executives",
-                    "played recorder on Britain's Got Talent",
-                    "created a viral song about socialist vampires",
-                    "made a wellness app for oil executives",
-                    "organised a climate strike for baby penguins in Antarctica",
-                    "created a series of viral climate strike posters",
-                    "was president of his university's bongo society (unverified)"
-                ],
-                achievement2: [
-                    "created a fossil fuel funfair",
-                    "made a video game about asset management",
-                    "sold all his personal data on eBay",
-                    "played the recorder for Simon Cowell",
-                    "got Greta Thunberg dancing the macarena",
-                    "took a shellphone to the UN Ocean Conference", 
-                    "delivered a tiny violin to Shell executives",
-                    "played recorder on Britain's Got Talent",
-                    "created a viral song about socialist vampires",
-                    "made a wellness app for oil executives",
-                    "organised a climate strike for baby penguins in Antarctica",
-                    "created a series of viral climate strike posters",
-                    "was president of his university's bongo society (unverified)"
-                ],
-                achievement3: [
-                    "made a video game about asset management",
-                    "sold all his personal data on eBay",
-                    "played the recorder for Simon Cowell",
-                    "got Greta Thunberg dancing the macarena",
-                    "created a fossil fuel funfair",
-                    "took a shellphone to the UN Ocean Conference",
-                    "delivered a tiny violin to Shell executives", 
-                    "played recorder on Britain's Got Talent",
-                    "created a viral song about socialist vampires",
-                    "made a wellness app for oil executives",
-                    "organised a climate strike for baby penguins in Antarctica",
-                    "created a series of viral climate strike posters",
-                    "was president of his university's bongo society (unverified)"
-                ],
-                outlet1: [
-                    "UK Parliament",
-                    "his mother's fridge",
-                    "The Financial Times",
-                    "Vice",
-                    "Fox News",
-                    "RT News",
-                    "Reddit",
-                    "TikTok",
-                    "BBC",
-                    "Channel 4",
-                    "Sky News"
-                ],
-                outlet2: [
-                    "Britain's Got Talent",
-                    "his mother's fridge",
-                    "The Financial Times",
-                    "Vice",
-                    "Fox News",
-                    "RT News",
-                    "Reddit",
-                    "TikTok",
-                    "BBC",
-                    "Channel 4",
-                    "Sky News"
-                ],
-                outlet3: [
-                    "BBC",
-                    "his mother's fridge",
-                    "The Financial Times",
-                    "Vice",
-                    "Fox News",
-                    "RT News",
-                    "Reddit",
-                    "TikTok",
-                    "Channel 4",
-                    "Sky News",
-                    "UK Parliament"
-                ],
-                outlet4: [
-                    "Fox News",
-                    "his mother's fridge",
-                    "The Financial Times",
-                    "Vice",
-                    "RT News",
-                    "Reddit",
-                    "TikTok",
-                    "BBC",
-                    "Channel 4",
-                    "Sky News",
-                    "UK Parliament"
-                ],
+                // These will be populated in init() to reference shared arrays properly
+                achievement1: [],
+                achievement2: [],
+                achievement3: [],
+                outlet1: [],
+                outlet2: [],
+                outlet3: [],
+                outlet4: [],
                 outlet5: [
                     "music festivals",
                     "his mother's fridge",
-                    "underground bunkers",
-                    "corporate boardrooms",
                     "university lectures",
                     "protest marches",
                     "comedy clubs",
@@ -329,8 +304,6 @@
                 outlet6: [
                     "art shows",
                     "his mother's fridge",
-                    "underground bunkers",
-                    "corporate boardrooms",
                     "university lectures",
                     "protest marches",
                     "comedy clubs",
@@ -339,8 +312,6 @@
                 outlet7: [
                     "on bins",
                     "his mother's fridge",
-                    "underground bunkers",
-                    "corporate boardrooms",
                     "university lectures",
                     "protest marches",
                     "comedy clubs",
@@ -353,7 +324,9 @@
                     "more views than he's had proper conversations",
                     "a worrying dependency on the validation of strangers",
                     "far too much screen time for someone his age",
-                    "mild internet fame that his parents still don't understand"
+                    "mild internet fame that his parents still don't understand",
+                    "27 million video views on a single song",
+                    "5.5 million streams across platforms",
                 ],
                 stats2: [
                     "masked much of his childhood trauma",
@@ -363,7 +336,14 @@
                     "a tendency to mention climate change at inappropriate moments",
                     "the strange compulsion to turn everything into content",
                     "a persistent fear that he's peaked already",
-                    "chronic imposter syndrome disguised as confidence"
+                    "chronic imposter syndrome disguised as confidence",
+                    "the ability to make anything sound like a conspiracy",
+                    "an alarming talent for getting banned from industry events",
+                    "a Spotify editorial playlist placement",
+                    "the world's first dick pic repository",
+                    "verification on social media through dubious means",
+                    "a song contest win that involved Greta Thunberg",
+                    "a restraining order from the emoji consortium (pending)"
                 ],
                 collaboration1: [
                     "creating campaigns with Serious People, a climate campaign studio he co-founded",
@@ -371,7 +351,15 @@
                     "running what his accountant generously calls a 'business'",
                     "making content that occasionally goes viral by accident",
                     "attempting to monetise his anxiety about the future",
-                    "turning his existential dread into a brand"
+                    "turning his existential dread into a brand",
+                    "working as a presenter for Greenpeace",
+                    "developing an AI CEO replacement service",
+                    "running the Department of Inevitable Pandemics",
+                    "operating a meditation app for oil executives",
+                    "hosting quiz shows on Sky News for unclear reasons",
+                    "launching startups with increasingly ridiculous names",
+                    "consulting for companies on how to sabotage themselves",
+                    "teaching climate change through interpretive dance"
                 ],
                 collaboration2: [
                     "creating weekly videos for Greenpeace",
@@ -379,7 +367,16 @@
                     "working with organisations significantly more competent than himself",
                     "helping large charities reach people who still think recycling will save us",
                     "getting paid to make jokes about things that terrify him",
-                    "pretending he knows what he's doing on camera"
+                    "pretending he knows what he's doing on camera",
+                    "developing tools to make your Mac harder to use",
+                    "creating unintelligent recipe generators",
+                    "launching crowdfunding platforms for terrible ideas",
+                    "building apps that actively hate their users",
+                    "designing climate change package holidays",
+                    "making the earth an OnlyFans page",
+                    "verifying people on social media through sticker technology",
+                    "helping cats avoid unwanted internet fame",
+                    "applying for citizenship in obscure island nations"
                 ]
             },
 
@@ -396,7 +393,14 @@
 
             // Methods
             init() {
-                // Component initialized
+                // Assign shared arrays to bio options after component initialization
+                this.bioOptions.achievement1 = this._sharedAchievements;
+                this.bioOptions.achievement2 = this._sharedAchievements;
+                this.bioOptions.achievement3 = this._sharedAchievements;
+                this.bioOptions.outlet1 = this._sharedOutlets;
+                this.bioOptions.outlet2 = this._sharedOutlets;
+                this.bioOptions.outlet3 = this._sharedOutlets;
+                this.bioOptions.outlet4 = this._sharedOutlets;
             },
 
             setSlide(index) {

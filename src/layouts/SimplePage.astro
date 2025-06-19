@@ -23,10 +23,12 @@ const showHeaderImage = image && title !== 'About';
             </div>
         )}
         <div class="max-w-5xl mx-auto prose prose-base prose-headings:text-black prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline prose-img:rounded-lg prose-p:mb-8 prose-p:text-lg prose-p:leading-relaxed">
-            <div class="mb-8">
-                <h1 class="text-4xl font-bold mb-6">{title}</h1>
-            </div>
-            <div class="text-2xl space-y-6">
+            {title !== 'About' && (
+                <div class="mb-8">
+                    <h1 class="text-4xl font-bold mb-6">{title}</h1>
+                </div>
+            )}
+            <div class="text-2xl">
                 <slot />
             </div>
         </div>
