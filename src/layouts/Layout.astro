@@ -22,6 +22,7 @@ const shouldDisableTransitions = disableViewTransitions || (isPostPage && !isAbo
 	<head>
 		<BaseHead title={title} description={description} />
 		{!shouldDisableTransitions && <ViewTransitions fallback="none" />}
+		<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 	</head>
 	<body class="bg-white font-light">
 		<Header />

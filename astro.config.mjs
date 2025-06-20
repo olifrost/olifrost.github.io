@@ -17,6 +17,7 @@ export default defineConfig({
     // Add redirects configuration
     redirects: {
         '/stream': '/links',
+        '/bio-builder': '/about',
         
         // Common misspellings or old URLs
         '/instagram': 'https://instagram.com/realolifrost',
