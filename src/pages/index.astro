@@ -35,44 +35,84 @@ const recentThreeProjects = recentProjects.slice(0, 3);
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+    <style>
+        .achievement-text {
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+        .text-fade-out {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        .text-fade-in {
+            animation: fadeInUp 0.4s ease forwards;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+
     <section class="prose prose-base prose-p:first:mt-0 prose-a:font-light prose-a:text-blue-600 prose-a:hover:text-blue-400 mb-6 max-w-none">
-        <div class="text-2xl max-w-6xl mb-6 space-y-6 transition-all">
+        <div class="text-2xl max-w-6xl mb-6 space-y-4 transition-all">
             <p>
-                I'm Oli Frost, I make songs, films and websites about the climate crisis. I also 
-                <span 
+                I'm Oli Frost, I make novelty songs, films and websites about the climate crisis.<br>
+                I <a 
                     x-data="{
                         achievements: [
                             { text: 'got Greta Thunberg dancing the macarena', link: '/blog/the-greta-thunberg-song' },
+                            { text: 'played the recorder for Simon Cowell', link: '/blog/recorder-simon-cowell' },
                             { text: 'created a fossil fuel funfair', link: '/blog/fossil-fuel-funfair' },
                             { text: 'made a video game about asset management', link: '/blog/asset-management-game' },
-                            { text: 'sold all his personal data on eBay', link: '/blog/personal-data-ebay' },
-                            { text: 'played the recorder for Simon Cowell', link: '/blog/recorder-simon-cowell' },
+                            { text: 'sold all my personal data on eBay', link: '/blog/personal-data-ebay' },
                             { text: 'took a shellphone to the UN Ocean Conference', link: '/blog/shellphone-un' },
                             { text: 'delivered a tiny violin to Shell executives', link: '/blog/tiny-violin-shell' },
-                            { text: 'played recorder on Britain' + String.fromCharCode(39) + 's Got Talent', link: '/blog/britains-got-talent' },
+                            { text: 'played recorder for Simon Cowell', link: '/blog/britains-got-talent' },
                             { text: 'created a viral song about socialist vampires', link: '/blog/socialist-vampires' },
                             { text: 'made a wellness app for oil executives', link: '/blog/wellness-app-oil' },
-                            { text: 'organised a climate strike for baby penguins in Antarctica', link: '/blog/antarctica-climate-strike' },
                             { text: 'created a series of viral climate strike posters', link: '/blog/climate-strike-posters' },
-                            { text: 'was president of his university' + String.fromCharCode(39) + 's bongo society (unverified)', link: '/about' }
+                            { text: 'was president of my university bongo society', link: '/about' }
                         ],
                         currentIndex: 0,
-                        visible: true
+                        init() {
+                            const elem = this.$el;
+                            setInterval(() => {
+                                elem.classList.add('text-fade-out');
+                                
+                                // Start the next animation after just 200ms (halfway through the fade-out)
+                                setTimeout(() => {
+                                    this.currentIndex = (this.currentIndex + 1) % this.achievements.length;
+                                    elem.classList.remove('text-fade-out');
+                                    elem.classList.add('text-fade-in');
+                                    
+                                    setTimeout(() => {
+                                        elem.classList.remove('text-fade-in');
+                                    }, 400);
+                                }, 200);
+                            }, 3000);
+                        }
                     }"
-                    x-init="setInterval(() => { visible = false; setTimeout(() => { currentIndex = (currentIndex + 1) % achievements.length; visible = true; }, 300); }, 3000);"
-                    class="relative inline-block min-h-[1.5rem]"
-                >
-                    <a 
-                        :href="achievements[currentIndex].link" 
-                        class="text-blue-600 hover:text-blue-400 transition-all duration-300"
-                        :class="{ 'opacity-0 translate-y-2': !visible, 'opacity-100 translate-y-0': visible }"
-                        x-text="achievements[currentIndex].text"
-                    ></a>
-                </span>.
-                <a href="/about" class="text-blue-600 hover:text-blue-400 text-xl ml-2">More…</a>
+                    :href="achievements[currentIndex].link"
+                    x-text="achievements[currentIndex].text"
+                    class="text-blue-600 hover:text-blue-400 inline-block relative achievement-text"
+                ></a>.<br>
+                <a href="/about" class="text-blue-600 hover:text-blue-400 text-xl hidden">More…</a>
             </p>
         </div>
     </section>
+
+        
+    <ProjectSection 
+        title="Projects" 
+        viewAllLink="/tags/climate" 
+        projects={displayFeatured}
+        showTags={false}
+    />
     
     <ProjectSection 
         title="Music" 
@@ -80,13 +120,7 @@ const recentThreeProjects = recentProjects.slice(0, 3);
         projects={displaySongs}
         showTags={false}
     />
-    
-    <ProjectSection 
-        title="Projects" 
-        viewAllLink="/tags/climate" 
-        projects={displayFeatured}
-        showTags={false}
-    />
+
     
     <ProjectSection 
         title="From the archive" 

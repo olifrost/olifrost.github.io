@@ -6,12 +6,11 @@ interface Props {
 
 const { summary = "See more" } = Astro.props;
 ---
-
 <div x-data="{ expanded: false, summaryText: '{summary}' }" class="bio-expand">
   <div class="flex items-center mb-2">
     <button 
       @click="expanded = !expanded" 
-      class="text-blue-600 hover:text-blue-400 flex items-center focus:outline-none transition-colors"
+      class="text-blue-600 hover:text-blue-400 flex text-base items-center focus:outline-none transition-colors"
       :aria-expanded="expanded"
       aria-controls="long-bio"
     >
