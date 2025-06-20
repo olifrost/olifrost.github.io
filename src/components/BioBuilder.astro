@@ -192,11 +192,11 @@
                 { src: '/img/olifrost-carrot.jpg', filename: 'oli-frost-carrot.jpg', alt: 'Oli Frost - With carrot' }
             ],
 
-            // Bio content data (current values)
-            bioData: {
+            // Default bio data for initialization and reset
+            defaultBioData: {
                 intro: "makes songs, films and websites about the climate crisis",
                 achievement1: "got Greta Thunberg dancing the macarena",
-                achievement2: "created a fossil fuel funfair", 
+                achievement2: "created a fossil fuel funfair",
                 achievement3: "made a video game about asset management",
                 outlet1: "UK Parliament",
                 outlet2: "Britain's Got Talent",
@@ -207,9 +207,12 @@
                 outlet7: "on bins",
                 stats1: "a frankly embarrassing amount of internet attention",
                 stats2: "chronic imposter syndrome disguised as confidence",
-                collaboration1: "creating campaigns with Serious People, a climate campaign studio he co-founded",
+                collaboration1: "working with Serious People, a climate campaign group he co-founded",
                 collaboration2: "creating weekly videos for Greenpeace"
             },
+
+            // Bio content data (current values)
+            bioData: {},
 
             // Shared data arrays for easier maintenance
             _sharedAchievements: [
@@ -369,6 +372,8 @@
                 this.bioOptions.outlet7 = this._sharedOutletLocations;
                 this.bioOptions.collaboration1 = this._sharedCollaborations;
                 this.bioOptions.collaboration2 = this._sharedCollaborations;
+                // Set bioData to default values
+                this.bioData = { ...this.defaultBioData };
             },
 
             setSlide(index) {
@@ -376,11 +381,26 @@
             },
 
             showOptions(type, event) {
-                // Prevent the click from bubbling up
                 event.stopPropagation();
-                
                 this.currentVariableType = type;
-                this.currentOptions = this.bioOptions[type] || [];
+                // Determine which fields share the same array
+                let sharedFields = [];
+                if (["achievement1", "achievement2", "achievement3"].includes(type)) {
+                    sharedFields = ["achievement1", "achievement2", "achievement3"];
+                } else if (["outlet1", "outlet2", "outlet3", "outlet4"].includes(type)) {
+                    sharedFields = ["outlet1", "outlet2", "outlet3", "outlet4"];
+                } else if (["outlet5", "outlet6", "outlet7"].includes(type)) {
+                    sharedFields = ["outlet5", "outlet6", "outlet7"];
+                } else if (["collaboration1", "collaboration2"].includes(type)) {
+                    sharedFields = ["collaboration1", "collaboration2"];
+                }
+                // Get all selected values in the shared group except the current field
+                let usedValues = sharedFields.length > 0
+                    ? sharedFields.filter(f => f !== type).map(f => this.bioData[f])
+                    : [];
+                // Filter options to exclude used values
+                let options = (this.bioOptions[type] || []).filter(opt => !usedValues.includes(opt));
+                this.currentOptions = options;
                 this.currentElement = event.target;
                 
                 // Calculate position
@@ -488,24 +508,7 @@ At the moment he is ${this.bioData.collaboration1}, and ${this.bioData.collabora
 
             resetBio() {
                 // Reset to default values
-                this.bioData = {
-                    intro: "makes songs, films and websites about the climate crisis",
-                    achievement1: "got Greta Thunberg dancing the macarena",
-                    achievement2: "created a fossil fuel funfair",
-                    achievement3: "made a video game about asset management",
-                    outlet1: "UK Parliament",
-                    outlet2: "Britain's Got Talent",
-                    outlet3: "BBC",
-                    outlet4: "Fox News",
-                    outlet5: "music festivals",
-                    outlet6: "art shows",
-                    outlet7: "on bins",
-                    stats1: "a frankly embarrassing amount of internet attention",
-                    stats2: "chronic imposter syndrome disguised as confidence",
-                    collaboration1: "creating campaigns with Serious People, a climate campaign studio he co-founded",
-                    collaboration2: "creating weekly videos for Greenpeace"
-                };
-                
+                this.bioData = { ...this.defaultBioData };
                 this.showOptionsPanel = false;
                 this.currentSlide = 0;
             }
