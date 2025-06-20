@@ -277,6 +277,22 @@
                 "Britain's Got Talent"
             ],
 
+            // Shared arrays for outlet5/6/7 and collaboration1/2
+            _sharedOutletLocations: [
+                "music festivals",
+                "his mother's fridge",
+                "university lectures",
+                "protest marches",
+                "comedy clubs",
+                "shopping centers"
+            ],
+            _sharedCollaborations: [
+                "creating campaigns with Serious People, a climate campaign studio he co-founded",
+                "developing an AI CEO replacement service",
+                "operating a meditation app for oil executives",
+                "turning his existential dread into a brand"
+            ],
+
             // Bio options data
             bioOptions: {
                 intro: [
@@ -293,30 +309,9 @@
                 outlet2: [],
                 outlet3: [],
                 outlet4: [],
-                outlet5: [
-                    "music festivals",
-                    "his mother's fridge",
-                    "university lectures",
-                    "protest marches",
-                    "comedy clubs",
-                    "shopping centers"
-                ],
-                outlet6: [
-                    "art shows",
-                    "his mother's fridge",
-                    "university lectures",
-                    "protest marches",
-                    "comedy clubs",
-                    "shopping centers"
-                ],
-                outlet7: [
-                    "on bins",
-                    "his mother's fridge",
-                    "university lectures",
-                    "protest marches",
-                    "comedy clubs",
-                    "shopping centers"
-                ],
+                outlet5: [],
+                outlet6: [],
+                outlet7: [],
                 stats1: [
                     "330,000 followers and over 75 million views",
                     "5.5 million streams on Spotify",
@@ -369,6 +364,11 @@
                 this.bioOptions.outlet2 = this._sharedOutlets;
                 this.bioOptions.outlet3 = this._sharedOutlets;
                 this.bioOptions.outlet4 = this._sharedOutlets;
+                this.bioOptions.outlet5 = this._sharedOutletLocations;
+                this.bioOptions.outlet6 = this._sharedOutletLocations;
+                this.bioOptions.outlet7 = this._sharedOutletLocations;
+                this.bioOptions.collaboration1 = this._sharedCollaborations;
+                this.bioOptions.collaboration2 = this._sharedCollaborations;
             },
 
             setSlide(index) {
