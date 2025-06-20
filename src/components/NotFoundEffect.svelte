@@ -4,13 +4,11 @@
   
   // Messages that will randomly appear in the error box
   const messages = [
-    "Have you tried looking in the mirror?",
     "This content was removed due to excessive truth-telling",
     "The page exists, but only conceptually",
-    "404: Content monetization failed",
     "This URL has been donated to charity",
     "Page temporarily loaned to someone who needed it more",
-    "Error_404: Reality not found",
+    "Reality not found",
     "This page is on strike for climate justice",
     "Content deleted by the internet's Marie Kondo",
     "This page has been recycled into something useful"
@@ -89,7 +87,6 @@
       <p class="message-text text-lg font-mono text-blue-600 transition-opacity duration-300">
         {message}
       </p>
-      <p class="text-sm mt-2 font-mono">Tap here and I'll try again</p>
     </div>
   </slot>
 </div>

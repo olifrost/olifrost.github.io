@@ -1,0 +1,560 @@
+---
+// BioBuilder.astro - Interactive bio building component with Alpine.js
+---
+
+<div 
+    class="max-w-none mx-auto" 
+    x-data="bioBuilder()"
+    x-init="init()"
+>
+    <!-- Photo section - now at top -->
+    <div class="mb-6">
+        <!-- Photo carousel -->
+        <div class="relative">
+            <div class="overflow-hidden rounded-lg">
+                <div 
+                    class="flex transition-transform duration-300 ease-in-out h-[500px]" 
+                    :style="`transform: translateX(-${currentSlide * 100}%)`"
+                >
+                    <template x-for="(photo, index) in photos" :key="index">
+                        <img 
+                            :src="photo.src" 
+                            :alt="photo.alt" 
+                            class="w-full flex-shrink-0 h-full object-cover not-prose"
+                        >
+                    </template>
+                </div>
+            </div>
+            
+            <!-- Carousel controls -->
+            <div class="flex justify-center mt-4 space-x-2">
+                <template x-for="(photo, index) in photos" :key="index">
+                    <button 
+                        @click="setSlide(index)"
+                        @keydown.enter="setSlide(index)"
+                        @keydown.space.prevent="setSlide(index)"
+                        :class="currentSlide === index ? 'bg-blue-600' : 'bg-gray-300'"
+                        :aria-label="`Photo ${index + 1}`"
+                        class="carousel-dot w-3 h-3 rounded-full transition-all duration-200 ease-in-out cursor-pointer hover:scale-110"
+                        tabindex="0"
+                        role="button"
+                    ></button>
+                </template>
+            </div>
+        </div>
+    </div>
+
+    <!-- Heading and instructions -->
+    <div class="mb-4">
+        <h2 class="text-4xl font-bold mb-2 not-prose">Build a Bio</h2>
+        <p class="text-gray-600 text-sm">Tap the <span class="text-blue-600">blue text</span> to edit</p>
+    </div>
+
+    <!-- Bio output section -->
+    <div class="mb-6">
+        <div class="prose prose-lg max-w-none leading-relaxed space-y-4 text-gray-900">
+            <p>
+                Oli Frost <span 
+                    class="bio-variable" 
+                    @click.stop="showOptions('intro', $event)"
+                    x-text="bioData.intro"
+                ></span>. 
+                He <span 
+                    class="bio-variable" 
+                    @click.stop="showOptions('achievement1', $event)"
+                    x-text="bioData.achievement1"
+                ></span>, <span 
+                    class="bio-variable" 
+                    @click.stop="showOptions('achievement2', $event)"
+                    x-text="bioData.achievement2"
+                ></span>, and <span 
+                    class="bio-variable" 
+                    @click.stop="showOptions('achievement3', $event)"
+                    x-text="bioData.achievement3"
+                ></span>.
+            </p>
+            
+            <p>
+                His work has been featured everywhere from <span 
+                    class="bio-variable" 
+                    @click.stop="showOptions('outlet1', $event)"
+                    x-text="bioData.outlet1"
+                ></span> to <span 
+                    class="bio-variable" 
+                    @click.stop="showOptions('outlet2', $event)"
+                    x-text="bioData.outlet2"
+                ></span>, <span 
+                    class="bio-variable" 
+                    @click.stop="showOptions('outlet3', $event)"
+                    x-text="bioData.outlet3"
+                ></span> to <span 
+                    class="bio-variable" 
+                    @click.stop="showOptions('outlet4', $event)"
+                    x-text="bioData.outlet4"
+                ></span>, in <span 
+                    class="bio-variable" 
+                    @click.stop="showOptions('outlet5', $event)"
+                    x-text="bioData.outlet5"
+                ></span>, <span 
+                    class="bio-variable" 
+                    @click.stop="showOptions('outlet6', $event)"
+                    x-text="bioData.outlet6"
+                ></span>, and <span 
+                    class="bio-variable" 
+                    @click.stop="showOptions('outlet7', $event)"
+                    x-text="bioData.outlet7"
+                ></span>.
+            </p>
+            
+            <p>
+                It's given him <span 
+                    class="bio-variable" 
+                    @click.stop="showOptions('stats1', $event)"
+                    x-text="bioData.stats1"
+                ></span>, and <span 
+                    class="bio-variable" 
+                    @click.stop="showOptions('stats2', $event)"
+                    x-text="bioData.stats2"
+                ></span>.
+            </p>
+
+            <p>
+                At the moment he is <span 
+                    class="bio-variable" 
+                    @click.stop="showOptions('collaboration1', $event)"
+                    x-text="bioData.collaboration1"
+                ></span>, and <span 
+                    class="bio-variable" 
+                    @click.stop="showOptions('collaboration2', $event)"
+                    x-text="bioData.collaboration2"
+                ></span>.
+            </p>
+        </div>
+
+        <!-- Controls - now below bio, aligned left -->
+        <div class="flex gap-3 mt-6">
+            <a 
+                :href="photos[currentSlide].src" 
+                :download="photos[currentSlide].filename"
+                class="px-6 py-2 bg-white border border-gray-300 text-gray-700 rounded hover:bg-gray-50 transition-colors text-sm"
+            >
+                Download Photo
+            </a>
+            <button 
+                @click="copyBio()"
+                :class="copyButtonClass"
+                class="px-6 py-2 rounded transition-colors text-sm"
+                x-text="copyButtonText"
+            ></button>
+            <button 
+                @click="resetBio()"
+                class="px-6 py-2 hover:bg-gray-50 transition-colors text-sm"
+            >
+                Reset
+            </button>
+        </div>
+    </div>
+
+    <!-- Options panel (appears when clicking variables) -->
+    <div 
+        x-show="showOptionsPanel"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="opacity-0 transform scale-95"
+        x-transition:enter-end="opacity-100 transform scale-100"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="opacity-100 transform scale-100"
+        x-transition:leave-end="opacity-0 transform scale-95"
+        :style="`position: fixed; left: ${panelPosition.x}px; top: ${panelPosition.y}px; z-index: 1000;`"
+        @click.away="showOptionsPanel = false"
+        class="bg-white border border-gray-300 rounded-lg shadow-xl p-0 min-w-80 options-panel-scroll"
+    >
+        <div class="max-h-80 overflow-y-auto relative">
+            <template x-for="(option, index) in currentOptions" :key="index">
+                <button 
+                    @click="selectOption(option)"
+                    :class="`block w-full text-left p-4 hover:bg-blue-50 transition-colors text-sm border-b border-gray-100 last:border-b-0 ${index === 0 ? 'rounded-t-lg' : ''} ${index === currentOptions.length - 1 ? 'rounded-b-lg' : ''}`"
+                    x-text="option"
+                ></button>
+            </template>
+            <template x-if="currentOptions.length > 7">
+                <div class="absolute bottom-0 left-0 w-full pointer-events-none fade-scroll-indicator"></div>
+            </template>
+        </div>
+        <template x-if="currentOptions.length > 7">
+            <div class="text-center text-xs text-gray-400 py-1 border-t border-gray-100 bg-white">Scroll for more</div>
+        </template>
+    </div>
+</div>
+
+<script is:inline>
+    // Make bioBuilder function available globally for Alpine.js
+    function bioBuilder() {
+        return {
+            // Photo carousel data
+            currentSlide: 0,
+            photos: [
+                { src: '/img/bio/olifrost-snowman.jpg', filename: '/bio/olifrost-snowman.jpg', alt: 'Oli Frost - Snowman' },
+                { src: '/img/bio/olifrost-snowball.jpg', filename: '/bio/olifrost-snowball.jpg', alt: 'Oli Frost - With Snowball' },
+                { src: '/img/bio/olifrost-arms.jpg', filename: '/bio/olifrost-arms.jpg', alt: 'Oli Frost - Arms Folded' },
+                { src: '/img/bio/olifrost-carrot.jpg', filename: '/bio/olifrost-carrot.jpg', alt: 'Oli Frost - With Carrot' }
+            ],
+
+            // Default bio data for initialization and reset
+            defaultBioData: {
+                intro: "makes songs, films and websites about the climate crisis",
+                achievement1: "got Greta Thunberg dancing the macarena",
+                achievement2: "delivered a tiny violin to Shell",
+                achievement3: "made a video game about asset management",
+                outlet1: "UK Parliament",
+                outlet2: "Britain's Got Talent",
+                outlet3: "BBC",
+                outlet4: "Fox News",
+                outlet5: "music festivals",
+                outlet6: "art shows",
+                outlet7: "on bins",
+                stats1: "over 75 million views, 330,000 followers",
+                stats2: "a complex psychological relationship with numbers",
+                collaboration1: "working with Serious People, a climate campaign group he co-founded",
+                collaboration2: "creating weekly videos for Greenpeace"
+            },
+
+            // Bio content data (current values)
+            bioData: {},
+
+            // Shared data arrays for easier maintenance
+            _sharedAchievements: [
+                "got Greta Thunberg dancing the macarena",
+                "created a fossil fuel funfair",
+                "made a video game about asset management",
+                "put all his personal data on eBay",
+                "played the recorder for Simon Cowell",
+                "took a shellphone to the UN Ocean Conference",
+                "delivered a tiny violin to Shell",
+                "created a viral song about socialist vampires",
+                "made a wellness app for oil executives",
+                "organised a climate strike for baby penguins",
+                "created a series of viral climate strike posters",
+                "fed people owl wings",
+                "tried to bribe Boris Johnson",
+                "vandalised Wikipedia's page for bacon",
+                "made a site for heart-warming fake news",
+                "got periods into parliament",
+                "made an app that hates itself",
+                "launched a crowdfunding platform for bad ideas",
+                "helped the advertising industry sabotage itself",
+                "turned climate action into an aerobics routine",
+                "made his lamp a social media personality",
+                "started a campaign against the fire emoji"
+            ],
+
+            _sharedOutlets: [
+                "UK Parliament",
+                "The Financial Times",
+                "Britain's Got Talent",
+                "Vice",
+                "Fox News",
+                "The Guardian",
+                "Reddit's Front Page",
+                "BBC",
+                "Channel 4",
+                "Sky News",
+                "The Observer",
+                "The Independent",
+                "LBC",
+                "RT News",
+                "Express",
+                "Telegraph",
+                "GB News",
+                "The Standard",
+                "City AM",
+                "Fast Company",
+                "Product Hunt",
+                "TechCrunch",
+                "Huffington Post",
+                "Metro",
+                "CNET",
+                "Gizmodo",
+                "Campaign",
+                "PRWeek",
+                "Adweek",
+            ],
+
+            // Shared arrays for outlet5/6/7 and collaboration1/2
+            _sharedOutletLocations: [
+                "festivals",
+                "university lectures",
+                "his mother's fridge",
+                "protest marches",
+                "corporate lobbies",
+                "celebrity Instagram stories",
+                "reality shows",
+                "classrooms",
+                                
+                "wheelie bins",
+            ],
+            _sharedCollaborations: [
+                "creating campaigns with Serious People, a climate campaign studio he co-founded",
+                "developing an AI CEO replacement service",
+                "operating a meditation app for oil executives",
+                "turning his existential dread into a brand"
+            ],
+
+            // Bio options data
+            bioOptions: {
+                intro: [
+                    "makes songs, films and websites about the climate crisis",
+                    "is a UK artist, activist, and comedian, working on the climate crisis",
+                    "is still not entirely sure what he does",
+                    "is a total nobody"
+                ],
+                // Achievement and outlet fields will be populated in init()
+                stats1: [
+                    "over 75 million views, 330,000 followers",
+                    "5.5 million streams on Spotify",
+                    "the accolade of best climate song, in a climate song competition",
+                    "the chance to host a climate quiz on Sky News",
+                    "more podcast appearances than he'd like",
+                    "mild internet fame that his parents still don't understand",
+                    "a worrying dependency on the validation of strangers"
+                ],
+                stats2: [
+                    "a complex psychological relationship with numbers",
+                    "masked much of his childhood trauma",
+                    "a persistent fear that he's peaked already",
+                    "chronic imposter syndrome disguised as confidence",
+                    "an alarming talent for getting banned from industry events"
+                ]
+            },
+
+            // Options panel state
+            showOptionsPanel: false,
+            currentOptions: [],
+            currentVariableType: '',
+            currentElement: null,
+            panelPosition: { x: 0, y: 0 },
+
+            // Copy button state
+            copyButtonText: 'Copy Bio',
+            copyButtonClass: 'bg-white border border-gray-300 text-gray-700 hover:bg-gray-50',
+
+            // Methods
+            init() {
+                // Map shared arrays to bio options using a more maintainable approach
+                const sharedMappings = {
+                    achievement: ['achievement1', 'achievement2', 'achievement3'],
+                    outlet: ['outlet1', 'outlet2', 'outlet3', 'outlet4'],
+                    outletLocation: ['outlet5', 'outlet6', 'outlet7'],
+                    collaboration: ['collaboration1', 'collaboration2']
+                };
+
+                const sharedArrays = {
+                    achievement: this._sharedAchievements,
+                    outlet: this._sharedOutlets,
+                    outletLocation: this._sharedOutletLocations,
+                    collaboration: this._sharedCollaborations
+                };
+
+                // Assign shared arrays to bio options
+                Object.entries(sharedMappings).forEach(([arrayKey, fields]) => {
+                    fields.forEach(field => {
+                        this.bioOptions[field] = sharedArrays[arrayKey];
+                    });
+                });
+
+                // Set bioData to default values
+                this.bioData = { ...this.defaultBioData };
+            },
+
+            setSlide(index) {
+                this.currentSlide = index;
+            },
+
+            showOptions(type, event) {
+                event.stopPropagation();
+                this.currentVariableType = type;
+                
+                // Map field types to their shared groups
+                const fieldGroups = {
+                    achievement: ["achievement1", "achievement2", "achievement3"],
+                    outlet: ["outlet1", "outlet2", "outlet3", "outlet4"],
+                    outletLocation: ["outlet5", "outlet6", "outlet7"],
+                    collaboration: ["collaboration1", "collaboration2"]
+                };
+                
+                // Find which group this field belongs to
+                const sharedFields = Object.values(fieldGroups).find(group => group.includes(type)) || [];
+                
+                // Get used values in the shared group (excluding current field)
+                const usedValues = sharedFields
+                    .filter(f => f !== type)
+                    .map(f => this.bioData[f]);
+                
+                // Filter options to exclude used values
+                this.currentOptions = (this.bioOptions[type] || []).filter(opt => !usedValues.includes(opt));
+                this.currentElement = event.target;
+                // Calculate position
+                this.panelPosition = this.calculatePanelPosition(event.target, this.currentOptions.length);
+                setTimeout(() => {
+                    this.showOptionsPanel = true;
+                }, 10);
+            },
+
+            calculatePanelPosition(element, optionCount) {
+                const rect = element.getBoundingClientRect();
+                const viewportWidth = window.innerWidth;
+                const viewportHeight = window.innerHeight;
+                const panelWidth = 320; // min-w-80
+                const panelHeight = Math.min(320, 48 * optionCount);
+                
+                let left = rect.left;
+                let top = rect.bottom + 8;
+                
+                // Adjust vertical position if not enough space
+                if (top + panelHeight > viewportHeight - 20) {
+                    if (rect.top - 8 - panelHeight > 20) {
+                        top = rect.top - panelHeight - 8;
+                    } else {
+                        top = Math.max(20, viewportHeight - panelHeight - 20);
+                    }
+                }
+                
+                // Adjust horizontal position if not enough space
+                if (left + panelWidth > viewportWidth - 20) {
+                    left = viewportWidth - panelWidth - 20;
+                }
+                
+                return {
+                    x: Math.max(20, left),
+                    y: Math.max(20, top)
+                };
+            },
+
+            selectOption(option) {
+                if (this.currentVariableType && this.bioData.hasOwnProperty(this.currentVariableType)) {
+                    this.bioData[this.currentVariableType] = option;
+                }
+                this.showOptionsPanel = false;
+            },
+
+            async copyBio() {
+                const bioText = this.generateBioText();
+                const originalState = { text: this.copyButtonText, class: this.copyButtonClass };
+                
+                try {
+                    await navigator.clipboard.writeText(bioText);
+                    this.setCopyButtonState('Copied!', 'bg-green-50 border border-green-300 text-green-700', 2000, originalState);
+                } catch (err) {
+                    this.fallbackCopy(bioText, originalState);
+                }
+            },
+
+            generateBioText() {
+                return `Oli Frost ${this.bioData.intro}. He ${this.bioData.achievement1}, ${this.bioData.achievement2}, and ${this.bioData.achievement3}.
+
+His work has been featured everywhere from ${this.bioData.outlet1} to ${this.bioData.outlet2}, ${this.bioData.outlet3} to ${this.bioData.outlet4}, in ${this.bioData.outlet5}, ${this.bioData.outlet6}, and ${this.bioData.outlet7}.
+
+It's given him ${this.bioData.stats1}, and ${this.bioData.stats2}.
+
+At the moment he is ${this.bioData.collaboration1}, and ${this.bioData.collaboration2}.`;
+            },
+
+            setCopyButtonState(text, className, timeout, originalState) {
+                this.copyButtonText = text;
+                this.copyButtonClass = className;
+                setTimeout(() => {
+                    this.copyButtonText = originalState.text;
+                    this.copyButtonClass = originalState.class;
+                }, timeout);
+            },
+
+            fallbackCopy(bioText, originalState) {
+                try {
+                    const textArea = document.createElement('textarea');
+                    textArea.value = bioText;
+                    textArea.style.position = 'fixed';
+                    textArea.style.left = '-999999px';
+                    textArea.style.top = '-999999px';
+                    document.body.appendChild(textArea);
+                    textArea.focus();
+                    textArea.select();
+                    
+                    const successful = document.execCommand('copy');
+                    document.body.removeChild(textArea);
+                    
+                    const state = successful 
+                        ? { text: 'Copied!', class: 'bg-green-50 border border-green-300 text-green-700', timeout: 3000 }
+                        : { text: 'Copy failed - select text manually', class: 'bg-red-50 border border-red-300 text-red-700', timeout: 3000 };
+                    
+                    this.setCopyButtonState(state.text, state.class, state.timeout, originalState);
+                } catch (fallbackErr) {
+                    this.setCopyButtonState(
+                        'Select text to copy manually', 
+                        'bg-blue-50 border border-blue-300 text-blue-700', 
+                        3000, 
+                        originalState
+                    );
+                }
+            },
+
+            resetBio() {
+                // Reset to default values
+                this.bioData = { ...this.defaultBioData };
+                this.showOptionsPanel = false;
+                this.currentSlide = 0;
+            }
+        }
+    }
+</script>
+
+<style>
+    /* Bio variable styling */
+    .bio-variable {
+        background-color: rgb(219 234 254); /* bg-blue-100 */
+        color: rgb(37 99 235); /* text-blue-600 */
+        padding: 2px 6px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        font-weight: 500;
+        border: 1px solid rgb(191 219 254); /* border-blue-200 */
+    }
+    
+    .bio-variable:hover {
+        background-color: rgb(191 219 254); /* bg-blue-200 */
+        color: rgb(29 78 216); /* text-blue-700 */
+        border-color: rgb(147 197 253); /* border-blue-300 */
+        transform: translateY(-1px);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .prose p {
+        margin-bottom: 0;
+    }
+    
+    /* Carousel dot hover effects */
+    .carousel-dot.bg-blue-600:hover {
+        background-color: rgb(29 78 216); /* bg-blue-700 */
+    }
+    
+    .carousel-dot.bg-gray-300:hover {
+        background-color: rgb(156 163 175); /* bg-gray-400 */
+    }
+
+    .options-panel-scroll::-webkit-scrollbar {
+        width: 8px;
+        background: #e5e7eb; /* Tailwind gray-200 */
+        border-radius: 8px;
+    }
+    .options-panel-scroll::-webkit-scrollbar-thumb {
+        background: #93c5fd; /* Tailwind blue-300 */
+        border-radius: 8px;
+    }
+    .options-panel-scroll {
+        scrollbar-width: thin;
+        scrollbar-color: #93c5fd #e5e7eb;
+    }
+    .fade-scroll-indicator {
+        height: 32px;
+        background: linear-gradient(to bottom, rgba(255,255,255,0), #fff 80%);
+    }
+</style>
