@@ -402,32 +402,30 @@
                 let options = (this.bioOptions[type] || []).filter(opt => !usedValues.includes(opt));
                 this.currentOptions = options;
                 this.currentElement = event.target;
-                
                 // Calculate position
                 const rect = event.target.getBoundingClientRect();
                 const viewportWidth = window.innerWidth;
                 const viewportHeight = window.innerHeight;
                 const panelWidth = 320; // min-w-80
-                const panelHeight = 320; // estimated max height
-                
-                // Calculate position
+                const panelHeight = Math.min(320, 48 * options.length); // estimate height by option count
                 let left = rect.left;
                 let top = rect.bottom + 8;
-                
-                // Adjust if panel would go off screen
+                // Prefer below, but if not enough space, show above
+                if (top + panelHeight > viewportHeight - 20) {
+                    if (rect.top - 8 - panelHeight > 20) {
+                        top = rect.top - panelHeight - 8;
+                    } else {
+                        // If not enough space above or below, clamp to fit
+                        top = Math.max(20, viewportHeight - panelHeight - 20);
+                    }
+                }
                 if (left + panelWidth > viewportWidth - 20) {
                     left = viewportWidth - panelWidth - 20;
                 }
-                if (top + panelHeight > viewportHeight - 20) {
-                    top = rect.top - panelHeight - 8;
-                }
-                
                 this.panelPosition = {
                     x: Math.max(20, left),
                     y: Math.max(20, top)
                 };
-                
-                // Use setTimeout to ensure the panel opens after any potential close events
                 setTimeout(() => {
                     this.showOptionsPanel = true;
                 }, 10);
