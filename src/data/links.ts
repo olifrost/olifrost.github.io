@@ -1,50 +1,5 @@
 import type { LinksData } from '../types/links';
 
-export const streamingLinks: LinksData = {
-  docs_list_title: "Streaming",
-  docs: [
-    
-    {
-      title: "Music Platforms",
-      isExpandable: true,
-      colour: "bg-cyan-600",
-      icon: "lucide:music",
-      children: [
-        {
-          title: "Buy on Bandcamp",
-          url: "https://olifrost.bandcamp.com",
-          colour: "bg-cyan-600",
-          icon: "lucide:music"
-        },
-        {
-          title: "Apple Music",
-          url: "https://music.apple.com/gb/artist/oli-frost/1476842962",
-          colour: "bg-red-500",
-          icon: "lucide:music"
-        },
-        {
-          title: "Spotify",
-          url: "https://open.spotify.com/artist/5dFJdXPDdubN7e6RIC2MXP",
-          colour: "bg-green-600",
-          icon: "lucide:music"
-        },
-        {
-          title: "Deezer",
-          url: "https://www.deezer.com/en/artist/8466006",
-          colour: "bg-purple-600",
-          icon: "lucide:music"
-        }
-      ]
-    },
-    {
-      title: "YouTube",
-      url: "https://www.youtube.com/channel/UC11YzVs4e4h9kIt4VzUS6yQ",
-      colour: "bg-red-600",
-      icon: "lucide:video"
-    }
-  ]
-};
-
 export const links: LinksData = {
   docs_list_title: "Links",
   docs: [
@@ -53,6 +8,12 @@ export const links: LinksData = {
       url: "/",
       colour: "bg-blue-600",
       icon: "lucide:globe"
+    },
+    {
+      title: "Meditate on Oilwell",
+      url: "https://oilwell.app",
+      colour: "bg-pink-500",
+      icon: "lucide:gamepad-2"
     },
     {
       title: "Stream my music",
@@ -84,7 +45,7 @@ export const links: LinksData = {
           colour: "bg-purple-600",
           icon: "lucide:music"
         }
-        
+
       ]
     },
     {
@@ -104,14 +65,8 @@ export const links: LinksData = {
           url: "https://ko-fi.com/olifrost",
           colour: "bg-orange-500",
           icon: "lucide:coffee"
-        }        
+        }
       ]
-    },
-    {
-      title: "Meditate on Oilwell",
-      url: "https://oilwell.app",
-      colour: "bg-pink-500",
-      icon: "lucide:gamepad-2"
     },
     {
       title: "Join Discord",

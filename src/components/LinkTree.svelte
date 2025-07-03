@@ -1,11 +1,11 @@
 <script lang="ts">
-  import LinkItem from './LinkItem.svelte';
-  import { links, streamingLinks } from '../data/links';
+  import LinkItem from "./LinkItem.svelte";
+  import { links } from "../data/links";
 </script>
 
 <nav class="space-y-2 w-full">
   {#each links.docs as link}
-    <LinkItem 
+    <LinkItem
       title={link.title}
       url={link.url}
       icon={link.icon}
