@@ -1,0 +1,55 @@
+---
+import SimplePage from "../layouts/SimplePage.astro";
+import { getCollection } from "astro:content";
+
+const blogEntries = await getCollection("blog");
+const allPress = [];
+for (const entry of blogEntries) {
+    if (Array.isArray(entry.data.press) && entry.data.press.length > 0) {
+        for (const press of entry.data.press) {
+            allPress.push({
+                name: press.name,
+                article_link: press.article_link,
+                date: entry.data.date,
+            });
+        }
+    }
+}
+allPress.sort((a, b) => b.date.getTime() - a.date.getTime());
+---
+
+<SimplePage title="Press Mentions">
+    <ul class="mb-8 list-none p-0">
+        {
+            allPress.map((press) =>
+                press.article_link ? (
+                    <li class="pl-0">
+                        <a
+                            href={press.article_link}
+                            class="text-blue-700 underline hover:text-blue-900 break-all font-semibold"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            {press.name}
+                        </a>
+                        , {press.date.getFullYear()}
+                    </li>
+                ) : null,
+            )
+        }
+    </ul>
+
+    <div class="bg-black/5 rounded-lg p-4 overflow-x-auto">
+        <pre
+            class="bg-transparent p-0 m-0 text-sm text-blue-900 whitespace-pre-wrap">
+        <code>
+{
+            allPress
+              .filter(press => press.article_link)
+              .map(press => press.article_link + "\n")
+              .join("")
+          }
+        </code>
+      </pre>
+    </div>
+</SimplePage>
