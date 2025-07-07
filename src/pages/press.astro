@@ -24,6 +24,7 @@ allPress.sort((a, b) => b.date.getTime() - a.date.getTime());
             allPress.map((press) =>
                 press.article_link ? (
                     <li class="pl-0">
+                        {press.date.getFullYear()} -
                         <a
                             href={press.article_link}
                             class="text-blue-700 underline hover:text-blue-900 break-all font-semibold"
@@ -32,7 +33,6 @@ allPress.sort((a, b) => b.date.getTime() - a.date.getTime());
                         >
                             {press.name}
                         </a>
-                        , {press.date.getFullYear()}
                     </li>
                 ) : null,
             )
@@ -41,7 +41,7 @@ allPress.sort((a, b) => b.date.getTime() - a.date.getTime());
 
     <div class="bg-black/5 rounded-lg p-4 overflow-x-auto">
         <pre
-            class="bg-transparent p-0 m-0 text-sm text-blue-900 whitespace-pre-wrap">
+            class="bg-transparent text-sm text-blue-900 whitespace-pre-wrap">
         <code>
 {
             allPress
@@ -50,6 +50,6 @@ allPress.sort((a, b) => b.date.getTime() - a.date.getTime());
               .join("")
           }
         </code>
-      </pre>
+    </pre>
     </div>
 </SimplePage>
