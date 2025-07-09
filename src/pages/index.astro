@@ -1,43 +1,53 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import ProjectSection from '../components/ProjectSection.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import { getCollection } from 'astro:content';
-import { getBlogUrl } from '../utils/urls';
+import Layout from "../layouts/Layout.astro";
+import ProjectSection from "../components/ProjectSection.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import { getCollection } from "astro:content";
+import { getBlogUrl } from "../utils/urls";
 
 // Get all projects
-const allProjects = await getCollection('blog');
+const allProjects = await getCollection("blog");
 
 // Filter projects by category (manual selection by frontmatter)
 const songProjects = allProjects
-  .filter(project => project.data.homepageCategory === 'songs')
-  .sort((a, b) => (a.data.homepageOrder || 0) - (b.data.homepageOrder || 0))
-  .slice(0, 3);
+    .filter((project) => project.data.homepageCategory === "songs")
+    .sort((a, b) => (a.data.homepageOrder || 0) - (b.data.homepageOrder || 0))
+    .slice(0, 3);
 
 const featuredProjects = allProjects
-  .filter(project => project.data.homepageCategory === 'climate')
-  .sort((a, b) => (a.data.homepageOrder || 0) - (b.data.homepageOrder || 0))
-  .slice(0, 3);
+    .filter((project) => project.data.homepageCategory === "climate")
+    .sort((a, b) => (a.data.homepageOrder || 0) - (b.data.homepageOrder || 0))
+    .slice(0, 3);
 
 const archiveProjects = allProjects
-  .filter(project => project.data.homepageCategory === 'archive')
-  .sort((a, b) => (a.data.homepageOrder || 0) - (b.data.homepageOrder || 0))
-  .slice(0, 3);
+    .filter((project) => project.data.homepageCategory === "archive")
+    .sort((a, b) => (a.data.homepageOrder || 0) - (b.data.homepageOrder || 0))
+    .slice(0, 3);
 
 // Fallback to show the most recent projects if no manual selection is available
-const recentProjects = allProjects
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const recentProjects = allProjects.sort(
+    (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
 
-const displaySongs = songProjects.length > 0 ? songProjects : recentProjects.filter(p => p.data.tags?.includes('music')).slice(0, 3);
-const displayFeatured = featuredProjects.length > 0 ? featuredProjects : recentProjects.slice(0, 3);
-const displayArchive = archiveProjects.length > 0 ? archiveProjects : recentProjects.slice(3, 6);
+const displaySongs =
+    songProjects.length > 0
+        ? songProjects
+        : recentProjects
+              .filter((p) => p.data.tags?.includes("music"))
+              .slice(0, 3);
+const displayFeatured =
+    featuredProjects.length > 0 ? featuredProjects : recentProjects.slice(0, 3);
+const displayArchive =
+    archiveProjects.length > 0 ? archiveProjects : recentProjects.slice(3, 6);
 const recentThreeProjects = recentProjects.slice(0, 3);
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
     <style>
         .achievement-text {
-            transition: opacity 0.4s ease, transform 0.4s ease;
+            transition:
+                opacity 0.4s ease,
+                transform 0.4s ease;
         }
         .text-fade-out {
             opacity: 0;
@@ -58,11 +68,13 @@ const recentThreeProjects = recentProjects.slice(0, 3);
         }
     </style>
 
-    <section class="prose prose-base prose-p:first:mt-0 prose-a:font-light prose-a:text-blue-600 prose-a:hover:text-blue-400 mb-6 max-w-none">
-        <div class="text-2xl max-w-6xl mb-6 space-y-4 transition-all">
+    <section
+        class="prose prose-base prose-p:first:mt-0 prose-a:font-light prose-a:text-blue-600 prose-a:hover:text-blue-400 mb-6 max-w-none"
+    >
+        <div class="text-2xl max-w-6xl mb-6 space-y-4 min-h-3 transition-all">
             <p>
-                I'm Oli Frost, I make novelty songs, films and websites about the climate crisis.<br>
-                I <a 
+                I'm Oli Frost, I make novelty songs, films and websites about
+                the climate crisis. I <a
                     x-data="{
                         achievements: [
                             { text: 'got Greta Thunberg dancing the macarena', link: '/blog/the-greta-thunberg-song' },
@@ -88,7 +100,7 @@ const recentThreeProjects = recentProjects.slice(0, 3);
                                 setTimeout(() => {
                                     this.currentIndex = (this.currentIndex + 1) % this.achievements.length;
                                     elem.classList.remove('text-fade-out');
-                                    elem.classList.add('text-fade-in');
+                                    // elem.classList.add('text-fade-in');
                                     
                                     setTimeout(() => {
                                         elem.classList.remove('text-fade-in');
@@ -99,38 +111,43 @@ const recentThreeProjects = recentProjects.slice(0, 3);
                     }"
                     :href="achievements[currentIndex].link"
                     x-text="achievements[currentIndex].text"
-                    class="text-blue-600 hover:text-blue-400 inline-block relative achievement-text"
-                ></a>.<br>
-                <a href="/about" class="text-blue-600 hover:text-blue-400 text-xl hidden">More…</a>
+                    class="text-blue-600 hover:text-blue-400 achievement-text"
+                ></a>.<br />
+                <a
+                    href="/about"
+                    class="text-blue-600 hover:text-blue-400 text-xl hidden"
+                    >More…</a
+                >
             </p>
         </div>
     </section>
 
-        
-    <ProjectSection 
-        title="Projects" 
-        viewAllLink="/tags/climate" 
+    <ProjectSection
+        title="Projects"
+        viewAllLink="/tags/climate"
         projects={displayFeatured}
         showTags={false}
     />
-    
-    <ProjectSection 
-        title="Music" 
-        viewAllLink="/tags/music" 
+
+    <ProjectSection
+        title="Music"
+        viewAllLink="/tags/music"
         projects={displaySongs}
         showTags={false}
     />
 
-    
-    <ProjectSection 
-        title="From the archive" 
-        viewAllLink="/tags/other" 
+    <ProjectSection
+        title="From the archive"
+        viewAllLink="/tags/other"
         projects={displayArchive}
         showTags={false}
     />
-    
+
     <div class="flex justify-center mt-6">
-        <a href="/blog" class="text-blue-600 hover:text-blue-800 text-lg font-medium transition-colors">
+        <a
+            href="/blog"
+            class="text-blue-600 hover:text-blue-800 text-lg font-medium transition-colors"
+        >
             View all projects →
         </a>
     </div>
