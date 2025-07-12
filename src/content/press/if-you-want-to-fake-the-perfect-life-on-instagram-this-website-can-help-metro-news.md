@@ -8,10 +8,6 @@ title: "If you want to fake the perfect life on Instagram, this website can help
 
 # If you want to fake the perfect life on Instagram, this website can help | Metro News
 
-[](https://metro.co.uk/author/miranda-larbi-for-metro-co-uk/)
-
-**Published** May 3, 2018 12:55pm **Updated** December 12, 2019 5:27pm
-
 According to Sanctus.io, 62% of people feel inadequate comparing their lives to others online.
 
 And that’s not too hard to believe when you’re scrolling through Instagram in your PJs while everyone else seems to be crowd surfing at a gig/dining at a super fancy supper club/on an exotic beach.
@@ -31,11 +27,3 @@ So much darkness.
 Or at least, it seems like a particularly dark episode of Black Mirror before you realise that LifeFaker.com is actually seeking to raise awareness of the negative impact social media is having on our mental health.
 
 Anyone who tries to buy a package will be redirected to Sanctus, the startup behind the website, to explore just how unhealthy some behaviours on social media can be, and what we can do to change them.
-
-MORE: [Joe Wicks is bringing out a plant-based Lean in 15 book at last](https://metro.co.uk/2018/05/03/joe-wicks-bringing-plant-based-lean-15-book-last-7517634/?ico=more_text_links)
-
-MORE: [If you think foxes are just grim bin raiders, check out these stunning portraits](https://metro.co.uk/2018/05/03/think-foxes-just-grim-bin-raiders-check-stunning-portraits-7517446/?ico=more_text_links)
-
-#### The Slice
-
-Your free newsletter guide to the best London has on offer, from drinks deals to restaurant reviews.

@@ -74,18 +74,16 @@ const sortedEntries = pressEntries
                                     {entry.cleanDomain}
                                 </a>
                             )}
-                            {entry.cleanDomain && (
-                                <span class="text-gray-400">•</span>
-                            )}
-                            {entry.data.author && entry.data.author.trim() && (
-                                <>
+                            {/* Only show separator if both domain and author exist */}
+                            {entry.cleanDomain &&
+                                entry.data.author &&
+                                entry.data.author.trim() && (
                                     <span class="text-gray-400">•</span>
-                                    <span>
-                                        {entry.data.author
-                                            .split("\n")[0]
-                                            .trim()}
-                                    </span>
-                                </>
+                                )}
+                            {entry.data.author && entry.data.author.trim() && (
+                                <span>
+                                    {entry.data.author.split("\n")[0].trim()}
+                                </span>
                             )}
                         </div>
                     </li>
