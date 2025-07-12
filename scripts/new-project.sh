@@ -202,9 +202,26 @@ else
 fi
 
 # Get image
-image=$(gum input --placeholder "Image file (leave blank for default)" --value "$ASSETS_DIR/blog/$slug.jpg")
-if [[ -z "$image" ]]; then
-    image="$ASSETS_DIR/blog/$slug.jpg"
+
+# Prompt for source image file to copy
+copy_image=$(gum confirm "Would you like to copy an image file from your computer?" && echo "yes" || echo "no")
+if [[ "$copy_image" == "yes" ]]; then
+    src_image_path=$(gum input --placeholder "Enter the path to your image file (e.g. ~/Downloads/image.jpg)")
+    # Get year from date
+    year=$(echo "$date" | cut -d'-' -f1)
+    dest_dir="$PROJECT_ROOT/src/assets/$year"
+    mkdir -p "$dest_dir"
+    dest_image_path="$dest_dir/$slug.jpg"
+    cp "$src_image_path" "$dest_image_path"
+    image="@assets/$year/$slug.jpg"
+    gum style --foreground 212 "✅ Copied image to $dest_image_path"
+else
+    image=$(gum input --placeholder "Image file (leave blank for default)" --value "$ASSETS_DIR/blog/$slug.jpg")
+    if [[ -z "$image" ]]; then
+        # Get year from date
+        year=$(echo "$date" | cut -d'-' -f1)
+        image="$ASSETS_DIR/$year/$slug.jpg"
+    fi
 fi
 
 # Handle post-type specific inputs
