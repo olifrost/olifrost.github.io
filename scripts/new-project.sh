@@ -16,28 +16,16 @@ function select_tag() {
     local all_tags=($(grep -hE "^tags:" "$CONTENT_DIR"/**/*.mdx(N) 2>/dev/null | sed -E "s/tags: \[(.*)\]/\1/" | tr -d "'" | tr ',' '\n' | sort -u | grep -v '^[[:space:]]*$'))
     
     if [[ ${#all_tags[@]} -eq 0 ]]; then
-        print -P "%F{cyan}No existing tags found. Enter a new tag (or leave blank):%f"
-        read selected_tag
+        selected_tag=$(gum input --placeholder "Enter a new tag (or leave blank)")
         return
     fi
 
-    print -P "%F{cyan}Choose a tag or enter a new one (leave blank for none):%f"
-    for i in {1..${#all_tags[@]}}; do
-        print -P "%F{yellow}$i)%f ${all_tags[$i]}"
-    done
-    print -P "%F{yellow}0)%f Enter a new tag"
-    read tag_choice
-
-    if [[ -z "$tag_choice" ]]; then
-        selected_tag=""
-    elif [[ "$tag_choice" == "0" ]]; then
-        print -P "%F{cyan}Enter new tag (or leave blank):%f"
-        read selected_tag
-    elif [[ "$tag_choice" =~ ^[0-9]+$ && $tag_choice -ge 1 && $tag_choice -le ${#all_tags[@]} ]]; then
-        selected_tag="${all_tags[$tag_choice]}"
-    else
-        print -P "%F{red}Invalid choice, leaving tag blank%f"
-        selected_tag=""
+    # Add "New tag..." option and use gum for tag selection
+    local tag_options=("${all_tags[@]}" "New tag...")
+    selected_tag=$(printf "%s\n" "${tag_options[@]}" | gum choose --header "Choose a tag:")
+    
+    if [[ "$selected_tag" == "New tag..." ]]; then
+        selected_tag=$(gum input --placeholder "Enter new tag (or leave blank)")
     fi
 }
 
@@ -50,72 +38,235 @@ function validate_date() {
     fi
 }
 
+function extract_instagram_id() {
+    local url="$1"
+    # Extract from URLs like https://www.instagram.com/reel/DLXxE-XPO0w/
+    echo "$url" | sed -E 's#.*/(reel|p)/([^/]+).*#\2#'
+}
+
+function extract_youtube_id() {
+    local input="$1"
+    if [[ $input =~ "youtu.be/" ]]; then
+        echo "$input" | sed -E 's#.*youtu.be/([a-zA-Z0-9_-]+).*#\1#'
+    elif [[ $input =~ "youtube.com/watch" ]]; then
+        echo "$input" | sed -E 's#.*v=([a-zA-Z0-9_-]+).*#\1#'
+    elif [[ $input =~ "youtube.com/shorts/" ]]; then
+        echo "$input" | sed -E 's#.*shorts/([a-zA-Z0-9_-]+).*#\1#'
+    else
+        echo "$input"
+    fi
+}
+
+function create_website_template() {
+    local url="$1"
+    cat <<EOF
+$frontmatter
+
+<LinkPreview id="$url" />
+EOF
+}
+
+function create_instagram_template() {
+    local url="$1"
+    local title="$2"
+    cat <<EOF
+$frontmatter
+import InstagramEmbed from "@components/InstagramEmbed.astro";
+
+<InstagramEmbed postUrl="$url" title="$title" />
+EOF
+}
+
+function create_youtube_video_template() {
+    # No content, just frontmatter with video property
+    echo "$frontmatter"
+}
+
+function create_youtube_short_template() {
+    local video_id="$1"
+    cat <<EOF
+$frontmatter
+
+<YouTubeShort id="$video_id" />
+EOF
+}
+
+function create_song_template() {
+    cat <<EOF
+$frontmatter
+
+[Stream](https://olifro.st/links) or [buy this track](https://olifrost.bandcamp.com) anywhere you like, if you like 
+
+## Lyrics
+Write your lyrics here...
+EOF
+}
+
+function create_basic_template() {
+    cat <<EOF
+$frontmatter
+
+Write your project content here.
+EOF
+}
+
+function create_image_template() {
+    cat <<EOF
+$frontmatter
+
+![]($image)
+EOF
+}
+
+function create_postergallery_template() {
+    local gallery_path="$1"
+    cat <<EOF
+$frontmatter
+
+<PosterGallery path="$gallery_path" />
+EOF
+}
 
 # --- Main Script ---
-print -P "%F{blue}Welcome to the %F{white}Oli Frost Project Creator!%f"
+gum style --foreground 212 --border-foreground 212 --border double --align center --width 50 --margin "1 2" --padding "2 4" "Welcome to the Oli Frost Project Creator!"
 
-# Get current year and today
-year=$(date +%Y)
+# Get today's date
 today=$(date +%Y-%m-%d)
 
-# Ask for project name
-print -P "%F{cyan}What's the project called?%f"
-read project_name
+# Choose post type template
+post_type=$(gum choose --header "What kind of post is this?" \
+    "website" \
+    "instagram video" \
+    "youtube video" \
+    "youtube short" \
+    "song video" \
+    "basic" \
+    "image" \
+    "postergallery")
+
+# Get project name
+project_name=$(gum input --placeholder "What's the project called?")
+if [[ -z "$project_name" ]]; then
+    echo "Project name is required!"
+    exit 1
+fi
+
 slug=$(echo "$project_name" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^a-z0-9]+/-/g' | sed -E 's/^-+|-+$//g')
 
-# Ask for description
-print -P "%F{cyan}How should we describe it?%f"
-read description
+# Get description based on post type
+case "$post_type" in
+    "website")
+        description=$(gum input --placeholder "How should we describe it?")
+        ;;
+    "instagram video")
+        echo "Getting Instagram post details..."
+        instagram_url=$(gum input --placeholder "Instagram post URL")
+        if [[ -z "$instagram_url" ]]; then
+            echo "Instagram URL is required!"
+            exit 1
+        fi
+        # Try to get title from Instagram (simplified - user can edit)
+        description=$(gum input --placeholder "Description (will use as title for embed)" --value "$project_name")
+        ;;
+    "youtube video"|"youtube short"|"song video"|"basic"|"image"|"postergallery")
+        description=$(gum input --placeholder "How should we describe it?")
+        ;;
+esac
 
-# Ask for release date with validation
-while true; do
-    print -P "%F{cyan}When was it released? (YYYY-MM-DD, default: $today)%f"
-    read date
-    if [[ -z "$date" ]]; then
-        date="$today"
-        break
-    elif validate_date "$date"; then
-        break
-    else
-        print -P "%F{red}Invalid date format. Please use YYYY-MM-DD%f"
-    fi
+# Get release date
+date=$(gum input --placeholder "When was it released? (YYYY-MM-DD)" --value "$today")
+while ! validate_date "$date"; do
+    echo "Invalid date format. Please use YYYY-MM-DD"
+    date=$(gum input --placeholder "When was it released? (YYYY-MM-DD)" --value "$today")
 done
 
-# Ask for image (optional)
-print -P "%F{cyan}Image file (leave blank to use $ASSETS_DIR/$year/$slug.jpg):%f"
-read image
+# Set default tag based on post type and allow override
+case "$post_type" in
+    "song video")
+        default_tag="music"
+        ;;
+    "basic"|"image"|"postergallery")
+        default_tag="other"
+        ;;
+    *)
+        default_tag="climate"
+        ;;
+esac
+
+# Ask for tag with default
+confirm_tag=$(gum confirm --default=true "Use default tag: $default_tag?" && echo "yes" || echo "no")
+if [[ "$confirm_tag" == "yes" ]]; then
+    selected_tag="$default_tag"
+else
+    select_tag
+fi
+
+# Get image
+image=$(gum input --placeholder "Image file (leave blank for default)" --value "$ASSETS_DIR/blog/$slug.jpg")
 if [[ -z "$image" ]]; then
-    image="$ASSETS_DIR/$year/$slug.jpg"
+    image="$ASSETS_DIR/blog/$slug.jpg"
 fi
 
-# Ask for video link (optional)
-print -P "%F{cyan}YouTube video link or ID (optional):%f"
-read video_input
-
+# Handle post-type specific inputs
 video_id=""
-if [[ -n "$video_input" ]]; then
-    if [[ $video_input =~ "youtu.be/" ]]; then
-        video_id=$(echo $video_input | sed -E 's#.*youtu.be/([a-zA-Z0-9_-]+).*#\1#')
-    elif [[ $video_input =~ "youtube.com/watch" ]]; then
-        video_id=$(echo $video_input | sed -E 's#.*v=([a-zA-Z0-9_-]+).*#\1#')
-    else
-        video_id=$video_input
-    fi
-fi
+url=""
+press_info=""
+gallery_path=""
 
-# Select tag
-select_tag
+case "$post_type" in
+    "website")
+        url=$(gum input --placeholder "Website URL")
+        if [[ -z "$url" ]]; then
+            echo "Website URL is required!"
+            exit 1
+        fi
+        ;;
+    "instagram video")
+        # Already got instagram_url above
+        ;;
+    "youtube video"|"song video")
+        video_input=$(gum input --placeholder "YouTube video link or ID")
+        if [[ -n "$video_input" ]]; then
+            video_id=$(extract_youtube_id "$video_input")
+        fi
+        
+        if [[ "$post_type" == "song video" ]]; then
+            add_press=$(gum confirm "Add press mentions?" && echo "yes" || echo "no")
+            if [[ "$add_press" == "yes" ]]; then
+                press_info=$(gum write --placeholder "Enter press mentions (one per line, format: 'Name' or 'Name|URL')")
+            fi
+        fi
+        ;;
+    "youtube short")
+        video_input=$(gum input --placeholder "YouTube Short link or ID")
+        if [[ -z "$video_input" ]]; then
+            echo "YouTube Short link is required!"
+            exit 1
+        fi
+        video_id=$(extract_youtube_id "$video_input")
+        ;;
+    "postergallery")
+        gallery_path=$(gum input --placeholder "Gallery path (e.g., @assets/2024/project-gallery)" --value "@assets/blog/$slug-gallery")
+        ;;
+    "basic"|"image")
+        # No additional inputs needed
+        ;;
+esac
 
-# Create MDX file
-dir="$CONTENT_DIR/$year"
+# Create MDX file in blog directory
+dir="$CONTENT_DIR/blog"
 mkdir -p "$dir"
 file="$dir/$slug.mdx"
 
 # Build frontmatter
-frontmatter="---
-title: $project_name
-description: $description
-image: \"$image\"
+frontmatter="---"
+frontmatter="$frontmatter
+title: $project_name"
+frontmatter="$frontmatter
+description: $description"
+frontmatter="$frontmatter
+image: \"$image\""
+frontmatter="$frontmatter
 date: $date"
 
 if [[ -n "$selected_tag" ]]; then
@@ -131,13 +282,67 @@ if [[ -n "$video_id" ]]; then
 video: $video_id"
 fi
 
+# Add press info if provided
+if [[ -n "$press_info" ]]; then
+    frontmatter="$frontmatter
+press:"
+    while IFS= read -r line; do
+        if [[ -n "$line" ]]; then
+            if [[ "$line" == *"|"* ]]; then
+                name=$(echo "$line" | cut -d'|' -f1)
+                url=$(echo "$line" | cut -d'|' -f2)
+                frontmatter="$frontmatter
+  - name: \"$name\"
+    article_link: '$url'"
+            else
+                frontmatter="$frontmatter
+  - name: \"$line\""
+            fi
+        fi
+    done <<< "$press_info"
+fi
+
 frontmatter="$frontmatter
 ---"
 
-cat > "$file" <<EOF
-$frontmatter
+# Generate content based on template
+case "$post_type" in
+    "website")
+        content=$(create_website_template "$url")
+        ;;
+    "instagram video")
+        content=$(create_instagram_template "$instagram_url" "$description")
+        ;;
+    "youtube video")
+        content=$(create_youtube_video_template)
+        ;;
+    "youtube short")
+        content=$(create_youtube_short_template "$video_id")
+        ;;
+    "song video")
+        content=$(create_song_template)
+        ;;
+    "basic")
+        content=$(create_basic_template)
+        ;;
+    "image")
+        content=$(create_image_template)
+        ;;
+    "postergallery")
+        content=$(create_postergallery_template "$gallery_path")
+        ;;
+esac
 
-Write your project content here.
-EOF
+echo "$content" > "$file"
 
-print -P "%F{green}✅ Created $file!%f"
+gum style --foreground 212 "✅ Created $file!"
+echo ""
+gum style --foreground 246 "Next steps:"
+echo "• Add image to public/blog/$slug.jpg"
+if [[ "$post_type" == "song video" ]]; then
+    echo "• Write lyrics in the file"
+fi
+if [[ "$post_type" == "postergallery" ]]; then
+    echo "• Add images to the gallery folder: ${gallery_path//@assets/public}"
+fi
+echo "• Edit and refine the content as needed"
