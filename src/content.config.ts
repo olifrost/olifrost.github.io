@@ -26,11 +26,12 @@ const blogCollection = defineCollection({
 	})
 });
 
-// Press collection (temporarily disabled)
+// Press collection for articles about projects
 const pressCollection = defineCollection({
 	schema: z.object({
+		title: z.string().optional(),
 		created: z.string().optional(),
-		tags: z.any().optional(),
+		tags: z.array(z.string()).optional(),
 		source: z.string().optional(),
 		author: z.string().optional().nullable(),
 	}),
@@ -38,5 +39,5 @@ const pressCollection = defineCollection({
 
 export const collections = {
 	blog: blogCollection,
-	// press: pressCollection, // Temporarily disabled until we fix image paths
+	press: pressCollection,
 };

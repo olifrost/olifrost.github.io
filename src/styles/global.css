@@ -59,98 +59,133 @@ a {
     text-decoration: none;
 }
 
-/* Apply RGB fallbacks */
-.bg-blue-100 { background-color: rgb(219 234 254); }
-.bg-blue-600 { background-color: rgb(37 99 235); }
-.bg-blue-700 { background-color: rgb(29 78 216); }
-.bg-blue-800 { background-color: rgb(30 64 175); }
-.bg-red-500 { background-color: rgb(239 68 68); }
-.bg-red-600 { background-color: rgb(220 38 38); }
-.bg-green-600 { background-color: rgb(22 163 74); }
-.bg-cyan-600 { background-color: rgb(8 145 178); }
-.bg-purple-600 { background-color: rgb(147 51 234); }
-.bg-pink-500 { background-color: rgb(236 72 153); }
-.bg-indigo-600 { background-color: rgb(79 70 229); }
-.bg-orange-500 { background-color: rgb(249 115 22); }
-.bg-neutral-100 { background-color: rgb(245 245 245); }
-.bg-neutral-200 { background-color: rgb(229 229 229); }
-.bg-neutral-600 { background-color: rgb(82 82 82); }
-.bg-neutral-700 { background-color: rgb(64 64 64); }
-.bg-neutral-800 { background-color: rgb(38 38 38); }
-.bg-stone-950 { background-color: rgb(12 10 9); }
-
-/* Text color fallbacks */
-.text-blue-600 { color: rgb(37 99 235); }
-.text-blue-800 { color: rgb(30 64 175); }
-.text-neutral-700 { color: rgb(64 64 64); }
-.text-white { color: rgb(255 255 255); }
-
-/* Prose link fallbacks */
-.prose a { 
-    color: rgb(37 99 235); /* Same as text-blue-600 */
-}
-.prose a:hover {
-    color: rgb(29 78 216); /* Same as text-blue-700 */
-}
-
-/* Override with OKLCH colors in supporting browsers */
-@supports (color: oklch(0 0 0)) {
-    /* Background colors */
-    .bg-blue-100 { background-color: oklch(0.967 0.032 255.585); }
-    .bg-blue-600 { background-color: oklch(0.546 0.245 262.881); }
-    .bg-blue-700 { background-color: oklch(0.488 0.243 264.376); }
-    .bg-blue-800 { background-color: oklch(0.424 0.199 265.638); }
-    .bg-red-500 { background-color: oklch(0.637 0.237 25.331); }
-    .bg-red-600 { background-color: oklch(0.577 0.245 27.325); }
-    .bg-green-600 { background-color: oklch(0.627 0.194 149.214); }
-    .bg-cyan-600 { background-color: oklch(0.609 0.126 221.723); }
-    .bg-purple-600 { background-color: oklch(0.558 0.288 302.321); }
-    .bg-pink-500 { background-color: oklch(0.656 0.241 354.308); }
-    .bg-indigo-600 { background-color: oklch(0.511 0.262 276.966); }
-    .bg-orange-500 { background-color: oklch(0.705 0.213 47.604); }
-    .bg-neutral-100 { background-color: oklch(0.97 0 0); }
-    .bg-neutral-200 { background-color: oklch(0.922 0 0); }
-    .bg-neutral-600 { background-color: oklch(0.439 0 0); }
-    .bg-neutral-700 { background-color: oklch(0.371 0 0); }
-    .bg-neutral-800 { background-color: oklch(0.269 0 0); }
-    .bg-stone-950 { background-color: oklch(0.147 0.004 49.25); }
-
-    /* Text colors */
-    .text-blue-600 { color: oklch(0.546 0.245 262.881); }
-    .text-blue-800 { color: oklch(0.424 0.199 265.638); }
-    .text-neutral-700 { color: oklch(0.371 0 0); }
-
-    /* Prose link OKLCH colors */
-    .prose a { 
-        color: oklch(0.546 0.245 262.881); /* Same as text-blue-600 */
-    }
-    .prose a:hover {
-        color: oklch(0.488 0.243 264.376); /* Same as text-blue-700 */
-    }
-}
-
 /* Custom component styles */
 .link-preview {
     --link-preview-corners: 0.5em;
     --link-preview-width: 40em;
     --link-preview-padding-inline: 0.75rem;
-    @apply bg-neutral-50 text-neutral-600 border-1 border-neutral-100;
+    background-color: rgb(250 250 250);
+    color: rgb(82 82 82);
+    border: 1px solid rgb(245 245 245);
 }
 
 .link-preview img {
-    @apply rounded-b-none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .link-preview a {
-    @apply text-blue-600;
+    color: rgb(37 99 235);
     font-weight: bold;
     text-decoration: none;
 }
 
 article lite-youtube {
-    margin-bottom: calc(var(--spacing)* 8);
+    margin-bottom: calc(var(--spacing) * 8);
 }
 
 lite-youtube > .lty-playbtn {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="blue"/><path d="M45 24 27 14v20" fill="white"/></svg>') !important;
+}
+
+
+/* Override with OKLCH colors in supporting browsers */
+@supports (color: oklch(0 0 0)) {
+
+    /* Background colors */
+    .bg-blue-100 {
+        background-color: oklch(0.967 0.032 255.585);
+    }
+
+    .bg-blue-600 {
+        background-color: oklch(0.546 0.245 262.881);
+    }
+
+    .bg-blue-700 {
+        background-color: oklch(0.488 0.243 264.376);
+    }
+
+    .bg-blue-800 {
+        background-color: oklch(0.424 0.199 265.638);
+    }
+
+    .bg-red-500 {
+        background-color: oklch(0.637 0.237 25.331);
+    }
+
+    .bg-red-600 {
+        background-color: oklch(0.577 0.245 27.325);
+    }
+
+    .bg-green-600 {
+        background-color: oklch(0.627 0.194 149.214);
+    }
+
+    .bg-cyan-600 {
+        background-color: oklch(0.609 0.126 221.723);
+    }
+
+    .bg-purple-600 {
+        background-color: oklch(0.558 0.288 302.321);
+    }
+
+    .bg-pink-500 {
+        background-color: oklch(0.656 0.241 354.308);
+    }
+
+    .bg-indigo-600 {
+        background-color: oklch(0.511 0.262 276.966);
+    }
+
+    .bg-orange-500 {
+        background-color: oklch(0.705 0.213 47.604);
+    }
+
+    .bg-neutral-100 {
+        background-color: oklch(0.97 0 0);
+    }
+
+    .bg-neutral-200 {
+        background-color: oklch(0.922 0 0);
+    }
+
+    .bg-neutral-600 {
+        background-color: oklch(0.439 0 0);
+    }
+
+    .bg-neutral-700 {
+        background-color: oklch(0.371 0 0);
+    }
+
+    .bg-neutral-800 {
+        background-color: oklch(0.269 0 0);
+    }
+
+    .bg-stone-950 {
+        background-color: oklch(0.147 0.004 49.25);
+    }
+
+    /* Text colors */
+    .text-blue-600 {
+        color: oklch(0.546 0.245 262.881);
+    }
+
+    .text-blue-800 {
+        color: oklch(0.424 0.199 265.638);
+    }
+
+    .text-neutral-700 {
+        color: oklch(0.371 0 0);
+    }
+
+    /* Prose link OKLCH colors */
+    .prose a {
+        color: oklch(0.546 0.245 262.881);
+        /* Same as text-blue-600 */
+    }
+
+    .prose a:hover {
+        color: oklch(0.488 0.243 264.376);
+        /* Same as text-blue-700 */
+    }
 }

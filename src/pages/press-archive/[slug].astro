@@ -45,13 +45,12 @@ const title = titleLine
     : (id as string).replace(/\.md$/, "");
 ---
 
-<SimplePage title={title}>
-    <article class="prose prose-lg max-w-none">
-        <header class="mb-8 pb-4 border-b border-gray-200">
-            <h1 class="text-2xl font-bold mb-4">{title}</h1>
-
+<SimplePage>
+    <article class="prose prose-lg prose-blue mx-auto">
+        <header class="mb-8">
+            <h1 class="text-3xl font-bold leading-tight mb-2">{title}</h1>
             <div
-                class="text-sm text-gray-600 flex flex-wrap gap-2 items-center"
+                class="text-base text-gray-600 flex flex-wrap gap-2 items-center"
             >
                 {
                     entry.data.source && (
@@ -65,9 +64,7 @@ const title = titleLine
                         </a>
                     )
                 }
-
                 {entry.data.source && <span class="text-gray-400">•</span>}
-
                 <span>
                     {
                         parsedDate.toLocaleDateString("en-US", {
@@ -77,7 +74,6 @@ const title = titleLine
                         })
                     }
                 </span>
-
                 {
                     entry.data.author && entry.data.author.trim() && (
                         <>
@@ -88,13 +84,17 @@ const title = titleLine
                 }
             </div>
         </header>
-
         <div class="press-content">
             <Content />
         </div>
     </article>
-
-    <div class="mt-8 pt-4 border-t border-gray-200">
+    <style>
+        /* Hide the first h1 in the markdown content */
+        .press-content :global(h1:first-of-type) {
+            display: none;
+        }
+    </style>
+    <div class="mt-8">
         <a
             href="/press-archive"
             class="text-blue-700 hover:text-blue-900 underline"
@@ -103,65 +103,3 @@ const title = titleLine
         </a>
     </div>
 </SimplePage>
-
-<style>
-    .press-content :global(h1) {
-        @apply hidden; /* Hide the main title since we show it in header */
-    }
-
-    .press-content :global(h2) {
-        @apply text-xl font-semibold mt-6 mb-3 text-gray-900;
-    }
-
-    .press-content :global(h3) {
-        @apply text-lg font-medium mt-4 mb-2 text-gray-800;
-    }
-
-    .press-content :global(p) {
-        @apply mb-4 leading-relaxed text-gray-700;
-    }
-
-    .press-content :global(a) {
-        @apply text-blue-700 underline hover:text-blue-900;
-    }
-
-    .press-content :global(blockquote) {
-        @apply border-l-4 border-blue-200 pl-4 italic text-gray-600 my-4;
-    }
-
-    .press-content :global(ul) {
-        @apply list-disc ml-6 mb-4;
-    }
-
-    .press-content :global(ol) {
-        @apply list-decimal ml-6 mb-4;
-    }
-
-    .press-content :global(li) {
-        @apply mb-1;
-    }
-
-    .press-content :global(strong) {
-        @apply font-semibold;
-    }
-
-    .press-content :global(em) {
-        @apply italic;
-    }
-
-    .press-content :global(code) {
-        @apply bg-gray-100 px-1 py-0.5 rounded text-sm font-mono;
-    }
-
-    .press-content :global(pre) {
-        @apply bg-gray-100 p-4 rounded overflow-x-auto mb-4;
-    }
-
-    .press-content :global(img) {
-        @apply max-w-full h-auto rounded shadow-sm;
-    }
-
-    .press-content :global(hr) {
-        @apply border-gray-200 my-6;
-    }
-</style>

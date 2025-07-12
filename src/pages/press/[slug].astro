@@ -1,0 +1,232 @@
+---
+import {
+    type CollectionEntry,
+    getCollection,
+    getEntry,
+    render,
+} from "astro:content";
+import SimplePage from "../../layouts/SimplePage.astro";
+
+export async function getStaticPaths() {
+    const pressEntries = await getCollection("press");
+    return pressEntries.map((entry) => ({
+        params: { slug: entry.id.replace(/\.md$/, "") },
+        props: { entry }, // Pass the entire entry object instead of just the ID
+    }));
+}
+
+// Get the entry from props
+const { entry } = Astro.props;
+
+// Handle case where entry isn't found
+if (!entry) {
+    throw new Error(`Press article not found`);
+}
+
+// Render the content
+const { Content } = await render(entry);
+
+// Parse the created date
+let parsedDate = new Date();
+if (entry.data.created) {
+    const dateMatch = entry.data.created.match(
+        /(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})/,
+    );
+    parsedDate = dateMatch ? new Date(dateMatch[1]) : new Date();
+}
+
+// Extract title from content
+const titleLine = entry.body
+    ?.split("\n")
+    .find((line: string) => line.startsWith("# "));
+const title = titleLine
+    ? titleLine.replace("# ", "")
+    : entry.id.replace(/\.md$/, "");
+
+// Extract clean domain name from source URL
+let cleanDomain = "";
+if (entry.data.source) {
+    try {
+        const url = new URL(entry.data.source);
+        cleanDomain = url.hostname
+            .replace(/^www\./, "") // Remove www.
+            .replace(/^m\./, ""); // Remove m. (mobile)
+    } catch (e) {
+        cleanDomain = entry.data.source;
+    }
+}
+---
+
+<SimplePage title={title}>
+    <!-- Back to Press Archive at top -->
+    <div class="mb-8">
+        <a
+            href="/press-archive"
+            class="text-blue-600 hover:text-blue-800 no-underline text-base"
+        >
+            ← Press Archive
+        </a>
+    </div>
+
+    <!-- Clean article layout -->
+    <article class="max-w-2xl mx-auto">
+        <!-- Article Header -->
+        <header class="mb-10">
+            <h1 class="text-3xl font-light text-black mb-6 leading-tight">
+                {title}
+            </h1>
+
+            <div
+                class="flex flex-wrap items-center gap-3 text-neutral-600 text-base"
+            >
+                {
+                    cleanDomain && (
+                        <a
+                            href={entry.data.source}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-blue-600 hover:text-blue-800 no-underline font-medium"
+                        >
+                            {cleanDomain}
+                        </a>
+                    )
+                }
+
+                {cleanDomain && <span class="text-neutral-400">•</span>}
+
+                <time>
+                    {
+                        parsedDate.toLocaleDateString("en-US", {
+                            year: "numeric",
+                            month: "long",
+                            day: "numeric",
+                        })
+                    }
+                </time>
+
+                {
+                    entry.data.author && entry.data.author.trim() && (
+                        <>
+                            <span class="text-neutral-400">•</span>
+                            <span>
+                                {entry.data.author.split("\n")[0].trim()}
+                            </span>
+                        </>
+                    )
+                }
+            </div>
+        </header>
+
+        <!-- Article Content -->
+        <div class="press-content text-lg leading-relaxed text-neutral-800">
+            <Content />
+        </div>
+    </article>
+
+    <!-- Back to Press Archive at bottom -->
+    <div class="mt-16 pt-8 border-t border-neutral-200 max-w-2xl mx-auto">
+        <a
+            href="/press-archive"
+            class="text-blue-600 hover:text-blue-800 no-underline text-base"
+        >
+            ← Back to Press Archive
+        </a>
+    </div>
+</SimplePage>
+
+<style>
+    /* Safari Reader-like styling */
+    .press-content :global(h1) {
+        display: none; /* Hide duplicate title */
+    }
+
+    .press-content :global(h2) {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+        color: #111827;
+        line-height: 1.4;
+    }
+
+    .press-content :global(h3) {
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin-top: 2rem;
+        margin-bottom: 0.75rem;
+        color: #1f2937;
+        line-height: 1.4;
+    }
+
+    .press-content :global(p) {
+        margin-bottom: 1.5rem;
+        line-height: 1.7;
+        color: #374151;
+    }
+
+    .press-content :global(a) {
+        color: #2563eb;
+        text-decoration: none;
+    }
+
+    .press-content :global(a:hover) {
+        color: #1d4ed8;
+        text-decoration: underline;
+    }
+
+    /* Hide the excerpt section */
+    .press-content :global(blockquote:first-of-type) {
+        display: none;
+    }
+
+    /* Style other blockquotes cleanly */
+    .press-content :global(blockquote) {
+        border-left: 3px solid #e5e7eb;
+        padding-left: 1.5rem;
+        font-style: italic;
+        color: #6b7280;
+        margin: 2rem 0;
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    .press-content :global(ul),
+    .press-content :global(ol) {
+        margin: 1.5rem 0;
+        padding-left: 1.5rem;
+    }
+
+    .press-content :global(li) {
+        margin-bottom: 0.5rem;
+        line-height: 1.6;
+    }
+
+    .press-content :global(strong) {
+        font-weight: 600;
+        color: #111827;
+    }
+
+    .press-content :global(em) {
+        font-style: italic;
+    }
+
+    /* Remove any images since they were cleaned */
+    .press-content :global(img) {
+        display: none;
+    }
+
+    .press-content :global(hr) {
+        border: none;
+        border-top: 1px solid #e5e7eb;
+        margin: 3rem 0;
+    }
+
+    /* Clean up any remaining markdown artifacts */
+    .press-content :global(> *:first-child) {
+        margin-top: 0;
+    }
+
+    .press-content :global(> *:last-child) {
+        margin-bottom: 0;
+    }
+</style>

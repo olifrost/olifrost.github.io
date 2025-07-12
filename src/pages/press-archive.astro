@@ -16,9 +16,23 @@ const sortedEntries = pressEntries
             parsedDate = dateMatch ? new Date(dateMatch[1]) : new Date();
         }
 
+        // Extract clean domain name from source URL
+        let cleanDomain = "";
+        if (entry.data.source) {
+            try {
+                const url = new URL(entry.data.source);
+                cleanDomain = url.hostname
+                    .replace(/^www\./, "") // Remove www.
+                    .replace(/^m\./, ""); // Remove m. (mobile)
+            } catch (e) {
+                cleanDomain = entry.data.source;
+            }
+        }
+
         return {
             ...entry,
             parsedDate,
+            cleanDomain,
             slug: entry.id.replace(/\.md$/, ""),
             title:
                 entry.body
@@ -31,61 +45,57 @@ const sortedEntries = pressEntries
 ---
 
 <SimplePage title="Press Archive">
-    <div class="mb-8">
-        <p class="text-gray-600 mb-6">
+    <div class="prose prose-lg prose-blue mx-auto">
+        <p class="text-neutral-600 text-lg leading-relaxed mb-8">
             An archive of press coverage and articles mentioning my work,
             preserved for posterity.
         </p>
-    </div>
 
-    <ul class="space-y-4 list-none p-0">
-        {
-            sortedEntries.map((entry) => (
-                <li class="border-b border-gray-100 pb-4">
-                    <div class="mb-2">
+        <ul class="not-prose list-none p-0 m-0">
+            {
+                sortedEntries.map((entry) => (
+                    <li class="mb-10">
                         <a
-                            href={`/press-archive/${entry.slug}`}
-                            class="text-lg font-semibold text-blue-700 hover:text-blue-900 underline"
+                            href={`/press/${entry.slug}`}
+                            class="block text-2xl font-bold text-black hover:text-blue-700 leading-tight mb-1 no-underline"
                         >
                             {entry.title}
                         </a>
-                    </div>
-
-                    <div class="text-sm text-gray-600 flex flex-wrap gap-2">
-                        {entry.data.source && (
-                            <span>
+                        <div class="flex flex-wrap items-center gap-2 text-base text-gray-600 mt-1">
+                            {entry.cleanDomain && (
                                 <a
                                     href={entry.data.source}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    class="text-blue-700 hover:text-blue-900 underline"
+                                    class="text-blue-700 hover:text-blue-900 underline font-medium"
                                 >
-                                    original source
+                                    {entry.cleanDomain}
                                 </a>
-                            </span>
-                        )}
-
-                        {entry.data.source && (
-                            <span class="text-gray-400">•</span>
-                        )}
-
-                        <span>
-                            {entry.parsedDate.toLocaleDateString("en-US", {
-                                year: "numeric",
-                                month: "long",
-                                day: "numeric",
-                            })}
-                        </span>
-
-                        {entry.data.author && entry.data.author.trim() && (
-                            <>
+                            )}
+                            {entry.cleanDomain && (
                                 <span class="text-gray-400">•</span>
-                                <span>by {entry.data.author}</span>
-                            </>
-                        )}
-                    </div>
-                </li>
-            ))
-        }
-    </ul>
+                            )}
+                            <time>
+                                {entry.parsedDate.toLocaleDateString("en-US", {
+                                    year: "numeric",
+                                    month: "long",
+                                    day: "numeric",
+                                })}
+                            </time>
+                            {entry.data.author && entry.data.author.trim() && (
+                                <>
+                                    <span class="text-gray-400">•</span>
+                                    <span>
+                                        {entry.data.author
+                                            .split("\n")[0]
+                                            .trim()}
+                                    </span>
+                                </>
+                            )}
+                        </div>
+                    </li>
+                ))
+            }
+        </ul>
+    </div>
 </SimplePage>
