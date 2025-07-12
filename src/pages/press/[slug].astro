@@ -61,7 +61,7 @@ if (entry.data.source) {
     <!-- Back to Press Archive at top -->
     <div class="mb-8">
         <a
-            href="/press-archive"
+            href="/press"
             class="text-blue-600 hover:text-blue-800 no-underline text-base"
         >
             ← Press Archive
@@ -91,19 +91,6 @@ if (entry.data.source) {
                         </a>
                     )
                 }
-
-                {cleanDomain && <span class="text-neutral-400">•</span>}
-
-                <time>
-                    {
-                        parsedDate.toLocaleDateString("en-US", {
-                            year: "numeric",
-                            month: "long",
-                            day: "numeric",
-                        })
-                    }
-                </time>
-
                 {
                     entry.data.author && entry.data.author.trim() && (
                         <>
@@ -126,7 +113,7 @@ if (entry.data.source) {
     <!-- Back to Press Archive at bottom -->
     <div class="mt-16 pt-8 border-t border-neutral-200">
         <a
-            href="/press-archive"
+            href="/press"
             class="text-blue-600 hover:text-blue-800 no-underline text-base"
         >
             ← Back to Press Archive

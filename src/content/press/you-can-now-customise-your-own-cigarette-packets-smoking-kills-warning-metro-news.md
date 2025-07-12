@@ -12,8 +12,6 @@ title: "You can now customise your own cigarette packets ‘Smoking Kills’ war
 
 **Published** December 5, 2016 2:25pm **Updated** December 11, 2019 5:09pm
 
-(Picture: Oli+Josie)
-
 The festive season is upon us. Every pub and bar in the land is packed with jolly office workers and Christmas revellers getting their drink on. And outside every establishment, sequined smokers blow ash into each others’ mulled wines.
 
 December is when all the social smokers reemerge, high on Christmas spirit(s), ready to steal other people’s cigs.
@@ -29,8 +27,6 @@ Their website [Personalise A Cigarette Pack](http://personaliseacigarettepack.o
 ‘We’ve seen loads of these sorts of campaigns recently, like Nutella,’ Oli Frost tells Metro.co.uk.
 
 ‘Coke did “share a Coke with mum/dad/Ben”, and then every other brand copied it. We just thought what would happen if we did the idea for health warnings?’
-
-:( (Picture: Oli+Josie)
 
 ‘With Christmas coming up, it’s an easy stocking filler for the smoker in your life or a way to remind that family member of a good New Year’s resolution.’
 

@@ -77,13 +77,6 @@ const sortedEntries = pressEntries
                             {entry.cleanDomain && (
                                 <span class="text-gray-400">•</span>
                             )}
-                            <time>
-                                {entry.parsedDate.toLocaleDateString("en-US", {
-                                    year: "numeric",
-                                    month: "long",
-                                    day: "numeric",
-                                })}
-                            </time>
                             {entry.data.author && entry.data.author.trim() && (
                                 <>
                                     <span class="text-gray-400">•</span>

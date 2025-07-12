@@ -26,7 +26,7 @@ Facebook sells my data every day so why couldn’t I sell mine?’
 
 His data was acquired using a Facebook tool that allows anyone to download a complete record of their Facebook activity.
 
-Oli’s post on eBay at £300 before it was taken down (Picture: Oli Frost/eBay)
+Oli’s post on eBay at £300 before it was taken down
 
 According to the listing, the data includes ‘every like, post, and inane comment since I was 16’, ‘photos dating back to when I had a fringe and listened to Billy Talent’, and ‘loads more, like who I vote for, my boss’s name, and where all my family live.’
 

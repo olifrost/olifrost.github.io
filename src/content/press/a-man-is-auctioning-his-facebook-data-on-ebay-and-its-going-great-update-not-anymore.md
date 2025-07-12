@@ -42,7 +42,3 @@ The threat of that information being used maliciously is always there, and Faceb
 What about the family-related information on his Facebook page? “Asked mum and dad and they’re all cool with telling people where they live,” Frost said. “I live with them anyway.” Talk about optimism.
 
 Update 2:27pm: Nothing good can last forever, and eBay has removed the listing for Frost’s personal Facebook data from its site. Frost shared the message he received from eBay, which reads as follows:
-
-> “Some of your listings haven’t followed our Mailing List and Personal Information policy.
-
-> Your listing is selling an account for Facebook, which is not permitted as most social networking companies have limitations in their terms of service that restrict the artificial boosting of another member’s following or popularity, or the sale of accounts with established followings. Given that, eBay as a company has decided not to allow listings that would facilitate or promote this type of activity. While we appreciate that you have chosen to utilize our site, we must ask that you please not relist this type of service.”

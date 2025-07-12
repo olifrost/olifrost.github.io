@@ -5,7 +5,7 @@ author: Natasha Preskey
 title: "Campaigners call on Government to provide funding for free sanitary products for the homeless | London Evening Standard | The Standard"
 ---
 
-# Campaigners call on Government to provide funding for free sanitary products for the homeless | London Evening Standard | The Standard
+# Campaigners call on Government to provide funding for free sanitary products for the homeless
 
 Homeless shelters should receive funding to offer free sanitary products to rough sleepers, campaigners have urged.
 
@@ -28,8 +28,6 @@ Ms Bakhaty told the Standard: “The film is a one minute shortened down version
 Patricia used to visit public toilets to wash herself to avoid people noticing that she was homeless.
 
 She added: “For her, if she bled or she appeared to be homeless that would then put her in a vulnerable position and she might get unwanted attention.”
-
-### Read More
 
 Supporters across the country have been using crowdfunding websites to raise money to buy sanitary products to donate to homeless shelters.
 

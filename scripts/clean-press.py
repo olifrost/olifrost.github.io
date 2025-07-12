@@ -53,14 +53,6 @@ def remove_images(content):
     content = re.sub(r'\n{3,}', '\n\n', content)
     return content
 
-def clean_excerpt_section(content):
-    """Remove or clean the excerpt section"""
-    # Remove the '> ## Excerpt' section entirely
-    content = re.sub(r'> ## Excerpt\s*\n> [^\n]+\s*\n\n---\s*\n', '', content)
-    # Also handle variations
-    content = re.sub(r'>\s*##\s*Excerpt[^\n]*\n>[^\n]*\n*---\s*\n', '', content)
-    return content
-
 def clean_frontmatter(content):
     """Clean and standardize frontmatter, safely quoting titles"""
     lines = content.split('\n')
@@ -137,7 +129,6 @@ def process_file(filepath):
     
     # Clean content
     content = remove_images(content)
-    content = clean_excerpt_section(content)
     content = clean_frontmatter(content)
     
     # Generate new filename
@@ -173,6 +164,15 @@ def main():
         return
     
     print(f"Found {len(md_files)} files to process\n")
+    
+    for filepath in md_files:
+        process_file(filepath)
+    
+    print(f"\n✓ Processed {len(md_files)} files")
+    print("Press articles are ready!")
+
+if __name__ == '__main__':
+    main()
     
     for filepath in md_files:
         process_file(filepath)

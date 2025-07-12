@@ -11,13 +11,10 @@ Google and Facebook are two of the most valuable companies in the United States 
 
 If these companies are making bank off of our data and aren’t even managing to keep it safe, shouldn’t we at least get a small cut of the action? 26-year old Londoner Oli Frost thinks so, which is why he put all of his Facebook data up for sale on eBay last weekend.
 
-## Videos by VICE
 
 “There were loads of emails from companies over the last week about GDPR, saying how valuable and important my data was to them,” Frost told me in an email. “I realized that I’d been selling my data for free for ages, and decided it was time to cash in.”
 
 In a [listing posted to the online auction site](https://www.ebay.co.uk/itm/Im-selling-my-private-Facebook-data-/273239941454) on Saturday, Frost offered up all his personal Facebook data starting at 99 cents. His data was acquired using a Facebook [tool](https://www.facebook.com/settings?tab=your_facebook_information) that allows anyone to download a complete record of their Facebook activity. According to Frost’s listing, the data includes “every like, post, and inane comment since I was 16,” “photos dating back to when I had a fringe and listened to Billy Talent,” and “loads more, like who I vote for, my boss’s name, and where all my family live.”
-
-**Read More: [How to Permanently Delete Your Facebook Account](https://motherboard.vice.com/en_us/article/a3yz9k/how-to-delete-your-facebook-permanently)**
 
 Frost is [no stranger to internet stunts](http://olifro.st/)—he’s the guy behind [Lifefaker](https://i-d.vice.com/en_au/article/7xdgjq/this-website-will-cure-your-social-media-anxiety-lifefaker-instagram), the app that makes your life look perfect on social media, and [Flopstarter](http://flopstarter.com/), a crowdfunding platform for bad ideas. Still, the thought of letting some stranger buy pictures of you when you’re 16, much less get the names and addresses of all your family members, is probably enough to give most of us pause.
 

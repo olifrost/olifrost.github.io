@@ -61,5 +61,3 @@ A spokesperson for Sir Sadiq said: “The mayor, Transport for London and boroug
 “This year the mayor will be refreshing his Vision Zero Action Plan to restate his commitment to reducing road danger and responding to new and emerging risks on our roads.”
 
 But he was ousted from City Hall in the 2008 elections, before he had the chance to implement to policy, and failed to secure re-election in 2012, when he again proposed the levy.
-
-### Read More

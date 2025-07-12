@@ -24,12 +24,6 @@ Dubbed ‘the world’s first online life faking service’, LifeFaker.com lets 
 
 The site’s slogan reads: ‘Life isn’t perfect. Your profile should be. Instead of going to the trouble of living a perfect life, now you can just get the photos instead.’
 
-(Picture: lifefaker.com)
-
-(Picture: lifefaker.com)
-
-(Picture: lifefaker.com)
-
 Packages include the ‘Look at my Holiday and Cry’, the ‘My Sexy Girlfriend/Boyfriend’ and the ‘My Unachievable Body’.
 
 So much darkness.

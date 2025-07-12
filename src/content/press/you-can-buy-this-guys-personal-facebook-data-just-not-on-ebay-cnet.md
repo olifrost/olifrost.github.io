@@ -2,7 +2,6 @@
 created: 2025-07-07T15:38:34 (UTC +01:00)
 source: https://www.cnet.com/culture/you-can-buy-oli-frost-personal-facebook-data-just-not-on-ebay/
 author: Gael Cooper
-May 30, 2018  12: 47 p.m. PT
 title: "You can buy this guy's personal Facebook data, just not on eBay - CNET"
 ---
 

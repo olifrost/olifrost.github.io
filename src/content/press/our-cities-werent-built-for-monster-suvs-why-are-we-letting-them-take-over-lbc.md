@@ -9,7 +9,7 @@ title: "Our cities weren’t built for monster SUVs. Why are we letting them tak
 
 25 March 2025, 09:49
 
-Our cities weren’t built for monster SUVs. Why are we letting them take over? Picture: Kidical Mass
+Our cities weren’t built for monster SUVs. Why are we letting them take over?
 
 When you drive, take the bus, or walk, you may have noticed cars are getting bigger – 1cm wider every two years according to researchers at T&E.
 

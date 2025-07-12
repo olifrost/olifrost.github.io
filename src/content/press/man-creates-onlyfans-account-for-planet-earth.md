@@ -45,5 +45,3 @@ First Published: May 04, 2023, 14:34 IST
 [](https://www.indiatimes.com/author/sejal-jakhwal/5358)
 
 I'm a dynamic and creative content writer with an insatiable passion for pop culture and the latest trends. Armed with a keyboard and a keen eye for what's hot, I craft engaging narratives that captivate readers and keep them on the pulse of what's happening on the internet. For almost two years, I've been committed to providing fresh and fascinating content. I began with celebrity news and movie reviews and have since moved on to viral internet sensations and rising trends.
-
-[Read More](https://www.indiatimes.com/author/sejal-jakhwal/5358)

@@ -7,8 +7,6 @@ title: "Baillie Gifford was just the first: Climate protests are coming for asse
 
 # Baillie Gifford was just the first: Climate protests are coming for asset managers
 
-Saturday 29 June 2024 9:00 am  |  Updated:  Thursday 27 June 2024 4:07 pm
-
 Climate protests against asset managers are ramping up. NOTE TO EDITORS: This handout photo may only be used in for editorial reporting purposes for the contemporaneous illustration of events, things or the people in the image or facts mentioned in the caption. Reuse of the picture may require further permission from the copyright holder.
 
 While the [saga of Baillie Gifford and book festivals](https://www.cityam.com/inside-the-collapse-of-baillie-giffords-literary-sponsorships/) seems to have finally petered out, the fight between City asset managers and climate protesters is only just beginning.

@@ -76,11 +76,3 @@ Some of those who are feeling the negative effects of trying to keep up with the
 There are also subscription-based therapy apps emerging, for people to text counsellors if they're struggling with the negative effects of online life.
 
 So next time you compare yourself to your friends' holidays, houses or love interests, try and look past the filter - it may not be that perfect IRL.
-
-**READ MORE:**
-
-[People are getting surgery to look like their Snapchat selfies](https://www.bbc.co.uk/bbcthree/article/9ca4f7c6-d2c3-4e25-862c-03aed9ec1082)
-
-[I tried to make Alexa my best friend](https://www.bbc.co.uk/bbcthree/article/5a0449e7-1b2b-46f6-bacf-0cdc5f196383)
-
-[People are sharing #wholesomememes to make the internet a bit less grim](https://www.bbc.co.uk/bbcthree/article/0ea8d63e-7b62-4e98-968d-4ba1e975d8ed)

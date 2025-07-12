@@ -11,10 +11,6 @@ Life isn’t perfect, but your social media profile can be. That’s the tagline
 
 The fake website, Lifefaker.com, was set up by Sanctus in an effort to highlight the [unhealthy pressures of social media](https://graziadaily.co.uk/life/real-life/facebook-instagram-quit-social-media-never-happier-happy-digital-detox/) and the [subsequent impact on people’s mental health](https://graziadaily.co.uk/fashion/news/social-media-stars-anxiety-depression/). By drawing in those who would normally purchase false images online, they’re attracting the very people that obviously feel an unhealthy pressure to appear perfect on social media and encouraging them to seek help.
 
-©Sanctus
-
-©Sanctus
-
 This time last year, Instagram was rated [the worst social media platform](https://graziadaily.co.uk/life/real-life/instagram-worst-mental-health/) for young people’s mental health, and yet it continues to be one of the most popular apps. [The survey of 1,479](https://www.nhs.uk/news/food-and-diet/instagram-ranked-worst-for-mental-health-in-teen-survey/)people found that Instagram scored highest for most likely to contribute to anxiety, depression, loneliness, bullying, body image issues and fear of missing out.
 
 Essentially, the faux life many of us have online, only posting our best moments, actively make others feel worse about their own lives. While this isn’t news, the impact on our mental health is increasingly worrying.

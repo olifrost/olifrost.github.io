@@ -1,5 +1,5 @@
 ---
-created: 2025-07-07T15:49:02 (UTC +01:00)
+created: 2025-07-07T15:49:09 (UTC +01:00)
 tags: [inne,marketing,reklama,wirtualnemedia.pl]
 source: https://www.wirtualnemedia.pl/artykul/aktywisci-klimatyczni-atakuja-wpp-szef-holdingu-jako-iluzjionista
 author: bg

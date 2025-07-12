@@ -24,34 +24,4 @@ To compile his data, Frost used a [Facebook-provided tool](https://www.digitalt
 
 Data privacy has been a big [public issue](https://www.digitaltrends.com/social-media/polls-show-low-trust-facebook/), and in Europe, the [General Data Privacy Regulation](https://www.digitaltrends.com/computing/what-is-the-gdpr/) recently went into effect to give consumers more control over their online data, mandating that companies like Facebook are only permitted to collect data in a legal manner and are obligated to protect data from [misuse](https://www.digitaltrends.com/social-media/cubeyou-suspended-accused-facebook-data-misuse/). Failure to comply can result in hefty fines for internet companies, and Facebook and Google [faced lawsuits on the first day](https://www.digitaltrends.com/computing/google-facebook-gdpr-lawsuit/) that GDPR went into effect.
 
-Silicon Valley-based technology reporter and Giants baseball fan who splits his time between Northern California and Southern…
-
--   [Mobile](https://www.digitaltrends.com/mobile/)
-
-Pocket is about to close. Use this read-it-later app instead
-
-Read-it-later app Pocket is closing down in just a week’s time, so if you’re still using it, now’s the time to switch to a similar app.
-
-As an avid user of Pocket pretty much since it launched in 2007 as Read It Later, I felt a little sad to receive a message in May informing me that it would be shutting down on July 8.
-
-[Read more](https://www.digitaltrends.com/mobile/pocket-alternative/)
-
--   [Computing](https://www.digitaltrends.com/computing/)
-
-A coding blunder just ruined a moment of joy for lottery winners
-
-Imagine the joy of being notified of a huge lottery win. What would be the first thing you’d do? Get the champagne in? Book a fancy vacation? Call your boss and tell him where to go?
-
-And then imagine being informed that the notification had, in fact, been sent in error. Well, you can always send the booze back and cancel the holiday, but trying to convince your boss that you were just joking ... well, that may be a bigger challenge.
-
-[Read more](https://www.digitaltrends.com/computing/norway-lottery-blunder/)
-
--   [Computing](https://www.digitaltrends.com/computing/)
-
-This TP-Link Wi-Fi 6 router is 45% off in early Prime Day deal
-
-If you're planning to buy a new router to improve your home's Wi-Fi network, the good news is that you don't have to wait for Prime Day 2025 to take advantage of huge discounts on router deals from Amazon. Here's an excellent offer — the TP-Link Archer AX21 with an eye-catching 45% discount, which drops its price from $100 to just $55. The $45 in savings will only be available for a limited time though, so you better act fast and proceed with your purchase immediately as this early Prime Day deal may disappear at any moment.
-
-Buy Now
-
-[Read more](https://www.digitaltrends.com/computing/tp-link-archer-ax21-router-deal-amazon-june-2025/)
+Si

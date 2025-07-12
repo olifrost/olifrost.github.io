@@ -19,14 +19,6 @@ But, as you might have guessed by now, the site is actually a parody website. It
 
 James Routledge, founder of Sanctus, [said](https://sanctus.io/social-media-mental-health-b1803b6b475f) about the initiative: “With Lifefaker.com, our goal was to use parody to highlight some of those unhealthy behaviours we all know exist on social media. As we become more aware of them ourselves, it can be easier to change them too.
 
-___
-
-Read more: **[How millennial loneliness is linked to serious mental health problems and even unemployment](https://www.shortlist.com/news/millennial-loneliness-mental-health-unemployment-young-people)**
-
-Get exclusive shortlists, celebrity interviews and the best deals on the products you care about, straight to your inbox.
-
-___
-
 “Whilst it’s unfair to blame social media completely for poor mental health, there’s a clear link and we only need to look inwards to know there have likely been times when we’ve either been mindlessly scrolling, we’ve felt ourselves comparing ourselves to others or a social media post has triggered something for us.
 
 “Our intention is that we all become more aware of our mental health in general, that we hear the message that we all have mental health just like we have physical health.”
@@ -36,5 +28,3 @@ According to one study, Instagram is the worst app for your mental health
 And this site comes just as [researchers from the Royal Society for Public Health](https://www.naturalnews.com/2018-05-07-researchers-rank-instagram-as-worst-social-media-app-for-young-peoples-mental-health.html) found that Instagram was the worst social media app for young people’s mental health.
 
 Shirley Cramer CBE, the Chief Executive of the RSPH, said: “Social media has been described as more addictive than cigarettes and alcohol, and is now so entrenched in the lives of young people that it is no longer possible to ignore it when talking about young people’s mental health issues.”
-
-_(Images: Unsplash / Getty)_

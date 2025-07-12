@@ -12,8 +12,6 @@ A group of 'eco-gamers' called Serious People have organised a protest against a
 
 In Asset Manager Quest, players take on the role of abrdn’s chief executive, with decisions to be made on its sustainable future.
 
-Powered by 
-
 To promote this, Serious People are today challenging employees and abrdn leadership to play the game via a portable arcade machine set up outside its Edinburgh offices.
 
 Staff not based in the capital have had the game delivered to their inbox, while the general public may have encountered it through billboards in Edinburgh and adverts on LinkedIn.
@@ -37,13 +35,3 @@ Powered by
 The asset manager also holds bonds and shares issued by Ithaca Energy, co-developer of the controversial Rosebank oilfield. Serious People also pointed out that despite telling campaigners in 2023 that it was reviewing its interests, abrdn remains one of the few European investors without a coal exclusion policy.
 
 Abrdn has been contacted for comment.
-
-**Don't miss the latest headlines with our twice-daily newsletter -**[**sign up here for free**](https://www.insider.co.uk/newsletter-preference-centre/?view=Solus&mailingListId=f5fa3ce5-d135-4745-aee3-0aa00bed2305&utm_source=solusarticle)**.**
-
-**READ NEXT:**
-
--   [Rosenxt acquires Beam out of administration](https://www.insider.co.uk/news/rosenxt-acquires-beam-out-administration-35511811?int_source=nba)
--   [Copper cables stolen in wind farm break-ins](https://www.insider.co.uk/news/copper-cables-stolen-wind-farm-35512210?int_source=nba)
--   [CalMac seeks to recover costs for Caledonian Isles repairs](https://www.insider.co.uk/news/calmac-seeks-recover-costs-caledonian-35512639?int_source=nba)
--   [Ana Stewart’s Pathways Pledge initiative reaches fifth cohort](https://www.insider.co.uk/news/ana-stewarts-pathways-pledge-initiative-35512346?int_source=nba)
--   [Artisanal Spirits Company launches private cask programme](https://www.insider.co.uk/news/artisanal-spirits-company-launches-private-35511485?int_source=nba)
