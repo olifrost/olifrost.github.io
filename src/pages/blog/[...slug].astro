@@ -1,46 +1,53 @@
 ---
-import { type CollectionEntry, getCollection, getEntry, render } from 'astro:content';
-import Project from '@layouts/project.astro';
-import Layout from '@layouts/Layout.astro';
+import {
+  type CollectionEntry,
+  getCollection,
+  getEntry,
+  render,
+} from "astro:content";
+import Project from "../../layouts/project.astro";
+import Layout from "../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
+  const posts = await getCollection("blog");
   return posts.map((post) => {
-    // Get just the filename without the year directory
-    const parts = post.id.split('/');
-    const slug = parts[parts.length - 1];
-    
+    // Remove .mdx extension if present for clean URLs
+    const slug = post.id.replace(/\.mdx?$/, "");
+
     return {
-      params: { slug },
-      props: { id: post.id },
+      params: { slug }, // For catch-all route, use string not array
+      props: {
+        entry: post, // Pass the full post entry
+      },
     };
   });
 }
 
-// Get the full entry with the new API
-const { id } = Astro.props;
-const post = await getEntry('blog', id);
+// Get the props
+const { entry } = Astro.props;
 
 // Handle case where post isn't found
-if (!post) {
-  throw new Error(`Project not found: ${id}`);
+if (!entry) {
+  throw new Error(`Project not found: ${Astro.params.slug}`);
 }
 
 // Use the new render() function
-const { Content, headings } = await render(post);
+const { Content, headings } = await render(entry);
 
 // Use projectType from frontmatter if specified, otherwise default to 'default'
-const projectType = post.data.projectType || 'default';
+const projectType = entry.data.projectType || "default";
 ---
 
-{projectType === 'standalone' ? (
-  <Content />
-) : projectType === 'product' ? (
-  <Layout title={post.data.title} description={post.data.description}>
+{
+  projectType === "standalone" ? (
     <Content />
-  </Layout>
-) : (
-  <Project {...post.data}>
-    <Content />
-  </Project>
-)}
+  ) : projectType === "product" ? (
+    <Layout title={entry.data.title} description={entry.data.description}>
+      <Content />
+    </Layout>
+  ) : (
+    <Project {...entry.data}>
+      <Content />
+    </Project>
+  )
+}

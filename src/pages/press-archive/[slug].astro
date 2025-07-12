@@ -1,0 +1,167 @@
+---
+import {
+    type CollectionEntry,
+    getCollection,
+    getEntry,
+    render,
+} from "astro:content";
+import SimplePage from "../../layouts/SimplePage.astro";
+
+export async function getStaticPaths() {
+    const pressEntries = await getCollection("press");
+    return pressEntries.map((entry) => ({
+        params: { slug: entry.id.replace(/\.md$/, "") },
+        props: { id: entry.id },
+    }));
+}
+
+// Get the full entry
+const { id } = Astro.props;
+const entry = await getEntry("press", id);
+
+// Handle case where entry isn't found
+if (!entry) {
+    throw new Error(`Press article not found: ${id}`);
+}
+
+// Render the content
+const { Content } = await render(entry);
+
+// Parse the created date
+let parsedDate = new Date();
+if (entry.data.created) {
+    const dateMatch = entry.data.created.match(
+        /(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})/,
+    );
+    parsedDate = dateMatch ? new Date(dateMatch[1]) : new Date();
+}
+
+// Extract title from content
+const titleLine = entry.body
+    ?.split("\n")
+    .find((line: string) => line.startsWith("# "));
+const title = titleLine
+    ? titleLine.replace("# ", "")
+    : (id as string).replace(/\.md$/, "");
+---
+
+<SimplePage title={title}>
+    <article class="prose prose-lg max-w-none">
+        <header class="mb-8 pb-4 border-b border-gray-200">
+            <h1 class="text-2xl font-bold mb-4">{title}</h1>
+
+            <div
+                class="text-sm text-gray-600 flex flex-wrap gap-2 items-center"
+            >
+                {
+                    entry.data.source && (
+                        <a
+                            href={entry.data.source}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-blue-700 hover:text-blue-900 underline font-medium"
+                        >
+                            View original source
+                        </a>
+                    )
+                }
+
+                {entry.data.source && <span class="text-gray-400">•</span>}
+
+                <span>
+                    {
+                        parsedDate.toLocaleDateString("en-US", {
+                            year: "numeric",
+                            month: "long",
+                            day: "numeric",
+                        })
+                    }
+                </span>
+
+                {
+                    entry.data.author && entry.data.author.trim() && (
+                        <>
+                            <span class="text-gray-400">•</span>
+                            <span>by {entry.data.author}</span>
+                        </>
+                    )
+                }
+            </div>
+        </header>
+
+        <div class="press-content">
+            <Content />
+        </div>
+    </article>
+
+    <div class="mt-8 pt-4 border-t border-gray-200">
+        <a
+            href="/press-archive"
+            class="text-blue-700 hover:text-blue-900 underline"
+        >
+            ← Back to press archive
+        </a>
+    </div>
+</SimplePage>
+
+<style>
+    .press-content :global(h1) {
+        @apply hidden; /* Hide the main title since we show it in header */
+    }
+
+    .press-content :global(h2) {
+        @apply text-xl font-semibold mt-6 mb-3 text-gray-900;
+    }
+
+    .press-content :global(h3) {
+        @apply text-lg font-medium mt-4 mb-2 text-gray-800;
+    }
+
+    .press-content :global(p) {
+        @apply mb-4 leading-relaxed text-gray-700;
+    }
+
+    .press-content :global(a) {
+        @apply text-blue-700 underline hover:text-blue-900;
+    }
+
+    .press-content :global(blockquote) {
+        @apply border-l-4 border-blue-200 pl-4 italic text-gray-600 my-4;
+    }
+
+    .press-content :global(ul) {
+        @apply list-disc ml-6 mb-4;
+    }
+
+    .press-content :global(ol) {
+        @apply list-decimal ml-6 mb-4;
+    }
+
+    .press-content :global(li) {
+        @apply mb-1;
+    }
+
+    .press-content :global(strong) {
+        @apply font-semibold;
+    }
+
+    .press-content :global(em) {
+        @apply italic;
+    }
+
+    .press-content :global(code) {
+        @apply bg-gray-100 px-1 py-0.5 rounded text-sm font-mono;
+    }
+
+    .press-content :global(pre) {
+        @apply bg-gray-100 p-4 rounded overflow-x-auto mb-4;
+    }
+
+    .press-content :global(img) {
+        @apply max-w-full h-auto rounded shadow-sm;
+    }
+
+    .press-content :global(hr) {
+        @apply border-gray-200 my-6;
+    }
+</style>

@@ -1,6 +1,6 @@
 ---
-import Layout from './Layout.astro';
-import { getCollection } from 'astro:content';
+import Layout from "./Layout.astro";
+import { getCollection } from "astro:content";
 
 interface Props {
   title: string;
@@ -11,8 +11,10 @@ interface Props {
 const { title, description, activeTag = null } = Astro.props;
 
 // Get all projects and extract tags
-const allProjects = await getCollection('blog');
-const allTags = [...new Set(allProjects.flatMap(project => project.data.tags || []))].sort();
+const allProjects = await getCollection("blog");
+const allTags = [
+  ...new Set(allProjects.flatMap((project) => project.data.tags || [])),
+].sort();
 
 // Generate IDs for transition elements
 const projectsContainerId = "projects-container";
@@ -26,54 +28,61 @@ const isAllActive = pathname === "/blog" || pathname === "/blog/";
 <Layout title={title} description={description}>
   <div class="container mx-auto px-0">
     <!-- Entire header section with heading and tags - persist as one unit -->
-    <div class="mb-8" transition:persist="header-section">  
+    <div class="mb-8" transition:persist="header-section">
       <h1 class="text-3xl font-bold mb-4 text-black">Projects</h1>
-      
+
       <div class="mt-4">
         <div class="flex flex-wrap gap-2 items-center">
           <!-- "All" tag that links to the main blog page -->
-          <a href="/blog" 
-             class:list={[
-               'px-3 py-1.5 rounded-md text-sm font-medium transition-colors',
-               isAllActive 
-                 ? 'bg-blue-600 text-white hover:bg-blue-700' 
-                 : 'bg-neutral-100 text-neutral-700 hover:bg-blue-200'
-             ]}
-             aria-current={isAllActive ? "page" : undefined}
-             data-is-all="true">
+          <a
+            href="/blog"
+            class:list={[
+              "px-3 py-1.5 rounded-md text-sm font-medium transition-colors",
+              isAllActive
+                ? "bg-blue-600 text-white hover:bg-blue-700"
+                : "bg-neutral-100 text-neutral-700 hover:bg-blue-200",
+            ]}
+            aria-current={isAllActive ? "page" : undefined}
+            data-is-all="true"
+          >
             All
           </a>
-          
-          {allTags.map(tag => {
-            // Format tag for display
-            const formattedTag = tag
-              .split('-')
-              .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-              .join(' ');
-              
-            const tagPath = `/tags/${tag}`;
-            // More robust active state detection
-            const isActive = pathname === tagPath || pathname.startsWith(`${tagPath}/`) || activeTag === tag;
-            
-            return (
-              <a 
-                href={tagPath}
-                class:list={[
-                  'px-3 py-1.5 rounded-md text-sm font-medium transition-colors',
-                  isActive 
-                    ? 'bg-blue-600 text-white hover:bg-blue-700' 
-                    : 'bg-neutral-100 text-neutral-700 hover:bg-blue-200'
-                ]}
-                aria-current={isActive ? "page" : undefined}
-              >
-                {formattedTag}
-              </a>
-            );
-          })}
+
+          {
+            allTags.map((tag) => {
+              // Format tag for display
+              const formattedTag = tag
+                .split("-")
+                .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+                .join(" ");
+
+              const tagPath = `/tags/${tag}`;
+              // More robust active state detection
+              const isActive =
+                pathname === tagPath ||
+                pathname.startsWith(`${tagPath}/`) ||
+                activeTag === tag;
+
+              return (
+                <a
+                  href={tagPath}
+                  class:list={[
+                    "px-3 py-1.5 rounded-md text-sm font-medium transition-colors",
+                    isActive
+                      ? "bg-blue-600 text-white hover:bg-blue-700"
+                      : "bg-neutral-100 text-neutral-700 hover:bg-blue-200",
+                  ]}
+                  aria-current={isActive ? "page" : undefined}
+                >
+                  {formattedTag}
+                </a>
+              );
+            })
+          }
         </div>
       </div>
     </div>
-    
+
     <!-- Projects container - this is the part that should transition -->
     <div id={projectsContainerId} class="transition-opacity duration-300">
       <slot />
@@ -93,7 +102,7 @@ const isAllActive = pathname === "/blog" || pathname === "/blog/";
     opacity: 0;
     animation: projectFadeIn 0.4s ease-out forwards;
   }
-  
+
   @keyframes projectFadeIn {
     from {
       opacity: 0;
@@ -106,40 +115,69 @@ const isAllActive = pathname === "/blog" || pathname === "/blog/";
 
 <script>
   // Make tag highlighting more robust
-  document.addEventListener('astro:page-load', () => {
+  document.addEventListener("astro:page-load", () => {
     const pathname = window.location.pathname;
-    
+
     // Handle the "All" tag separately
     const allTagLink = document.querySelector('a[data-is-all="true"]');
     if (allTagLink) {
       // Check if we're on the blog page (both with and without trailing slash)
       const isAllActive = pathname === "/blog" || pathname === "/blog/";
-      
+
       if (isAllActive) {
-        allTagLink.classList.add('bg-blue-600', 'text-white', 'hover:bg-blue-700');
-        allTagLink.classList.remove('bg-neutral-100', 'text-neutral-700', 'hover:bg-blue-200');
-        allTagLink.setAttribute('aria-current', 'page');
+        allTagLink.classList.add(
+          "bg-blue-600",
+          "text-white",
+          "hover:bg-blue-700",
+        );
+        allTagLink.classList.remove(
+          "bg-neutral-100",
+          "text-neutral-700",
+          "hover:bg-blue-200",
+        );
+        allTagLink.setAttribute("aria-current", "page");
       } else {
-        allTagLink.classList.remove('bg-blue-600', 'text-white', 'hover:bg-blue-700');
-        allTagLink.classList.add('bg-neutral-100', 'text-neutral-700', 'hover:bg-blue-200');
-        allTagLink.removeAttribute('aria-current');
+        allTagLink.classList.remove(
+          "bg-blue-600",
+          "text-white",
+          "hover:bg-blue-700",
+        );
+        allTagLink.classList.add(
+          "bg-neutral-100",
+          "text-neutral-700",
+          "hover:bg-blue-200",
+        );
+        allTagLink.removeAttribute("aria-current");
       }
     }
-    
+
     // Handle all other tag links
-    document.querySelectorAll('a[href^="/tags/"]').forEach(link => {
+    document.querySelectorAll('a[href^="/tags/"]').forEach((link) => {
       if (link instanceof HTMLAnchorElement) {
-        const tagPath = link.getAttribute('href');
-        const isActive = pathname === tagPath || pathname.startsWith(`${tagPath}/`);
-        
+        const tagPath = link.getAttribute("href");
+        const isActive =
+          pathname === tagPath || pathname.startsWith(`${tagPath}/`);
+
         if (isActive) {
-          link.classList.add('bg-blue-600', 'text-white', 'hover:bg-blue-700');
-          link.classList.remove('bg-neutral-100', 'text-neutral-700', 'hover:bg-blue-200');
-          link.setAttribute('aria-current', 'page');
+          link.classList.add("bg-blue-600", "text-white", "hover:bg-blue-700");
+          link.classList.remove(
+            "bg-neutral-100",
+            "text-neutral-700",
+            "hover:bg-blue-200",
+          );
+          link.setAttribute("aria-current", "page");
         } else {
-          link.classList.remove('bg-blue-600', 'text-white', 'hover:bg-blue-700');
-          link.classList.add('bg-neutral-100', 'text-neutral-700', 'hover:bg-blue-200');
-          link.removeAttribute('aria-current');
+          link.classList.remove(
+            "bg-blue-600",
+            "text-white",
+            "hover:bg-blue-700",
+          );
+          link.classList.add(
+            "bg-neutral-100",
+            "text-neutral-700",
+            "hover:bg-blue-200",
+          );
+          link.removeAttribute("aria-current");
         }
       }
     });

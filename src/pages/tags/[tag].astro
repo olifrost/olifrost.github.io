@@ -1,29 +1,33 @@
 ---
-import BlogLayout from '../../layouts/BlogLayout.astro';
-import { getCollection } from 'astro:content';
-import ProjectSummary from '../../components/ProjectSummary.astro';
-import { SITE_TITLE } from '../../consts';
+import BlogLayout from "../../layouts/BlogLayout.astro";
+import { getCollection } from "astro:content";
+import ProjectSummary from "../../components/ProjectSummary.astro";
+import { SITE_TITLE } from "../../consts";
 
 export async function getStaticPaths() {
   // Get all projects but filter out drafts in production
-  const allProjects = await getCollection('blog', ({ data }) => {
+  const allProjects = await getCollection("blog", ({ data }) => {
     return import.meta.env.PROD ? data.draft !== true : true;
   });
-  
+
   // Extract all tags from all projects
-  const uniqueTags = [...new Set(
-    allProjects.flatMap(project => project.data.tags || [])
-  )];
-  
+  const uniqueTags = [
+    ...new Set(allProjects.flatMap((project) => project.data.tags || [])),
+  ];
+
   // Create a path for each tag
-  return uniqueTags.map(tag => ({
+  return uniqueTags.map((tag) => ({
     params: { tag },
-    props: { 
+    props: {
       tag,
-      projects: allProjects.filter(project => 
-        project.data.tags?.includes(tag)
-      ).sort((a, b) => new Date(b.data.date || '').getTime() - new Date(a.data.date || '').getTime())
-    }
+      projects: allProjects
+        .filter((project) => project.data.tags?.includes(tag))
+        .sort(
+          (a, b) =>
+            new Date(b.data.date || "").getTime() -
+            new Date(a.data.date || "").getTime(),
+        ),
+    },
   }));
 }
 
@@ -31,31 +35,37 @@ const { tag, projects } = Astro.props;
 
 // Format the tag for display (capitalize, replace hyphens with spaces, etc.)
 const formattedTag = tag
-  .split('-')
-  .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-  .join(' ');
+  .split("-")
+  .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+  .join(" ");
 
 // Count of projects with this tag
 const projectCount = projects.length;
 ---
 
-<BlogLayout 
-  title={`${formattedTag} - ${SITE_TITLE}`} 
+<BlogLayout
+  title={`${formattedTag} - ${SITE_TITLE}`}
   description={`Browse all ${formattedTag.toLowerCase()} projects by Oli Frost`}
   activeTag={tag}
 >
   <!-- Tag title and project count -->
   <div class="mb-8">
     <h2 class="text-xl font-medium mb-2">{formattedTag}</h2>
-    <p class="text-neutral-600">{projectCount} project{projectCount !== 1 ? 's' : ''} tagged with {formattedTag.toLowerCase()}</p>
+    <p class="text-neutral-600">
+      {projectCount} project{projectCount !== 1 ? "s" : ""} tagged with {
+        formattedTag.toLowerCase()
+      }
+    </p>
   </div>
 
   <!-- Project grid with all projects loaded but lazy images -->
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    {projects.map((project) => (
-      <div class="project-item">
-        <ProjectSummary project={project} />
-      </div>
-    ))}
+    {
+      projects.map((project) => (
+        <div class="project-item">
+          <ProjectSummary project={project} />
+        </div>
+      ))
+    }
   </div>
 </BlogLayout>

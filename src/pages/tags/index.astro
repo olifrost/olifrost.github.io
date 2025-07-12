@@ -1,57 +1,60 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import { SITE_TITLE } from '../../consts';
-import { getCollection } from 'astro:content';
-import TagChip from '../../components/TagChip.astro';
+import Layout from "../../layouts/Layout.astro";
+import { SITE_TITLE } from "../../consts";
+import { getCollection } from "astro:content";
+import TagChip from "../../components/TagChip.astro";
 
 // Get all unique tags from all blog posts
-const allPosts = await getCollection('blog');
-const allTags = [...new Set(
-  allPosts.flatMap(post => post.data.tags || [])
-)].sort();
+const allPosts = await getCollection("blog");
+const allTags = [
+  ...new Set(allPosts.flatMap((post) => post.data.tags || [])),
+].sort();
 
 // Count projects for each tag
-const tagCounts = allTags.reduce((acc, tag) => {
-  acc[tag] = allPosts.filter(post => post.data.tags?.includes(tag)).length;
-  return acc;
-}, {} as Record<string, number>);
+const tagCounts = allTags.reduce(
+  (acc, tag) => {
+    acc[tag] = allPosts.filter((post) => post.data.tags?.includes(tag)).length;
+    return acc;
+  },
+  {} as Record<string, number>,
+);
 ---
 
 <Layout title={`Tags - ${SITE_TITLE}`} description="Browse projects by tag">
   <div class="mb-8">
     <div class="flex flex-wrap items-center gap-2 mb-4">
-      <a href="/blog" class="text-blue-600 hover:underline">
-        ← All Projects
-      </a>
+      <a href="/blog" class="text-blue-600 hover:underline"> ← All Projects </a>
       <span class="text-neutral-400 px-1">→</span>
       <span class="text-neutral-800 text-lg font-medium">Tags</span>
     </div>
-    
+
     <h1 class="text-3xl font-bold mb-2 text-black">Browse by Tag</h1>
     <p class="text-neutral-600 mb-4">
       Browse all projects by category or topic
     </p>
   </div>
-  
+
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-    {allTags.map(tag => {
-      // Format tag for display
-      const formattedTag = tag
-        .split('-')
-        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(' ');
-        
-      return (
-        <a 
-          href={`/tags/${tag}`}
-          class="p-4 border border-neutral-200 rounded-lg hover:border-blue-300 hover:bg-blue-50 transition-colors hover:-translate-y-1 transform duration-200"
-        >
-          <h2 class="text-xl font-bold text-blue-600">{formattedTag}</h2>
-          <p class="text-neutral-600 text-sm">
-            {tagCounts[tag]} project{tagCounts[tag] !== 1 ? 's' : ''}
-          </p>
-        </a>
-      );
-    })}
+    {
+      allTags.map((tag) => {
+        // Format tag for display
+        const formattedTag = tag
+          .split("-")
+          .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+          .join(" ");
+
+        return (
+          <a
+            href={`/tags/${tag}`}
+            class="p-4 border border-neutral-200 rounded-lg hover:border-blue-300 hover:bg-blue-50 transition-colors hover:-translate-y-1 transform duration-200"
+          >
+            <h2 class="text-xl font-bold text-blue-600">{formattedTag}</h2>
+            <p class="text-neutral-600 text-sm">
+              {tagCounts[tag]} project{tagCounts[tag] !== 1 ? "s" : ""}
+            </p>
+          </a>
+        );
+      })
+    }
   </div>
 </Layout>

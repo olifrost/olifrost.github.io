@@ -1,0 +1,91 @@
+---
+import SimplePage from "../layouts/SimplePage.astro";
+import { getCollection } from "astro:content";
+
+const pressEntries = await getCollection("press");
+
+// Parse created date and sort by most recent
+const sortedEntries = pressEntries
+    .map((entry) => {
+        // Parse the created date string "2025-07-07T15:36:17 (UTC +01:00)" or use current date as fallback
+        let parsedDate = new Date();
+        if (entry.data.created) {
+            const dateMatch = entry.data.created.match(
+                /(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})/,
+            );
+            parsedDate = dateMatch ? new Date(dateMatch[1]) : new Date();
+        }
+
+        return {
+            ...entry,
+            parsedDate,
+            slug: entry.id.replace(/\.md$/, ""),
+            title:
+                entry.body
+                    ?.split("\n")
+                    .find((line: string) => line.startsWith("# "))
+                    ?.replace("# ", "") || entry.id.replace(/\.md$/, ""),
+        };
+    })
+    .sort((a, b) => b.parsedDate.getTime() - a.parsedDate.getTime());
+---
+
+<SimplePage title="Press Archive">
+    <div class="mb-8">
+        <p class="text-gray-600 mb-6">
+            An archive of press coverage and articles mentioning my work,
+            preserved for posterity.
+        </p>
+    </div>
+
+    <ul class="space-y-4 list-none p-0">
+        {
+            sortedEntries.map((entry) => (
+                <li class="border-b border-gray-100 pb-4">
+                    <div class="mb-2">
+                        <a
+                            href={`/press-archive/${entry.slug}`}
+                            class="text-lg font-semibold text-blue-700 hover:text-blue-900 underline"
+                        >
+                            {entry.title}
+                        </a>
+                    </div>
+
+                    <div class="text-sm text-gray-600 flex flex-wrap gap-2">
+                        {entry.data.source && (
+                            <span>
+                                <a
+                                    href={entry.data.source}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="text-blue-700 hover:text-blue-900 underline"
+                                >
+                                    original source
+                                </a>
+                            </span>
+                        )}
+
+                        {entry.data.source && (
+                            <span class="text-gray-400">•</span>
+                        )}
+
+                        <span>
+                            {entry.parsedDate.toLocaleDateString("en-US", {
+                                year: "numeric",
+                                month: "long",
+                                day: "numeric",
+                            })}
+                        </span>
+
+                        {entry.data.author && entry.data.author.trim() && (
+                            <>
+                                <span class="text-gray-400">•</span>
+                                <span>by {entry.data.author}</span>
+                            </>
+                        )}
+                    </div>
+                </li>
+            ))
+        }
+    </ul>
+</SimplePage>

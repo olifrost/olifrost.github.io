@@ -1,8 +1,7 @@
-import { glob } from 'astro/loaders';
 import { defineCollection, z } from 'astro:content';
 
-const blog = defineCollection({
-	loader: glob({ base: './src/content/', pattern: '**/*.{md,mdx,astro}' }),
+// Define the blog collection schema
+const blogCollection = defineCollection({
 	schema: ({ image }) => z.object({
 		title: z.string(),
 		description: z.string(),
@@ -20,13 +19,24 @@ const blog = defineCollection({
 		tags: z.array(z.string()).optional(),
 		homepageCategory: z.enum(['songs', 'climate', 'archive']).optional(),
 		homepageOrder: z.number().optional(),
-		 // Project type for layout selection
+		// Project type for layout selection
 		projectType: z.enum(['default', 'standalone', 'product', 'music']).optional(),
 		// Publishing status
 		draft: z.boolean().optional(),
+	})
+});
+
+// Press collection (temporarily disabled)
+const pressCollection = defineCollection({
+	schema: z.object({
+		created: z.string().optional(),
+		tags: z.any().optional(),
+		source: z.string().optional(),
+		author: z.string().optional().nullable(),
 	}),
 });
 
-
-
-export const collections = { blog };
+export const collections = {
+	blog: blogCollection,
+	// press: pressCollection, // Temporarily disabled until we fix image paths
+};
