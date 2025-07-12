@@ -5,7 +5,7 @@ import {
     getEntry,
     render,
 } from "astro:content";
-import SimplePage from "../../layouts/SimplePage.astro";
+import PressLayout from "../../layouts/PressLayout.astro";
 
 export async function getStaticPaths() {
     const pressEntries = await getCollection("press");
@@ -57,7 +57,7 @@ if (entry.data.source) {
 }
 ---
 
-<SimplePage title={title}>
+<PressLayout title={title}>
     <!-- Back to Press Archive at top -->
     <div class="mb-8">
         <a
@@ -69,7 +69,7 @@ if (entry.data.source) {
     </div>
 
     <!-- Clean article layout -->
-    <article class="max-w-2xl mx-auto">
+    <article>
         <!-- Article Header -->
         <header class="mb-10">
             <h1 class="text-3xl font-light text-black mb-6 leading-tight">
@@ -124,7 +124,7 @@ if (entry.data.source) {
     </article>
 
     <!-- Back to Press Archive at bottom -->
-    <div class="mt-16 pt-8 border-t border-neutral-200 max-w-2xl mx-auto">
+    <div class="mt-16 pt-8 border-t border-neutral-200">
         <a
             href="/press-archive"
             class="text-blue-600 hover:text-blue-800 no-underline text-base"
@@ -132,7 +132,7 @@ if (entry.data.source) {
             ← Back to Press Archive
         </a>
     </div>
-</SimplePage>
+</PressLayout>
 
 <style>
     /* Safari Reader-like styling */

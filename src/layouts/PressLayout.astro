@@ -1,0 +1,14 @@
+---
+import Layout from "./Layout.astro";
+
+// Simple props without date handling, and no automatic title rendering
+const { title, description, image } = Astro.props.frontmatter || Astro.props;
+---
+
+<Layout title={title} description={description}>
+    <article>
+        <div class="max-w-2xl mx-auto">
+            <slot />
+        </div>
+    </article>
+</Layout>

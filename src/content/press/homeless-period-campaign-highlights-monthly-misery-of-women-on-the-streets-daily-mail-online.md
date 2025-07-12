@@ -61,5 +61,3 @@ Supporters have been dropping boxes of tampons and towels into their local homel
 On her [gofundme](http://www.gofundme.com/rp6pk2s) page, Wyatt says: 'I recently read an article about the lives of homeless women and the difficulties they face when they have their period. 
 
 'I had never really thought about it that way before, these women have little or no access to sanitary products. I decided to do something and did a collection in my workplace which got an amazing response.'
-
-### Share or comment on this article: 'Homeless period' campaign highlights monthly misery of women on the streets

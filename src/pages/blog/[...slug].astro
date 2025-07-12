@@ -1,15 +1,24 @@
 ---
-import { type CollectionEntry, getCollection, getEntry, render } from 'astro:content';
-import Project from '@layouts/project.astro';
-import Layout from '@layouts/Layout.astro';
+import {
+  type CollectionEntry,
+  getCollection,
+  getEntry,
+  render,
+} from "astro:content";
+import Project from "@layouts/project.astro";
+import Layout from "@layouts/Layout.astro";
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
+  const posts = await getCollection("blog");
+  console.log(
+    "Blog posts found:",
+    posts.map((p) => p.id),
+  );
   return posts.map((post) => {
-    // Get just the filename without the year directory
-    const parts = post.id.split('/');
-    const slug = parts[parts.length - 1];
-    
+    // For flat structure, the id is just the filename
+    // Remove file extension for clean URLs
+    const slug = post.id.replace(/\.(mdx?|md)$/, "");
+
     return {
       params: { slug },
       props: { id: post.id },
@@ -19,28 +28,34 @@ export async function getStaticPaths() {
 
 // Get the full entry with the new API
 const { id } = Astro.props;
-const post = await getEntry('blog', id);
+console.log("Looking for blog entry with id:", id);
+// Remove extension for getEntry - it expects just the slug
+const entryId = id.replace(/\.(mdx?|md)$/, "");
+const post = await getEntry("blog", entryId);
+console.log("Found post:", !!post);
 
 // Handle case where post isn't found
 if (!post) {
-  throw new Error(`Project not found: ${id}`);
+  throw new Error(`Project not found: ${entryId} (original id: ${id})`);
 }
 
 // Use the new render() function
 const { Content, headings } = await render(post);
 
 // Use projectType from frontmatter if specified, otherwise default to 'default'
-const projectType = post.data.projectType || 'default';
+const projectType = post.data.projectType || "default";
 ---
 
-{projectType === 'standalone' ? (
-  <Content />
-) : projectType === 'product' ? (
-  <Layout title={post.data.title} description={post.data.description}>
+{
+  projectType === "standalone" ? (
     <Content />
-  </Layout>
-) : (
-  <Project {...post.data}>
-    <Content />
-  </Project>
-)}
+  ) : projectType === "product" ? (
+    <Layout title={post.data.title} description={post.data.description}>
+      <Content />
+    </Layout>
+  ) : (
+    <Project {...post.data}>
+      <Content />
+    </Project>
+  )
+}

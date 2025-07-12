@@ -1,19 +1,15 @@
 ---
-title: "PRWeek"
+title: "Climate activists target Edelman with 'meditation' protest"
 source: ""
-author: ""
+created: 2024-01-01T15:49:27 (UTC +01:00)
+author: "Elizabeth Wiredu"
 date: 2024-01-01
 ---
 
-# PRWeek
-by Elizabeth Wiredu | 23 May 2025\
-
 # Climate activists target Edelman with 'meditation' protest
-A climate campaign group held a protest outside Edelman's London headquarters yesterday, launching a
-satirical mobile app to critique the agency's work with fossil-fuel companies.
-Essential
-by Elizabeth Wiredu | 23 May 2025
-in
+
+A climate campaign group held a protest outside Edelman's London headquarters yesterday, launching a satirical mobile app to critique the agency's work with fossil-fuel companies.
+
 The campaign group Serious People 'meditating' outside Edelman's office in London's Victoria
 Yesterday (22 May), the climate campaign group Serious People launched a mobile app called Oilwell and staged a protest at
 Edelman's London offices.
