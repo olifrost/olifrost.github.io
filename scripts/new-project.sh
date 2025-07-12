@@ -145,33 +145,55 @@ post_type=$(gum choose --header "What kind of post is this?" \
     "postergallery")
 
 # Get project name
-project_name=$(gum input --placeholder "What's the project called?")
-if [[ -z "$project_name" ]]; then
-    echo "Project name is required!"
-    exit 1
-fi
+while true; do
+    project_name=$(gum input --placeholder "What's the project called?")
+    if [[ -n "$project_name" ]]; then
+        break
+    fi
+    gum style --foreground 196 "Project name is required! Please enter a name."
+done
 
 slug=$(echo "$project_name" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^a-z0-9]+/-/g' | sed -E 's/^-+|-+$//g')
 
 # Get description based on post type
+esac
 case "$post_type" in
     "website")
-        description=$(gum input --placeholder "How should we describe it?")
+        while true; do
+            description=$(gum input --placeholder "How should we describe it?")
+            if [[ -n "$description" ]]; then
+                break
+            fi
+            gum style --foreground 196 "Description is required! Please enter a description."
+        done
         ;;
     "instagram video")
         echo "Getting Instagram post details..."
-        instagram_url=$(gum input --placeholder "Instagram post URL")
-        if [[ -z "$instagram_url" ]]; then
-            echo "Instagram URL is required!"
-            exit 1
-        fi
+        while true; do
+            instagram_url=$(gum input --placeholder "Instagram post URL")
+            if [[ -n "$instagram_url" ]]; then
+                break
+            fi
+            gum style --foreground 196 "Instagram URL is required! Please enter a URL."
+        done
         # Try to get title from Instagram (simplified - user can edit)
-        description=$(gum input --placeholder "Description (will use as title for embed)" --value "$project_name")
+        while true; do
+            description=$(gum input --placeholder "Description (will use as title for embed)" --value "$project_name")
+            if [[ -n "$description" ]]; then
+                break
+            fi
+            gum style --foreground 196 "Description is required! Please enter a description."
+        done
         ;;
     "youtube video"|"youtube short"|"song video"|"basic"|"image"|"postergallery")
-        description=$(gum input --placeholder "How should we describe it?")
+        while true; do
+            description=$(gum input --placeholder "How should we describe it?")
+            if [[ -n "$description" ]]; then
+                break
+            fi
+            gum style --foreground 196 "Description is required! Please enter a description."
+        done
         ;;
-esac
 
 # Get release date
 date=$(gum input --placeholder "When was it released? (YYYY-MM-DD)" --value "$today")
@@ -230,23 +252,29 @@ url=""
 press_info=""
 gallery_path=""
 
+esac
 case "$post_type" in
     "website")
-        url=$(gum input --placeholder "Website URL")
-        if [[ -z "$url" ]]; then
-            echo "Website URL is required!"
-            exit 1
-        fi
+        while true; do
+            url=$(gum input --placeholder "Website URL")
+            if [[ -n "$url" ]]; then
+                break
+            fi
+            gum style --foreground 196 "Website URL is required! Please enter a URL."
+        done
         ;;
     "instagram video")
         # Already got instagram_url above
         ;;
     "youtube video"|"song video")
-        video_input=$(gum input --placeholder "YouTube video link or ID")
-        if [[ -n "$video_input" ]]; then
-            video_id=$(extract_youtube_id "$video_input")
-        fi
-        
+        while true; do
+            video_input=$(gum input --placeholder "YouTube video link or ID")
+            if [[ -n "$video_input" ]]; then
+                video_id=$(extract_youtube_id "$video_input")
+                break
+            fi
+            gum style --foreground 196 "YouTube video link or ID is required! Please enter a value."
+        done
         if [[ "$post_type" == "song video" ]]; then
             add_press=$(gum confirm "Add press mentions?" && echo "yes" || echo "no")
             if [[ "$add_press" == "yes" ]]; then
@@ -255,20 +283,27 @@ case "$post_type" in
         fi
         ;;
     "youtube short")
-        video_input=$(gum input --placeholder "YouTube Short link or ID")
-        if [[ -z "$video_input" ]]; then
-            echo "YouTube Short link is required!"
-            exit 1
-        fi
-        video_id=$(extract_youtube_id "$video_input")
+        while true; do
+            video_input=$(gum input --placeholder "YouTube Short link or ID")
+            if [[ -n "$video_input" ]]; then
+                video_id=$(extract_youtube_id "$video_input")
+                break
+            fi
+            gum style --foreground 196 "YouTube Short link or ID is required! Please enter a value."
+        done
         ;;
     "postergallery")
-        gallery_path=$(gum input --placeholder "Gallery path (e.g., @assets/2024/project-gallery)" --value "@assets/blog/$slug-gallery")
+        while true; do
+            gallery_path=$(gum input --placeholder "Gallery path (e.g., @assets/2024/project-gallery)" --value "@assets/blog/$slug-gallery")
+            if [[ -n "$gallery_path" ]]; then
+                break
+            fi
+            gum style --foreground 196 "Gallery path is required! Please enter a value."
+        done
         ;;
     "basic"|"image")
         # No additional inputs needed
         ;;
-esac
 
 # Create MDX file in blog directory
 dir="$CONTENT_DIR/blog"
