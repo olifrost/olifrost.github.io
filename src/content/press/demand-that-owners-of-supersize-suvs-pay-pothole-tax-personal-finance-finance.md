@@ -2,7 +2,7 @@
 created: 2025-07-07T15:49:49 (UTC +01:00)
 source: https://www.express.co.uk/finance/personalfinance/2038840/demand-owners-supersize-suvs-pay-pothole-tax
 author: Rory Poulter
-title: "Demand that owners of supersize SUVs pay \"pothole tax\" | Personal Finance | Finance | Express.co.uk"
+title: "Demand that owners of supersize SUVs pay \"pothole tax\""
 ---
 
 # Demand that owners of supersize SUVs pay "pothole tax"

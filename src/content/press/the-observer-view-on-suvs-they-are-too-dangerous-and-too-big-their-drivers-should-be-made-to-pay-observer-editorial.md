@@ -2,7 +2,7 @@
 created: 2025-07-07T15:49:56 (UTC +01:00)
 source: https://www.theguardian.com/commentisfree/2025/apr/06/the-observer-view-on-suvs-they-are-too-dangerous-and-too-big-their-drivers-should-be-made-to-pay
 author: Observer editorial
-title: "The Observer view on SUVs: they are too dangerous and too big, their drivers should be made to pay | Observer editorial"
+title: "The Observer view on SUVs: they are too dangerous and too big, their drivers should be made to pay"
 ---
 
 # The Observer view on SUVs: they are too dangerous and too big, their drivers should be made to pay

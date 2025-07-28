@@ -2,10 +2,10 @@
 created: 2025-07-07T15:46:28 (UTC +01:00)
 source: https://nen.press/tag/asset-manager-quest-video-game/
 author: 
-title: "Asset Manager Quest video game – The NEN – North Edinburgh News"
+title: "Asset Manager Quest video game"
 ---
 
-# Asset Manager Quest video game – The NEN – North Edinburgh News
+# Asset Manager Quest video game
 
 ### **_Eco-Gamers challenge abrdn’s fossil fuel investments with Retro Arcade Game_**
 

@@ -2,10 +2,10 @@
 created: 2025-07-07T15:36:39 (UTC +01:00)
 source: https://www.rt.com/news/428170-facebook-data-sale-ebay/
 author: RT
-title: "How much: Facebook user puts personal data up for sale to highest bidder — RT World News"
+title: "How much: Facebook user puts personal data up for sale to highest bidder"
 ---
 
-# How much: Facebook user puts personal data up for sale to highest bidder — RT World News
+# How much: Facebook user puts personal data up for sale to highest bidder
 
 An entrepreneurial Facebook user who tried to cash in on his own data, by putting it up for auction on Ebay, appears to have had his pioneering plan stopped in its tracks.
 

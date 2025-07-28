@@ -2,10 +2,10 @@
 created: 2025-07-07T15:40:51 (UTC +01:00)
 source: https://www.fastcompany.com/90173378/flopstarter-is-kickstarter-for-really-really-really-bad-ideas
 author: Mark Wilson
-title: "Flopstarter is Kickstarter for really, really, really bad ideas - Fast Company"
+title: "Flopstarter is Kickstarter for really, really, really bad ideas"
 ---
 
-# Flopstarter is Kickstarter for really, really, really bad ideas - Fast Company
+# Flopstarter is Kickstarter for really, really, really bad ideas
 
 A “mole skin” notebook made from real, skinned moles. A line of vintage apparel made exclusively from clothing people have died in. A minimalist watch that does away the numbers, the minute and hour hands, and really any discernible way to tell the time at all.
 

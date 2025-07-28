@@ -2,10 +2,10 @@
 created: 2025-07-07T15:44:12 (UTC +01:00)
 source: https://boingboing.net/2021/09/15/plant-based-meat-company-vandalizes-the-bacon-wikipedia-article.html
 author: Annie Rauwerda
-title: "Plant-based meat company vandalizes the bacon Wikipedia article - Boing Boing"
+title: "Plant-based meat company vandalizes the bacon Wikipedia article"
 ---
 
-# Plant-based meat company vandalizes the bacon Wikipedia article - Boing Boing
+# Plant-based meat company vandalizes the bacon Wikipedia article
 
 A British company called [This](https://this.co/) makes plant-based meat alternatives. They also vandalize Wikipedia to promote their products.
 

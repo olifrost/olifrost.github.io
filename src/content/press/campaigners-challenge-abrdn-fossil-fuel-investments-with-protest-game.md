@@ -3,10 +3,10 @@ created: 2025-07-07T15:46:23 (UTC +01:00)
 tags: [Abrdn,Environment,Financial services]
 source: https://www.insider.co.uk/news/campaigners-challenge-abrdn-fossil-fuel-33112193
 author: Peter A Walker
-title: "Campaigners challenge abrdn fossil fuel investments with protest game - Business Insider"
+title: "Campaigners challenge abrdn fossil fuel investments with protest game"
 ---
 
-# Campaigners challenge abrdn fossil fuel investments with protest game - Business Insider
+# Campaigners challenge abrdn fossil fuel investments with protest game
 
 A group of 'eco-gamers' called Serious People have organised a protest against abrdn, creating a video game that aims to expose the extent of the firm's investment in fossil fuels.
 

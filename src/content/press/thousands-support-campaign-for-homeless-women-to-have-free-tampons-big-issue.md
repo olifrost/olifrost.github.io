@@ -2,10 +2,10 @@
 created: 2025-07-07T15:09:05 (UTC +01:00)
 source: https://www.bigissue.com/news/housing/thousands-support-campaign-homeless-women-free-tampons/
 author: Andrew Burns
-title: "Thousands support campaign for homeless women to have free tampons - Big Issue"
+title: "Thousands support campaign for homeless women to have free tampons"
 ---
 
-# Thousands support campaign for homeless women to have free tampons - Big Issue
+# Thousands support campaign for homeless women to have free tampons
 
 Housing
 

@@ -2,10 +2,10 @@
 created: 2025-07-07T15:49:52 (UTC +01:00)
 source: https://www.lbc.co.uk/opinion/views/monster-suvs-killing-kids-safety-driving-carspreading/
 author: Oliver Lord
-title: "Our cities weren’t built for monster SUVs. Why are we letting them take over? - LBC"
+title: "Our cities weren’t built for monster SUVs. Why are we letting them take over?"
 ---
 
-# Our cities weren’t built for monster SUVs. Why are we letting them take over? - LBC
+# Our cities weren’t built for monster SUVs. Why are we letting them take over?
 
 25 March 2025, 09:49
 

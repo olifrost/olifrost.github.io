@@ -2,10 +2,10 @@
 created: 2025-07-07T15:17:29 (UTC +01:00)
 source: https://www.bbc.co.uk/news/health-33720608
 author: Anisa Kadri
-title: "'It's a matter of dignity' - BBC News"
+title: "'It's a matter of dignity'"
 ---
 
-# 'It's a matter of dignity' - BBC News
+# 'It's a matter of dignity'
 
 Image source, Thinkstock
 

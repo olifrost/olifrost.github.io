@@ -2,10 +2,10 @@
 created: 2025-07-07T15:49:13 (UTC +01:00)
 source: https://www.resume.se/affarer/byraer/ogilvys-fossilengagemang-hanas-pa-satirsajt/
 author: Jenny Folkesson
-title: "Ogilvys fossilengagemang hånas på satirsajt - Resumé"
+title: "Ogilvys fossilengagemang hånas på satirsajt"
 ---
 
-# Ogilvys fossilengagemang hånas på satirsajt - Resumé
+# Ogilvys fossilengagemang hånas på satirsajt
 
 [
 

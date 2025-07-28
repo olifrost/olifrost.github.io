@@ -8,10 +8,6 @@ title: "You can now customise your own cigarette packets ‘Smoking Kills’ war
 
 # You can now customise your own cigarette packets ‘Smoking Kills’ warning
 
-[](https://metro.co.uk/author/miranda-larbi-for-metro-co-uk/)
-
-**Published** December 5, 2016 2:25pm **Updated** December 11, 2019 5:09pm
-
 The festive season is upon us. Every pub and bar in the land is packed with jolly office workers and Christmas revellers getting their drink on. And outside every establishment, sequined smokers blow ash into each others’ mulled wines.
 
 December is when all the social smokers reemerge, high on Christmas spirit(s), ready to steal other people’s cigs.

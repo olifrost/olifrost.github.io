@@ -6,7 +6,7 @@ title: "Ogilvyland: les Serious People trollent WPP"
 
 ---
 
-# Media Marketing | News | Ogilvyland: les Serious People trollent WPP
+# Ogilvyland: les Serious People trollent WPP
 
 Pilotée par l'activiste climatique Oli Frost, l'organisation Serious People, membre du Glimpse Collective, a lancé une nouvelle action spectaculaire pour dénoncer l'implication de WPP et de son réseau Ogilvy dans la promotion des énergies fossiles. 
 

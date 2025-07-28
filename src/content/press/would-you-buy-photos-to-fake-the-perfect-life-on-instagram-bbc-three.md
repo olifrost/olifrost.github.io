@@ -2,10 +2,10 @@
 created: 2025-07-07T15:35:21 (UTC +01:00)
 source: https://www.bbc.co.uk/bbcthree/article/10f77fff-06ed-4c11-a91a-d1413df96d23
 author: Ashitha Nagesh
-title: "Would you buy photos to fake the perfect life on Instagram? - BBC Three"
+title: "Would you buy photos to fake the perfect life on Instagram?"
 ---
 
-# Would you buy photos to fake the perfect life on Instagram? - BBC Three
+# Would you buy photos to fake the perfect life on Instagram?
 
 **A site offering to sell ready-made Instagram photos has just popped up - but it's not what it seems**
 
