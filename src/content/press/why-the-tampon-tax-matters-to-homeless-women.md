@@ -3,7 +3,7 @@ created: 2025-07-07T15:13:07 (UTC +01:00)
 tags: [art,fashion,film,music,ideas,ideas sharing network,dazed & confused,dazed,dazed & confused magazine,dazed and confused,dazed and confused magazine,dazed+confused,dazeddigital]
 source: https://www.dazeddigital.com/artsandculture/article/27218/1/why-the-tampon-tax-matters-to-homeless-women
 author: Dazed
-title: "Why the tampon tax matters to homeless women | Dazed"
+title: "Why the tampon tax matters to homeless women"
 ---
 
 # Why the tampon tax matters to homeless women | Dazed

@@ -2,7 +2,7 @@
 created: 2025-07-07T15:39:52 (UTC +01:00)
 source: https://www.foxnews.com/tech/facebook-user-auctions-personal-data-on-ebay-for-99-cents-and-bids-soar-sell-it-to-advertisers-or-whatever
 author: Jennifer Earl
-title: "Facebook user auctions personal data on eBay for 99 cents and bids soar: 'Sell it to advertisers or whatever' | Fox News"
+title: "Facebook user auctions personal data on eBay for 99 cents and bids soar: 'Sell it to advertisers or whatever'"
 ---
 
 # Facebook user auctions personal data on eBay for 99 cents and bids soar: 'Sell it to advertisers or whatever' | Fox News

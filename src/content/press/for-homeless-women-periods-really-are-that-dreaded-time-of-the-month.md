@@ -3,10 +3,10 @@ created: 2025-07-07T15:17:22 (UTC +01:00)
 tags: [whats-working,Women,Homelessness,periods,menstruation,Women's Health,lifestyle]
 source: https://www.huffingtonpost.co.uk/2015/04/10/homeless-period-women_n_6991340.html
 author: Brogan Driscoll
-title: "For Homeless Women, Periods Really Are That Dreaded Time Of The Month | HuffPost UK Life"
+title: "For Homeless Women, Periods Really Are That Dreaded Time Of The Month"
 ---
 
-# For Homeless Women, Periods Really Are That Dreaded Time Of The Month | HuffPost UK Life
+# For Homeless Women, Periods Really Are That Dreaded Time Of The Month
 
 Being on your period is a inconvenient and often downright frustrating time for most [women](http://huffingtonpost.co.uk/news/women/), but imagine having no access to sanitary products and being unable to use most bathroom facilities.
 

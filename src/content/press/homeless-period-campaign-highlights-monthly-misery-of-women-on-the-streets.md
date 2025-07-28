@@ -3,7 +3,7 @@ created: 2025-07-07T15:17:07 (UTC +01:00)
 tags: [dailymail,femail]
 source: https://www.dailymail.co.uk/femail/article-3038089/Homeless-period-campaign-highlights-monthly-misery-women-streets.html
 author: Jo Tweedy
-title: "'Homeless period' campaign highlights monthly misery of women on the streets | Daily Mail Online"
+title: "'Homeless period' campaign highlights monthly misery of women on the streets"
 ---
 
 # 'Homeless period' campaign highlights monthly misery of women on the streets | Daily Mail Online

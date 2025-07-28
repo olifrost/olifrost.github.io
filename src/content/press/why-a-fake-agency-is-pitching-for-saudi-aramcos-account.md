@@ -3,7 +3,7 @@ created: 2025-07-07T15:45:40 (UTC +01:00)
 tags: [sustainability,Environmental campaigns,greenwashing]
 source: https://www.thedrum.com/news/2023/11/23/why-fake-agency-pitching-saudi-aramco-s-account
 author: Ellen Ormesher,
-title: "Why a fake agency is pitching for Saudi Aramco’s account | The Drum"
+title: "Why a fake agency is pitching for Saudi Aramco’s account"
 ---
 
 # Why a fake agency is pitching for Saudi Aramco’s account | The Drum

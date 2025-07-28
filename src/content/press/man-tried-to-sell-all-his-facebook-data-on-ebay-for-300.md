@@ -3,7 +3,7 @@ created: 2025-07-07T15:39:20 (UTC +01:00)
 tags: [UK,eBay,Facebook,Social Media]
 source: https://metro.co.uk/2018/05/31/man-tried-to-sell-all-his-facebook-data-on-ebay-for-300-7595007/
 author: Tom Usher
-title: "Man tried to sell all his Facebook data on eBay for £300 | Metro News"
+title: "Man tried to sell all his Facebook data on eBay for £300"
 ---
 
 # Man tried to sell all his Facebook data on eBay for £300 | Metro News

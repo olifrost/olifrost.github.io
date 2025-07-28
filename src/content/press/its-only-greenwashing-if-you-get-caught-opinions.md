@@ -3,7 +3,7 @@ created: 2025-07-07T15:46:13 (UTC +01:00)
 tags: [Opinions,Advertising,ESG,Climate Action,atmospheric,mccann,aramco,fossil fuel,greenwashing,greenhushing]
 source: https://www.campaignasia.com/article/its-only-greenwashing-if-you-get-caught/493907
 author: Jamie Kolkot
-title: "'It's only greenwashing if you get caught' | Opinions | Campaign Asia"
+title: "'It's only greenwashing if you get caught' | Opinions"
 ---
 
 # 'It's only greenwashing if you get caught' | Opinions | Campaign Asia

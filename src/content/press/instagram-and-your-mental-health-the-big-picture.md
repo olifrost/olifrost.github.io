@@ -3,7 +3,7 @@ created: 2025-07-07T15:35:10 (UTC +01:00)
 tags: [art,fashion,film,music,ideas,ideas sharing network,dazed & confused,dazed,dazed & confused magazine,dazed and confused,dazed and confused magazine,dazed+confused,dazeddigital]
 source: https://www.dazeddigital.com/life-culture/article/40020/1/instagram-and-mental-health
 author: Dazed
-title: "Instagram and your mental health: the big picture | Dazed"
+title: "Instagram and your mental health: the big picture"
 ---
 
 # Instagram and your mental health: the big picture | Dazed

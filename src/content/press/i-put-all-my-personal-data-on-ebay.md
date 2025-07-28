@@ -2,7 +2,7 @@
 created: 2025-07-07T15:36:59 (UTC +01:00)
 source: https://news.ycombinator.com/item?id=17173279
 author: 
-title: "I put all my personal data on eBay | Hacker News"
+title: "I put all my personal data on eBay"
 ---
 
 # I put all my personal data on eBay | Hacker News

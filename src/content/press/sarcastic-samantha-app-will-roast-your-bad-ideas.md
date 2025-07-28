@@ -2,7 +2,7 @@
 created: 2025-07-07T15:40:28 (UTC +01:00)
 source: https://lifehacker.com/ios-sarcastic-samantha-privately-mocks-things-with-you-1818822777
 author: Nick Douglas
-title: "Sarcastic Samantha App Will Roast Your Bad Ideas | Lifehacker"
+title: "Sarcastic Samantha App Will Roast Your Bad Ideas"
 ---
 
 # Sarcastic Samantha App Will Roast Your Bad Ideas | Lifehacker

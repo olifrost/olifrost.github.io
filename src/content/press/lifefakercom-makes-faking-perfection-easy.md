@@ -2,7 +2,7 @@
 created: 2025-07-07T15:19:25 (UTC +01:00)
 source: https://news.ycombinator.com/item?id=16953005
 author: 
-title: "“Lifefaker.com makes faking perfection easy” | Hacker News"
+title: "“Lifefaker.com makes faking perfection easy”"
 ---
 
 # “Lifefaker.com makes faking perfection easy” | Hacker News

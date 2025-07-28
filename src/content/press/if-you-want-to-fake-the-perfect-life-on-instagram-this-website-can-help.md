@@ -3,7 +3,7 @@ created: 2025-07-07T15:34:48 (UTC +01:00)
 tags: [Lifestyle,Social Media]
 source: https://metro.co.uk/2018/05/03/want-fake-perfect-life-instagram-website-can-help-7510173/
 author: Miranda Larbi
-title: "If you want to fake the perfect life on Instagram, this website can help | Metro News"
+title: "If you want to fake the perfect life on Instagram, this website can help"
 ---
 
 # If you want to fake the perfect life on Instagram, this website can help | Metro News

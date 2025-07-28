@@ -2,7 +2,7 @@
 created: 2025-07-07T15:17:51 (UTC +01:00)
 source: https://www.theguardian.com/voluntary-sector-network/2015/jun/05/homeless-period-tampon-or-food-campaign-of-the-month
 author: Anna Isaac
-title: "The Homeless Period: it doesn't bear thinking about and that's the problem | Voluntary Sector Network | The Guardian"
+title: "The Homeless Period: it doesn't bear thinking about and that's the problem | Voluntary Sector Network"
 ---
 
 # The Homeless Period: it doesn't bear thinking about and that's the problem | Voluntary Sector Network | The Guardian

@@ -2,7 +2,7 @@
 created: 2025-07-07T15:19:22 (UTC +01:00)
 source: https://graziadaily.co.uk/life/real-life/buy-instagram-photos-online-mental-health-sanctus-lifefaker/
 author: Georgia Aspinall
-title: "This Website Selling Fake Instagram Images Makes An Important Point About Mental Health And Social Media | Grazia"
+title: "This Website Selling Fake Instagram Images Makes An Important Point About Mental Health And Social Media"
 ---
 
 # This Website Selling Fake Instagram Images Makes An Important Point About Mental Health And Social Media | Grazia

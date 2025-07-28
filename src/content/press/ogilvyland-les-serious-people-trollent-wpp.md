@@ -2,7 +2,8 @@
 created: 2025-07-07T15:48:58 (UTC +01:00)
 source: https://www.mm.be/news-fr-79642-ogilvyland-les-serious-people-trollent-wpp
 author: strategie.agency
-title: "Media Marketing | News | Ogilvyland: les Serious People trollent WPP"
+title: "Ogilvyland: les Serious People trollent WPP"
+
 ---
 
 # Media Marketing | News | Ogilvyland: les Serious People trollent WPP

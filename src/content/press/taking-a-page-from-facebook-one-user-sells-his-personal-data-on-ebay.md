@@ -3,7 +3,7 @@ created: 2025-07-07T15:38:57 (UTC +01:00)
 tags: [Computing,Facebook,privacy]
 source: https://www.digitaltrends.com/computing/facebook-data-listed-on-ebay/
 author: Chuong Nguyen
-title: "Taking a Page From Facebook, One User Sells His Personal Data on eBay | Digital Trends"
+title: "Taking a Page From Facebook, One User Sells His Personal Data on eBay"
 ---
 
 # Taking a Page From Facebook, One User Sells His Personal Data on eBay | Digital Trends

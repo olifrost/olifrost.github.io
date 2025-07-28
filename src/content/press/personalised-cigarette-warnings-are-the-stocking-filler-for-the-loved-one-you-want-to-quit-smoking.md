@@ -3,7 +3,7 @@ created: 2025-07-07T15:18:31 (UTC +01:00)
 tags: [Christmas,Smoking,new years resolutions]
 source: https://www.huffingtonpost.co.uk/entry/personalised-cigarette-packets-quit-smoking_uk_5846909ce4b06a503248fefe
 author: Brogan Driscoll
-title: "Personalised Cigarette Warnings Are The Stocking Filler For The Loved One You Want To Quit Smoking | HuffPost UK Life"
+title: "Personalised Cigarette Warnings Are The Stocking Filler For The Loved One You Want To Quit Smoking"
 ---
 
 # Personalised Cigarette Warnings Are The Stocking Filler For The Loved One You Want To Quit Smoking | HuffPost UK Life

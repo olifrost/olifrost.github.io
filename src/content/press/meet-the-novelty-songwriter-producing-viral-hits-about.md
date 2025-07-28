@@ -2,7 +2,7 @@
 created: 2025-07-07T15:44:32 (UTC +01:00)
 source: https://www.canarymedia.com/articles/fun-stuff/meet-the-novelty-songwriter-producing-viral-hits-about-climate-change
 author: 
-title: "Meet the novelty songwriter producing viral hits about… | Canary Media"
+title: "Meet the novelty songwriter producing viral hits about…"
 ---
 
 # Meet the novelty songwriter producing viral hits about… | Canary Media

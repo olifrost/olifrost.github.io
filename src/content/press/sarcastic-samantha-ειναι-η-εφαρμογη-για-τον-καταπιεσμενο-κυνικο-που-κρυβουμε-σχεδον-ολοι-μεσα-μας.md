@@ -3,7 +3,7 @@ created: 2025-07-07T15:40:22 (UTC +01:00)
 tags: [life,Tech,ios,Sarcastic Samantha,εφαρμογή,σαρκασμός,app]
 source: https://www.huffingtonpost.gr/2017/10/15/life-tech-sarcastic-samantha-ios-app_n_18182164.html
 author: HuffPost Greece
-title: "Η Sarcastic Samantha είναι η εφαρμογή για τον καταπιεσμένο κυνικό που κρύβουμε σχεδόν όλοι μέσα μας | HuffPost Greece LIFE"
+title: "Η Sarcastic Samantha είναι η εφαρμογή για τον καταπιεσμένο κυνικό που κρύβουμε σχεδόν όλοι μέσα μας"
 ---
 
 # Η Sarcastic Samantha είναι η εφαρμογή για τον καταπιεσμένο κυνικό που κρύβουμε σχεδόν όλοι μέσα μας | HuffPost Greece LIFE

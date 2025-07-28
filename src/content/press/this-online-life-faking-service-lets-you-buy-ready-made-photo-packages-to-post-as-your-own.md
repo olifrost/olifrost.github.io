@@ -2,7 +2,7 @@
 created: 2025-07-07T15:20:11 (UTC +01:00)
 source: https://www.shortlist.com/news/online-life-faking-service-mental-health-sanctus
 author: Harvey Day
-title: "This online ‘life faking service’ lets you buy ready-made photo packages to post as your own | Shortlist"
+title: "This online ‘life faking service’ lets you buy ready-made photo packages to post as your own"
 ---
 
 # This online ‘life faking service’ lets you buy ready-made photo packages to post as your own | Shortlist

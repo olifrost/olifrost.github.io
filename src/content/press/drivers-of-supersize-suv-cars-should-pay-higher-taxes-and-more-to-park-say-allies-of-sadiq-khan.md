@@ -3,7 +3,7 @@ created: 2025-07-07T15:49:40 (UTC +01:00)
 tags: [Sadiq Khan,SUV,London,Labour,Road safety]
 source: https://www.standard.co.uk/news/transport/sadiq-khan-spread-supersize-suv-cars-london-mayor-london-assembly-b1231575.html
 author: Ross Lydall
-title: "Drivers of 'supersize' SUV cars should pay higher taxes and more to park, say allies of Sadiq Khan | The Standard"
+title: "Drivers of 'supersize' SUV cars should pay higher taxes and more to park, say allies of Sadiq Khan"
 ---
 
 # Drivers of 'supersize' SUV cars should pay higher taxes and more to park, say allies of Sadiq Khan | The Standard

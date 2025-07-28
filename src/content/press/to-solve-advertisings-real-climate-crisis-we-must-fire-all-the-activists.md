@@ -3,7 +3,7 @@ created: 2025-07-07T15:45:28 (UTC +01:00)
 tags: [sustainability,Public Relations (PR)]
 source: https://www.thedrum.com/opinion/2023/12/15/solve-advertisings-real-climate-crisis-we-must-fire-all-the-activists
 author: Jamie Kolkot,
-title: "To solve advertising's real climate crisis we must fire all the activists | The Drum"
+title: "To solve advertising's real climate crisis we must fire all the activists"
 ---
 
 # To solve advertising's real climate crisis we must fire all the activists | The Drum

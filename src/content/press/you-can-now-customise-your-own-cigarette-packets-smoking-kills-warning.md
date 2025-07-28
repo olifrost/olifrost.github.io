@@ -3,7 +3,7 @@ created: 2025-07-07T15:18:37 (UTC +01:00)
 tags: [Health]
 source: https://metro.co.uk/2016/12/05/you-can-now-customise-your-own-cigarette-packets-which-is-nice-6302293/
 author: Miranda Larbi
-title: "You can now customise your own cigarette packets ‘Smoking Kills’ warning | Metro News"
+title: "You can now customise your own cigarette packets ‘Smoking Kills’ warning"
 ---
 
 # You can now customise your own cigarette packets ‘Smoking Kills’ warning | Metro News

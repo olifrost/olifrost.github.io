@@ -2,7 +2,7 @@
 created: 2025-07-07T15:40:12 (UTC +01:00)
 source: https://www.producthunt.com/products/outloud-2?launch=sarcastic-samantha
 author: Oli Frost
-title: "Outloud: Find out if your idea sounds great, or just plain stupid | Product Hunt"
+title: "Outloud: Find out if your idea sounds great, or just plain stupid"
 ---
 
 # Outloud: Find out if your idea sounds great, or just plain stupid | Product Hunt

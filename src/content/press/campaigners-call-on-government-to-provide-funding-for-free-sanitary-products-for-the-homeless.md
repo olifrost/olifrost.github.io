@@ -2,7 +2,7 @@
 created: 2025-07-07T15:08:44 (UTC +01:00)
 source: https://www.standard.co.uk/news/london/campaigners-call-on-government-to-provide-funding-for-free-sanitary-products-for-the-homeless-10179548.html
 author: Natasha Preskey
-title: "Campaigners call on Government to provide funding for free sanitary products for the homeless | London Evening Standard | The Standard"
+title: "Campaigners call on Government to provide funding for free sanitary products for the homeless | London Evening Standard"
 ---
 
 # Campaigners call on Government to provide funding for free sanitary products for the homeless

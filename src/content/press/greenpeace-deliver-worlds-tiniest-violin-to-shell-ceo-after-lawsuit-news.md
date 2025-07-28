@@ -2,7 +2,7 @@
 created: 2025-07-07T15:44:42 (UTC +01:00)
 source: https://www.independent.co.uk/tv/news/greenpeace-shell-protest-violin-cousin-greg-b2522109.html
 author: Holly Patrick
-title: "Greenpeace deliver ‘world’s tiniest violin’ to Shell CEO after lawsuit | News | Independent TV"
+title: "Greenpeace deliver ‘world’s tiniest violin’ to Shell CEO after lawsuit | News"
 ---
 
 # Greenpeace deliver ‘world’s tiniest violin’ to Shell CEO after lawsuit | News | Independent TV
