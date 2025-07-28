@@ -1,10 +1,17 @@
+def clean_title_pipes(title):
+    """Remove publication names and categories from title (everything after first pipe)"""
+    if '|' in title:
+        return title.split('|')[0].strip()
+    return title.strip()
+
 def extract_title_from_content(content):
     """Extract title from the markdown content"""
     # Look for the first # heading
     lines = content.split('\n')
     for line in lines:
         if line.startswith('# '):
-            return line[2:].strip()
+            title = line[2:].strip()
+            return clean_title_pipes(title)
     return ""
 #!/usr/bin/env python3
 """
@@ -13,8 +20,9 @@ Press Article Cleaner for Oli Frost's Portfolio
 This script:
 1. Renames files to clean lowercase slugs
 2. Removes all markdown images ![...](...) 
-3. Cleans up frontmatter
-4. Handles excerpt blocks consistently
+3. Cleans headers and titles to remove publication names (everything after |)
+4. Cleans up frontmatter
+5. Handles excerpt blocks consistently
 
 Usage:
   python scripts/clean-press.py
@@ -42,6 +50,21 @@ def slugify(text):
     # Remove leading/trailing hyphens
     text = text.strip('-')
     return text
+
+def clean_headers(content):
+    """Clean markdown headers to remove publication names after pipes"""
+    lines = content.split('\n')
+    cleaned_lines = []
+    
+    for line in lines:
+        if line.startswith('# ') and '|' in line:
+            # Extract title part before first pipe
+            title_part = line[2:].split('|')[0].strip()
+            cleaned_lines.append(f"# {title_part}")
+        else:
+            cleaned_lines.append(line)
+    
+    return '\n'.join(cleaned_lines)
 
 def remove_images(content):
     """Remove all markdown images from content"""
@@ -85,7 +108,18 @@ def clean_frontmatter(content):
     for line in frontmatter_lines:
         if ':' in line:
             key, value = line.split(':', 1)
-            fm_data[key.strip()] = value.strip()
+            key = key.strip()
+            value = value.strip()
+            
+            # Clean title values that have pipes
+            if key == 'title' and '|' in value:
+                # Remove quotes if present, clean pipes, then re-quote
+                if value.startswith('"') and value.endswith('"'):
+                    value = value[1:-1]
+                value = clean_title_pipes(value)
+                value = f'"{escape_yaml_double_quotes(value)}"'
+            
+            fm_data[key] = value
     
     # Add or fix title
     if title:
@@ -129,6 +163,7 @@ def process_file(filepath):
     
     # Clean content
     content = remove_images(content)
+    content = clean_headers(content)
     content = clean_frontmatter(content)
     
     # Generate new filename

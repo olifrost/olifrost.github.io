@@ -5,7 +5,7 @@ author: Oli Frost
 title: "Outloud: Find out if your idea sounds great, or just plain stupid"
 ---
 
-# Outloud: Find out if your idea sounds great, or just plain stupid | Product Hunt
+# Outloud: Find out if your idea sounds great, or just plain stupid
 
 ## Find out if your idea sounds great, or just plain stupid
 

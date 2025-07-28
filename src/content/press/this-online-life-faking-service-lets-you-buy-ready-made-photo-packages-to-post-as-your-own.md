@@ -5,7 +5,7 @@ author: Harvey Day
 title: "This online ‘life faking service’ lets you buy ready-made photo packages to post as your own"
 ---
 
-# This online ‘life faking service’ lets you buy ready-made photo packages to post as your own | Shortlist
+# This online ‘life faking service’ lets you buy ready-made photo packages to post as your own
 
 We’ve all been there. Endlessly scrolling through your friends’ social media pics and working yourself up into a frenzy.
 

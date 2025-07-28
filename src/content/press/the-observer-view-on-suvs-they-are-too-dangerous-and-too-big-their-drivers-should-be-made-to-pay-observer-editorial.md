@@ -5,7 +5,7 @@ author: Observer editorial
 title: "The Observer view on SUVs: they are too dangerous and too big, their drivers should be made to pay | Observer editorial"
 ---
 
-# The Observer view on SUVs: they are too dangerous and too big, their drivers should be made to pay | Observer editorial | The Guardian
+# The Observer view on SUVs: they are too dangerous and too big, their drivers should be made to pay
 
 Britain is facing an unusual crisis: carspreading. Our road vehicles are getting bigger as [people buy more and more SUVs of increasing dimensions and weight](https://www.theguardian.com/environment/2025/apr/04/more-than-1m-cars-sold-in-uk-each-year-too-big-to-fit-typical-parking-space). At the same time, our streets and parking places remain the same size.
 

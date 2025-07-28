@@ -5,7 +5,7 @@ author: Georgia Aspinall
 title: "This Website Selling Fake Instagram Images Makes An Important Point About Mental Health And Social Media"
 ---
 
-# This Website Selling Fake Instagram Images Makes An Important Point About Mental Health And Social Media | Grazia
+# This Website Selling Fake Instagram Images Makes An Important Point About Mental Health And Social Media
 
 Life isn’t perfect, but your social media profile can be. That’s the tagline for [Lifefaker.com](http://lifefaker.com/), on the surface a website that sells fake Instagram pictures you can buy as a package to put on your profile and give off the illusion of the perfect online persona. In reality, Lifefaker.com is a satirical service, where when you actually click through to buy the fake photos you’re instead directed [Sanctus, a mental-health start-up](https://sanctus.io/social-media-mental-health-b1803b6b475f)website.
 

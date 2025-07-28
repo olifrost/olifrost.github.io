@@ -5,7 +5,7 @@ author: Rory Poulter
 title: "Demand that owners of supersize SUVs pay \"pothole tax\" | Personal Finance | Finance | Express.co.uk"
 ---
 
-# Demand that owners of supersize SUVs pay "pothole tax" | Personal Finance | Finance | Express.co.uk
+# Demand that owners of supersize SUVs pay "pothole tax"
 
 Britain’s growing number of supersized SUVs should be hit with higher taxes to foot the bill for the nation’s pothole crisis, campaigners say.
 

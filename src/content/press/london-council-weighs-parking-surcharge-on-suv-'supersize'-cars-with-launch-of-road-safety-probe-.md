@@ -5,7 +5,7 @@ source: https://www.standard.co.uk/news/transport/london-council-parking-surchar
 author: Ross Lydall
 ---
 
-# London council weighs parking surcharge on SUV 'supersize' cars with launch of road safety probe | The Standard
+# London council weighs parking surcharge on SUV 'supersize' cars with launch of road safety probe
 
 > ## Excerpt
 > Lambeth to commission study into whether larger vehicles pose a greater danger to pedestrians and cyclists

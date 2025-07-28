@@ -2,10 +2,10 @@
 created: 2025-07-07T15:50:09 (UTC +01:00)
 source: https://www.theguardian.com/environment/2025/apr/04/more-than-1m-cars-sold-in-uk-each-year-too-big-to-fit-typical-parking-space
 author: Helena Horton
-title: "More than 1m cars sold in UK each year too big to fit typical parking space | Air pollution"
+title: "More than 1m cars sold in UK each year too big to fit typical
 ---
 
-# More than 1m cars sold in UK each year too big to fit typical parking space | Air pollution | The Guardian
+# More than 1m cars sold in UK each year too big to fit typical parking space
 
 More than 1m cars too big to fit in parking spaces are being sold in the UK each year, and numbers are growing, research has found.
 

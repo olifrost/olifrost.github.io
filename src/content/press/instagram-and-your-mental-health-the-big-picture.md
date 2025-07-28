@@ -6,7 +6,7 @@ author: Dazed
 title: "Instagram and your mental health: the big picture"
 ---
 
-# Instagram and your mental health: the big picture | Dazed
+# Instagram and your mental health: the big picture
 
 _[Mental Health: Beyond Awareness](https://www.dazeddigital.com/tag/mental-health-beyond-awareness) is a five-day campaign asking what we can do for mental health issues beyond "raising awareness". Young people are more aware of mental health issues than ever, but our services are broken, the internet is stressing us out, and self-medication is on the rise._ _Who is campaigning for change? And how can we help ourselves? This week, Dazed is aiming to find out._ 
 

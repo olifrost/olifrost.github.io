@@ -5,7 +5,7 @@ author: Anna Isaac
 title: "The Homeless Period: it doesn't bear thinking about and that's the problem | Voluntary Sector Network"
 ---
 
-# The Homeless Period: it doesn't bear thinking about and that's the problem | Voluntary Sector Network | The Guardian
+# The Homeless Period: it doesn't bear thinking about and that's the problem
 
 ## What’s it all about?
 

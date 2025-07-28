@@ -5,7 +5,7 @@ author: Nick Douglas
 title: "Sarcastic Samantha App Will Roast Your Bad Ideas"
 ---
 
-# Sarcastic Samantha App Will Roast Your Bad Ideas | Lifehacker
+# Sarcastic Samantha App Will Roast Your Bad Ideas
 
 [](https://lifehacker.com/)
 

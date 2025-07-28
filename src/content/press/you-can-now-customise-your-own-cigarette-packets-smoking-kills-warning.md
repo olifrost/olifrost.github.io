@@ -6,7 +6,7 @@ author: Miranda Larbi
 title: "You can now customise your own cigarette packets ‘Smoking Kills’ warning"
 ---
 
-# You can now customise your own cigarette packets ‘Smoking Kills’ warning | Metro News
+# You can now customise your own cigarette packets ‘Smoking Kills’ warning
 
 [](https://metro.co.uk/author/miranda-larbi-for-metro-co-uk/)
 

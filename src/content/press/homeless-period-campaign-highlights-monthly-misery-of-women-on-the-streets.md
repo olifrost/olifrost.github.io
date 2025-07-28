@@ -6,7 +6,7 @@ author: Jo Tweedy
 title: "'Homeless period' campaign highlights monthly misery of women on the streets"
 ---
 
-# 'Homeless period' campaign highlights monthly misery of women on the streets | Daily Mail Online
+# 'Homeless period' campaign highlights monthly misery of women on the streets
 
 A new hard-hitting campaign is aiming to highlight the misery of homeless women who are unable to access proper sanitary care.
 

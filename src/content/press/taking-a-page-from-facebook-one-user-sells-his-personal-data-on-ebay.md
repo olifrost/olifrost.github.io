@@ -6,7 +6,7 @@ author: Chuong Nguyen
 title: "Taking a Page From Facebook, One User Sells His Personal Data on eBay"
 ---
 
-# Taking a Page From Facebook, One User Sells His Personal Data on eBay | Digital Trends
+# Taking a Page From Facebook, One User Sells His Personal Data on eBay
 
 1.  [Home](https://www.digitaltrends.com/)
 2.  [Computing](https://www.digitaltrends.com/computing/)

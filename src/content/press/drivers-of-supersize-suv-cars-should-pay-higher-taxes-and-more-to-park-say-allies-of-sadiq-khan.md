@@ -6,7 +6,7 @@ author: Ross Lydall
 title: "Drivers of 'supersize' SUV cars should pay higher taxes and more to park, say allies of Sadiq Khan"
 ---
 
-# Drivers of 'supersize' SUV cars should pay higher taxes and more to park, say allies of Sadiq Khan | The Standard
+# Drivers of 'supersize' SUV cars should pay higher taxes and more to park, say allies of Sadiq Khan
 
 Motorists who drive “supersize” [SUV](https://www.standard.co.uk/topic/suv) cars should face higher vehicle taxes and be forced to pay more for residents’ parking permits, according to allies of [London](https://www.standard.co.uk/topic/london) mayor Sir [Sadiq Khan](https://www.standard.co.uk/topic/sadiq-khan).
 

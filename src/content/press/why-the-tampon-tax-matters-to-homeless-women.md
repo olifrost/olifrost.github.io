@@ -6,7 +6,7 @@ author: Dazed
 title: "Why the tampon tax matters to homeless women"
 ---
 
-# Why the tampon tax matters to homeless women | Dazed
+# Why the tampon tax matters to homeless women
 
 If you can’t pull together enough money for some food for that evening, it’s unlikely you’ll be able to afford tampons or sanitary products. If you don’t have a roof over your head, it’s even less likely you’ll be equipped when the month comes around again. Periods are an inconvenience for women. For [homeless](http://www.dazeddigital.com/tag/homelessness) women, they’re a nightmare. 
 

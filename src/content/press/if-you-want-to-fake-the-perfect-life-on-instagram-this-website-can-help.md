@@ -6,7 +6,7 @@ author: Miranda Larbi
 title: "If you want to fake the perfect life on Instagram, this website can help"
 ---
 
-# If you want to fake the perfect life on Instagram, this website can help | Metro News
+# If you want to fake the perfect life on Instagram, this website can help
 
 According to Sanctus.io, 62% of people feel inadequate comparing their lives to others online.
 

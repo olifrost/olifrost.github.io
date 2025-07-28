@@ -6,7 +6,7 @@ author: Tom Usher
 title: "Man tried to sell all his Facebook data on eBay for £300"
 ---
 
-# Man tried to sell all his Facebook data on eBay for £300 | Metro News
+# Man tried to sell all his Facebook data on eBay for £300
 
 [](https://metro.co.uk/author/tom-usher/)
 

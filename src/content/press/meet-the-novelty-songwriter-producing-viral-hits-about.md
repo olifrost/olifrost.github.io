@@ -5,7 +5,7 @@ author:
 title: "Meet the novelty songwriter producing viral hits about…"
 ---
 
-# Meet the novelty songwriter producing viral hits about… | Canary Media
+# Meet the novelty songwriter producing viral hits about…
 
 _Canary Media’s_ [Climate Meets Culture](https://www.canarymedia.com/articles/columns/friday-social-where-climate-meets-the-internet) _column explores the intersection of energy, climate and the culture at large._
 

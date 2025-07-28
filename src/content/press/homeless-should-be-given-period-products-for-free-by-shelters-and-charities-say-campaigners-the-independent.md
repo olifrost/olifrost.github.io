@@ -6,7 +6,7 @@ author: Lamiat Sabin
 title: "Homeless should be given period products for free by shelters and charities, say campaigners"
 ---
 
-# Homeless should be given period products for free by shelters and charities, say campaigners | The Independent
+# Homeless should be given period products for free by shelters and charities, say campaigners
 
 Sanitary [period](https://www.independent.co.uk/life-style/health-and-families/features/we-need-to-talk-about-periods-9638267.html) products should be more widely accessible to cash-strapped homeless people who are sleeping rough or in shelters as they often have to go without, say campaigners.
 

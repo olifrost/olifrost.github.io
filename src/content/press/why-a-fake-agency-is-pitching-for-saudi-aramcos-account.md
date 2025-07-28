@@ -6,7 +6,7 @@ author: Ellen Ormesher,
 title: "Why a fake agency is pitching for Saudi Aramco’s account"
 ---
 
-# Why a fake agency is pitching for Saudi Aramco’s account | The Drum
+# Why a fake agency is pitching for Saudi Aramco’s account
 
 **Campaigners have launched a spoof agency named Atmospheric following the news that McCann is poised to repitch for Saudi Aramco - the world’s largest oil and gas company.**
 

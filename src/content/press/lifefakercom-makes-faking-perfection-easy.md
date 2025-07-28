@@ -5,7 +5,7 @@ author:
 title: "“Lifefaker.com makes faking perfection easy”"
 ---
 
-# “Lifefaker.com makes faking perfection easy” | Hacker News
+# “Lifefaker.com makes faking perfection easy”
 
 <table><tbody><tr><td indent="2"><img src="%E2%80%9CLifefaker.com%20makes%20faking%20perfection%20easy%E2%80%9D%20%20Hacker%20News/s.gif" height="1" width="80"></td><td><center><a id="up_16953407" href="https://news.ycombinator.com/vote?id=16953407&amp;how=up&amp;goto=item%3Fid%3D16953005"></a></center></td><td><br><div><p>Even the logo is spot on. This is dark satire indeed, predicting the near future where someone out there actually will offer such a service, and millions will buy into it. This would be a perfect fit in the world of <i>Black Mirror</i>.</p></div></td></tr></tbody></table>
 

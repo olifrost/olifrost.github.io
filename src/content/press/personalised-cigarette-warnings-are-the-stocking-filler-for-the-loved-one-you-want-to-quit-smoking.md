@@ -6,7 +6,7 @@ author: Brogan Driscoll
 title: "Personalised Cigarette Warnings Are The Stocking Filler For The Loved One You Want To Quit Smoking"
 ---
 
-# Personalised Cigarette Warnings Are The Stocking Filler For The Loved One You Want To Quit Smoking | HuffPost UK Life
+# Personalised Cigarette Warnings Are The Stocking Filler For The Loved One You Want To Quit Smoking
 
 If you’re a non-smoker, chances are you’ll have felt concerned about the health of a loved one who is a smoker.
 

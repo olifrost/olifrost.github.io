@@ -6,7 +6,7 @@ author: Jamie Kolkot
 title: "'It's only greenwashing if you get caught' | Opinions"
 ---
 
-# 'It's only greenwashing if you get caught' | Opinions | Campaign Asia
+# 'It's only greenwashing if you get caught'
 
 Recently, my agency Atmospheric, decided to pitch for the oil giant Saudi Aramco. [We’re up against McCann](https://www.campaignasia.com/article/in-the-wake-of-cop28-five-burning-questions-for-mccanns-ceo/493528), who, despite controversy, is apparently repitching for the account. 
 

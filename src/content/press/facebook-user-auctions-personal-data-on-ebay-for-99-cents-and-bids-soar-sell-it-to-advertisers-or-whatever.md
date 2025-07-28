@@ -5,7 +5,7 @@ author: Jennifer Earl
 title: "Facebook user auctions personal data on eBay for 99 cents and bids soar: 'Sell it to advertisers or whatever'"
 ---
 
-# Facebook user auctions personal data on eBay for 99 cents and bids soar: 'Sell it to advertisers or whatever' | Fox News
+# Facebook user auctions personal data on eBay for 99 cents and bids soar: 'Sell it to advertisers or whatever'
 
 A [Facebook](http://www.foxnews.com/category/tech/companies/facebook) user found out just how valuable personal data can be when he auctioned off his social media history on eBay this week. The bid started at 99 cents and climbed to nearly $400 before it was shut down by the e-commerce site a day later.
 

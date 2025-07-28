@@ -6,7 +6,7 @@ author: Jamie Kolkot,
 title: "To solve advertising's real climate crisis we must fire all the activists"
 ---
 
-# To solve advertising's real climate crisis we must fire all the activists | The Drum
+# To solve advertising's real climate crisis we must fire all the activists
 
 **Jamie Kolkot, the totally real CEO of totally real agency Atmospheric, bravely posits a solution to advertising’s real climate crisis. Silencing do-gooding activists.**
 
