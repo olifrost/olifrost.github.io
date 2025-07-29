@@ -10,7 +10,7 @@ title: "Η Sarcastic Samantha είναι η εφαρμογή για τον κα�
 
 Αγαπάτε τον κυνισμό και ο (αυτό)σαρκασμός είναι αναπόσπαστο κομμάτι της καθημερινότητάς σας; Σε αυτή την περίπτωση, έχουμε την τέλεια εφαρμογή για εσάς.
 
-Η «[Sarcastic Samantha](https://itunes.apple.com/gb/app/sarcastic-samantha/id1276227679?mt=8&ign-mpt=uo%3D4)» είναι μια δωρεάν εφαρμογή για λειτουργικά συστήματα **iOS**, η οποία κάνει τέλεια ένα πράγμα: σαρκάζει και ειρωνεύεται τα πάντα.
+Η «Sarcastic Samantha» είναι μια δωρεάν εφαρμογή για λειτουργικά συστήματα **iOS**, η οποία κάνει τέλεια ένα πράγμα: σαρκάζει και ειρωνεύεται τα πάντα.
 
 Το μόνο που χρειάζεται να κάνετε είναι να πληκτρολογήσετε οτιδήποτε θέλετε στην εφαρμογή, και η Samantha θα σας το διαβάσει με μια φωνή στο γνωστό στυλ της Siri, αλλά προσθέτοντας στο τέλος και το σαρκαστικό της σχόλιο, όπως «I'm so blown away right now» (σε ελεύθερη μετάφραση «Καλά, έχω πάθει πλάκα»).
 
@@ -20,8 +20,5 @@ title: "Η Sarcastic Samantha είναι η εφαρμογή για τον κα�
 
 Η Samantha έχει άλλους τρεις φίλους, καθένας με τη δική του ξεχωριστή φωνή και τα δικά του καυστικά σχόλια, για να απολαμβάνετε καθημερινά τον σαρκασμό που έχετε ανάγκη, σε διαφορετικές μορφές του.
 
-Μπορείτε να κατεβάσετε την Sarcastic Samantha από το [iOS App Store](https://itunes.apple.com/gb/app/sarcastic-samantha/id1276227679?mt=8&ign-mpt=uo%3D4).
+Μπορείτε να κατεβάσετε την Sarcastic Samantha από το iOS App Store.
 
-## ΣΧΕΤΙΚΑ ΘΕΜΑΤΑ
-
-[life](https://www.huffingtonpost.gr/news/life/)[Tech](https://www.huffingtonpost.gr/news/gr-tech/)[ios](https://www.huffingtonpost.gr/news/ios/)[Sarcastic Samantha](https://www.huffingtonpost.gr/news/sarcastic-samantha/)[εφαρμογή](https://www.huffingtonpost.gr/news/efarmoye/)
