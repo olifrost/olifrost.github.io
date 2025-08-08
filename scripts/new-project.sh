@@ -156,7 +156,6 @@ done
 slug=$(echo "$project_name" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^a-z0-9]+/-/g' | sed -E 's/^-+|-+$//g')
 
 # Get description based on post type
-esac
 case "$post_type" in
     "website")
         while true; do
@@ -194,6 +193,7 @@ case "$post_type" in
             gum style --foreground 196 "Description is required! Please enter a description."
         done
         ;;
+esac
 
 # Get release date
 date=$(gum input --placeholder "When was it released? (YYYY-MM-DD)" --value "$today")
@@ -252,7 +252,6 @@ url=""
 press_info=""
 gallery_path=""
 
-esac
 case "$post_type" in
     "website")
         while true; do
@@ -304,6 +303,7 @@ case "$post_type" in
     "basic"|"image")
         # No additional inputs needed
         ;;
+esac
 
 # Create MDX file in blog directory
 dir="$CONTENT_DIR/blog"
