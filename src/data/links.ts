@@ -3,7 +3,7 @@ import type { LinksData } from '../types/links';
 export const streamingLinks: LinksData = {
   docs_list_title: "Streaming",
   docs: [
-    
+
     {
       title: "Music Platforms",
       isExpandable: true,
@@ -84,7 +84,7 @@ export const links: LinksData = {
           colour: "bg-purple-600",
           icon: "lucide:music"
         }
-        
+
       ]
     },
     {
@@ -104,12 +104,12 @@ export const links: LinksData = {
           url: "https://ko-fi.com/olifrost",
           colour: "bg-orange-500",
           icon: "lucide:coffee"
-        }        
+        }
       ]
     },
     {
-      title: "Meditate on Oilwell",
-      url: "https://oilwell.app",
+      title: "Worship the Almighty Economy Lord",
+      url: "https://olifro.st/almighty-economy-lord/",
       colour: "bg-pink-500",
       icon: "lucide:gamepad-2"
     },
