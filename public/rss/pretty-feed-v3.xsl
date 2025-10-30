@@ -129,8 +129,11 @@ This file is in BETA. Please test and contribute to the discussion:
                   <xsl:value-of select="title"/>
                 </a>
               </h3>
+              <p class="my-2">
+                <xsl:value-of select="description"/>
+              </p>
               <small class="text-gray">
-                Published: <xsl:value-of select="pubDate" />
+                <xsl:value-of select="substring(pubDate, 1, 16)" />
               </small>
             </div>
           </xsl:for-each>
