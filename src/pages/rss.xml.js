@@ -9,8 +9,10 @@ export async function GET(context) {
 		description: SITE_DESCRIPTION,
 		site: context.site,
 		items: posts.map((post) => ({
-			...post.data,
-			link: `@assets/2024/${post.id}/`,
+			title: post.data.title,
+			pubDate: post.data.date,
+			description: post.data.description,
+			link: `/blog/${post.id}/`,
 		})),
 	});
 }
