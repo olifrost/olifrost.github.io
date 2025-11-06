@@ -3,7 +3,9 @@
 
 # Pretty Feed
 
-Styles an RSS/Atom feed, making it friendly for humans viewers, and adds a link
+Styles an RSS/Atom feed,          <p class="text-gray" style="color: #666;">
+            Visit <a href="https://aboutfeeds.com" style="color: #2337FF; text-decoration: underline;">About Feeds</a> to get started with newsreaders and subscribing. It's free.
+          </p>king it friendly for humans viewers, and adds a link
 to aboutfeeds.com for new user onboarding. See it in action:
 
    https://interconnected.org/home/feed
@@ -79,7 +81,7 @@ This file is in BETA. Please test and contribute to the discussion:
       </head>
       <body class="bg-white">
         <nav class="container-md px-3 py-2 mt-2 mt-md-5 mb-5 markdown-body">
-          <p class="bg-yellow-light ml-n1 px-1 py-1 mb-1">
+          <p class="ml-n1 px-1 py-1 mb-1" style="background: #2337FF; color: white; padding: 1rem;">
             <strong>This is a web feed,</strong> also known as an RSS feed. <strong>Subscribe</strong> by copying the URL from the address bar into your newsreader.
           </p>
           <p class="text-gray">
@@ -111,26 +113,39 @@ This file is in BETA. Please test and contribute to the discussion:
             </h1>
             <h2><xsl:value-of select="/rss/channel/title"/></h2>
             <p><xsl:value-of select="/rss/channel/description"/></p>
-            <a class="head_link" target="_blank">
+            <a class="head_link" target="_blank" style="color: #2337FF; text-decoration: underline;">
               <xsl:attribute name="href">
                 <xsl:value-of select="/rss/channel/link"/>
               </xsl:attribute>
-              Visit Website &#x2192;
+              Visit Website →
             </a>
           </header>
           <h2>Recent Items</h2>
           <xsl:for-each select="/rss/channel/item">
-            <div class="pb-5">
-              <h3 class="mb-0">
-                <a target="_blank">
+            <div class="pb-5 mb-5" style="border-bottom: 1px solid #eee;">
+              <h3 class="mb-2">
+                <a target="_blank" style="color: #2337FF; text-decoration: none;">
                   <xsl:attribute name="href">
                     <xsl:value-of select="link"/>
                   </xsl:attribute>
                   <xsl:value-of select="title"/>
                 </a>
               </h3>
-              <small class="text-gray">
-                Published: <xsl:value-of select="pubDate" />
+              <xsl:if test="media:content/@url">
+                <img style="max-width: 100%; height: auto; margin: 1rem 0; border-radius: 4px;">
+                  <xsl:attribute name="src">
+                    <xsl:value-of select="media:content/@url"/>
+                  </xsl:attribute>
+                  <xsl:attribute name="alt">
+                    <xsl:value-of select="title"/>
+                  </xsl:attribute>
+                </img>
+              </xsl:if>
+              <p class="my-2">
+                <xsl:value-of select="description"/>
+              </p>
+              <small class="text-gray" style="color: #666;">
+                <xsl:value-of select="substring(pubDate, 6, 11)" />
               </small>
             </div>
           </xsl:for-each>
