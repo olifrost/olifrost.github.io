@@ -12,7 +12,7 @@ const allProjects = await getCollection("blog");
 const songProjects = allProjects
     .filter((project) => project.data.homepageCategory === "songs")
     .sort((a, b) => (a.data.homepageOrder || 0) - (b.data.homepageOrder || 0))
-    .slice(0, 3);
+    .slice(0, 3);   
 
 const featuredProjects = allProjects
     .filter((project) => project.data.homepageCategory === "climate")
